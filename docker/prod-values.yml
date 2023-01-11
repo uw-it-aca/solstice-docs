@@ -7,7 +7,7 @@ ingress:
   enabled: true
   type: nginx
   tls:
-    axdd-components:
+    solstice-docs:
       secretName: components.axdd.s.uw.edu-ingress-cert
       hosts:
         - components.axdd.s.uw.edu
@@ -16,7 +16,7 @@ ingress:
       hosts:
         - styleguide.axdd.s.uw.edu
   hosts:
-    axdd-components:
+    solstice-docs:
       host: components.axdd.s.uw.edu
       paths:
         - "/"
@@ -31,7 +31,7 @@ ingress:
         return 301 $scheme://components.axdd.s.uw.edu;
       }
 
-repo: axdd-components
+repo: solstice-docs
 instance: prod
 
 resources:
