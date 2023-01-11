@@ -8,7 +8,7 @@ ADD docker/nginx.conf /etc/nginx/nginx.conf
 RUN chgrp acait /etc/nginx/nginx.conf && chmod g+w /etc/nginx/nginx.conf
 
 
-FROM us-docker.pkg.dev/uwit-mci-axdd/containers/nginx-container:1.1.2 AS node-bundler
+FROM pre-app-container AS node-bundler
 
 RUN which git
 RUN echo $PATH
