@@ -14,6 +14,7 @@ USER acait
 
 COPY --chown=acait:acait index.html package.json vite.config.js /app/
 COPY --chown=acait:acait src /app/src
+COPY --chown=acait:acait public /app/dist
 COPY --chown=acait:acait public /app/public
 
 RUN . /app/bin/activate &&\
