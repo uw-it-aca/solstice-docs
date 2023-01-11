@@ -8,20 +8,29 @@ ADD docker/nginx.conf /etc/nginx/nginx.conf
 RUN chgrp acait /etc/nginx/nginx.conf && chmod g+w /etc/nginx/nginx.conf
 
 
-FROM pre-app-container AS node-bundler
+# FROM pre-app-container AS node-bundler
 
-USER acait
+# USER acait
 
-COPY --chown=acait:acait index.html package.json vite.config.js /app/
-COPY --chown=acait:acait src /app/src
-COPY --chown=acait:acait public /app/dist
-COPY --chown=acait:acait public /app/public
+# COPY --chown=acait:acait index.html package.json vite.config.js /app/
+# COPY --chown=acait:acait src /app/src
+# COPY --chown=acait:acait public /app/dist
+# COPY --chown=acait:acait public /app/public
 
-RUN . /app/bin/activate
-RUN npm install --production
-RUN npm install vite
+# RUN . /app/bin/activate
+# RUN npm install --production
+# RUN npm install vite
+# RUN npm run build
+
+FROM node:lts-bullseye AS node-bundler
+
+ADD index.html package.json vite.config.js /app/
+WORKDIR /app/
+RUN npm install .
+
+ADD . /app/
+
 RUN npm run build
-
 
 FROM pre-app-container as app-container
 
