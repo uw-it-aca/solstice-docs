@@ -10,9 +10,6 @@ RUN chgrp acait /etc/nginx/nginx.conf && chmod g+w /etc/nginx/nginx.conf
 
 FROM pre-app-container AS node-bundler
 
-RUN which git
-RUN echo $PATH
-
 USER acait
 
 COPY --chown=acait:acait index.html package.json vite.config.js /app/
@@ -20,8 +17,6 @@ COPY --chown=acait:acait src /app/src
 COPY --chown=acait:acait public /app/dist
 COPY --chown=acait:acait public /app/public
 
-
-RUN git ls-remote -h -t ssh://git@github.com/uw-it-aca/axdd-components.git
 RUN . /app/bin/activate
 RUN npm install --production
 RUN npm install vite
