@@ -17,10 +17,10 @@ COPY --chown=acait:acait src /app/src
 COPY --chown=acait:acait public /app/dist
 COPY --chown=acait:acait public /app/public
 
-RUN . /app/bin/activate &&\
-    npm install &&\
-    npm install vite &&\
-    npm run build
+RUN . /app/bin/activate
+RUN npm install
+RUN npm install vite
+RUN npm run build
 
 
 FROM pre-app-container as app-container
