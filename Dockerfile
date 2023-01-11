@@ -17,6 +17,8 @@ COPY --chown=acait:acait src /app/src
 COPY --chown=acait:acait public /app/dist
 COPY --chown=acait:acait public /app/public
 
+RUN which git
+RUN echo $PATH
 RUN git ls-remote -h -t ssh://git@github.com/uw-it-aca/axdd-components.git
 RUN . /app/bin/activate
 RUN npm install --production
