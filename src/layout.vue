@@ -3,8 +3,7 @@
     :app-name="'Solstice'"
     :user-name="'javerage'"
     :app-root-url="'/'"
-    :variant="'light'"
-    :sidebar-class="'bg-purple'"
+    :sidebar-class="'bg-success'"
   >
     <template #profile><div class="text-light">Latest: v.1.1.0</div></template>
     <template #logo>
