@@ -20,10 +20,10 @@
         :class="$route.path.includes('/start') ? 'show' : ''"
         aria-labelledby="flush-heading2"
       >
-        <ul class="nav flex-column small fw-light mt-1">
+        <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/start/principles"
               >Principles</router-link
@@ -31,7 +31,7 @@
           </li>
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/start/designers"
               >Designers</router-link
@@ -39,7 +39,7 @@
           </li>
           <li class="nav-item">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/start/developers"
               >Developers</router-link
@@ -71,7 +71,7 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/content/voice"
               >Voice &amp; Tone</router-link
@@ -79,7 +79,7 @@
           </li>
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/content/grammar"
               >Grammar &amp; Mechanics</router-link
@@ -87,7 +87,7 @@
           </li>
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/content/language"
               >Language &amp; Inclusivity</router-link
@@ -95,7 +95,7 @@
           </li>
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/content/errors"
               >Errors</router-link
@@ -103,7 +103,7 @@
           </li>
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/content/state"
               >Page State</router-link
@@ -111,7 +111,7 @@
           </li>
           <li class="nav-item">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/content/onboarding"
               >Onboarding</router-link
@@ -159,7 +159,7 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/patterns/layout"
               >Layout</router-link
@@ -167,7 +167,7 @@
           </li>
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/patterns/navigation"
               >Navigation</router-link
@@ -175,7 +175,7 @@
           </li>
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/patterns/containers"
               >Containers</router-link
@@ -183,7 +183,7 @@
           </li>
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/patterns/messaging"
               >Messaging</router-link
@@ -191,7 +191,7 @@
           </li>
           <li class="nav-item mb-1">
             <router-link
-              class="nav-link rounded-3 text-light"
+              class="nav-link rounded-3 text-light fw-lighter"
               active-class="bg-black bg-opacity-10"
               to="/patterns/feedback"
               >Feedback</router-link
