@@ -5,9 +5,6 @@
     :app-root-url="'/'"
   >
     <template #profile><div class="text-light">Latest: v.1.1.0</div></template>
-    <template #logo>
-      <i class="bi bi-cup-hot-fill text-white"></i>
-    </template>
     <template #navigation>
       <NavMenu />
     </template>
