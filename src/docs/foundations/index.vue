@@ -75,7 +75,10 @@
               >
             </li>
             <li class="list-inline-item">
-              <div class="text-bg-purple rounded p-2" style="width: 85px; height: 60px">
+              <div
+                class="text-bg-purple rounded p-2"
+                style="width: 85px; height: 60px"
+              >
                 hello
               </div>
               <small

@@ -33,9 +33,9 @@
 
           <h3>Manual Installation</h3>
           <p>
-            If you wish to add Solstice Components to an existing Vue application,
-            add the following dependency to your <code>package.json</code> and
-            run <code>npm install</code>.
+            If you wish to add Solstice Components to an existing Vue
+            application, add the following dependency to your
+            <code>package.json</code> and run <code>npm install</code>.
           </p>
 
           <CodeBlock>

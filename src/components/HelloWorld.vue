@@ -1,16 +1,15 @@
 // HelloWorld.vue
 
 <template>
-    <div>Hello world</div>
-  </template>
-  
-  <script>
-  export default {
-    name: "HelloWorld",
-    data() {
-      return {};
-    },
-    methods: {},
-  };
-  </script>
-  
+  <div>Hello world</div>
+</template>
+
+<script>
+export default {
+  name: "HelloWorld",
+  data() {
+    return {};
+  },
+  methods: {},
+};
+</script>

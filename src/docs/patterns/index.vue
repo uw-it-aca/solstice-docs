@@ -32,7 +32,9 @@
               nostrum beatae aperiam nesciunt voluptate.
             </p>
             <div class="text-end">
-              <router-link to="/patterns/navigation">View Navigation</router-link>
+              <router-link to="/patterns/navigation"
+                >View Navigation</router-link
+              >
             </div>
           </axdd-panel>
         </li>
