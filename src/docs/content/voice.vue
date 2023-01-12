@@ -11,7 +11,7 @@
       <h1>Voice &amp; Tone</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
-        Through this guide you will learn how to apply AXDD Component's voice
+        Through this guide you will learn how to apply Solstice Design's voice
         and choose the right tone. Using the right voice and tone is important
         as it allows us to better connect with our users.
       </p>

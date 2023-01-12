@@ -33,7 +33,7 @@
 
           <h3>Manual Installation</h3>
           <p>
-            If you wish to add AXDD Components to an existing Vue application,
+            If you wish to add Solstice Components to an existing Vue application,
             add the following dependency to your <code>package.json</code> and
             run <code>npm install</code>.
           </p>
@@ -48,7 +48,7 @@
           </CodeBlock>
 
           <p>
-            From the <code>main.js</code> file, import the AXDD Components
+            From the <code>main.js</code> file, import the Solstice Components
             library and install it as plugin using <code>app.use()</code>. You
             must also import the required component library
             <code>style.css</code> as well as the application's main Bootstrap

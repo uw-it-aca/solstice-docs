@@ -4,8 +4,8 @@
       <h1 class="fw-bold">Introduction</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
-        AXDD Components is a resource for building and documenting UI components
-        using Bootstrap and Vue.js. It provides a set of organized guidelines,
+        Solstice Design is a resource for building and documenting UI components
+        using Bootstrap and Vue/React Javascript frameworks. It provides a set of organized guidelines,
         patterns and best practices that work as the foundation for application
         design and development at AXDD.
       </p>
@@ -41,7 +41,7 @@
           <h2 class="fw-bold">Getting Started</h2>
           <p>
             Check out these guides to help you understand how to design
-            applications using AXDD Components.
+            applications using Solstice Components.
           </p>
         </div>
       </div>
@@ -91,7 +91,7 @@
           <h2 class="fw-bold">Guides</h2>
           <p>
             Check out these guides to help you understand how to design
-            applications using AXDD Components.
+            applications using Solstice Components.
           </p>
         </div>
       </div>
