@@ -18,10 +18,6 @@ ingress:
         - "/"
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt
-#    nginx.ingress.kubernetes.io/configuration-snippet: |
-#      if ($host != 'components.axdd.s.uw.edu' ) {
-#        return 301 $scheme://components.axdd.s.uw.edu;
-#      }
 
 repo: solstice-docs
 instance: test
