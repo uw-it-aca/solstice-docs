@@ -241,49 +241,7 @@
       </CodeBlock>
 
       <h2>Typography</h2>
-      <p>
-        <a
-          href="https://www.washington.edu/brand/graphic-elements/font-download/"
-          target="_blank"
-          >https://www.washington.edu/brand/graphic-elements/font-download/</a
-        >
-      </p>
-
-      <p>Typography is defined by the UW Brand guidelines.</p>
-
-      <h3>Open Sans</h3>
-      <p>
-        Open Sans is the default font-family used by UW. It is typically set at
-        the page body level.
-      </p>
-      <CodeBlock>
-        <template #preview>
-          <div class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans</div>
-        </template>
-        <template #markup>
-          <pre class="language-html rounded">
-<code>&lt;body class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans&lt;/body>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <h3>Encode Sans Condensed</h3>
-      <p>
-        Encode Sans Condensed is the heading font-family used by UW. It is
-        typically set at the page body level.
-      </p>
-      <CodeBlock>
-        <template #preview>
-          <div class="axdd-font-encode-sans">
-            Lorem ipsum dolor... Encode Sans Condensed
-          </div>
-        </template>
-        <template #markup>
-          <pre class="language-html rounded">
-<code>&lt;body class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans&lt;/body>
-</code></pre>
-        </template>
-      </CodeBlock>
+      <p>Go to <a href="/foundations/typography">Read typography</a></p>
     </template>
   </Layout>
 </template>
