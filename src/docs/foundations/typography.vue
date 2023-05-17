@@ -12,10 +12,10 @@
       <h1>Typography</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        consequuntur tempore amet consectetur minus autem corporis nostrum sit
-        sapiente cumque. Rem nisi quidem aspernatur doloremque id non natus
-        voluptas debitis!
+        Hello everyone!! Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Voluptatem consequuntur tempore amet consectetur minus autem
+        corporis nostrum sit sapiente cumque. Rem nisi quidem aspernatur
+        doloremque id non natus voluptas debitis!
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />
