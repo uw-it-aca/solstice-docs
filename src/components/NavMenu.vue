@@ -122,11 +122,43 @@
     </li>
     <li class="nav-item mb-1">
       <router-link
-        class="nav-link rounded-3 text-light"
+        class="d-flex justify-content-between nav-link rounded-3 text-light chevron"
         active-class="bg-black bg-opacity-10"
         to="/foundations/"
-        >Foundations</router-link
+        id="flush-heading4"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapse4"
+        :aria-expanded="$route.path.includes('/foundations') ? true : false"
+        aria-controls="flush-collapse4"
       >
+        <span>Foundations</span>
+        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+      </router-link>
+      <div
+        id="flush-collapse4"
+        class="collapse"
+        :class="$route.path.includes('/foundations') ? 'show' : ''"
+        aria-labelledby="flush-heading4"
+      >
+        <ul class="nav flex-column small fw-light mt-1">
+          <li class="nav-item mb-1">
+            <router-link
+              class="nav-link rounded-3 text-light fw-lighter"
+              active-class="bg-black bg-opacity-10"
+              to="/foundations/color"
+              >Color</router-link
+            >
+          </li>
+          <li class="nav-item mb-1">
+            <router-link
+              class="nav-link rounded-3 text-light fw-lighter"
+              active-class="bg-black bg-opacity-10"
+              to="/foundations/typography"
+              >Typography</router-link
+            >
+          </li>
+        </ul>
+      </div>
     </li>
     <li class="nav-item mb-1">
       <router-link
