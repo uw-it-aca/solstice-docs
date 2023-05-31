@@ -13,198 +13,9 @@
       <hr class="mb-5 w-25 d-inline-block" />
 
       <h2>Color</h2>
-      <p>
-        <a
-          href="https://getbootstrap.com/docs/5.1/customize/color/"
-          target="_blank"
-          >https://getbootstrap.com/docs/5.1/customize/color/</a
-        >
-      </p>
+      <p>Go to <a href="/foundations/color">Color</a></p>
 
-      <p>
-        Color is automatically applied to the following utilities and
-        components.
-      </p>
-      <ul>
-        <li>
-          <a
-            href="https://getbootstrap.com/docs/5.1/utilities/background/"
-            target="_blank"
-            >https://getbootstrap.com/docs/5.1/utilities/background/</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://getbootstrap.com/docs/5.1/utilities/borders/#border-color"
-            target="_blank"
-          >
-            https://getbootstrap.com/docs/5.1/utilities/borders/#border-color</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://getbootstrap.com/docs/5.1/utilities/colors/"
-            target="_blank"
-            >https://getbootstrap.com/docs/5.1/utilities/colors/</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://getbootstrap.com/docs/5.1/components/alerts/"
-            target="_blank"
-            >https://getbootstrap.com/docs/5.1/components/alerts/</a
-          >
-        </li>
-      </ul>
-
-      <p>Example: bg-xxxxx and text-xxxxx</p>
-
-      <CodeBlock>
-        <template #preview>
-          <ul class="list-inline m-0">
-            <li class="list-inline-item">
-              <div
-                class="text-bg-dark-purple rounded p-2"
-                style="width: 85px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >dark-purple<br />
-                #452a78</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-purple rounded p-2"
-                style="width: 85px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >purple<br />
-                #4d307f</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-dark-beige rounded p-2"
-                style="width: 85px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >dark-beige<br />
-                #85754d</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-mid-beige rounded p-2"
-                style="width: 85px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >mid-beige<br />
-                #ab9765</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-beige rounded p-2"
-                style="width: 85px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >beige<br />
-                #e8e3d3</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-light-beige rounded p-2"
-                style="width: 85px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >light-beige<br />
-                #faf8f4</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-gold rounded p-2"
-                style="width: 85px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >gold<br />
-                #ffbc24</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-teal rounded p-2"
-                style="width: 85px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >teal<br />
-                #4c7286</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-light-gray rounded p-2"
-                style="width: 85px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >light-gray<br />
-                #e8e8e8</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-gray rounded p-2"
-                style="width: 85px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >gray<br />
-                #e9ecef</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-dark bg-opacity-10 rounded p-2"
-                style="width: 85px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >bg-opacity-10<br />
-                90% black</small
-              >
-            </li>
-          </ul>
-        </template>
-        <template #markup>
-          <pre class="language-html rounded">
-<code class="html rounded">&lt;div class="bg-dark-purple"&gt;
-&lt;div class="bg-purple"&gt;
-&lt;div class="bg-dark-beige"&gt;
-...</code></pre>
-        </template>
-      </CodeBlock>
-
+      <!--
       <h2>Font Sizes <VersionBadge>1.0.5</VersionBadge></h2>
       <p>The base font-size for our apps is 16px.</p>
       <p>
@@ -239,66 +50,25 @@
 </code></pre>
         </template>
       </CodeBlock>
+    -->
 
       <h2>Typography</h2>
-      <p>
-        <a
-          href="https://www.washington.edu/brand/graphic-elements/font-download/"
-          target="_blank"
-          >https://www.washington.edu/brand/graphic-elements/font-download/</a
-        >
-      </p>
-
-      <p>Typography is defined by the UW Brand guidelines.</p>
-
-      <h3>Open Sans</h3>
-      <p>
-        Open Sans is the default font-family used by UW. It is typically set at
-        the page body level.
-      </p>
-      <CodeBlock>
-        <template #preview>
-          <div class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans</div>
-        </template>
-        <template #markup>
-          <pre class="language-html rounded">
-<code>&lt;body class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans&lt;/body>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <h3>Encode Sans Condensed</h3>
-      <p>
-        Encode Sans Condensed is the heading font-family used by UW. It is
-        typically set at the page body level.
-      </p>
-      <CodeBlock>
-        <template #preview>
-          <div class="axdd-font-encode-sans">
-            Lorem ipsum dolor... Encode Sans Condensed
-          </div>
-        </template>
-        <template #markup>
-          <pre class="language-html rounded">
-<code>&lt;body class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans&lt;/body>
-</code></pre>
-        </template>
-      </CodeBlock>
+      <p>Go to <a href="/foundations/typography">Typography</a></p>
     </template>
   </Layout>
 </template>
 
 <script>
 import Layout from "../../layout.vue";
-import CodeBlock from "../../components/CodeBlock.vue";
-import VersionBadge from "../../components/VersionBadge.vue";
+//import CodeBlock from "../../components/CodeBlock.vue";
+//import VersionBadge from "../../components/VersionBadge.vue";
 
 export default {
   name: "DocsTokensIndex",
   components: {
     Layout,
-    CodeBlock,
-    VersionBadge,
+    //CodeBlock,
+    //VersionBadge,
   },
   data() {
     return {};
