@@ -12,23 +12,23 @@
       <h1>Typography</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
-        Hello everyone!! Lorem ipsum dolor, sit amet consectetur adipisicing
-        elit. Voluptatem consequuntur tempore amet consectetur minus autem
-        corporis nostrum sit sapiente cumque. Rem nisi quidem aspernatur
-        doloremque id non natus voluptas debitis!
+        The Solstice Design System uses Encode Sans Regular as a primary
+        typeface and Open Sans as a secondary typeface. These two typefaces were
+        chosen for their readability and alignment with the University of
+        Washington's brand.
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />
 
-      <p>
+      <p class="text-danger">
+        All following content is still TBD
+        <br>
         <a
           href="https://www.washington.edu/brand/graphic-elements/font-download/"
           target="_blank"
           >https://www.washington.edu/brand/graphic-elements/font-download/</a
         >
       </p>
-
-      <p>Typography is defined by the UW Brand guidelines.</p>
 
       <h3>Open Sans</h3>
       <p>
@@ -47,10 +47,8 @@
       </CodeBlock>
 
       <h3>Encode Sans Condensed</h3>
-      <p>
-        Encode Sans Condensed is the heading font-family used by UW. It is
-        typically set at the page body level.
-      </p>
+      <p>Encode Sans Condensed is the heading font-family used by UW</p>
+
       <CodeBlock>
         <template #preview>
           <div class="axdd-font-encode-sans">
