@@ -22,7 +22,7 @@
 
       <p class="text-danger">
         All following content is still TBD
-        <br>
+        <br />
         <a
           href="https://www.washington.edu/brand/graphic-elements/font-download/"
           target="_blank"

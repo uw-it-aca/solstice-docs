@@ -60,15 +60,15 @@
 
 <script>
 import Layout from "../../layout.vue";
-import CodeBlock from "../../components/CodeBlock.vue";
-import VersionBadge from "../../components/VersionBadge.vue";
+//import CodeBlock from "../../components/CodeBlock.vue";
+//import VersionBadge from "../../components/VersionBadge.vue";
 
 export default {
   name: "DocsTokensIndex",
   components: {
     Layout,
-    CodeBlock,
-    VersionBadge,
+    //CodeBlock,
+    //VersionBadge,
   },
   data() {
     return {};
