@@ -137,7 +137,7 @@
           <axdd-topbar
             :app-name="'TopBar'"
             :is-preview="true"
-            class="bg-white border"
+            class="bg-purple border"
           >
             <template #profile>profile here...</template>
             <template #main>
@@ -179,7 +179,7 @@
             :app-name="'TopBar'"
             :user-name="'javerage'"
             :is-preview="true"
-            class="bg-white border shadow-sm"
+            class="bg-purple border shadow-sm"
           >
             <template #profile> profile here... </template>
             <template #navigation>
@@ -231,7 +231,7 @@
           <axdd-topbar
             :app-name="'TopBar'"
             :is-preview="true"
-            class="bg-white border"
+            class="bg-purple border"
           >
             <template #profile> profile here... </template>
             <template #bar>
