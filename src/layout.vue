@@ -1,5 +1,5 @@
 <template>
-  <axdd-sidebar
+  <sol-sidebar
     :app-name="'Solstice'"
     :user-name="'javerage'"
     :app-root-url="'/'"
@@ -10,7 +10,6 @@
     </template>
     <template #aside>
       <ReleaseNotes />
-      <axdd-color-mode></axdd-color-mode>
     </template>
     <template #bar></template>
     <template #main>
@@ -42,9 +41,10 @@
             Last modified <slot name="modified" /> by <slot name="author" />
           </div>
         </div>
+        <div><axdd-color-mode></axdd-color-mode></div>
       </div>
     </template>
-  </axdd-sidebar>
+  </sol-sidebar>
 </template>
 
 <script>

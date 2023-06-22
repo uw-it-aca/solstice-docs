@@ -13,7 +13,7 @@ import "axdd-components/dist/style.css";
 import "axdd-components/dist/custom.scss";
 
 // app specific scss
-import "../src/assets/css/styles.scss";
+//import "../src/assets/css/styles.scss";
 
 const app = createApp(App);
 
