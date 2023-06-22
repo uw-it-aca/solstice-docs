@@ -4,14 +4,15 @@
     :user-name="'javerage'"
     :app-root-url="'/'"
   >
-    <template #profile><div class="text-light">Latest: v.1.1.0</div></template>
+    <template #profile>
+      <div class="text-light">Latest: v.1.1.0</div>
+    </template>
     <template #navigation>
       <NavMenu />
     </template>
     <template #aside>
       <ReleaseNotes />
     </template>
-    <template #bar></template>
     <template #main>
       <slot name="content" />
     </template>
