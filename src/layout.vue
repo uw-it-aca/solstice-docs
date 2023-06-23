@@ -15,6 +15,14 @@
     </template>
     <template #main>
       <slot name="content" />
+      <div
+        v-if="$slots['author']"
+        class="py-1 small d-inline-block border-top mt-5"
+      >
+        <div class="text-muted">
+          Last modified <slot name="modified" /> by <slot name="author" />
+        </div>
+      </div>
     </template>
     <template #footer>
       <div class="d-flex justify-content-between">
@@ -34,14 +42,7 @@
             Washington
           </div>
         </div>
-        <div
-          v-if="$slots['author']"
-          class="py-3 small d-flex align-content-end flex-wrap"
-        >
-          <div class="text-muted">
-            Last modified <slot name="modified" /> by <slot name="author" />
-          </div>
-        </div>
+
         <div><axdd-color-mode></axdd-color-mode></div>
       </div>
     </template>
