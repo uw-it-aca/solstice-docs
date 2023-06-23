@@ -15,10 +15,7 @@
     </template>
     <template #main>
       <slot name="content" />
-      <div
-        v-if="$slots['author']"
-        class="py-1 small d-inline-block border-top mt-5"
-      >
+      <div v-if="$slots['author']" class="py-1 small text-end">
         <div class="text-muted">
           Last modified <slot name="modified" /> by <slot name="author" />
         </div>
