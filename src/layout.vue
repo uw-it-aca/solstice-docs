@@ -1,20 +1,25 @@
 <template>
-  <axdd-sidebar
+  <sol-sidebar
     :app-name="'Solstice'"
     :user-name="'javerage'"
     :app-root-url="'/'"
   >
-    <template #profile><div class="text-light">Latest: v.1.1.0</div></template>
+    <template #profile>
+      <div class="text-light">Latest: v.1.1.0</div>
+    </template>
     <template #navigation>
       <NavMenu />
     </template>
     <template #aside>
       <ReleaseNotes />
-      <axdd-color-mode></axdd-color-mode>
     </template>
-    <template #bar></template>
     <template #main>
       <slot name="content" />
+      <div v-if="$slots['author']" class="py-1 small text-end">
+        <div class="text-muted">
+          Last modified <slot name="modified" /> by <slot name="author" />
+        </div>
+      </div>
     </template>
     <template #footer>
       <div class="d-flex justify-content-between">
@@ -34,17 +39,11 @@
             Washington
           </div>
         </div>
-        <div
-          v-if="$slots['author']"
-          class="py-3 small d-flex align-content-end flex-wrap"
-        >
-          <div class="text-muted">
-            Last modified <slot name="modified" /> by <slot name="author" />
-          </div>
-        </div>
+
+        <div><axdd-color-mode></axdd-color-mode></div>
       </div>
     </template>
-  </axdd-sidebar>
+  </sol-sidebar>
 </template>
 
 <script>

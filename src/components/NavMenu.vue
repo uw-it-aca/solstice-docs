@@ -160,6 +160,12 @@
         </ul>
       </div>
     </li>
+    <li aria-hidden="true" class="nav-item mt-1 mb-2">
+      <a href="#" class="nav-link disabled text-dark d-block p-0 internal-link"
+        ><hr class="m-0 bg-gray" />
+        <span class="visually-hidden">Navigation separator</span></a
+      >
+    </li>
     <li class="nav-item mb-1">
       <router-link
         class="nav-link rounded-3 text-light"
@@ -233,12 +239,7 @@
       </div>
     </li>
 
-    <li aria-hidden="true" class="nav-item mt-1 mb-2">
-      <a href="#" class="nav-link disabled text-dark d-block p-0 internal-link"
-        ><hr class="m-0 bg-gray" />
-        <span class="visually-hidden">Navigation separator</span></a
-      >
-    </li>
+
   </ul>
 </template>
 

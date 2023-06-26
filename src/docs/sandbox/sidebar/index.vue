@@ -1,5 +1,5 @@
 <template>
-  <axdd-sidebar
+  <sol-sidebar
     :app-name="appName"
     :app-root-url="appRootUrl"
     :page-title="pageTitle"
@@ -104,7 +104,7 @@
       </div>
     </template>
     <template #footer></template>
-  </axdd-sidebar>
+  </sol-sidebar>
 </template>
 
 <script>
