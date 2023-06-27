@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <template #content>
-      <h1 class="fw-bold">Introduction</h1>
+      <h1 class="fw-bold">{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Solstice Design is a resource for building and documenting UI components
@@ -11,30 +11,6 @@
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />
-
-      <div class="row mb-5">
-        <div class="col">
-          <h2>Goals</h2>
-          <ul>
-            <li>Faster design and development workflow</li>
-            <li>Living documentation</li>
-            <li>Automated testing</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h2>Principles</h2>
-          <p>
-            Get to know our foundational thinking and how we put it into action
-            across our design system.
-          </p>
-
-          <p>
-            <router-link to="/start/principles"
-              >Learn about our design principles</router-link
-            >
-          </p>
-        </div>
-      </div>
 
       <div class="row mb-3">
         <div class="col">
@@ -47,14 +23,36 @@
       </div>
 
       <div class="row mb-5">
+        <div class="col">
+          <h3>Goals</h3>
+          <ul>
+            <li>Faster design and development workflow</li>
+            <li>Living documentation</li>
+            <li>Automated testing</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Solstice 101</h3>
+          <p>
+            Get to know our design thinking and how we put it into action across
+            our design system.
+          </p>
+
+          <p>
+            <router-link to="/getting-started/solstice-101"
+              >Learn about our design system</router-link
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-5">
         <div class="col d-flex flex-column">
           <axdd-panel class="text-bg-light-beige flex-fill">
-            <h3 class="card-title">Designers</h3>
+            <h3 class="card-title">Component Lifecycle</h3>
             <p class="flex-fill">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-              nostrum beatae aperiam nesciunt voluptate. Placeat ipsum libero
-              similique enim labore corrupti porro iure commodi laborum iste
-              itaque, magnam voluptate esse.
+              Learn how to create global components that can be used by other
+              applications as well as creating brand new applications.
             </p>
             <div class="text-end">
               <router-link to="/start/designers">View Designers</router-link>
@@ -63,24 +61,15 @@
         </div>
         <div class="col d-flex flex-column">
           <axdd-panel class="text-bg-purple flex-fill">
-            <h3 class="card-title">Developers</h3>
+            <h3 class="card-title">Installation &amp; Setup</h3>
             <p>
               Learn how to create global components that can be used by other
               applications as well as creating brand new applications.
             </p>
-
-            <ul>
-              <li>
-                <router-link to="/sandbox/topbar/">Topbar</router-link>
-                (generic)
-              </li>
-              <li>
-                <router-link to="/sandbox/sidebar/">Sidebar</router-link>
-                (generic)
-              </li>
-            </ul>
             <div class="text-end">
-              <router-link to="/start/developers">View Developers</router-link>
+              <router-link to="/getting-started/installation-setup"
+                >View Installation &amp; Setup</router-link
+              >
             </div>
           </axdd-panel>
         </div>
@@ -146,7 +135,14 @@ export default {
     Layout,
   },
   data() {
-    return {};
+    return {
+      appName: "Solstice",
+      pageTitle: "Solstice Design System",
+    };
+  },
+  mounted: function () {
+    // constructs page title in the following format "Page Title - AppName"
+    document.title = this.appName;
   },
 };
 </script>

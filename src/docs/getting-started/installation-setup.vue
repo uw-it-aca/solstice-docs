@@ -3,11 +3,15 @@
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/start/">Getting Started</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Developers</li>
+          <li class="breadcrumb-item">
+            <a href="/getting-started/">Getting Started</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
         </ol>
       </nav>
-      <h1>Developers</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi
@@ -154,7 +158,14 @@ export default {
   name: "DocsDevelopmentIndex",
   components: { Layout, CodeBlock },
   data() {
-    return {};
+    return {
+      appName: "Solstice",
+      pageTitle: "Installation & Setup",
+    };
+  },
+  mounted: function () {
+    // constructs page title in the following format "Page Title - AppName"
+    document.title = this.pageTitle + " - " + this.appName;
   },
 };
 </script>

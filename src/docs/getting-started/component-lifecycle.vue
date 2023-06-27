@@ -3,11 +3,15 @@
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/start/">Getting Started</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Designers</li>
+          <li class="breadcrumb-item">
+            <a href="/getting-started/">Getting Started</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
         </ol>
       </nav>
-      <h1>Designers</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum,
@@ -65,7 +69,14 @@ export default {
   name: "DocsDesignersIndex",
   components: { Layout },
   data() {
-    return {};
+    return {
+      appName: "Solstice",
+      pageTitle: "Component Lifecycle",
+    };
+  },
+  mounted: function () {
+    // constructs page title in the following format "Page Title - AppName"
+    document.title = this.pageTitle + " - " + this.appName;
   },
 };
 </script>

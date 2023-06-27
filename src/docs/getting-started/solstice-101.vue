@@ -3,12 +3,16 @@
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/start/">Getting Started</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Priciples</li>
+          <li class="breadcrumb-item">
+            <a href="/getting-started/">Getting Started</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
         </ol>
       </nav>
 
-      <h1>Principles</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Principles are the foundation of the system. They form the basis of a
@@ -47,7 +51,14 @@ export default {
   name: "DocsPrinciples",
   components: { Layout },
   data() {
-    return {};
+    return {
+      appName: "Solstice",
+      pageTitle: "Solstice 101",
+    };
+  },
+  mounted: function () {
+    // constructs page title in the following format "Page Title - AppName"
+    document.title = this.pageTitle + " - " + this.appName;
   },
 };
 </script>

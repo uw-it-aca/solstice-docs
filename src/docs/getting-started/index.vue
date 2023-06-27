@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <template #content>
-      <h1>Getting Started</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
@@ -31,7 +31,14 @@ export default {
   name: "DocsDevelopersIndex",
   components: { Layout },
   data() {
-    return {};
+    return {
+      appName: "Solstice",
+      pageTitle: "Getting Started",
+    };
+  },
+  mounted: function () {
+    // constructs page title in the following format "Page Title - AppName"
+    document.title = this.pageTitle + " - " + this.appName;
   },
 };
 </script>

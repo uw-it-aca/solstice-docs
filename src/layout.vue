@@ -1,8 +1,8 @@
 <template>
   <sol-sidebar
     :app-name="'Solstice'"
-    :user-name="'javerage'"
-    :app-root-url="'/'"
+    :app-root-url="appRootUrl"
+    :page-title="pageTitle"
   >
     <template #profile>
       <div class="text-light">Latest: v.1.1.0</div>
@@ -34,10 +34,7 @@
               </li>
             </ul>
           </ul>
-          <div>
-            Copyright &copy; {{ new Date().getFullYear() }} University of
-            Washington
-          </div>
+          <div>Copyright &copy; {{ currentYear }} University of Washington</div>
         </div>
 
         <div><axdd-color-mode></axdd-color-mode></div>
@@ -55,6 +52,23 @@ export default {
   components: {
     NavMenu,
     ReleaseNotes,
+  },
+  data: function () {
+    return {
+      // minimum application setup overrides
+      appName: "Solstice",
+      pageTitle: "Home",
+      appRootUrl: "/",
+      signOutUrl: "/signout",
+      userNetid: "myusername",
+      userOfficial: "MYOFFICAL NAME",
+      userPreferred: "Preferred Name",
+      currentYear: new Date().getFullYear(),
+    };
+  },
+  mounted: function () {
+    // constructs page title in the following format "Page Title - AppName"
+    document.title = this.pageTitle + " - " + this.appName;
   },
 };
 </script>
