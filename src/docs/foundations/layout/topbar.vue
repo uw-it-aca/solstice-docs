@@ -1,17 +1,21 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
           <li class="breadcrumb-item">
-            <a href="/patterns/layouts">Layouts</a>
+            <a href="/foundations/">Foundations</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Topbar</li>
+          <li class="breadcrumb-item">
+            <a href="/foundations/layout/">Layout</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
         </ol>
       </nav>
 
-      <h1 class="fw-bold">Topbar</h1>
+      <h1 class="fw-bold">{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Patterns are UI Patterns that fall on the more complex side of the
@@ -290,7 +294,9 @@ export default {
     CodeBlock,
   },
   data() {
-    return {};
+    return {
+      pageTitle: "Topbar",
+    };
   },
 };
 </script>

@@ -39,7 +39,7 @@
           </p>
 
           <p>
-            <router-link to="/getting-started/solstice-101"
+            <router-link to="/start/solstice-101"
               >Learn about our design system</router-link
             >
           </p>
@@ -55,7 +55,9 @@
               applications as well as creating brand new applications.
             </p>
             <div class="text-end">
-              <router-link to="/start/designers">View Designers</router-link>
+              <router-link to="/start/component-lifecycle"
+                >View Component Lifecycle</router-link
+              >
             </div>
           </axdd-panel>
         </div>
@@ -67,7 +69,7 @@
               applications as well as creating brand new applications.
             </p>
             <div class="text-end">
-              <router-link to="/getting-started/installation-setup"
+              <router-link to="/start/installation-setup"
                 >View Installation &amp; Setup</router-link
               >
             </div>
@@ -136,12 +138,11 @@ export default {
   },
   data() {
     return {
-      appName: "Solstice",
       pageTitle: "Solstice Design System",
     };
   },
+  // MARK: override layout pageTitle prop
   mounted: function () {
-    // constructs page title in the following format "Page Title - AppName"
     document.title = this.appName;
   },
 };

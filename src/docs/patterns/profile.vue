@@ -1,17 +1,16 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/layout/">Layout</a>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Profile</li>
         </ol>
       </nav>
 
-      <h1>Profile</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Profile Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
@@ -101,8 +100,8 @@
 </template>
 
 <script>
-import Layout from "../../../layout.vue";
-import CodeBlock from "../../../components/CodeBlock.vue";
+import Layout from "../../layout.vue";
+import CodeBlock from "../../components/CodeBlock.vue";
 
 export default {
   name: "DocsPatternsTabs",
@@ -111,7 +110,9 @@ export default {
     CodeBlock,
   },
   data() {
-    return {};
+    return {
+      pageTitle: "Profile",
+    };
   },
 };
 </script>

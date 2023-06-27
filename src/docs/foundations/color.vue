@@ -1,15 +1,18 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
             <a href="/foundations/">Foundations</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Color</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
         </ol>
       </nav>
-      <h2>Color</h2>
+
+      <h2>{{ pageTitle }}</h2>
 
       <p class="p-0 col-md-8 lead text-muted">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
@@ -223,7 +226,9 @@ export default {
   name: "DocsElementsIndex",
   components: { Layout, CodeBlock },
   data() {
-    return {};
+    return {
+      pageTitle: "Color",
+    };
   },
 };
 </script>

@@ -4,11 +4,11 @@
       <router-link
         class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
         active-class="bg-black bg-opacity-10"
-        to="/getting-started/"
+        to="/start/"
         id="flush-heading2"
         data-bs-toggle="collapse"
         data-bs-target="#flush-collapse2"
-        :aria-expanded="$route.path.includes('/getting-started') ? true : false"
+        :aria-expanded="$route.path.includes('/start') ? true : false"
         aria-controls="flush-collapse2"
       >
         <span>Getting Started</span>
@@ -17,7 +17,7 @@
       <div
         id="flush-collapse2"
         class="collapse"
-        :class="$route.path.includes('/getting-started') ? 'show' : ''"
+        :class="$route.path.includes('/start') ? 'show' : ''"
         aria-labelledby="flush-heading2"
       >
         <ul class="nav flex-column small mt-1">
@@ -25,7 +25,7 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/getting-started/solstice-101"
+              to="/start/solstice-101"
               >Solstice 101</router-link
             >
           </li>
@@ -33,7 +33,7 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/getting-started/component-lifecycle"
+              to="/start/component-lifecycle"
               >Component Lifecyle</router-link
             >
           </li>
@@ -41,7 +41,7 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/getting-started/installation-setup"
+              to="/start/installation-setup"
               >Installation &amp; Setup</router-link
             >
           </li>
@@ -59,7 +59,7 @@
         :aria-expanded="$route.path.includes('/content') ? true : false"
         aria-controls="flush-collapse3"
       >
-        <span>Content</span>
+        <span>Content Guidelines</span>
         <i class="bi bi-chevron-right" aria-hidden="true"></i>
       </router-link>
       <div
@@ -73,7 +73,7 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/content/voice"
+              to="/content/voice-tone"
               >Voice &amp; Tone</router-link
             >
           </li>
@@ -81,7 +81,7 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/content/grammar"
+              to="/content/grammar-mechanics"
               >Grammar &amp; Mechanics</router-link
             >
           </li>
@@ -89,7 +89,7 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/content/language"
+              to="/content/language-inclusivity"
               >Language &amp; Inclusivity</router-link
             >
           </li>
@@ -97,24 +97,16 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/content/errors"
-              >Errors</router-link
+              to="/content/terminology"
+              >Terminology</router-link
             >
           </li>
           <li class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/content/state"
-              >Page State</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link
-              class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
-              active-class="bg-black bg-opacity-10"
-              to="/content/onboarding"
-              >Onboarding</router-link
+              to="/content/labels"
+              >Labels</router-link
             >
           </li>
         </ul>
@@ -162,7 +154,7 @@
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
               to="/foundations/layout"
-              >Layout &amp; Grid</router-link
+              >Layout</router-link
             >
           </li>
         </ul>
@@ -229,6 +221,22 @@
               active-class="bg-black bg-opacity-10"
               to="/patterns/feedback"
               >Feedback</router-link
+            >
+          </li>
+          <li class="nav-item mb-1">
+            <router-link
+              class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
+              active-class="bg-black bg-opacity-10"
+              to="/patterns/profile"
+              >Profile</router-link
+            >
+          </li>
+          <li class="nav-item mb-1">
+            <router-link
+              class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
+              active-class="bg-black bg-opacity-10"
+              to="/patterns/color-mode"
+              >Color Mode</router-link
             >
           </li>
         </ul>

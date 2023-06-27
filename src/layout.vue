@@ -1,9 +1,5 @@
 <template>
-  <sol-sidebar
-    :app-name="'Solstice'"
-    :app-root-url="appRootUrl"
-    :page-title="pageTitle"
-  >
+  <sol-sidebar :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
     <template #profile>
       <div class="text-light">Latest: v.1.1.0</div>
     </template>
@@ -53,21 +49,19 @@ export default {
     NavMenu,
     ReleaseNotes,
   },
+  props: {
+    pageTitle: {
+      type: String,
+      default: "Not specified",
+      required: false,
+    },
+  },
   data: function () {
-    return {
-      // minimum application setup overrides
-      appName: "Solstice",
-      pageTitle: "Home",
-      appRootUrl: "/",
-      signOutUrl: "/signout",
-      userNetid: "myusername",
-      userOfficial: "MYOFFICAL NAME",
-      userPreferred: "Preferred Name",
-      currentYear: new Date().getFullYear(),
-    };
+    return {};
   },
   mounted: function () {
-    // constructs page title in the following format "Page Title - AppName"
+    // MARK: constructs page title in the following format "Page Title - AppName"
+    // as a default layout prop
     document.title = this.pageTitle + " - " + this.appName;
   },
 };

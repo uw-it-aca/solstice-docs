@@ -1,28 +1,50 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Layout</li>
+          <li class="breadcrumb-item">
+            <a href="/foundations/">Foundations</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
         </ol>
       </nav>
 
-      <h1 class="fw-bold">Layout</h1>
+      <h1 class="fw-bold">{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
-        Patterns are UI Patterns that fall on the more complex side of the
-        spectrum. Date pickers, data tables, and visualizations are good
-        examples. Patterns utilize both elements and design tokens.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+        quasi perspiciatis nostrum quidem ipsam. Dolorum placeat facilis
+        officiis iure sint natus necessitatibus cum sequi provident similique
+        amet quisquam, repellat enim?
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />
+
+      <p class="col-md-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorum
+        delectus tempora totam corrupti maxime, quam repellendus a. A similique
+        laborum numquam illo corrupti inventore sunt in quaerat quibusdam
+        accusantium.
+      </p>
+
+      <p class="col-md-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorum
+        delectus tempora totam corrupti maxime, quam repellendus a. A similique
+        laborum numquam illo corrupti inventore sunt in quaerat quibusdam
+        accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Asperiores fuga eum velit quae sint obcaecati labore, excepturi nulla
+        voluptatem deleniti, repellendus rem aliquid molestias nihil sit
+        debitis, soluta itaque officia?
+      </p>
 
       <ul class="row list-unstyled">
         <li class="col-4">
           <CompDescription
             :name="'Topbar'"
-            :link="'/patterns/layout/topbar'"
+            :link="'/foundations/layout/topbar'"
             :accessibility="true"
             :version="'1.0.5'"
           ></CompDescription>
@@ -30,23 +52,7 @@
         <li class="col-4">
           <CompDescription
             :name="'Sidebar'"
-            :link="'/patterns/layout/sidebar'"
-            :accessibility="true"
-            :version="'1.0.5'"
-          ></CompDescription>
-        </li>
-        <li class="col-4">
-          <CompDescription
-            :name="'Profile'"
-            :link="'/patterns/layout/profile'"
-            :accessibility="true"
-            :version="'1.0.5'"
-          ></CompDescription>
-        </li>
-        <li class="col-4">
-          <CompDescription
-            :name="'Color Mode'"
-            :link="'/patterns/layout/color-mode'"
+            :link="'/foundations/layout/sidebar'"
             :accessibility="true"
             :version="'1.0.5'"
           ></CompDescription>
@@ -69,7 +75,9 @@ export default {
     CompDescription,
   },
   data() {
-    return {};
+    return {
+      pageTitle: "Layout",
+    };
   },
 };
 </script>
