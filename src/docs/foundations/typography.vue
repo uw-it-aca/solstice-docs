@@ -74,7 +74,7 @@ import Layout from "../../layout.vue";
 import CodeBlock from "../../components/CodeBlock.vue";
 
 export default {
-  name: "DocsFoundationsTypography",
+  name: "DocsTypography",
   components: { Layout, CodeBlock },
   data() {
     return {

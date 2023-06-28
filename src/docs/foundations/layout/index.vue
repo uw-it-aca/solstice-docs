@@ -69,7 +69,7 @@ import Layout from "../../../layout.vue";
 import CompDescription from "../../../components/CompDescription.vue";
 
 export default {
-  name: "DocsPatternsLayouts",
+  name: "DocsLayout",
   components: {
     Layout,
     CompDescription,

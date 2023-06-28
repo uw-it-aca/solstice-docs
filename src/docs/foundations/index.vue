@@ -67,7 +67,7 @@ import Layout from "../../layout.vue";
 //import VersionBadge from "../../components/VersionBadge.vue";
 
 export default {
-  name: "DocsTokensIndex",
+  name: "DocsFoundations",
   components: {
     Layout,
     //CodeBlock,

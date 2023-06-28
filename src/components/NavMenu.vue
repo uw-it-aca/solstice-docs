@@ -4,11 +4,11 @@
       <router-link
         class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
         active-class="bg-black bg-opacity-10"
-        to="/start/"
+        to="/getting-started/"
         id="flush-heading2"
         data-bs-toggle="collapse"
         data-bs-target="#flush-collapse2"
-        :aria-expanded="$route.path.includes('/start') ? true : false"
+        :aria-expanded="$route.path.includes('/getting-started') ? true : false"
         aria-controls="flush-collapse2"
       >
         <span>Getting Started</span>
@@ -17,7 +17,7 @@
       <div
         id="flush-collapse2"
         class="collapse"
-        :class="$route.path.includes('/start') ? 'show' : ''"
+        :class="$route.path.includes('/getting-started') ? 'show' : ''"
         aria-labelledby="flush-heading2"
       >
         <ul class="nav flex-column small mt-1">
@@ -25,7 +25,7 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/start/solstice-101"
+              to="/getting-started/solstice-101"
               >Solstice 101</router-link
             >
           </li>
@@ -33,7 +33,7 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/start/component-lifecycle"
+              to="/getting-started/component-lifecycle"
               >Component Lifecyle</router-link
             >
           </li>
@@ -41,7 +41,7 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/start/installation-setup"
+              to="/getting-started/installation-setup"
               >Installation &amp; Setup</router-link
             >
           </li>
@@ -137,6 +137,14 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
+              to="/foundations/design-principles"
+              >Design Principles</router-link
+            >
+          </li>
+          <li class="nav-item mb-1">
+            <router-link
+              class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
+              active-class="bg-black bg-opacity-10"
               to="/foundations/color"
               >Color</router-link
             >
@@ -161,7 +169,7 @@
       </div>
     </li>
 
-    <li class="nav-item mb-1">
+    <li v-show="false" class="nav-item mb-1">
       <router-link
         class="nav-link rounded-3 text-light bg-black-hover bg-opacity-10-hover"
         active-class="bg-black bg-opacity-10"
@@ -169,7 +177,7 @@
         >Elements</router-link
       >
     </li>
-    <li class="nav-item mb-1">
+    <li v-show="false" class="nav-item mb-1">
       <router-link
         class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
         active-class="bg-black bg-opacity-10"

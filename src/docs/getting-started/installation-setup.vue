@@ -4,7 +4,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="/start/">Getting Started</a>
+            <a href="/getting-started/">Getting Started</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
@@ -155,7 +155,7 @@ import Layout from "../../layout.vue";
 import CodeBlock from "../../components/CodeBlock.vue";
 
 export default {
-  name: "DocsDevelopmentIndex",
+  name: "DocsInstallationSetup",
   components: { Layout, CodeBlock },
   data() {
     return {

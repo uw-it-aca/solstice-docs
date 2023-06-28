@@ -261,7 +261,7 @@ import Layout from "../../../layout.vue";
 import CodeBlock from "../../../components/CodeBlock.vue";
 
 export default {
-  name: "DocsPatternsLayouts",
+  name: "DocsSidebar",
   components: {
     Layout,
     CodeBlock,

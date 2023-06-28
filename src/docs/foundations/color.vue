@@ -223,7 +223,7 @@ import Layout from "../../layout.vue";
 import CodeBlock from "../../components/CodeBlock.vue";
 
 export default {
-  name: "DocsElementsIndex",
+  name: "DocsColor",
   components: { Layout, CodeBlock },
   data() {
     return {
