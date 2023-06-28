@@ -1,13 +1,17 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/content/">Content</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Errors</li>
+          <li class="breadcrumb-item">
+            <a href="/content/">Content Guidelines</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
         </ol>
       </nav>
-      <h1>Errors</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
@@ -37,7 +41,9 @@ export default {
   name: "DocsPatternsMessaging",
   components: { Layout },
   data() {
-    return {};
+    return {
+      pageTitle: "Language & Inclusivity",
+    };
   },
 };
 </script>

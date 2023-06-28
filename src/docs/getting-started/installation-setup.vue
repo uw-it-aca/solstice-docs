@@ -1,13 +1,17 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/start/">Getting Started</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Developers</li>
+          <li class="breadcrumb-item">
+            <a href="/getting-started/">Getting Started</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
         </ol>
       </nav>
-      <h1>Developers</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi
@@ -151,10 +155,12 @@ import Layout from "../../layout.vue";
 import CodeBlock from "../../components/CodeBlock.vue";
 
 export default {
-  name: "DocsDevelopmentIndex",
+  name: "DocsInstallationSetup",
   components: { Layout, CodeBlock },
   data() {
-    return {};
+    return {
+      pageTitle: "Installation & Setup",
+    };
   },
 };
 </script>

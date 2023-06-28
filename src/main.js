@@ -28,5 +28,8 @@ app.component("mq-responsive", MqResponsive);
 // axdd-components
 app.use(AxddComponents);
 
+// declar global properties here
+app.config.globalProperties.appName = "Solstice";
+
 app.use(router);
 app.mount("#app");

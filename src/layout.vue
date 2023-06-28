@@ -1,9 +1,5 @@
 <template>
-  <sol-sidebar
-    :app-name="'Solstice'"
-    :user-name="'javerage'"
-    :app-root-url="'/'"
-  >
+  <sol-sidebar :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
     <template #profile>
       <div class="text-light">Latest: v.1.1.0</div>
     </template>
@@ -34,10 +30,7 @@
               </li>
             </ul>
           </ul>
-          <div>
-            Copyright &copy; {{ new Date().getFullYear() }} University of
-            Washington
-          </div>
+          <div>Copyright &copy; {{ currentYear }} University of Washington</div>
         </div>
 
         <div><axdd-color-mode></axdd-color-mode></div>
@@ -55,6 +48,21 @@ export default {
   components: {
     NavMenu,
     ReleaseNotes,
+  },
+  props: {
+    pageTitle: {
+      type: String,
+      default: "Not specified",
+      required: false,
+    },
+  },
+  data: function () {
+    return {};
+  },
+  mounted: function () {
+    // MARK: constructs page title in the following format "Page Title - AppName"
+    // as a default layout prop
+    document.title = this.pageTitle + " - " + this.appName;
   },
 };
 </script>

@@ -1,15 +1,17 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
             <a href="/foundations/">Foundations</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Typography</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
         </ol>
       </nav>
-      <h1>Typography</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         The Solstice Design System uses Encode Sans Regular as a primary
@@ -72,10 +74,12 @@ import Layout from "../../layout.vue";
 import CodeBlock from "../../components/CodeBlock.vue";
 
 export default {
-  name: "DocsFoundationsTypography",
+  name: "DocsTypography",
   components: { Layout, CodeBlock },
   data() {
-    return {};
+    return {
+      pageTitle: "Typography",
+    };
   },
 };
 </script>

@@ -1,13 +1,16 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/content/">Content</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Page State</li>
+          <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
         </ol>
       </nav>
-      <h1>Page State</h1>
+
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
@@ -24,6 +27,8 @@
         accusantium assumenda, odio neque nobis quo inventore dolorum,
         architecto velit magni rem odit?
       </p>
+
+      <axdd-color-mode></axdd-color-mode>
     </template>
     <template #author>Charlon Palacay</template>
     <template #modified>November 11, 2022</template>
@@ -37,7 +42,9 @@ export default {
   name: "DocsPatternsMessaging",
   components: { Layout },
   data() {
-    return {};
+    return {
+      pageTitle: "Color Mode",
+    };
   },
 };
 </script>

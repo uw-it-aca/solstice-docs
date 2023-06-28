@@ -1,16 +1,18 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/content/">Content</a></li>
+          <li class="breadcrumb-item">
+            <a href="/content/">Content Guidelines</a>
+          </li>
           <li class="breadcrumb-item active" aria-current="page">
-            Voice &amp; Tone
+            {{ pageTitle }}
           </li>
         </ol>
       </nav>
 
-      <h1>Voice &amp; Tone</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Through this guide you will learn how to apply Solstice Design's voice
@@ -44,7 +46,9 @@ export default {
   name: "DocsContentVoice",
   components: { Layout },
   data() {
-    return {};
+    return {
+      pageTitle: "Voice & Tone",
+    };
   },
 };
 </script>

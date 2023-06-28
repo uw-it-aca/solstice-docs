@@ -1,7 +1,7 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
-      <h1>Foundations</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Foundations are Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -54,6 +54,9 @@
 
       <h2>Typography</h2>
       <p>Go to <a href="/foundations/typography">Typography</a></p>
+
+      <h2>Layout</h2>
+      <p>Go to <a href="/foundations/layout/">Layout</a></p>
     </template>
   </Layout>
 </template>
@@ -64,14 +67,16 @@ import Layout from "../../layout.vue";
 //import VersionBadge from "../../components/VersionBadge.vue";
 
 export default {
-  name: "DocsTokensIndex",
+  name: "DocsFoundations",
   components: {
     Layout,
     //CodeBlock,
     //VersionBadge,
   },
   data() {
-    return {};
+    return {
+      pageTitle: "Foundations",
+    };
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
-      <h1>Content</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi
@@ -13,8 +13,14 @@
       <hr class="mb-5 w-25 d-inline-block" />
 
       <h2>Voice and Tone</h2>
-      <p>Go read about <a href="/content/voice">voice and tone</a></p>
+      <p>Go read about <a href="/content/voice-tone">voice and tone</a></p>
+
       <h2>Grammar and mechanics</h2>
+      <p>
+        Go read about
+        <a href="/content/grammar-mechanics">grammar and mechanics</a>
+      </p>
+
       <h2>Language and inclusivity</h2>
       <p>
         <a href="https://itconnect.uw.edu/work/inclusive-language-guide/"
@@ -45,7 +51,9 @@ export default {
   name: "DocsContentIndex",
   components: { Layout },
   data() {
-    return {};
+    return {
+      pageTitle: "Content Guidelines",
+    };
   },
 };
 </script>
