@@ -4,7 +4,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="/foundations/">Foundations</a>
+            <a href="/foundations/" class="link-primary">Foundations</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
@@ -24,6 +24,7 @@
       <p>
         <a
           href="https://getbootstrap.com/docs/5.1/customize/color/"
+          class="link-primary"
           target="_blank"
           >https://getbootstrap.com/docs/5.1/customize/color/</a
         >
@@ -37,6 +38,7 @@
         <li>
           <a
             href="https://getbootstrap.com/docs/5.1/utilities/background/"
+            class="link-primary"
             target="_blank"
             >https://getbootstrap.com/docs/5.1/utilities/background/</a
           >
@@ -44,6 +46,7 @@
         <li>
           <a
             href="https://getbootstrap.com/docs/5.1/utilities/borders/#border-color"
+            class="link-primary"
             target="_blank"
           >
             https://getbootstrap.com/docs/5.1/utilities/borders/#border-color</a
@@ -52,6 +55,7 @@
         <li>
           <a
             href="https://getbootstrap.com/docs/5.1/utilities/colors/"
+            class="link-primary"
             target="_blank"
             >https://getbootstrap.com/docs/5.1/utilities/colors/</a
           >
@@ -59,6 +63,7 @@
         <li>
           <a
             href="https://getbootstrap.com/docs/5.1/components/alerts/"
+            class="link-primary"
             target="_blank"
             >https://getbootstrap.com/docs/5.1/components/alerts/</a
           >
@@ -67,13 +72,14 @@
 
       <p>Example: bg-xxxxx and text-xxxxx</p>
 
+      <h3>Deprecated Colors</h3>
       <CodeBlock>
         <template #preview>
           <ul class="list-inline m-0">
             <li class="list-inline-item">
               <div
                 class="text-bg-dark-purple rounded p-2"
-                style="width: 85px; height: 60px"
+                style="width: 95px; height: 60px"
               >
                 hello
               </div>
@@ -85,7 +91,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-purple rounded p-2"
-                style="width: 85px; height: 60px"
+                style="width: 95px; height: 60px"
               >
                 hello
               </div>
@@ -97,7 +103,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-dark-beige rounded p-2"
-                style="width: 85px; height: 60px"
+                style="width: 95px; height: 60px"
               >
                 hello
               </div>
@@ -109,7 +115,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-mid-beige rounded p-2"
-                style="width: 85px; height: 60px"
+                style="width: 95px; height: 60px"
               >
                 hello
               </div>
@@ -121,7 +127,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-beige rounded p-2"
-                style="width: 85px; height: 60px"
+                style="width: 95px; height: 60px"
               >
                 hello
               </div>
@@ -133,7 +139,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-light-beige rounded p-2"
-                style="width: 85px; height: 60px"
+                style="width: 95px; height: 60px"
               >
                 hello
               </div>
@@ -145,7 +151,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-gold rounded p-2"
-                style="width: 85px; height: 60px"
+                style="width: 95px; height: 60px"
               >
                 hello
               </div>
@@ -157,7 +163,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-teal rounded p-2"
-                style="width: 85px; height: 60px"
+                style="width: 95px; height: 60px"
               >
                 hello
               </div>
@@ -169,7 +175,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-light-gray rounded p-2"
-                style="width: 85px; height: 60px"
+                style="width: 95px; height: 60px"
               >
                 hello
               </div>
@@ -181,7 +187,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-gray rounded p-2"
-                style="width: 85px; height: 60px"
+                style="width: 95px; height: 60px"
               >
                 hello
               </div>
@@ -193,7 +199,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-dark bg-opacity-10 rounded p-2"
-                style="width: 85px; height: 60px"
+                style="width: 95px; height: 60px"
               >
                 hello
               </div>
@@ -212,6 +218,90 @@
 ...</code></pre>
         </template>
       </CodeBlock>
+
+      <h3>Updated Theme Colors</h3>
+
+      <h4>Call to Action</h4>
+      <ul class="list-inline m-0">
+        <li class="list-inline-item">
+          <div
+            class="text-bg-primary rounded p-2"
+            style="width: 95px; height: 60px"
+          >
+            primary
+          </div>
+          <small> #2f68cb</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-secondary rounded p-2"
+            style="width: 95px; height: 60px"
+          >
+            secondary
+          </div>
+          <small> #6c757d</small>
+        </li>
+      </ul>
+      <h4>Semantic</h4>
+      <ul class="list-inline m-0">
+        <li class="list-inline-item">
+          <div
+            class="text-bg-success rounded p-2"
+            style="width: 95px; height: 60px"
+          >
+            success
+          </div>
+          <small> #198754</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-danger rounded p-2"
+            style="width: 95px; height: 60px"
+          >
+            danger
+          </div>
+          <small> #dc3545</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-warning rounded p-2"
+            style="width: 95px; height: 60px"
+          >
+            warning
+          </div>
+          <small> #4c7286</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-info rounded p-2"
+            style="width: 95px; height: 60px"
+          >
+            info
+          </div>
+          <small> #0dcaf0</small>
+        </li>
+      </ul>
+      <h4>Surfaces</h4>
+      <ul class="list-inline m-0">
+        <li class="list-inline-item">
+          <div
+            class="text-bg-light rounded p-2"
+            style="width: 95px; height: 60px"
+          >
+            light
+          </div>
+          <small> #f8f9fa</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-dark rounded p-2"
+            style="width: 95px; height: 60px"
+          >
+            dark
+          </div>
+          <small> #212529</small>
+        </li>
+      </ul>
     </template>
     <template #author>Charlon Palacay</template>
     <template #modified>November 11, 2022</template>
