@@ -13,7 +13,7 @@
       <slot name="content" />
       <div v-if="$slots['author']" class="py-1 small text-end">
         <div class="text-muted">
-          Last modified <slot name="modified" /> by <slot name="author" />
+          Last modified {{ lastModified }} by <slot name="author" />
         </div>
       </div>
     </template>
@@ -47,8 +47,8 @@
 </template>
 
 <script>
-import NavMenu from "./components/NavMenu.vue";
-import ReleaseNotes from "./components/ReleaseNotes.vue";
+import NavMenu from "@/components/NavMenu.vue";
+import ReleaseNotes from "@/components/ReleaseNotes.vue";
 
 export default {
   name: "App",
@@ -64,12 +64,17 @@ export default {
     },
   },
   data: function () {
-    return {};
+    return {
+      // automatically set year
+      currentYear: new Date().getFullYear(),
+      lastModified: null,
+    };
   },
   mounted: function () {
     // MARK: constructs page title in the following format "Page Title - AppName"
     // as a default layout prop
     document.title = this.pageTitle + " - " + this.appName;
+    this.lastModified = new Date(document.lastModified).toLocaleString();
   },
 };
 </script>
