@@ -4,7 +4,7 @@ import { Vue3Mq, MqResponsive } from "vue3-mq";
 
 import App from "@/app.vue";
 import router from "@/router";
-import { routes } from "vue-router/auto/routes";
+
 // bootstrap js + icons
 import "bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -32,7 +32,7 @@ app.use(AxddComponents);
 // declar global properties here
 app.config.globalProperties.appName = "Solstice";
 
-// auto router
+// unplugin-vue-router (auto page routing)
 app.use(router);
 
 app.mount("#app");
