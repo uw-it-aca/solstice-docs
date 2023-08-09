@@ -70,11 +70,12 @@ import AxddComponents from "axdd-components";
 import "bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-// app bootstrap scss entry
-import "../path/to/css/styles.scss";
-
-// axdd-component css
+// solstice-components styles + bootstrap customizations
 import "axdd-components/dist/style.css";
+import "axdd-components/dist/custom.scss";
+
+// local app styles
+import "@/path/to/css/styles.scss";
 
 const app = createApp(App);
 app.use(AxddComponents);
