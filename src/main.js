@@ -1,9 +1,10 @@
 import { createApp } from "vue";
-import App from "./app.vue";
-import router from "./router";
 import AxddComponents from "axdd-components";
 import { Vue3Mq, MqResponsive } from "vue3-mq";
 
+import App from "@/app.vue";
+import router from "@/router";
+import { routes } from "vue-router/auto/routes";
 // bootstrap js + icons
 import "bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -13,7 +14,7 @@ import "axdd-components/dist/style.css";
 import "axdd-components/dist/custom.scss";
 
 // app specific scss
-//import "../src/assets/css/styles.scss";
+//import "@/assets/css/styles.scss";
 
 const app = createApp(App);
 
@@ -31,5 +32,7 @@ app.use(AxddComponents);
 // declar global properties here
 app.config.globalProperties.appName = "Solstice";
 
+// auto router
 app.use(router);
+
 app.mount("#app");

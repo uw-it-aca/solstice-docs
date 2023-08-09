@@ -47,8 +47,8 @@
 </template>
 
 <script>
-import NavMenu from "./components/NavMenu.vue";
-import ReleaseNotes from "./components/ReleaseNotes.vue";
+import NavMenu from "@/components/NavMenu.vue";
+import ReleaseNotes from "@/components/ReleaseNotes.vue";
 
 export default {
   name: "App",

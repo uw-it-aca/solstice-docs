@@ -198,7 +198,6 @@
         aria-labelledby="flush-heading1"
       >
         <ul class="nav flex-column small fw-light mt-1">
-
           <li class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
