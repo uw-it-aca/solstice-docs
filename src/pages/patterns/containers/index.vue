@@ -51,6 +51,7 @@
         </li>
       </ul>
     </template>
+    <template #author>Your Name</template>
   </Layout>
 </template>
 

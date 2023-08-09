@@ -124,7 +124,6 @@
       </div>
     </template>
     <template #author>Charlon Palacay</template>
-    <template #modified>{{ lastModified }}</template>
   </Layout>
 </template>
 
@@ -139,18 +138,12 @@ export default {
   data() {
     return {
       pageTitle: "Solstice Design System",
-      lastModified: null,
     };
   },
-  methods: {
-    updateLastModified() {
-      this.lastModified = new Date().toLocaleString();
-    },
-  },
+  methods: {},
   // MARK: override layout pageTitle prop
   mounted: function () {
     document.title = this.appName;
-    this.lastModified = new Date(document.lastModified).toLocaleString();
   },
 };
 </script>

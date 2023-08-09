@@ -146,7 +146,6 @@ app.use(AxddComponents);
       <h2>AXDD Django Vue</h2>
     </template>
     <template #author>Charlon Palacay</template>
-    <template #modified>November 11, 2022</template>
   </Layout>
 </template>
 

@@ -65,7 +65,6 @@
       </CodeBlock>
     </template>
     <template #author>Your Name</template>
-    <template #modified>May 3, 2023</template>
   </Layout>
 </template>
 
