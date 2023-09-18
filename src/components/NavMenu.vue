@@ -169,7 +169,7 @@
       </div>
     </li>
 
-    <li v-show="false" class="nav-item mb-1">
+    <li class="nav-item mb-1">
       <router-link
         class="nav-link rounded-3 text-light bg-black-hover bg-opacity-10-hover"
         active-class="bg-black bg-opacity-10"

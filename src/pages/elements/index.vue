@@ -11,13 +11,13 @@
 
       <hr class="mb-5 w-25 d-inline-block" />
 
-      <h2>Heading</h2>
-
-      <h2>Paragraph</h2>
-
-      <h2>Lists</h2>
+      <h2>Link</h2>
+      <p>Go to <a href="/elements/link">Link</a></p>
 
       <h2>Button</h2>
+
+      <h2>Heading</h2>
+      <h2>Paragraph</h2>
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>

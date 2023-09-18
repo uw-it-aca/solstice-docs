@@ -11,11 +11,6 @@
     </template>
     <template #main>
       <slot name="content" />
-      <div v-if="$slots['author']" class="py-1 small text-end">
-        <div class="text-muted">
-          Last modified {{ lastModified }} by <slot name="author" />
-        </div>
-      </div>
     </template>
     <template #footer>
       <div class="d-flex justify-content-between">
