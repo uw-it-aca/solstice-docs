@@ -12,7 +12,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "@vueuse/core": "^9.10.0",
-    "axdd-components": "github:uw-it-aca/axdd-components#develop",
+    "solstice-vue": "github:uw-it-aca/solstice-vue#develop",
     "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.10.5",
     "jquery": "^3.6.1",

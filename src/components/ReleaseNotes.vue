@@ -8,7 +8,7 @@
     </p>
     <p>
       <a
-        href="https://github.com/uw-it-aca/axdd-components/releases"
+        href="https://github.com/uw-it-aca/solstice-vue/releases"
         target="_blank"
         class="text-reset"
         >View GitHub Release notes</a

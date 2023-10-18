@@ -48,7 +48,7 @@
 
       <div class="row mb-5">
         <div class="col d-flex flex-column">
-          <axdd-panel class="bg-secondary-subtle flex-fill">
+          <axdd-panel class="bg-body-tertiary flex-fill">
             <h3 class="card-title">Component Lifecycle</h3>
             <p class="flex-fill">
               Learn how to create global components that can be used by other
@@ -62,7 +62,7 @@
           </axdd-panel>
         </div>
         <div class="col d-flex flex-column">
-          <axdd-panel class="bg-secondary-subtle flex-fill">
+          <axdd-panel class="bg-body-tertiary flex-fill">
             <h3 class="card-title">Installation &amp; Setup</h3>
             <p>
               Learn how to create global components that can be used by other

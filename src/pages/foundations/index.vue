@@ -57,6 +57,10 @@
 
       <h2>Layout</h2>
       <p>Go to <a href="/foundations/layout/">Layout</a></p>
+
+      <h2>Containers</h2>
+      <p>Go to <a href="/foundations/containers/">Containers</a></p>
+
     </template>
   </Layout>
 </template>

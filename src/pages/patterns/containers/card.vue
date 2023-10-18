@@ -39,7 +39,7 @@
         </template>
         <template #script>
           <pre class="language-js rounded">
-<code>import { Card } from "axdd-components";
+<code>import { Card } from "solstice-vue";
 
 export default {
   components: {
@@ -70,7 +70,7 @@ export default {
         </template>
         <template #script>
           <pre class="language-js rounded">
-<code>import { Card, CardHeading } from "axdd-components";
+<code>import { Card, CardHeading } from "solstice-vue";
 
 export default {
   components: {
@@ -113,7 +113,7 @@ export default {
         </template>
         <template #script>
           <pre class="language-js rounded">
-<code>import { Card, CardHeading, CardAction } from "axdd-components";
+<code>import { Card, CardHeading, CardAction } from "solstice-vue";
 
 export default {
   components: {
@@ -168,7 +168,7 @@ export default {
         </template>
         <template #script>
           <pre class="language-js rounded">
-<code>import { Card, CardHeading, CardAction } from "axdd-components";
+<code>import { Card, CardHeading, CardAction } from "solstice-vue";
 
 export default {
   components: {

@@ -46,7 +46,7 @@
             <template #script>
               <pre class="language-json rounded">
 <code>"dependencies": {
-  "axdd-components": "git+https://github.com/uw-it-aca/axdd-components.git#1.0.6",
+  "solstice-vue": "git+https://github.com/uw-it-aca/solstice-vue.git#1.0.6",
 }</code></pre>
             </template>
           </CodeBlock>
@@ -64,21 +64,21 @@
               <pre class="language-js rounded">
 <code>import { createApp } from "vue";
 import App from "./app.vue";
-import AxddComponents from "axdd-components";
+import SolsticeVue from "solstice-vue";
 
 // bootstrap js + bootstrap-icons
 import "bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 // solstice-components styles + bootstrap customizations
-import "axdd-components/dist/style.css";
-import "axdd-components/dist/custom.scss";
+import "solstice-vue/dist/style.css";
+import "solstice-vue/dist/custom.scss";
 
 // local app styles
 import "@/path/to/css/styles.scss";
 
 const app = createApp(App);
-app.use(AxddComponents);
+app.use(SolsticeVue);
 </code></pre>
             </template>
           </CodeBlock>

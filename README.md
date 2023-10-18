@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/uw-it-aca/axdd-components/badge.svg?branch=main)](https://coveralls.io/github/uw-it-aca/axdd-components?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/uw-it-aca/solstice-vue/badge.svg?branch=main)](https://coveralls.io/github/uw-it-aca/solstice-vue?branch=main)
 
 # solstice-docs
 Solstice Design System

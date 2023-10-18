@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import AxddComponents from "axdd-components";
+import SolsticeVue from "solstice-vue";
 import { Vue3Mq, MqResponsive } from "vue3-mq";
 
 import App from "@/app.vue";
@@ -9,9 +9,9 @@ import router from "@/router";
 import "bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-// axdd-components css (1.1.0 task/dark-mode)
-import "axdd-components/dist/style.css";
-import "axdd-components/dist/custom.scss";
+// solstice-vue css (1.1.0 task/dark-mode)
+import "solstice-vue/dist/style.css";
+import "solstice-vue/dist/custom.scss";
 
 // app specific scss
 //import "@/assets/css/styles.scss";
@@ -26,8 +26,8 @@ app.use(Vue3Mq, {
 });
 app.component("mq-responsive", MqResponsive);
 
-// axdd-components
-app.use(AxddComponents);
+// solstice-vue
+app.use(SolsticeVue);
 
 // declar global properties here
 app.config.globalProperties.appName = "Solstice";
