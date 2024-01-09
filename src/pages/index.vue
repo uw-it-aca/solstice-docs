@@ -5,9 +5,9 @@
 
       <p class="p-0 col-md-8 lead text-muted">
         Solstice Design is a resource for building and documenting UI components
-        using Bootstrap and Vue/React Javascript frameworks. It provides a set
-        of organized guidelines, patterns and best practices that work as the
-        foundation for application design and development at AXDD.
+        using Bootstrap. It provides a set of organized guidelines, patterns and
+        best practices that work as the foundation for application design and
+        development at Data &amp; Applications (D&amp;A).
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />
@@ -88,38 +88,40 @@
       </div>
 
       <div class="row mb-5">
-        <div class="col">
+        <div class="col d-flex flex-column">
           <h3>Content</h3>
-          <p>
+          <p class="flex-fill">
             Learn how to use language to design a more thoughtful product
             experience.
           </p>
-
-          <p>
+          <div>
             <router-link to="/content/">Read content guidelines</router-link>
-          </p>
+          </div>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column">
           <h3>Foundations</h3>
-          <p>
+          <p class="flex-fill">
             Use design foundations to ensure consistency across the application.
           </p>
-          <p>
+          <div>
             <router-link to="/foundations/">Browse foundations</router-link>
-          </p>
+          </div>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column">
           <h3>Elements</h3>
-          <p>
+          <p class="flex-fill">
             Use elements as building blocks as you design and develop new
             products and features.
           </p>
-          <p><router-link to="/elements/">Browse elements</router-link></p>
+          <div><router-link to="/elements/">Browse elements</router-link></div>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column">
           <h3>Patterns</h3>
-          <p>Patterns consist of design tokens, elements, and patterns.</p>
-          <p><router-link to="/patterns/">Browse patterns</router-link></p>
+          <p class="flex-fill">
+            Patterns consist of reusable design components that can be used to
+            create the user interface.
+          </p>
+          <div><router-link to="/patterns/">Browse patterns</router-link></div>
         </div>
       </div>
     </template>
