@@ -72,14 +72,14 @@
 
       <p>Example: bg-xxxxx and text-xxxxx</p>
 
-      <h3>Deprecated Colors</h3>
+      <h3>Historic Colors</h3>
       <CodeBlock>
         <template #preview>
           <ul class="list-inline m-0">
             <li class="list-inline-item">
               <div
                 class="text-bg-dark-purple rounded p-2"
-                style="width: 95px; height: 60px"
+                style="width: 120px; height: 60px"
               >
                 hello
               </div>
@@ -91,7 +91,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-purple rounded p-2"
-                style="width: 95px; height: 60px"
+                style="width: 120px; height: 60px"
               >
                 hello
               </div>
@@ -103,7 +103,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-dark-beige rounded p-2"
-                style="width: 95px; height: 60px"
+                style="width: 120px; height: 60px"
               >
                 hello
               </div>
@@ -115,7 +115,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-mid-beige rounded p-2"
-                style="width: 95px; height: 60px"
+                style="width: 120px; height: 60px"
               >
                 hello
               </div>
@@ -127,7 +127,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-beige rounded p-2"
-                style="width: 95px; height: 60px"
+                style="width: 120px; height: 60px"
               >
                 hello
               </div>
@@ -139,7 +139,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-light-beige rounded p-2"
-                style="width: 95px; height: 60px"
+                style="width: 120px; height: 60px"
               >
                 hello
               </div>
@@ -151,7 +151,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-gold rounded p-2"
-                style="width: 95px; height: 60px"
+                style="width: 120px; height: 60px"
               >
                 hello
               </div>
@@ -163,7 +163,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-teal rounded p-2"
-                style="width: 95px; height: 60px"
+                style="width: 120px; height: 60px"
               >
                 hello
               </div>
@@ -175,7 +175,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-light-gray rounded p-2"
-                style="width: 95px; height: 60px"
+                style="width: 120px; height: 60px"
               >
                 hello
               </div>
@@ -187,7 +187,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-gray rounded p-2"
-                style="width: 95px; height: 60px"
+                style="width: 120px; height: 60px"
               >
                 hello
               </div>
@@ -199,7 +199,7 @@
             <li class="list-inline-item">
               <div
                 class="text-bg-dark bg-opacity-10 rounded p-2"
-                style="width: 95px; height: 60px"
+                style="width: 120px; height: 60px"
               >
                 hello
               </div>
@@ -221,12 +221,25 @@
 
       <h3>Updated Theme Colors</h3>
 
+      <h4>Branding</h4>
+      <ul class="list-inline m-0">
+        <li class="list-inline-item">
+          <div
+            class="text-bg-brand-accent rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            brand-accent
+          </div>
+          <small> #2f68cb</small>
+        </li>
+      </ul>
+
       <h4>Call to Action</h4>
       <ul class="list-inline m-0">
         <li class="list-inline-item">
           <div
             class="text-bg-primary rounded p-2"
-            style="width: 95px; height: 60px"
+            style="width: 120px; height: 60px"
           >
             primary
           </div>
@@ -234,8 +247,17 @@
         </li>
         <li class="list-inline-item">
           <div
+            class="text-bg-action rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            action
+          </div>
+          <small> #2f68cb</small>
+        </li>
+        <li class="list-inline-item">
+          <div
             class="text-bg-secondary rounded p-2"
-            style="width: 95px; height: 60px"
+            style="width: 120px; height: 60px"
           >
             secondary
           </div>
@@ -247,7 +269,7 @@
         <li class="list-inline-item">
           <div
             class="text-bg-success rounded p-2"
-            style="width: 95px; height: 60px"
+            style="width: 120px; height: 60px"
           >
             success
           </div>
@@ -256,16 +278,25 @@
         <li class="list-inline-item">
           <div
             class="text-bg-danger rounded p-2"
-            style="width: 95px; height: 60px"
+            style="width: 120px; height: 60px"
           >
             danger
           </div>
-          <small> #dc3545</small>
+          <small> #cb444a</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-critical rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            critical
+          </div>
+          <small> #cb444a</small>
         </li>
         <li class="list-inline-item">
           <div
             class="text-bg-warning rounded p-2"
-            style="width: 95px; height: 60px"
+            style="width: 120px; height: 60px"
           >
             warning
           </div>
@@ -274,7 +305,7 @@
         <li class="list-inline-item">
           <div
             class="text-bg-info rounded p-2"
-            style="width: 95px; height: 60px"
+            style="width: 120px; height: 60px"
           >
             info
           </div>
@@ -286,7 +317,7 @@
         <li class="list-inline-item">
           <div
             class="text-bg-light rounded p-2"
-            style="width: 95px; height: 60px"
+            style="width: 120px; height: 60px"
           >
             light
           </div>
@@ -295,7 +326,7 @@
         <li class="list-inline-item">
           <div
             class="text-bg-dark rounded p-2"
-            style="width: 95px; height: 60px"
+            style="width: 120px; height: 60px"
           >
             dark
           </div>
