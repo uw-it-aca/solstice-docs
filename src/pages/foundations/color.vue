@@ -34,7 +34,7 @@
         Color is automatically applied to the following utilities and
         components.
       </p>
-      <ul>
+      <ul class="list-inline">
         <li>
           <a
             href="https://getbootstrap.com/docs/5.1/utilities/background/"
@@ -70,158 +70,146 @@
         </li>
       </ul>
 
-      <p>Example: bg-xxxxx and text-xxxxx</p>
-
-      <h3>Historic Colors</h3>
-      <CodeBlock>
-        <template #preview>
-          <ul class="list-inline m-0">
-            <li class="list-inline-item">
-              <div
-                class="text-bg-dark-purple rounded p-2"
-                style="width: 120px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >dark-purple<br />
-                #452a78</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-purple rounded p-2"
-                style="width: 120px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >purple<br />
-                #4d307f</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-dark-beige rounded p-2"
-                style="width: 120px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >dark-beige<br />
-                #85754d</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-mid-beige rounded p-2"
-                style="width: 120px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >mid-beige<br />
-                #ab9765</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-beige rounded p-2"
-                style="width: 120px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >beige<br />
-                #e8e3d3</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-light-beige rounded p-2"
-                style="width: 120px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >light-beige<br />
-                #faf8f4</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-gold rounded p-2"
-                style="width: 120px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >gold<br />
-                #ffbc24</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-teal rounded p-2"
-                style="width: 120px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >teal<br />
-                #4c7286</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-light-gray rounded p-2"
-                style="width: 120px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >light-gray<br />
-                #e8e8e8</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-gray rounded p-2"
-                style="width: 120px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >gray<br />
-                #e9ecef</small
-              >
-            </li>
-            <li class="list-inline-item">
-              <div
-                class="text-bg-dark bg-opacity-10 rounded p-2"
-                style="width: 120px; height: 60px"
-              >
-                hello
-              </div>
-              <small
-                >bg-opacity-10<br />
-                90% black</small
-              >
-            </li>
-          </ul>
-        </template>
-        <template #markup>
-          <pre class="language-html rounded">
-<code class="html rounded">&lt;div class="bg-dark-purple"&gt;
-&lt;div class="bg-purple"&gt;
-&lt;div class="bg-dark-beige"&gt;
-...</code></pre>
-        </template>
-      </CodeBlock>
-
       <h3 class="fw-bold">Colors</h3>
 
-      <h4>Bootstrap Base Colors</h4>
+      <h4>Historic Colors</h4>
+
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <div
+            class="text-bg-dark-purple rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            hello
+          </div>
+          <small
+            >dark-purple<br />
+            #452a78</small
+          >
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-purple rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            hello
+          </div>
+          <small
+            >purple<br />
+            #4d307f</small
+          >
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-dark-beige rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            hello
+          </div>
+          <small
+            >dark-beige<br />
+            #85754d</small
+          >
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-mid-beige rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            hello
+          </div>
+          <small
+            >mid-beige<br />
+            #ab9765</small
+          >
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-beige rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            hello
+          </div>
+          <small
+            >beige<br />
+            #e8e3d3</small
+          >
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-light-beige rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            hello
+          </div>
+          <small
+            >light-beige<br />
+            #faf8f4</small
+          >
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-gold rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            hello
+          </div>
+          <small
+            >gold<br />
+            #ffbc24</small
+          >
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-teal rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            hello
+          </div>
+          <small
+            >teal<br />
+            #4c7286</small
+          >
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-light-gray rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            hello
+          </div>
+          <small
+            >light-gray<br />
+            #e8e8e8</small
+          >
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-gray rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            hello
+          </div>
+          <small
+            >gray<br />
+            #e9ecef</small
+          >
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="text-bg-dark bg-opacity-10 rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            hello
+          </div>
+          <small
+            >bg-opacity-10<br />
+            90% black</small
+          >
+        </li>
+      </ul>
+
+      <h4>Bootstrap Colors</h4>
       <p>
         The Bootstrap
         <a href="https://getbootstrap.com/docs/5.3/customize/color/#all-colors"
@@ -313,14 +301,18 @@
         </div>
       </div>
 
-      <h3 class="fw-bold">Updated Theme</h3>
+      <h3 class="mt-5 fw-bold">Base Color Palette</h3>
       <p>
-        The updated theme names/tokens use the Solstice colors to replace
-        primary and danger. Brand has been added as a new theme.
+        The base color palette serves as the foundational set of colors that
+        form the core visual identity of the design system.
       </p>
 
-      <h4 class="fw-bold">Branding</h4>
-      <p>Most likely to be used as a background color for header/sidebar.</p>
+      <h4 class="fw-bold">Brand Accent</h4>
+      <p>
+        Use for communicating the UW brand, and can be used in highlighting in
+        elements but should be used sparingly. The brand color is typically not
+        used for actionable elements.
+      </p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
@@ -329,14 +321,15 @@
           >
             brand
           </div>
-          <small> #2f68cb</small>
+          <small>#4b2e83</small>
         </li>
       </ul>
 
-      <h4 class="fw-bold">Call to Action</h4>
+      <h4 class="fw-bold">Action</h4>
       <p>
-        Most likely to be used for buttons and links. Any action related
-        elements.
+        Action colors are used to pull focus to and communicate which are
+        actionable UI elements. They should reserved for things like buttons,
+        links, calls-to-action, collapse controls, tabs, etc.
       </p>
       <ul class="list-inline">
         <li class="list-inline-item">
@@ -368,7 +361,13 @@
         </li>
       </ul>
       <h4 class="fw-bold">Semantic</h4>
-      <p>Colors used for alerts and messaging.</p>
+      <p>
+        Semantic colors denote standard states of value (e.g. information,
+        warning, or critical) or workflow (e.g. draft, completed, suspended,
+        canceled). Each color has the same basic meaning in all contexts, and
+        either helps users contextualize messaging or the workflow status of an
+        object.
+      </p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
@@ -413,12 +412,51 @@
           >
             info
           </div>
-          <small> #0dcaf0</small>
+          <small>#0dcaf0</small>
         </li>
       </ul>
 
-      <h4 class="fw-bold">Surfaces</h4>
-      <p>Most like used for content containers backgrounds.</p>
+      <h4 class="fw-bold">Decorative</h4>
+      <p>
+        [WIP] Decorative colors are used primarily for objects or data
+        visualizations
+      </p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <div
+            class="bg-purple2-200 rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            tbd
+          </div>
+          <small>#b7abcd</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-red2-200 rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            tbd
+          </div>
+          <small>#eab4bt</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-beige-200 rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            tbd
+          </div>
+          <small>#ddd5c1</small>
+        </li>
+      </ul>
+
+      <h4 class="fw-bold">Surface</h4>
+      <p>
+        [WIP] Surface colors are most likely used as the background for content
+        containers.
+      </p>
+
       <h5>Constant</h5>
       <p>These backgrounds do not change based on color mode.</p>
       <ul class="list-inline">
@@ -460,7 +498,9 @@
         </li>
       </ul>
       <h5>Color Mode supported</h5>
-      <p>These colors change based on the color mode. -subtle theme colors.</p>
+      <p>
+        These colors change based on the color mode. (-subtle theme colors).
+      </p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <div class="bg-body rounded p-2" style="width: 120px; height: 60px">
