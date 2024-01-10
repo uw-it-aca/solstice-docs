@@ -449,6 +449,15 @@
           </div>
           <small>#212529</small>
         </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-black text-light rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            black
+          </div>
+          <small>#000000</small>
+        </li>
       </ul>
       <h5>Color Mode supported</h5>
       <p>These colors change based on the color mode. -subtle theme colors.</p>
@@ -468,7 +477,15 @@
           </div>
           <small>#f8f9fa / #2b3035</small>
         </li>
-
+        <li class="list-inline-item">
+          <div
+            class="bg-light-subtle rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            light-subtle
+          </div>
+          <small>#fcfcfd / #dee2e6</small>
+        </li>
         <li class="list-inline-item">
           <div
             class="bg-dark-subtle rounded p-2"
@@ -477,15 +494,6 @@
             dark-subtle
           </div>
           <small>#ced4da / #1a1d20</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="bg-danger-subtle rounded p-2"
-            style="width: 120px; height: 60px"
-          >
-            danger-subtle
-          </div>
-          <small>#f8d7da / #2c0b0e</small>
         </li>
       </ul>
     </template>
