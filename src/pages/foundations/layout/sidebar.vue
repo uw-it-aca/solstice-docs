@@ -143,7 +143,7 @@
             :app-name="'SideBar'"
             :user-name="'javerage'"
             :is-preview="true"
-            class="border shadow-sm"
+            class="border"
           >
             <template #profile> profile here... </template>
             <template #navigation> nav here... </template>
@@ -181,11 +181,11 @@
 
       <CodeBlock>
         <template #preview>
-          <axdd-sidebar
+          <sol-sidebar
             :app-name="'SideBar'"
             :user-name="'javerage'"
             :is-preview="true"
-            class="border shadow-sm bg-primary"
+            class="border"
           >
             <template #profile> profile here... </template>
             <template #navigation> nav here... </template>
@@ -202,7 +202,7 @@
               </div>
             </template>
             <template #footer></template>
-          </axdd-sidebar>
+          </sol-sidebar>
         </template>
         <template #markup>
           <pre class="language-html rounded">
@@ -216,11 +216,11 @@
 
       <CodeBlock>
         <template #preview>
-          <axdd-sidebar
+          <sol-sidebar
             :app-name="'SideBar'"
             :user-name="'javerage'"
             :is-preview="true"
-            class="border shadow-sm bg-success"
+            class="border"
           >
             <template #profile> profile here... </template>
             <template #logo><i class="bi bi-emoji-smile"></i></template>
@@ -238,7 +238,7 @@
               </div>
             </template>
             <template #footer></template>
-          </axdd-sidebar>
+          </sol-sidebar>
         </template>
         <template #markup>
           <pre class="language-html rounded">

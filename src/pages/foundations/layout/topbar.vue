@@ -138,11 +138,7 @@
       <h3>Basic structure</h3>
       <CodeBlock>
         <template #preview>
-          <axdd-topbar
-            :app-name="'TopBar'"
-            :is-preview="true"
-            class="bg-purple border"
-          >
+          <axdd-topbar :app-name="'TopBar'" :is-preview="true" class="border">
             <template #profile>profile here...</template>
             <template #main>
               <div class="row my-4">
@@ -183,7 +179,7 @@
             :app-name="'TopBar'"
             :user-name="'javerage'"
             :is-preview="true"
-            class="bg-purple border shadow-sm"
+            class="border"
           >
             <template #profile> profile here... </template>
             <template #navigation>
@@ -232,11 +228,7 @@
       <h3>With Banner Bar</h3>
       <CodeBlock>
         <template #preview>
-          <axdd-topbar
-            :app-name="'TopBar'"
-            :is-preview="true"
-            class="bg-purple border"
-          >
+          <axdd-topbar :app-name="'TopBar'" :is-preview="true" class="border">
             <template #profile> profile here... </template>
             <template #bar>
               <div class="row">
