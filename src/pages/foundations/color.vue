@@ -319,8 +319,9 @@
         primary and danger. Brand has been added as a new theme.
       </p>
 
-      <h4>Branding</h4>
-      <ul class="list-inline m-0">
+      <h4 class="fw-bold">Branding</h4>
+      <p>Most likely to be used as a background color for header/sidebar.</p>
+      <ul class="list-inline">
         <li class="list-inline-item">
           <div
             class="text-bg-brand rounded p-2"
@@ -332,8 +333,12 @@
         </li>
       </ul>
 
-      <h4>Call to Action</h4>
-      <ul class="list-inline m-0">
+      <h4 class="fw-bold">Call to Action</h4>
+      <p>
+        Most likely to be used for buttons and links. Any action related
+        elements.
+      </p>
+      <ul class="list-inline">
         <li class="list-inline-item">
           <div
             class="text-bg-primary rounded p-2"
@@ -362,8 +367,9 @@
           <small> #6c757d</small>
         </li>
       </ul>
-      <h4>Semantic</h4>
-      <ul class="list-inline m-0">
+      <h4 class="fw-bold">Semantic</h4>
+      <p>Colors used for alerts and messaging.</p>
+      <ul class="list-inline">
         <li class="list-inline-item">
           <div
             class="text-bg-success rounded p-2"
@@ -411,25 +417,75 @@
         </li>
       </ul>
 
-      <h4>Surfaces</h4>
-      <ul class="list-inline m-0">
+      <h4 class="fw-bold">Surfaces</h4>
+      <p>Most like used for content containers backgrounds.</p>
+      <h5>Constant</h5>
+      <p>These backgrounds do not change based on color mode.</p>
+      <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="text-bg-light rounded p-2"
+            class="bg-transparent rounded p-2"
             style="width: 120px; height: 60px"
           >
-            light
+            transparent
           </div>
-          <small> #f8f9fa</small>
+          <small>inherits</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="text-bg-dark rounded p-2"
+            class="bg-white text-dark rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            white
+          </div>
+          <small>#ffffff</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-dark text-light rounded p-2"
             style="width: 120px; height: 60px"
           >
             dark
           </div>
-          <small> #212529</small>
+          <small>#212529</small>
+        </li>
+      </ul>
+      <h5>Color Mode supported</h5>
+      <p>These colors change based on the color mode. -subtle theme colors.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <div class="bg-body rounded p-2" style="width: 120px; height: 60px">
+            body
+          </div>
+          <small>#ffffff / #212529</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-body-tertiary rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            body-tertiary
+          </div>
+          <small>#f8f9fa / #2b3035</small>
+        </li>
+
+        <li class="list-inline-item">
+          <div
+            class="bg-dark-subtle rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            dark-subtle
+          </div>
+          <small>#ced4da / #1a1d20</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-danger-subtle rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            danger-subtle
+          </div>
+          <small>#f8d7da / #2c0b0e</small>
         </li>
       </ul>
     </template>
