@@ -543,11 +543,10 @@
 
 <script>
 import Layout from "@/layout.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
 
 export default {
   name: "DocsColor",
-  components: { Layout, CodeBlock },
+  components: { Layout },
   data() {
     return {
       pageTitle: "Color",
