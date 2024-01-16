@@ -6,7 +6,7 @@ import App from "@/app.vue";
 import router from "@/router";
 
 // bootstrap js + icons
-// import "bootstrap";
+// eslint-disable-next-line no-unused-vars
 import * as bootstrap from "bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
