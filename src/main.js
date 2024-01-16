@@ -6,8 +6,7 @@ import App from "@/app.vue";
 import router from "@/router";
 
 // bootstrap js + icons
-// eslint-disable-next-line no-unused-vars
-import * as bootstrap from "bootstrap";
+import "bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 // solstice-vue css (1.1.0 task/dark-mode)
