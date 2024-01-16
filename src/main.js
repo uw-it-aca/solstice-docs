@@ -6,7 +6,8 @@ import App from "@/app.vue";
 import router from "@/router";
 
 // bootstrap js + icons
-import "bootstrap";
+// import "bootstrap";
+import * as bootstrap from "bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 // solstice-vue css (1.1.0 task/dark-mode)
