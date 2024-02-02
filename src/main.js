@@ -9,9 +9,9 @@ import router from "@/router";
 import "bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-// solstice-vue css (1.1.0 task/dark-mode)
+// solstice-vue (develop)
 import "solstice-vue/dist/style.css";
-import "solstice-vue/dist/custom.scss";
+import "solstice-vue/dist/solstice.scss";
 
 // app specific scss
 //import "@/assets/css/styles.scss";
