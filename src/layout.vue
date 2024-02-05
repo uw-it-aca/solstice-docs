@@ -1,7 +1,10 @@
 <template>
   <sol-sidebar :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
     <template #profile>
-      <div class="text-light">Latest: v.1.1.0</div>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="text-light">Latest: v.1.1.0</div>
+        <div class="text-light"><sol-color-mode></sol-color-mode></div>
+      </div>
     </template>
     <template #navigation>
       <NavMenu />
@@ -40,7 +43,6 @@
           </ul>
           <div>Copyright &copy; {{ currentYear }} University of Washington</div>
         </div>
-        <div><axdd-color-mode></axdd-color-mode></div>
       </div>
     </template>
   </sol-sidebar>
