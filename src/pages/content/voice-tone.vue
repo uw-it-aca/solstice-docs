@@ -34,7 +34,7 @@
         >. Also, optimized for a11y.
       </p>
     </template>
-    <template #author>Charlon Palacay</template>
+    <template #author>tbd</template>
   </Layout>
 </template>
 

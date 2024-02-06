@@ -15,9 +15,7 @@
     <template #main>
       <slot name="content" />
       <div v-if="$slots['author']" class="py-1 small text-end">
-        <div class="text-muted">
-          Last modified {{ lastModified }} by <slot name="author" />
-        </div>
+        <div class="text-muted">Last modified by <slot name="author" /></div>
       </div>
     </template>
     <template #footer>
@@ -76,7 +74,7 @@ export default {
     // MARK: constructs page title in the following format "Page Title - AppName"
     // as a default layout prop
     document.title = this.pageTitle + " - " + this.appName;
-    this.lastModified = new Date(document.lastModified).toLocaleString();
+    //this.lastModified = new Date(document.lastModified).toLocaleString();
   },
 };
 </script>
