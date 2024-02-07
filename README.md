@@ -16,6 +16,7 @@ Clone this repository.
 git clone git@github.com:uw-it-aca/solstice-docs.git
 ```
 
+## Development
 Change into the working directory.
 ```sh
 cd solstice-docs
@@ -26,8 +27,7 @@ Install node packages.
 npm install
 ```
 
-## Development
-Run the following command to run your development server.
+Start your development server.
 ```sh
 npm run dev
 ```
