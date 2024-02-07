@@ -16,9 +16,13 @@ Clone this repository.
 git clone git@github.com:uw-it-aca/solstice-docs.git
 ```
 
-Install node packages.
+Change into the working directory.
 ```sh
 cd solstice-docs
+```
+
+Install node packages.
+```sh
 npm install
 ```
 
