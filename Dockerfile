@@ -16,7 +16,7 @@ RUN npm install .
 
 ADD . /app/
 
-RUN npm run build
+RUN npm run dev
 
 FROM pre-app-container as app-container
 
