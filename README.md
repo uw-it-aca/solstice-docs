@@ -6,9 +6,9 @@ Solstice Design System
 ## Requirements
 Install or update the following applications
 
-* [VSCode](https://code.visualstudio.com/)
+* [VS Code](https://code.visualstudio.com/)
 * [Node.js (LTS)](https://nodejs.org/en)
-* [VSCode](https://code.visualstudio.com/) 
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) 
 
 ## Recommended IDE Setup
 
