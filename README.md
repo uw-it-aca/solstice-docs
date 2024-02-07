@@ -3,13 +3,16 @@
 # solstice-docs
 Solstice Design System
 
-* Vue 3
-* Vite 2
-* Bootstrap 5
+## Requirements
+Install or update the following applications
+
+* [VSCode](https://code.visualstudio.com/)
+* [Node.js (LTS)](https://nodejs.org/en)
+* [VSCode](https://code.visualstudio.com/) 
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+
 
 ## Customize configuration
 
