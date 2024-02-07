@@ -10,33 +10,25 @@ Install or update the following applications:
 * [Node.js (LTS)](https://nodejs.org/en)
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) 
 
-## Recommended IDE Setup
-
-
-
-
 ## Initial Setup
-Clone this repository
+Clone this repository.
 ```sh
 git clone git@github.com:uw-it-aca/solstice-docs.git
 ```
 
-Install node packages
+Install node packages.
 ```sh
 cd solstice-docs
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Development
+Run the following command to run your development server.
 ```sh
 npm run dev
 ```
 
-### Compile and Build documentation website
-```sh
-npm run build
-```
-
+## Utilities
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 ```sh
 npm run test:unit
@@ -57,3 +49,4 @@ npm run eslint
 ```sh
 npm run stylelint
 ```
+
