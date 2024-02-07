@@ -11,15 +11,39 @@ Install or update the following applications:
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) 
 
 ## Initial Setup
+Skip this step if you have already performed the Setup steps previously.
+
 Clone this repository.
 ```sh
 git clone git@github.com:uw-it-aca/solstice-docs.git
 ```
 
-## Development
 Change into the working directory.
 ```sh
 cd solstice-docs
+```
+
+Install node packages.
+```sh
+npm install
+```
+
+## Development
+Perform these steps to begin working on your development branch.
+
+Change into the working directory.
+```sh
+cd solstice-docs
+```
+
+Checkout the develop branch
+```sh
+git checkout develop
+```
+
+Update your develop branch.
+```sh
+git pull
 ```
 
 Install node packages.
