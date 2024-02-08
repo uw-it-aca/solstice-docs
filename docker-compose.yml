@@ -3,10 +3,10 @@ version: '3.4'
 services:
   app:
     restart: always
-    container_name: solstice_docs_vite
+    container_name: solstice_vite
     build:
       context: .
-      target: node-vite
+      target: vite-container
     ports:
       - "8000:5173"
     stdin_open: true

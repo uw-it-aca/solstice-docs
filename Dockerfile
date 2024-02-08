@@ -7,7 +7,6 @@ RUN apt-get update && apt-get install git -y
 ADD docker/nginx.conf /etc/nginx/nginx.conf
 RUN chgrp acait /etc/nginx/nginx.conf && chmod g+w /etc/nginx/nginx.conf
 
-
 FROM node:lts-bullseye AS node-bundler
 
 ADD index.html package.json vite.config.js /app/
@@ -23,8 +22,7 @@ FROM pre-app-container as app-container
 USER acait
 COPY --chown=acait:acait --from=node-bundler /app/dist /app/dist
 
-
-FROM node:lts-bullseye AS node-vite
+FROM node:lts-bullseye AS vite-container
 
 WORKDIR /app
 COPY package.json .
@@ -34,7 +32,5 @@ COPY package.json .
 RUN npm install
 #ADD . /app/
 COPY . .
-
-EXPOSE 5173
 
 CMD ["npm", "run", "dev"]
