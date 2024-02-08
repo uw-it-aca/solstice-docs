@@ -7,7 +7,7 @@
         Solstice Design is a resource for building and documenting UI components
         using Bootstrap and Vue/React Javascript frameworks. It provides a set
         of organized guidelines, patterns and best practices that work as the
-        foundation for application design and development at SC.
+        foundation for application design and development at SC. asdfasdfasdf hi craig asdfasdf asd xxxx
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />

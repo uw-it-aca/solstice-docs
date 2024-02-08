@@ -2,34 +2,15 @@ version: '3.4'
 
 services:
   app:
-    environment:
-      PORT: 8000
     restart: always
-    container_name: solstice_docs_app
+    container_name: solstice_docs_vite
     build:
       context: .
-      target: app-container
+      target: node-vite
     ports:
-      - "${RUNSERVER_PORT:-8000}:8000"
+      - "8000:5173"
     stdin_open: true
     tty: true
-  node-bundler:
-    build:
-      context: .
-      target: node-bundler
-    restart: always
-    container_name: solstice_docs_node
-    ports:
-      - "${BUNDLE_ANALYZER_PORT:-8888}:8888" # Required when environment.BUNDLE_ANALYZER is true
-    environment:
-      VUE_DEVTOOLS: "True"
-      BUNDLE_ANALYZER: "True"
+    working_dir: /app
     volumes:
-      - ./:/app/
-      #- ./app_name_vue:/app/app_name_vue
-      #- statics-volume:/static
-    command: npm run dev
-    stdin_open: true
-    tty: true
-#volumes:
-  #statics-volume:
+      - ./src:/app/src

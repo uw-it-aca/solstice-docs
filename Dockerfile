@@ -16,9 +16,25 @@ RUN npm install .
 
 ADD . /app/
 
-RUN npm run dev
+RUN npm run build
 
 FROM pre-app-container as app-container
 
 USER acait
 COPY --chown=acait:acait --from=node-bundler /app/dist /app/dist
+
+
+FROM node:lts-bullseye AS node-vite
+
+WORKDIR /app
+COPY package.json .
+
+#ADD index.html package.json vite.config.js /app/
+#WORKDIR /app/
+RUN npm install
+#ADD . /app/
+COPY . .
+
+EXPOSE 5173
+
+CMD ["npm", "run", "dev"]
