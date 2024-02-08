@@ -24,13 +24,9 @@ COPY --chown=acait:acait --from=node-bundler /app/dist /app/dist
 
 FROM node:lts-bullseye AS vite-container
 
-WORKDIR /app
-COPY package.json .
-
-#ADD index.html package.json vite.config.js /app/
-#WORKDIR /app/
+ADD index.html package.json vite.config.js /app/
+WORKDIR /app/
 RUN npm install
-#ADD . /app/
-COPY . .
+ADD . /app/
 
 CMD ["npm", "run", "dev"]
