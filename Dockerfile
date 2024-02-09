@@ -29,4 +29,4 @@ WORKDIR /app/
 RUN npm install
 ADD . /app/
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "dev", "--", "--host"]
