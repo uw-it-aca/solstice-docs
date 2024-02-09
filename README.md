@@ -23,11 +23,6 @@ Change into the working directory.
 cd solstice-docs
 ```
 
-Install node packages.
-```sh
-npm install
-```
-
 ## Development
 Perform these steps to begin working on your development branch.
 
