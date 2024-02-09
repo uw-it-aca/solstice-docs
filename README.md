@@ -8,7 +8,7 @@ Install or update the following applications:
 
 * [VS Code](https://code.visualstudio.com/)
 * [Node.js (LTS)](https://nodejs.org/en)
-* [Docker Desktop](https://www.docker.com/products/docker-desktop/) 
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 ## Initial Setup
 Skip this step if you have already performed the Setup steps previously.
@@ -36,7 +36,7 @@ Change into the working directory.
 cd solstice-docs
 ```
 
-Checkout the develop branch
+Checkout the develop branch.
 ```sh
 git checkout develop
 ```
@@ -46,17 +46,15 @@ Update your develop branch.
 git pull
 ```
 
-Install node packages.
+Start your development server using Docker Compose.
 ```sh
-npm install
-```
-
-Start your development server.
-```sh
-npm run dev
+docker compose up
 ```
 
 ## Utilities
+This following utilities can be run from inside the Docker container. This can be done by opening a container
+shell and running the following commands:
+
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 ```sh
 npm run test:unit
