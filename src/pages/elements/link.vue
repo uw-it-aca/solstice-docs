@@ -22,13 +22,18 @@
       <hr class="mb-5 w-25 d-inline-block" />
 
       <h2>Variants</h2>
-      <p class="col-md-9">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus harum
-        dolorum facilis aspernatur iure neque aut numquam id? Tenetur velit
-        pariatur cum esse cupiditate sit iure ullam aliquid, odit voluptas?
-      </p>
 
       <h3>Default</h3>
+      <CodeBlock>
+        <template #preview>
+          <sol-link href="/">Soltice Design System</sol-link>
+        </template>
+        <template #markup>
+          <pre class="language-html rounded">
+<code>&lt;sol-link href="/">Soltice Design System&lt;/sol-link>
+</code></pre>
+        </template>
+      </CodeBlock>
       <p class="col-md-9">
         Default links are within <strong>sentences or paragraphs</strong>,
         underlined, and blue with light and dark variations. They shouldn't
@@ -37,6 +42,16 @@
       </p>
 
       <h3>Quiet</h3>
+      <CodeBlock>
+        <template #preview>
+          <sol-link href="/" variant="quiet">Soltice Design System</sol-link>
+        </template>
+        <template #markup>
+          <pre class="language-html rounded">
+<code>&lt;sol-link href="/" variant="quiet">Soltice Design System&lt;/sol-link>
+</code></pre>
+        </template>
+      </CodeBlock>
       <p class="col-md-9">
         Quiet links are <strong>standalone or in link groups</strong>, typically
         found in sidebars, footers, or "quick links" lists. They can be grouped
@@ -45,6 +60,18 @@
       </p>
 
       <h3>Icon</h3>
+      <CodeBlock>
+        <template #preview>
+          <sol-link href="/" variant="icon" icon="bi-cloud-download"
+            >Download report</sol-link
+          >
+        </template>
+        <template #markup>
+          <pre class="language-html rounded">
+<code>&lt;sol-link href="/" variant="icon" icon="bi-cloud-download">Download report&lt;/sol-link>
+</code></pre>
+        </template>
+      </CodeBlock>
       <p class="col-md-9">
         Icon links are similar to Quiet links but include a left icon. Use them
         only when an icon improves understanding of the link's purpose or
@@ -95,10 +122,11 @@
 
 <script>
 import Layout from "@/layout.vue";
+import CodeBlock from "@/components/CodeBlock.vue";
 
 export default {
   name: "DocsElementsIndex",
-  components: { Layout },
+  components: { Layout, CodeBlock },
   data() {
     return {
       pageTitle: "Link",
