@@ -12,7 +12,7 @@
         </ol>
       </nav>
 
-      <h1 class="fw-bold">{{ pageTitle }}</h1>
+      <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis

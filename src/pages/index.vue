@@ -39,8 +39,8 @@
           </p>
 
           <p>
-            <router-link to="/getting-started/solstice-101"
-              >Learn about our design system</router-link
+            <sol-link href="/getting-started/solstice-101"
+              >Learn about our design system</sol-link
             >
           </p>
         </div>
@@ -55,8 +55,8 @@
               applications as well as creating brand new applications.
             </p>
             <div class="text-end">
-              <router-link to="/getting-started/component-lifecycle"
-                >View Component Lifecycle</router-link
+              <sol-link href="/getting-started/component-lifecycle"
+                >View Component Lifecycle</sol-link
               >
             </div>
           </axdd-panel>
@@ -69,8 +69,8 @@
               applications as well as creating brand new applications.
             </p>
             <div class="text-end">
-              <router-link to="/getting-started/installation-setup"
-                >View Installation &amp; Setup</router-link
+              <sol-link href="/getting-started/installation-setup"
+                >View Installation &amp; Setup</sol-link
               >
             </div>
           </axdd-panel>
@@ -96,7 +96,7 @@
           </p>
 
           <p>
-            <router-link to="/content/">Read content guidelines</router-link>
+            <sol-link href="/content/">Read content guidelines</sol-link>
           </p>
         </div>
         <div class="col">
@@ -105,7 +105,7 @@
             Use design foundations to ensure consistency across the application.
           </p>
           <p>
-            <router-link to="/foundations/">Browse foundations</router-link>
+            <sol-link href="/foundations/">Browse foundations</sol-link>
           </p>
         </div>
         <div class="col">
@@ -114,12 +114,12 @@
             Use elements as building blocks as you design and develop new
             products and features.
           </p>
-          <p><router-link to="/elements/">Browse elements</router-link></p>
+          <p><sol-link href="/elements/">Browse elements</sol-link></p>
         </div>
         <div class="col">
           <h3>Patterns</h3>
           <p>Patterns consist of design tokens, elements, and patterns.</p>
-          <p><router-link to="/patterns/">Browse patterns</router-link></p>
+          <p><sol-link href="/patterns/">Browse patterns</sol-link></p>
         </div>
       </div>
     </template>
