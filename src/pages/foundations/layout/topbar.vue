@@ -48,7 +48,7 @@
       </p>
       <CodeBlock>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-topbar :app-name="'App Name'" :app-root-url="'/'">&lt;/axdd-topbar>
 </code></pre>
         </template>
@@ -156,7 +156,7 @@
           </axdd-topbar>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-topbar :app-name="'TopBar'">
   &lt;template #profile>
     profile here...
@@ -212,7 +212,7 @@
           </axdd-topbar>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-topbar>
   &lt;template #navigation>
     nav here...
@@ -260,7 +260,7 @@
           </axdd-topbar>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-topbar>
   &lt;template #bar>
     bar here...

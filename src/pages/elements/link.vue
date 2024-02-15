@@ -29,7 +29,7 @@
           <sol-link href="/">Soltice Design System</sol-link>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;sol-link href="/">Soltice Design System&lt;/sol-link>
 </code></pre>
         </template>
@@ -47,7 +47,7 @@
           <sol-link href="/" variant="quiet">Soltice Design System</sol-link>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;sol-link href="/" variant="quiet">Soltice Design System&lt;/sol-link>
 </code></pre>
         </template>
@@ -67,7 +67,7 @@
           >
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;sol-link href="/" variant="icon" icon="bi-cloud-download">Download report&lt;/sol-link>
 </code></pre>
         </template>
@@ -108,7 +108,7 @@
           </div>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;sol-link href="/" variant="quiet" color="link-light">Soltice Design System&lt;/sol-link>
 </code></pre>
         </template>

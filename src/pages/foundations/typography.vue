@@ -42,7 +42,7 @@
           <div class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans</div>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;body class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans&lt;/body>
 </code></pre>
         </template>
@@ -58,7 +58,7 @@
           </div>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;body class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans&lt;/body>
 </code></pre>
         </template>
