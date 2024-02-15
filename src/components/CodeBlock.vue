@@ -1,11 +1,10 @@
 <template>
   <div class="mb-3 border rounded codeblock">
     <div v-if="$slots['preview']">
-      <div class="preview p-3 m-0 axdd-font-open-sans">
+      <div class="preview p-3 m-0">
         <slot name="preview"></slot>
       </div>
     </div>
-
     <div v-if="$slots['markup']">
       <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
         <slot name="markup"></slot>

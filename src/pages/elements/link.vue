@@ -99,7 +99,20 @@
         <strong>Light variants:</strong> For use on dark, static backgrounds
         (such as purple).
       </p>
-      <div>snippet</div>
+      <CodeBlock>
+        <template #preview>
+          <div class="p-3 bg-brand rounded">
+            <sol-link href="/" variant="quiet" color="link-light"
+              >Soltice Design System</sol-link
+            >
+          </div>
+        </template>
+        <template #markup>
+          <pre class="language-html rounded">
+<code>&lt;sol-link href="/" variant="quiet" color="link-light">Soltice Design System&lt;/sol-link>
+</code></pre>
+        </template>
+      </CodeBlock>
 
       <p>
         <strong>Dark variants:</strong> For use on light, static backgrounds
