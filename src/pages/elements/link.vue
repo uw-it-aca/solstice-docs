@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -128,6 +128,15 @@
         change, while light and dark variants used on static colored backgrounds
         will not.
       </p>
+    </template>
+    <template #extra>
+      <div class="sticky-top mt-5">
+        <h2>On this page</h2>
+        <ul>
+          <li>askjdflkasdjf</li>
+          <li>lkasjdfldaksfj</li>
+        </ul>
+      </div>
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>
