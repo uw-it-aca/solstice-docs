@@ -3,50 +3,64 @@
 # solstice-docs
 Solstice Design System
 
-* Vue 3
-* Vite 2
-* Bootstrap 5
+## Requirements
+Install or update the following applications:
 
-## Recommended IDE Setup
+* [VS Code](https://code.visualstudio.com/)
+* [Node.js (LTS)](https://nodejs.org/en)
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+## Initial Setup
+Skip this step if you have already performed the Setup steps previously.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
+Clone this repository.
 ```sh
-npm install
+git clone git@github.com:uw-it-aca/solstice-docs.git
 ```
 
-### Compile and Hot-Reload for Development
-
+Change into the working directory.
 ```sh
-npm run dev
+cd solstice-docs
 ```
 
-### Compile and Build documentation website
+## Development
+Perform these steps to begin working on your development branch.
 
+Change into the working directory.
 ```sh
-npm run build
+cd solstice-docs
 ```
+
+Checkout the develop branch.
+```sh
+git checkout develop
+```
+
+Update your develop branch.
+```sh
+git pull
+```
+
+Start your development server using Docker Compose.
+```sh
+docker compose up
+```
+
+## Utilities
+This following utilities can be run from inside the Docker container. This can be done by opening a container
+shell and running the following commands:
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
-
 ```sh
 npm run test:unit
 ```
 
 ### Run Unit Tests with Coverage report
-
 ```sh
 npm run coverage
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
-
 ```sh
 npm run eslint
 ```
@@ -56,3 +70,4 @@ npm run eslint
 ```sh
 npm run stylelint
 ```
+

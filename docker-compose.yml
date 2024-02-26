@@ -2,12 +2,15 @@ version: '3.4'
 
 services:
   app:
-    environment:
-      PORT: 8000
     restart: always
-    container_name: app-solstice-docs
+    container_name: solstice_vite
     build:
       context: .
-      target: app-container
+      target: vite-container
     ports:
-      - "${RUNSERVER_PORT:-8000}:8000"
+      - "${RUNSERVER_PORT:-8000}:5173"
+    stdin_open: true
+    tty: true
+    working_dir: /app
+    volumes:
+      - ./src:/app/src
