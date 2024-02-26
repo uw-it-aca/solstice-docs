@@ -162,7 +162,7 @@
         <li>Logging out of sites or apps.</li>
       </ul>
 
-      <UsageBlock variant="do">hello world blah adsfasdf</UsageBlock>
+      <UsageBlock>hello world blah adsfasdf</UsageBlock>
       <UsageBlock variant="dont"
         >Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta neque
         maxime, possimus, officiis dolorum ratione vel doloribus aut obcaecati
@@ -174,8 +174,8 @@
         <template #preview>html or images can be inserted here</template>
       </UsageBlock>
 
-      <UsageBlock variant="do">
-        <template #text>hello world blah</template>
+      <UsageBlock>
+        <template #text>hello world blah asdf</template>
         <template #preview>
           <svg
             class=""
