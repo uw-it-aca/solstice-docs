@@ -1,17 +1,29 @@
 <template>
   <div class="mb-3 border rounded codeblock">
     <div v-if="$slots['preview']">
-      <div class="preview p-3 m-0">
+      <div class="preview p-3 m-0 border-bottom">
         <slot name="preview"></slot>
       </div>
     </div>
     <div v-if="$slots['markup']">
+      <div
+        class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
+      >
+        <div>HTML</div>
+        <div>copy</div>
+      </div>
       <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
         <slot name="markup"></slot>
       </div>
     </div>
 
     <div v-if="$slots['script']">
+      <div
+        class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
+      >
+        <div>JAVASCRIPT</div>
+        <div>copy</div>
+      </div>
       <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
         <slot name="script"></slot>
       </div>
