@@ -13,9 +13,18 @@
       <ReleaseNotes />
     </template>
     <template #main>
-      <slot name="content" />
-      <div v-if="$slots['author']" class="py-1 small text-end">
-        <div class="text-muted">Last modified by <slot name="author" /></div>
+      <div class="row">
+        <div :class="$slots.extra ? 'col-10' : 'col'">
+          <slot name="content" />
+          <div v-if="$slots.author" class="py-1 small text-end">
+            <div class="text-muted">
+              Last modified by <slot name="author" />
+            </div>
+          </div>
+        </div>
+        <div v-if="$slots.extra" class="col-2">
+          <slot name="extra" />
+        </div>
       </div>
     </template>
     <template #footer>
