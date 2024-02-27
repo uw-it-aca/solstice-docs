@@ -14,16 +14,27 @@
     </template>
     <template #main>
       <div class="row">
-        <div :class="$slots.extra ? 'col-9' : 'col'">
+        <div :class="[mq.xlMinus ? 'col' : 'col-9']">
+          <slot name="head" />
+
+          <div v-if="$slots['subnav'] && mq.xlMinus">
+            <slot name="subnav" />
+          </div>
           <slot name="content" />
+
           <div v-if="$slots.author" class="py-1 small text-end">
             <div class="text-muted">
               Last modified by <slot name="author" />
             </div>
           </div>
         </div>
-        <div v-if="$slots.extra" class="col-3">
-          <slot name="extra" />
+        <div v-if="$slots['subnav'] && !mq.xlMinus" class="col-3">
+          <div
+            class="border border-danger sticky-top"
+            style="margin-top: 150px"
+          >
+            <slot name="subnav"></slot>
+          </div>
         </div>
       </div>
     </template>
@@ -33,18 +44,10 @@
           <ul class="list-inline m-0">
             <ul class="list-inline m-0">
               <li class="list-inline-item">
-                <a
-                  href="http://www.washington.edu/online/privacy/"
-                  class="link-primary"
-                  >Privacy</a
-                >
+                <a href="http://www.washington.edu/online/privacy/">Privacy</a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="http://www.washington.edu/online/terms/"
-                  class="link-primary"
-                  >Terms</a
-                >
+                <a href="http://www.washington.edu/online/terms/">Terms</a>
               </li>
             </ul>
           </ul>
@@ -61,6 +64,7 @@ import ReleaseNotes from "@/components/ReleaseNotes.vue";
 
 export default {
   name: "App",
+  inject: ["mq"],
   components: {
     NavMenu,
     ReleaseNotes,
