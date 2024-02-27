@@ -13,11 +13,17 @@
       <ReleaseNotes />
     </template>
     <template #main>
+      <div class="row mb-5">
+        <div class="col-9">
+          <slot name="head" />
+        </div>
+      </div>
       <div class="row">
         <div :class="[mq.xlMinus || !$slots['subnav'] ? 'col' : 'col-9']">
-          <slot name="head" />
-
-          <div v-if="$slots['subnav'] && mq.xlMinus">
+          <div
+            v-if="$slots['subnav'] && mq.xlMinus"
+            class="border border-warning mb-5"
+          >
             <slot name="subnav" />
           </div>
           <slot name="content" />
@@ -29,10 +35,7 @@
           </div>
         </div>
         <div v-if="$slots['subnav'] && !mq.xlMinus" class="col-3">
-          <div
-            class="border border-danger sticky-top"
-            style="margin-top: 150px"
-          >
+          <div class="border border-danger sticky-top">
             <slot name="subnav"></slot>
           </div>
         </div>

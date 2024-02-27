@@ -3,14 +3,14 @@
     <template #head>
       <h1 class="fw-bold">{{ pageTitle }}</h1>
 
-      <p class="p-0 col-md-8 lead text-muted">
+      <p class="lead text-muted">
         Solstice Design is a resource for building and documenting UI components
         using Bootstrap and Vue/React Javascript frameworks. It provides a set
         of organized guidelines, patterns and best practices that work as the
         foundation for application design and development at D&amp;A. test asdfa
       </p>
 
-      <hr class="mb-5 w-25 d-inline-block" />
+      <hr class="w-50 d-inline-block" />
     </template>
     <template #content>
       <div class="row mb-3">
