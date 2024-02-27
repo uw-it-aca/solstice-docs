@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <template #content>
+    <template #head>
       <h1 class="fw-bold">{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
@@ -11,7 +11,8 @@
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />
-
+    </template>
+    <template #content>
       <div class="row mb-3">
         <div class="col">
           <h2 class="fw-bold">Getting Started</h2>

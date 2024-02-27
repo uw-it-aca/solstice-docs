@@ -14,7 +14,7 @@
     </template>
     <template #main>
       <div class="row">
-        <div :class="[mq.xlMinus ? 'col' : 'col-9']">
+        <div :class="[mq.xlMinus || !$slots['subnav'] ? 'col' : 'col-9']">
           <slot name="head" />
 
           <div v-if="$slots['subnav'] && mq.xlMinus">
