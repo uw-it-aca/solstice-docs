@@ -45,22 +45,24 @@
         links should match the surrounding text style.
       </p>
 
-      <CodeBlock>
-        <template #preview>
-          Hello! Welcome to the
-          <sol-link href="/">Soltice Design System</sol-link> documentation
-          website. This is a paragraph example using the
-          <sol-link href="/elements/link">link component</sol-link>.
-        </template>
-        <template #markup>
-          <pre class="language-html">
+      <div class="my-5">
+        <CodeBlock>
+          <template #preview>
+            Hello! Welcome to the
+            <sol-link href="/">Soltice Design System</sol-link> documentation
+            website. This is a paragraph example using the
+            <sol-link href="/elements/link">link component</sol-link>.
+          </template>
+          <template #markup>
+            <pre class="language-html">
 <code>&lt;a href="/">Soltice Design System&lt;/a>
 </code></pre>
-          <pre class="language-html">
+            <pre class="language-html">
 <code>&lt;sol-link href="/">Soltice Design System&lt;/sol-link>
 </code></pre>
-        </template>
-      </CodeBlock>
+          </template>
+        </CodeBlock>
+      </div>
 
       <h3>Quiet</h3>
       <p>
@@ -69,21 +71,24 @@
         horizontally or vertically, are not underlined, and are blue with light
         and dark variations.
       </p>
-      <CodeBlock>
-        <template #preview>
-          <sol-link href="/" variant="quiet">Soltice Design System</sol-link>
-        </template>
-        <template #markup>
-          <pre class="language-html">
+
+      <div class="my-5">
+        <CodeBlock>
+          <template #preview>
+            <sol-link href="/" variant="quiet">Soltice Design System</sol-link>
+          </template>
+          <template #markup>
+            <pre class="language-html">
 <code>&lt;a href="/" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
   Soltice Design System
 &lt;/a>
 </code></pre>
-          <pre class="language-html">
+            <pre class="language-html">
 <code>&lt;sol-link href="/" variant="quiet">Soltice Design System&lt;/sol-link>
 </code></pre>
-        </template>
-      </CodeBlock>
+          </template>
+        </CodeBlock>
+      </div>
 
       <h3>Icon</h3>
       <p>
@@ -91,23 +96,26 @@
         only when an icon improves understanding of the link's purpose or
         destination (and not within sentences or paragraphs).
       </p>
-      <CodeBlock>
-        <template #preview>
-          <sol-link href="/" variant="icon" icon="bi-cloud-download"
-            >Download report</sol-link
-          >
-        </template>
-        <template #markup>
-          <pre class="language-html">
+
+      <div class="my-5">
+        <CodeBlock>
+          <template #preview>
+            <sol-link href="/" variant="icon" icon="bi-cloud-download"
+              >Download report</sol-link
+            >
+          </template>
+          <template #markup>
+            <pre class="language-html">
 <code>&lt;a href="/" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
   &lt;i class="bi bi-cloud-download me-1">&lt;/i>Download report
 &lt;/a>
 </code></pre>
-          <pre class="language-html">
+            <pre class="language-html">
 <code>&lt;sol-link href="/" variant="icon" icon="bi-cloud-download">Download report&lt;/sol-link>
 </code></pre>
-        </template>
-      </CodeBlock>
+          </template>
+        </CodeBlock>
+      </div>
 
       <h2>Anatomy</h2>
       <h3>Sizing</h3>
@@ -124,54 +132,63 @@
         <strong>Primary Blue (Default):</strong> For use with links on a
         white/off-white background. This color should be used in most cases.
       </p>
-      <CodeBlock>
-        <template #preview>
-          <sol-link href="/">Soltice Design System</sol-link>
-        </template>
-        <template #markup>
-          <pre class="language-html">
+
+      <div class="my-5">
+        <CodeBlock>
+          <template #preview>
+            <sol-link href="/">Soltice Design System</sol-link>
+          </template>
+          <template #markup>
+            <pre class="language-html">
 <code>&lt;sol-link href="/">Soltice Design System&lt;/sol-link>
 </code></pre>
-        </template>
-      </CodeBlock>
+          </template>
+        </CodeBlock>
+      </div>
 
       <p>
         <strong>Light variants:</strong> For use on dark, static backgrounds
         (such as purple).
       </p>
-      <CodeBlock>
-        <template #preview>
-          <div class="p-3 bg-brand rounded">
-            <sol-link href="/" variant="quiet" color="link-light"
-              >Soltice Design System</sol-link
-            >
-          </div>
-        </template>
-        <template #markup>
-          <pre class="language-html">
+
+      <div class="my-5">
+        <CodeBlock>
+          <template #preview>
+            <div class="p-3 bg-brand rounded">
+              <sol-link href="/" variant="quiet" color="link-light"
+                >Soltice Design System</sol-link
+              >
+            </div>
+          </template>
+          <template #markup>
+            <pre class="language-html">
 <code>&lt;sol-link href="/" variant="quiet" color="link-light">Soltice Design System&lt;/sol-link>
 </code></pre>
-        </template>
-      </CodeBlock>
+          </template>
+        </CodeBlock>
+      </div>
 
       <p>
         <strong>Dark variants:</strong> For use on light, static backgrounds
         (such as gold or light gray).
       </p>
-      <CodeBlock>
-        <template #preview>
-          <div class="p-3 bg-beige rounded">
-            <sol-link href="/" variant="quiet" color="link-dark"
-              >Soltice Design System</sol-link
-            >
-          </div>
-        </template>
-        <template #markup>
-          <pre class="language-html">
+
+      <div class="my-5">
+        <CodeBlock>
+          <template #preview>
+            <div class="p-3 bg-beige rounded">
+              <sol-link href="/" variant="quiet" color="link-dark"
+                >Soltice Design System</sol-link
+              >
+            </div>
+          </template>
+          <template #markup>
+            <pre class="language-html">
 <code>&lt;sol-link href="/" variant="quiet" color="link-dark">Soltice Design System&lt;/sol-link>
 </code></pre>
-        </template>
-      </CodeBlock>
+          </template>
+        </CodeBlock>
+      </div>
 
       <h3>Dark Mode Support</h3>
       <p>
@@ -201,21 +218,22 @@
         <li>Logging out of sites or apps.</li>
       </ul>
 
-      <UsageBlock>
-        <template #text
-          >Use links to allow users to navigate between unique URLS or specific
-          sections of a page.</template
-        >
-        <template #preview>html or images can be inserted here</template>
-      </UsageBlock>
-
-      <UsageBlock variant="dont">
-        <template #text
-          >Don&rsquo;t use links for complex actions—use buttons
-          instead.</template
-        >
-        <template #preview>html or images can be inserted here</template>
-      </UsageBlock>
+      <div class="my-5">
+        <UsageBlock>
+          <template #text
+            >Use links to allow users to navigate between unique URLS or
+            specific sections of a page.</template
+          >
+          <template #preview>html or images can be inserted here</template>
+        </UsageBlock>
+        <UsageBlock variant="dont">
+          <template #text
+            >Don&rsquo;t use links for complex actions—use buttons
+            instead.</template
+          >
+          <template #preview>html or images can be inserted here</template>
+        </UsageBlock>
+      </div>
 
       <h3>Where to use links</h3>
       <p>
@@ -223,18 +241,21 @@
         headers, footers, or "quick links" sections.
       </p>
 
-      <UsageBlock>
-        <template #text
-          >Use links in paragraphs, headers, footers, sidebars, in other groups
-          of links, or alone.</template
-        >
-        <template #preview>html or images can be inserted here</template>
-      </UsageBlock>
-
-      <UsageBlock variant="dont">
-        <template #text>Don&rsquo;t use links in titles or headings.</template>
-        <template #preview>html or images can be inserted here</template>
-      </UsageBlock>
+      <div class="my-5">
+        <UsageBlock>
+          <template #text
+            >Use links in paragraphs, headers, footers, sidebars, in other
+            groups of links, or alone.</template
+          >
+          <template #preview>html or images can be inserted here</template>
+        </UsageBlock>
+        <UsageBlock variant="dont">
+          <template #text
+            >Don&rsquo;t use links in titles or headings.</template
+          >
+          <template #preview>html or images can be inserted here</template>
+        </UsageBlock>
+      </div>
 
       <h3>Maintain consistent styling to make links stand out</h3>
       <p>
@@ -255,21 +276,22 @@
         dark color variants.
       </p>
 
-      <UsageBlock>
-        <template #text
-          >Use proper variants to ensure sufficient contrast against the
-          background.</template
-        >
-        <template #preview>html or images can be inserted here</template>
-      </UsageBlock>
-
-      <UsageBlock variant="dont">
-        <template #text
-          >Don&rsquo;t mix variants or colors in a way that compromises
-          readability.</template
-        >
-        <template #preview>html or images can be inserted here</template>
-      </UsageBlock>
+      <div class="my-5">
+        <UsageBlock>
+          <template #text
+            >Use proper variants to ensure sufficient contrast against the
+            background.</template
+          >
+          <template #preview>html or images can be inserted here</template>
+        </UsageBlock>
+        <UsageBlock variant="dont">
+          <template #text
+            >Don&rsquo;t mix variants or colors in a way that compromises
+            readability.</template
+          >
+          <template #preview>html or images can be inserted here</template>
+        </UsageBlock>
+      </div>
 
       <h3>Use clear text</h3>
       <ul>
@@ -300,20 +322,22 @@
         aria-labelledby, ensuring they read naturally with surrounding text.
       </p>
 
-      <UsageBlock>
-        <template #text
-          >Link words or short phrases that make sense on their own.</template
-        >
-        <template #preview>html or images can be inserted here</template>
-      </UsageBlock>
+      <div class="my-5">
+        <UsageBlock>
+          <template #text
+            >Link words or short phrases that make sense on their own.</template
+          >
+          <template #preview>html or images can be inserted here</template>
+        </UsageBlock>
 
-      <UsageBlock variant="dont">
-        <template #text
-          >Don&rsquo;t link generic terms like “click here” that don&rsquo;t
-          make sense out of context.</template
-        >
-        <template #preview>html or images can be inserted here</template>
-      </UsageBlock>
+        <UsageBlock variant="dont">
+          <template #text
+            >Don&rsquo;t link generic terms like “click here” that don&rsquo;t
+            make sense out of context.</template
+          >
+          <template #preview>html or images can be inserted here</template>
+        </UsageBlock>
+      </div>
 
       <h3>Keyboard functionality</h3>
       <p>
@@ -326,7 +350,8 @@
 
       <h2>Implementation</h2>
       <h3>Properties</h3>
-      <table class="table table-sm table-bordered">
+
+      <table class="table table-sm table-bordered my-5">
         <thead>
           <tr>
             <th scope="col">Name</th>
