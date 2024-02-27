@@ -37,7 +37,7 @@
       <h3>Usage</h3>
       <CodeBlock>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-sidebar :app-name="'App Name'" :app-root-url="'/'">&lt;/axdd-sidebar>
 </code></pre>
         </template>
@@ -163,7 +163,7 @@
           </axdd-sidebar>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-sidebar :app-name="'App Name'" :user-name="'javerage'">
   &lt;template #profile> profile here... &lt;/template>
   &lt;template #navigation>
@@ -205,7 +205,7 @@
           </sol-sidebar>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-sidebar :app-name="'App Name'" :variant="'dark'" class="bg-primary">
 &lt;/axdd-sidebar>
 </code></pre>
@@ -241,7 +241,7 @@
           </sol-sidebar>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-sidebar :app-name="'App Name'" :variant="'dark'" class="bg-primary">
   &lt;template #logo>
     &lt;i class="bi bi-emoji-smile">&lt;/i>

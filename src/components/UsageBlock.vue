@@ -35,7 +35,7 @@
     <div class="w-100">
       <div class="d-flex flex-column flex-md-row">
         <div class="w-100">
-          <div class="fw-bold fs-5 mb-2">Don't</div>
+          <div class="fw-bold fs-5 mb-2">Don&rsquo;t</div>
           <p>
             <template v-if="$slots['text']">
               <slot name="text"></slot>

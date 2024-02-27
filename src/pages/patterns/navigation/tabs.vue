@@ -113,7 +113,7 @@
           </axdd-tabs-display>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-tabs-list :tabs-id="'example'">
   &lt;template #items>
     &lt;axdd-tabs-item :tabs-id="'example'" :panel-id="'first'" :active-tab="true">

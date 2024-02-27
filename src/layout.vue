@@ -13,9 +13,32 @@
       <ReleaseNotes />
     </template>
     <template #main>
-      <slot name="content" />
-      <div v-if="$slots['author']" class="py-1 small text-end">
-        <div class="text-muted">Last modified by <slot name="author" /></div>
+      <div class="row mb-5">
+        <div class="col-9">
+          <slot name="head" />
+        </div>
+      </div>
+      <div class="row">
+        <div :class="[mq.xlMinus || !$slots['subnav'] ? 'col' : 'col-9']">
+          <div
+            v-if="$slots['subnav'] && mq.xlMinus"
+            class="border border-warning mb-5"
+          >
+            <slot name="subnav" />
+          </div>
+          <slot name="content" />
+
+          <div v-if="$slots.author" class="py-1 small text-end">
+            <div class="text-muted">
+              Last modified by <slot name="author" />
+            </div>
+          </div>
+        </div>
+        <div v-if="$slots['subnav'] && !mq.xlMinus" class="col-3">
+          <div class="border border-danger sticky-top">
+            <slot name="subnav"></slot>
+          </div>
+        </div>
       </div>
     </template>
     <template #footer>
@@ -24,18 +47,10 @@
           <ul class="list-inline m-0">
             <ul class="list-inline m-0">
               <li class="list-inline-item">
-                <a
-                  href="http://www.washington.edu/online/privacy/"
-                  class="link-primary"
-                  >Privacy</a
-                >
+                <a href="http://www.washington.edu/online/privacy/">Privacy</a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="http://www.washington.edu/online/terms/"
-                  class="link-primary"
-                  >Terms</a
-                >
+                <a href="http://www.washington.edu/online/terms/">Terms</a>
               </li>
             </ul>
           </ul>
@@ -52,6 +67,7 @@ import ReleaseNotes from "@/components/ReleaseNotes.vue";
 
 export default {
   name: "App",
+  inject: ["mq"],
   components: {
     NavMenu,
     ReleaseNotes,

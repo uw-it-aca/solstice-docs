@@ -32,7 +32,7 @@
           </axdd-card>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-card>
   &lt;template #body>card body&lt;/template>
 &lt;/axdd-card></code></pre>
@@ -60,7 +60,7 @@ export default {
           </axdd-card>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-card>
   &lt;template #heading>
     &lt;axdd-card-heading :level="3">Heading&lt;/axdd-card-heading>
@@ -100,7 +100,7 @@ export default {
           </axdd-card>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-card>
   &lt;template #heading-action>
     &lt;axdd-card-heading :level="3">Heading&lt;/axdd-card-heading>
@@ -155,7 +155,7 @@ export default {
           </axdd-card>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-card>
   &lt;template #heading-action>
     &lt;axdd-card-heading :level="3">Heading&lt;/axdd-card-heading>
@@ -250,7 +250,7 @@ export default {
           </axdd-card>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;axdd-card>
   &lt;template #body>card body&lt;/template>
   &lt;template #footer>this is the footer&lt;/template>
