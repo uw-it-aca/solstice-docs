@@ -1,6 +1,6 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #content>
+    <template #breadcrumb>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -11,9 +11,11 @@
           </li>
         </ol>
       </nav>
-      <h1>{{ pageTitle }}</h1>
+    </template>
+    <template #head>
+      <h1 class="fw-bold">{{ pageTitle }}</h1>
 
-      <p class="p-0 col-md-8 lead text-muted">
+      <p class="lead text-muted">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum,
         voluptate sint alias consectetur commodi dignissimos, minus ratione quos
         a enim blanditiis hic perferendis ullam quod non, molestiae aut illo?
@@ -21,7 +23,14 @@
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />
-
+    </template>
+    <template #subnav>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
+      possimus nemo nam autem quis reiciendis obcaecati facilis doloremque esse
+      nostrum, exercitationem ipsam ex voluptates eius ratione neque ipsum odio
+      molestias?
+    </template>
+    <template #content>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad,
         accusantium nobis dicta saepe necessitatibus eos eius quas quod quo

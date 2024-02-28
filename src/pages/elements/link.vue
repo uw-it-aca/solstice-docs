@@ -1,6 +1,6 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #head>
+    <template #breadcrumb>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -11,8 +11,11 @@
           </li>
         </ol>
       </nav>
+    </template>
 
-      <h1>{{ pageTitle }}</h1>
+    <template #head>
+
+      <h1 class="fw-bold">{{ pageTitle }}</h1>
 
       <p class="lead text-muted">
         Links navigate between or within web pages and initiate simple actions.
@@ -20,6 +23,7 @@
       </p>
 
       <hr class="w-50 d-inline-block" />
+
     </template>
 
     <template #subnav>
@@ -155,14 +159,14 @@
         <CodeBlock>
           <template #preview>
             <div class="p-3 bg-brand rounded">
-              <sol-link href="/" variant="quiet" color="link-light"
+              <sol-link href="/" color="link-light"
                 >Soltice Design System</sol-link
               >
             </div>
           </template>
           <template #markup>
             <pre class="language-html">
-<code>&lt;sol-link href="/" variant="quiet" color="link-light">Soltice Design System&lt;/sol-link>
+<code>&lt;sol-link href="/" color="link-light">Soltice Design System&lt;/sol-link>
 </code></pre>
           </template>
         </CodeBlock>
@@ -177,14 +181,14 @@
         <CodeBlock>
           <template #preview>
             <div class="p-3 bg-beige rounded">
-              <sol-link href="/" variant="quiet" color="link-dark"
+              <sol-link href="/" color="link-dark"
                 >Soltice Design System</sol-link
               >
             </div>
           </template>
           <template #markup>
             <pre class="language-html">
-<code>&lt;sol-link href="/" variant="quiet" color="link-dark">Soltice Design System&lt;/sol-link>
+<code>&lt;sol-link href="/" color="link-dark">Soltice Design System&lt;/sol-link>
 </code></pre>
           </template>
         </CodeBlock>

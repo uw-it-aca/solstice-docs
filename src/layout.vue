@@ -13,11 +13,19 @@
       <ReleaseNotes />
     </template>
     <template #main>
-      <div class="row mb-5">
+
+      <div v-if="$slots.breadcrumb" class="row">
+        <div class="col">
+          <slot name="breadcrumb" />
+        </div>
+      </div>
+
+      <div v-if="$slots.head" class="row">
         <div class="col-9">
           <slot name="head" />
         </div>
       </div>
+
       <div class="row">
         <div :class="[mq.xlMinus || !$slots['subnav'] ? 'col' : 'col-9']">
           <div
