@@ -18,12 +18,15 @@
         headings play a crucial role in guiding users through a workflow. The
         words chosen shape how users perceive and use our tools to complete
         their tasks. Clear and concise actionable language helps our users
-        understand and take action.
+        understand and take action. <br />
+        Inclusive language is paramount in fostering a welcoming and respectful
+        digital environment and ensures that all users feel respected,
+        represented, and included at the University of Washington.
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />
 
-      <h2>Active vs. Passive</h2>
+      <h2>Actionable Language</h2>
       <p>
         When crafting language for labels, links, buttons, and headings, it's
         important to choose between active over passive terminology. Active
@@ -86,8 +89,8 @@
       <UsageBlock variant="dont"
         >Academic plan creation and management</UsageBlock
       >
-      <h2>Best Practices</h2>
-      <h3>Heading and subheadings</h3>
+      <h3>Best Practices</h3>
+      <h4>Heading and subheadings</h4>
       <p>
         Headings and subheadings help users identify their place, understand how
         things are organized, predict what actions they can take.
@@ -102,7 +105,7 @@
           only)
         </li>
       </ul>
-      <h3>Buttons</h3>
+      <h4>Buttons</h4>
       <p>
         Buttons should always lead with a strong verb that encourages action. To
         provide enough context, use the content formula {verb} + {noun} on
@@ -140,7 +143,7 @@
           </button></template
         ></UsageBlock
       >
-      <h3>Links</h3>
+      <h4>Links</h4>
       <p>
         Links serve as essential navigation elements. Effective and actionable
         language is crucial to guide users seamlessly through task completion.
