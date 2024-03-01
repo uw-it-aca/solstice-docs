@@ -100,15 +100,10 @@ export default {
     document.title = this.pageTitle + " - " + this.appName;
     //this.lastModified = new Date(document.lastModified).toLocaleString();
 
-    // implement scrollspy
+    // implement scrollspy by attaching to 'scrollbody' id produced by component
     const scrollSpy = new ScrollSpy(document.getElementById("scrollbody"), {
       target: "#TableOfContents",
-      threshold: [0],
-      rootMargin: "0px 0px -35%",
-      smoothScroll: true,
     });
-
-    scrollSpy.refresh();
   },
 };
 </script>
