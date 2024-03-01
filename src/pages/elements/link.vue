@@ -214,6 +214,32 @@
         change, while light and dark variants used on static colored backgrounds
         will not.
       </p>
+      <table class="table my-5">
+        <thead>
+          <tr>
+            <th scope="col">Property</th>
+            <th scope="col">Light Mode (default)</th>
+            <th scope="col">Dark Mode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>default</code></td>
+            <td>asdfas</td>
+            <td>afda</td>
+          </tr>
+          <tr>
+            <td><code>light</code></td>
+            <td>asdfasdf</td>
+            <td>asdfasdf</td>
+          </tr>
+          <tr>
+            <td><code>dark</code></td>
+            <td>asdf</td>
+            <td>asdfasdf</td>
+          </tr>
+        </tbody>
+      </table>
 
       <h2 id="usage">Usage</h2>
       <h3>Behavior</h3>
@@ -276,13 +302,25 @@
             >Use links in paragraphs, headers, footers, sidebars, in other
             groups of links, or alone.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
         <UsageBlock variant="dont">
           <template #text
             >Don&rsquo;t use links in titles or headings.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
       </div>
 
@@ -311,14 +349,26 @@
             >Use proper variants to ensure sufficient contrast against the
             background.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
         <UsageBlock variant="dont">
           <template #text
             >Don&rsquo;t mix variants or colors in a way that compromises
             readability.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
       </div>
 
@@ -356,7 +406,13 @@
           <template #text
             >Link words or short phrases that make sense on their own.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
 
         <UsageBlock variant="dont">
@@ -364,7 +420,13 @@
             >Don&rsquo;t link generic terms like “click here” that don&rsquo;t
             make sense out of context.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
       </div>
 
@@ -380,7 +442,7 @@
       <h2 id="implementation">Implementation</h2>
       <h3>Properties</h3>
 
-      <table class="table table-sm table-bordered my-5">
+      <table class="table my-5">
         <thead>
           <tr>
             <th scope="col">Name</th>
