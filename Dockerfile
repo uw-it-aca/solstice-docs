@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install git -y
 ADD docker/nginx.conf /etc/nginx/nginx.conf
 RUN chgrp acait /etc/nginx/nginx.conf && chmod g+w /etc/nginx/nginx.conf
 
-FROM node:lts-bullseye AS node-bundler
+FROM node:lts-bookworm AS node-bundler
 
 ADD index.html package.json vite.config.js /app/
 WORKDIR /app/
