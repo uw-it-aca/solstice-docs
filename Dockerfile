@@ -1,4 +1,4 @@
-FROM us-docker.pkg.dev/uwit-mci-axdd/containers/nginx-container:1.1.2 as pre-app-container
+FROM us-docker.pkg.dev/uwit-mci-axdd/containers/nginx-container:1.2.0 as pre-app-container
 
 USER root
 
@@ -7,7 +7,10 @@ RUN apt-get update && apt-get install git -y
 ADD docker/nginx.conf /etc/nginx/nginx.conf
 RUN chgrp acait /etc/nginx/nginx.conf && chmod g+w /etc/nginx/nginx.conf
 
-FROM node:lts-bookworm AS node-bundler
+# latest node + ubuntu
+FROM node:20 AS node-base
+FROM ubuntu:22.04 AS node-bundler
+COPY --from=node-base / /
 
 ADD index.html package.json vite.config.js /app/
 WORKDIR /app/
@@ -22,7 +25,10 @@ FROM pre-app-container as app-container
 USER acait
 COPY --chown=acait:acait --from=node-bundler /app/dist /app/dist
 
-FROM node:lts-bookworm AS vite-container
+# latest node + ubuntu
+FROM node:20 AS node-base
+FROM ubuntu:22.04 AS vite-container
+COPY --from=node-base / /
 
 ADD index.html package.json vite.config.js /app/
 WORKDIR /app/
