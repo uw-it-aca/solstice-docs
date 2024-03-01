@@ -1,6 +1,6 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #head>
+    <template #breadcrumb>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -11,8 +11,10 @@
           </li>
         </ol>
       </nav>
+    </template>
 
-      <h1>{{ pageTitle }}</h1>
+    <template #head>
+      <h1 class="fw-bold">{{ pageTitle }}</h1>
 
       <p class="lead text-muted">
         Links navigate between or within web pages and initiate simple actions.
@@ -25,17 +27,30 @@
     <template #subnav>
       <PageContents>
         <h2>On this page</h2>
-        <ul>
-          <li>first</li>
-          <li>lkasjdfldaksfj</li>
-          <li>askjdflkasdjf</li>
-          <li>lkasjdfldaksfj</li>
-        </ul>
+        <nav id="TableOfContents">
+          <ul>
+            <li class="menu-item">
+              <a href="#variants">Variants</a>
+            </li>
+            <li class="menu-item">
+              <a href="#anatomy">Anatomy</a>
+            </li>
+            <li class="menu-item">
+              <a href="#usage">Usage</a>
+            </li>
+            <li class="menu-item">
+              <a href="#accessibility">Accessibility</a>
+            </li>
+            <li class="menu-item">
+              <a href="#implementation">Implementation</a>
+            </li>
+          </ul>
+        </nav>
       </PageContents>
     </template>
 
     <template #content>
-      <h2>Variants</h2>
+      <h2 id="variants">Variants</h2>
 
       <h3>Default</h3>
       <p>
@@ -117,7 +132,7 @@
         </CodeBlock>
       </div>
 
-      <h2>Anatomy</h2>
+      <h2 id="anatomy">Anatomy</h2>
       <h3>Sizing</h3>
       <p>A link should inherit the size of its parent.</p>
 
@@ -155,14 +170,14 @@
         <CodeBlock>
           <template #preview>
             <div class="p-3 bg-brand rounded">
-              <sol-link href="/" variant="quiet" color="link-light"
+              <sol-link href="/" color="link-light"
                 >Soltice Design System</sol-link
               >
             </div>
           </template>
           <template #markup>
             <pre class="language-html">
-<code>&lt;sol-link href="/" variant="quiet" color="link-light">Soltice Design System&lt;/sol-link>
+<code>&lt;sol-link href="/" color="link-light">Soltice Design System&lt;/sol-link>
 </code></pre>
           </template>
         </CodeBlock>
@@ -177,14 +192,14 @@
         <CodeBlock>
           <template #preview>
             <div class="p-3 bg-beige rounded">
-              <sol-link href="/" variant="quiet" color="link-dark"
+              <sol-link href="/" color="link-dark"
                 >Soltice Design System</sol-link
               >
             </div>
           </template>
           <template #markup>
             <pre class="language-html">
-<code>&lt;sol-link href="/" variant="quiet" color="link-dark">Soltice Design System&lt;/sol-link>
+<code>&lt;sol-link href="/" color="link-dark">Soltice Design System&lt;/sol-link>
 </code></pre>
           </template>
         </CodeBlock>
@@ -199,8 +214,34 @@
         change, while light and dark variants used on static colored backgrounds
         will not.
       </p>
+      <table class="table my-5">
+        <thead>
+          <tr>
+            <th scope="col">Property</th>
+            <th scope="col">Light Mode (default)</th>
+            <th scope="col">Dark Mode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>default</code></td>
+            <td>asdfas</td>
+            <td>afda</td>
+          </tr>
+          <tr>
+            <td><code>light</code></td>
+            <td>asdfasdf</td>
+            <td>asdfasdf</td>
+          </tr>
+          <tr>
+            <td><code>dark</code></td>
+            <td>asdf</td>
+            <td>asdfasdf</td>
+          </tr>
+        </tbody>
+      </table>
 
-      <h2>Usage</h2>
+      <h2 id="usage">Usage</h2>
       <h3>Behavior</h3>
       <p>
         Links usually open in the same tab. If users hold the command/control
@@ -224,14 +265,28 @@
             >Use links to allow users to navigate between unique URLS or
             specific sections of a page.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview>
+            <div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni, doloremque quia molestiae accusantium maiores hic
+              vero rem repudiandae fuga! Eveniet sit amet mollitia fugiat
+              similique?
+            </div>
+          </template>
         </UsageBlock>
         <UsageBlock variant="dont">
           <template #text
             >Don&rsquo;t use links for complex actions—use buttons
             instead.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
       </div>
 
@@ -247,13 +302,25 @@
             >Use links in paragraphs, headers, footers, sidebars, in other
             groups of links, or alone.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
         <UsageBlock variant="dont">
           <template #text
             >Don&rsquo;t use links in titles or headings.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
       </div>
 
@@ -266,7 +333,7 @@
         non-link text; it will make it harder for users to navigate.
       </p>
 
-      <h2>Accessibility</h2>
+      <h2 id="accessibility">Accessibility</h2>
 
       <h3>Ensure proper contrast</h3>
       <p>
@@ -282,14 +349,26 @@
             >Use proper variants to ensure sufficient contrast against the
             background.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
         <UsageBlock variant="dont">
           <template #text
             >Don&rsquo;t mix variants or colors in a way that compromises
             readability.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
       </div>
 
@@ -327,7 +406,13 @@
           <template #text
             >Link words or short phrases that make sense on their own.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
 
         <UsageBlock variant="dont">
@@ -335,7 +420,13 @@
             >Don&rsquo;t link generic terms like “click here” that don&rsquo;t
             make sense out of context.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
       </div>
 
@@ -348,10 +439,10 @@
         links.
       </p>
 
-      <h2>Implementation</h2>
+      <h2 id="implementation">Implementation</h2>
       <h3>Properties</h3>
 
-      <table class="table table-sm table-bordered my-5">
+      <table class="table my-5">
         <thead>
           <tr>
             <th scope="col">Name</th>
