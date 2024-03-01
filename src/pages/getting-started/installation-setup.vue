@@ -25,13 +25,16 @@
       <hr class="mb-5 w-25 d-inline-block" />
     </template>
     <template #subnav>
-      <nav>
+      <nav id="TableOfContents">
         <ul>
           <li class="menu-item">
             <a href="#scrollspyHeading1">Template Repository</a>
           </li>
           <li class="menu-item">
             <a href="#scrollspyHeading2">Manual Installation</a>
+          </li>
+          <li class="menu-item">
+            <a href="#scrollspyHeading3">Code Style Guide</a>
           </li>
         </ul>
       </nav>
@@ -114,7 +117,7 @@ app.use(SolsticeVue);
 
       <hr class="mb-5 w-25 d-inline-block" />
 
-      <h2>Code Style Guide</h2>
+      <h2 id="scrollspyHeading3">Code Style Guide</h2>
       <p>
         <a href="https://vuejs.org/style-guide/" target="_blank"
           >https://vuejs.org/style-guide/</a

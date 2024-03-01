@@ -14,7 +14,6 @@
     </template>
 
     <template #head>
-
       <h1 class="fw-bold">{{ pageTitle }}</h1>
 
       <p class="lead text-muted">
@@ -23,23 +22,35 @@
       </p>
 
       <hr class="w-50 d-inline-block" />
-
     </template>
 
     <template #subnav>
       <PageContents>
         <h2>On this page</h2>
-        <ul>
-          <li>first</li>
-          <li>lkasjdfldaksfj</li>
-          <li>askjdflkasdjf</li>
-          <li>lkasjdfldaksfj</li>
-        </ul>
+        <nav id="TableOfContents">
+          <ul>
+            <li class="menu-item">
+              <a href="#variants">Variants</a>
+            </li>
+            <li class="menu-item">
+              <a href="#anatomy">Anatomy</a>
+            </li>
+            <li class="menu-item">
+              <a href="#usage">Usage</a>
+            </li>
+            <li class="menu-item">
+              <a href="#accessibility">Accessibility</a>
+            </li>
+            <li class="menu-item">
+              <a href="#implementation">Implementation</a>
+            </li>
+          </ul>
+        </nav>
       </PageContents>
     </template>
 
     <template #content>
-      <h2>Variants</h2>
+      <h2 id="variants">Variants</h2>
 
       <h3>Default</h3>
       <p>
@@ -121,7 +132,7 @@
         </CodeBlock>
       </div>
 
-      <h2>Anatomy</h2>
+      <h2 id="anatomy">Anatomy</h2>
       <h3>Sizing</h3>
       <p>A link should inherit the size of its parent.</p>
 
@@ -204,7 +215,7 @@
         will not.
       </p>
 
-      <h2>Usage</h2>
+      <h2 id="usage">Usage</h2>
       <h3>Behavior</h3>
       <p>
         Links usually open in the same tab. If users hold the command/control
@@ -228,14 +239,28 @@
             >Use links to allow users to navigate between unique URLS or
             specific sections of a page.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview>
+            <div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni, doloremque quia molestiae accusantium maiores hic
+              vero rem repudiandae fuga! Eveniet sit amet mollitia fugiat
+              similique?
+            </div>
+          </template>
         </UsageBlock>
         <UsageBlock variant="dont">
           <template #text
             >Don&rsquo;t use links for complex actions—use buttons
             instead.</template
           >
-          <template #preview>html or images can be inserted here</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-light">
+              html or images can be inserted here. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quos, mollitia, debitis delectus
+              beatae magni.
+            </div></template
+          >
         </UsageBlock>
       </div>
 
@@ -270,7 +295,7 @@
         non-link text; it will make it harder for users to navigate.
       </p>
 
-      <h2>Accessibility</h2>
+      <h2 id="accessibility">Accessibility</h2>
 
       <h3>Ensure proper contrast</h3>
       <p>
@@ -352,7 +377,7 @@
         links.
       </p>
 
-      <h2>Implementation</h2>
+      <h2 id="implementation">Implementation</h2>
       <h3>Properties</h3>
 
       <table class="table table-sm table-bordered my-5">
