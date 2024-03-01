@@ -22,7 +22,7 @@ FROM pre-app-container as app-container
 USER acait
 COPY --chown=acait:acait --from=node-bundler /app/dist /app/dist
 
-FROM node:lts-bullseye AS vite-container
+FROM node:lts-bookworm AS vite-container
 
 ADD index.html package.json vite.config.js /app/
 WORKDIR /app/
