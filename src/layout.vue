@@ -101,7 +101,7 @@ export default {
     //this.lastModified = new Date(document.lastModified).toLocaleString();
 
     // implement scrollspy by attaching to 'scrollbody' id produced by component
-    const scrollSpy = new ScrollSpy(document.getElementById("scrollbody"), {
+    new ScrollSpy(document.getElementById("scrollbody"), {
       target: "#TableOfContents",
     });
   },
