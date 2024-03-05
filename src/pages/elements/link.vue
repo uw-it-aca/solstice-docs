@@ -24,25 +24,51 @@
       <hr class="w-50 d-inline-block" />
     </template>
 
-    <template #subnav>
+    <template #toc>
       <PageContents>
-        <h2>On this page</h2>
         <nav id="TableOfContents">
-          <ul>
-            <li class="menu-item">
-              <a href="#variants">Variants</a>
+          <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#variants"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Variants</a
+              >
             </li>
-            <li class="menu-item">
-              <a href="#anatomy">Anatomy</a>
+            <li>
+              <a
+                href="#options"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Options</a
+              >
             </li>
-            <li class="menu-item">
-              <a href="#usage">Usage</a>
+            <li>
+              <a
+                href="#anatomy"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Anatomy</a
+              >
             </li>
-            <li class="menu-item">
-              <a href="#accessibility">Accessibility</a>
+            <li>
+              <a
+                href="#usage"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Usage</a
+              >
             </li>
-            <li class="menu-item">
-              <a href="#implementation">Implementation</a>
+            <li>
+              <a
+                href="#accessibility"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Accessibility</a
+              >
+            </li>
+            <li>
+              <a
+                href="#implementation"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Implementation</a
+              >
             </li>
           </ul>
         </nav>
@@ -59,14 +85,17 @@
         stand alone; for that, use Quiet links. Apart from color and underline,
         links should match the surrounding text style.
       </p>
-
-      <div class="my-5">
+      <p>
+        For use with links on a white/off-white background. This color should be
+        used in most cases.
+      </p>
+      <div class="mb-5">
         <CodeBlock>
           <template #preview>
             Hello! Welcome to the
             <sol-link href="/">Soltice Design System</sol-link> documentation
             website. This is a paragraph example using the
-            <sol-link href="/elements/link">link component</sol-link>.
+            <sol-link href="/elements/link">link component</sol-link>. Goodbye!
           </template>
           <template #markup>
             <pre class="language-html">
@@ -79,6 +108,63 @@
         </CodeBlock>
       </div>
 
+      <h3>Light</h3>
+      <p>For use on dark, static backgrounds (such as purple).</p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <div class="p-3 bg-brand rounded text-light">
+              Hello! Welcome to the
+              <sol-link
+                href="/"
+                color="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+                >Soltice Design System</sol-link
+              >
+              documentation website. This is a paragraph example using the
+              <sol-link
+                href="/elements/link"
+                color="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+                >link component</sol-link
+              >. Goodbye!
+            </div>
+          </template>
+          <template #markup>
+            <pre class="language-html">
+<code>&lt;sol-link href="/" color="link-light">Soltice Design System&lt;/sol-link>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
+      <h3>Dark</h3>
+      <p>For use on light, static backgrounds (such as gold or light gray).</p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <div class="p-3 bg-beige rounded text-dark">
+              Hello! Welcome to the
+              <sol-link
+                href="/"
+                color="link-dark link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+                >Soltice Design System</sol-link
+              >
+              documentation website. This is a paragraph example using the
+              <sol-link
+                href="/elements/link"
+                color="link-dark link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+                >link component</sol-link
+              >. Goodbye!
+            </div>
+          </template>
+          <template #markup>
+            <pre class="language-html">
+<code>&lt;sol-link href="/" color="link-dark">Soltice Design System&lt;/sol-link>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
+      <h2 id="options">Options</h2>
       <h3>Quiet</h3>
       <p>
         Quiet links are <strong>standalone or in link groups</strong>, typically
@@ -87,9 +173,13 @@
         and dark variations.
       </p>
 
-      <div class="my-5">
+      <div class="mb-5">
         <CodeBlock>
           <template #preview>
+            <p>
+              Hello! Welcome to the Soltice Design System documentation website.
+              This is a paragraph explaining how to use the quite link below:
+            </p>
             <sol-link href="/" variant="quiet">Soltice Design System</sol-link>
           </template>
           <template #markup>
@@ -112,7 +202,7 @@
         destination (and not within sentences or paragraphs).
       </p>
 
-      <div class="my-5">
+      <div class="mb-5">
         <CodeBlock>
           <template #preview>
             <sol-link href="/" variant="icon" icon="bi-cloud-download"
@@ -142,68 +232,6 @@
         use on colored backgrounds where the default blue does not meet the
         minimum contrast ratio of 4.5:1.
       </p>
-
-      <p>
-        <strong>Primary Blue (Default):</strong> For use with links on a
-        white/off-white background. This color should be used in most cases.
-      </p>
-
-      <div class="my-5">
-        <CodeBlock>
-          <template #preview>
-            <sol-link href="/">Soltice Design System</sol-link>
-          </template>
-          <template #markup>
-            <pre class="language-html">
-<code>&lt;sol-link href="/">Soltice Design System&lt;/sol-link>
-</code></pre>
-          </template>
-        </CodeBlock>
-      </div>
-
-      <p>
-        <strong>Light variants:</strong> For use on dark, static backgrounds
-        (such as purple).
-      </p>
-
-      <div class="my-5">
-        <CodeBlock>
-          <template #preview>
-            <div class="p-3 bg-brand rounded">
-              <sol-link href="/" color="link-light"
-                >Soltice Design System</sol-link
-              >
-            </div>
-          </template>
-          <template #markup>
-            <pre class="language-html">
-<code>&lt;sol-link href="/" color="link-light">Soltice Design System&lt;/sol-link>
-</code></pre>
-          </template>
-        </CodeBlock>
-      </div>
-
-      <p>
-        <strong>Dark variants:</strong> For use on light, static backgrounds
-        (such as gold or light gray).
-      </p>
-
-      <div class="my-5">
-        <CodeBlock>
-          <template #preview>
-            <div class="p-3 bg-beige rounded">
-              <sol-link href="/" color="link-dark"
-                >Soltice Design System</sol-link
-              >
-            </div>
-          </template>
-          <template #markup>
-            <pre class="language-html">
-<code>&lt;sol-link href="/" color="link-dark">Soltice Design System&lt;/sol-link>
-</code></pre>
-          </template>
-        </CodeBlock>
-      </div>
 
       <h3>Dark Mode Support</h3>
       <p>
@@ -266,7 +294,7 @@
             specific sections of a page.</template
           >
           <template #preview>
-            <div class="border rounded-3 p-3 bg-light">
+            <div class="border rounded-3 p-3 bg-body-tertiary">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni, doloremque quia molestiae accusantium maiores hic
@@ -281,7 +309,7 @@
             instead.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-light">
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -303,7 +331,7 @@
             groups of links, or alone.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-light">
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -315,7 +343,7 @@
             >Don&rsquo;t use links in titles or headings.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-light">
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -350,7 +378,7 @@
             background.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-light">
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -363,7 +391,7 @@
             readability.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-light">
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -407,7 +435,7 @@
             >Link words or short phrases that make sense on their own.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-light">
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -421,7 +449,7 @@
             make sense out of context.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-light">
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.

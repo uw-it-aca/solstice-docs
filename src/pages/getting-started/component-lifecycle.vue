@@ -24,7 +24,7 @@
 
       <hr class="mb-5 w-25 d-inline-block" />
     </template>
-    <template #subnav>
+    <template #toc>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
       possimus nemo nam autem quis reiciendis obcaecati facilis doloremque esse
       nostrum, exercitationem ipsam ex voluptates eius ratione neque ipsum odio

@@ -25,13 +25,10 @@
         </div>
       </div>
 
-      <div id="blah" class="row">
-        <div :class="[mq.xlMinus || !$slots['subnav'] ? 'col' : 'col-9']">
-          <div
-            v-if="$slots['subnav'] && mq.xlMinus"
-            class="border border-warning mb-5"
-          >
-            <slot name="subnav" />
+      <div class="row">
+        <div :class="[mq.xlMinus || !$slots['toc'] ? 'col' : 'col-9']">
+          <div v-if="$slots['toc'] && mq.xlMinus" class="mb-5">
+            <slot name="toc" />
           </div>
           <slot name="content" />
 
@@ -41,9 +38,9 @@
             </div>
           </div>
         </div>
-        <div v-if="$slots['subnav'] && !mq.xlMinus" class="col-3">
-          <div class="border border-danger sticky-top">
-            <slot name="subnav"></slot>
+        <div v-if="$slots['toc'] && !mq.xlMinus" class="col-3">
+          <div class="sticky-top">
+            <slot name="toc"></slot>
           </div>
         </div>
       </div>
@@ -71,7 +68,6 @@
 <script>
 import NavMenu from "@/components/NavMenu.vue";
 import ReleaseNotes from "@/components/ReleaseNotes.vue";
-import { ScrollSpy } from "bootstrap";
 
 export default {
   name: "App",
@@ -99,17 +95,6 @@ export default {
     // as a default layout prop
     document.title = this.pageTitle + " - " + this.appName;
     //this.lastModified = new Date(document.lastModified).toLocaleString();
-
-    // implement scrollspy by attaching to 'scrollbody' id produced by component
-    new ScrollSpy(document.getElementById("scrollbody"), {
-      target: "#TableOfContents",
-    });
   },
 };
 </script>
-
-<style>
-.menu-item .active {
-  background-color: lime;
-}
-</style>

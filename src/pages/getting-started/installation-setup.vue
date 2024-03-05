@@ -24,20 +24,22 @@
 
       <hr class="mb-5 w-25 d-inline-block" />
     </template>
-    <template #subnav>
-      <nav id="TableOfContents">
-        <ul>
-          <li class="menu-item">
-            <a href="#scrollspyHeading1">Template Repository</a>
-          </li>
-          <li class="menu-item">
-            <a href="#scrollspyHeading2">Manual Installation</a>
-          </li>
-          <li class="menu-item">
-            <a href="#scrollspyHeading3">Code Style Guide</a>
-          </li>
-        </ul>
-      </nav>
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul>
+            <li class="menu-item">
+              <a href="#scrollspyHeading1">Template Repository</a>
+            </li>
+            <li class="menu-item">
+              <a href="#scrollspyHeading2">Manual Installation</a>
+            </li>
+            <li class="menu-item">
+              <a href="#scrollspyHeading3">Code Style Guide</a>
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
     </template>
     <template #content>
       <div class="row">
@@ -177,10 +179,11 @@ app.use(SolsticeVue);
 <script>
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
+import PageContents from "@/components/PageContents.vue";
 
 export default {
   name: "DocsInstallationSetup",
-  components: { Layout, CodeBlock },
+  components: { Layout, CodeBlock, PageContents },
   data() {
     return {
       pageTitle: "Installation & Setup",
