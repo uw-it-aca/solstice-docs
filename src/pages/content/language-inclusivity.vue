@@ -200,6 +200,20 @@
         outlines the significance of inclusive language in user interface design
         and clarifies its application within our university community context.
       </p>
+      <h3>What is Inclusive Language?</h3>
+      <p>
+        Inclusive language refers to language choices that avoid stereotypes,
+        biases, or exclusions based on identity characteristics such as race,
+        gender, ethnicity, ability, age, sexual orientation, religion,
+        socioeconomic status, or any other relevant factor. It encompasses:
+      </p>
+      <ul>
+        <li>Using gender-neutral terminology.</li>
+        <li>Prioritizing person-first language.</li>
+        <li>Acknowledging and respecting diverse cultural backgrounds.</li>
+        <li>Avoiding assumptions or stereotypes based on identity markers.</li>
+        <li>Avoiding idioms, jargons, and acronyms.</li>
+      </ul>
       <h3>Importance of Inclusive Language</h3>
       <p>
         Inclusive language is integral to the University of Washington's
@@ -228,21 +242,28 @@
           social justice.
         </li>
       </ul>
-      <h3>What is Inclusive Language?</h3>
-      <p>
-        Inclusive language refers to language choices that avoid stereotypes,
-        biases, or exclusions based on identity characteristics such as race,
-        gender, ethnicity, ability, age, sexual orientation, religion,
-        socioeconomic status, or any other relevant factor. It encompasses:
-      </p>
+      <h3>Best Practices</h3>
       <ul>
-        <li>Using gender-neutral terminology.</li>
-        <li>Prioritizing person-first language.</li>
-        <li>Acknowledging and respecting diverse cultural backgrounds.</li>
-        <li>Avoiding assumptions or stereotypes based on identity markers.</li>
+        <li>Prioritize Gender Neutrality:</li>
+        <UsageBlock>their</UsageBlock>
+        <UsageBlock variant="dont">his or her</UsageBlock>
+        <li>Design for all levels of ability</li>
+        <UsageBlock><a href="#">Display your schedule</a></UsageBlock>
+        <UsageBlock variant="dont"
+          ><a href="#">See your schedule</a></UsageBlock
+        >
+        <li>Celebrate Diversity:</li>
+        <UsageBlock>Students from various cultural backgrounds</UsageBlock>
+        <UsageBlock variant="dont">Minority students</UsageBlock>
+        <li>Avoid Age Stereotypes:</li>
+        <UsageBlock></UsageBlock>
+        <UsageBlock variant="dont"></UsageBlock>
+        <li>Use Inclusive Terms:</li>
+        <UsageBlock>"First-year students"</UsageBlock
+        ><usageBlock variant="dont">Freshmen</usageBlock>
       </ul>
     </template>
-    <template #author>Charlon Palacay</template>
+    <template #author>Diego Bejarano</template>
   </Layout>
 </template>
 
