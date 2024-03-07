@@ -1,17 +1,18 @@
 <template>
   <Layout>
-    <template #content>
+    <template #head>
       <h1 class="fw-bold">{{ pageTitle }}</h1>
 
-      <p class="p-0 col-md-8 lead text-muted">
+      <p class="lead text-muted">
         Solstice Design is a resource for building and documenting UI components
         using Bootstrap and Vue/React Javascript frameworks. It provides a set
         of organized guidelines, patterns and best practices that work as the
-        foundation for application design and development at D&amp;A. test asdfa
+        foundation for application design and development at D&amp;A.
       </p>
 
-      <hr class="mb-5 w-25 d-inline-block" />
-
+      <hr class="w-50 d-inline-block" />
+    </template>
+    <template #content>
       <div class="row mb-3">
         <div class="col">
           <h2 class="fw-bold">Getting Started</h2>
@@ -39,8 +40,8 @@
           </p>
 
           <p>
-            <router-link to="/getting-started/solstice-101"
-              >Learn about our design system</router-link
+            <sol-link href="/getting-started/solstice-101"
+              >Learn about our design system</sol-link
             >
           </p>
         </div>
@@ -55,8 +56,8 @@
               applications as well as creating brand new applications.
             </p>
             <div class="text-end">
-              <router-link to="/getting-started/component-lifecycle"
-                >View Component Lifecycle</router-link
+              <sol-link href="/getting-started/component-lifecycle"
+                >View Component Lifecycle</sol-link
               >
             </div>
           </axdd-panel>
@@ -69,8 +70,8 @@
               applications as well as creating brand new applications.
             </p>
             <div class="text-end">
-              <router-link to="/getting-started/installation-setup"
-                >View Installation &amp; Setup</router-link
+              <sol-link href="/getting-started/installation-setup"
+                >View Installation &amp; Setup</sol-link
               >
             </div>
           </axdd-panel>
@@ -96,7 +97,7 @@
           </p>
 
           <p>
-            <router-link to="/content/">Read content guidelines</router-link>
+            <sol-link href="/content/">Read content guidelines</sol-link>
           </p>
         </div>
         <div class="col">
@@ -105,7 +106,7 @@
             Use design foundations to ensure consistency across the application.
           </p>
           <p>
-            <router-link to="/foundations/">Browse foundations</router-link>
+            <sol-link href="/foundations/">Browse foundations</sol-link>
           </p>
         </div>
         <div class="col">
@@ -114,12 +115,12 @@
             Use elements as building blocks as you design and develop new
             products and features.
           </p>
-          <p><router-link to="/elements/">Browse elements</router-link></p>
+          <p><sol-link href="/elements/">Browse elements</sol-link></p>
         </div>
         <div class="col">
           <h3>Patterns</h3>
           <p>Patterns consist of design tokens, elements, and patterns.</p>
-          <p><router-link to="/patterns/">Browse patterns</router-link></p>
+          <p><sol-link href="/patterns/">Browse patterns</sol-link></p>
         </div>
       </div>
     </template>

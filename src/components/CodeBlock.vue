@@ -1,19 +1,30 @@
 <template>
-  <div class="mb-3">
+  <div class="mb-3 border rounded codeblock">
     <div v-if="$slots['preview']">
-      <div class="preview mb-3 axdd-font-open-sans">
+      <div class="preview p-3 m-0 border-bottom">
         <slot name="preview"></slot>
       </div>
     </div>
-
     <div v-if="$slots['markup']">
-      <div class="p-0 small mb-3">
+      <div
+        class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
+      >
+        <div>HTML</div>
+        <div>copy</div>
+      </div>
+      <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
         <slot name="markup"></slot>
       </div>
     </div>
 
     <div v-if="$slots['script']">
-      <div class="p-0 small mb-3">
+      <div
+        class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
+      >
+        <div>JAVASCRIPT</div>
+        <div>copy</div>
+      </div>
+      <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
         <slot name="script"></slot>
       </div>
     </div>
@@ -26,7 +37,7 @@ import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-json";
 import "prismjs/components/prism-markup-templating";
 import "prismjs/components/prism-scss";
-import "prismjs/themes/prism-tomorrow.css";
+import "prismjs/themes/prism.css";
 
 export default {
   mounted() {
@@ -37,6 +48,19 @@ export default {
 
 <style lang="scss">
 // global styleguide
+
+.codeblock {
+  pre {
+    background: transparent !important;
+    margin: 0 !important;
+    color: inherit !important;
+  }
+
+  code {
+    color: inherit !important;
+    text-shadow: none !important;
+  }
+}
 
 .preview {
   // reset container padding for render display

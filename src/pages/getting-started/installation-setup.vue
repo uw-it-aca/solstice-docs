@@ -1,6 +1,6 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #content>
+    <template #breadcrumb>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -11,9 +11,11 @@
           </li>
         </ol>
       </nav>
-      <h1>{{ pageTitle }}</h1>
+    </template>
+    <template #head>
+      <h1 class="fw-bold">{{ pageTitle }}</h1>
 
-      <p class="p-0 col-md-8 lead text-muted">
+      <p class="lead text-muted">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi
         quaerat, molestiae vero doloribus asperiores pariatur fugit eligendi nam
         ratione, quos dolorum. Eaque atque quas, laboriosam distinctio fugiat
@@ -21,11 +23,31 @@
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />
-
+    </template>
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul>
+            <li class="menu-item">
+              <a href="#scrollspyHeading1">Template Repository</a>
+            </li>
+            <li class="menu-item">
+              <a href="#scrollspyHeading2">Manual Installation</a>
+            </li>
+            <li class="menu-item">
+              <a href="#scrollspyHeading3">Code Style Guide</a>
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
+    </template>
+    <template #content>
       <div class="row">
         <div class="col">
           <h2 class="fw-bold">Setup</h2>
-          <h3>Template Repository <i class="bi bi-star-fill text-gold"></i></h3>
+          <h3 id="scrollspyHeading1">
+            Template Repository <i class="bi bi-star-fill text-gold"></i>
+          </h3>
           <p>
             For any new AXDD applications, we recommend starting with the
             <a href="https://github.com/uw-it-aca/axdd-django-vue"
@@ -35,21 +57,23 @@
             already done for you.
           </p>
 
-          <h3>Manual Installation</h3>
+          <h3 id="scrollspyHeading2">Manual Installation</h3>
           <p>
             If you wish to add Solstice Components to an existing Vue
             application, add the following dependency to your
             <code>package.json</code> and run <code>npm install</code>.
           </p>
 
-          <CodeBlock>
-            <template #script>
-              <pre class="language-json rounded">
+          <div class="my-5">
+            <CodeBlock>
+              <template #script>
+                <pre class="language-json rounded">
 <code>"dependencies": {
   "solstice-vue": "git+https://github.com/uw-it-aca/solstice-vue.git#1.0.6",
 }</code></pre>
-            </template>
-          </CodeBlock>
+              </template>
+            </CodeBlock>
+          </div>
 
           <p>
             From the <code>main.js</code> file, import the Solstice Components
@@ -59,9 +83,10 @@
             entry <code>styles.scss</code> file.
           </p>
 
-          <CodeBlock>
-            <template #script>
-              <pre class="language-js rounded">
+          <div class="my-5">
+            <CodeBlock>
+              <template #script>
+                <pre class="language-js rounded">
 <code>import { createApp } from "vue";
 import App from "./app.vue";
 import SolsticeVue from "solstice-vue";
@@ -80,8 +105,9 @@ import "@/path/to/css/styles.scss";
 const app = createApp(App);
 app.use(SolsticeVue);
 </code></pre>
-            </template>
-          </CodeBlock>
+              </template>
+            </CodeBlock>
+          </div>
 
           <p>
             The component library can now be used globally within the
@@ -93,7 +119,7 @@ app.use(SolsticeVue);
 
       <hr class="mb-5 w-25 d-inline-block" />
 
-      <h2>Code Style Guide</h2>
+      <h2 id="scrollspyHeading3">Code Style Guide</h2>
       <p>
         <a href="https://vuejs.org/style-guide/" target="_blank"
           >https://vuejs.org/style-guide/</a
@@ -153,10 +179,11 @@ app.use(SolsticeVue);
 <script>
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
+import PageContents from "@/components/PageContents.vue";
 
 export default {
   name: "DocsInstallationSetup",
-  components: { Layout, CodeBlock },
+  components: { Layout, CodeBlock, PageContents },
   data() {
     return {
       pageTitle: "Installation & Setup",

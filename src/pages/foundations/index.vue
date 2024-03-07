@@ -41,7 +41,7 @@
           <p class="fs-11">.fs-11 text (10px)</p>
         </template>
         <template #markup>
-          <pre class="language-html rounded">
+          <pre class="language-html">
 <code>&lt;div class="fs-7">Lorem ipsum dolor&lt;/div>
 &lt;div class="fs-8">Lorem ipsum dolor&lt;/div>
 &lt;div class="fs-9">Lorem ipsum dolor&lt;/div>

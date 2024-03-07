@@ -13,9 +13,36 @@
       <ReleaseNotes />
     </template>
     <template #main>
-      <slot name="content" />
-      <div v-if="$slots['author']" class="py-1 small text-end">
-        <div class="text-muted">Last modified by <slot name="author" /></div>
+      <div v-if="$slots.breadcrumb" class="row">
+        <div class="col">
+          <slot name="breadcrumb" />
+        </div>
+      </div>
+
+      <div v-if="$slots.head" class="row">
+        <div class="col-9">
+          <slot name="head" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div :class="[mq.xlMinus || !$slots['toc'] ? 'col' : 'col-9']">
+          <div v-if="$slots['toc'] && mq.xlMinus" class="mb-5">
+            <slot name="toc" />
+          </div>
+          <slot name="content" />
+
+          <div v-if="$slots.author" class="py-1 small text-end">
+            <div class="text-muted">
+              Last modified by <slot name="author" />
+            </div>
+          </div>
+        </div>
+        <div v-if="$slots['toc'] && !mq.xlMinus" class="col-3">
+          <div class="sticky-top">
+            <slot name="toc"></slot>
+          </div>
+        </div>
       </div>
     </template>
     <template #footer>
@@ -24,18 +51,10 @@
           <ul class="list-inline m-0">
             <ul class="list-inline m-0">
               <li class="list-inline-item">
-                <a
-                  href="http://www.washington.edu/online/privacy/"
-                  class="link-primary"
-                  >Privacy</a
-                >
+                <a href="http://www.washington.edu/online/privacy/">Privacy</a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="http://www.washington.edu/online/terms/"
-                  class="link-primary"
-                  >Terms</a
-                >
+                <a href="http://www.washington.edu/online/terms/">Terms</a>
               </li>
             </ul>
           </ul>
@@ -52,6 +71,7 @@ import ReleaseNotes from "@/components/ReleaseNotes.vue";
 
 export default {
   name: "App",
+  inject: ["mq"],
   components: {
     NavMenu,
     ReleaseNotes,

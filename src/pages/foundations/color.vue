@@ -4,7 +4,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="/foundations/" class="link-primary">Foundations</a>
+            <sol-link href="/foundations/">Foundations</sol-link>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
@@ -24,7 +24,6 @@
       <p>
         <a
           href="https://getbootstrap.com/docs/5.1/customize/color/"
-          class="link-primary"
           target="_blank"
           >https://getbootstrap.com/docs/5.1/customize/color/</a
         >
@@ -38,7 +37,6 @@
         <li>
           <a
             href="https://getbootstrap.com/docs/5.1/utilities/background/"
-            class="link-primary"
             target="_blank"
             >https://getbootstrap.com/docs/5.1/utilities/background/</a
           >
@@ -46,7 +44,6 @@
         <li>
           <a
             href="https://getbootstrap.com/docs/5.1/utilities/borders/#border-color"
-            class="link-primary"
             target="_blank"
           >
             https://getbootstrap.com/docs/5.1/utilities/borders/#border-color</a
@@ -55,7 +52,6 @@
         <li>
           <a
             href="https://getbootstrap.com/docs/5.1/utilities/colors/"
-            class="link-primary"
             target="_blank"
             >https://getbootstrap.com/docs/5.1/utilities/colors/</a
           >
@@ -63,7 +59,6 @@
         <li>
           <a
             href="https://getbootstrap.com/docs/5.1/components/alerts/"
-            class="link-primary"
             target="_blank"
             >https://getbootstrap.com/docs/5.1/components/alerts/</a
           >
