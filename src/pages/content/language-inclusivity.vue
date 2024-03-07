@@ -148,7 +148,7 @@
         Links serve as essential navigation elements. Effective and actionable
         language is crucial to guide users seamlessly through task completion.
       </p>
-      <ol>
+      <ol class="list-unstyled">
         <li>Be descriptive:</li>
         <UsageBlock><a href="#">View course schedule</a></UsageBlock>
         <UsageBlock variant="dont"><a href="#">Click Here</a></UsageBlock>
@@ -243,7 +243,7 @@
         </li>
       </ul>
       <h3>Best Practices</h3>
-      <ul>
+      <ul class="list-unstyled">
         <li>Prioritize Gender Neutrality:</li>
         <UsageBlock>their</UsageBlock>
         <UsageBlock variant="dont">his or her</UsageBlock>
@@ -252,15 +252,21 @@
         <UsageBlock variant="dont"
           ><a href="#">See your schedule</a></UsageBlock
         >
-        <li>Celebrate Diversity:</li>
+        <li>
+          Race, Ethnicity, Nationality, Religion, Native/Indigenous Identity:
+        </li>
         <UsageBlock>Students from various cultural backgrounds</UsageBlock>
         <UsageBlock variant="dont">Minority students</UsageBlock>
         <li>Avoid Age Stereotypes:</li>
         <UsageBlock></UsageBlock>
         <UsageBlock variant="dont"></UsageBlock>
         <li>Use Inclusive Terms:</li>
-        <UsageBlock>"First-year students"</UsageBlock
+        <UsageBlock>First-year students</UsageBlock
         ><usageBlock variant="dont">Freshmen</usageBlock>
+        <UsageBlock></UsageBlock
+        ><usageBlock variant="dont"></usageBlock>
+        <UsageBlock></UsageBlock
+        ><usageBlock variant="dont"></usageBlock>
       </ul>
     </template>
     <template #author>Diego Bejarano</template>
