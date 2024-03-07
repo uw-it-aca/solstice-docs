@@ -116,17 +116,21 @@
         ><template #text
           >Use the content formula {verb} + {noun} on buttons</template
         ><template #preview
-          ><button type="button" class="btn btn-primary">
-            Download syllabus
-          </button></template
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <button type="button" class="btn btn-primary">
+              Download syllabus
+            </button>
+          </div></template
         ></UsageBlock
       >
       <UsageBlock variant="dont">
         <template #text>Avoid using "new" with "Create" or "Add"</template>
         <template #preview
-          ><button type="button" class="btn btn-primary">
-            Add new assignment
-          </button></template
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <button type="button" class="btn btn-primary">
+              Add new assignment
+            </button>
+          </div></template
         >
       </UsageBlock>
       <UsageBlock
