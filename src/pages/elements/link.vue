@@ -20,7 +20,6 @@
         Links navigate between or within web pages and initiate simple actions.
         They can be used in paragraphs, in groups, or on their own.
       </p>
-
       <hr class="w-50 d-inline-block" />
     </template>
 
