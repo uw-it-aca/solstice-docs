@@ -23,6 +23,11 @@ Change into the working directory.
 cd solstice-docs
 ```
 
+Copy the sample environment file. Specify your desired port (:8000 default). 
+```sh
+cp .env.sample .env
+```
+
 ## Development
 Perform these steps to begin working on your development branch.
 
@@ -36,7 +41,12 @@ Checkout the develop branch.
 git checkout develop
 ```
 
-Update your develop branch.
+OR... checkout a specific branch.
+```sh
+git checkout <branch-name>
+```
+
+Update the branch.
 ```sh
 git pull
 ```
@@ -44,6 +54,11 @@ git pull
 Start your development server using Docker Compose.
 ```sh
 docker compose up
+```
+
+View your development build in a browser.
+```sh
+http://localhost:8000
 ```
 
 ## Utilities
