@@ -7,10 +7,8 @@ RUN apt-get update && apt-get install git -y
 ADD docker/nginx.conf /etc/nginx/nginx.conf
 RUN chgrp acait /etc/nginx/nginx.conf && chmod g+w /etc/nginx/nginx.conf
 
-# latest node + ubuntu
-FROM node:20 AS node-base
-FROM ubuntu:22.04 AS node-bundler
-COPY --from=node-base / /
+# latest node + debian
+FROM node:lts-bookworm AS node-bundler
 
 ADD index.html package.json vite.config.js /app/
 WORKDIR /app/
@@ -25,10 +23,8 @@ FROM pre-app-container as app-container
 USER acait
 COPY --chown=acait:acait --from=node-bundler /app/dist /app/dist
 
-# latest node + ubuntu
-FROM node:20 AS node-base
-FROM ubuntu:22.04 AS vite-container
-COPY --from=node-base / /
+# latest node + debian
+FROM node:lts-bookworm AS vite-container
 
 ADD index.html package.json vite.config.js /app/
 WORKDIR /app/
