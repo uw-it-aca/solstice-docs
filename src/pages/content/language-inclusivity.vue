@@ -1,6 +1,6 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #content>
+    <template #breadcrumb>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -11,6 +11,32 @@
           </li>
         </ol>
       </nav>
+    </template>
+
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#language"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Actionable Language</a
+              >
+            </li>
+            <li>
+              <a
+                href="#inclusivity"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Inclusivity</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
+    </template>
+
+    <template #content>
       <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 lead text-muted">
@@ -26,7 +52,7 @@
 
       <hr class="mb-5 w-25 d-inline-block" />
 
-      <h2>Actionable Language</h2>
+      <h2 id="language">Actionable Language</h2>
       <p>
         When crafting language for labels, links, buttons, and headings, it's
         important to choose between active over passive terminology. Active
@@ -196,7 +222,7 @@
           >
         </li>
       </ul>
-      <h2>Inclusivity</h2>
+      <h2 id="inclusivity">Inclusivity</h2>
       <p>
         Inclusive language is paramount in fostering a welcoming and respectful
         digital environment and ensures that all users feel respected,
@@ -274,11 +300,13 @@
 
 <script>
 import Layout from "@/layout.vue";
+import CodeBlock from "@/components/CodeBlock.vue";
 import UsageBlock from "@/components/UsageBlock.vue";
+import PageContents from "@/components/PageContents.vue";
 
 export default {
   name: "DocsPatternsMessaging",
-  components: { Layout, UsageBlock },
+  components: { Layout, CodeBlock, UsageBlock, PageContents },
   data() {
     return {
       pageTitle: "Language & Inclusivity",
