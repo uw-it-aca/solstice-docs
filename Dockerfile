@@ -12,7 +12,7 @@ FROM node:20 AS node-base
 FROM ubuntu:22.04 AS node-bundler
 COPY --from=node-base / /
 
-ADD index.html package.json vite.config.js /app/
+ADD ./index.html ./package.json ./vite.config.js /app/
 WORKDIR /app/
 RUN npm install .
 
@@ -30,7 +30,7 @@ FROM node:20 AS node-base
 FROM ubuntu:22.04 AS vite-container
 COPY --from=node-base / /
 
-ADD index.html package.json vite.config.js /app/
+ADD ./index.html ./package.json ./vite.config.js /app/
 WORKDIR /app/
 RUN npm install
 ADD . /app/
