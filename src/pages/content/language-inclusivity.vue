@@ -248,7 +248,7 @@
       </ul>
       <h3>Best Practices</h3>
       <ul class="list-unstyled">
-        <li>Prioritize Gender Neutrality:</li>
+        <li>Prioritize Gender Neutrality</li>
         <UsageBlock>their</UsageBlock>
         <UsageBlock variant="dont">his or her</UsageBlock>
         <li>Design for all levels of ability</li>
@@ -256,21 +256,16 @@
         <UsageBlock variant="dont"
           ><a href="#">See your schedule</a></UsageBlock
         >
+        <UsageBlock><a href="#">Play video</a></UsageBlock>
+        <UsageBlock variant="dont"><a href="#">Watch video</a></UsageBlock>
         <li>
           Race, Ethnicity, Nationality, Religion, Native/Indigenous Identity:
         </li>
         <UsageBlock>Students from various cultural backgrounds</UsageBlock>
         <UsageBlock variant="dont">Minority students</UsageBlock>
-        <li>Avoid Age Stereotypes:</li>
-        <UsageBlock></UsageBlock>
-        <UsageBlock variant="dont"></UsageBlock>
         <li>Use Inclusive Terms:</li>
         <UsageBlock>First-year students</UsageBlock
         ><usageBlock variant="dont">Freshmen</usageBlock>
-        <UsageBlock></UsageBlock
-        ><usageBlock variant="dont"></usageBlock>
-        <UsageBlock></UsageBlock
-        ><usageBlock variant="dont"></usageBlock>
       </ul>
     </template>
     <template #author>Diego Bejarano</template>
