@@ -34,28 +34,7 @@
         to convey a story that resonates with our audience and reinforces our
         identity. Solstice's voice is:
       </p>
-<!--
-      <h3>Professional and formal</h3>
-      <P>Avoid language that's overly opinionated, humorous, or trendy</P>
 
-      <h3>Understandable and concise</h3>
-      <p>
-        Look for the simplest way to communicate information, without
-        unnecessary jargon
-      </p>
-
-      <h3>Informative and clear</h3>
-      <p>
-        Explain the impact clearly, ensuring that the message is easily
-        understood by the audience.
-      </p>
-
-      <h3>Empathetic and inclusive</h3>
-      <p>
-        Maintain a warm and approachable demeanor, fostering a respectful and
-        understanding environment
-      </p>
--->
       <ul>
         <li>
          <strong>Professional and formal</strong>
@@ -185,10 +164,11 @@
 <script>
 import Layout from "@/layout.vue";
 import UsageBlock from "@/components/UsageBlock.vue";
+import PageContents from "@/components/PageContents.vue";
 
 export default {
   name: "DocsContentVoice",
-  components: { Layout, UsageBlock },
+  components: { Layout, UsageBlock, PageContents },
   data() {
     return {
       pageTitle: "Voice & Tone",
