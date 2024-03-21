@@ -300,13 +300,12 @@
 
 <script>
 import Layout from "@/layout.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
 import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 
 export default {
   name: "DocsPatternsMessaging",
-  components: { Layout, CodeBlock, UsageBlock, PageContents },
+  components: { Layout, UsageBlock, PageContents },
   data() {
     return {
       pageTitle: "Language & Inclusivity",
