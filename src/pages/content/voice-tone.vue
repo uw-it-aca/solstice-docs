@@ -1,6 +1,6 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #content>
+    <template #breadcrumb>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -11,64 +11,91 @@
           </li>
         </ol>
       </nav>
+    </template>
 
+    <template #head>
       <h1>{{ pageTitle }}</h1>
 
-      <p class="p-0 col-md-8 lead text-muted">
+      <p class="lead text-muted">
         The Voice and Tone establish a uniform and easily identifiable
-        communication style, promoting a cohesive user experience across
-        various interfaces. It's not just about conveying information; it's
-        about fostering a connection with users through consistent language,
-        style, and attitude. Solstice’s Voice and Tone encapsulates our unique
+        communication style, promoting a cohesive user experience across various
+        interfaces. It's not just about conveying information; it's about
+        fostering a connection with users through consistent language, style,
+        and attitude. Solstice&rsquo;s Voice and Tone encapsulates our unique
         personality and identity, fostering consistency and coherence, and
         contributes to a seamless and engaging user experience.
       </p>
+      <hr class="w-50 d-inline-block" />
+    </template>
 
-      <hr class="mb-5 w-25 d-inline-block" />
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#voice"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Voice</a
+              >
+            </li>
+            <li>
+              <a
+                href="#tone"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Tone</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
+    </template>
 
-      <h2>Voice</h2>
+    <template #content>
+      <h2 id="voice">Voice</h2>
       <p>
-        The voice of Solstice serves as the articulate and consistent
-        expression of our character. It ensures a recognizable communication
-        style across various design elements. Through Solstice’s voice, we aim
-        to convey a story that resonates with our audience and reinforces our
+        The voice of Solstice serves as the articulate and consistent expression
+        of our character. It ensures a recognizable communication style across
+        various design elements. Through Solstice&rsquo;s voice, we aim to
+        convey a story that resonates with our audience and reinforces our
         identity. Solstice's voice is:
       </p>
 
       <ul>
         <li>
-         <strong>Professional and formal</strong>
-         <p>Avoid language that's overly opinionated, humorous, or trendy</p>
+          <strong>Professional and formal</strong>
+          <p>Avoid language that's overly opinionated, humorous, or trendy</p>
         </li>
         <li>
           <strong>Understandable and concise</strong>
-           <p>
-           Look for the simplest way to communicate information, without
-           unnecessary jargon
-           </p>
+          <p>
+            Look for the simplest way to communicate information, without
+            unnecessary jargon
+          </p>
         </li>
         <li>
           <strong>Informative and clear</strong>
           <p>
-          Explain the impact clearly, ensuring that the message is easily
-          understood by the audience.
+            Explain the impact clearly, ensuring that the message is easily
+            understood by the audience.
           </p>
         </li>
         <li>
           <strong>Empathetic and inclusive</strong>
         </li>
         <p>
-        Maintain a warm and approachable demeanor, fostering a respectful and
-        understanding environment
+          Maintain a warm and approachable demeanor, fostering a respectful and
+          understanding environment
         </p>
       </ul>
 
-      <h2>Tone</h2>
+      <h2 id="tone">Tone</h2>
       <p>
-        If voice embodies our brand's personality, tone is the vehicle through
-        which we articulate and embody that personality. The right tone depends
-        on the context, audience, and the level of engagement and emotionality
-        required for effective communication. Solstice’s tone should be:
+        If voice embodies our brand&rsquo;s personality, tone is the vehicle
+        through which we articulate and embody that personality. The right tone
+        depends on the context, audience, and the level of engagement and
+        emotionality required for effective communication. Solstice&rsquo;s tone
+        should be:
       </p>
 
       <h3>Instructive (Frequently)</h3>
@@ -81,7 +108,7 @@
           >
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <img src="../../assets/images/voice-and-tone-1.png" width="500">
+              <img src="../../assets/images/voice-and-tone-1.png" width="500" />
             </div>
           </template>
         </UsageBlock>
@@ -92,7 +119,7 @@
           >
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <img src="../../assets/images/voice-and-tone-2.png" width="500">
+              <img src="../../assets/images/voice-and-tone-2.png" width="500" />
             </div>
           </template>
         </UsageBlock>
@@ -108,18 +135,17 @@
           >
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-               <img src="../../assets/images/voice-and-tone-3.png" width="500">
+              <img src="../../assets/images/voice-and-tone-3.png" width="500" />
             </div>
           </template>
         </UsageBlock>
         <UsageBlock variant="dont">
           <template #text
             >Don&rsquo;t use overly dramatic or scary words for simple errors
-            </template
-          >
+          </template>
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <img src="../../assets/images/voice-and-tone-4.png" width="500">
+              <img src="../../assets/images/voice-and-tone-4.png" width="500" />
             </div>
           </template>
         </UsageBlock>
@@ -130,21 +156,21 @@
       <div class="my-5">
         <UsageBlock>
           <template #text
-            >Acknowledge effort, progress, and completion</template>
+            >Acknowledge effort, progress, and completion</template
+          >
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <img src="../../assets/images/voice-and-tone-5.png" width="500">
+              <img src="../../assets/images/voice-and-tone-5.png" width="500" />
             </div>
           </template>
         </UsageBlock>
         <UsageBlock variant="dont">
           <template #text
             >Don&rsquo;t refer to a simple action or complete step as a success
-          </template
-          >
+          </template>
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <img src="../../assets/images/voice-and-tone-6.png" width="500">
+              <img src="../../assets/images/voice-and-tone-6.png" width="500" />
             </div>
           </template>
         </UsageBlock>
@@ -157,7 +183,7 @@
         >. Also, optimized for a11y.
       </p>
     </template>
-    <template #author>tbd</template>
+    <template #author>Leila Li</template>
   </Layout>
 </template>
 
