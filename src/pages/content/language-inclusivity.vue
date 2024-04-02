@@ -82,24 +82,40 @@
         When creating labels, opt for verbs that clearly indicate the user's
         next action:
       </p>
-      <UsageBlock>Submit application</UsageBlock>
-      <UsageBlock variant="dont">Application submission</UsageBlock>
+      <UsageBlock
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            Submit application
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont"
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            Application submission
+          </div></template
+        ></UsageBlock
+      >
       <p>
         Buttons are key elements in driving user interactions. Choose active
         verbs that resonate with the intended action:
       </p>
       <UsageBlock
         ><template #preview
-          ><button type="button" class="btn btn-primary">
-            Manage UW NetID account
-          </button></template
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <button type="button" class="btn btn-primary">
+              Manage UW NetID account
+            </button>
+          </div></template
         ></UsageBlock
       >
       <UsageBlock variant="dont"
         ><template #preview
-          ><button type="button" class="btn btn-primary">
-            UW NetID account management
-          </button></template
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <button type="button" class="btn btn-primary">
+              UW NetID account management
+            </button>
+          </div></template
         ></UsageBlock
       >
       <p>
@@ -111,9 +127,19 @@
         Headings set the tone for a section and can guide users on what to
         expect. Use active language to create impactful headings:
       </p>
-      <UsageBlock>Create and manage your academic plan</UsageBlock>
+      <UsageBlock
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            Create and manage your academic plan
+          </div></template
+        ></UsageBlock
+      >
       <UsageBlock variant="dont"
-        >Academic plan creation and management</UsageBlock
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            Academic plan creation and management
+          </div></template
+        ></UsageBlock
       >
       <h3>Best Practices</h3>
       <h4>Heading and subheadings</h4>
