@@ -75,7 +75,7 @@ export default {
   },
   data() {
     return {
-      pageTitle: "Layout",
+      pageTitle: "Layout & Grid",
     };
   },
 };
