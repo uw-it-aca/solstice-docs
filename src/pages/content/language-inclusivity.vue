@@ -186,17 +186,21 @@
         >
       </UsageBlock>
       <UsageBlock
+        ><template #text>Provide clear context of user action</template
         ><template #preview
-          ><button type="button" class="btn btn-primary">
-            Send us feedback
-          </button></template
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <button type="button" class="btn btn-primary">
+              Send us feedback
+            </button>
+          </div></template
         ></UsageBlock
       >
       <UsageBlock variant="dont"
+        ><template #text>Missing context of user action</template
         ><template #preview
-          ><button type="button" class="btn btn-primary">
-            Feedback
-          </button></template
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <button type="button" class="btn btn-primary">Feedback</button>
+          </div></template
         ></UsageBlock
       >
       <h4>Links</h4>
@@ -205,36 +209,94 @@
         language is crucial to guide users seamlessly through task completion.
       </p>
       <ol class="list-unstyled">
-        <li>Be descriptive:</li>
-        <UsageBlock><a href="#">View course schedule</a></UsageBlock>
-        <UsageBlock variant="dont"><a href="#">Click Here</a></UsageBlock>
-
-        <li>Align with user goals:</li>
-        <UsageBlock><a href="#">Apply for financial aid</a></UsageBlock>
+        <UsageBlock
+          ><template #text>Be descriptive</template
+          ><template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              <a href="#">View course schedule</a>
+            </div></template
+          ></UsageBlock
+        >
         <UsageBlock variant="dont"
-          ><a href="#">Financial Aid Information</a></UsageBlock
+          ><template #text
+            >Avoid link text that doesn't provide enough description</template
+          ><template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              <a href="#">Click Here</a>
+            </div></template
+          ></UsageBlock
         >
 
-        <li>Utilize contextual language:</li>
-        <UsageBlock><a href="#">Explore Biology programs</a></UsageBlock>
-        <UsageBlock variant="dont"><a href="#">Explore Programs</a></UsageBlock>
+        <UsageBlock
+          ><template #text>Align with user goals</template
+          ><template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              <a href="#">Apply for financial aid</a>
+            </div></template
+          ></UsageBlock
+        >
+        <UsageBlock variant="dont"
+          ><template #text
+            >Avoid ambiguous language that lacks a specific user
+            action</template
+          ><template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              <a href="#">Financial Aid Information</a>
+            </div></template
+          ></UsageBlock
+        >
 
-        <li>Use consistent terminology:</li>
-        <UsageBlock><a href="#">Submit enrollment form</a></UsageBlock>
-        <UsageBlock variant="dont"><a href="#">Complete Form</a></UsageBlock>
+        <UsageBlock
+          ><template #text>Utilize contextual language</template
+          ><template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              <a href="#">Explore Biology programs</a>
+            </div></template
+          ></UsageBlock
+        >
+        <UsageBlock variant="dont"
+          ><template #text
+            >Failure to provide context creates confusion of intended link
+            destination</template
+          ><template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              <a href="#">Explore programs</a>
+            </div></template
+          ></UsageBlock
+        >
 
-        <li>Prioritize Accessibility:</li>
+        <UsageBlock
+          ><template #text>Use consistent terminology</template
+          ><template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              <a href="#">Submit enrollment form</a>
+            </div></template
+          ></UsageBlock
+        >
+        <UsageBlock variant="dont"
+          ><template #text
+            >Avoid using different words for the same action</template
+          ><template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              <a href="#">Complete form</a>
+            </div></template
+          ></UsageBlock
+        >
+
+        <UsageBlock variant="dont"
+          ><template #text>Avoid redudancy </template
+          ><template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              <a href="#">Click Here to Download Syllabus</a>
+            </div></template
+          ></UsageBlock
+        >
+
         <p>
-          Ensure link text is descriptive and meaningful (see sample #1 above)
-          in order to assist users who rely on screen readers or other assistive
-          technologies.
+          <strong>Prioritize Accessibility:</strong> Ensure link text is
+          descriptive and meaningful (see sample #1 above) in order to assist
+          users who rely on screen readers or other assistive technologies.
         </p>
-
-        <li>Avoid Redundancy:</li>
-        <UsageBlock><a href="#">Download syllabus</a></UsageBlock>
-        <UsageBlock variant="dont"
-          ><a href="#">Click Here to Download Syllabus </a></UsageBlock
-        >
       </ol>
       <p>
         Following these practices ensure a user-friendly and efficient
@@ -299,26 +361,66 @@
         </li>
       </ul>
       <h3>Best Practices</h3>
-      <ul class="list-unstyled">
-        <li>Prioritize Gender Neutrality</li>
-        <UsageBlock>their</UsageBlock>
-        <UsageBlock variant="dont">his or her</UsageBlock>
-        <li>Design for all levels of ability</li>
-        <UsageBlock><a href="#">Display your schedule</a></UsageBlock>
-        <UsageBlock variant="dont"
-          ><a href="#">See your schedule</a></UsageBlock
-        >
-        <UsageBlock><a href="#">Play video</a></UsageBlock>
-        <UsageBlock variant="dont"><a href="#">Watch video</a></UsageBlock>
-        <li>
-          Race, Ethnicity, Nationality, Religion, Native/Indigenous Identity:
-        </li>
-        <UsageBlock>Students from various cultural backgrounds</UsageBlock>
-        <UsageBlock variant="dont">Minority students</UsageBlock>
-        <li>Use Inclusive Terms:</li>
-        <UsageBlock>First-year students</UsageBlock
-        ><usageBlock variant="dont">Freshmen</usageBlock>
-      </ul>
+      <h4>Prioritize Gender Neutrality</h4>
+      <UsageBlock
+        ><template #text>User gender neutral terms </template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            their<br />First-year students
+          </div></template
+        ></UsageBlock
+      >
+
+      <UsageBlock variant="dont"
+        ><template #text
+          >Avoid using specific genders when referring to more than one </template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            his or her <br />freshemen
+          </div></template
+        ></UsageBlock
+      >
+
+      <h4>Design for all levels of ability</h4>
+      <UsageBlock
+        ><template #text
+          >Use terms specific to the action not the user </template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <a href="#">Display your schedule</a> <br /><a href="#"
+              >Play video</a
+            >
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont"
+        ><template #text
+          >Avoid terms that imply a specific user ability </template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <a href="#">See your schedule</a> <br /><a href="#">Watch video</a>
+          </div></template
+        ></UsageBlock
+      >
+      <h4>
+        Race, Ethnicity, Nationality, Religion, Native/Indigenous Identity:
+      </h4>
+      <UsageBlock
+        ><template #text>Use inclusive language</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            Students from various cultural backgrounds
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont"
+        ><template #text>Avoid outdated terms</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            Minority students
+          </div></template
+        ></UsageBlock
+      >
     </template>
     <template #author>Diego Bejarano</template>
   </Layout>
