@@ -161,8 +161,8 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/foundations/layout"
-              >Layout & Grid</router-link
+              to="/foundations/layouts"
+              >Layouts</router-link
             >
           </li>
         </ul>

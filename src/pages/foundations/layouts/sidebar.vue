@@ -7,7 +7,7 @@
             <a href="/foundations/">Foundations</a>
           </li>
           <li class="breadcrumb-item">
-            <a href="/foundations/layout/">Layout</a>
+            <a href="/foundations/layouts/">Layouts</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}

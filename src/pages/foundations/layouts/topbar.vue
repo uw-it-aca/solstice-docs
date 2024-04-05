@@ -6,22 +6,19 @@
           <li class="breadcrumb-item">
             <a href="/foundations/">Foundations</a>
           </li>
+          <li class="breadcrumb-item">
+            <a href="/foundations/layouts/">Layouts</a>
+          </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
           </li>
         </ol>
       </nav>
     </template>
-
     <template #head>
       <h1 class="fw-bold">{{ pageTitle }}</h1>
 
-      <p class="lead text-muted">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorum
-        delectus tempora totam corrupti maxime, quam repellendus a. A similique
-        laborum numquam illo corrupti inventore sunt in quaerat quibusdam
-        accusantium.
-      </p>
+      <p class="lead text-muted">The topbar layout is ****.</p>
       <hr class="w-50 d-inline-block" />
     </template>
     <template #toc>
@@ -30,44 +27,30 @@
           <ul class="list-unstyled m-0">
             <li>
               <a
-                href="#header"
+                href="#anatomy"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Header</a
+                >Anatomy</a
               >
             </li>
             <li>
               <a
-                href="#nav"
+                href="#usage"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Nav</a
+                >Usage</a
               >
             </li>
             <li>
               <a
-                href="#main"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
-                >Main</a
+                href="#accessibility"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Accessibility</a
               >
             </li>
             <li>
               <a
-                href="#aside"
+                href="#implementation"
                 class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
-                >Aside</a
-              >
-            </li>
-            <li>
-              <a
-                href="#footer"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
-                >Footer</a
-              >
-            </li>
-            <li>
-              <a
-                href="#section"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
-                >Section</a
+                >Implementation</a
               >
             </li>
           </ul>
@@ -75,14 +58,7 @@
       </PageContents>
     </template>
     <template #content>
-      <h2 class="mb-3">Foundations of a Layout</h2>
-      <h3>What is Layout?</h3>
-      <p>
-        A “layout” refers to the arrangement and organization of content and
-        elements on a web page. Layouts determine how information is presented
-        and ultimately how users interact with the content on a web page.
-      </p>
-      <h3 class="mb-3">Page Anatomy + Semantic Landmarks</h3>
+      <h2 id="anatomy" class="mb-3">Page Anatomy</h2>
       <p>
         Semantic landmarks are specific HTML elements that convey meaning about
         the structure and purpose of content within a web page. They are
@@ -94,7 +70,7 @@
         other semantic landmarks/elements and accessibility, visit W3 Schools
         HTML Semantic Elements. and ARIA Landmark Regions.
       </p>
-      <div class="row">
+      <!--<div class="row">
         <div class="col">
           <img
             src="/src/assets/images/Layout-tablet.png"
@@ -115,7 +91,7 @@
             class="rounded bg-white img-fluid"
           />
         </div>
-      </div>
+      </div>-->
 
       <h3 class="mb-3" id="header">Header</h3>
       <p>
@@ -128,16 +104,6 @@
           >Mozilla - The Header Element</a
         >
       </p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #markup>
-            <pre class="language-html">
-  <code>&lt;header> or &lt;div role="header">
-  </code>
-</pre>
-          </template>
-        </CodeBlock>
-      </div>
 
       <div class="my-5">
         <UsageBlock variant="dont">
@@ -169,16 +135,6 @@
           >Mozilla - The Navigation Element</a
         >
       </p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #markup>
-            <pre class="language-html">
-  <code>&lt;nav> or &lt;div role="nav">
-  </code>
-</pre>
-          </template>
-        </CodeBlock>
-      </div>
 
       <div class="my-5">
         <UsageBlock variant="dont">
@@ -216,16 +172,6 @@
           >Mozilla - The Main Element</a
         >
       </p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #markup>
-            <pre class="language-html">
-  <code>&lt;main> or &lt;div role="main">
-  </code>
-</pre>
-          </template>
-        </CodeBlock>
-      </div>
 
       <div class="my-5">
         <UsageBlock>
@@ -247,16 +193,6 @@
           >Mozilla - The Aside Element</a
         >
       </p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #markup>
-            <pre class="language-html">
-  <code>&lt;aside> or &lt;div role="aside">
-  </code>
-</pre>
-          </template>
-        </CodeBlock>
-      </div>
 
       <div class="my-5">
         <UsageBlock variant="dont">
@@ -284,16 +220,6 @@
           >Mozilla - The Footer Element</a
         >
       </p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #markup>
-            <pre class="language-html">
-  <code>&lt;footer> or &lt;div role="footer">
-  </code>
-</pre>
-          </template>
-        </CodeBlock>
-      </div>
 
       <div class="my-5">
         <UsageBlock variant="dont">
@@ -319,35 +245,251 @@
           >Mozilla - The Section Element</a
         >
       </p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #markup>
-            <pre class="language-html">
-  <code>&lt;section> or &lt;div role="section">
-  </code>
-</pre>
-          </template>
-        </CodeBlock>
-      </div>
 
-      <ul class="row list-unstyled">
-        <li class="col-4">
-          <CompDescription
-            :name="'Topbar'"
-            :link="'/foundations/layout/topbar'"
-            :accessibility="true"
-            :version="'1.0.5'"
-          ></CompDescription>
-        </li>
-        <li class="col-4">
-          <CompDescription
-            :name="'Sidebar'"
-            :link="'/foundations/layout/sidebar'"
-            :accessibility="true"
-            :version="'1.0.5'"
-          ></CompDescription>
-        </li>
-      </ul>
+      <h2 id="accessibility" class="fw-bold">Accessibility</h2>
+      <p>
+        APG:
+        <a
+          href="https://www.w3.org/WAI/ARIA/apg/example-index/landmarks/index.html"
+          target="_blank"
+          >https://www.w3.org/WAI/ARIA/apg/example-index/landmarks/index.html</a
+        >
+      </p>
+      <p>Other accessibility info...</p>
+
+      <hr class="mb-5 w-25 d-inline-block" />
+
+      <h2 id="implementation" class="fw-bold">Implementation</h2>
+
+      <h3>Markup</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis minus
+        tenetur cumque facere doloremque possimus quidem est repudiandae nam, a
+        quaerat amet. Inventore ut eligendi id. Suscipit ab facilis earum?
+      </p>
+      <CodeBlock>
+        <template #markup>
+          <pre class="language-html">
+<code>&lt;axdd-topbar :app-name="'App Name'" :app-root-url="'/'">&lt;/axdd-topbar>
+</code></pre>
+        </template>
+      </CodeBlock>
+
+      <h3>Props</h3>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" class="w-25">Prop</th>
+            <th scope="col">Required</th>
+            <th scope="col">Type</th>
+            <th scope="col">Default</th>
+            <th scope="col" class="w-50">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><code>:app-name</code></th>
+            <td>true</td>
+            <td>String</td>
+            <td>appName</td>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>:app-root-url</code></th>
+            <td>true</td>
+            <td>String</td>
+            <td>#</td>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Slots</h3>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" class="w-25">Slot</th>
+            <th scope="col">Required</th>
+            <th scope="col">Fallback</th>
+            <th scope="col" class="w-50">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><code>#profile</code></th>
+            <td>false</td>
+            <td>yes</td>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>#bar</code></th>
+            <td>false</td>
+            <td>empty</td>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>#navigation</code></th>
+            <td>false</td>
+            <td>empty</td>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>#main</code></th>
+            <td>true</td>
+            <td>empty</td>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>#aside</code></th>
+            <td>false</td>
+            <td>empty</td>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>#footer</code></th>
+            <td>false</td>
+            <td>yes</td>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr class="mb-5 w-25 d-inline-block" />
+
+      <h2 class="fw-bold">Preview</h2>
+      <h3>Basic structure</h3>
+      <CodeBlock>
+        <template #preview>
+          <axdd-topbar :app-name="'TopBar'" :is-preview="true" class="border">
+            <template #profile>profile here...</template>
+            <template #main>
+              <div class="row my-4">
+                <div class="col">
+                  <div
+                    class="bg-gray p-4 text-center"
+                    style="line-height: 250px"
+                  >
+                    content here...
+                  </div>
+                </div>
+              </div>
+            </template>
+            <template #footer>footer here...</template>
+          </axdd-topbar>
+        </template>
+        <template #markup>
+          <pre class="language-html">
+<code>&lt;axdd-topbar :app-name="'TopBar'">
+  &lt;template #profile>
+    profile here...
+  &lt;/template>
+  &lt;template #main>
+    content here...
+  &lt;/template>
+  &lt;template #footer>
+    footer here...
+  &lt;/template>
+&lt;/axdd-topbar>
+</code></pre>
+        </template>
+      </CodeBlock>
+
+      <h3>With Navigation</h3>
+      <CodeBlock>
+        <template #preview>
+          <axdd-topbar
+            :app-name="'TopBar'"
+            :user-name="'javerage'"
+            :is-preview="true"
+            class="border"
+          >
+            <template #profile> profile here... </template>
+            <template #navigation>
+              <div class="row mt-4">
+                <div class="col">
+                  <div class="bg-gray p-4 text-center">nav here...</div>
+                </div>
+              </div>
+            </template>
+            <template #aside>
+              <div class="row mt-4">
+                <div class="col">
+                  <div class="bg-gray p-4 text-center">aside here...</div>
+                </div>
+              </div>
+            </template>
+            <template #main>
+              <div class="row my-4">
+                <div class="col">
+                  <div
+                    class="bg-gray p-4 text-center"
+                    style="line-height: 250px"
+                  >
+                    content here...
+                  </div>
+                </div>
+              </div>
+            </template>
+            <template #footer></template>
+          </axdd-topbar>
+        </template>
+        <template #markup>
+          <pre class="language-html">
+<code>&lt;axdd-topbar>
+  &lt;template #navigation>
+    nav here...
+  &lt;/template>
+  &lt;template #aside>
+    aside here...
+  &lt;/template>
+&lt;/axdd-topbar>
+</code></pre>
+        </template>
+      </CodeBlock>
+
+      <h3>With Banner Bar</h3>
+      <CodeBlock>
+        <template #preview>
+          <axdd-topbar :app-name="'TopBar'" :is-preview="true" class="border">
+            <template #profile> profile here... </template>
+            <template #bar>
+              <div class="row">
+                <div class="col">
+                  <div class="bg-gray p-2 text-center">bar here...</div>
+                </div>
+              </div>
+            </template>
+            <template #navigation>
+              <div class="row mt-4">
+                <div class="col">
+                  <div class="bg-gray p-4 text-center">nav here...</div>
+                </div>
+              </div>
+            </template>
+            <template #main>
+              <div class="row my-4">
+                <div class="col">
+                  <div
+                    class="bg-gray p-4 text-center"
+                    style="line-height: 250px"
+                  >
+                    content here...
+                  </div>
+                </div>
+              </div>
+            </template>
+            <template #footer></template>
+          </axdd-topbar>
+        </template>
+        <template #markup>
+          <pre class="language-html">
+<code>&lt;axdd-topbar>
+  &lt;template #bar>
+    bar here...
+  &lt;/template>
+&lt;/axdd-topbar>
+</code></pre>
+        </template>
+      </CodeBlock>
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>
@@ -356,22 +498,16 @@
 <script>
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
-import UsageBlock from "@/components/UsageBlock.vue";
-import PageContents from "@/components/PageContents.vue";
-import CompDescription from "@/components/CompDescription.vue";
 
 export default {
-  name: "DocsLayout",
+  name: "DocsTopbar",
   components: {
     Layout,
-    CompDescription,
     CodeBlock,
-    UsageBlock,
-    PageContents,
   },
   data() {
     return {
-      pageTitle: "Layout & Grid",
+      pageTitle: "Topbar",
     };
   },
 };
