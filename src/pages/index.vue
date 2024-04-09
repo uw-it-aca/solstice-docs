@@ -147,7 +147,7 @@ export default {
   // MARK: override layout pageTitle prop
   mounted: function () {
     document.title = this.appName;
-    this.isDev = getDevEnv;
+    this.isDev = getDevEnv();
   },
 };
 </script>

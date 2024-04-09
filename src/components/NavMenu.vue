@@ -297,7 +297,7 @@ export default {
     // console.log(import.meta.env.PROD);
 
     // sets to 'false' when in PRODUCTION
-    this.isDev = getDevEnv;
+    this.isDev = getDevEnv();
   },
 };
 </script>
