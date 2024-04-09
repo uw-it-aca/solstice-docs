@@ -29,7 +29,7 @@
               >Solstice 101</router-link
             >
           </li>
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
@@ -37,7 +37,7 @@
               >Component Lifecyle</router-link
             >
           </li>
-          <li class="nav-item">
+          <li v-if="isDev" class="nav-item">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
@@ -93,7 +93,7 @@
               >Language &amp; Inclusivity</router-link
             >
           </li>
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
@@ -101,7 +101,7 @@
               >Terminology</router-link
             >
           </li>
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
@@ -133,7 +133,7 @@
         aria-labelledby="flush-heading4"
       >
         <ul class="nav flex-column small fw-light mt-1">
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
@@ -141,7 +141,7 @@
               >Design Principles</router-link
             >
           </li>
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
@@ -149,7 +149,7 @@
               >Color</router-link
             >
           </li>
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
@@ -157,7 +157,7 @@
               >Typography</router-link
             >
           </li>
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
