@@ -284,6 +284,8 @@
 </template>
 
 <script>
+import { getDevEnv } from "@/utils/global";
+
 export default {
   data() {
     return {
@@ -295,7 +297,7 @@ export default {
     // console.log(import.meta.env.PROD);
 
     // sets to 'false' when in PRODUCTION
-    this.isDev = import.meta.env.DEV;
+    this.isDev = getDevEnv;
   },
 };
 </script>

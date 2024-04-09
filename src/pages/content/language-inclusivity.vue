@@ -78,30 +78,31 @@
           clear, actionable language.
         </li>
       </ul>
-      <p>
-        When creating labels, opt for verbs that clearly indicate the user's
-        next action:
-      </p>
-      <UsageBlock
-        ><template #preview
+      <p>When creating labels:</p>
+      <UsageBlock>
+        <template #text
+          >Opt for verbs that clearly indicate the user's next action</template
+        >
+        <template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             Submit application
           </div></template
         ></UsageBlock
       >
-      <UsageBlock variant="dont"
-        ><template #preview
+      <UsageBlock variant="dont">
+        <template #text>do this..</template>
+        <template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             Application submission
           </div></template
         ></UsageBlock
       >
-      <p>
-        Buttons are key elements in driving user interactions. Choose active
-        verbs that resonate with the intended action:
-      </p>
-      <UsageBlock
-        ><template #preview
+      <p>Buttons are key elements in driving user interactions.</p>
+      <UsageBlock>
+        <template #text
+          >Choose active verbs that resonate with the intended action</template
+        >
+        <template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <button type="button" class="btn btn-primary">
               Manage UW NetID account
@@ -109,8 +110,9 @@
           </div></template
         ></UsageBlock
       >
-      <UsageBlock variant="dont"
-        ><template #preview
+      <UsageBlock variant="dont">
+        <template #text>do this..</template>
+        <template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <button type="button" class="btn btn-primary">
               UW NetID account management
@@ -125,17 +127,21 @@
       </p>
       <p>
         Headings set the tone for a section and can guide users on what to
-        expect. Use active language to create impactful headings:
+        expect.
       </p>
-      <UsageBlock
-        ><template #preview
+      <UsageBlock>
+        <template #text
+          >Use active language to create impactful headings</template
+        >
+        <template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             Create and manage your academic plan
           </div></template
         ></UsageBlock
       >
-      <UsageBlock variant="dont"
-        ><template #preview
+      <UsageBlock variant="dont">
+        <template #text>do this..</template>
+        <template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             Academic plan creation and management
           </div></template
