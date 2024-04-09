@@ -77,7 +77,7 @@
               >Voice &amp; Tone</router-link
             >
           </li>
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
@@ -286,7 +286,16 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      isDev: true,
+    };
+  },
+  mounted: function () {
+    // console.log(import.meta.env.DEV);
+    // console.log(import.meta.env.PROD);
+
+    // sets to 'false' when in PRODUCTION
+    this.isDev = import.meta.env.DEV;
   },
 };
 </script>
