@@ -194,6 +194,14 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
+              to="/elements/alerts"
+              >Alerts</router-link
+            >
+          </li>
+          <li class="nav-item mb-1">
+            <router-link
+              class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
+              active-class="bg-black bg-opacity-10"
               to="/elements/link"
               >Link</router-link
             >
