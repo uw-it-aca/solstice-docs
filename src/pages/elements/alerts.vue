@@ -93,12 +93,126 @@
 
     <template #content>
       <h2 id="variants">Variants</h2>
-      <h3>Critial</h3>
+      <h3>Critical</h3>
+      <p>
+        Alerts with the <code>critical</code> variant are of the highest
+        importance, and communicate that an item needs immediate attention, that
+        a process is blocked, or that there has been an error. Whenever
+        possible, <code>critical</code> Alerts should include a call to action
+        to help the user resolve the issue.
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <p>Critical alert example goes here</p>
+          </template>
+          <template #markup>
+            <pre class="language-html">
+<code>&lt;sol-alert variant="critical" has-cta="true" cta-url="[url]"
+  cta-label="View statement">You have a balance that is past due.
+&lt;/sol-alert>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
       <h3>Warning</h3>
+      <p>
+        Alerts with the <code>warning</code> variant communicate items or
+        statuses that may have future consequences and require attention, but
+        are not currently causing an error or blocking a process. Whenever
+        possible, <code>warning</code>
+        Alerts should include a call to action to help the user learn more about
+        the issue.
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <p>Warning alert example goes here</p>
+          </template>
+          <template #markup>
+            <pre class="language-html">
+<code>&lt;sol-alert variant="warning" has-cta="true" cta-url="[url]"
+  cta-label="Go to ">Class meeting times overlap. Adjust your schedule to avoid conflicts.
+&lt;/sol-alert>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
       <h3>Info</h3>
+      <p>
+        Alerts with the <code>info</code> variant communicate useful (but
+        non-critical) information to help the user better understand the current
+        context, such as announcements about upcoming processes.
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <p>Info alert example goes here</p>
+          </template>
+          <template #markup>
+            <pre class="language-html">
+<code>&lt;sol-alert variant="info" is-dismissable="true">
+  Registration opens at 6:00AM.
+&lt;/sol-alert>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
       <h2 id="options">Options</h2>
       <h3>Call to Action</h3>
+      <p>
+        Whenever possible, Alerts should provide direct access to relevant
+        actions needed to resolve them. Do this by adding a call to action with
+        <code>has-cta="true"</code>, and specifying a URL with
+        <code>cta-url</code> and a label with <code>cta-label</code>. The CTA
+        should provide a link to an appropriate page where the issue can be
+        resolved. Alerts may only have one call to action including one relevant
+        link.
+      </p>
+      <p>
+        In general, <code>critical</code> and <code>warning</code> Alerts should
+        include calls to action whenever possible.
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <p>Call to action alert here</p>
+          </template>
+          <template #markup>
+            <pre class="language-html">
+<code>&lt;sol-alert variant="warning" has-cta="true" cta-url="[url]" cta-
+  label="Call to action"> This Alert requires further action.
+&lt;/sol-alert>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
       <h3>Dismiss button</h3>
+      <p>
+        By default, Alerts are not dismissible from the page. They will remain
+        in the interface until the issue is resolved or is no longer relevant.
+        For Alerts with non-critical information, particularly info Alerts such
+        as announcements, dismissibility may be enabled. When
+        <code>is-dismissible="true"</code>, an 'x' icon will allow users to
+        remove it from the page.
+      </p>
+      <p>
+        In general, <code>critical</code> and <code>warning</code> Alerts should
+        not be dismissible.
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <p>Dismissable alert goes here</p>
+          </template>
+          <template #markup>
+            <pre class="language-html">
+<code>&lt;sol-alert variant="info" is-dismissible="true">This Alert is dismissible
+&lt;/sol-alert>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
       <h2 id="anatomy">Anatomy</h2>
       <h3>Size</h3>
       <h3>Text</h3>
