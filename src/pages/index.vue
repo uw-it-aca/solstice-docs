@@ -47,7 +47,7 @@
         </div>
       </div>
 
-      <div class="row mb-5">
+      <div v-if="isDev" class="row mb-5">
         <div class="col d-flex flex-column">
           <axdd-panel class="bg-body-tertiary flex-fill">
             <h3 class="card-title">Component Lifecycle</h3>
@@ -129,6 +129,7 @@
 </template>
 
 <script>
+import { getDevEnv } from "@/utils/global";
 import Layout from "@/layout.vue";
 
 export default {
@@ -139,12 +140,14 @@ export default {
   data() {
     return {
       pageTitle: "Solstice Design System",
+      isDev: true,
     };
   },
   methods: {},
   // MARK: override layout pageTitle prop
   mounted: function () {
     document.title = this.appName;
+    this.isDev = getDevEnv();
   },
 };
 </script>

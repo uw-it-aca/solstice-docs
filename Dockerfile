@@ -8,8 +8,8 @@ ADD docker/nginx.conf /etc/nginx/nginx.conf
 RUN chgrp acait /etc/nginx/nginx.conf && chmod g+w /etc/nginx/nginx.conf
 
 # latest node + ubuntu
-FROM node:20 AS node-base
-FROM ubuntu:22.04 AS node-bundler
+FROM node:lts AS node-base
+FROM ubuntu:latest AS node-bundler
 COPY --from=node-base / /
 
 ADD index.html package.json vite.config.js /app/
