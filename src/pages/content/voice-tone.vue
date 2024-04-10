@@ -108,7 +108,7 @@
           >
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <img src="../../assets/images/voice-and-tone-1.png" width="500" />
+              <p>Click the "Submit" button to complete the registration.</p>
             </div>
           </template>
         </UsageBlock>
@@ -119,7 +119,7 @@
           >
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <img src="../../assets/images/voice-and-tone-2.png" width="500" />
+              <p>"Error code: 410"</p>
             </div>
           </template>
         </UsageBlock>
@@ -135,7 +135,11 @@
           >
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <img src="../../assets/images/voice-and-tone-3.png" width="500" />
+              <p>
+              As you begin to consider what you want to major in, we
+              recommend scheduling a meeting with your adviser to discuss
+              your interests, goals, degree requirements and academic
+              planning.</p>
             </div>
           </template>
         </UsageBlock>
@@ -145,7 +149,7 @@
           </template>
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <img src="../../assets/images/voice-and-tone-4.png" width="500" />
+              <p>“Forbidden”, “Bad request”, “Not acceptable”</p>
             </div>
           </template>
         </UsageBlock>
@@ -160,7 +164,7 @@
           >
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <img src="../../assets/images/voice-and-tone-5.png" width="500" />
+              <p>Congratulations! You have completed the registration process.</p>
             </div>
           </template>
         </UsageBlock>
@@ -170,7 +174,7 @@
           </template>
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <img src="../../assets/images/voice-and-tone-6.png" width="500" />
+             <p>Great job! You're one step closer to completion.</p>
             </div>
           </template>
         </UsageBlock>
