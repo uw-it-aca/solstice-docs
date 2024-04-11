@@ -11,13 +11,18 @@
 
       <hr class="mb-5 w-25 d-inline-block" />
 
-      <h2>Heading</h2>
-
-      <h2>Paragraph</h2>
-
-      <h2>Lists</h2>
-
-      <h2>Button</h2>
+      <ul class="row list-unstyled">
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Link'"
+            :link="'/elements/link'"
+            :accessibility="true"
+            :version="'1.0.5'"
+            >Cards have a raised profile and has shadow. Meant to visually
+            display prominence over flat items.</DescriptionBlock
+          >
+        </li>
+      </ul>
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>
@@ -25,10 +30,11 @@
 
 <script>
 import Layout from "@/layout.vue";
+import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {
   name: "DocsElementsIndex",
-  components: { Layout },
+  components: { Layout, DescriptionBlock },
   data() {
     return {};
   },

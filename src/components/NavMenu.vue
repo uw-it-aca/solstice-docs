@@ -137,14 +137,6 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/foundations/design-principles"
-              >Design Principles</router-link
-            >
-          </li>
-          <li v-if="isDev" class="nav-item mb-1">
-            <router-link
-              class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
-              active-class="bg-black bg-opacity-10"
               to="/foundations/color"
               >Color</router-link
             >
@@ -161,7 +153,7 @@
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/foundations/layout"
+              to="/foundations/layout/"
               >Layout</router-link
             >
           </li>
@@ -201,8 +193,7 @@
         </ul>
       </div>
     </li>
-
-    <li v-show="false" class="nav-item mb-1">
+    <li class="nav-item mb-1">
       <router-link
         class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
         active-class="bg-black bg-opacity-10"
@@ -223,7 +214,7 @@
         aria-labelledby="flush-heading1"
       >
         <ul class="nav flex-column small fw-light mt-1">
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
@@ -231,12 +222,12 @@
               >Navigation</router-link
             >
           </li>
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/patterns/containers"
-              >Containers</router-link
+              to="/patterns/container"
+              >Container</router-link
             >
           </li>
           <li class="nav-item mb-1">
@@ -247,28 +238,12 @@
               >Messaging</router-link
             >
           </li>
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/patterns/feedback"
-              >Feedback</router-link
-            >
-          </li>
-          <li class="nav-item mb-1">
-            <router-link
-              class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
-              active-class="bg-black bg-opacity-10"
-              to="/patterns/profile"
-              >Profile</router-link
-            >
-          </li>
-          <li class="nav-item mb-1">
-            <router-link
-              class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
-              active-class="bg-black bg-opacity-10"
-              to="/patterns/color-mode"
-              >Color Mode</router-link
+              to="/patterns/utility"
+              >Utility</router-link
             >
           </li>
         </ul>

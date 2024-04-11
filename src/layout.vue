@@ -19,9 +19,18 @@
         </div>
       </div>
 
-      <div v-if="$slots.head" class="row">
+      <div v-if="$slots.lead" class="row">
         <div class="col-9">
-          <slot name="head" />
+          <h1 class="fw-bold">{{ pageTitle }}</h1>
+          <p class="lead text-muted">
+            <slot name="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              maiores quo consequatur, minima minus suscipit doloribus quos
+              dicta excepturi porro obcaecati, dignissimos rerum consectetur ea
+              dolores vero sint. Porro, quaerat.
+            </slot>
+          </p>
+          <hr class="w-50 d-inline-block" />
         </div>
       </div>
 
@@ -32,9 +41,9 @@
           </div>
           <slot name="content" />
 
-          <div v-if="$slots.author" class="py-1 small text-end">
+          <div v-if="$slots.author" class="py-1 small">
             <div class="text-muted">
-              Last modified by <slot name="author" />
+              Last updated by: <slot name="author" />
             </div>
           </div>
         </div>

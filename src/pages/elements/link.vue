@@ -13,14 +13,9 @@
       </nav>
     </template>
 
-    <template #head>
-      <h1 class="fw-bold">{{ pageTitle }}</h1>
-
-      <p class="lead text-muted">
-        Links navigate between or within web pages and initiate simple actions.
-        They can be used in paragraphs, in groups, or on their own.
-      </p>
-      <hr class="w-50 d-inline-block" />
+    <template #lead>
+      Links navigate between or within web pages and initiate simple actions.
+      They can be used in paragraphs, in groups, or on their own.
     </template>
 
     <template #toc>

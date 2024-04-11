@@ -1,6 +1,6 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #content>
+    <template #breadcrumb>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -11,18 +11,16 @@
           </li>
         </ol>
       </nav>
+    </template>
 
-      <h1>{{ pageTitle }}</h1>
+    <template #lead>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
+      magnam a asperiores perspiciatis voluptatem culpa, unde minus itaque,
+      repellat adipisci quia cum ipsum fugit, nam illo! Vitae culpa deleniti
+      reiciendis!
+    </template>
 
-      <p class="p-0 col-md-8 lead text-muted">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
-        quasi perspiciatis nostrum quidem ipsam. Dolorum placeat facilis
-        officiis iure sint natus necessitatibus cum sequi provident similique
-        amet quisquam, repellat enim?
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
+    <template #content>
       <p class="col-md-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorum
         delectus tempora totam corrupti maxime, quam repellendus a. A similique
@@ -30,32 +28,22 @@
         accusantium.
       </p>
 
-      <p class="col-md-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorum
-        delectus tempora totam corrupti maxime, quam repellendus a. A similique
-        laborum numquam illo corrupti inventore sunt in quaerat quibusdam
-        accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Asperiores fuga eum velit quae sint obcaecati labore, excepturi nulla
-        voluptatem deleniti, repellendus rem aliquid molestias nihil sit
-        debitis, soluta itaque officia?
-      </p>
-
       <ul class="row list-unstyled">
         <li class="col-4">
-          <CompDescription
+          <DescriptionBlock
             :name="'Topbar'"
             :link="'/foundations/layout/topbar'"
             :accessibility="true"
             :version="'1.0.5'"
-          ></CompDescription>
+          ></DescriptionBlock>
         </li>
         <li class="col-4">
-          <CompDescription
+          <DescriptionBlock
             :name="'Sidebar'"
             :link="'/foundations/layout/sidebar'"
             :accessibility="true"
             :version="'1.0.5'"
-          ></CompDescription>
+          ></DescriptionBlock>
         </li>
       </ul>
     </template>
@@ -65,13 +53,13 @@
 
 <script>
 import Layout from "@/layout.vue";
-import CompDescription from "@/components/CompDescription.vue";
+import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {
   name: "DocsLayout",
   components: {
     Layout,
-    CompDescription,
+    DescriptionBlock,
   },
   data() {
     return {

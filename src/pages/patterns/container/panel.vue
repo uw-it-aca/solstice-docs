@@ -5,7 +5,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
           <li class="breadcrumb-item">
-            <a href="/patterns/containers">Containers</a>
+            <a href="/patterns/container">Container</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">Panel</li>
         </ol>

@@ -4,11 +4,11 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Containers</li>
+          <li class="breadcrumb-item active" aria-current="page">Container</li>
         </ol>
       </nav>
 
-      <h1 class="fw-bold">Containers</h1>
+      <h1 class="fw-bold">Container</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Containers are Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -21,33 +21,33 @@
 
       <ul class="row list-unstyled">
         <li class="col-4">
-          <CompDescription
+          <DescriptionBlock
             :name="'Card'"
-            :link="'/patterns/containers/card'"
+            :link="'/patterns/container/card'"
             :accessibility="true"
             :version="'1.0.5'"
             >Cards have a raised profile and has shadow. Meant to visually
-            display prominence over flat items.</CompDescription
+            display prominence over flat items.</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <CompDescription
+          <DescriptionBlock
             :name="'Panel'"
-            :link="'/patterns/containers/panel'"
+            :link="'/patterns/container/panel'"
             :accessibility="true"
             :version="'1.1.0'"
             >Panels remain on the flat surface of the page. Bounding container
             can have background color applied to show slight prominence. Still
-            not a card.</CompDescription
+            not a card.</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <CompDescription
+          <DescriptionBlock
             :name="'Disclosure'"
-            :link="'/patterns/containers/disclosure'"
+            :link="'/patterns/container/disclosure'"
             :accessibility="true"
             :version="'1.0.5'"
-          ></CompDescription>
+          ></DescriptionBlock>
         </li>
       </ul>
     </template>
@@ -57,13 +57,13 @@
 
 <script>
 import Layout from "@/layout.vue";
-import CompDescription from "@/components/CompDescription.vue";
+import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {
   name: "DocsPatternsContainer",
   components: {
     Layout,
-    CompDescription,
+    DescriptionBlock,
   },
   data() {
     return {};

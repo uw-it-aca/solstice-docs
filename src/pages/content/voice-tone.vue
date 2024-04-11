@@ -13,7 +13,7 @@
       </nav>
     </template>
 
-    <template #head>
+    <template #lead>
       <h1>{{ pageTitle }}</h1>
 
       <p class="lead text-muted">
@@ -136,10 +136,10 @@
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
               <p>
-              As you begin to consider what you want to major in, we
-              recommend scheduling a meeting with your adviser to discuss
-              your interests, goals, degree requirements and academic
-              planning.</p>
+                As you begin to consider what you want to major in, we recommend
+                scheduling a meeting with your adviser to discuss your
+                interests, goals, degree requirements and academic planning.
+              </p>
             </div>
           </template>
         </UsageBlock>
@@ -164,7 +164,9 @@
           >
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-              <p>Congratulations! You have completed the registration process.</p>
+              <p>
+                Congratulations! You have completed the registration process.
+              </p>
             </div>
           </template>
         </UsageBlock>
@@ -174,7 +176,7 @@
           </template>
           <template #preview>
             <div class="border rounded-3 p-3 bg-light">
-             <p>Great job! You're one step closer to completion.</p>
+              <p>Great job! You're one step closer to completion.</p>
             </div>
           </template>
         </UsageBlock>

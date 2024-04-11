@@ -12,17 +12,10 @@
         </ol>
       </nav>
     </template>
-    <template #head>
-      <h1 class="fw-bold">{{ pageTitle }}</h1>
-
-      <p class="lead text-muted">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum,
-        voluptate sint alias consectetur commodi dignissimos, minus ratione quos
-        a enim blanditiis hic perferendis ullam quod non, molestiae aut illo?
-        Aut!
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
+    <template #lead>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, voluptate
+      sint alias consectetur commodi dignissimos, minus ratione quos a enim
+      blanditiis hic perferendis ullam quod non, molestiae aut illo? Aut!
     </template>
     <template #toc>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit

@@ -1,0 +1,113 @@
+<template>
+  <Layout :page-title="pageTitle">
+    <template #breadcrumb>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/patterns/">Patterns</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
+        </ol>
+      </nav>
+    </template>
+    <template #lead>
+      <h1 class="fw-bold">{{ pageTitle }}</h1>
+
+      <p class="lead text-muted">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
+        dolores repudiandae natus dolorem recusandae! Incidunt consequatur
+        tenetur ad totam, placeat ipsa explicabo, eaque id blanditiis libero
+        culpa veniam aliquam!
+      </p>
+      <hr class="w-50 d-inline-block" />
+    </template>
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#heading1"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Heading 1</a
+              >
+            </li>
+            <li>
+              <a
+                href="#heading2"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Heading 2</a
+              >
+            </li>
+            <li>
+              <a
+                href="#heading3"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Heading 3</a
+              >
+            </li>
+            <li>
+              <a
+                href="#heading4"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Heading 4</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
+    </template>
+    <template #content>
+      <h2 id="heading1">Heading1 (h2)</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga
+        corporis totam eligendi molestiae ex aperiam soluta, consectetur
+        accusamus accusantium officia praesentium, magni numquam sunt minus
+        architecto libero enim tempore!
+      </p>
+
+      <h2 id="heading2">Heading2 (h2)</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quibusdam
+        doloremque quaerat nulla enim, magni ut pariatur est dolorum ullam sint
+        rerum odio hic perspiciatis, commodi adipisci, vero sapiente impedit?
+      </p>
+
+      <h2 id="heading3">Heading3 (h2)</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, sit, quo
+        ab pariatur, recusandae obcaecati necessitatibus doloribus ad a dolor
+        minus saepe? Quaerat cupiditate ipsa ut nulla nostrum ex aut!
+      </p>
+
+      <h2 id="heading4">Heading3 (h2)</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
+        facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
+        placeat totam dolorem suscipit est sunt eum, debitis exercitationem
+        voluptate ducimus repellat necessitatibus?
+      </p>
+    </template>
+    <template #author>Charlon Palacay</template>
+  </Layout>
+</template>
+
+<script>
+import Layout from "@/layout.vue";
+// import CodeBlock from "@/components/CodeBlock.vue";
+// import UsageBlock from "@/components/UsageBlock.vue";
+import PageContents from "@/components/PageContents.vue";
+
+export default {
+  name: "DocsElementsAlert" /* example: Docs--Folder--ComponentName */,
+  inject: ["mq"],
+  components: { Layout, /* CodeBlock, UsageBlock, */ PageContents },
+  data() {
+    return {
+      pageTitle: "Alert",
+    };
+  },
+};
+</script>

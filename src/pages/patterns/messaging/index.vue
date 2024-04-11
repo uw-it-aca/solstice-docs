@@ -21,20 +21,36 @@
 
       <ul class="row list-unstyled">
         <li class="col-4">
-          <CompDescription
+          <DescriptionBlock
+            :name="'Alert'"
+            :link="'/patterns/messaging/alert'"
+            :accessibility="true"
+            :version="'1.0.x'"
+          ></DescriptionBlock>
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Toast'"
+            :link="'/patterns/messaging/toast'"
+            :accessibility="true"
+            :version="'1.0.x'"
+          ></DescriptionBlock>
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
             :name="'Banner'"
             :link="'/patterns/messaging/banner'"
             :accessibility="true"
             :version="'1.0.x'"
-          ></CompDescription>
+          ></DescriptionBlock>
         </li>
         <li class="col-4">
-          <CompDescription
-            :name="'Takeover'"
-            :link="'/patterns/messaging/takeover'"
+          <DescriptionBlock
+            :name="'Modal'"
+            :link="'/patterns/messaging/modal'"
             :accessibility="true"
             :version="'1.0.x'"
-            >aksdfjaasdf aka modal</CompDescription
+            >aksdfjaasdf aka lightbox</DescriptionBlock
           >
         </li>
       </ul>
@@ -45,13 +61,13 @@
 
 <script>
 import Layout from "@/layout.vue";
-import CompDescription from "@/components/CompDescription.vue";
+import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {
   name: "DocsPatternsLayouts",
   components: {
     Layout,
-    CompDescription,
+    DescriptionBlock,
   },
   data() {
     return {};
