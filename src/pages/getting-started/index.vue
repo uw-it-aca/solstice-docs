@@ -1,6 +1,5 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #breadcrumb></template>
     <template #lead>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
       accusamus vel doloremque odio ut sapiente quasi facilis veniam natus eius

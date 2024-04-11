@@ -1,23 +1,20 @@
 <template>
-  <Layout>
-    <template #content>
+  <Layout :page-title="pageTitle">
+    <template #breadcrumb>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Navigation</li>
+          <li class="breadcrumb-item active" aria-current="page">{{ pageTitle }}</li>
         </ol>
       </nav>
-      <h1>Navigation</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        consequuntur tempore amet consectetur minus autem corporis nostrum sit
-        sapiente cumque. Rem nisi quidem aspernatur doloremque id non natus
-        voluptas debitis!
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
+    </template>
+    <template #lead>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+      consequuntur tempore amet consectetur minus autem corporis nostrum sit
+      sapiente cumque. Rem nisi quidem aspernatur doloremque id non natus
+      voluptas debitis!
+    </template>
+    <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
@@ -49,7 +46,9 @@ export default {
   name: "DocsPatternsNavigation",
   components: { Layout, DescriptionBlock },
   data() {
-    return {};
+    return {
+      pageTitle: "Navigation" /* TODO: Set a page title */,
+    };
   },
 };
 </script>

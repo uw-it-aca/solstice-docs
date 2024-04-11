@@ -149,7 +149,7 @@
               >Typography</router-link
             >
           </li>
-          <li v-if="isDev" class="nav-item mb-1">
+          <li class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
@@ -193,57 +193,140 @@
         </ul>
       </div>
     </li>
+    <li class="text-muted small px-3 pt-3 mb-3">PATTERNS</li>
+
     <li class="nav-item mb-1">
       <router-link
         class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
         active-class="bg-black bg-opacity-10"
-        to="/patterns/"
-        id="flush-heading1"
+        to="/patterns/navigation/"
+        id="flush-heading6"
         data-bs-toggle="collapse"
-        data-bs-target="#flush-collapse1"
-        :aria-expanded="$route.path.includes('/patterns') ? true : false"
-        aria-controls="flush-collapse1"
+        data-bs-target="#flush-collapse6"
+        :aria-expanded="
+          $route.path.includes('/patterns/navigation/') ? true : false
+        "
+        aria-controls="flush-collapse6"
       >
-        <span>Patterns</span>
+        <span>Navigation</span>
         <i class="bi bi-chevron-right" aria-hidden="true"></i>
       </router-link>
       <div
-        id="flush-collapse1"
+        id="flush-collapse6"
         class="collapse"
-        :class="$route.path.includes('/patterns') ? 'show' : ''"
-        aria-labelledby="flush-heading1"
+        :class="$route.path.includes('/patterns/navigation/') ? 'show' : ''"
+        aria-labelledby="flush-heading6"
       >
         <ul class="nav flex-column small fw-light mt-1">
           <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/patterns/navigation"
-              >Navigation</router-link
+              to="/patterns/navigation/tabs"
+              >Tabs</router-link
             >
           </li>
           <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/patterns/container"
-              >Container</router-link
+              to="/patterns/navigation/menu"
+              >Menu</router-link
             >
           </li>
-          <li class="nav-item mb-1">
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item mb-1">
+      <router-link
+        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+        active-class="bg-black bg-opacity-10"
+        to="/patterns/container/"
+        id="flush-heading7"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapse7"
+        :aria-expanded="
+          $route.path.includes('/patterns/container/') ? true : false
+        "
+        aria-controls="flush-collapse7"
+      >
+        <span>Container</span>
+        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+      </router-link>
+      <div
+        id="flush-collapse7"
+        class="collapse"
+        :class="$route.path.includes('/patterns/container/') ? 'show' : ''"
+        aria-labelledby="flush-heading7"
+      >
+        container slasfkdjalksdfj
+      </div>
+    </li>
+
+    <li class="nav-item mb-1">
+      <router-link
+        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+        active-class="bg-black bg-opacity-10"
+        to="/patterns/messaging/"
+        id="flush-heading8"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapse8"
+        :aria-expanded="
+          $route.path.includes('/patterns/messaging/') ? true : false
+        "
+        aria-controls="flush-collapse8"
+      >
+        <span>Messaging</span>
+        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+      </router-link>
+      <div
+        id="flush-collapse8"
+        class="collapse"
+        :class="$route.path.includes('/patterns/messaging/') ? 'show' : ''"
+        aria-labelledby="flush-heading7"
+      >
+        messaging slasfkdjalksdfj
+      </div>
+    </li>
+
+    <li class="nav-item mb-1">
+      <router-link
+        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+        active-class="bg-black bg-opacity-10"
+        to="/patterns/utility/"
+        id="flush-heading9"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapse9"
+        :aria-expanded="
+          $route.path.includes('/patterns/utility/') ? true : false
+        "
+        aria-controls="flush-collapse9"
+      >
+        <span>Utility</span>
+        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+      </router-link>
+      <div
+        id="flush-collapse9"
+        class="collapse"
+        :class="$route.path.includes('/patterns/utility/') ? 'show' : ''"
+        aria-labelledby="flush-heading7"
+      >
+      <ul class="nav flex-column small fw-light mt-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/patterns/messaging"
-              >Messaging</router-link
+              to="/patterns/utility/profile"
+              >Profile</router-link
             >
           </li>
           <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="nav-link rounded-3 text-light fw-lighter bg-black-hover bg-opacity-10-hover"
               active-class="bg-black bg-opacity-10"
-              to="/patterns/utility"
-              >Utility</router-link
+              to="/patterns/utility/color-mode"
+              >Color Mode</router-link
             >
           </li>
         </ul>

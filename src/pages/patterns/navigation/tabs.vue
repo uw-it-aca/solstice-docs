@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #lead> asdfads </template>
     <template #content>
       <nav aria-label="breadcrumb">

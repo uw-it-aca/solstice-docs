@@ -1,16 +1,12 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
+    <template #lead>
+      Elements are the smallest basic structures of an user interface. They
+      cannot be broken down any further. Buttons, links, and inputs are good
+      examples. Elements utilize decisions made on the design token level.
+    </template>
+
     <template #content>
-      <h1>Elements</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
-        Elements are the smallest basic structures of an user interface. They
-        cannot be broken down any further. Buttons, links, and inputs are good
-        examples. Elements utilize decisions made on the design token level.
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
@@ -36,7 +32,9 @@ export default {
   name: "DocsElementsIndex",
   components: { Layout, DescriptionBlock },
   data() {
-    return {};
+    return {
+      pageTitle: "Elements",
+    };
   },
 };
 </script>
