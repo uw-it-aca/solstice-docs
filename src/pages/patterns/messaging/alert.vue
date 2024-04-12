@@ -6,6 +6,9 @@
           <li class="breadcrumb-item">
             <a href="/patterns/">Patterns</a>
           </li>
+          <li class="breadcrumb-item">
+            <a href="/patterns/messaging/">Messaging</a>
+          </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
           </li>
@@ -13,15 +16,10 @@
       </nav>
     </template>
     <template #lead>
-      <h1 class="fw-bold">{{ pageTitle }}</h1>
-
-      <p class="lead text-muted">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
-        dolores repudiandae natus dolorem recusandae! Incidunt consequatur
-        tenetur ad totam, placeat ipsa explicabo, eaque id blanditiis libero
-        culpa veniam aliquam!
-      </p>
-      <hr class="w-50 d-inline-block" />
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
+      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
+      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
+      aliquam!
     </template>
     <template #toc>
       <PageContents>
