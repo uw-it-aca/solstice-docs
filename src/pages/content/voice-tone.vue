@@ -77,11 +77,11 @@
         </li>
         <li>
           <strong>Empathetic and inclusive</strong>
+          <p>
+            Maintain a warm and approachable demeanor, fostering a respectful
+            and understanding environment
+          </p>
         </li>
-        <p>
-          Maintain a warm and approachable demeanor, fostering a respectful and
-          understanding environment
-        </p>
       </ul>
 
       <h2 id="tone">Tone</h2>
