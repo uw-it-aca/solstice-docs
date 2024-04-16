@@ -23,7 +23,8 @@
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/getting-started/solstice-101"
               >Solstice 101</router-link
@@ -31,7 +32,8 @@
           </li>
           <li v-if="isDev" class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/getting-started/component-lifecycle"
               >Component Lifecyle</router-link
@@ -39,7 +41,8 @@
           </li>
           <li v-if="isDev" class="nav-item">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/getting-started/installation-setup"
               >Installation &amp; Setup</router-link
@@ -71,7 +74,8 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/content/voice-tone"
               >Voice &amp; Tone</router-link
@@ -79,7 +83,8 @@
           </li>
           <li v-if="isDev" class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/content/grammar-mechanics"
               >Grammar &amp; Mechanics</router-link
@@ -87,7 +92,8 @@
           </li>
           <li class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/content/language-inclusivity"
               >Language &amp; Inclusivity</router-link
@@ -95,7 +101,8 @@
           </li>
           <li v-if="isDev" class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/content/terminology"
               >Terminology</router-link
@@ -103,7 +110,8 @@
           </li>
           <li v-if="isDev" class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/content/labels"
               >Labels</router-link
@@ -135,7 +143,8 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li v-if="isDev" class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/foundations/color"
               >Color</router-link
@@ -143,7 +152,8 @@
           </li>
           <li v-if="isDev" class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/foundations/typography"
               >Typography</router-link
@@ -151,7 +161,8 @@
           </li>
           <li class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/foundations/layout/"
               >Layout</router-link
@@ -184,7 +195,8 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/elements/link"
               >Link</router-link
@@ -214,10 +226,10 @@
         :class="$route.path.includes('/patterns/') ? 'show' : ''"
         aria-labelledby="flush-heading10"
       >
-        <ul class="nav flex-column small fw-light mt-1">
+        <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <router-link
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light fw-light fs-7 chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/patterns/navigation/"
               id="flush-heading6"
@@ -239,10 +251,11 @@
               "
               aria-labelledby="flush-heading6"
             >
-              <ul class="nav flex-column small fw-light mt-1">
+              <ul class="nav flex-column fw-light mt-1">
                 <li v-if="isDev" class="nav-item mb-1">
                   <router-link
-                    class="ps-5 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/navigation/tabs"
                     >Tabs</router-link
@@ -250,7 +263,8 @@
                 </li>
                 <li v-if="isDev" class="nav-item mb-1">
                   <router-link
-                    class="ps-5 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/navigation/menu"
                     >Menu</router-link
@@ -262,7 +276,7 @@
 
           <li class="nav-item mb-1">
             <router-link
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light fw-light fs-7 chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/patterns/container/"
               id="flush-heading7"
@@ -284,10 +298,11 @@
               "
               aria-labelledby="flush-heading7"
             >
-              <ul class="nav flex-column small fw-light mt-1">
+              <ul class="nav flex-column fw-light mt-1">
                 <li v-if="isDev" class="nav-item mb-1">
                   <router-link
-                    class="ps-5 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/container/card"
                     >Card</router-link
@@ -295,7 +310,8 @@
                 </li>
                 <li v-if="isDev" class="nav-item mb-1">
                   <router-link
-                    class="ps-5 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/container/panel"
                     >Panel</router-link
@@ -303,7 +319,8 @@
                 </li>
                 <li v-if="isDev" class="nav-item mb-1">
                   <router-link
-                    class="ps-5 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/container/disclosure"
                     >Disclosure</router-link
@@ -315,7 +332,7 @@
 
           <li class="nav-item mb-1">
             <router-link
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light fw-light fs-7 chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/patterns/messaging/"
               id="flush-heading8"
@@ -337,10 +354,11 @@
               "
               aria-labelledby="flush-heading7"
             >
-              <ul class="nav flex-column small fw-light mt-1">
+              <ul class="nav flex-column fw-light mt-1">
                 <li v-if="isDev" class="nav-item mb-1">
                   <router-link
-                    class="ps-5 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/messaging/alert"
                     >Alert</router-link
@@ -348,7 +366,8 @@
                 </li>
                 <li v-if="isDev" class="nav-item mb-1">
                   <router-link
-                    class="ps-5 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/messaging/toast"
                     >Toast</router-link
@@ -356,7 +375,8 @@
                 </li>
                 <li v-if="isDev" class="nav-item mb-1">
                   <router-link
-                    class="ps-5 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/messaging/banner"
                     >Banner</router-link
@@ -364,7 +384,8 @@
                 </li>
                 <li v-if="isDev" class="nav-item mb-1">
                   <router-link
-                    class="ps-5 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/messaging/modal"
                     >Modal</router-link
@@ -376,7 +397,7 @@
 
           <li class="nav-item mb-1">
             <router-link
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light fw-light fs-7 chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/patterns/utility/"
               id="flush-heading9"
@@ -396,10 +417,11 @@
               :class="$route.path.includes('/patterns/utility/') ? 'show' : ''"
               aria-labelledby="flush-heading7"
             >
-              <ul class="nav flex-column small fw-light mt-1">
+              <ul class="nav flex-column fw-light mt-1">
                 <li v-if="isDev" class="nav-item mb-1">
                   <router-link
-                    class="ps-5 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/utility/profile"
                     >Profile</router-link
@@ -407,7 +429,8 @@
                 </li>
                 <li v-if="isDev" class="nav-item mb-1">
                   <router-link
-                    class="ps-5 nav-link rounded-3 text-light fs-8 fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/utility/color-mode"
                     >Color Mode</router-link

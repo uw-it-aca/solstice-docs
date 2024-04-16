@@ -14,18 +14,13 @@
     </template>
 
     <template #lead>
-      <h1>{{ pageTitle }}</h1>
-
-      <p class="lead text-muted">
-        The Voice and Tone establish a uniform and easily identifiable
-        communication style, promoting a cohesive user experience across various
-        interfaces. It's not just about conveying information; it's about
-        fostering a connection with users through consistent language, style,
-        and attitude. Solstice&rsquo;s Voice and Tone encapsulates our unique
-        personality and identity, fostering consistency and coherence, and
-        contributes to a seamless and engaging user experience.
-      </p>
-      <hr class="w-50 d-inline-block" />
+      The Voice and Tone establish a uniform and easily identifiable
+      communication style, promoting a cohesive user experience across various
+      interfaces. It's not just about conveying information; it's about
+      fostering a connection with users through consistent language, style, and
+      attitude. Solstice&rsquo;s Voice and Tone encapsulates our unique
+      personality and identity, fostering consistency and coherence, and
+      contributes to a seamless and engaging user experience.
     </template>
 
     <template #toc>
@@ -107,7 +102,7 @@
             and specific guidance.</template
           >
           <template #preview>
-            <div class="border rounded-3 p-3 bg-light">
+            <div class="border rounded-3 p-3 bg-body-tertiary">
               <p>Click the "Submit" button to complete the registration.</p>
             </div>
           </template>
@@ -118,7 +113,7 @@
             cause confusion.</template
           >
           <template #preview>
-            <div class="border rounded-3 p-3 bg-light">
+            <div class="border rounded-3 p-3 bg-body-tertiary">
               <p>"Error code: 410"</p>
             </div>
           </template>
@@ -134,7 +129,7 @@
             individuals to reach out for further assistance.</template
           >
           <template #preview>
-            <div class="border rounded-3 p-3 bg-light">
+            <div class="border rounded-3 p-3 bg-body-tertiary">
               <p>
                 As you begin to consider what you want to major in, we recommend
                 scheduling a meeting with your adviser to discuss your
@@ -148,7 +143,7 @@
             >Don&rsquo;t use overly dramatic or scary words for simple errors
           </template>
           <template #preview>
-            <div class="border rounded-3 p-3 bg-light">
+            <div class="border rounded-3 p-3 bg-body-tertiary">
               <p>“Forbidden”, “Bad request”, “Not acceptable”</p>
             </div>
           </template>
@@ -163,7 +158,7 @@
             >Acknowledge effort, progress, and completion</template
           >
           <template #preview>
-            <div class="border rounded-3 p-3 bg-light">
+            <div class="border rounded-3 p-3 bg-body-tertiary">
               <p>
                 Congratulations! You have completed the registration process.
               </p>
@@ -175,7 +170,7 @@
             >Don&rsquo;t refer to a simple action or complete step as a success
           </template>
           <template #preview>
-            <div class="border rounded-3 p-3 bg-light">
+            <div class="border rounded-3 p-3 bg-body-tertiary">
               <p>Great job! You're one step closer to completion.</p>
             </div>
           </template>
