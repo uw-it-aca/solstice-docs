@@ -10,46 +10,30 @@
         </ol>
       </nav>
     </template>
+
     <template #lead>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto tempore
-      omnis esse quasi assumenda quae voluptatem, dolores perspiciatis facilis.
-      Iste cupiditate similique quis nam amet officiis? Accusantium ducimus vel
-      sit!
+      Utility components... Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Iusto tempore omnis esse quasi assumenda quae voluptatem, dolores
+      perspiciatis facilis. Iste cupiditate similique quis nam amet officiis?
+      Accusantium ducimus vel sit!
     </template>
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
-            :name="'Alert'"
-            :link="'/patterns/messaging/alert'"
+            :name="'Profile'"
+            :link="'/patterns/utility/profile'"
             :accessibility="true"
             :version="'1.0.x'"
           ></DescriptionBlock>
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Toast'"
-            :link="'/patterns/messaging/toast'"
+            :name="'Color Mode'"
+            :link="'/patterns/utility/color-mode'"
             :accessibility="true"
             :version="'1.0.x'"
           ></DescriptionBlock>
-        </li>
-        <li class="col-4">
-          <DescriptionBlock
-            :name="'Banner'"
-            :link="'/patterns/messaging/banner'"
-            :accessibility="true"
-            :version="'1.0.x'"
-          ></DescriptionBlock>
-        </li>
-        <li class="col-4">
-          <DescriptionBlock
-            :name="'Modal'"
-            :link="'/patterns/messaging/modal'"
-            :accessibility="true"
-            :version="'1.0.x'"
-            >aksdfjaasdf aka lightbox</DescriptionBlock
-          >
         </li>
       </ul>
     </template>
@@ -62,14 +46,14 @@ import Layout from "@/layout.vue";
 import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {
-  name: "DocsPatternsLayouts",
+  name: "DocsPatternsUtility",
   components: {
     Layout,
     DescriptionBlock,
   },
   data() {
     return {
-      pageTitle: "Messaging",
+      pageTitle: "Utility",
     };
   },
 };

@@ -1,26 +1,25 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #content>
+    <template #breadcrumb>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
+          <li class="breadcrumb-item">
+            <a href="/patterns/utility/">Utility</a>
+          </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
           </li>
         </ol>
       </nav>
-
-      <h1>{{ pageTitle }}</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
-        Profile Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
-        eos provident praesentium ipsum sed aperiam aliquam quibusdam voluptatem
-        corrupti, reprehenderit illum. Nobis quia incidunt non officia nihil id
-        perferendis molestiae?
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
+    </template>
+    <template #lead>
+      Profile Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+      eos provident praesentium ipsum sed aperiam aliquam quibusdam voluptatem
+      corrupti, reprehenderit illum. Nobis quia incidunt non officia nihil id
+      perferendis molestiae?
+    </template>
+    <template #content>
       <h2>Standard</h2>
       <CodeBlock>
         <template #preview>

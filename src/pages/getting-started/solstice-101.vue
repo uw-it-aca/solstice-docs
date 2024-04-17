@@ -12,16 +12,11 @@
         </ol>
       </nav>
     </template>
-    <template #head>
-      <h1 class="fw-bold">{{ pageTitle }}</h1>
-
-      <p class="lead text-muted">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quo
-        vitae cumque ad quia ut. Consectetur fugiat velit officia at sequi fugit
-        minima quidem quibusdam eligendi accusamus? Asperiores, doloribus amet.
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
+    <template #lead>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ut nemo
+      ipsam deleniti ab excepturi adipisci eveniet, impedit expedita rerum fuga
+      nesciunt sapiente iusto blanditiis labore, voluptatum hic consectetur
+      dolores.
     </template>
     <template #toc>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
@@ -30,22 +25,34 @@
       molestias?
     </template>
     <template #content>
+      <h2>What is Solstice?</h2>
+      <p>
+        Solstice Design System is a resource for building and documenting UI
+        components using Bootstrap and Javascript frameworks. It provides a set
+        of organized guidelines, patterns and best practices that work as the
+        foundation for application design and development at D&A.
+      </p>
       <p>
         Example:
         <a href="https://polaris.shopify.com/getting-started/polaris-101"
           >https://polaris.shopify.com/getting-started/polaris-101</a
         >
       </p>
+
+      <h2>Who is Solstice for?</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam,
-        quis magnam molestiae voluptate quos ipsa. Sapiente nisi odio saepe
-        doloribus. Excepturi illo ipsum voluptas et sequi nobis in tenetur id.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia quas
+        quasi ullam perferendis accusamus error, nostrum dolor voluptatum
+        incidunt dolores molestiae quaerat necessitatibus deserunt fuga pariatur
+        facilis magnam quo obcaecati.
       </p>
+
+      <h2>What apps should use Solstice?</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ea
-        doloribus quae, aspernatur ex excepturi laboriosam expedita corrupti
-        debitis cum culpa sequi. Quasi, dolores aperiam eveniet deleniti vero
-        voluptas! Doloribus.
+        Any apps the require a consistent user-experience... Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Quas odit dolorem velit
+        consectetur porro amet laudantium beatae numquam reprehenderit nostrum.
+        Quo nam quia placeat illo quae explicabo accusamus magni possimus.
       </p>
     </template>
     <template #author>Charlon Palacay</template>

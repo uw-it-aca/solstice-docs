@@ -1,32 +1,34 @@
 <template>
-  <Layout>
-    <template #content>
-      <nav aria-label="breadcrumb">
+  <Layout :page-title="pageTitle">
+    <template #breadcrumb
+      ><nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
           <li class="breadcrumb-item">
-            <a href="/patterns/messaging/">Messaging</a>
+            <a href="/patterns/utility/">Utility</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Takeover</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
         </ol>
       </nav>
-      <h1>Takeover</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        consequuntur tempore amet consectetur minus autem corporis nostrum sit
-        sapiente cumque. Rem nisi quidem aspernatur doloremque id non natus
-        voluptas debitis!
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
+    </template>
+    <template #lead>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+      consequuntur tempore amet consectetur minus autem corporis nostrum sit
+      sapiente cumque. Rem nisi quidem aspernatur doloremque id non natus
+      voluptas debitis!
+    </template>
+    <template #content>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia
         dolorem? Perspiciatis excepturi cum aliquid praesentium aspernatur,
         accusantium assumenda, odio neque nobis quo inventore dolorum,
         architecto velit magni rem odit?
       </p>
+
+      <sol-color-mode></sol-color-mode>
+
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>
@@ -39,7 +41,9 @@ export default {
   name: "DocsPatternsMessaging",
   components: { Layout },
   data() {
-    return {};
+    return {
+      pageTitle: "Color Mode",
+    };
   },
 };
 </script>

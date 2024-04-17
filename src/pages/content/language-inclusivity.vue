@@ -78,75 +78,85 @@
           clear, actionable language.
         </li>
       </ul>
-      <p>When creating labels:</p>
-      <UsageBlock>
-        <template #text
-          >Opt for verbs that clearly indicate the user's next action</template
+
+      <div class="my-5">
+        <p>When creating labels:</p>
+        <UsageBlock>
+          <template #text
+            >Opt for verbs that clearly indicate the user's next
+            action</template
+          >
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              Submit application
+            </div></template
+          ></UsageBlock
         >
-        <template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
-            Submit application
-          </div></template
-        ></UsageBlock
-      >
-      <UsageBlock variant="dont">
-        <template #text>do this..</template>
-        <template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
-            Application submission
-          </div></template
-        ></UsageBlock
-      >
-      <p>Buttons are key elements in driving user interactions.</p>
-      <UsageBlock>
-        <template #text
-          >Choose active verbs that resonate with the intended action</template
+        <UsageBlock variant="dont">
+          <template #text>do this..</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              Application submission
+            </div></template
+          ></UsageBlock
         >
-        <template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <button type="button" class="btn btn-primary">
-              Manage UW NetID account
-            </button>
-          </div></template
-        ></UsageBlock
-      >
-      <UsageBlock variant="dont">
-        <template #text>do this..</template>
-        <template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <button type="button" class="btn btn-primary">
-              UW NetID account management
-            </button>
-          </div></template
-        ></UsageBlock
-      >
-      <p>
-        Buttons need to be clear and predictable. Users should be able to
-        anticipate what will happen when they select a button. Mislabeling a
-        button causes confusion.
-      </p>
-      <p>
-        Headings set the tone for a section and can guide users on what to
-        expect.
-      </p>
-      <UsageBlock>
-        <template #text
-          >Use active language to create impactful headings</template
+        <p>Buttons are key elements in driving user interactions.</p>
+        <UsageBlock>
+          <template #text
+            >Choose active verbs that resonate with the intended
+            action</template
+          >
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              <button type="button" class="btn btn-action">
+                Manage UW NetID account
+              </button>
+            </div></template
+          ></UsageBlock
         >
-        <template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
-            Create and manage your academic plan
-          </div></template
-        ></UsageBlock
-      >
-      <UsageBlock variant="dont">
-        <template #text>do this..</template>
-        <template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
-            Academic plan creation and management
-          </div></template
-        ></UsageBlock
-      >
+        <UsageBlock variant="dont">
+          <template #text>do this..</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              <button type="button" class="btn btn-action">
+                UW NetID account management
+              </button>
+            </div></template
+          ></UsageBlock
+        >
+
+        <p>
+          Buttons need to be clear and predictable. Users should be able to
+          anticipate what will happen when they select a button. Mislabeling a
+          button causes confusion.
+        </p>
+      </div>
+
+      <div class="my-5">
+        <p>
+          Headings set the tone for a section and can guide users on what to
+          expect.
+        </p>
+        <UsageBlock>
+          <template #text
+            >Use active language to create impactful headings</template
+          >
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              Create and manage your academic plan
+            </div></template
+          ></UsageBlock
+        >
+        <UsageBlock variant="dont">
+          <template #text>do this..</template>
+          <template #preview
+            ><div class="border rounded-3 p-3 bg-body-tertiary">
+              Academic plan creation and management
+            </div></template
+          ></UsageBlock
+        >
+      </div>
+
       <h3>Best Practices</h3>
       <h4>Heading and subheadings</h4>
       <p>
@@ -170,12 +180,13 @@
         buttons, except in the case of common actions like “Done,” “Close,”
         “Cancel,” or “OK.”
       </p>
+
       <UsageBlock
         ><template #text
           >Use the content formula {verb} + {noun} on buttons</template
         ><template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <button type="button" class="btn btn-primary">
+            <button type="button" class="btn btn-action">
               Download syllabus
             </button>
           </div></template
@@ -185,7 +196,7 @@
         <template #text>Avoid using "new" with "Create" or "Add"</template>
         <template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <button type="button" class="btn btn-primary">
+            <button type="button" class="btn btn-action">
               Add new assignment
             </button>
           </div></template
@@ -195,7 +206,7 @@
         ><template #text>Provide clear context of user action</template
         ><template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <button type="button" class="btn btn-primary">
+            <button type="button" class="btn btn-action">
               Send us feedback
             </button>
           </div></template
@@ -205,7 +216,7 @@
         ><template #text>Missing context of user action</template
         ><template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <button type="button" class="btn btn-primary">Feedback</button>
+            <button type="button" class="btn btn-action">Feedback</button>
           </div></template
         ></UsageBlock
       >
@@ -214,96 +225,91 @@
         Links serve as essential navigation elements. Effective and actionable
         language is crucial to guide users seamlessly through task completion.
       </p>
-      <ol class="list-unstyled">
-        <UsageBlock
-          ><template #text>Be descriptive</template
-          ><template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
-              <a href="#">View course schedule</a>
-            </div></template
-          ></UsageBlock
-        >
-        <UsageBlock variant="dont"
-          ><template #text
-            >Avoid link text that doesn't provide enough description</template
-          ><template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
-              <a href="#">Click Here</a>
-            </div></template
-          ></UsageBlock
-        >
 
-        <UsageBlock
-          ><template #text>Align with user goals</template
-          ><template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
-              <a href="#">Apply for financial aid</a>
-            </div></template
-          ></UsageBlock
-        >
-        <UsageBlock variant="dont"
-          ><template #text
-            >Avoid ambiguous language that lacks a specific user
-            action</template
-          ><template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
-              <a href="#">Financial Aid Information</a>
-            </div></template
-          ></UsageBlock
-        >
+      <UsageBlock
+        ><template #text>Be descriptive</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <a href="#">View course schedule</a>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont"
+        ><template #text
+          >Avoid link text that doesn't provide enough description</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <a href="#">Click Here</a>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock
+        ><template #text>Align with user goals</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <a href="#">Apply for financial aid</a>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont"
+        ><template #text
+          >Avoid ambiguous language that lacks a specific user action</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <a href="#">Financial Aid Information</a>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock
+        ><template #text>Utilize contextual language</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <a href="#">Explore Biology programs</a>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont"
+        ><template #text
+          >Failure to provide context creates confusion of intended link
+          destination</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <a href="#">Explore programs</a>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock
+        ><template #text>Use consistent terminology</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <a href="#">Submit enrollment form</a>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont"
+        ><template #text
+          >Avoid using different words for the same action</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <a href="#">Complete form</a>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont"
+        ><template #text>Avoid redudancy </template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <a href="#">Click Here to Download Syllabus</a>
+          </div></template
+        ></UsageBlock
+      >
 
-        <UsageBlock
-          ><template #text>Utilize contextual language</template
-          ><template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
-              <a href="#">Explore Biology programs</a>
-            </div></template
-          ></UsageBlock
-        >
-        <UsageBlock variant="dont"
-          ><template #text
-            >Failure to provide context creates confusion of intended link
-            destination</template
-          ><template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
-              <a href="#">Explore programs</a>
-            </div></template
-          ></UsageBlock
-        >
+      <p>
+        <strong>Prioritize Accessibility:</strong> Ensure link text is
+        descriptive and meaningful (see sample #1 above) in order to assist
+        users who rely on screen readers or other assistive technologies.
+      </p>
 
-        <UsageBlock
-          ><template #text>Use consistent terminology</template
-          ><template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
-              <a href="#">Submit enrollment form</a>
-            </div></template
-          ></UsageBlock
-        >
-        <UsageBlock variant="dont"
-          ><template #text
-            >Avoid using different words for the same action</template
-          ><template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
-              <a href="#">Complete form</a>
-            </div></template
-          ></UsageBlock
-        >
-
-        <UsageBlock variant="dont"
-          ><template #text>Avoid redudancy </template
-          ><template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
-              <a href="#">Click Here to Download Syllabus</a>
-            </div></template
-          ></UsageBlock
-        >
-
-        <p>
-          <strong>Prioritize Accessibility:</strong> Ensure link text is
-          descriptive and meaningful (see sample #1 above) in order to assist
-          users who rely on screen readers or other assistive technologies.
-        </p>
-      </ol>
       <p>
         Following these practices ensure a user-friendly and efficient
         experience for students, faculty, and staff.

@@ -104,7 +104,7 @@ export default {
   components: { Layout, /* CodeBlock, UsageBlock, */ PageContents },
   data() {
     return {
-      pageTitle: "Banner",
+      pageTitle: "Toast",
     };
   },
 };
