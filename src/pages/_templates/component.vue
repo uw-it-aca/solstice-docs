@@ -4,10 +4,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="/patterns/">Patterns</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/messaging/">Messaging</a>
+            <a href="/_templates/">Templates</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
@@ -16,10 +13,10 @@
       </nav>
     </template>
     <template #lead>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
-      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
-      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
-      aliquam!
+      This is a component... Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Laudantium ad, dolores repudiandae natus dolorem recusandae!
+      Incidunt consequatur tenetur ad totam, placeat ipsa explicabo, eaque id
+      blanditiis libero culpa veniam aliquam!
     </template>
     <template #toc>
       <PageContents>
@@ -104,7 +101,7 @@ export default {
   components: { Layout, /* CodeBlock, UsageBlock, */ PageContents },
   data() {
     return {
-      pageTitle: "Banner",
+      pageTitle: "Component Name",
     };
   },
 };

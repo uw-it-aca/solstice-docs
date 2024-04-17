@@ -12,17 +12,11 @@
         </ol>
       </nav>
     </template>
-    <template #head>
-      <h1 class="fw-bold">{{ pageTitle }}</h1>
-
-      <p class="lead text-muted">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi
-        quaerat, molestiae vero doloribus asperiores pariatur fugit eligendi nam
-        ratione, quos dolorum. Eaque atque quas, laboriosam distinctio fugiat
-        autem molestias?
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
+    <template #lead>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi
+      quaerat, molestiae vero doloribus asperiores pariatur fugit eligendi nam
+      ratione, quos dolorum. Eaque atque quas, laboriosam distinctio fugiat
+      autem molestias?
     </template>
     <template #toc>
       <PageContents>
