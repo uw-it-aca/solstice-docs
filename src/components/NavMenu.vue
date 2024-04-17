@@ -164,8 +164,8 @@
               class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
-              to="/foundations/layout/"
-              >Layout</router-link
+              to="/foundations/layouts/"
+              >Layouts & Grid</router-link
             >
           </li>
         </ul>

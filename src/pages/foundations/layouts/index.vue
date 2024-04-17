@@ -58,20 +58,20 @@
 
       <ul class="row list-unstyled">
         <li class="col-4">
-          <CompDescription
+          <DescriptionBlock
             :name="'Topbar'"
             :link="'/foundations/layouts/topbar'"
             :accessibility="true"
             :version="'1.0.5'"
-          ></CompDescription>
+          ></DescriptionBlock>
         </li>
         <li class="col-4">
-          <CompDescription
+          <DescriptionBlock
             :name="'Sidebar'"
             :link="'/foundations/layouts/sidebar'"
             :accessibility="true"
             :version="'1.0.5'"
-          ></CompDescription>
+          ></DescriptionBlock>
         </li>
       </ul>
     </template>
@@ -84,15 +84,15 @@ import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
 import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
-import CompDescription from "@/components/CompDescription.vue";
+import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {
   name: "DocsLayout",
   components: {
     Layout,
-    CompDescription,
-    CodeBlock,
-    UsageBlock,
+    DescriptionBlock,
+    /*CodeBlock,
+    UsageBlock,*/
     PageContents,
   },
   data() {
