@@ -99,12 +99,12 @@ import Layout from "@/layout.vue";
 import PageContents from "@/components/PageContents.vue";
 
 export default {
-  name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
+  name: "DocsElementsAlert" /* example: Docs--Folder--ComponentName */,
   inject: ["mq"],
   components: { Layout, /* CodeBlock, UsageBlock, */ PageContents },
   data() {
     return {
-      pageTitle: "Banner",
+      pageTitle: "Alert",
     };
   },
 };

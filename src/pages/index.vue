@@ -1,16 +1,10 @@
 <template>
-  <Layout>
-    <template #head>
-      <h1 class="fw-bold">{{ pageTitle }}</h1>
-
-      <p class="lead text-muted">
-        Solstice Design is a resource for building and documenting UI components
-        using Bootstrap and Javascript frameworks. It provides a set of
-        organized guidelines, patterns and best practices that work as the
-        foundation for application design and development at D&amp;A.
-      </p>
-
-      <hr class="w-50 d-inline-block" />
+  <Layout :page-title="pageTitle">
+    <template #lead>
+      Solstice Design is a resource for building and documenting UI components
+      using Bootstrap and Javascript frameworks. It provides a set of organized
+      guidelines, patterns and best practices that work as the foundation for
+      application design and development at D&amp;A.
     </template>
     <template #content>
       <div class="row mb-3">
@@ -119,7 +113,7 @@
         </div>
         <div class="col">
           <h3>Patterns</h3>
-          <p>Patterns consist of design tokens, elements, and patterns.</p>
+          <p>Patterns consist of complex elements and UI patterns.</p>
           <p><sol-link href="/patterns/">Browse patterns</sol-link></p>
         </div>
       </div>
@@ -144,9 +138,11 @@ export default {
     };
   },
   methods: {},
-  // MARK: override layout pageTitle prop
   mounted: function () {
+    // MARK: override layout pageTitle prop
     document.title = this.appName;
+
+    // MARK: set the dev environment for feature flagging
     this.isDev = getDevEnv();
   },
 };

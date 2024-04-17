@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :page-title="pageTitle">
     <template #content>
       <h1 class="fw-bold">Patterns</h1>
 
@@ -12,54 +12,36 @@
       <hr class="mb-5 w-25 d-inline-block" />
 
       <ul class="row list-unstyled">
-        <li class="col-4 mb-3">
-          <axdd-panel class="bg-black bg-opacity-10 flex-fill">
-            <h3 class="card-title">Layout</h3>
-            <p class="flex-fill">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-              nostrum beatae aperiam nesciunt voluptate.
-            </p>
-            <div class="text-end">
-              <router-link to="/patterns/layout">View Layout</router-link>
-            </div>
-          </axdd-panel>
-        </li>
         <li class="col-4">
-          <axdd-panel class="bg-black bg-opacity-10 text-body flex-fill">
-            <h3 class="card-title">Navigation</h3>
-            <p class="flex-fill">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-              nostrum beatae aperiam nesciunt voluptate.
-            </p>
-            <div class="text-end">
-              <router-link to="/patterns/navigation"
-                >View Navigation</router-link
-              >
-            </div>
-          </axdd-panel>
-        </li>
-        <li class="col-4">
-          <PatternDescription
-            :name="'Containers'"
-            :link="'/patterns/containers'"
+          <DescriptionBlock
+            :name="'Navigation'"
+            :link="'/patterns/navigation'"
             class="bg-light"
-            >sdfgsdgsd</PatternDescription
+            >sdfgsdgsd</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <PatternDescription
+          <DescriptionBlock
+            :name="'Container'"
+            :link="'/patterns/container'"
+            class="bg-light"
+            >aka surfaces?</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
             :name="'Messaging'"
             :link="'/patterns/messaging'"
             class="bg-light"
-            >sdfgsdgsd</PatternDescription
+            >sdfgsdgsd</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <PatternDescription
-            :name="'Feedback'"
-            :link="'/patterns/feedback'"
+          <DescriptionBlock
+            :name="'Utility'"
+            :link="'/patterns/utility'"
             class="bg-light"
-            >sdfgsdgsd</PatternDescription
+            >sdfgsdgsd</DescriptionBlock
           >
         </li>
       </ul>
@@ -70,16 +52,18 @@
 
 <script>
 import Layout from "@/layout.vue";
-import PatternDescription from "@/components/PatternDescription.vue";
+import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {
   name: "DocsPatternsIndex",
   components: {
     Layout,
-    PatternDescription,
+    DescriptionBlock,
   },
   data() {
-    return {};
+    return {
+      pageTitle: "Patterns",
+    };
   },
   methods: {},
 };

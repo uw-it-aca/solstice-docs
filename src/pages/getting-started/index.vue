@@ -1,17 +1,9 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #breadcrumb></template>
-    <template #head>
-      <h1 class="fw-bold">{{ pageTitle }}</h1>
-
-      <p class="lead text-muted">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
-        accusamus vel doloremque odio ut sapiente quasi facilis veniam natus
-        eius expedita rem aspernatur itaque aperiam nemo quo sit, placeat
-        quisquam?
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
+    <template #lead>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+      accusamus vel doloremque odio ut sapiente quasi facilis veniam natus eius
+      expedita rem aspernatur itaque aperiam nemo quo sit, placeat quisquam?
     </template>
     <template #toc>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
