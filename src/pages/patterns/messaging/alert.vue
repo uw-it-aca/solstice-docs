@@ -24,7 +24,7 @@
       to notify them about issues that require action or provide information
       relevant to a particular task or page section. For quick, non-critical
       messages that disappear on their own, use a
-      <a href="/elements/toasts">Toast</a>.
+      <a href="toast">Toast</a>.
     </template>
     <template #toc>
       <PageContents>
@@ -77,13 +77,6 @@
                 href="#implementation"
                 class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
                 >Implementation</a
-              >
-            </li>
-            <li>
-              <a
-                href="#changlog"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
-                >Changelog</a
               >
             </li>
           </ul>
@@ -254,6 +247,7 @@
         ><template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <img
+              class="img-fluid"
               src="/src/assets/images/banner-position-1.png"
             /></div></template
       ></UsageBlock>
@@ -264,6 +258,7 @@
         ><template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <img
+              class="img-fluid"
               src="/src/assets/images/banner-position-2.png"
             /></div></template
       ></UsageBlock>
@@ -281,7 +276,7 @@
         action, the embedded outline button element should have a functional
         hover state.
       </p>
-      <h2 id="practice">Best Practices</h2>
+      <h2 id="practices">Best Practices</h2>
       <h3>Use Alerts for important, temporary messages</h3>
       <p>
         Alerts draw attention and disrupt the user's workflow. They are
@@ -385,42 +380,48 @@
         </thead>
         <tbody>
           <tr>
-            <td>variant</td>
+            <td><code class="text-success">variant</code></td>
             <td>
               <code>critical</code> / <code>warning</code> / <code>info</code>
             </td>
             <td>
-              string<br />Indicates semantic function (applies color and icon)
+              <code>string</code><br />Indicates semantic function (applies
+              color and icon)
             </td>
           </tr>
           <tr>
-            <td>is-dismissable</td>
+            <td><code class="text-success">is-dismissable</code></td>
             <td><code>true</code> / <code>false</code></td>
-            <td>boolean<br />Adds close icon button to dismiss element.</td>
+            <td>
+              <code>boolean</code><br />Adds close icon button to dismiss
+              element.
+            </td>
           </tr>
           <tr>
-            <td>has-cta</td>
+            <td><code class="text-success">has-cta</code></td>
             <td><code>true</code> / <code>false</code></td>
-            <td>boolean<br />Adds CTA link with button appearance.</td>
+            <td>
+              <code>boolean</code><br />Adds CTA link with button appearance.
+            </td>
           </tr>
           <tr>
-            <td>cta-url</td>
+            <td><code class="text-success">cta-url</code></td>
             <td></td>
             <td>
-              string<br />Destination URL for CTA [when
+              <code>string</code><br />Destination URL for CTA [when
               <code>has-cta="true"].</code>
             </td>
           </tr>
           <tr>
-            <td>cta-label</td>
+            <td><code class="text-success">cta-label</code></td>
             <td></td>
             <td>
-              string<br />Label for for CTA [when <code>has-cta="true"].</code>
+              <code>string</code><br />Label for for CTA [when
+              <code>has-cta="true"].</code>
             </td>
           </tr>
         </tbody>
       </table>
-      <h2 id="changelog">Changelog</h2>
     </template>
     <template #author>Diego Bejarano</template>
   </Layout>
