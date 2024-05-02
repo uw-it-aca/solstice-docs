@@ -14,6 +14,16 @@
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
+            :name="'Layout'"
+            :link="'/patterns/layout'"
+            class="bg-light"
+            >The layout is a critical foundation of our design system. It
+            provides the structure for our visual components and overall user
+            interface.</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
             :name="'Navigation'"
             :link="'/patterns/navigation'"
             class="bg-light"

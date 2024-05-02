@@ -4,7 +4,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="/foundations/">Foundations</a>
+            <a href="/patterns/">Patterns</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
@@ -14,20 +14,11 @@
     </template>
 
     <template #lead>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-      magnam a asperiores perspiciatis voluptatem culpa, unde minus itaque,
-      repellat adipisci quia cum ipsum fugit, nam illo! Vitae culpa deleniti
-      reiciendis!
+      The layout is a critical foundation of our design system. It provides the
+      structure for our visual components and overall user interface.
     </template>
 
     <template #content>
-      <p class="col-md-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorum
-        delectus tempora totam corrupti maxime, quam repellendus a. A similique
-        laborum numquam illo corrupti inventore sunt in quaerat quibusdam
-        accusantium.
-      </p>
-
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
@@ -35,7 +26,10 @@
             :link="'/foundations/layout/topbar'"
             :accessibility="true"
             :version="'1.0.5'"
-          ></DescriptionBlock>
+            >Topbar is takes heavy influence from MyUW's currently layout. It
+            has a header-based design meant to focus the user on the contents
+            below.</DescriptionBlock
+          >
         </li>
         <li class="col-4">
           <DescriptionBlock
@@ -43,7 +37,10 @@
             :link="'/foundations/layout/sidebar'"
             :accessibility="true"
             :version="'1.0.5'"
-          ></DescriptionBlock>
+            >Sidebar is a side navigtion based layout intended to support
+            different menu navigation structures. The content is can be fixed or
+            fluid.
+          </DescriptionBlock>
         </li>
       </ul>
     </template>

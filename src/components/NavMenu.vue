@@ -159,15 +159,6 @@
               >Typography</router-link
             >
           </li>
-          <li class="nav-item mb-1">
-            <router-link
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
-              to="/foundations/layout/"
-              >Layout</router-link
-            >
-          </li>
         </ul>
       </div>
     </li>
@@ -227,6 +218,51 @@
         aria-labelledby="flush-heading10"
       >
         <ul class="nav flex-column small mt-1">
+          <li class="nav-item mb-1">
+            <router-link
+              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              exact-active-class="bg-black bg-opacity-10"
+              to="/patterns/layout/"
+              id="flush-heading-layout"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapse-layout"
+              :aria-expanded="
+                $route.path.includes('/patterns/layout/') ? true : false
+              "
+              aria-controls="flush-collapse-layout"
+            >
+              <span>Layout</span>
+              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </router-link>
+            <div
+              id="flush-collapse-layout"
+              class="collapse"
+              :class="$route.path.includes('/patterns/layout/') ? 'show' : ''"
+              aria-labelledby="flush-heading-layout"
+            >
+              <ul class="nav flex-column fw-light mt-1">
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/patterns/layout/topbar"
+                    >Topbar</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/patterns/layout/sidebar"
+                    >Sidebar</router-link
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+
           <li class="nav-item mb-1">
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
