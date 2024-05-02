@@ -23,7 +23,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Topbar'"
-            :link="'/foundations/layout/topbar'"
+            :link="'/patterns/layout/topbar'"
             :accessibility="true"
             :version="'1.0.5'"
             >Topbar is takes heavy influence from MyUW's currently layout. It
@@ -34,7 +34,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Sidebar'"
-            :link="'/foundations/layout/sidebar'"
+            :link="'/patterns/layout/sidebar'"
             :accessibility="true"
             :version="'1.0.5'"
             >Sidebar is a side navigtion based layout intended to support

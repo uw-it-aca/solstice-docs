@@ -1,7 +1,6 @@
 <template>
   <Layout :page-title="pageTitle">
-
-    <template #content>
+    <template #breadcrumb>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
@@ -15,17 +14,49 @@
           </li>
         </ol>
       </nav>
+    </template>
+    <template #lead>
+      Sidebar is a side navigtion based layout intended to support different
+      menu navigation structures. The content is can be fixed or fluid.
+    </template>
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#heading1"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Heading 1</a
+              >
+            </li>
+            <li>
+              <a
+                href="#heading2"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Heading 2</a
+              >
+            </li>
+            <li>
+              <a
+                href="#heading3"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Heading 3</a
+              >
+            </li>
+            <li>
+              <a
+                href="#heading4"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Heading 4</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
+    </template>
 
-      <h1>{{ pageTitle }}</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
-        Patterns are UI Patterns that fall on the more complex side of the
-        spectrum. Date pickers, data tables, and visualizations are good
-        examples. Patterns utilize both elements and design tokens.
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
+    <template #content>
       <p>
         APG:
         <a
@@ -259,12 +290,14 @@
 <script>
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
+import PageContents from "@/components/PageContents.vue";
 
 export default {
   name: "DocsSidebar",
   components: {
     Layout,
     CodeBlock,
+    PageContents,
   },
   data() {
     return {

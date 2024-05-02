@@ -18,9 +18,7 @@
       <h1 class="fw-bold">{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
-        Patterns are UI Patterns that fall on the more complex side of the
-        spectrum. Date pickers, data tables, and visualizations are good
-        examples. Patterns utilize both elements and design tokens.
+        Topbar is takes heavy influence from MyUW's currently layout. It has a header-based design meant to focus the user on the contents below.
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />
