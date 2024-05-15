@@ -231,6 +231,51 @@
         <a href="#">Solstice Semantic Color Palette</a>
         for appropriate values.
       </p>
+      <h3>Dark Mode Support</h3>
+      <p>
+        Alerts must maintain proper contrast in order to be readable in both
+        light and dark modes. By default, the component will update to
+        appropriate colors within the semantic color palette.
+      </p>
+      <p>
+        Below are the primitive color values (100-900) for each of the elements
+        within an Alert. The <code>warning</code> colors are shown as an
+        example, but the primitive values apply to each of the semantic colors.
+      </p>
+      <table class="table my-5">
+        <thead>
+          <tr>
+            <th scope="col">Property</th>
+            <th scope="col">Light Mode (default)</th>
+            <th scope="col">Dark Mode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <code class="text-success">background</code><br />(required)
+            </td>
+            <td><code>100</code></td>
+            <td>
+              <code>900</code>
+            </td>
+          </tr>
+          <tr>
+            <td><code class="text-success">border</code></td>
+            <td><code>200</code></td>
+            <td>
+              <code>700</code>
+            </td>
+          </tr>
+          <tr>
+            <td><code class="text-success">element</code></td>
+            <td><code>800</code></td>
+            <td>
+              <code>300</code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <h2 id="placement">Placement</h2>
       <h3>Position</h3>
       <p>
