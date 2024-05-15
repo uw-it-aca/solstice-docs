@@ -144,6 +144,40 @@
         within an Toast. The <code>success</code> colors are shown as an
         example, but the primitive values apply to each of the semantic colors.
       </p>
+      <table class="table my-5">
+        <thead>
+          <tr>
+            <th scope="col">Property</th>
+            <th scope="col">Light Mode (default)</th>
+            <th scope="col">Dark Mode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <code class="text-success">background</code><br />(required)
+            </td>
+            <td><code>100</code></td>
+            <td>
+              <code>900</code>
+            </td>
+          </tr>
+          <tr>
+            <td><code class="text-success">border</code></td>
+            <td><code>200</code></td>
+            <td>
+              <code>700</code>
+            </td>
+          </tr>
+          <tr>
+            <td><code class="text-success">element</code></td>
+            <td><code>800</code></td>
+            <td>
+              <code>300</code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <h3>Icon</h3>
       <p>
         Toasts with the <code>success</code> variant contain a corresponding
@@ -373,7 +407,7 @@
         </tbody>
       </table>
     </template>
-    <template #author>Charlon Palacay</template>
+    <template #author>Diego Bejarano</template>
   </Layout>
 </template>
 
