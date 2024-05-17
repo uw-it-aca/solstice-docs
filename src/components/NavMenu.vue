@@ -314,24 +314,22 @@
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
-              to="/patterns/container/"
+              to="/patterns/surface/"
               id="flush-heading7"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapse7"
               :aria-expanded="
-                $route.path.includes('/patterns/container/') ? true : false
+                $route.path.includes('/patterns/surface/') ? true : false
               "
               aria-controls="flush-collapse7"
             >
-              <span>Container</span>
+              <span>Surface</span>
               <i class="bi bi-chevron-right" aria-hidden="true"></i>
             </router-link>
             <div
               id="flush-collapse7"
               class="collapse"
-              :class="
-                $route.path.includes('/patterns/container/') ? 'show' : ''
-              "
+              :class="$route.path.includes('/patterns/surface/') ? 'show' : ''"
               aria-labelledby="flush-heading7"
             >
               <ul class="nav flex-column fw-light mt-1">
@@ -340,7 +338,7 @@
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
-                    to="/patterns/container/card"
+                    to="/patterns/surface/card"
                     >Card</router-link
                   >
                 </li>
@@ -349,7 +347,7 @@
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
-                    to="/patterns/container/panel"
+                    to="/patterns/surface/panel"
                     >Panel</router-link
                   >
                 </li>
@@ -358,8 +356,64 @@
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
-                    to="/patterns/container/disclosure"
+                    to="/patterns/disclosure"
                     >Disclosure</router-link
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item mb-1">
+            <router-link
+              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              exact-active-class="bg-black bg-opacity-10"
+              to="/patterns/disclosure/"
+              id="disclosureHeading"
+              data-bs-toggle="collapse"
+              data-bs-target="#disclosureCollapse"
+              :aria-expanded="
+                $route.path.includes('/patterns/disclosure/') ? true : false
+              "
+              aria-controls="disclosureCollapse"
+            >
+              <span>Disclosure</span>
+              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </router-link>
+            <div
+              id="disclosureCollapse"
+              class="collapse"
+              :class="
+                $route.path.includes('/patterns/disclosure/') ? 'show' : ''
+              "
+              aria-labelledby="disclosureHeading"
+            >
+              <ul class="nav flex-column fw-light mt-1">
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/patterns/disclosure/collapse"
+                    >Collapse</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/patterns/disclosure/accordian"
+                    >Accordian</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/patterns/disclosure/modal"
+                    >Modal</router-link
                   >
                 </li>
               </ul>
@@ -416,15 +470,6 @@
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/messaging/banner"
                     >Banner</router-link
-                  >
-                </li>
-                <li v-if="isDev" class="nav-item mb-1">
-                  <router-link
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
-                    to="/patterns/messaging/modal"
-                    >Modal</router-link
                   >
                 </li>
               </ul>

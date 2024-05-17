@@ -4,9 +4,9 @@
       <h1 class="fw-bold">Patterns</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
-        Patterns are the re-usable UI components that fall on the more complex
-        side of the spectrum. Patterns utilize both elements and design tokens
-        and are the design and building blocks of the visual design.
+        Patterns are the re-usable user interface components. Patterns utilize
+        combinations of elements and building blocks of the visual user
+        interface design.
       </p>
 
       <hr class="mb-5 w-25 d-inline-block" />
@@ -32,10 +32,19 @@
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Container'"
-            :link="'/patterns/container'"
+            :name="'Surface'"
+            :link="'/patterns/surface'"
             class="bg-light"
-            >aka surfaces?</DescriptionBlock
+            >aka content containers</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Disclosure'"
+            :link="'/patterns/disclosure'"
+            class="bg-light"
+            >Interface changes (or progressively disclosed) based on a user
+            action.</DescriptionBlock
           >
         </li>
         <li class="col-4">

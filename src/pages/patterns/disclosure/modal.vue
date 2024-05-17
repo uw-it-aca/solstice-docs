@@ -7,7 +7,7 @@
             <a href="/patterns/">Patterns</a>
           </li>
           <li class="breadcrumb-item">
-            <a href="/patterns/messaging/">Messaging</a>
+            <a href="/patterns/disclosure/">Disclosure</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}

@@ -4,14 +4,11 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/container/">Container</a>
-          </li>
           <li class="breadcrumb-item active" aria-current="page">Disclosure</li>
         </ol>
       </nav>
 
-      <h1>Disclosure (Collapse)</h1>
+      <h1>Disclosure</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
         Disclosure Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -31,7 +28,7 @@
         >
       </p>
 
-      <h2>Link Disclosure (inline)</h2>
+      <h2>Collapse Link (inline)</h2>
       <CodeBlock>
         <template #preview>
           <p>
@@ -58,7 +55,7 @@
         </template>
       </CodeBlock>
 
-      <h2>Button Disclosure</h2>
+      <h2>Collapse Button</h2>
       <CodeBlock>
         <template #preview>
           <axdd-disclosure-action class="me-2" :disclosure-id="'blahWoo'">
@@ -88,7 +85,7 @@
         </template>
       </CodeBlock>
 
-      <h2>Block Disclosure (Accordion)</h2>
+      <h2>Accordion</h2>
       <p>
         APG:
         <a
@@ -178,6 +175,14 @@
           </axdd-disclosure-block>
         </template>
       </CodeBlock>
+
+      <h2>Modal</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, optio
+        exercitationem? Itaque esse dolore mollitia corporis modi alias quasi
+        sapiente asperiores ab reiciendis aliquid aperiam vel voluptatum,
+        voluptas architecto sit!
+      </p>
     </template>
     <template #author>Your Name</template>
   </Layout>

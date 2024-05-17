@@ -4,14 +4,14 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Container</li>
+          <li class="breadcrumb-item active" aria-current="page">Surface</li>
         </ol>
       </nav>
 
-      <h1 class="fw-bold">Container</h1>
+      <h1 class="fw-bold">Surface</h1>
 
       <p class="p-0 col-md-8 lead text-muted">
-        Containers are Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Surfaces are Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Mollitia repellendus sint veritatis assumenda facilis repudiandae vero
         natus unde voluptatum blanditiis nihil soluta, velit quaerat, corporis
         eos reprehenderit, rerum error earum?
@@ -40,14 +40,6 @@
             can have background color applied to show slight prominence. Still
             not a card.</DescriptionBlock
           >
-        </li>
-        <li class="col-4">
-          <DescriptionBlock
-            :name="'Disclosure'"
-            :link="'/patterns/container/disclosure'"
-            :accessibility="true"
-            :version="'1.0.5'"
-          ></DescriptionBlock>
         </li>
       </ul>
     </template>
