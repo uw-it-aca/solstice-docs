@@ -293,7 +293,7 @@
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <img
               class="img-fluid"
-              src="/src/assets/images/banner-position-1.png"
+              src="/images/banner-position-1.png"
             /></div></template
       ></UsageBlock>
       <UsageBlock variant="dont"
@@ -304,7 +304,7 @@
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <img
               class="img-fluid"
-              src="/src/assets/images/banner-position-2.png"
+              src="/images/banner-position-2.png"
             /></div></template
       ></UsageBlock>
       <h3>Stacking</h3>

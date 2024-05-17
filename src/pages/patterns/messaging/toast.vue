@@ -223,7 +223,7 @@
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <img
               class="img-fluid"
-              src="/src/assets/images/toast-asset-placement-do.png"
+              src="/images/toast-asset-placement-do.png"
             /></div></template
       ></UsageBlock>
       <UsageBlock variant="dont"
@@ -235,7 +235,7 @@
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <img
               class="img-fluid"
-              src="/src/assets/images/toast-asset-placement-dont.png"
+              src="/images/toast-asset-placement-dont.png"
             /></div></template
       ></UsageBlock>
       <h3>Autohide</h3>
@@ -253,10 +253,7 @@
         recent message on top. When a Toast disappears, others move down to
         occupy the space closest to the bottom of the screen.
       </p>
-      <img
-        class="img-fluid"
-        src="/src/assets/images/toast-asset-stacking-visual.png"
-      />
+      <img class="img-fluid" src="/images/toast-asset-stacking-visual.png" />
       <h2 id="states" class="mt-3">States</h2>
       <p>
         When visible, Toasts only exist in one state. By default, the dismiss
@@ -294,7 +291,7 @@
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <img
               class="img-fluid"
-              src="/src/assets/images/toast-asset-do1.png"
+              src="/images/toast-asset-do1.png"
             /></div></template
       ></UsageBlock>
       <UsageBlock variant="dont"
@@ -305,7 +302,7 @@
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <img
               class="img-fluid"
-              src="/src/assets/images/toast-asset-dont1.png"
+              src="/images/toast-asset-dont1.png"
             /></div></template
       ></UsageBlock>
 
@@ -326,7 +323,7 @@
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <img
               class="img-fluid"
-              src="/src/assets/images/toast-asset-do2.png"
+              src="/images/toast-asset-do2.png"
             /></div></template
       ></UsageBlock>
       <UsageBlock variant="dont"
@@ -336,7 +333,7 @@
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <img
               class="img-fluid"
-              src="/src/assets/images/toast-asset-dont2.png"
+              src="/images/toast-asset-dont2.png"
             /></div></template
       ></UsageBlock>
       <h3>Assistive technology & keyboard functionality</h3>
