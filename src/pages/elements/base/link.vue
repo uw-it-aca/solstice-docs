@@ -6,6 +6,9 @@
           <li class="breadcrumb-item">
             <a href="/elements/">Elements</a>
           </li>
+          <li class="breadcrumb-item">
+            <a href="/elements/base/">Base</a>
+          </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
           </li>

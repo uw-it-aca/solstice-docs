@@ -1,16 +1,11 @@
 <template>
   <Layout :page-title="pageTitle">
+    <template #lead>
+      Patterns are the re-usable user interface components. Patterns utilize
+      combinations of elements and building blocks of the visual user interface
+      design.
+    </template>
     <template #content>
-      <h1 class="fw-bold">Patterns</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
-        Patterns are the re-usable user interface components. Patterns utilize
-        combinations of elements and building blocks of the visual user
-        interface design.
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock

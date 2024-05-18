@@ -10,12 +10,19 @@
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
-            :name="'Link'"
-            :link="'/elements/link'"
-            :accessibility="true"
-            :version="'1.0.5'"
-            >Cards have a raised profile and has shadow. Meant to visually
-            display prominence over flat items.</DescriptionBlock
+            :name="'Base'"
+            :link="'/elements/base'"
+            class="bg-light"
+            >Base Elements are the foundation of everything we
+            build.</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Form'"
+            :link="'/elements/form'"
+            class="bg-light"
+            >Form Elements are used for submitting data!</DescriptionBlock
           >
         </li>
       </ul>
