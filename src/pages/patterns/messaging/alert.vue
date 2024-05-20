@@ -25,6 +25,9 @@
       relevant to a particular task or page section. For quick, non-critical
       messages that disappear on their own, use a
       <a href="toast">Toast</a>.
+      <div class="my-3">
+        <img src="/images/alert-asset-hero-visual.png" class="img-fluid" />
+      </div>
     </template>
     <template #toc>
       <PageContents>
