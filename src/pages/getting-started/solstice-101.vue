@@ -13,47 +13,28 @@
       </nav>
     </template>
     <template #lead>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ut nemo
-      ipsam deleniti ab excepturi adipisci eveniet, impedit expedita rerum fuga
-      nesciunt sapiente iusto blanditiis labore, voluptatum hic consectetur
-      dolores.
+      Get to know our design thinking and how we put it into action across our
+      design system.
     </template>
-    <template #toc>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
-      possimus nemo nam autem quis reiciendis obcaecati facilis doloremque esse
-      nostrum, exercitationem ipsam ex voluptates eius ratione neque ipsum odio
-      molestias?
-    </template>
+    <template #toc></template>
     <template #content>
       <h2>What is Solstice?</h2>
       <p>
-        Solstice Design System is a resource for building and documenting UI
-        components using Bootstrap and Javascript frameworks. It provides a set
-        of organized guidelines, patterns and best practices that work as the
-        foundation for application design and development at D&A.
-      </p>
-      <p>
-        Example:
-        <a href="https://polaris.shopify.com/getting-started/polaris-101"
-          >https://polaris.shopify.com/getting-started/polaris-101</a
-        >
+        Solstice is a resource for documenting design best practices. It
+        provides a set of curated content guidelines, UI elements, and UX design
+        patterns that work as the foundation for application design and
+        development at Data &amp; Applications (D&amp;A).
       </p>
 
       <h2>Who is Solstice for?</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia quas
-        quasi ullam perferendis accusamus error, nostrum dolor voluptatum
-        incidunt dolores molestiae quaerat necessitatibus deserunt fuga pariatur
-        facilis magnam quo obcaecati.
+        Solstice is designed and maintained by the Service Coordination (SC)
+        Experience Design Team, to help provide users with a consistent
+        experience across D&amp;A services.
       </p>
 
       <h2>What apps should use Solstice?</h2>
-      <p>
-        Any apps the require a consistent user-experience... Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Quas odit dolorem velit
-        consectetur porro amet laudantium beatae numquam reprehenderit nostrum.
-        Quo nam quia placeat illo quae explicabo accusamus magni possimus.
-      </p>
+      <p>Web applications and websites within D&amp;A and the broader UW-IT</p>
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>

@@ -5,12 +5,7 @@
       accusamus vel doloremque odio ut sapiente quasi facilis veniam natus eius
       expedita rem aspernatur itaque aperiam nemo quo sit, placeat quisquam?
     </template>
-    <template #toc>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
-      possimus nemo nam autem quis reiciendis obcaecati facilis doloremque esse
-      nostrum, exercitationem ipsam ex voluptates eius ratione neque ipsum odio
-      molestias?
-    </template>
+    <template #toc></template>
     <template #content>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia

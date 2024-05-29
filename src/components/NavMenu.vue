@@ -30,13 +30,13 @@
               >Solstice 101</router-link
             >
           </li>
-          <li v-if="isDev" class="nav-item mb-1">
+          <li class="nav-item mb-1">
             <router-link
               class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
-              to="/getting-started/component-lifecycle"
-              >Component Lifecyle</router-link
+              to="/getting-started/design-with-solstice"
+              >Design with Solstice</router-link
             >
           </li>
           <li v-if="isDev" class="nav-item">
@@ -150,7 +150,7 @@
               >Color</router-link
             >
           </li>
-          <li v-if="isDev" class="nav-item mb-1">
+          <li class="nav-item mb-1">
             <router-link
               class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
@@ -213,7 +213,7 @@
               aria-labelledby="elementsBaseHeading"
             >
               <ul class="nav flex-column fw-light mt-1">
-                <li v-if="isDev" class="nav-item mb-1">
+                <li class="nav-item mb-1">
                   <router-link
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
@@ -234,7 +234,7 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
@@ -303,7 +303,7 @@
         aria-labelledby="patternsHeading"
       >
         <ul class="nav flex-column small mt-1">
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
@@ -326,7 +326,7 @@
               aria-labelledby="patternsLayoutHeading"
             >
               <ul class="nav flex-column fw-light mt-1">
-                <li v-if="isDev" class="nav-item mb-1">
+                <li class="nav-item mb-1">
                   <router-link
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
@@ -335,7 +335,7 @@
                     >Topbar</router-link
                   >
                 </li>
-                <li v-if="isDev" class="nav-item mb-1">
+                <li class="nav-item mb-1">
                   <router-link
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
@@ -348,7 +348,7 @@
             </div>
           </li>
 
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
@@ -395,7 +395,7 @@
             </div>
           </li>
 
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
@@ -449,7 +449,7 @@
             </div>
           </li>
 
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
@@ -530,7 +530,7 @@
               aria-labelledby="patternsSurfaceHeading"
             >
               <ul class="nav flex-column fw-light mt-1">
-                <li v-if="isDev" class="nav-item mb-1">
+                <li class="nav-item mb-1">
                   <router-link
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
@@ -539,7 +539,7 @@
                     >Alert</router-link
                   >
                 </li>
-                <li v-if="isDev" class="nav-item mb-1">
+                <li class="nav-item mb-1">
                   <router-link
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
@@ -561,7 +561,7 @@
             </div>
           </li>
 
-          <li class="nav-item mb-1">
+          <li v-if="isDev" class="nav-item mb-1">
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"

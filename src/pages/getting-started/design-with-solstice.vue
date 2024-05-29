@@ -13,16 +13,10 @@
       </nav>
     </template>
     <template #lead>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, voluptate
-      sint alias consectetur commodi dignissimos, minus ratione quos a enim
-      blanditiis hic perferendis ullam quod non, molestiae aut illo? Aut!
+      Learn how to use Solstice's comprehensive documentation to design
+      highly-usable user experiences.
     </template>
-    <template #toc>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
-      possimus nemo nam autem quis reiciendis obcaecati facilis doloremque esse
-      nostrum, exercitationem ipsam ex voluptates eius ratione neque ipsum odio
-      molestias?
-    </template>
+    <template #toc></template>
     <template #content>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad,
@@ -43,7 +37,7 @@ export default {
   components: { Layout },
   data() {
     return {
-      pageTitle: "Component Lifecycle",
+      pageTitle: "Design with Solstice",
     };
   },
 };
