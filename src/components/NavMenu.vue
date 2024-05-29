@@ -203,7 +203,7 @@
               "
               aria-controls="elementsBaseCollapse"
             >
-              <span>Base</span>
+              <span>HTML</span>
               <i class="bi bi-chevron-right" aria-hidden="true"></i>
             </router-link>
             <div
@@ -247,7 +247,7 @@
               "
               aria-controls="elementsFormCollapse"
             >
-              <span>Form</span>
+              <span>Form Input</span>
               <i class="bi bi-chevron-right" aria-hidden="true"></i>
             </router-link>
             <div

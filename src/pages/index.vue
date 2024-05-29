@@ -108,7 +108,7 @@
           <h3>UI Elements</h3>
           <p class="flex-fill">
             UI elements are reusable components that can stand alone or form
-            part of multiple UI patterns.
+            part of multiple UX patterns.
           </p>
           <p><sol-link href="/elements/">Browse UI elements</sol-link></p>
         </div>
