@@ -47,7 +47,7 @@ import DescriptionBlock from "@/components/DescriptionBlock.vue";
 export default {
   name: "DocsTemplatesIndex" /* TODO: Docs_Folder_Index */,
   inject: ["mq"],
-components: { Layout, DescriptionBlock },
+  components: { Layout, DescriptionBlock },
   data() {
     return {
       pageTitle: "Topic Page" /* TODO: asdlkfjasf */,

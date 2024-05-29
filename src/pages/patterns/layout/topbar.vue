@@ -70,7 +70,6 @@
       </PageContents>
     </template>
     <template #content>
-
       <h2 id="variants">Variants (h2)</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga
@@ -118,7 +117,6 @@
         placeat totam dolorem suscipit est sunt eum, debitis exercitationem
         voluptate ducimus repellat necessitatibus?
       </p>
-
 
       <h2 class="fw-bold">Usage</h2>
 

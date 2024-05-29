@@ -1,10 +1,10 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #lead>
-      Solstice Design is a resource for building and documenting UI components
-      using Bootstrap and Javascript frameworks. It provides a set of organized
-      guidelines, patterns and best practices that work as the foundation for
-      application design and development at D&amp;A.
+      Solstice is a resource for documenting design best practices. It provides
+      a set of curated content guidelines, UI elements, and UX design patterns
+      that work as the foundation for application design and development at Data
+      &amp; Applications (D&amp;A).
     </template>
     <template #content>
       <div class="row mb-3">
@@ -12,7 +12,7 @@
           <h2 class="fw-bold">Getting Started</h2>
           <p>
             Check out these guides to help you understand how to design
-            applications using Solstice Components.
+            applications using Solstice.
           </p>
         </div>
       </div>
@@ -41,22 +41,22 @@
         </div>
       </div>
 
-      <div v-if="isDev" class="row mb-5">
+      <div class="row mb-5">
         <div class="col d-flex flex-column">
           <axdd-panel class="bg-body-tertiary flex-fill">
-            <h3 class="card-title">Component Lifecycle</h3>
+            <h3 class="card-title">Design with Solstice</h3>
             <p class="flex-fill">
               Learn how to create global components that can be used by other
               applications as well as creating brand new applications.
             </p>
             <div class="text-end">
-              <sol-link href="/getting-started/component-lifecycle"
-                >View Component Lifecycle</sol-link
+              <sol-link href="/getting-started/design-with-solstice"
+                >View Design with Solstice</sol-link
               >
             </div>
           </axdd-panel>
         </div>
-        <div class="col d-flex flex-column">
+        <div v-if="isDev" class="col d-flex flex-column">
           <axdd-panel class="bg-body-tertiary flex-fill">
             <h3 class="card-title">Installation &amp; Setup</h3>
             <p>
@@ -83,38 +83,42 @@
       </div>
 
       <div class="row mb-5">
-        <div class="col">
+        <div class="col d-flex flex-column">
           <h3>Content</h3>
-          <p>
-            Learn how to use language to design a more thoughtful product
+          <p class="flex-fill">
+            Learn how to use language and text to design a more thoughtful user
             experience.
           </p>
 
           <p>
-            <sol-link href="/content/">Read content guidelines</sol-link>
+            <sol-link href="/content/">Review content guidelines</sol-link>
           </p>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column">
           <h3>Foundations</h3>
-          <p>
-            Use design foundations to ensure consistency across the application.
+          <p class="flex-fill">
+            Design foundations are used to ensure visual consistency across the
+            application.
           </p>
           <p>
             <sol-link href="/foundations/">Browse foundations</sol-link>
           </p>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column">
           <h3>Elements</h3>
-          <p>
-            Use elements as building blocks as you design and develop new
-            products and features.
+          <p class="flex-fill">
+            UI elements are reusable components that can stand alone or form
+            part of multiple UI patterns.
           </p>
-          <p><sol-link href="/elements/">Browse elements</sol-link></p>
+          <p><sol-link href="/elements/">Browse UI elements</sol-link></p>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column">
           <h3>Patterns</h3>
-          <p>Patterns consist of complex elements and UI patterns.</p>
-          <p><sol-link href="/patterns/">Browse patterns</sol-link></p>
+          <p class="flex-fill">
+            UX patterns are groups of UI elements used by designers to solve
+            usability issues.
+          </p>
+          <p><sol-link href="/patterns/">Browse UX patterns</sol-link></p>
         </div>
       </div>
     </template>
