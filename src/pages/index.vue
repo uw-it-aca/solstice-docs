@@ -76,8 +76,8 @@
         <div class="col">
           <h2 class="fw-bold">Guides</h2>
           <p>
-            Check out these guides to help you understand how to design
-            applications using Solstice Components.
+            Check out these documentation guides to help you understand how to
+            design applications using Solstice Components.
           </p>
         </div>
       </div>
@@ -105,7 +105,7 @@
           </p>
         </div>
         <div class="col d-flex flex-column">
-          <h3>Elements</h3>
+          <h3>UI Elements</h3>
           <p class="flex-fill">
             UI elements are reusable components that can stand alone or form
             part of multiple UI patterns.
@@ -113,7 +113,7 @@
           <p><sol-link href="/elements/">Browse UI elements</sol-link></p>
         </div>
         <div class="col d-flex flex-column">
-          <h3>Patterns</h3>
+          <h3>UX Patterns</h3>
           <p class="flex-fill">
             UX patterns are groups of UI elements used by designers to solve
             usability issues.

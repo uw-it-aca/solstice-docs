@@ -28,13 +28,26 @@
 
       <h2>Who is Solstice for?</h2>
       <p>
-        Solstice is designed and maintained by the Service Coordination (SC)
+        Solstice was created and maintained by the Service Coordination (SC)
         Experience Design Team, to help provide users with a consistent
         experience across D&amp;A services.
       </p>
+      <p>
+        In addition, Engineering teams are able to use the technical
+        documentation to build applications based on Solstice design
+        specifications.
+      </p>
 
-      <h2>What apps should use Solstice?</h2>
-      <p>Web applications and websites within D&amp;A and the broader UW-IT</p>
+      <h2>How will Solstice be used?</h2>
+      <p>
+        Designers are expected to use the elements and patterns documented in
+        the design system to aid in their design process. Further resources can
+        be found on the
+        <router-link to="/getting-started/design-with-solstice"
+          >Design with Solstice</router-link
+        >
+        page.
+      </p>
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>
