@@ -28,7 +28,6 @@
       </p>
 
       <sol-color-mode></sol-color-mode>
-
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>
