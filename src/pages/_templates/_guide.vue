@@ -7,17 +7,34 @@
       consectetur ea dolores vero sint. Porro, quaerat.
     </template>
     <template #content>
-      <h2 id="heading1">Heading1 (h2)</h2>
-      <p>Go to <a href="/_templates/component">Component</a></p>
-
-      <h2 id="heading2">Heading2 (h2)</h2>
-      <p>Go to <a href="/_templates/component">Component</a></p>
-
-      <h2 id="heading3">Heading3 (h2)</h2>
-      <p>Go to <a href="/_templates/component">Component</a></p>
-
-      <h2 id="heading4">Heading3 (h2)</h2>
-      <p>Go to <a href="/_templates/component">Component</a></p>
+      <ul class="row list-unstyled">
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Section'"
+            :link="'/_templates/_section'"
+            class="bg-light"
+            >The layout is a critical foundation of our design system. It
+            provides the structure for our visual components and overall user
+            interface.</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Section'"
+            :link="'/_templates/_section'"
+            class="bg-light"
+            >sdfgsdgsd</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Section'"
+            :link="'/patterns/surface'"
+            class="bg-light"
+            >aka content containers</DescriptionBlock
+          >
+        </li>
+      </ul>
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>
@@ -25,14 +42,15 @@
 
 <script>
 import Layout from "@/layout.vue";
+import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {
   name: "DocsTemplatesIndex" /* TODO: Docs_Folder_Index */,
   inject: ["mq"],
-  components: { Layout },
+components: { Layout, DescriptionBlock },
   data() {
     return {
-      pageTitle: "Page Title" /* TODO: asdlkfjasf */,
+      pageTitle: "Topic Page" /* TODO: asdlkfjasf */,
     };
   },
 };
