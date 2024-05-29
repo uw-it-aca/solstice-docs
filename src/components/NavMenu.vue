@@ -180,7 +180,7 @@
         :aria-expanded="$route.path.includes('/elements') ? true : false"
         aria-controls="elementsCollapse"
       >
-        <span>Elements</span>
+        <span>UI Elements</span>
         <i class="bi bi-chevron-right" aria-hidden="true"></i>
       </router-link>
       <div
@@ -293,7 +293,7 @@
         :aria-expanded="$route.path.includes('/patterns/') ? true : false"
         aria-controls="patternsCollapse"
       >
-        <span>Patterns</span>
+        <span>UX Patterns</span>
         <i class="bi bi-chevron-right" aria-hidden="true"></i>
       </router-link>
       <div
