@@ -1,17 +1,17 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #lead>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi
-      quaerat, molestiae vero doloribus asperiores pariatur fugit eligendi nam
-      ratione, quos dolorum. Eaque atque quas, laboriosam distinctio fugiat
-      autem molestias?
+      This is a directory index page... Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Aliquid maiores quo consequatur, minima minus suscipit
+      doloribus quos dicta excepturi porro obcaecati, dignissimos rerum
+      consectetur ea dolores vero sint. Porro, quaerat.
     </template>
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
-            :name="'Voice &amp; Tone'"
-            :link="'/content/voice-tone'"
+            :name="'Page'"
+            :link="'/_templates/_guide'"
             class="bg-light"
             >The layout is a critical foundation of our design system. It
             provides the structure for our visual components and overall user
@@ -20,34 +20,26 @@
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Grammar &amp; Mechangics'"
-            :link="'/content/grammar-mechanics'"
+            :name="'Topic'"
+            :link="'/_templates/_topic'"
             class="bg-light"
-            >sdfgsdgsd</DescriptionBlock
+            >Topic pages contain collections of Sections</DescriptionBlock
           >
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Language &amp; Inclusivity'"
-            :link="'/content/language-inclusivity'"
+            :name="'Section'"
+            :link="'/_templates/_section'"
             class="bg-light"
-            >sdfgsdgsd</DescriptionBlock
+            >Section pages contains collections of Components</DescriptionBlock
           >
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Terminology'"
-            :link="'/content/terminology'"
+            :name="'Component'"
+            :link="'/_templates/_component'"
             class="bg-light"
-            >sdfgsdgsd</DescriptionBlock
-          >
-        </li>
-        <li class="col-4">
-          <DescriptionBlock
-            :name="'Labels'"
-            :link="'/content/labels'"
-            class="bg-light"
-            >sdfgsdgsd</DescriptionBlock
+            >Component documentation</DescriptionBlock
           >
         </li>
       </ul>
@@ -61,11 +53,12 @@ import Layout from "@/layout.vue";
 import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {
-  name: "DocsContentIndex",
+  name: "DocsTemplatesIndex" /* TODO: Docs_Folder_Index */,
+  inject: ["mq"],
   components: { Layout, DescriptionBlock },
   data() {
     return {
-      pageTitle: "Content",
+      pageTitle: "Templates" /* TODO: asdlkfjasf */,
     };
   },
 };

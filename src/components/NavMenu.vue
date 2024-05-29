@@ -5,20 +5,20 @@
         class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
         exact-active-class="bg-black bg-opacity-10"
         to="/getting-started/"
-        id="flush-heading2"
+        id="gettingStartedHeading"
         data-bs-toggle="collapse"
-        data-bs-target="#flush-collapse2"
+        data-bs-target="#gettingStartedCollapse"
         :aria-expanded="$route.path.includes('/getting-started') ? true : false"
-        aria-controls="flush-collapse2"
+        aria-controls="gettingStartedCollapse"
       >
         <span>Getting Started</span>
         <i class="bi bi-chevron-right" aria-hidden="true"></i>
       </router-link>
       <div
-        id="flush-collapse2"
+        id="gettingStartedCollapse"
         class="collapse"
         :class="$route.path.includes('/getting-started') ? 'show' : ''"
-        aria-labelledby="flush-heading2"
+        aria-labelledby="gettingStartedHeading"
       >
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
@@ -56,20 +56,20 @@
         class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
         exact-active-class="bg-black bg-opacity-10"
         to="/content/"
-        id="flush-heading3"
+        id="contentHeading"
         data-bs-toggle="collapse"
-        data-bs-target="#flush-collapse3"
+        data-bs-target="#contentCollapse"
         :aria-expanded="$route.path.includes('/content') ? true : false"
-        aria-controls="flush-collapse3"
+        aria-controls="contentCollapse"
       >
-        <span>Content Guidelines</span>
+        <span>Content</span>
         <i class="bi bi-chevron-right" aria-hidden="true"></i>
       </router-link>
       <div
-        id="flush-collapse3"
+        id="contentCollapse"
         class="collapse"
         :class="$route.path.includes('/content') ? 'show' : ''"
-        aria-labelledby="flush-heading3"
+        aria-labelledby="contentHeading"
       >
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
@@ -125,20 +125,20 @@
         class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
         exact-active-class="bg-black bg-opacity-10"
         to="/foundations/"
-        id="flush-heading4"
+        id="foundationsHeading"
         data-bs-toggle="collapse"
-        data-bs-target="#flush-collapse4"
+        data-bs-target="#foundationsCollapse"
         :aria-expanded="$route.path.includes('/foundations') ? true : false"
-        aria-controls="flush-collapse4"
+        aria-controls="foundationsCollapse"
       >
         <span>Foundations</span>
         <i class="bi bi-chevron-right" aria-hidden="true"></i>
       </router-link>
       <div
-        id="flush-collapse4"
+        id="foundationsCollapse"
         class="collapse"
         :class="$route.path.includes('/foundations') ? 'show' : ''"
-        aria-labelledby="flush-heading4"
+        aria-labelledby="foundationsHeading"
       >
         <ul class="nav flex-column small fw-light mt-1">
           <li v-if="isDev" class="nav-item mb-1">
@@ -159,17 +159,14 @@
               >Typography</router-link
             >
           </li>
-          <li class="nav-item mb-1">
-            <router-link
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
-              to="/foundations/layout/"
-              >Layout</router-link
-            >
-          </li>
         </ul>
       </div>
+    </li>
+
+    <li aria-hidden="true" class="d-none nav-item mt-2 mb-3">
+      <a href="#" class="nav-link disabled text-gray d-block p-0 internal-link">
+        <hr class="m-0 bg-gray"
+      /></a>
     </li>
 
     <li class="nav-item mb-1">
@@ -177,30 +174,109 @@
         class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
         exact-active-class="bg-black bg-opacity-10"
         to="/elements/"
-        id="flush-heading5"
+        id="elementsHeading"
         data-bs-toggle="collapse"
-        data-bs-target="#flush-collapse5"
+        data-bs-target="#elementsCollapse"
         :aria-expanded="$route.path.includes('/elements') ? true : false"
-        aria-controls="flush-collapse5"
+        aria-controls="elementsCollapse"
       >
         <span>Elements</span>
         <i class="bi bi-chevron-right" aria-hidden="true"></i>
       </router-link>
       <div
-        id="flush-collapse5"
+        id="elementsCollapse"
         class="collapse"
         :class="$route.path.includes('/elements') ? 'show' : ''"
-        aria-labelledby="flush-heading5"
+        aria-labelledby="elementsHeading"
       >
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <router-link
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
+              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
-              to="/elements/link"
-              >Link</router-link
+              to="/elements/base/"
+              id="elementsBaseHeading"
+              data-bs-toggle="collapse"
+              data-bs-target="#elementsBaseCollapse"
+              :aria-expanded="
+                $route.path.includes('/elements/base/') ? true : false
+              "
+              aria-controls="elementsBaseCollapse"
             >
+              <span>Base</span>
+              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </router-link>
+            <div
+              id="elementsBaseCollapse"
+              class="collapse"
+              :class="$route.path.includes('/elements/base/') ? 'show' : ''"
+              aria-labelledby="elementsBaseHeading"
+            >
+              <ul class="nav flex-column fw-light mt-1">
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/elements/base/link"
+                    >Link</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/elements/base/button"
+                    >Button</router-link
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item mb-1">
+            <router-link
+              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              exact-active-class="bg-black bg-opacity-10"
+              to="/elements/form/"
+              id="elementsFormHeading"
+              data-bs-toggle="collapse"
+              data-bs-target="#elementsFormCollapse"
+              :aria-expanded="
+                $route.path.includes('/elements/form/') ? true : false
+              "
+              aria-controls="elementsFormCollapse"
+            >
+              <span>Form</span>
+              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </router-link>
+            <div
+              id="elementsFormCollapse"
+              class="collapse"
+              :class="$route.path.includes('/elements/form/') ? 'show' : ''"
+              aria-labelledby="elementsFormHeading"
+            >
+              <ul class="nav flex-column fw-light mt-1">
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/elements/form/asdf"
+                    >sadfasdf</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/elements/form/asdf"
+                    >asdfasdf</router-link
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -211,45 +287,90 @@
         class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
         exact-active-class="bg-black bg-opacity-10"
         to="/patterns/"
-        id="flush-heading10"
+        id="patternsHeading"
         data-bs-toggle="collapse"
-        data-bs-target="#flush-collapse10"
+        data-bs-target="#patternsCollapse"
         :aria-expanded="$route.path.includes('/patterns/') ? true : false"
-        aria-controls="flush-collapse10"
+        aria-controls="patternsCollapse"
       >
         <span>Patterns</span>
         <i class="bi bi-chevron-right" aria-hidden="true"></i>
       </router-link>
       <div
-        id="flush-collapse10"
+        id="patternsCollapse"
         class="collapse"
         :class="$route.path.includes('/patterns/') ? 'show' : ''"
-        aria-labelledby="flush-heading10"
+        aria-labelledby="patternsHeading"
       >
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
-              to="/patterns/navigation/"
-              id="flush-heading6"
+              to="/patterns/layout/"
+              id="patternsLayoutHeading"
               data-bs-toggle="collapse"
-              data-bs-target="#flush-collapse6"
+              data-bs-target="#patternsLayoutCollapse"
+              :aria-expanded="
+                $route.path.includes('/patterns/layout/') ? true : false
+              "
+              aria-controls="patternsLayoutCollapse"
+            >
+              <span>Layout</span>
+              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </router-link>
+            <div
+              id="patternsLayoutCollapse"
+              class="collapse"
+              :class="$route.path.includes('/patterns/layout/') ? 'show' : ''"
+              aria-labelledby="patternsLayoutHeading"
+            >
+              <ul class="nav flex-column fw-light mt-1">
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/patterns/layout/topbar"
+                    >Topbar</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/patterns/layout/sidebar"
+                    >Sidebar</router-link
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item mb-1">
+            <router-link
+              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              exact-active-class="bg-black bg-opacity-10"
+              to="/patterns/navigation/"
+              id="patternsNavigationHeading"
+              data-bs-toggle="collapse"
+              data-bs-target="#patternsNavigationCollapse"
               :aria-expanded="
                 $route.path.includes('/patterns/navigation/') ? true : false
               "
-              aria-controls="flush-collapse6"
+              aria-controls="patternsNavigationCollapse"
             >
               <span>Navigation</span>
               <i class="bi bi-chevron-right" aria-hidden="true"></i>
             </router-link>
             <div
-              id="flush-collapse6"
+              id="patternsNavigationCollapse"
               class="collapse"
               :class="
                 $route.path.includes('/patterns/navigation/') ? 'show' : ''
               "
-              aria-labelledby="flush-heading6"
+              aria-labelledby="patternsNavigationHeading"
             >
               <ul class="nav flex-column fw-light mt-1">
                 <li v-if="isDev" class="nav-item mb-1">
@@ -278,25 +399,23 @@
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
-              to="/patterns/container/"
-              id="flush-heading7"
+              to="/patterns/surface/"
+              id="patternsSurfaceHeading"
               data-bs-toggle="collapse"
-              data-bs-target="#flush-collapse7"
+              data-bs-target="#patternsSurfaceCollapse"
               :aria-expanded="
-                $route.path.includes('/patterns/container/') ? true : false
+                $route.path.includes('/patterns/surface/') ? true : false
               "
-              aria-controls="flush-collapse7"
+              aria-controls="patternsSurfaceCollapse"
             >
-              <span>Container</span>
+              <span>Surface</span>
               <i class="bi bi-chevron-right" aria-hidden="true"></i>
             </router-link>
             <div
-              id="flush-collapse7"
+              id="patternsSurfaceCollapse"
               class="collapse"
-              :class="
-                $route.path.includes('/patterns/container/') ? 'show' : ''
-              "
-              aria-labelledby="flush-heading7"
+              :class="$route.path.includes('/patterns/surface/') ? 'show' : ''"
+              aria-labelledby="patternsSurfaceHeading"
             >
               <ul class="nav flex-column fw-light mt-1">
                 <li v-if="isDev" class="nav-item mb-1">
@@ -304,7 +423,7 @@
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
-                    to="/patterns/container/card"
+                    to="/patterns/surface/card"
                     >Card</router-link
                   >
                 </li>
@@ -313,7 +432,7 @@
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
-                    to="/patterns/container/panel"
+                    to="/patterns/surface/panel"
                     >Panel</router-link
                   >
                 </li>
@@ -322,7 +441,7 @@
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
-                    to="/patterns/container/disclosure"
+                    to="/patterns/disclosure"
                     >Disclosure</router-link
                   >
                 </li>
@@ -334,25 +453,81 @@
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
-              to="/patterns/messaging/"
-              id="flush-heading8"
+              to="/patterns/disclosure/"
+              id="patternsDisclosureHeading"
               data-bs-toggle="collapse"
-              data-bs-target="#flush-collapse8"
+              data-bs-target="#patternsDisclosureCollapse"
+              :aria-expanded="
+                $route.path.includes('/patterns/disclosure/') ? true : false
+              "
+              aria-controls="patternsDisclosureCollapse"
+            >
+              <span>Disclosure</span>
+              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </router-link>
+            <div
+              id="patternsDisclosureCollapse"
+              class="collapse"
+              :class="
+                $route.path.includes('/patterns/disclosure/') ? 'show' : ''
+              "
+              aria-labelledby="patternsDisclosureHeading"
+            >
+              <ul class="nav flex-column fw-light mt-1">
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/patterns/disclosure/collapse"
+                    >Collapse</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/patterns/disclosure/accordian"
+                    >Accordian</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/patterns/disclosure/modal"
+                    >Modal</router-link
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item mb-1">
+            <router-link
+              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              exact-active-class="bg-black bg-opacity-10"
+              to="/patterns/messaging/"
+              id="patternsMessagingHeading"
+              data-bs-toggle="collapse"
+              data-bs-target="#patternsMessagingCollapse"
               :aria-expanded="
                 $route.path.includes('/patterns/messaging/') ? true : false
               "
-              aria-controls="flush-collapse8"
+              aria-controls="patternsMessagingCollapse"
             >
               <span>Messaging</span>
               <i class="bi bi-chevron-right" aria-hidden="true"></i>
             </router-link>
             <div
-              id="flush-collapse8"
+              id="patternsMessagingCollapse"
               class="collapse"
               :class="
                 $route.path.includes('/patterns/messaging/') ? 'show' : ''
               "
-              aria-labelledby="flush-heading7"
+              aria-labelledby="patternsSurfaceHeading"
             >
               <ul class="nav flex-column fw-light mt-1">
                 <li v-if="isDev" class="nav-item mb-1">
@@ -382,15 +557,6 @@
                     >Banner</router-link
                   >
                 </li>
-                <li v-if="isDev" class="nav-item mb-1">
-                  <router-link
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
-                    to="/patterns/messaging/modal"
-                    >Modal</router-link
-                  >
-                </li>
               </ul>
             </div>
           </li>
@@ -400,22 +566,22 @@
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/patterns/utility/"
-              id="flush-heading9"
+              id="patternsUtilityHeading"
               data-bs-toggle="collapse"
-              data-bs-target="#flush-collapse9"
+              data-bs-target="#patternsUtilityCollapse"
               :aria-expanded="
                 $route.path.includes('/patterns/utility/') ? true : false
               "
-              aria-controls="flush-collapse9"
+              aria-controls="patternsUtilityCollapse"
             >
               <span>Utility</span>
               <i class="bi bi-chevron-right" aria-hidden="true"></i>
             </router-link>
             <div
-              id="flush-collapse9"
+              id="patternsUtilityCollapse"
               class="collapse"
               :class="$route.path.includes('/patterns/utility/') ? 'show' : ''"
-              aria-labelledby="flush-heading7"
+              aria-labelledby="patternsSurfaceHeading"
             >
               <ul class="nav flex-column fw-light mt-1">
                 <li v-if="isDev" class="nav-item mb-1">

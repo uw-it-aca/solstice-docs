@@ -1,17 +1,22 @@
 <template>
   <Layout :page-title="pageTitle">
+    <template #lead>
+      Patterns are the re-usable user interface components. Patterns utilize
+      combinations of elements and building blocks of the visual user interface
+      design.
+    </template>
     <template #content>
-      <h1 class="fw-bold">Patterns</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
-        Patterns are the re-usable UI components that fall on the more complex
-        side of the spectrum. Patterns utilize both elements and design tokens
-        and are the design and building blocks of the visual design.
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
       <ul class="row list-unstyled">
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Layout'"
+            :link="'/patterns/layout'"
+            class="bg-light"
+            >The layout is a critical foundation of our design system. It
+            provides the structure for our visual components and overall user
+            interface.</DescriptionBlock
+          >
+        </li>
         <li class="col-4">
           <DescriptionBlock
             :name="'Navigation'"
@@ -22,10 +27,19 @@
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Container'"
-            :link="'/patterns/container'"
+            :name="'Surface'"
+            :link="'/patterns/surface'"
             class="bg-light"
-            >aka surfaces?</DescriptionBlock
+            >aka content containers</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Disclosure'"
+            :link="'/patterns/disclosure'"
+            class="bg-light"
+            >Interface changes (or progressively disclosed) based on a user
+            action.</DescriptionBlock
           >
         </li>
         <li class="col-4">
