@@ -94,13 +94,14 @@
             website. This is a paragraph example using the
             <sol-link href="/elements/link">link component</sol-link>. Goodbye!
           </template>
-          <template #markup>
+          <template #bootstrap>
             <pre class="language-html">
 <code>&lt;a href="/">Soltice Design System&lt;/a>
 </code></pre>
+          </template>
+          <template #vue>
             <pre class="language-html">
-<code>&lt;sol-link href="/">Soltice Design System&lt;/sol-link>
-</code></pre>
+<code>&lt;BLink to="/">Soltice Design System&lt;/BLink></code></pre>
           </template>
         </CodeBlock>
       </div>
@@ -123,11 +124,27 @@
                 color="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
                 >link component</sol-link
               >. Goodbye!
+
+              <BLink
+                :variant="'light'"
+                class="link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+              >
+                light link
+              </BLink>
             </div>
           </template>
-          <template #markup>
+          <template #bootstrap>
             <pre class="language-html">
-<code>&lt;sol-link href="/" color="link-light">Soltice Design System&lt;/sol-link>
+<code>&lt;a href="/" class="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
+  Soltice Design System
+&lt;/a>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BLink :variant="'light'" class="link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
+  Soltice Design System
+&lt;/BLink>
 </code></pre>
           </template>
         </CodeBlock>
@@ -151,11 +168,27 @@
                 color="link-dark link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
                 >link component</sol-link
               >. Goodbye!
+
+              <BLink
+                :variant="'dark'"
+                class="link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+              >
+                dark link
+              </BLink>
             </div>
           </template>
-          <template #markup>
+          <template #bootstrap>
             <pre class="language-html">
-<code>&lt;sol-link href="/" color="link-dark">Soltice Design System&lt;/sol-link>
+<code>&lt;a href="/" class="link-dark link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
+  Soltice Design System
+&lt;/a>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BLink :variant="'dark'" class="link-dark link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
+  Soltice Design System
+&lt;/BLink>
 </code></pre>
           </template>
         </CodeBlock>
@@ -177,16 +210,24 @@
               Hello! Welcome to the Soltice Design System documentation website.
               This is a paragraph explaining how to use the quite link below:
             </p>
-            <sol-link href="/" variant="quiet">Soltice Design System</sol-link>
+            <BLink
+              to="/"
+              class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+              >Soltice Design System</BLink
+            >
           </template>
-          <template #markup>
+          <template #bootstrap>
             <pre class="language-html">
 <code>&lt;a href="/" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
   Soltice Design System
 &lt;/a>
 </code></pre>
+          </template>
+          <template #vue>
             <pre class="language-html">
-<code>&lt;sol-link href="/" variant="quiet">Soltice Design System&lt;/sol-link>
+<code>&lt;BLink to="/" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
+  Soltice Design System
+&lt;/BLink>
 </code></pre>
           </template>
         </CodeBlock>
@@ -202,18 +243,25 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <sol-link href="/" variant="icon" icon="bi-cloud-download"
-              >Download report</sol-link
+            <BLink
+              to="/elements/link"
+              class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
             >
+              <i class="bi bi-cloud-download me-1"></i>Download report
+            </BLink>
           </template>
-          <template #markup>
+          <template #bootstrap>
             <pre class="language-html">
 <code>&lt;a href="/" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
   &lt;i class="bi bi-cloud-download me-1">&lt;/i>Download report
 &lt;/a>
 </code></pre>
+          </template>
+          <template #vue>
             <pre class="language-html">
-<code>&lt;sol-link href="/" variant="icon" icon="bi-cloud-download">Download report&lt;/sol-link>
+<code>&lt;BLink to="/" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
+  &lt;i class="bi bi-cloud-download me-1">&lt;/i>Download report
+&lt;/BLink>
 </code></pre>
           </template>
         </CodeBlock>
@@ -465,49 +513,6 @@
       </p>
 
       <h2 id="implementation">Implementation</h2>
-      <h3>Properties</h3>
-
-      <table class="table my-5">
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Type</th>
-            <th scope="col">Required</th>
-            <th scope="col">Options</th>
-            <th scope="col">Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>variant</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>asdfas</td>
-          </tr>
-          <tr>
-            <td>href</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>asdfas</td>
-          </tr>
-          <tr>
-            <td>icon</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>asdfas</td>
-          </tr>
-          <tr>
-            <td>color</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>asdfas</td>
-          </tr>
-        </tbody>
-      </table>
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>

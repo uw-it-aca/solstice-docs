@@ -25,9 +25,6 @@
       relevant to a particular task or page section. For quick, non-critical
       messages that disappear on their own, use a
       <a href="toast">Toast</a>.
-      <div class="my-3">
-        <img src="/images/alert-asset-hero-visual.png" class="img-fluid" />
-      </div>
     </template>
     <template #toc>
       <PageContents>
@@ -99,13 +96,30 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <p>Critical alert example goes here</p>
+            <BAlert variant="danger" :model-value="true" class="small"
+              ><i class="bi-exclamation-octagon-fill me-1"></i> Critical Alert
+              <BLink
+                class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2"
+                to="/"
+              >
+                Call to action
+              </BLink>
+            </BAlert>
           </template>
-          <template #markup>
+          <template #bootstrap>
             <pre class="language-html">
-<code>&lt;sol-alert variant="critical" has-cta="true" cta-url="[url]"
-  cta-label="View statement">You have a balance that is past due.
-&lt;/sol-alert>
+<code>&lt;div class="alert alert-danger small" role="alert" aria-live="polite" aria-atomic="true">
+  &lt;i class="bi-exclamation-octagon-fill me-1">&lt;/i> Critical Alert
+  &lt;a href="/" class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2">Call to action&lt;/a>
+&lt;/div>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BAlert variant="danger" :model-value="true" class="small">
+  &lt;i class="bi-exclamation-octagon-fill me-1">&lt;/i> Critical Alert
+  &lt;BLink class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2" to="/">Call to action&lt;/BLink>
+&lt;/BAlert>
 </code></pre>
           </template>
         </CodeBlock>
@@ -122,13 +136,30 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <p>Warning alert example goes here</p>
+            <BAlert variant="warning" :model-value="true" class="small"
+              ><i class="bi-exclamation-triangle-fill me-1"></i> Warning Alert
+              <BButton
+                size="sm"
+                variant="warning"
+                class="rounded-3 position-absolute top-50 end-0 translate-middle-y me-2"
+                >Call to action</BButton
+              >
+            </BAlert>
           </template>
-          <template #markup>
+          <template #bootstrap>
             <pre class="language-html">
-<code>&lt;sol-alert variant="warning" has-cta="true" cta-url="[url]"
-  cta-label="Go to ">Class meeting times overlap. Adjust your schedule to avoid conflicts.
-&lt;/sol-alert>
+<code>&lt;div class="alert alert-warning small" role="alert" aria-live="polite" aria-atomic="true">
+  &lt;i class="bi-exclamation-triangle-fill me-1">&lt;/i> Warning Alert
+  &lt;button class="btn btn-sm btn-warning rounded-3 position-absolute top-50 end-0 translate-middle-y me-2" type="button">Call to action&lt;/button>
+&lt;/div>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BAlert variant="warning" :model-value="true" class="small">
+  &lt;i class="bi-exclamation-triangle-fill me-1">&lt;/i> Warning Alert
+  &lt;BButton size="sm" variant="warning" class="rounded-3 position-absolute top-50 end-0 translate-middle-y me-2">Call to action&lt;/BButton>
+&lt;/BAlert>
 </code></pre>
           </template>
         </CodeBlock>
@@ -142,13 +173,23 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <p>Info alert example goes here</p>
+            <BAlert variant="info" dismissible :model-value="true" class="small"
+              ><i class="bi-exclamation-circle-fill me-1"></i> Info Alert
+            </BAlert>
           </template>
-          <template #markup>
+          <template #bootstrap>
             <pre class="language-html">
-<code>&lt;sol-alert variant="info" is-dismissable="true">
-  Registration opens at 6:00AM.
-&lt;/sol-alert>
+<code>&lt;div class="alert alert-info alert-dismissible small" role="alert" aria-live="polite" aria-atomic="true">
+  &lt;i class="bi-exclamation-circle-fill me-1">&lt;/i> Info Alert
+  &lt;button type="button" class="btn-close" aria-label="Close">&lt;/button>
+&lt;/div>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BAlert variant="info" dismissible :model-value="true" class="small">
+  &lt;i class="bi-exclamation-circle-fill me-1">&lt;/i> Info Alert
+&lt;/BAlert>
 </code></pre>
           </template>
         </CodeBlock>
@@ -187,8 +228,8 @@
         By default, Alerts are not dismissible from the page. They will remain
         in the interface until the issue is resolved or is no longer relevant.
         For Alerts with non-critical information, particularly info Alerts such
-        as announcements, dismissibility may be enabled. When
-        <code>is-dismissible="true"</code>, an 'x' icon will allow users to
+        as announcements, dismissibility may be enabled. When the
+        <code>dismissible</code> prop is passed, an 'x' icon will allow users to
         remove it from the page.
       </p>
       <p>
@@ -198,12 +239,20 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <p>Dismissable alert goes here</p>
+            <BAlert
+              variant="info"
+              dismissible
+              :model-value="true"
+              class="small"
+            >
+              <i class="bi-exclamation-circle-fill me-1"></i> Info Alert
+            </BAlert>
           </template>
-          <template #markup>
+          <template #vue>
             <pre class="language-html">
-<code>&lt;sol-alert variant="info" is-dismissible="true">This Alert is dismissible
-&lt;/sol-alert>
+<code>&lt;BAlert variant="info" dismissible :model-value="true" class="small">
+  &lt;i class="bi-exclamation-circle-fill me-1">&lt;/i>Info Alert
+&lt;/BAlert>
 </code></pre>
           </template>
         </CodeBlock>
