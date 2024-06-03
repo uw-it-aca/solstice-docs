@@ -5,15 +5,26 @@
         <slot name="preview"></slot>
       </div>
     </div>
-    <div v-if="$slots['markup']">
+    <div v-if="$slots['bootstrap']">
       <div
         class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
       >
-        <div>HTML</div>
+        <div>BOOTSTRAP</div>
         <div>copy</div>
       </div>
       <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
-        <slot name="markup"></slot>
+        <slot name="bootstrap"></slot>
+      </div>
+    </div>
+    <div v-if="$slots['vue']">
+      <div
+        class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-top border-bottom"
+      >
+        <div>VUE</div>
+        <div>copy</div>
+      </div>
+      <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
+        <slot name="vue"></slot>
       </div>
     </div>
 

@@ -1,14 +1,10 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/elements/">Elements</a></li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/elements">UI Elements</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
     <template #lead>
       This is a pattern page... Lorem ipsum dolor sit amet consectetur
@@ -27,7 +23,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Link'"
-            :link="'/elements/base/link'"
+            :link="'/elements/html/link'"
             :accessibility="true"
             :version="'1.0.x'"
             >Component description... Lorem ipsum dolor sit amet, consectetur
@@ -37,7 +33,27 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Button'"
-            :link="'/elements/base/button'"
+            :link="'/elements/html/button'"
+            :accessibility="true"
+            :version="'1.0.x'"
+            >Component description... Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Heading'"
+            :link="'/elements/html/heading'"
+            :accessibility="true"
+            :version="'1.0.x'"
+            >Component description... Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Paragraph'"
+            :link="'/elements/html/paragraph'"
             :accessibility="true"
             :version="'1.0.x'"
             >Component description... Lorem ipsum dolor sit amet, consectetur
@@ -60,7 +76,7 @@ export default {
   components: { Layout, DescriptionBlock },
   data() {
     return {
-      pageTitle: "Base" /* TODO: Set a page title */,
+      pageTitle: "HTML" /* TODO: Set a page title */,
     };
   },
 };

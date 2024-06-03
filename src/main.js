@@ -1,4 +1,5 @@
 import { createApp } from "vue";
+import { createBootstrap } from "bootstrap-vue-next";
 import SolsticeVue from "solstice-vue";
 import { Vue3Mq, MqResponsive } from "vue3-mq";
 
@@ -13,6 +14,9 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "solstice-vue/dist/style.css";
 import "solstice-vue/dist/solstice.scss";
 
+// bootstrap-vue-next css
+// import "bootstrap-vue-next/dist/bootstrap-vue-next.css";
+
 // app specific scss
 //import "@/assets/css/styles.scss";
 
@@ -25,6 +29,18 @@ app.use(Vue3Mq, {
   preset: "bootstrap5",
 });
 app.component("mq-responsive", MqResponsive);
+
+// bootstrap-vue-next
+app.use(
+  createBootstrap({
+    components: true,
+    directives: true,
+    aliases: {
+      SAlert: "BAlert",
+      SLink: "BLink",
+    },
+  })
+); // Change this line
 
 // solstice-vue
 app.use(SolsticeVue);

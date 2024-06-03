@@ -1,19 +1,11 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/patterns/">Patterns</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/messaging/">Messaging</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
+        <BBreadcrumbItem to="#/patterns/messaging">Messaging</BBreadcrumbItem>
+        <BBreadcrumbItem active>Toast</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
     <template #lead>
       Toasts give timely feedback about non-critical information that does not
@@ -28,16 +20,16 @@
           <ul class="list-unstyled m-0">
             <li>
               <a
-                href="#variants"
+                href="#anatomy"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Variants</a
+                >Anatomy</a
               >
             </li>
             <li>
               <a
-                href="#anatomy"
+                href="#variants"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Anatomy</a
+                >Variants</a
               >
             </li>
             <li>
@@ -73,49 +65,6 @@
       </PageContents>
     </template>
     <template #content>
-      <h2 id="variants">Variants</h2>
-      <h3>Success</h3>
-      <p>
-        Toasts with the <code>success</code> variant confirm that simple user
-        actions have completed as intended, and do not require additional
-        attention. This variant carries the semantic color green.
-      </p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #preview>
-            <p>Message here</p>
-          </template>
-          <template #markup>
-            <pre class="language-html">
-<code>&lt;sol-toast variant="success">
-  Added to plan
-&lt;/sol-toast>
-</code></pre>
-          </template>
-        </CodeBlock>
-      </div>
-      <h3>Neutral</h3>
-      <p>
-        Toasts with the <code>neutral</code> variant can be used in rare cases
-        to convey timely, non-critical feedback that does not make sense as a
-        <code>success</code>. Rather than a semantic color, this variant appears
-        in gray.
-      </p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #preview>
-            <p>Internet disconnect</p>
-          </template>
-          <template #markup>
-            <pre class="language-html">
-<code>&lt;sol-toast variant="success">
-  Internet disconnect
-&lt;/sol-toast>
-</code></pre>
-          </template>
-        </CodeBlock>
-      </div>
-
       <h2 id="anatomy">Anatomy</h2>
       <h3>Sizing</h3>
       <p>
@@ -139,45 +88,6 @@
         light and dark modes. By default, the component will update to
         appropriate colors within the semantic color palette.
       </p>
-      <p>
-        Below are the primitive color values (100-900) for each of the elements
-        within an Toast. The <code>success</code> colors are shown as an
-        example, but the primitive values apply to each of the semantic colors.
-      </p>
-      <table class="table my-5">
-        <thead>
-          <tr>
-            <th scope="col">Property</th>
-            <th scope="col">Light Mode (default)</th>
-            <th scope="col">Dark Mode</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <code class="text-success">background</code><br />(required)
-            </td>
-            <td><code>100</code></td>
-            <td>
-              <code>900</code>
-            </td>
-          </tr>
-          <tr>
-            <td><code class="text-success">border</code></td>
-            <td><code>200</code></td>
-            <td>
-              <code>700</code>
-            </td>
-          </tr>
-          <tr>
-            <td><code class="text-success">element</code></td>
-            <td><code>800</code></td>
-            <td>
-              <code>300</code>
-            </td>
-          </tr>
-        </tbody>
-      </table>
       <h3>Icon</h3>
       <p>
         Toasts with the <code>success</code> variant contain a corresponding
@@ -200,6 +110,66 @@
         >
         <code>box-shadow</code> utility classes.
       </p>
+
+      <h2 id="variants">Variants</h2>
+      <h3>Default</h3>
+      <p>
+        Toasts by default do not have a semantic color associated with them. For
+        this reason, they are used in rare cases to convey timely, non-critical
+        feedback.
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BToast v-model="active">
+              <template #title>
+                <div class="flex-fill">Title</div>
+              </template>
+              Body
+            </BToast>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BToast v-model="active">
+  &lt;template #title>
+    &lt;div class="flex-fill">Title&lt;/div>
+  &lt;/template>
+  Body
+&lt;/BToast>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
+      <h3>Success</h3>
+      <p>
+        Toasts with the <code>success</code> variant confirm that simple user
+        actions have completed as intended, and do not require additional
+        attention. This variant carries the semantic color green.
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BToast v-model="active" variant="success">
+              <template #title>
+                <div class="flex-fill">Title</div>
+              </template>
+              Body
+            </BToast>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BToast v-model="active" variant="success">
+  &lt;template #title>
+    &lt;div class="flex-fill">Title&lt;/div>
+  &lt;/template>
+  Body
+&lt;/BToast>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
       <h2 id="placement">Placement</h2>
       <h3>Position</h3>
       <p>
@@ -421,6 +391,7 @@ export default {
   data() {
     return {
       pageTitle: "Toast",
+      active: true,
     };
   },
 };
