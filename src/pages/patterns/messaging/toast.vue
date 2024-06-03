@@ -1,19 +1,11 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/patterns/">Patterns</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/messaging/">Messaging</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
+        <BBreadcrumbItem to="#/patterns/messaging">Messaging</BBreadcrumbItem>
+        <BBreadcrumbItem active>Toast</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
     <template #lead>
       Toasts give timely feedback about non-critical information that does not
@@ -83,34 +75,42 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <p>Message here</p>
+            <BToast v-model="active" variant="success">
+              <template #title> Title </template>
+              Body
+            </BToast>
           </template>
-          <template #markup>
+          <template #vue>
             <pre class="language-html">
-<code>&lt;sol-toast variant="success">
-  Added to plan
-&lt;/sol-toast>
+<code>&lt;BToast v-model="active" variant="success">
+  &lt;template #title> Title &lt;/template>
+  Body
+&lt;/BToast>
 </code></pre>
           </template>
         </CodeBlock>
       </div>
       <h3>Neutral</h3>
       <p>
-        Toasts with the <code>neutral</code> variant can be used in rare cases
-        to convey timely, non-critical feedback that does not make sense as a
+        Toasts with <code>variant</code> omitted, can be used in rare cases to
+        convey timely, non-critical feedback that does not make sense as a
         <code>success</code>. Rather than a semantic color, this variant appears
         in gray.
       </p>
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <p>Internet disconnect</p>
+            <BToast v-model="active">
+              <template #title> Title </template>
+              Body
+            </BToast>
           </template>
-          <template #markup>
+          <template #vue>
             <pre class="language-html">
-<code>&lt;sol-toast variant="success">
-  Internet disconnect
-&lt;/sol-toast>
+<code>&lt;BToast v-model="active">
+  &lt;template #title> Title &lt;/template>
+  Body
+&lt;/BToast>
 </code></pre>
           </template>
         </CodeBlock>
@@ -421,6 +421,7 @@ export default {
   data() {
     return {
       pageTitle: "Toast",
+      active: true,
     };
   },
 };

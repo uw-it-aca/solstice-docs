@@ -1,19 +1,11 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/patterns/">Patterns</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/messaging/">Messaging</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
+        <BBreadcrumbItem to="#/patterns/messaging">Messaging</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
     <template #head>
       <h1 class="fw-bold">{{ pageTitle }}</h1>
@@ -98,19 +90,12 @@
           <template #preview>
             <BAlert variant="danger" :model-value="true" class="small"
               ><i class="bi-exclamation-octagon-fill me-1"></i> Critical Alert
-              <BLink
-                class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2"
-                to="/"
-              >
-                Call to action
-              </BLink>
             </BAlert>
           </template>
           <template #bootstrap>
             <pre class="language-html">
 <code>&lt;div class="alert alert-danger small" role="alert" aria-live="polite" aria-atomic="true">
   &lt;i class="bi-exclamation-octagon-fill me-1">&lt;/i> Critical Alert
-  &lt;a href="/" class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2">Call to action&lt;/a>
 &lt;/div>
 </code></pre>
           </template>
@@ -118,7 +103,6 @@
             <pre class="language-html">
 <code>&lt;BAlert variant="danger" :model-value="true" class="small">
   &lt;i class="bi-exclamation-octagon-fill me-1">&lt;/i> Critical Alert
-  &lt;BLink class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2" to="/">Call to action&lt;/BLink>
 &lt;/BAlert>
 </code></pre>
           </template>
@@ -138,19 +122,12 @@
           <template #preview>
             <BAlert variant="warning" :model-value="true" class="small"
               ><i class="bi-exclamation-triangle-fill me-1"></i> Warning Alert
-              <BButton
-                size="sm"
-                variant="warning"
-                class="rounded-3 position-absolute top-50 end-0 translate-middle-y me-2"
-                >Call to action</BButton
-              >
             </BAlert>
           </template>
           <template #bootstrap>
             <pre class="language-html">
 <code>&lt;div class="alert alert-warning small" role="alert" aria-live="polite" aria-atomic="true">
   &lt;i class="bi-exclamation-triangle-fill me-1">&lt;/i> Warning Alert
-  &lt;button class="btn btn-sm btn-warning rounded-3 position-absolute top-50 end-0 translate-middle-y me-2" type="button">Call to action&lt;/button>
 &lt;/div>
 </code></pre>
           </template>
@@ -158,7 +135,6 @@
             <pre class="language-html">
 <code>&lt;BAlert variant="warning" :model-value="true" class="small">
   &lt;i class="bi-exclamation-triangle-fill me-1">&lt;/i> Warning Alert
-  &lt;BButton size="sm" variant="warning" class="rounded-3 position-absolute top-50 end-0 translate-middle-y me-2">Call to action&lt;/BButton>
 &lt;/BAlert>
 </code></pre>
           </template>
@@ -173,21 +149,20 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BAlert variant="info" dismissible :model-value="true" class="small"
+            <BAlert variant="info" :model-value="true" class="small"
               ><i class="bi-exclamation-circle-fill me-1"></i> Info Alert
             </BAlert>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;div class="alert alert-info alert-dismissible small" role="alert" aria-live="polite" aria-atomic="true">
+<code>&lt;div class="alert alert-info small" role="alert" aria-live="polite" aria-atomic="true">
   &lt;i class="bi-exclamation-circle-fill me-1">&lt;/i> Info Alert
-  &lt;button type="button" class="btn-close" aria-label="Close">&lt;/button>
 &lt;/div>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BAlert variant="info" dismissible :model-value="true" class="small">
+<code>&lt;BAlert variant="info" :model-value="true" class="small">
   &lt;i class="bi-exclamation-circle-fill me-1">&lt;/i> Info Alert
 &lt;/BAlert>
 </code></pre>
@@ -212,13 +187,37 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <p>Call to action alert here</p>
+            <BAlert variant="danger" :model-value="true" class="small">
+              <i class="bi-exclamation-octagon-fill me-1"></i> Critical Alert
+              <BLink
+                class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2"
+                to="/"
+                >Call to action</BLink
+              >
+            </BAlert>
+            <BAlert variant="warning" :model-value="true" class="small">
+              <i class="bi-exclamation-octagon-fill me-1"></i> Critical Alert
+              <BLink
+                class="btn btn-warning btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2"
+                to="/"
+                >Call to action</BLink
+              >
+            </BAlert>
           </template>
-          <template #markup>
+          <template #bootstrap>
             <pre class="language-html">
-<code>&lt;sol-alert variant="warning" has-cta="true" cta-url="[url]" cta-
-  label="Call to action"> This Alert requires further action.
-&lt;/sol-alert>
+<code>&lt;div class="alert alert-danger small" role="alert" aria-live="polite" aria-atomic="true">
+  &lt;i class="bi-exclamation-octagon-fill me-1">&lt;/i> Critical Alert
+  &lt;a href="/" class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2">Call to action&lt;/a>
+&lt;/div>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BAlert variant="danger" :model-value="true" class="small">
+  &lt;i class="bi-exclamation-octagon-fill me-1">&lt;/i> Critical Alert
+  &lt;BLink class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2" to="/">Call to action&lt;/BLink>
+&lt;/BAlert>
 </code></pre>
           </template>
         </CodeBlock>
@@ -247,6 +246,13 @@
             >
               <i class="bi-exclamation-circle-fill me-1"></i> Info Alert
             </BAlert>
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;div class="alert alert-info alert-dismissible small" role="alert" aria-live="polite" aria-atomic="true">
+  &lt;i class="bi-exclamation-circle-fill me-1">&lt;/i> Info Alert &lt;button type="button" class="btn-close" aria-label="Close">&lt;/button>
+&lt;/div>
+</code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
@@ -520,7 +526,7 @@
         </tbody>
       </table>
     </template>
-    <template #author>Diego Bejarano</template>
+    <template #author>Ben Yamron</template>
   </Layout>
 </template>
 

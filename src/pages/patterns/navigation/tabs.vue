@@ -1,28 +1,80 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #lead> asdfads </template>
+    <template #breadcrumb>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
+        <BBreadcrumbItem to="/patterns/navigation">Navigation</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
+    </template>
+    <template #head>
+      <h1 class="fw-bold">{{ pageTitle }}</h1>
+      <hr class="w-50 d-inline-block" />
+    </template>
+    <template #lead>
+      Tabs Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum eos
+      provident praesentium ipsum sed aperiam aliquam quibusdam voluptatem
+      corrupti, reprehenderit illum. Nobis quia incidunt non officia nihil id
+      perferendis molestiae?
+    </template>
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#variants"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Variants</a
+              >
+            </li>
+            <li>
+              <a
+                href="#options"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Options</a
+              >
+            </li>
+            <li>
+              <a
+                href="#anatomy"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Anatomy</a
+              >
+            </li>
+            <li>
+              <a
+                href="#placement"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Placement</a
+              >
+            </li>
+            <li>
+              <a
+                href="#states"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >States</a
+              >
+            </li>
+            <li>
+              <a
+                href="#practices"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Best Practices</a
+              >
+            </li>
+            <li>
+              <a
+                href="#implementation"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Implementation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
+    </template>
     <template #content>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/navigation/">Navigation</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">Tabs</li>
-        </ol>
-      </nav>
-
-      <h1>Tabs</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
-        Tabs Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum eos
-        provident praesentium ipsum sed aperiam aliquam quibusdam voluptatem
-        corrupti, reprehenderit illum. Nobis quia incidunt non officia nihil id
-        perferendis molestiae?
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
       <p>
         APG:
         <a
@@ -219,7 +271,9 @@ export default {
     CodeBlock,
   },
   data() {
-    return {};
+    return {
+      pageTitle: "Tabs",
+    };
   },
 };
 </script>
