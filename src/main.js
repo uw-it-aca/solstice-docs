@@ -15,7 +15,7 @@ import "solstice-vue/dist/style.css";
 import "solstice-vue/dist/solstice.scss";
 
 // bootstrap-vue-next css
-import "bootstrap-vue-next/dist/bootstrap-vue-next.css";
+// import "bootstrap-vue-next/dist/bootstrap-vue-next.css";
 
 // app specific scss
 //import "@/assets/css/styles.scss";
