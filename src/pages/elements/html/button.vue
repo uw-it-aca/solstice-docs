@@ -1,19 +1,11 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/elements/">Elements</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="/elements/base/">Base</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/elements">UI Elements</BBreadcrumbItem>
+        <BBreadcrumbItem to="/elements/html">HTML</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
     <template #lead>
       This is a component... Lorem ipsum dolor sit amet, consectetur adipisicing

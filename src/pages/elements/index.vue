@@ -10,10 +10,10 @@
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
-            :name="'Base'"
-            :link="'/elements/base'"
+            :name="'HTML'"
+            :link="'/elements/html'"
             class="bg-light"
-            >Base Elements are the foundation of everything we
+            >HTML Elements are the foundation of everything we
             build.</DescriptionBlock
           >
         </li>

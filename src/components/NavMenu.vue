@@ -194,12 +194,12 @@
             <router-link
               class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
-              to="/elements/base/"
+              to="/elements/html/"
               id="elementsBaseHeading"
               data-bs-toggle="collapse"
               data-bs-target="#elementsBaseCollapse"
               :aria-expanded="
-                $route.path.includes('/elements/base/') ? true : false
+                $route.path.includes('/elements/html/') ? true : false
               "
               aria-controls="elementsBaseCollapse"
             >
@@ -209,7 +209,7 @@
             <div
               id="elementsBaseCollapse"
               class="collapse"
-              :class="$route.path.includes('/elements/base/') ? 'show' : ''"
+              :class="$route.path.includes('/elements/html/') ? 'show' : ''"
               aria-labelledby="elementsBaseHeading"
             >
               <ul class="nav flex-column fw-light mt-1">
@@ -218,7 +218,7 @@
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
-                    to="/elements/base/link"
+                    to="/elements/html/link"
                     >Link</router-link
                   >
                 </li>
@@ -227,7 +227,7 @@
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
-                    to="/elements/base/button"
+                    to="/elements/html/button"
                     >Button</router-link
                   >
                 </li>
@@ -434,15 +434,6 @@
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/surface/panel"
                     >Panel</router-link
-                  >
-                </li>
-                <li v-if="isDev" class="nav-item mb-1">
-                  <router-link
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
-                    to="/patterns/disclosure"
-                    >Disclosure</router-link
                   >
                 </li>
               </ul>
