@@ -65,7 +65,6 @@
       </PageContents>
     </template>
     <template #content>
-
       <h2 id="anatomy">Anatomy</h2>
       <h3>Sizing</h3>
       <p>
@@ -123,14 +122,18 @@
         <CodeBlock>
           <template #preview>
             <BToast v-model="active">
-              <template #title> Title </template>
+              <template #title>
+                <div class="flex-fill">Title</div>
+              </template>
               Body
             </BToast>
           </template>
           <template #vue>
             <pre class="language-html">
 <code>&lt;BToast v-model="active">
-  &lt;template #title> Title &lt;/template>
+  &lt;template #title>
+    &lt;div class="flex-fill">Title&lt;/div>
+  &lt;/template>
   Body
 &lt;/BToast>
 </code></pre>
@@ -148,14 +151,18 @@
         <CodeBlock>
           <template #preview>
             <BToast v-model="active" variant="success">
-              <template #title> Title </template>
+              <template #title>
+                <div class="flex-fill">Title</div>
+              </template>
               Body
             </BToast>
           </template>
           <template #vue>
             <pre class="language-html">
 <code>&lt;BToast v-model="active" variant="success">
-  &lt;template #title> Title &lt;/template>
+  &lt;template #title>
+    &lt;div class="flex-fill">Title&lt;/div>
+  &lt;/template>
   Body
 &lt;/BToast>
 </code></pre>
