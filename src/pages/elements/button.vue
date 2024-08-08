@@ -144,7 +144,6 @@
 <script>
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
-import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 import { BBreadcrumb, BBreadcrumbItem, BButton } from "bootstrap-vue-next";
 
@@ -154,7 +153,6 @@ export default {
   components: {
     Layout,
     CodeBlock,
-    UsageBlock,
     PageContents,
     BBreadcrumb,
     BBreadcrumbItem,

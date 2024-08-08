@@ -7,16 +7,16 @@
       consectetur ea dolores vero sint. Porro, quaerat.
     </template>
     <template #content>
-      <h2 id="heading1">Heading1 </h2>
+      <h2 id="heading1">Heading1</h2>
       <p>Go to <a href="/_templates/component">Component</a></p>
 
-      <h2 id="heading2">Heading2 </h2>
+      <h2 id="heading2">Heading2</h2>
       <p>Go to <a href="/_templates/component">Component</a></p>
 
-      <h2 id="heading3">Heading3 </h2>
+      <h2 id="heading3">Heading3</h2>
       <p>Go to <a href="/_templates/component">Component</a></p>
 
-      <h2 id="heading4">Heading3 </h2>
+      <h2 id="heading4">Heading3</h2>
       <p>Go to <a href="/_templates/component">Component</a></p>
     </template>
     <template #author>Charlon Palacay</template>

@@ -49,7 +49,7 @@
           >
         </li>
       </ul>
-      <hr>
+      <hr />
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
