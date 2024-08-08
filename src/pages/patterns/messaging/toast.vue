@@ -77,7 +77,7 @@
       <h3>Color</h3>
       <p>
         Alerts always carry a semantic meaning with a corresponding color:
-        <code>critical</code> (red), <code>warning</code> (yellow), or
+        <code>danger</code> (red), <code>warning</code> (yellow), or
         <code>info</code> (blue). Refer to the Solstice
         <a href="color">Semantic Color Palette</a>
         for appropriate values.
@@ -383,11 +383,20 @@ import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
 import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
+import { BBreadcrumb, BBreadcrumbItem, BToast } from "bootstrap-vue-next";
 
 export default {
   name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
   inject: ["mq"],
-  components: { Layout, CodeBlock, UsageBlock, PageContents },
+  components: {
+    Layout,
+    CodeBlock,
+    UsageBlock,
+    PageContents,
+    BBreadcrumb,
+    BBreadcrumbItem,
+    BToast,
+  },
   data() {
     return {
       pageTitle: "Toast",

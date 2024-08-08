@@ -58,7 +58,7 @@
       </PageContents>
     </template>
     <template #content>
-      <h2 id="heading1">Heading1 (h2)</h2>
+      <h2 id="heading1">Heading1 </h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga
         corporis totam eligendi molestiae ex aperiam soluta, consectetur
@@ -66,21 +66,21 @@
         architecto libero enim tempore!
       </p>
 
-      <h2 id="heading2">Heading2 (h2)</h2>
+      <h2 id="heading2">Heading2 </h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quibusdam
         doloremque quaerat nulla enim, magni ut pariatur est dolorum ullam sint
         rerum odio hic perspiciatis, commodi adipisci, vero sapiente impedit?
       </p>
 
-      <h2 id="heading3">Heading3 (h2)</h2>
+      <h2 id="heading3">Heading3 </h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, sit, quo
         ab pariatur, recusandae obcaecati necessitatibus doloribus ad a dolor
         minus saepe? Quaerat cupiditate ipsa ut nulla nostrum ex aut!
       </p>
 
-      <h2 id="heading4">Heading3 (h2)</h2>
+      <h2 id="heading4">Heading3 </h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
         facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo

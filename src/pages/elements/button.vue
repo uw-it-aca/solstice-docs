@@ -2,15 +2,15 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/_templates">Templates</BBreadcrumbItem>
+        <BBreadcrumbItem to="/elements">UI Elements</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
-      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
-      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
-      aliquam!
+      This is a component... Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Laudantium ad, dolores repudiandae natus dolorem recusandae!
+      Incidunt consequatur tenetur ad totam, placeat ipsa explicabo, eaque id
+      blanditiis libero culpa veniam aliquam!
     </template>
     <template #toc>
       <PageContents>
@@ -65,24 +65,54 @@
     <template #content>
       <h2 id="anatomy">Anatomy</h2>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, sit, quo
-        ab pariatur, recusandae obcaecati necessitatibus doloribus ad a dolor
-        minus saepe? Quaerat cupiditate ipsa ut nulla nostrum ex aut!
-      </p>
-      <h2 id="variants">Variants</h2>
-      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga
         corporis totam eligendi molestiae ex aperiam soluta, consectetur
         accusamus accusantium officia praesentium, magni numquam sunt minus
         architecto libero enim tempore!
       </p>
 
+      <h2 id="variants">Variants</h2>
+      <h3>Default</h3>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BButton variant="primary" class="rounded-3">Primary</BButton>
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;button class="btn btn-primary rounded-3" type="button">Button&lt;/button>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BButton variant="primary" class="rounded-3">Button&lt;/BButton>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
       <h2 id="options">Options</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quibusdam
-        doloremque quaerat nulla enim, magni ut pariatur est dolorum ullam sint
-        rerum odio hic perspiciatis, commodi adipisci, vero sapiente impedit?
-      </p>
+      <h3>Sizing</h3>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BButton variant="primary" size="sm" class="rounded-3"
+              >Small button</BButton
+            >
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;button class="btn btn-primary btn-sm rounded-3" type="button">Button&lt;/button>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BButton variant="primary" size="sm" class="rounded-3">Small button&lt;/BButton>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
       <h2 id="usage">Usage</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
@@ -113,23 +143,26 @@
 
 <script>
 import Layout from "@/layout.vue";
-// import CodeBlock from "@/components/CodeBlock.vue";
-// import UsageBlock from "@/components/UsageBlock.vue";
+import CodeBlock from "@/components/CodeBlock.vue";
+import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+import { BBreadcrumb, BBreadcrumbItem, BButton } from "bootstrap-vue-next";
 
 export default {
-  name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
+  name: "DocsElementsBaseButton" /* example: Docs--Folder--ComponentName */,
   inject: ["mq"],
   components: {
     Layout,
-    /* CodeBlock, UsageBlock, */ PageContents,
+    CodeBlock,
+    UsageBlock,
+    PageContents,
     BBreadcrumb,
     BBreadcrumbItem,
+    BButton,
   },
   data() {
     return {
-      pageTitle: "Component Name",
+      pageTitle: "Button",
     };
   },
 };

@@ -263,12 +263,15 @@
 <script>
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
+import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
 export default {
   name: "DocsPatternsTabs",
   components: {
     Layout,
     CodeBlock,
+    BBreadcrumb,
+    BBreadcrumbItem,
   },
   data() {
     return {

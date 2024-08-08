@@ -27,6 +27,14 @@
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Layout'"
+            :link="'/foundations/layout'"
+            class="bg-light"
+            >sdfgsdgsd</DescriptionBlock
+          >
+        </li>
       </ul>
     </template>
   </Layout>
@@ -37,7 +45,7 @@ import Layout from "@/layout.vue";
 import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {
-  name: "DocsFoundations",
+  name: "DocsFoundationsIndex",
   components: {
     Layout,
     DescriptionBlock,

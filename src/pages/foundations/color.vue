@@ -1,26 +1,18 @@
 <template>
   <Layout :page-title="pageTitle">
+    <template #breadcrumb>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/foundations">Foundations</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
+    </template>
+    <template #lead>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
+      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
+      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
+      aliquam!
+    </template>
     <template #content>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <sol-link href="/foundations/">Foundations</sol-link>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
-
-      <h2>{{ pageTitle }}</h2>
-
-      <p class="p-0 col-md-8 lead text-muted">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        consequuntur tempore amet consectetur minus autem corporis nostrum sit
-        sapiente cumque. Rem nisi quidem aspernatur doloremque id non natus
-        voluptas debitis!
-      </p>
-
       <p>
         <a
           href="https://getbootstrap.com/docs/5.1/customize/color/"
@@ -302,7 +294,7 @@
         form the core visual identity of the design system.
       </p>
 
-      <h4 class="fw-bold">Brand Accent</h4>
+      <h4 class="fw-bold">Accent</h4>
       <p>
         Use for communicating the UW brand, and can be used in highlighting in
         elements but should be used sparingly. The brand color is typically not
@@ -336,7 +328,7 @@
           </div>
           <small> #2f68cb</small>
         </li>
-        <li class="list-inline-item">
+        <!--<li class="list-inline-item">
           <div
             class="text-bg-action rounded p-2"
             style="width: 120px; height: 60px"
@@ -344,7 +336,7 @@
             action
           </div>
           <small> #2f68cb</small>
-        </li>
+        </li>-->
         <li class="list-inline-item">
           <div
             class="text-bg-secondary rounded p-2"
@@ -382,7 +374,7 @@
           </div>
           <small> #cb444a</small>
         </li>
-        <li class="list-inline-item">
+        <!--<li class="list-inline-item">
           <div
             class="text-bg-critical rounded p-2"
             style="width: 120px; height: 60px"
@@ -390,7 +382,7 @@
             critical
           </div>
           <small> #cb444a</small>
-        </li>
+        </li>-->
         <li class="list-inline-item">
           <div
             class="text-bg-warning rounded p-2"
@@ -538,10 +530,11 @@
 
 <script>
 import Layout from "@/layout.vue";
+import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
 export default {
   name: "DocsColor",
-  components: { Layout },
+  components: { Layout, BBreadcrumb, BBreadcrumbItem },
   data() {
     return {
       pageTitle: "Color",
