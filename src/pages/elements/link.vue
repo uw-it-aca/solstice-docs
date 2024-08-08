@@ -3,7 +3,6 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/elements">UI Elements</BBreadcrumbItem>
-        <BBreadcrumbItem to="/elements/html">HTML</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -19,6 +18,13 @@
           <ul class="list-unstyled m-0">
             <li>
               <a
+                href="#anatomy"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Anatomy</a
+              >
+            </li>
+            <li>
+              <a
                 href="#variants"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
                 >Variants</a
@@ -29,13 +35,6 @@
                 href="#options"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
                 >Options</a
-              >
-            </li>
-            <li>
-              <a
-                href="#anatomy"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
-                >Anatomy</a
               >
             </li>
             <li>
@@ -65,6 +64,53 @@
     </template>
 
     <template #content>
+      <h2 id="anatomy">Anatomy</h2>
+      <h3>Sizing</h3>
+      <p>A link should inherit the size of its parent.</p>
+
+      <h3>Color</h3>
+      <p>
+        All link variants are blue by default. Light and dark variants exist for
+        use on colored backgrounds where the default blue does not meet the
+        minimum contrast ratio of 4.5:1.
+      </p>
+
+      <h3>Dark Mode Support</h3>
+      <p>
+        Links must maintain proper contrast in order to be readable in both
+        light and dark modes. If a link's background switches between modes, its
+        color should too. If the background remains constant, the link color
+        stays the same. In most cases, this means that primary blue links will
+        change, while light and dark variants used on static colored backgrounds
+        will not.
+      </p>
+      <table class="table my-5">
+        <thead>
+          <tr>
+            <th scope="col">Property</th>
+            <th scope="col">Light Mode (default)</th>
+            <th scope="col">Dark Mode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>default</code></td>
+            <td>asdfas</td>
+            <td>afda</td>
+          </tr>
+          <tr>
+            <td><code>light</code></td>
+            <td>asdfasdf</td>
+            <td>asdfasdf</td>
+          </tr>
+          <tr>
+            <td><code>dark</code></td>
+            <td>asdf</td>
+            <td>asdfasdf</td>
+          </tr>
+        </tbody>
+      </table>
+
       <h2 id="variants">Variants</h2>
 
       <h3>Default</h3>
@@ -95,6 +141,7 @@
             <pre class="language-html">
 <code>&lt;BLink to="/">Soltice Design System&lt;/BLink></code></pre>
           </template>
+          <template #blah>asaf</template>
         </CodeBlock>
       </div>
 
@@ -116,7 +163,6 @@
                 color="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
                 >link component</sol-link
               >. Goodbye!
-
               <BLink
                 :variant="'light'"
                 class="link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
@@ -258,53 +304,6 @@
           </template>
         </CodeBlock>
       </div>
-
-      <h2 id="anatomy">Anatomy</h2>
-      <h3>Sizing</h3>
-      <p>A link should inherit the size of its parent.</p>
-
-      <h3>Color</h3>
-      <p>
-        All link variants are blue by default. Light and dark variants exist for
-        use on colored backgrounds where the default blue does not meet the
-        minimum contrast ratio of 4.5:1.
-      </p>
-
-      <h3>Dark Mode Support</h3>
-      <p>
-        Links must maintain proper contrast in order to be readable in both
-        light and dark modes. If a link's background switches between modes, its
-        color should too. If the background remains constant, the link color
-        stays the same. In most cases, this means that primary blue links will
-        change, while light and dark variants used on static colored backgrounds
-        will not.
-      </p>
-      <table class="table my-5">
-        <thead>
-          <tr>
-            <th scope="col">Property</th>
-            <th scope="col">Light Mode (default)</th>
-            <th scope="col">Dark Mode</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>default</code></td>
-            <td>asdfas</td>
-            <td>afda</td>
-          </tr>
-          <tr>
-            <td><code>light</code></td>
-            <td>asdfasdf</td>
-            <td>asdfasdf</td>
-          </tr>
-          <tr>
-            <td><code>dark</code></td>
-            <td>asdf</td>
-            <td>asdfasdf</td>
-          </tr>
-        </tbody>
-      </table>
 
       <h2 id="usage">Usage</h2>
       <h3>Behavior</h3>
@@ -516,10 +515,20 @@ import CodeBlock from "@/components/CodeBlock.vue";
 import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 
+import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
+
 export default {
   name: "DocsElementsIndex",
   inject: ["mq"],
-  components: { Layout, CodeBlock, UsageBlock, PageContents },
+  components: {
+    Layout,
+    CodeBlock,
+    UsageBlock,
+    PageContents,
+    BBreadcrumb,
+    BBreadcrumbItem,
+    BLink,
+  },
   data() {
     return {
       pageTitle: "Link",

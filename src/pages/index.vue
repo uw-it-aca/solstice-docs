@@ -34,8 +34,8 @@
           </p>
 
           <p>
-            <sol-link href="/getting-started/solstice-101"
-              >Learn about our design system</sol-link
+            <BLink to="/getting-started/solstice-101"
+              >Learn about our design system</BLink
             >
           </p>
         </div>
@@ -43,32 +43,42 @@
 
       <div class="row mb-5">
         <div class="col d-flex flex-column">
-          <axdd-panel class="bg-body-tertiary flex-fill">
+          <BCard
+            class="bg-body-tertiary rounded-3"
+            header-bg-variant="transparent"
+            border-variant="0"
+            body-class="p-4"
+          >
             <h3 class="card-title">Design with Solstice</h3>
             <p class="flex-fill">
               Learn how to create global components that can be used by other
               applications as well as creating brand new applications.
             </p>
             <div class="text-end">
-              <sol-link href="/getting-started/design-with-solstice"
-                >View Design with Solstice</sol-link
+              <BLink to="/getting-started/design-with-solstice"
+                >View Design with Solstice</BLink
               >
             </div>
-          </axdd-panel>
+          </BCard>
         </div>
         <div v-if="isDev" class="col d-flex flex-column">
-          <axdd-panel class="bg-body-tertiary flex-fill">
+          <BCard
+            class="bg-body-tertiary rounded-3"
+            header-bg-variant="transparent"
+            border-variant="0"
+            body-class="p-4"
+          >
             <h3 class="card-title">Installation &amp; Setup</h3>
-            <p>
+            <p class="flex-fill">
               Learn how to create global components that can be used by other
               applications as well as creating brand new applications.
             </p>
             <div class="text-end">
-              <sol-link href="/getting-started/installation-setup"
-                >View Installation &amp; Setup</sol-link
+              <BLink to="/getting-started/installation-setup"
+                >View Installation &amp; Setup</BLink
               >
             </div>
-          </axdd-panel>
+          </BCard>
         </div>
       </div>
 
@@ -129,11 +139,14 @@
 <script>
 import { getDevEnv } from "@/utils/global";
 import Layout from "@/layout.vue";
+import { BCard, BLink } from "bootstrap-vue-next";
 
 export default {
   name: "DocsIndex",
   components: {
     Layout,
+    BCard,
+    BLink,
   },
   data() {
     return {
