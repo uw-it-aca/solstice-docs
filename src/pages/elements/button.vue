@@ -44,23 +44,23 @@
             </li>
             <li>
               <a
-                href="#usage"
+                href="#inactive"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Usage</a
+                >Inactive buttons</a
               >
             </li>
             <li>
               <a
-                href="#accessibility"
+                href="#color"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Accessibility</a
+                >Color</a
               >
             </li>
             <li>
               <a
-                href="#implementation"
+                href="#button-groups"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Implementation</a
+                >Button groups</a
               >
             </li>
           </ul>
@@ -197,16 +197,50 @@
           </template>
         </CodeBlock>
       </div>
-
-      <h2 id="usage">Usage</h2>
+      <h3>Icons</h3>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-        facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
-        placeat totam dolorem suscipit est sunt eum, debitis exercitationem
-        voluptate ducimus repellat necessitatibus?
+        By default, not all buttons need an icon, but in some cases including an
+        icon may add context or make a button more identifiable (like a
+        magnifying glass icon in a search button). Typically, the icon should be
+        a leading visual before the text. In some cases, buttons may need a
+        trailing visual (like a dropdown arrow). If buttons are part of a group,
+        icons should be aligned (all buttons have an icon or none of them have
+        an icon). For icon-only buttons -- for example a hamburger or a meatball
+        menu, or page forward/backward buttons -- they must be labelled
+        correctly in markup for assistive technologies, and they should have a
+        tooltip in the UI with a text label.
       </p>
 
-      <h2 id="accessibility">Accessibility</h2>
+      <h2 id="inactive">Inactive state</h2>
+      <p>
+        Set the <code>disabled</code> prop to make the button inactive. Use
+        inactive buttons to communicate the particular action of the button
+        cannot be made until other tasks are completed, such as all fields must
+        be entered on a form before the 'submit' action is active.
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BButton disabled variant="primary" class="rounded-3"
+              >Inactive</BButton
+            >
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;button class="btn btn-link" type="button" disabled>Button&lt;/button>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BButton disabled variant="primary">Inactive&lt;/BButton>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+      <h2 id="color">Color</h2>
+      <p>Need to define button colors...</p>
+
+      <h2 id="button-groups">Button groups</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
         facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
