@@ -1,27 +1,18 @@
 <template>
   <Layout :page-title="pageTitle">
+    <template #breadcrumb>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/foundations">Foundations</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
+    </template>
+    <template #lead>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
+      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
+      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
+      aliquam!
+    </template>
     <template #content>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/foundations/">Foundations</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
-      <h1>{{ pageTitle }}</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
-        The Solstice Design System uses Encode Sans Regular as a primary
-        typeface and Open Sans as a secondary typeface. These two typefaces were
-        chosen for their readability and alignment with the University of
-        Washington's brand.
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
       <p class="text-danger">
         All following content is still TBD
         <br />
@@ -71,10 +62,11 @@
 <script>
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
+import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
 export default {
-  name: "DocsTypography",
-  components: { Layout, CodeBlock },
+  name: "DocsFoundationsTypography",
+  components: { Layout, CodeBlock, BBreadcrumb, BBreadcrumbItem },
   data() {
     return {
       pageTitle: "Typography",

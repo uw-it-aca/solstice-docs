@@ -77,19 +77,19 @@
     </template>
     <template #content>
       <h2 id="variants">Variants</h2>
-      <h3>Critical</h3>
+      <h3>Danger</h3>
       <p>
-        Alerts with the <code>critical</code> variant are of the highest
+        Alerts with the <code>danger</code> variant are of the highest
         importance, and communicate that an item needs immediate attention, that
         a process is blocked, or that there has been an error. Whenever
-        possible, <code>critical</code> Alerts should include a call to action
-        to help the user resolve the issue.
+        possible, <code>danger</code> Alerts should include a call to action to
+        help the user resolve the issue.
       </p>
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
             <BAlert variant="danger" :model-value="true" class="small"
-              ><i class="bi-exclamation-octagon-fill me-1"></i> Critical Alert
+              ><i class="bi-exclamation-octagon-fill me-1"></i> Danger Alert
             </BAlert>
           </template>
           <template #bootstrap>
@@ -568,11 +568,26 @@ import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 import UsageBlock from "@/components/UsageBlock.vue";
+import {
+  BAlert,
+  BBreadcrumb,
+  BBreadcrumbItem,
+  BLink,
+} from "bootstrap-vue-next";
 
 export default {
   name: "DocsElementsAlert" /* example: Docs--Folder--ComponentName */,
   inject: ["mq"],
-  components: { Layout, CodeBlock, PageContents, UsageBlock },
+  components: {
+    Layout,
+    CodeBlock,
+    PageContents,
+    UsageBlock,
+    BAlert,
+    BBreadcrumb,
+    BBreadcrumbItem,
+    BLink,
+  },
   data() {
     return {
       pageTitle: "Alert",

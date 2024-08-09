@@ -16,8 +16,8 @@
       </nav>
     </template>
     <template #lead>
-      Topbar is takes heavy influence from MyUW's currently layout. It has a
-      header-based design meant to focus the user on the contents below.
+      Topbar takes heavy influence from MyUW's layout. It has a header-based
+      design meant to focus the user on the contents below.
     </template>
     <template #toc>
       <PageContents>
@@ -70,7 +70,7 @@
       </PageContents>
     </template>
     <template #content>
-      <h2 id="variants">Variants (h2)</h2>
+      <h2 id="variants">Variants</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga
         corporis totam eligendi molestiae ex aperiam soluta, consectetur
@@ -78,21 +78,21 @@
         architecto libero enim tempore!
       </p>
 
-      <h2 id="options">Options (h2)</h2>
+      <h2 id="options">Options</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quibusdam
         doloremque quaerat nulla enim, magni ut pariatur est dolorum ullam sint
         rerum odio hic perspiciatis, commodi adipisci, vero sapiente impedit?
       </p>
 
-      <h2 id="anatomy">Anatomy (h2)</h2>
+      <h2 id="anatomy">Anatomy</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, sit, quo
         ab pariatur, recusandae obcaecati necessitatibus doloribus ad a dolor
         minus saepe? Quaerat cupiditate ipsa ut nulla nostrum ex aut!
       </p>
 
-      <h2 id="usage">Usage (h2)</h2>
+      <h2 id="usage">Usage</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
         facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
@@ -110,7 +110,7 @@
         >
       </p>
 
-      <h2 id="implementation">Implementation (h2)</h2>
+      <h2 id="implementation">Implementation</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
         facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo

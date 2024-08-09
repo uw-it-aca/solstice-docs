@@ -31,16 +31,7 @@ app.use(Vue3Mq, {
 app.component("mq-responsive", MqResponsive);
 
 // bootstrap-vue-next
-app.use(
-  createBootstrap({
-    components: true,
-    directives: true,
-    aliases: {
-      SAlert: "BAlert",
-      SLink: "BLink",
-    },
-  })
-); // Change this line
+app.use(createBootstrap());
 
 // solstice-vue
 app.use(SolsticeVue);

@@ -10,16 +10,50 @@
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
-            :name="'HTML'"
-            :link="'/elements/html'"
-            class="bg-light"
-            >HTML Elements are the foundation of everything we
-            build.</DescriptionBlock
+            :name="'Link'"
+            :link="'/elements/link'"
+            :accessibility="true"
+            :version="'1.0.x'"
+            >Component description... Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</DescriptionBlock
           >
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Form'"
+            :name="'Button'"
+            :link="'/elements/button'"
+            :accessibility="true"
+            :version="'1.0.x'"
+            >Component description... Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Heading'"
+            :link="'/elements/heading'"
+            :accessibility="true"
+            :version="'1.0.x'"
+            >Component description... Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Paragraph'"
+            :link="'/elements/paragraph'"
+            :accessibility="true"
+            :version="'1.0.x'"
+            >Component description... Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</DescriptionBlock
+          >
+        </li>
+      </ul>
+      <hr />
+      <ul class="row list-unstyled">
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Form Inputs'"
             :link="'/elements/form'"
             class="bg-light"
             >Form Elements are used for submitting data!</DescriptionBlock

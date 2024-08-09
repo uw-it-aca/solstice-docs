@@ -159,6 +159,15 @@
               >Typography</router-link
             >
           </li>
+          <li class="nav-item mb-1">
+            <router-link
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
+              exact-active-class="bg-black bg-opacity-10"
+              to="/foundations/layout"
+              >Layout</router-link
+            >
+          </li>
         </ul>
       </div>
     </li>
@@ -192,47 +201,21 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <router-link
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
-              to="/elements/html/"
-              id="elementsBaseHeading"
-              data-bs-toggle="collapse"
-              data-bs-target="#elementsBaseCollapse"
-              :aria-expanded="
-                $route.path.includes('/elements/html/') ? true : false
-              "
-              aria-controls="elementsBaseCollapse"
+              to="/elements/link"
+              >Link</router-link
             >
-              <span>HTML</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
-            </router-link>
-            <div
-              id="elementsBaseCollapse"
-              class="collapse"
-              :class="$route.path.includes('/elements/html/') ? 'show' : ''"
-              aria-labelledby="elementsBaseHeading"
+          </li>
+          <li v-if="isDev" class="nav-item mb-1">
+            <router-link
+              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.6"
+              exact-active-class="bg-black bg-opacity-10"
+              to="/elements/button"
+              >Button</router-link
             >
-              <ul class="nav flex-column fw-light mt-1">
-                <li class="nav-item mb-1">
-                  <router-link
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
-                    to="/elements/html/link"
-                    >Link</router-link
-                  >
-                </li>
-                <li v-if="isDev" class="nav-item mb-1">
-                  <router-link
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
-                    to="/elements/html/button"
-                    >Button</router-link
-                  >
-                </li>
-              </ul>
-            </div>
           </li>
           <li v-if="isDev" class="nav-item mb-1">
             <router-link
@@ -247,7 +230,7 @@
               "
               aria-controls="elementsFormCollapse"
             >
-              <span>Form Input</span>
+              <span>Forms</span>
               <i class="bi bi-chevron-right" aria-hidden="true"></i>
             </router-link>
             <div
@@ -262,8 +245,8 @@
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
-                    to="/elements/form/asdf"
-                    >sadfasdf</router-link
+                    to="/elements/form/input"
+                    >Input</router-link
                   >
                 </li>
                 <li v-if="isDev" class="nav-item mb-1">
@@ -271,8 +254,44 @@
                     class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
-                    to="/elements/form/asdf"
-                    >asdfasdf</router-link
+                    to="/elements/form/label"
+                    >Label</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/elements/form/select"
+                    >Select</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/elements/form/select"
+                    >Textarea</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/elements/form/select"
+                    >Button</router-link
+                  >
+                </li>
+                <li v-if="isDev" class="nav-item mb-1">
+                  <router-link
+                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.6"
+                    exact-active-class="bg-black bg-opacity-10"
+                    to="/elements/form/select"
+                    >Fieldset</router-link
                   >
                 </li>
               </ul>
