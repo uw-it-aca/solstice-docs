@@ -224,158 +224,76 @@
       <h2>Body</h2>
       <CodeBlock>
         <template #preview>
-          <axdd-card style="max-width: 600px">
-            <template #body
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit</template
-            >
-          </axdd-card>
-        </template>
-        <template #markup>
-          <pre class="language-html">
-<code>&lt;axdd-card>
-  &lt;template #body>card body&lt;/template>
-&lt;/axdd-card></code></pre>
-        </template>
-        <template #script>
-          <pre class="language-js rounded">
-<code>import { Card } from "solstice-vue";
-
-export default {
-  components: {
-    "axdd-card": Card,
-  },
-};</code></pre>
+          <BCard style="max-width: 600px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </BCard>
         </template>
       </CodeBlock>
 
-      <h2>Body + Heading</h2>
+      <h2>Body + Header</h2>
       <CodeBlock>
         <template #preview>
-          <axdd-card style="max-width: 600px">
-            <template #heading>
-              <axdd-card-heading :level="3">Heading</axdd-card-heading>
+          <BCard
+            class="shadow-sm rounded-3"
+            header-bg-variant="transparent"
+            style="max-width: 600px"
+          >
+            <template #header>
+              <h6>Header</h6>
             </template>
-            <template #body>card body</template>
-          </axdd-card>
-        </template>
-        <template #markup>
-          <pre class="language-html">
-<code>&lt;axdd-card>
-  &lt;template #heading>
-    &lt;axdd-card-heading :level="3">Heading&lt;/axdd-card-heading>
-  &lt;/template>
-  &lt;template #body>card body&lt;/template>
-&lt;/axdd-card></code></pre>
-        </template>
-        <template #script>
-          <pre class="language-js rounded">
-<code>import { Card, CardHeading } from "solstice-vue";
-
-export default {
-  components: {
-    "axdd-card": Card,
-    "axdd-card-heading": CardHeadng,
-  },
-};</code></pre>
+            card body
+          </BCard>
         </template>
       </CodeBlock>
 
-      <h2>Body + Heading Action</h2>
+      <h2>Body + Header Action</h2>
       <CodeBlock>
         <template #preview>
-          <axdd-card style="max-width: 600px">
-            <template #heading-action>
-              <axdd-card-heading :level="3">Heading</axdd-card-heading>
-              <axdd-card-action>
-                <a
-                  href="#"
-                  class="btn btn-dark-beige btn-sm"
-                  @click.prevent="greet"
-                  >Card heading action</a
-                >
-              </axdd-card-action>
+          <BCard
+            class="shadow-sm rounded-3"
+            header-bg-variant="transparent"
+            header-class="d-flex justify-content-between"
+            style="max-width: 600px"
+          >
+            <template #header>
+              <h6>Heading</h6>
+              <BButton variant="primary" size="sm">Action</BButton>
             </template>
-            <template #body>card body</template>
-          </axdd-card>
-        </template>
-        <template #markup>
-          <pre class="language-html">
-<code>&lt;axdd-card>
-  &lt;template #heading-action>
-    &lt;axdd-card-heading :level="3">Heading&lt;/axdd-card-heading>
-    &lt;axdd-card-action>
-      &lt;a href="#" @click.prevent="greet">Card heading action&lt;/a>
-    &lt;/axdd-card-action>
-  &lt;/template>
-  &lt;template #body>card body&lt;/template>
-&lt;/axdd-card></code></pre>
-        </template>
-        <template #script>
-          <pre class="language-js rounded">
-<code>import { Card, CardHeading, CardAction } from "solstice-vue";
-
-export default {
-  components: {
-    "axdd-card": Card,
-    "axdd-card-heading": CardHeadng,
-    "axdd-card-action": CardAction,
-  },
-};</code></pre>
+            card body
+          </BCard>
         </template>
       </CodeBlock>
-
       <p>this is a card w/ html as heading action</p>
 
       <CodeBlock>
         <template #preview>
-          <axdd-card style="max-width: 600px">
-            <template #heading-action>
-              <axdd-card-heading :level="3">Heading</axdd-card-heading>
-              <axdd-card-action>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control form-control-sm"
-                    placeholder="Search all students..."
-                    aria-label="Recipient's username"
-                    aria-describedby="button-addon2"
-                  />
-                  <button
-                    class="btn btn-sm btn-dark-beige"
-                    type="button"
-                    id="button-addon2"
-                  >
-                    Search
-                  </button>
-                </div>
-              </axdd-card-action>
+          <BCard
+            class="shadow-sm rounded-3"
+            header-bg-variant="transparent"
+            header-class="d-flex justify-content-between"
+            style="max-width: 600px"
+          >
+            <template #header>
+              <h6>Heading</h6>
+              <div class="input-group w-50">
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  placeholder="Search all students..."
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-sm btn-primary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Search
+                </button>
+              </div>
             </template>
-            <template #body>card body</template>
-          </axdd-card>
-        </template>
-        <template #markup>
-          <pre class="language-html">
-<code>&lt;axdd-card>
-  &lt;template #heading-action>
-    &lt;axdd-card-heading :level="3">Heading&lt;/axdd-card-heading>
-    &lt;axdd-card-action>
-      &lt;div class="input-group">... html markup&lt;/div>
-    &lt;/axdd-card-action>
-  &lt;/template>
-  &lt;template #body>card body&lt;/template>
-&lt;/axdd-card></code></pre>
-        </template>
-        <template #script>
-          <pre class="language-js rounded">
-<code>import { Card, CardHeading, CardAction } from "solstice-vue";
-
-export default {
-  components: {
-    "axdd-card": Card,
-    "axdd-card-heading": CardHeadng,
-    "axdd-card-action": CardAction,
-  },
-};</code></pre>
+            card body
+          </BCard>
         </template>
       </CodeBlock>
 
@@ -383,58 +301,59 @@ export default {
       <p>asdkfjalskdj</p>
       <CodeBlock>
         <template #preview>
-          <axdd-card style="max-width: 600px">
-            <template #heading-action>
-              <axdd-card-heading :level="3">Heading</axdd-card-heading>
-              <axdd-card-action>
-                <axdd-tabs-list
-                  :tabs-id="'example'"
-                  :variant="'pills'"
-                  class="small"
-                >
-                  <template #items>
-                    <axdd-tabs-item
-                      :tabs-id="'example'"
-                      :panel-id="'first'"
-                      :active-tab="true"
-                      :variant="'pills'"
-                    >
-                      Firstsss
-                    </axdd-tabs-item>
-                    <axdd-tabs-item
-                      :tabs-id="'example'"
-                      :panel-id="'second'"
-                      :variant="'pills'"
-                    >
-                      Second
-                    </axdd-tabs-item>
-                    <axdd-tabs-item
-                      :tabs-id="'example'"
-                      :panel-id="'third'"
-                      :variant="'pills'"
-                    >
-                      Third
-                    </axdd-tabs-item>
-                  </template>
-                </axdd-tabs-list>
-              </axdd-card-action>
-            </template>
-            <template #body>
-              <axdd-tabs-display :tabs-id="'example'">
-                <template #panels>
-                  <axdd-tabs-panel :panel-id="'first'" :active-panel="true">
-                    first ...
-                  </axdd-tabs-panel>
-                  <axdd-tabs-panel :panel-id="'second'">
-                    second ...
-                  </axdd-tabs-panel>
-                  <axdd-tabs-panel :panel-id="'third'">
-                    third ...
-                  </axdd-tabs-panel>
+          <BCard
+            class="shadow-sm rounded-3"
+            header-bg-variant="transparent"
+            header-class="d-flex justify-content-between"
+            style="max-width: 600px"
+          >
+            <template #header>
+              <h6>Heading</h6>
+              <axdd-tabs-list
+                :tabs-id="'example'"
+                :variant="'pills'"
+                class="small"
+              >
+                <template #items>
+                  <axdd-tabs-item
+                    :tabs-id="'example'"
+                    :panel-id="'first'"
+                    :active-tab="true"
+                    :variant="'pills'"
+                  >
+                    First
+                  </axdd-tabs-item>
+                  <axdd-tabs-item
+                    :tabs-id="'example'"
+                    :panel-id="'second'"
+                    :variant="'pills'"
+                  >
+                    Second
+                  </axdd-tabs-item>
+                  <axdd-tabs-item
+                    :tabs-id="'example'"
+                    :panel-id="'third'"
+                    :variant="'pills'"
+                  >
+                    Third
+                  </axdd-tabs-item>
                 </template>
-              </axdd-tabs-display>
+              </axdd-tabs-list>
             </template>
-          </axdd-card>
+            <axdd-tabs-display :tabs-id="'example'">
+              <template #panels>
+                <axdd-tabs-panel :panel-id="'first'" :active-panel="true">
+                  first ...
+                </axdd-tabs-panel>
+                <axdd-tabs-panel :panel-id="'second'">
+                  second ...
+                </axdd-tabs-panel>
+                <axdd-tabs-panel :panel-id="'third'">
+                  third ...
+                </axdd-tabs-panel>
+              </template>
+            </axdd-tabs-display>
+          </BCard>
         </template>
       </CodeBlock>
     </template>
@@ -445,7 +364,12 @@ export default {
 <script>
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
-import { BBreadcrumb, BBreadcrumbItem, BCard } from "bootstrap-vue-next";
+import {
+  BBreadcrumb,
+  BBreadcrumbItem,
+  BButton,
+  BCard,
+} from "bootstrap-vue-next";
 
 export default {
   name: "DocsPatternsCard",
@@ -455,6 +379,7 @@ export default {
     BBreadcrumb,
     BBreadcrumbItem,
     BCard,
+    BButton,
   },
   data() {
     return {

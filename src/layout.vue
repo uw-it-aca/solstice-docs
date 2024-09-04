@@ -1,9 +1,9 @@
 <template>
-  <sol-sidebar :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
+  <SSidebar :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
     <template #profile>
       <div class="d-flex justify-content-between align-items-center">
         <div class="text-light">Latest: v.1.1.0</div>
-        <div class="text-light"><sol-color-mode></sol-color-mode></div>
+        <div class="text-light"><SColorMode></SColorMode></div>
       </div>
     </template>
     <template #navigation>
@@ -55,12 +55,13 @@
       </div>
     </template>
     <template #footer></template>
-  </sol-sidebar>
+  </SSidebar>
 </template>
 
 <script>
 import NavMenu from "@/components/NavMenu.vue";
 import ReleaseNotes from "@/components/ReleaseNotes.vue";
+import { SColorMode, SSidebar } from "solstice-vue";
 
 export default {
   name: "App",
@@ -68,6 +69,8 @@ export default {
   components: {
     NavMenu,
     ReleaseNotes,
+    SColorMode,
+    SSidebar,
   },
   props: {
     pageTitle: {

@@ -128,9 +128,9 @@
         <CodeBlock>
           <template #preview>
             Hello! Welcome to the
-            <sol-link href="/">Soltice Design System</sol-link> documentation
+            <BLink href="/">Soltice Design System</BLink> documentation
             website. This is a paragraph example using the
-            <sol-link href="/elements/link">link component</sol-link>. Goodbye!
+            <BLink href="/elements/link">link component</BLink>. Goodbye!
           </template>
           <template #bootstrap>
             <pre class="language-html">
@@ -152,16 +152,16 @@
           <template #preview>
             <div class="p-3 bg-brand rounded text-light">
               Hello! Welcome to the
-              <sol-link
+              <BLink
                 href="/"
                 color="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
-                >Soltice Design System</sol-link
+                >Soltice Design System</BLink
               >
               documentation website. This is a paragraph example using the
-              <sol-link
+              <BLink
                 href="/elements/link"
                 color="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
-                >link component</sol-link
+                >link component</BLink
               >. Goodbye!
               <BLink
                 :variant="'light'"
@@ -195,16 +195,16 @@
           <template #preview>
             <div class="p-3 bg-beige rounded text-dark">
               Hello! Welcome to the
-              <sol-link
+              <BLink
                 href="/"
                 color="link-dark link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
-                >Soltice Design System</sol-link
+                >Soltice Design System</BLink
               >
               documentation website. This is a paragraph example using the
-              <sol-link
+              <BLink
                 href="/elements/link"
                 color="link-dark link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
-                >link component</sol-link
+                >link component</BLink
               >. Goodbye!
 
               <BLink

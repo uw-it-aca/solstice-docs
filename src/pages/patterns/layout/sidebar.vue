@@ -216,7 +216,7 @@
 
       <CodeBlock>
         <template #preview>
-          <axdd-sidebar
+          <SSidebar
             :app-name="'SideBar'"
             :user-name="'javerage'"
             :is-preview="true"
@@ -237,7 +237,7 @@
               </div>
             </template>
             <template #footer></template>
-          </axdd-sidebar>
+          </SSidebar>
         </template>
         <template #markup>
           <pre class="language-html">
@@ -258,7 +258,7 @@
 
       <CodeBlock>
         <template #preview>
-          <sol-sidebar
+          <SSidebar
             :app-name="'SideBar'"
             :user-name="'javerage'"
             :is-preview="true"
@@ -279,9 +279,9 @@
               </div>
             </template>
             <template #footer></template>
-          </sol-sidebar>
+          </SSidebar>
         </template>
-        <template #markup>
+        <template #vue>
           <pre class="language-html">
 <code>&lt;axdd-sidebar :app-name="'App Name'" :variant="'dark'" class="bg-primary">
 &lt;/axdd-sidebar>
@@ -293,7 +293,7 @@
 
       <CodeBlock>
         <template #preview>
-          <sol-sidebar
+          <SSidebar
             :app-name="'SideBar'"
             :user-name="'javerage'"
             :is-preview="true"
@@ -315,9 +315,9 @@
               </div>
             </template>
             <template #footer></template>
-          </sol-sidebar>
+          </SSidebar>
         </template>
-        <template #markup>
+        <template #vue>
           <pre class="language-html">
 <code>&lt;axdd-sidebar :app-name="'App Name'" :variant="'dark'" class="bg-primary">
   &lt;template #logo>
@@ -336,6 +336,7 @@
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
 import PageContents from "@/components/PageContents.vue";
+import { SSidebar } from "solstice-vue";
 
 export default {
   name: "DocsSidebar",
@@ -343,6 +344,7 @@ export default {
     Layout,
     CodeBlock,
     PageContents,
+    SSidebar,
   },
   data() {
     return {

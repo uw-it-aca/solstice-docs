@@ -1,33 +1,79 @@
 <template>
   <Layout :page-title="pageTitle">
+    <template #breadcrumb>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
+        <BBreadcrumbItem to="/patterns/surface">Surface</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
+    </template>
+    <template #lead>
+      Panels are Cards is a container of content... Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Ea nemo nobis, eligendi sit ipsa mollitia
+      necessitatibus possimus, veniam sapiente deleniti quo. Nemo error quos,
+      eius facilis rem amet deserunt est!
+    </template>
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#anatomy"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Anatomy</a
+              >
+            </li>
+            <li>
+              <a
+                href="#variants"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Variants</a
+              >
+            </li>
+            <li>
+              <a
+                href="#options"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Options</a
+              >
+            </li>
+            <li>
+              <a
+                href="#usage"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Usage</a
+              >
+            </li>
+            <li>
+              <a
+                href="#accessibility"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Accessibility</a
+              >
+            </li>
+            <li>
+              <a
+                href="#implementation"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Implementation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
+    </template>
     <template #content>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/surface">Surface</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">Panel</li>
-        </ol>
-      </nav>
-
-      <h1 class="fw-bold">Panel</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
-        Panels are Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Mollitia repellendus sint veritatis assumenda facilis repudiandae vero
-        natus unde voluptatum blanditiis nihil soluta, velit quaerat, corporis
-        eos reprehenderit, rerum error earum?
-      </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
       <CodeBlock>
         <template #preview>
-          <axdd-panel class="text-bg-light-beige" style="max-width: 600px">
+          <BCard
+            class="text-bg-light-beige rounded-3"
+            border-variant="0"
+            style="max-width: 600px"
+          >
             <h2 class="card-title">heading</h2>
             asdfjadlskj
-          </axdd-panel>
+          </BCard>
         </template>
       </CodeBlock>
     </template>
@@ -38,15 +84,21 @@
 <script>
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
+import { BBreadcrumb, BBreadcrumbItem, BCard } from "bootstrap-vue-next";
 
 export default {
   name: "DocsPatternsPanel",
   components: {
     Layout,
     CodeBlock,
+    BCard,
+    BBreadcrumb,
+    BBreadcrumbItem,
   },
   data() {
-    return {};
+    return {
+      pageTitle: "Panel",
+    };
   },
 };
 </script>

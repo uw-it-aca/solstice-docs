@@ -32,7 +32,6 @@
             Get to know our design thinking and how we put it into action across
             our design system.
           </p>
-
           <p>
             <BLink to="/getting-started/solstice-101"
               >Learn about our design system</BLink
@@ -101,7 +100,7 @@
           </p>
 
           <p>
-            <sol-link href="/content/">Review content guidelines</sol-link>
+            <BLink href="/content/">Review content guidelines</BLink>
           </p>
         </div>
         <div class="col d-flex flex-column">
@@ -111,7 +110,7 @@
             application.
           </p>
           <p>
-            <sol-link href="/foundations/">Browse foundations</sol-link>
+            <BLink href="/foundations/">Browse foundations</BLink>
           </p>
         </div>
         <div class="col d-flex flex-column">
@@ -120,7 +119,7 @@
             UI elements are reusable components that can stand alone or form
             part of multiple UX patterns.
           </p>
-          <p><sol-link href="/elements/">Browse UI elements</sol-link></p>
+          <p><BLink href="/elements/">Browse UI elements</BLink></p>
         </div>
         <div class="col d-flex flex-column">
           <h3>UX Patterns</h3>
@@ -128,7 +127,7 @@
             UX patterns are groups of UI elements used by designers to solve
             usability issues.
           </p>
-          <p><sol-link href="/patterns/">Browse UX patterns</sol-link></p>
+          <p><BLink href="/patterns/">Browse UX patterns</BLink></p>
         </div>
       </div>
     </template>

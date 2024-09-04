@@ -94,165 +94,102 @@
 
       <CodeBlock>
         <template #preview>
-          <axdd-tabs-list
+          <STabsList
             :tabs-id="'example'"
             class="mb-4"
             :variant="'pills'"
             style="max-width: 600px"
           >
             <template #items>
-              <axdd-tabs-item
+              <STabsItem
                 :tabs-id="'example'"
                 :panel-id="'first'"
                 :active-tab="true"
                 :variant="'pills'"
-                >First</axdd-tabs-item
+                >First</STabsItem
               >
-              <axdd-tabs-item
+              <STabsItem
                 :tabs-id="'example'"
                 :panel-id="'second'"
                 :variant="'pills'"
-                >Second</axdd-tabs-item
+                >Second</STabsItem
               >
-              <axdd-tabs-item
+              <STabsItem
                 :tabs-id="'example'"
                 :panel-id="'third'"
                 :variant="'pills'"
-                >Third</axdd-tabs-item
+                >Third</STabsItem
               >
             </template>
-          </axdd-tabs-list>
-          <axdd-tabs-list
-            :tabs-id="'example'"
-            class="mb-4"
-            style="max-width: 600px"
-          >
+          </STabsList>
+          <STabsList :tabs-id="'example'" class="mb-4" style="max-width: 600px">
             <template #items>
-              <axdd-tabs-item
+              <STabsItem
                 :tabs-id="'example'"
                 :panel-id="'first'"
                 :active-tab="true"
-                >First</axdd-tabs-item
+                >First</STabsItem
               >
-              <axdd-tabs-item :tabs-id="'example'" :panel-id="'second'"
-                >Second</axdd-tabs-item
+              <STabsItem :tabs-id="'example'" :panel-id="'second'"
+                >Second</STabsItem
               >
-              <axdd-tabs-item :tabs-id="'example'" :panel-id="'third'"
-                >Third</axdd-tabs-item
+              <STabsItem :tabs-id="'example'" :panel-id="'third'"
+                >Third</STabsItem
               >
             </template>
-          </axdd-tabs-list>
-          <axdd-tabs-display :tabs-id="'example'" style="max-width: 600px">
+          </STabsList>
+          <STabsDisplay :tabs-id="'example'" style="max-width: 600px">
             <template #panels>
-              <axdd-tabs-panel :panel-id="'first'" :active-panel="true">
+              <STabsPanel :panel-id="'first'" :active-panel="true">
                 <p>
                   <strong>first</strong> Lorem ipsum dolor sit amet consectetur
                   adipisicing elit.
                 </p>
-              </axdd-tabs-panel>
-              <axdd-tabs-panel :panel-id="'second'">
+              </STabsPanel>
+              <STabsPanel :panel-id="'second'">
                 <p>
                   <strong>second</strong> Lorem ipsum dolor sit amet consectetur
                   adipisicing elit.
                 </p>
-              </axdd-tabs-panel>
-              <axdd-tabs-panel :panel-id="'third'">
+              </STabsPanel>
+              <STabsPanel :panel-id="'third'">
                 <p>
                   <strong>third</strong> Lorem ipsum dolor sit amet consectetur
                   adipisicing elit.
                 </p>
-              </axdd-tabs-panel>
+              </STabsPanel>
             </template>
-          </axdd-tabs-display>
+          </STabsDisplay>
         </template>
-        <template #markup>
+        <template #vue>
           <pre class="language-html">
-<code>&lt;axdd-tabs-list :tabs-id="'example'">
+<code>&lt;STabsList :tabs-id="'example'">
   &lt;template #items>
-    &lt;axdd-tabs-item :tabs-id="'example'" :panel-id="'first'" :active-tab="true">
+    &lt;STabsItem :tabs-id="'example'" :panel-id="'first'" :active-tab="true">
       First
-    &lt;/axdd-tabs-item>
-    &lt;axdd-tabs-item :tabs-id="'example'" :panel-id="'second'">
+    &lt;/STabsItem>
+    &lt;STabsItem :tabs-id="'example'" :panel-id="'second'">
     Second
-    &lt;/axdd-tabs-item>
-    &lt;axdd-tabs-item :tabs-id="'example'" :panel-id="'third'">
+    &lt;/STabsItem>
+    &lt;STabsItem :tabs-id="'example'" :panel-id="'third'">
     Third
-    &lt;/axdd-tabs-item>
+    &lt;/STabsItem>
   &lt;/template>
-&lt;/axdd-tabs-list>
+&lt;/STabsList>
 
-&lt;axdd-tabs-display :tabs-id="'example'"
+&lt;STabsDisplay :tabs-id="'example'"
   &lt;template #panels>
-    &lt;axdd-tabs-panel :panel-id="'first'" :active-panel="true">
+    &lt;STabsPanel :panel-id="'first'" :active-panel="true">
       first ...
-    &lt;/axdd-tabs-panel>
-    &lt;axdd-tabs-panel :panel-id="'second'">
+    &lt;/STabsPanel>
+    &lt;STabsPanel :panel-id="'second'">
       second ...
-    &lt;/axdd-tabs-panel>
-    &lt;axdd-tabs-panel :panel-id="'third'">
+    &lt;/STabsPanel>
+    &lt;STabsPanel :panel-id="'third'">
       third ...
-    &lt;/axdd-tabs-panel>
+    &lt;/STabsPanel>
   &lt;/template>
-&lt;/axdd-tabs-display></code></pre>
-        </template>
-      </CodeBlock>
-
-      <h2>Disconnected</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad voluptate
-        veniam doloremque repudiandae architecto impedit saepe quos facilis,
-        beatae aperiam, fugit quidem itaque reprehenderit? Impedit harum fugiat
-        dolorum error! Rerum.
-      </p>
-      <CodeBlock>
-        <template #preview>
-          <axdd-tabs-list
-            :tabs-id="'example2'"
-            class="mb-4"
-            style="max-width: 600px"
-          >
-            <template #items>
-              <axdd-tabs-item
-                :tabs-id="'example2'"
-                :panel-id="'first2'"
-                :active-tab="true"
-                >First</axdd-tabs-item
-              >
-              <axdd-tabs-item :tabs-id="'example2'" :panel-id="'second2'"
-                >Second</axdd-tabs-item
-              >
-              <axdd-tabs-item :tabs-id="'example2'" :panel-id="'third2'"
-                >Third</axdd-tabs-item
-              >
-            </template>
-          </axdd-tabs-list>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            nihil saepe nemo quas enim cum, nisi fuga modi eius dolor quae
-            quibusdam dicta fugit, quia velit, similique magnam eaque tempora.
-          </p>
-          <axdd-tabs-display :tabs-id="'example2'" style="max-width: 600px">
-            <template #panels>
-              <axdd-tabs-panel :panel-id="'first2'" :active-panel="true">
-                <p>
-                  <strong>first</strong> Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit.
-                </p>
-              </axdd-tabs-panel>
-              <axdd-tabs-panel :panel-id="'second2'">
-                <p>
-                  <strong>second</strong> Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit.
-                </p>
-              </axdd-tabs-panel>
-              <axdd-tabs-panel :panel-id="'third2'">
-                <p>
-                  <strong>third</strong> Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit.
-                </p>
-              </axdd-tabs-panel>
-            </template>
-          </axdd-tabs-display>
+&lt;/STabsDisplay></code></pre>
         </template>
       </CodeBlock>
     </template>
@@ -264,6 +201,7 @@
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+import { STabsDisplay, STabsPanel, STabsList, STabsItem } from "solstice-vue";
 
 export default {
   name: "DocsPatternsTabs",
@@ -272,6 +210,10 @@ export default {
     CodeBlock,
     BBreadcrumb,
     BBreadcrumbItem,
+    STabsDisplay,
+    STabsPanel,
+    STabsList,
+    STabsItem,
   },
   data() {
     return {

@@ -1,6 +1,6 @@
 <template>
   <!-- layout.vue: this is where you override the layout -->
-  <axdd-topbar
+  <STopbar
     :app-name="appName"
     :app-root-url="appRootUrl"
     :page-title="pageTitle"
@@ -8,14 +8,14 @@
     :sign-out-url="signOutUrl"
   >
     <template #profile>
-      <axdd-profile
+      <SProfile
         :variant="'flyout'"
         :user-netid="userNetid"
         :user-official-name="userOfficial"
         :user-preferred-name="userPreferred"
         :profile-url="'https://identity.uw.edu'"
         :signout-url="signOutUrl"
-      ></axdd-profile>
+      ></SProfile>
     </template>
     <template #navigation>
       <ul class="nav flex-column my-3">
@@ -97,13 +97,15 @@
       <slot name="content"></slot>
     </template>
     <template #footer></template>
-  </axdd-topbar>
+  </STopbar>
 </template>
 
 <script>
+import { STopbar, SProfile } from "solstice-vue";
+
 export default {
   name: "DocsSandboxTopbarIndex",
-  components: {},
+  components: { STopbar, SProfile },
   data() {
     return {
       // minimum application setup overrides

@@ -71,12 +71,49 @@
         minus saepe? Quaerat cupiditate ipsa ut nulla nostrum ex aut!
       </p>
       <h2 id="variants">Variants</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga
-        corporis totam eligendi molestiae ex aperiam soluta, consectetur
-        accusamus accusantium officia praesentium, magni numquam sunt minus
-        architecto libero enim tempore!
-      </p>
+
+      <h3>Collapse Link (inline)</h3>
+      <CodeBlock>
+        <template #preview>
+          <p><BLink v-b-toggle.collapse-1 href="#">Show more...</BLink></p>
+
+          <BCollapse id="collapse-1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium adipisci expedita tenetur officiis voluptate, laborum
+              error cum soluta. Beatae veniam commodi voluptas saepe facere a
+              reiciendis, explicabo minima nobis? Fugit.
+            </p>
+          </BCollapse>
+        </template>
+        <template #vue>
+          <pre class="language-html">
+<code>&lt;BLink v-b-toggle.collapse-1 href="#">Show more...&lt;/BLink>
+
+&lt;BCollapse id="collapse-1">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium adipisci expedita tenetur officiis voluptate, laborum
+  error cum soluta. Beatae veniam commodi voluptas saepe facere a reiciendis, explicabo minima nobis? Fugit.
+&lt;/BCollapse>
+</code></pre>
+        </template>
+      </CodeBlock>
+
+      <h3>Collapse Button</h3>
+      <CodeBlock>
+        <template #preview>
+          <BButton v-b-toggle.collapse-2 variant="primary"
+            >Toggle Collapse</BButton
+          >
+          <BCollapse id="collapse-2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium adipisci expedita tenetur officiis voluptate, laborum
+              error cum soluta. Beatae veniam commodi voluptas saepe facere a
+              reiciendis, explicabo minima nobis? Fugit.
+            </p>
+          </BCollapse>
+        </template>
+      </CodeBlock>
 
       <h2 id="options">Options</h2>
       <p>
@@ -114,23 +151,34 @@
 
 <script>
 import Layout from "@/layout.vue";
-// import CodeBlock from "@/components/CodeBlock.vue";
+import CodeBlock from "@/components/CodeBlock.vue";
 // import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+import {
+  BBreadcrumb,
+  BBreadcrumbItem,
+  BButton,
+  BCollapse,
+  BLink,
+} from "bootstrap-vue-next";
 
 export default {
   name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
   inject: ["mq"],
   components: {
     Layout,
-    /* CodeBlock, UsageBlock, */ PageContents,
+    CodeBlock,
+    /* UsageBlock, */
+    PageContents,
     BBreadcrumb,
     BBreadcrumbItem,
+    BButton,
+    BCollapse,
+    BLink,
   },
   data() {
     return {
-      pageTitle: "Modal",
+      pageTitle: "Collapse",
     };
   },
 };

@@ -218,7 +218,7 @@
       <h3>Basic structure</h3>
       <CodeBlock>
         <template #preview>
-          <axdd-topbar :app-name="'TopBar'" :is-preview="true" class="border">
+          <STopbar :app-name="'TopBar'" :is-preview="true" class="border">
             <template #profile>profile here...</template>
             <template #main>
               <div class="row my-4">
@@ -233,7 +233,7 @@
               </div>
             </template>
             <template #footer>footer here...</template>
-          </axdd-topbar>
+          </STopbar>
         </template>
         <template #markup>
           <pre class="language-html">
@@ -255,7 +255,7 @@
       <h3>With Navigation</h3>
       <CodeBlock>
         <template #preview>
-          <axdd-topbar
+          <STopbar
             :app-name="'TopBar'"
             :user-name="'javerage'"
             :is-preview="true"
@@ -289,9 +289,9 @@
               </div>
             </template>
             <template #footer></template>
-          </axdd-topbar>
+          </STopbar>
         </template>
-        <template #markup>
+        <template #vue>
           <pre class="language-html">
 <code>&lt;axdd-topbar>
   &lt;template #navigation>
@@ -308,7 +308,7 @@
       <h3>With Banner Bar</h3>
       <CodeBlock>
         <template #preview>
-          <axdd-topbar :app-name="'TopBar'" :is-preview="true" class="border">
+          <STopbar :app-name="'TopBar'" :is-preview="true" class="border">
             <template #profile> profile here... </template>
             <template #bar>
               <div class="row">
@@ -337,9 +337,9 @@
               </div>
             </template>
             <template #footer></template>
-          </axdd-topbar>
+          </STopbar>
         </template>
-        <template #markup>
+        <template #vue>
           <pre class="language-html">
 <code>&lt;axdd-topbar>
   &lt;template #bar>
@@ -359,12 +359,15 @@ import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 
+import { STopbar } from "solstice-vue";
+
 export default {
   name: "DocsTopbar",
   components: {
     Layout,
     PageContents,
     CodeBlock,
+    STopbar,
   },
   data() {
     return {

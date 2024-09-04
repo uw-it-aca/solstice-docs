@@ -27,7 +27,7 @@
         architecto velit magni rem odit?
       </p>
 
-      <sol-color-mode></sol-color-mode>
+      <SColorMode></SColorMode>
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>
@@ -35,10 +35,11 @@
 
 <script>
 import Layout from "@/layout.vue";
+import { SColorMode } from "solstice-vue";
 
 export default {
   name: "DocsPatternsMessaging",
-  components: { Layout },
+  components: { Layout, SColorMode },
   data() {
     return {
       pageTitle: "Color Mode",

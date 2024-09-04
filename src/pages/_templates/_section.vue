@@ -1,14 +1,10 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/_templates">Templates</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
     <template #lead>
       This is a pattern page... Lorem ipsum dolor sit amet consectetur
@@ -53,11 +49,12 @@
 <script>
 import Layout from "@/layout.vue";
 import DescriptionBlock from "@/components/DescriptionBlock.vue";
+import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
 export default {
   name: "DocsPatternsPatternName" /* TODO: replace 'PatternName' */,
   inject: ["mq"],
-  components: { Layout, DescriptionBlock },
+  components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
   data() {
     return {
       pageTitle: "Pattern Name" /* TODO: Set a page title */,

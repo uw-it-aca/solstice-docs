@@ -24,11 +24,8 @@
       <CodeBlock>
         <template #preview>
           <div class="w-50 px-3 py-1 bg-dark-purple small">
-            <axdd-profile
-              :user-netid="'javerage'"
-              :signout-url="'/signout/url'"
-            >
-            </axdd-profile>
+            <SProfile :user-netid="'javerage'" :signout-url="'/signout/url'">
+            </SProfile>
           </div>
         </template>
       </CodeBlock>
@@ -37,11 +34,11 @@
       <CodeBlock>
         <template #preview>
           <div class="w-50 px-3 py-1 bg-dark-purple small">
-            <axdd-profile :user-netid="'javerage'" :user-override="'jbothell'">
+            <SProfile :user-netid="'javerage'" :user-override="'jbothell'">
               <button class="btn btn-link btn-sm text-danger m-0 p-0 border-0">
                 clear action
               </button>
-            </axdd-profile>
+            </SProfile>
           </div>
         </template>
       </CodeBlock>
@@ -60,7 +57,7 @@
       <CodeBlock>
         <template #preview>
           <div class="w-50 px-3 py-1 bg-dark-purple small">
-            <axdd-profile
+            <SProfile
               :variant="'flyout'"
               :user-netid="'javerage'"
               :user-official-name="'John C. Average'"
@@ -69,7 +66,7 @@
               :profile-url="'/profile'"
               :signout-url="'/signout/url'"
             >
-            </axdd-profile>
+            </SProfile>
           </div>
         </template>
       </CodeBlock>
@@ -78,7 +75,7 @@
       <CodeBlock>
         <template #preview>
           <div class="w-50 px-3 py-1 bg-dark-purple small">
-            <axdd-profile
+            <SProfile
               :variant="'flyout'"
               :user-netid="'javerage'"
               :user-override="'jbothell'"
@@ -90,7 +87,7 @@
               <button class="btn btn-link btn-sm text-danger m-0 p-0 border-0">
                 clear action
               </button>
-            </axdd-profile>
+            </SProfile>
           </div>
         </template>
       </CodeBlock>
@@ -102,12 +99,14 @@
 <script>
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
+import { SProfile } from "solstice-vue";
 
 export default {
   name: "DocsPatternsTabs",
   components: {
     Layout,
     CodeBlock,
+    SProfile,
   },
   data() {
     return {

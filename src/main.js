@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import { createBootstrap } from "bootstrap-vue-next";
-import SolsticeVue from "solstice-vue";
+// import SolsticeVue from "solstice-vue";
 import { Vue3Mq, MqResponsive } from "vue3-mq";
 
 import App from "@/app.vue";
@@ -34,7 +34,7 @@ app.component("mq-responsive", MqResponsive);
 app.use(createBootstrap());
 
 // solstice-vue
-app.use(SolsticeVue);
+// app.use(SolsticeVue);
 
 // declar global properties here
 app.config.globalProperties.appName = "Solstice";

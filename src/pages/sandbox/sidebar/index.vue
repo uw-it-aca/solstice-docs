@@ -1,5 +1,5 @@
 <template>
-  <sol-sidebar
+  <SSidebar
     :app-name="appName"
     :app-root-url="appRootUrl"
     :page-title="pageTitle"
@@ -7,13 +7,13 @@
     :sign-out-url="signOutUrl"
   >
     <template #profile>
-      <axdd-profile
+      <SProfile
         :user-netid="userNetid"
         :user-official-name="userOfficial"
         :user-preferred-name="userPreferred"
         :profile-url="'https://identity.uw.edu'"
         :signout-url="signOutUrl"
-      ></axdd-profile>
+      ></SProfile>
     </template>
 
     <template #navigation>
@@ -104,13 +104,15 @@
       </div>
     </template>
     <template #footer></template>
-  </sol-sidebar>
+  </SSidebar>
 </template>
 
 <script>
+import { SSidebar, SProfile } from "solstice-vue";
+
 export default {
   name: "DocsSandboxSidebarIndex",
-  components: {},
+  components: { SSidebar, SProfile },
   props: {},
   data: function () {
     return {
