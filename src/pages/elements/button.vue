@@ -238,23 +238,13 @@
         </CodeBlock>
       </div>
       <h2 id="color">Color</h2>
-      <p>Need to define button colors...</p>
+      <p>Define color schemes for buttons.</p>
 
       <h2 id="button-groups">Button groups</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-        facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
-        placeat totam dolorem suscipit est sunt eum, debitis exercitationem
-        voluptate ducimus repellat necessitatibus?
-      </p>
+      <p>Definition and description of button groups.</p>
 
       <h2 id="implementation">Implementation</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-        facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
-        placeat totam dolorem suscipit est sunt eum, debitis exercitationem
-        voluptate ducimus repellat necessitatibus?
-      </p>
+      <p>Implementation guidance, if applicable.</p>
     </template>
     <template #author>Diego Bejarano</template>
   </Layout>
