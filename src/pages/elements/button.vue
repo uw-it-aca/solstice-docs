@@ -51,13 +51,6 @@
             </li>
             <li>
               <a
-                href="#color"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Color</a
-              >
-            </li>
-            <li>
-              <a
                 href="#button-groups"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
                 >Button groups</a
@@ -237,14 +230,32 @@
           </template>
         </CodeBlock>
       </div>
-      <h2 id="color">Color</h2>
-      <p>Define color schemes for buttons.</p>
 
       <h2 id="button-groups">Button groups</h2>
-      <p>Definition and description of button groups.</p>
-
-      <h2 id="implementation">Implementation</h2>
-      <p>Implementation guidance, if applicable.</p>
+      <p>
+        Button groups help to create a more organized, intuitive, and
+        user-friendly experience by grouping related actions, saving space, and
+        improving the overall usability.
+      </p>
+      <p>
+        Button groups can be used for toggle buttons, radio buttons, or
+        segmented controls where users can select one or multiple options. For
+        example:
+      </p>
+      <ul>
+        <li>Radio button groups allow users to select one option from many.</li>
+        <li>Checkbox groups enable users to select multiple options.</li>
+        <li>
+          Toggle button groups make it clear that only one action can be active
+          at a time.
+        </li>
+      </ul>
+      <p>
+        Button groups should give users instant visual feedback on their
+        selections. For example, selected buttons may change color or style,
+        indicating that they have been activated, making it clear what actions
+        have been taken.
+      </p>
     </template>
     <template #author>Diego Bejarano</template>
   </Layout>
