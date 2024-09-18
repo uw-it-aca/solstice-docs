@@ -21,13 +21,13 @@
       <PageContents>
         <nav id="TableOfContents">
           <ul class="list-unstyled m-0">
-            <li>
+            <!-- <li>
               <a
                 href="#anatomy"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
                 >Anatomy</a
               >
-            </li>
+            </li>-->
             <li>
               <a
                 href="#variants"
@@ -237,6 +237,35 @@
         user-friendly experience by grouping related actions, saving space, and
         improving the overall usability.
       </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BButtonGroup>
+              <BButton variant="primary">Button 1</BButton>
+              <BButton variant="primary">Button 2</BButton>
+              <BButton variant="primary">Button 3</BButton>
+            </BButtonGroup>
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;div class="btn-group" role="group" aria-label="Basic example">
+  &lt;button type="button" class="btn btn-primary">Button 1&lt;/button>
+  &lt;button type="button" class="btn btn-primary">Button 2&lt;/button>
+  &lt;button type="button" class="btn btn-primary">Button 3&lt;/button>
+  &lt;/div>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BButtonGroup>
+  &lt;BButton variant="primary">Button 1&lt;/BButton>
+  &lt;BButton variant="primary">Button 2&lt;/BButton>
+  &lt;BButton variant="primary">Button 3&lt;/BButton>
+  &lt;/BButtonGroup>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
       <p>
         Button groups can be used for toggle buttons, radio buttons, or
         segmented controls where users can select one or multiple options. For
