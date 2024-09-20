@@ -400,27 +400,60 @@
       <UsageBlock
         ><template #text>Use Alerts for temporary, timely messages.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary"></div></template
-      ></UsageBlock>
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <BAlert
+              variant="info"
+              dismissible
+              :model-value="true"
+              class="small"
+            >
+              <i class="bi-exclamation-circle-fill me-1"></i> Registration
+              period ends tomorrow at 11:59 PM.
+            </BAlert>
+          </div></template
+        ></UsageBlock
+      >
       <UsageBlock variant="dont"
         ><template #text
           >Don't use Alerts to call out permanent content on the page.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary"></div></template
-      ></UsageBlock>
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <BAlert
+              variant="info"
+              dismissible
+              :model-value="true"
+              class="small"
+            >
+              <i class="bi-exclamation-circle-fill me-1"></i> Registration
+              Period III is from the first day of the quarter through the 7th
+            </BAlert>
+          </div></template
+        ></UsageBlock
+      >
       <h3>Help the user resolve issues with a call to action</h3>
       <p>
         Give enough detail to convey the message, and use a call to action to
         direct the user to a page where they can resolve the issue if possible
         (especially for <code>critical</code> and <code>warning</code> Alerts).
       </p>
-      <UsageBlock
+      <CodeBlock
         ><template #text
           >Explain what caused the Alert and direct the user to the right place
           to resolve it.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary"></div></template
-      ></UsageBlock>
+          ><div class="p-3 bg-body-tertiary">
+            <BAlert variant="danger" :model-value="true" class="small">
+              <i class="bi-exclamation-circle-fill me-1"></i> You have a balance
+              that is past due.
+              <BLink
+                class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2"
+                to="/"
+                >See statement</BLink
+              >
+            </BAlert>
+          </div></template
+        ></CodeBlock
+      >
       <UsageBlock variant="dont"
         ><template #text
           >Don't use vague language or error codes that are not actionable to
