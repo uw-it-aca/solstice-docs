@@ -518,7 +518,7 @@ import PageContents from "@/components/PageContents.vue";
 import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
 
 export default {
-  name: "DocsElementsIndex",
+  name: "DocsElementsLink",
   inject: ["mq"],
   components: {
     Layout,

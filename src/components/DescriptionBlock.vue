@@ -10,7 +10,7 @@
       </slot>
     </div>
     <div class="text-end">
-      <router-link v-if="link" :to="link">View {{ name }}</router-link>
+      <BLink v-if="link" :to="link">View {{ name }}</BLink>
       <span v-else class="text-muted">Coming soon!</span>
     </div>
     <div class="position-absolute top-0 end-0 m-2">
@@ -25,7 +25,12 @@
 </template>
 
 <script>
+import { BLink } from "bootstrap-vue-next";
+
 export default {
+  components: {
+    BLink,
+  },
   props: {
     name: {
       type: String,

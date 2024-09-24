@@ -50,6 +50,14 @@
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Writing for Errors'"
+            :link="'/content/writing-errors'"
+            class="bg-light"
+            >sdfgsdgsd</DescriptionBlock
+          >
+        </li>
       </ul>
     </template>
     <template #author>Charlon Palacay</template>

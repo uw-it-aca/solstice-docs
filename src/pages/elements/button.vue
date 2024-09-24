@@ -297,7 +297,7 @@ import PageContents from "@/components/PageContents.vue";
 import { BBreadcrumb, BBreadcrumbItem, BButton } from "bootstrap-vue-next";
 
 export default {
-  name: "DocsElementsBaseButton" /* example: Docs--Folder--ComponentName */,
+  name: "DocsElementsButton" /* example: Docs--Folder--ComponentName */,
   inject: ["mq"],
   components: {
     Layout,
@@ -309,7 +309,7 @@ export default {
   },
   data() {
     return {
-      pageTitle: "Buttons",
+      pageTitle: "Button",
     };
   },
 };

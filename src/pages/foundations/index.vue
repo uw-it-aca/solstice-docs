@@ -35,6 +35,14 @@
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Icons'"
+            :link="'/foundations/icons'"
+            class="bg-light"
+            >sdfgsdgsd</DescriptionBlock
+          >
+        </li>
       </ul>
     </template>
   </Layout>

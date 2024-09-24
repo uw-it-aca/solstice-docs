@@ -20,20 +20,21 @@
         consequuntur distinctio ipsam nam.
       </p>
     </template>
-    <template #author>Cayla Snooke</template>
+    <template #author>Your Name</template>
   </Layout>
 </template>
 
 <script>
 import Layout from "@/layout.vue";
+import CodeBlock from "@/components/CodeBlock.vue";
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
 export default {
-  name: "DocsFoundationLayout",
-  components: { Layout, BBreadcrumb, BBreadcrumbItem },
+  name: "DocsFoundationsIcons",
+  components: { Layout, CodeBlock, BBreadcrumb, BBreadcrumbItem },
   data() {
     return {
-      pageTitle: "Layout",
+      pageTitle: "Icons",
     };
   },
 };

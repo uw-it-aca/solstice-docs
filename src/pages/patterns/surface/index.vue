@@ -41,6 +41,17 @@
             not a card.</DescriptionBlock
           >
         </li>
+        <li class="col-4">
+          <DescriptionBlock
+            :name="'Tile'"
+            :link="'/patterns/surface/tile'"
+            :accessibility="true"
+            :version="'1.1.0'"
+            >Tiles remain on the flat surface of the page. Bounding container
+            can have background color applied to show slight prominence. Still
+            not a card.</DescriptionBlock
+          >
+        </li>
       </ul>
     </template>
     <template #author>Your Name</template>

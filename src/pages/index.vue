@@ -48,33 +48,33 @@
             border-variant="0"
             body-class="p-4"
           >
-            <h3 class="card-title">Design with Solstice</h3>
+            <h3 class="card-title">Design Principles</h3>
             <p class="flex-fill">
               Learn how to create global components that can be used by other
               applications as well as creating brand new applications.
             </p>
             <div class="text-end">
-              <BLink to="/getting-started/design-with-solstice"
-                >View Design with Solstice</BLink
+              <BLink to="/getting-started/design-principles"
+                >View Design Principles</BLink
               >
             </div>
           </BCard>
         </div>
-        <div v-if="isDev" class="col d-flex flex-column">
+        <div class="col d-flex flex-column">
           <BCard
             class="bg-body-tertiary rounded-3"
             header-bg-variant="transparent"
             border-variant="0"
             body-class="p-4"
           >
-            <h3 class="card-title">Installation &amp; Setup</h3>
+            <h3 class="card-title">Developer Guide</h3>
             <p class="flex-fill">
               Learn how to create global components that can be used by other
               applications as well as creating brand new applications.
             </p>
             <div class="text-end">
-              <BLink to="/getting-started/installation-setup"
-                >View Installation &amp; Setup</BLink
+              <BLink to="/getting-started/developer-guide"
+                >View Developer Guide</BLink
               >
             </div>
           </BCard>
@@ -136,7 +136,7 @@
 </template>
 
 <script>
-import { getDevEnv } from "@/utils/global";
+// import { getDevEnv } from "@/utils/global";
 import Layout from "@/layout.vue";
 import { BCard, BLink } from "bootstrap-vue-next";
 
@@ -150,7 +150,6 @@ export default {
   data() {
     return {
       pageTitle: "Solstice Design System",
-      isDev: true,
     };
   },
   methods: {},
@@ -159,7 +158,7 @@ export default {
     document.title = this.appName;
 
     // MARK: set the dev environment for feature flagging
-    this.isDev = getDevEnv();
+    // this.isDev = getDevEnv();
   },
 };
 </script>
