@@ -23,7 +23,7 @@
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/getting-started/solstice-101"
@@ -32,7 +32,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/getting-started/design-principles"
@@ -41,7 +41,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/getting-started/developer-guide"
@@ -74,7 +74,7 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/content/voice-tone"
@@ -83,7 +83,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/content/grammar-mechanics"
@@ -92,7 +92,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/content/language-inclusivity"
@@ -101,7 +101,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/content/terminology"
@@ -110,7 +110,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/content/labels"
@@ -119,7 +119,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/content/writing-errors"
@@ -152,7 +152,7 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/foundations/color"
@@ -161,7 +161,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/foundations/typography"
@@ -170,7 +170,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/foundations/layout"
@@ -179,7 +179,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/foundations/icons"
@@ -219,7 +219,7 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/elements/link"
@@ -228,7 +228,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/elements/button"
@@ -237,7 +237,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/elements/heading"
@@ -246,7 +246,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/elements/paragraph"
@@ -255,7 +255,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.6"
               exact-active-class="bg-black bg-opacity-10"
               to="/elements/icon"
@@ -264,7 +264,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/elements/forms"
               id="elementsFormHeading"
@@ -287,7 +287,7 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/elements/forms/label"
@@ -296,7 +296,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/elements/forms/input"
@@ -305,7 +305,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/elements/forms/select"
@@ -314,7 +314,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/elements/forms/select"
@@ -324,7 +324,7 @@
 
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/elements/forms/select"
@@ -333,7 +333,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/elements/forms/select"
@@ -342,7 +342,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/elements/forms/radio"
@@ -351,7 +351,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/elements/forms/checkbox"
@@ -360,7 +360,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/elements/forms/range"
@@ -397,7 +397,7 @@
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/patterns/layout/"
               id="patternsLayoutHeading"
@@ -420,7 +420,7 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/layout/topbar"
@@ -429,7 +429,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/layout/sidebar"
@@ -442,7 +442,7 @@
 
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/patterns/navigation/"
               id="patternsNavigationHeading"
@@ -467,7 +467,7 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/navigation/tabs"
@@ -476,7 +476,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/navigation/menu"
@@ -489,7 +489,7 @@
 
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/patterns/surface/"
               id="patternsSurfaceHeading"
@@ -512,7 +512,7 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/surface/card"
@@ -521,7 +521,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/surface/panel"
@@ -530,7 +530,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/surface/tile"
@@ -543,7 +543,7 @@
 
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/patterns/disclosure/"
               id="patternsDisclosureHeading"
@@ -568,7 +568,7 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/disclosure/collapse"
@@ -577,7 +577,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/disclosure/accordian"
@@ -586,7 +586,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/disclosure/modal"
@@ -599,7 +599,7 @@
 
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/patterns/messaging/"
               id="patternsMessagingHeading"
@@ -624,7 +624,7 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/messaging/alert"
@@ -633,7 +633,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/messaging/toast"
@@ -642,7 +642,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/messaging/banner"
@@ -655,7 +655,7 @@
 
           <li class="nav-item mb-1">
             <BLink
-              class="ps-4 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
               exact-active-class="bg-black bg-opacity-10"
               to="/patterns/utility/"
               id="patternsUtilityHeading"
@@ -678,7 +678,7 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/utility/profile"
@@ -687,7 +687,7 @@
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-4 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
                     style="--bs-text-opacity: 0.6"
                     exact-active-class="bg-black bg-opacity-10"
                     to="/patterns/utility/color-mode"
