@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import { createBootstrap } from "bootstrap-vue-next";
 // import SolsticeVue from "solstice-vue";
-import { Vue3Mq, MqResponsive } from "vue3-mq";
+import { Vue3Mq } from "vue3-mq";
 
 import App from "@/app.vue";
 import router from "@/router";
@@ -28,7 +28,6 @@ app.config.productionTip = false;
 app.use(Vue3Mq, {
   preset: "bootstrap5",
 });
-app.component("mq-responsive", MqResponsive);
 
 // bootstrap-vue-next
 app.use(createBootstrap());
