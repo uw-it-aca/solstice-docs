@@ -26,12 +26,12 @@
 
 <script>
 import Layout from "@/layout.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
+// import CodeBlock from "@/components/CodeBlock.vue";
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
 export default {
   name: "DocsFoundationsIcons",
-  components: { Layout, CodeBlock, BBreadcrumb, BBreadcrumbItem },
+  components: { Layout, BBreadcrumb, BBreadcrumbItem },
   data() {
     return {
       pageTitle: "Icons",
