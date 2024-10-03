@@ -6,16 +6,18 @@ import { Vue3Mq, MqResponsive } from "vue3-mq";
 import App from "@/app.vue";
 import router from "@/router";
 
-// bootstrap js + icons
+// bootstrap js + bootstrap-icons
 import "bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-// solstice-vue (develop)
+// solstice-vue
+//import "@/css/custom.scss";
 import "solstice-vue/dist/style.css";
 import "solstice-vue/dist/solstice.scss";
 
 // bootstrap-vue-next css
-// import "bootstrap-vue-next/dist/bootstrap-vue-next.css";
+//import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue-next/dist/bootstrap-vue-next.css";
 
 // app specific scss
 //import "@/assets/css/styles.scss";
