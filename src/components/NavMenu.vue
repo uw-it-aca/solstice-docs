@@ -129,7 +129,7 @@
               >Labels</BLink
             >
           </li>
-          <li class="nav-item mb-1">
+          <li class="nav-item">
             <BLink
               class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.5"
@@ -195,7 +195,7 @@
               >Layout</BLink
             >
           </li>
-          <li class="nav-item mb-1">
+          <li class="nav-item">
             <BLink
               class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
               style="--bs-text-opacity: 0.5"
@@ -286,7 +286,7 @@
               >Icon</BLink
             >
           </li>
-          <li class="nav-item mb-1">
+          <li class="nav-item">
             <BLink
               id="elementsFormHeading"
               class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
