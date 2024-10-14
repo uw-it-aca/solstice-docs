@@ -2,17 +2,23 @@
   <ul class="nav flex-column mb-5">
     <li class="nav-item mb-1 position-relative">
       <BLink
-        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-        exact-active-class="bg-black bg-opacity-10"
-        to="/getting-started/"
         id="gettingStartedHeading"
+        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+        exact-active-class="bg-white bg-opacity-10"
+        to="/getting-started/"
         data-bs-toggle="collapse"
         data-bs-target="#gettingStartedCollapse"
         :aria-expanded="$route.path.includes('/getting-started') ? true : false"
         aria-controls="gettingStartedCollapse"
       >
-        <span><i class="bi bi-flag me-3"></i>Getting Started</span>
-        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        <span
+          ><i
+            class="bi bi-flag me-3 text-white"
+            style="--bs-text-opacity: 0.5"
+          ></i
+          >Getting Started</span
+        >
+        <i class="bi bi-chevron-down" aria-hidden="true"></i>
       </BLink>
       <div
         id="gettingStartedCollapse"
@@ -23,27 +29,27 @@
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/getting-started/solstice-101"
               >Solstice 101</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/getting-started/design-principles"
               >Design Principles</BLink
             >
           </li>
           <li class="nav-item">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/getting-started/developer-guide"
               >Developer Guide</BLink
             >
@@ -53,17 +59,23 @@
     </li>
     <li class="nav-item mb-1 position-relative">
       <BLink
-        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-        exact-active-class="bg-black bg-opacity-10"
-        to="/content/"
         id="contentHeading"
+        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+        exact-active-class="bg-white bg-opacity-10"
+        to="/content/"
         data-bs-toggle="collapse"
         data-bs-target="#contentCollapse"
         :aria-expanded="$route.path.includes('/content') ? true : false"
         aria-controls="contentCollapse"
       >
-        <span><i class="bi bi-body-text me-3"></i>Content</span>
-        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        <span
+          ><i
+            class="bi bi-body-text me-3 text-white"
+            style="--bs-text-opacity: 0.5"
+          ></i
+          >Content</span
+        >
+        <i class="bi bi-chevron-down" aria-hidden="true"></i>
       </BLink>
       <div
         id="contentCollapse"
@@ -74,54 +86,54 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/content/voice-tone"
               >Voice &amp; Tone</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/content/grammar-mechanics"
               >Grammar &amp; Mechanics</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/content/language-inclusivity"
               >Language &amp; Inclusivity</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/content/terminology"
               >Terminology</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/content/labels"
               >Labels</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/content/writing-errors"
               >Writing for Errors</BLink
             >
@@ -131,17 +143,23 @@
     </li>
     <li class="nav-item mb-1">
       <BLink
-        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-        exact-active-class="bg-black bg-opacity-10"
-        to="/foundations/"
         id="foundationsHeading"
+        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+        exact-active-class="bg-white bg-opacity-10"
+        to="/foundations/"
         data-bs-toggle="collapse"
         data-bs-target="#foundationsCollapse"
         :aria-expanded="$route.path.includes('/foundations') ? true : false"
         aria-controls="foundationsCollapse"
       >
-        <span><i class="bi bi-layers-fill me-3"></i>Foundations</span>
-        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        <span
+          ><i
+            class="bi bi-layers-fill me-3 text-white"
+            style="--bs-text-opacity: 0.5"
+          ></i
+          >Foundations</span
+        >
+        <i class="bi bi-chevron-down" aria-hidden="true"></i>
       </BLink>
       <div
         id="foundationsCollapse"
@@ -152,36 +170,36 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/foundations/color"
               >Color</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/foundations/typography"
               >Typography</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/foundations/layout"
               >Layout</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/foundations/icons"
               >Icons</BLink
             >
@@ -198,17 +216,23 @@
 
     <li class="nav-item mb-1">
       <BLink
-        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-        exact-active-class="bg-black bg-opacity-10"
-        to="/elements/"
         id="elementsHeading"
+        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+        exact-active-class="bg-white bg-opacity-10"
+        to="/elements/"
         data-bs-toggle="collapse"
         data-bs-target="#elementsCollapse"
         :aria-expanded="$route.path.includes('/elements') ? true : false"
         aria-controls="elementsCollapse"
       >
-        <span><i class="bi bi-box me-3"></i>UI Elements</span>
-        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        <span
+          ><i
+            class="bi bi-box me-3 text-white"
+            style="--bs-text-opacity: 0.5"
+          ></i
+          >UI Elements</span
+        >
+        <i class="bi bi-chevron-down" aria-hidden="true"></i>
       </BLink>
       <div
         id="elementsCollapse"
@@ -219,55 +243,55 @@
         <ul class="nav flex-column small fw-light mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/elements/link"
               >Link</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/elements/button"
               >Button</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/elements/heading"
               >Heading</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/elements/paragraph"
               >Paragraph</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.6"
-              exact-active-class="bg-black bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+              style="--bs-text-opacity: 0.5"
+              exact-active-class="bg-white bg-opacity-10"
               to="/elements/icon"
               >Icon</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-              exact-active-class="bg-black bg-opacity-10"
-              to="/elements/forms"
               id="elementsFormHeading"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+              exact-active-class="bg-white bg-opacity-10"
+              to="/elements/forms"
               data-bs-toggle="collapse"
               data-bs-target="#elementsFormCollapse"
               :aria-expanded="
@@ -276,7 +300,7 @@
               aria-controls="elementsFormCollapse"
             >
               <span>Forms</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              <i class="bi bi-chevron-down" aria-hidden="true"></i>
             </BLink>
             <div
               id="elementsFormCollapse"
@@ -287,36 +311,36 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/label"
                     >Label</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/input"
                     >Input</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/select"
                     >Textarea</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/select"
                     >Select</BLink
                   >
@@ -324,45 +348,45 @@
 
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/select"
                     >Button</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/select"
                     >Fieldset</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/radio"
                     >Radio</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/checkbox"
                     >Checkbox</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/range"
                     >Range</BLink
                   >
@@ -376,17 +400,23 @@
 
     <li class="nav-item mb-1">
       <BLink
-        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-        exact-active-class="bg-black bg-opacity-10"
-        to="/patterns/"
         id="patternsHeading"
+        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+        exact-active-class="bg-white bg-opacity-10"
+        to="/patterns/"
         data-bs-toggle="collapse"
         data-bs-target="#patternsCollapse"
         :aria-expanded="$route.path.includes('/patterns/') ? true : false"
         aria-controls="patternsCollapse"
       >
-        <span><i class="bi bi-boxes me-3"></i>UX Patterns</span>
-        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        <span
+          ><i
+            class="bi bi-boxes me-3 text-white"
+            style="--bs-text-opacity: 0.5"
+          ></i
+          >UX Patterns</span
+        >
+        <i class="bi bi-chevron-down" aria-hidden="true"></i>
       </BLink>
       <div
         id="patternsCollapse"
@@ -397,10 +427,10 @@
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-              exact-active-class="bg-black bg-opacity-10"
-              to="/patterns/layout/"
               id="patternsLayoutHeading"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+              exact-active-class="bg-white bg-opacity-10"
+              to="/patterns/layout/"
               data-bs-toggle="collapse"
               data-bs-target="#patternsLayoutCollapse"
               :aria-expanded="
@@ -409,7 +439,7 @@
               aria-controls="patternsLayoutCollapse"
             >
               <span>Layout</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              <i class="bi bi-chevron-down" aria-hidden="true"></i>
             </BLink>
             <div
               id="patternsLayoutCollapse"
@@ -420,18 +450,18 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/layout/topbar"
                     >Topbar</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/layout/sidebar"
                     >Sidebar</BLink
                   >
@@ -442,10 +472,10 @@
 
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-              exact-active-class="bg-black bg-opacity-10"
-              to="/patterns/navigation/"
               id="patternsNavigationHeading"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+              exact-active-class="bg-white bg-opacity-10"
+              to="/patterns/navigation/"
               data-bs-toggle="collapse"
               data-bs-target="#patternsNavigationCollapse"
               :aria-expanded="
@@ -454,7 +484,7 @@
               aria-controls="patternsNavigationCollapse"
             >
               <span>Navigation</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              <i class="bi bi-chevron-down" aria-hidden="true"></i>
             </BLink>
             <div
               id="patternsNavigationCollapse"
@@ -467,18 +497,18 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/navigation/tabs"
                     >Tabs</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/navigation/menu"
                     >Menu</BLink
                   >
@@ -489,10 +519,10 @@
 
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-              exact-active-class="bg-black bg-opacity-10"
-              to="/patterns/surface/"
               id="patternsSurfaceHeading"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+              exact-active-class="bg-white bg-opacity-10"
+              to="/patterns/surface/"
               data-bs-toggle="collapse"
               data-bs-target="#patternsSurfaceCollapse"
               :aria-expanded="
@@ -501,7 +531,7 @@
               aria-controls="patternsSurfaceCollapse"
             >
               <span>Surface</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              <i class="bi bi-chevron-down" aria-hidden="true"></i>
             </BLink>
             <div
               id="patternsSurfaceCollapse"
@@ -512,27 +542,27 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/surface/card"
                     >Card</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/surface/panel"
                     >Panel</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/surface/tile"
                     >Tile</BLink
                   >
@@ -543,10 +573,10 @@
 
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-              exact-active-class="bg-black bg-opacity-10"
-              to="/patterns/disclosure/"
               id="patternsDisclosureHeading"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+              exact-active-class="bg-white bg-opacity-10"
+              to="/patterns/disclosure/"
               data-bs-toggle="collapse"
               data-bs-target="#patternsDisclosureCollapse"
               :aria-expanded="
@@ -555,7 +585,7 @@
               aria-controls="patternsDisclosureCollapse"
             >
               <span>Disclosure</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              <i class="bi bi-chevron-down" aria-hidden="true"></i>
             </BLink>
             <div
               id="patternsDisclosureCollapse"
@@ -568,27 +598,27 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/disclosure/collapse"
                     >Collapse</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/disclosure/accordian"
                     >Accordian</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/disclosure/modal"
                     >Modal</BLink
                   >
@@ -599,10 +629,10 @@
 
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-              exact-active-class="bg-black bg-opacity-10"
-              to="/patterns/messaging/"
               id="patternsMessagingHeading"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+              exact-active-class="bg-white bg-opacity-10"
+              to="/patterns/messaging/"
               data-bs-toggle="collapse"
               data-bs-target="#patternsMessagingCollapse"
               :aria-expanded="
@@ -611,7 +641,7 @@
               aria-controls="patternsMessagingCollapse"
             >
               <span>Messaging</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              <i class="bi bi-chevron-down" aria-hidden="true"></i>
             </BLink>
             <div
               id="patternsMessagingCollapse"
@@ -624,27 +654,27 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/messaging/alert"
                     >Alert</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/messaging/toast"
                     >Toast</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/messaging/banner"
                     >Banner</BLink
                   >
@@ -655,10 +685,10 @@
 
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-black-hover bg-opacity-10-hover"
-              exact-active-class="bg-black bg-opacity-10"
-              to="/patterns/utility/"
               id="patternsUtilityHeading"
+              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
+              exact-active-class="bg-white bg-opacity-10"
+              to="/patterns/utility/"
               data-bs-toggle="collapse"
               data-bs-target="#patternsUtilityCollapse"
               :aria-expanded="
@@ -667,7 +697,7 @@
               aria-controls="patternsUtilityCollapse"
             >
               <span>Utility</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              <i class="bi bi-chevron-down" aria-hidden="true"></i>
             </BLink>
             <div
               id="patternsUtilityCollapse"
@@ -678,18 +708,18 @@
               <ul class="nav flex-column fw-light mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/utility/profile"
                     >Profile</BLink
                   >
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-black-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.6"
-                    exact-active-class="bg-black bg-opacity-10"
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
                     to="/patterns/utility/color-mode"
                     >Color Mode</BLink
                   >
@@ -724,18 +754,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.chevron .bi-chevron-right {
+.chevron .bi-chevron-down {
   display: inline-block;
   transition: transform 0.35s ease;
   transform-origin: 0.5em 50%;
   font-weight: bolder;
 }
 
-.chevron[aria-expanded="true"] .bi-chevron-right {
-  transform: rotate(90deg);
+.chevron[aria-expanded="true"] .bi-chevron-down {
+  // transform: rotate(-180deg);
+  transform: scaleY(-1);
 }
 
-.bi-chevron-right::after {
+.bi-chevron-down::after {
   font-weight: bolder !important;
 }
 </style>

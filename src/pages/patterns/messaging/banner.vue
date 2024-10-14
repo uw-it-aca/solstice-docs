@@ -100,8 +100,8 @@ import PageContents from "@/components/PageContents.vue";
 
 export default {
   name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
-  inject: ["mq"],
   components: { Layout, /* CodeBlock, UsageBlock, */ PageContents },
+  inject: ["mq"],
   data() {
     return {
       pageTitle: "Banner",

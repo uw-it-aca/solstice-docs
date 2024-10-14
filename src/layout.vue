@@ -1,16 +1,25 @@
 <template>
   <SSidebar :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
-    <template #profile>
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="text-light">Latest: v.1.1.0</div>
-        <div class="text-light"><SColorMode></SColorMode></div>
-      </div>
-    </template>
     <template #navigation>
       <NavMenu />
     </template>
     <template #aside>
-      <ReleaseNotes />
+      <div
+        class="bg-white bg-opacity-10 rounded-3 px-3 py-1 small d-flex justify-content-between align-items-center mt-2"
+      >
+        <div class="text-light">
+          Version:
+          <a
+            href="https://github.com/uw-it-aca/solstice-vue/releases"
+            target="_blank"
+            class="ms-2 link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+            >1.1.0</a
+          >
+        </div>
+        <div class="text-light">
+          <SColorMode />
+        </div>
+      </div>
     </template>
     <template #main>
       <div v-if="$slots.breadcrumb" class="row">
@@ -21,8 +30,8 @@
 
       <div v-if="$slots.lead" class="row">
         <div class="col-9">
-          <h1 class="fw-bold">{{ pageTitle }}</h1>
-          <p class="lead text-muted">
+          <h1 class="ff-encode-sans fw-bold">{{ pageTitle }}</h1>
+          <p class="lead text-secondary">
             <slot name="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
               maiores quo consequatur, minima minus suscipit doloribus quos
@@ -60,18 +69,16 @@
 
 <script>
 import NavMenu from "@/components/NavMenu.vue";
-import ReleaseNotes from "@/components/ReleaseNotes.vue";
 import { SColorMode, SSidebar } from "solstice-vue";
 
 export default {
   name: "App",
-  inject: ["mq"],
   components: {
     NavMenu,
-    ReleaseNotes,
     SColorMode,
     SSidebar,
   },
+  inject: ["mq"],
   props: {
     pageTitle: {
       type: String,

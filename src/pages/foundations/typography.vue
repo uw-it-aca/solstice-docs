@@ -30,11 +30,11 @@
       </p>
       <CodeBlock>
         <template #preview>
-          <div class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans</div>
+          <div class="ff-open-sans">Lorem ipsum dolor... Open Sans</div>
         </template>
-        <template #markup>
+        <template #bootstrap>
           <pre class="language-html">
-<code>&lt;body class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans&lt;/body>
+<code>&lt;body class="ff-open-sans">Lorem ipsum dolor... Open Sans&lt;/body>
 </code></pre>
         </template>
       </CodeBlock>
@@ -44,13 +44,13 @@
 
       <CodeBlock>
         <template #preview>
-          <div class="axdd-font-encode-sans">
-            Lorem ipsum dolor... Encode Sans Condensed
-          </div>
+          <h1 class="ff-encode-sans">
+            Heading... Encode Sans Condensed
+          </h1>
         </template>
-        <template #markup>
+        <template #bootstrap>
           <pre class="language-html">
-<code>&lt;body class="axdd-font-open-sans">Lorem ipsum dolor... Open Sans&lt;/body>
+<code>&lt;h1 class="ff-encode-sans">Heading... Encode Sans Condensed&lt;/h1>
 </code></pre>
         </template>
       </CodeBlock>

@@ -387,7 +387,6 @@ import { BBreadcrumb, BBreadcrumbItem, BToast } from "bootstrap-vue-next";
 
 export default {
   name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
-  inject: ["mq"],
   components: {
     Layout,
     CodeBlock,
@@ -397,6 +396,7 @@ export default {
     BBreadcrumbItem,
     BToast,
   },
+  inject: ["mq"],
   data() {
     return {
       pageTitle: "Toast",

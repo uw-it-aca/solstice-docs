@@ -577,7 +577,6 @@ import {
 
 export default {
   name: "DocsElementsAlert" /* example: Docs--Folder--ComponentName */,
-  inject: ["mq"],
   components: {
     Layout,
     CodeBlock,
@@ -588,6 +587,7 @@ export default {
     BBreadcrumbItem,
     BLink,
   },
+  inject: ["mq"],
   data() {
     return {
       pageTitle: "Alert",
