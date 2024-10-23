@@ -94,71 +94,50 @@
 
       <CodeBlock>
         <template #preview>
-          <STabsList
-            :tabs-id="'example'"
-            class="mb-4"
-            :variant="'pills'"
-            style="max-width: 600px"
-          >
-            <template #items>
-              <STabsItem
-                :tabs-id="'example'"
-                :panel-id="'first'"
-                :active-tab="true"
-                :variant="'pills'"
-                >First</STabsItem
-              >
-              <STabsItem
-                :tabs-id="'example'"
-                :panel-id="'second'"
-                :variant="'pills'"
-                >Second</STabsItem
-              >
-              <STabsItem
-                :tabs-id="'example'"
-                :panel-id="'third'"
-                :variant="'pills'"
-                >Third</STabsItem
-              >
-            </template>
+
+          <STabsList :tabs-id="'example2'">
+            <STabsItem
+              :tabs-id="'example2'"
+              :panel-id="'first2'"
+              active-tab="true"
+            >
+              First
+            </STabsItem>
+            <STabsItem :tabs-id="'example2'" :panel-id="'second2'">
+              Second
+            </STabsItem>
+            <STabsItem :tabs-id="'example2'" :panel-id="'third2'">
+              Third
+            </STabsItem>
           </STabsList>
-          <STabsList :tabs-id="'example'" class="mb-4" style="max-width: 600px">
-            <template #items>
-              <STabsItem
-                :tabs-id="'example'"
-                :panel-id="'first'"
-                :active-tab="true"
-                >First</STabsItem
-              >
-              <STabsItem :tabs-id="'example'" :panel-id="'second'"
-                >Second</STabsItem
-              >
-              <STabsItem :tabs-id="'example'" :panel-id="'third'"
-                >Third</STabsItem
-              >
-            </template>
-          </STabsList>
-          <STabsDisplay :tabs-id="'example'" style="max-width: 600px">
-            <template #panels>
-              <STabsPanel :panel-id="'first'" :active-panel="true">
-                <p>
-                  <strong>first</strong> Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit.
-                </p>
-              </STabsPanel>
-              <STabsPanel :panel-id="'second'">
-                <p>
-                  <strong>second</strong> Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit.
-                </p>
-              </STabsPanel>
-              <STabsPanel :panel-id="'third'">
-                <p>
-                  <strong>third</strong> Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit.
-                </p>
-              </STabsPanel>
-            </template>
+
+          <STabsDisplay :tabs-id="'example2'">
+            <STabsPanel :panel-id="'first2'" :active-panel="true">
+              <p>
+                First... Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Voluptatum quaerat fuga ad quo facere, beatae odit at
+                mollitia reiciendis harum nostrum dolorum eum dolor corporis
+                doloremque architecto accusantium? Quibusdam, vitae?
+              </p>
+            </STabsPanel>
+            <STabsPanel :panel-id="'second2'"
+              ><p>
+                Second... Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Tempore, provident quas molestias dicta exercitationem
+                nihil odit. Itaque qui minima sequi, reprehenderit veritatis,
+                cum perspiciatis ad neque architecto repellat consequuntur
+                repudiandae!
+              </p>
+            </STabsPanel>
+            <STabsPanel :panel-id="'third2'"
+              ><p>
+                Third... Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Quidem quam, beatae perferendis dolore ratione doloremque,
+                voluptates aut, ullam illum esse sequi blanditiis pariatur
+                delectus saepe molestias necessitatibus cupiditate maxime
+                voluptatem.
+              </p></STabsPanel
+            >
           </STabsDisplay>
         </template>
         <template #vue>

@@ -13,8 +13,7 @@
       >
         <span
           ><i
-            class="bi bi-flag me-3 text-white"
-            style="--bs-text-opacity: 0.5"
+            class="bi bi-flag me-3 text-white text-opacity-50"
           ></i
           >Getting Started</span
         >
@@ -29,27 +28,24 @@
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.5"
-              exact-active-class="bg-white bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover text-opacity-50"
+              exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/solstice-101"
               >Solstice 101</BLink
             >
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.5"
-              exact-active-class="bg-white bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover text-opacity-50"
+              exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/design-principles"
               >Design Principles</BLink
             >
           </li>
           <li class="nav-item">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-              style="--bs-text-opacity: 0.5"
-              exact-active-class="bg-white bg-opacity-10"
+              class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover text-opacity-50"
+              exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/developer-guide"
               >Developer Guide</BLink
             >
@@ -762,8 +758,7 @@ export default {
 }
 
 .chevron[aria-expanded="true"] .bi-chevron-down {
-  // transform: rotate(-180deg);
-  transform: scaleY(-1);
+  transform: rotate(-180deg); // transform: scaleY(-1);
 }
 
 .bi-chevron-down::after {
