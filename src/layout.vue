@@ -12,7 +12,7 @@
           <a
             href="https://github.com/uw-it-aca/solstice-vue/releases"
             target="_blank"
-            class="ms-2 link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+            class="ms-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
             >1.1.0</a
           >
         </div>
@@ -31,7 +31,7 @@
       <div v-if="$slots.lead" class="row">
         <div class="col-9">
           <h1 class="ff-encode-sans fw-bold">{{ pageTitle }}</h1>
-          <p class="lead text-secondary">
+          <p class="lead text-body-secondary">
             <slot name="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
               maiores quo consequatur, minima minus suscipit doloribus quos

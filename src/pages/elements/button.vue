@@ -44,13 +44,6 @@
             </li>
             <li>
               <a
-                href="#inactive"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Inactive buttons</a
-              >
-            </li>
-            <li>
-              <a
                 href="#button-groups"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
                 >Button groups</a
@@ -79,16 +72,16 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="primary" class="rounded-3">Submit</BButton>
+            <BButton variant="primary">Submit</BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-primary rounded-3" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-primary" type="button">Button&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="primary" class="rounded-3">Button&lt;/BButton>
+<code>&lt;BButton variant="primary">Button&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -102,22 +95,45 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="outline-secondary" class="rounded-3"
-              >Edit</BButton
-            >
+            <BButton variant="secondary" class="text-primary">Edit</BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-outline-secondary rounded-3" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-secondary text-primary" type="button">Button&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="outline-secondary" class="rounded-3">Button&lt;/BButton>
+<code>&lt;BButton variant="secondary" class="text-primary">Button&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
       </div>
+
+      <h3>Outline</h3>
+      <p>
+        Use the <code>outline-primary</code> variant for buttons that change
+        modes (i.e., edit), or for buttons that supplement core actions in
+        button groups (i.e., “cancel”)
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BButton variant="outline-primary">Edit</BButton>
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;button class="btn btn-outline-primary" type="button">Button&lt;/button>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BButton variant="outline-primary">Button&lt;/BButton>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
       <h3>Link Button</h3>
       <p>
         Use the <code>link</code> variant for buttons with less prominence than
@@ -156,36 +172,26 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="primary" size="sm" class="rounded-3 me-2"
+            <BButton variant="primary" size="sm" class="me-2"
               >Small button</BButton
             >
-            <BButton variant="primary" class="rounded-3 me-2"
-              >Medium button</BButton
-            >
-            <BButton variant="primary" size="lg" class="rounded-3 me-2"
+            <BButton variant="primary" class="me-2">Medium button</BButton>
+            <BButton variant="primary" size="lg" class="me-2"
               >Large button</BButton
             >
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-primary btn-sm rounded-3" type="button">Button&lt;/button>
-</code></pre>
-            <pre class="language-html">
-<code>&lt;button class="btn btn-primary rounded-3" type="button">Button&lt;/button>
-</code></pre>
-            <pre class="language-html">
-<code>&lt;button class="btn btn-primary btn-lg rounded-3" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-primary btn-sm" type="button">Button&lt;/button>
+&lt;button class="btn btn-primary" type="button">Button&lt;/button>
+&lt;button class="btn btn-primary btn-lg" type="button">Button&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="primary" size="sm" class="rounded-3">Small button&lt;/BButton>
-</code></pre>
-            <pre class="language-html">
-<code>&lt;BButton variant="primary" class="rounded-3">Small button&lt;/BButton>
-</code></pre>
-            <pre class="language-html">
-<code>&lt;BButton variant="primary" size="lg" class="rounded-3">Small button&lt;/BButton>
+<code>&lt;BButton variant="primary" size="sm">Small button&lt;/BButton>
+&lt;BButton variant="primary">Small button&lt;/BButton>
+&lt;BButton variant="primary" size="lg">Small button&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -198,34 +204,106 @@
         a leading visual before the text. In some cases, buttons may need a
         trailing visual (like a dropdown arrow). If buttons are part of a group,
         icons should be aligned (all buttons have an icon or none of them have
-        an icon). For icon-only buttons -- for example a hamburger or a meatball
-        menu, or page forward/backward buttons -- they must be labelled
-        correctly in markup for assistive technologies, and they should have a
-        tooltip in the UI with a text label.
-      </p>
-
-      <h2 id="inactive">Inactive state</h2>
-      <p>
-        Set the <code>disabled</code> prop to make the button inactive. Use
-        inactive buttons to communicate the particular action of the button
-        cannot be made until other tasks are completed, such as all fields must
-        be entered on a form before the 'submit' action is active.
+        an icon).
       </p>
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton disabled variant="primary" class="rounded-3"
-              >Inactive</BButton
-            >
+            <BButton variant="primary" class="me-2"
+              ><i class="bi bi-trash3 me-2"></i
+            >Hello</BButton>
+
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-link" type="button" disabled>Button&lt;/button>
+<code>&lt;button class="btn btn-primary btn-sm" type="button">
+  &lt;i class="bi bi-trash3 me-2">&lt;/i>Hello
+&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton disabled variant="primary">Inactive&lt;/BButton>
+<code>&lt;BButton variant="primary">
+  &lt;i class="bi bi-trash3 me-2">&lt;/i>Hello
+&lt;/BButton>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
+      <p>
+        For icon-only buttons -- for example a hamburger or a meatball menu, or
+        page forward/backward buttons -- they must be labelled correctly in
+        markup for assistive technologies, and they should have a tooltip in the
+        UI with a text label.
+      </p>
+      <h4>Primary/Secondary</h4>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BButton variant="primary" size="sm" class="me-2" title="Delete"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+            <BButton variant="secondary" size="sm" class="text-primary me-2"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+            <BButton variant="outline-primary" size="sm" class="me-2"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+            <BButton variant="link" size="sm" class="me-2"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;button class="btn btn-primary btn-sm" type="button" title="Delete">...&lt;/button>
+&lt;button class="btn btn-secondary btn-sm text-primary" type="button">...&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" type="button">...&lt;/button>
+&lt;button class="btn btn-link btn-sm" type="button">...&lt;/button>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BButton variant="primary" size="sm" title="Delete">...&lt;/BButton>
+&lt;BButton variant="secondary" size="sm" class="text-primary">...&lt;/BButton>
+&lt;BButton variant="outline-primary" size="sm">...&lt;/BButton>
+&lt;BButton variant="link" size="sm">...&lt;/BButton>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
+      <h4>Dark/Light</h4>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BButton variant="dark" size="sm" class="me-2"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+            <BButton variant="light" size="sm" class="me-2"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+            <BButton variant="outline-dark" size="sm" class="me-2"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+            <BButton variant="link" size="sm" class="text-dark me-2"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;button class="btn btn-primary btn-sm" type="button">...&lt;/button>
+&lt;button class="btn btn-secondary btn-sm text-primary" type="button">...&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" type="button">...&lt;/button>
+&lt;button class="btn btn-link btn-sm" type="button">...&lt;/button>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BButton variant="dark" size="sm">...&lt;/BButton>
+&lt;BButton variant="light" size="sm">...&lt;/BButton>
+&lt;BButton variant="outline-dark" size="sm">...&lt;/BButton>
+&lt;BButton variant="link" size="sm" class="text-dark">...&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -252,7 +330,7 @@
   &lt;button type="button" class="btn btn-primary">Button 1&lt;/button>
   &lt;button type="button" class="btn btn-primary">Button 2&lt;/button>
   &lt;button type="button" class="btn btn-primary">Button 3&lt;/button>
-  &lt;/div>
+&lt;/div>
 </code></pre>
           </template>
           <template #vue>
@@ -261,7 +339,7 @@
   &lt;BButton variant="primary">Button 1&lt;/BButton>
   &lt;BButton variant="primary">Button 2&lt;/BButton>
   &lt;BButton variant="primary">Button 3&lt;/BButton>
-  &lt;/BButtonGroup>
+&lt;/BButtonGroup>
 </code></pre>
           </template>
         </CodeBlock>
