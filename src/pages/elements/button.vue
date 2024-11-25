@@ -21,13 +21,13 @@
       <PageContents>
         <nav id="TableOfContents">
           <ul class="list-unstyled m-0">
-            <!-- <li>
+            <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
                 >Anatomy</a
               >
-            </li>-->
+            </li>
             <li>
               <a
                 href="#variants"
@@ -44,9 +44,23 @@
             </li>
             <li>
               <a
-                href="#button-groups"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Button groups</a
+                href="#usage"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Usage</a
+              >
+            </li>
+            <li>
+              <a
+                href="#accessibility"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Accessibility</a
+              >
+            </li>
+            <li>
+              <a
+                href="#implementation"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Implementation</a
               >
             </li>
           </ul>
@@ -54,13 +68,13 @@
       </PageContents>
     </template>
     <template #content>
-      <!--<h2 id="anatomy">Anatomy</h2>
+      <h2 id="anatomy">Anatomy</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga
         corporis totam eligendi molestiae ex aperiam soluta, consectetur
         accusamus accusantium officia praesentium, magni numquam sunt minus
         architecto libero enim tempore!
-      </p>-->
+      </p>
 
       <h2 id="variants">Variants</h2>
       <h3>Primary</h3>
