@@ -77,7 +77,7 @@
         :class="$route.path.includes('/content') ? 'show' : ''"
         aria-labelledby="contentHeading"
       >
-        <ul class="nav flex-column small fw-light mt-1">
+        <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
@@ -155,7 +155,7 @@
         :class="$route.path.includes('/foundations') ? 'show' : ''"
         aria-labelledby="foundationsHeading"
       >
-        <ul class="nav flex-column small fw-light mt-1">
+        <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
@@ -224,7 +224,7 @@
         :class="$route.path.includes('/elements') ? 'show' : ''"
         aria-labelledby="elementsHeading"
       >
-        <ul class="nav flex-column small fw-light mt-1">
+        <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
@@ -287,7 +287,7 @@
               :class="$route.path.includes('/elements/forms') ? 'show' : ''"
               aria-labelledby="elementsFormHeading"
             >
-              <ul class="nav flex-column fw-light mt-1">
+              <ul class="nav flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
@@ -426,7 +426,7 @@
               :class="$route.path.includes('/patterns/layout/') ? 'show' : ''"
               aria-labelledby="patternsLayoutHeading"
             >
-              <ul class="nav flex-column fw-light mt-1">
+              <ul class="nav flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
@@ -471,7 +471,7 @@
               "
               aria-labelledby="patternsNavigationHeading"
             >
-              <ul class="nav flex-column fw-light mt-1">
+              <ul class="nav flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
@@ -514,7 +514,7 @@
               :class="$route.path.includes('/patterns/surface/') ? 'show' : ''"
               aria-labelledby="patternsSurfaceHeading"
             >
-              <ul class="nav flex-column fw-light mt-1">
+              <ul class="nav flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
@@ -567,7 +567,7 @@
               "
               aria-labelledby="patternsDisclosureHeading"
             >
-              <ul class="nav flex-column fw-light mt-1">
+              <ul class="nav flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
@@ -620,7 +620,7 @@
               "
               aria-labelledby="patternsSurfaceHeading"
             >
-              <ul class="nav flex-column fw-light mt-1">
+              <ul class="nav flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
@@ -671,7 +671,7 @@
               :class="$route.path.includes('/patterns/utility/') ? 'show' : ''"
               aria-labelledby="patternsSurfaceHeading"
             >
-              <ul class="nav flex-column fw-light mt-1">
+              <ul class="nav flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
