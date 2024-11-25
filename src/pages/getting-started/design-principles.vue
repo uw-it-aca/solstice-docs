@@ -37,7 +37,7 @@ export default {
   components: { Layout },
   data() {
     return {
-      pageTitle: "Design with Solstice",
+      pageTitle: "Design Principles",
     };
   },
 };

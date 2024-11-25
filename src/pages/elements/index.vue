@@ -48,18 +48,18 @@
             adipisicing elit.</DescriptionBlock
           >
         </li>
-      </ul>
-      <hr />
-      <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
-            :name="'Form Inputs'"
-            :link="'/elements/form'"
-            class="bg-light"
-            >Form Elements are used for submitting data!</DescriptionBlock
+            :name="'Icon'"
+            :link="'/elements/icon'"
+            :accessibility="true"
+            :version="'1.0.x'"
+            >Component description... Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</DescriptionBlock
           >
         </li>
       </ul>
+      <p>View <BLink to="/elements/forms">Form Inputs</BLink> here</p>
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>

@@ -43,8 +43,8 @@
         Designers are expected to use the elements and patterns documented in
         the design system to aid in their design process. Further resources can
         be found on the
-        <router-link to="/getting-started/design-with-solstice"
-          >Design with Solstice</router-link
+        <BLink to="/getting-started/design-with-solstice"
+          >Design with Solstice</BLink
         >
         page.
       </p>
@@ -55,10 +55,11 @@
 
 <script>
 import Layout from "@/layout.vue";
+import { BLink } from "bootstrap-vue-next";
 
 export default {
   name: "DocsSolstice101",
-  components: { Layout },
+  components: { Layout, BLink },
   data() {
     return {
       pageTitle: "Solstice 101",

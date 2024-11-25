@@ -55,12 +55,12 @@ import Layout from "@/layout.vue";
 import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {
-  name: "DocsPatternsPatternName" /* TODO: replace 'PatternName' */,
+  name: "DocsElementsFormsIndex" /* TODO: replace 'PatternName' */,
   inject: ["mq"],
   components: { Layout, DescriptionBlock },
   data() {
     return {
-      pageTitle: "Form" /* TODO: Set a page title */,
+      pageTitle: "Forms" /* TODO: Set a page title */,
     };
   },
 };

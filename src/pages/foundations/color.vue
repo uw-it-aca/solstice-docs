@@ -438,7 +438,7 @@
         </li>
       </ul>
 
-      <h4 class="fw-bold">Surface</h4>
+      <h4 class="fw-bold">Surface (background)</h4>
       <p>
         [WIP] Surface colors are most likely used as the background for content
         containers.
@@ -467,6 +467,15 @@
         </li>
         <li class="list-inline-item">
           <div
+            class="bg-light text-dark rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            light
+          </div>
+          <small>#f8f9fa</small>
+        </li>
+        <li class="list-inline-item">
+          <div
             class="bg-dark text-light rounded p-2"
             style="width: 120px; height: 60px"
           >
@@ -485,9 +494,8 @@
         </li>
       </ul>
       <h5>Color Mode supported</h5>
-      <p>
-        These colors change based on the color mode. (-subtle theme colors).
-      </p>
+      <p>These colors change based on the color mode.</p>
+      <h6>Body</h6>
       <ul class="list-inline">
         <li class="list-inline-item">
           <div class="bg-body rounded p-2" style="width: 120px; height: 60px">
@@ -506,19 +514,67 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-light-subtle rounded p-2"
+            class="bg-body-secondary rounded p-2 text-nowrap"
+            style="width: 140px; height: 60px"
+          >
+            body-secondary
+          </div>
+          <small>#e9ecef / #343a40</small>
+        </li>
+      </ul>
+      <h6>Subtle (theme)</h6>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <div
+            class="bg-primary-subtle rounded p-2"
             style="width: 120px; height: 60px"
           >
-            light-subtle
+            primary-subtle
+          </div>
+          <small>#ffffff / #212529</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-secondary-subtle rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            secondary-subtle
+          </div>
+          <small>#f8f9fa / #2b3035</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-success-subtle rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            success-subtle
           </div>
           <small>#fcfcfd / #dee2e6</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-dark-subtle rounded p-2"
+            class="bg-danger-subtle rounded p-2"
             style="width: 120px; height: 60px"
           >
-            dark-subtle
+            danger-subtle
+          </div>
+          <small>#ced4da / #1a1d20</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-warning-subtle rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            warning-subtle
+          </div>
+          <small>#ced4da / #1a1d20</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-info-subtle rounded p-2"
+            style="width: 120px; height: 60px"
+          >
+            info-subtle
           </div>
           <small>#ced4da / #1a1d20</small>
         </li>

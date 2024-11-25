@@ -21,13 +21,13 @@
       <PageContents>
         <nav id="TableOfContents">
           <ul class="list-unstyled m-0">
-            <!-- <li>
+            <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
                 >Anatomy</a
               >
-            </li>-->
+            </li>
             <li>
               <a
                 href="#variants"
@@ -44,16 +44,23 @@
             </li>
             <li>
               <a
-                href="#inactive"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Inactive buttons</a
+                href="#usage"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Usage</a
               >
             </li>
             <li>
               <a
-                href="#button-groups"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Button groups</a
+                href="#accessibility"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Accessibility</a
+              >
+            </li>
+            <li>
+              <a
+                href="#implementation"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >Implementation</a
               >
             </li>
           </ul>
@@ -61,13 +68,13 @@
       </PageContents>
     </template>
     <template #content>
-      <!--<h2 id="anatomy">Anatomy</h2>
+      <h2 id="anatomy">Anatomy</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga
         corporis totam eligendi molestiae ex aperiam soluta, consectetur
         accusamus accusantium officia praesentium, magni numquam sunt minus
         architecto libero enim tempore!
-      </p>-->
+      </p>
 
       <h2 id="variants">Variants</h2>
       <h3>Primary</h3>
@@ -79,16 +86,16 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="primary" class="rounded-3">Submit</BButton>
+            <BButton variant="primary">Submit</BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-primary rounded-3" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-primary" type="button">Button&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="primary" class="rounded-3">Button&lt;/BButton>
+<code>&lt;BButton variant="primary">Button&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -102,22 +109,45 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="outline-secondary" class="rounded-3"
-              >Edit</BButton
-            >
+            <BButton variant="secondary" class="text-primary">Edit</BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-outline-secondary rounded-3" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-secondary text-primary" type="button">Button&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="outline-secondary" class="rounded-3">Button&lt;/BButton>
+<code>&lt;BButton variant="secondary" class="text-primary">Button&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
       </div>
+
+      <h3>Outline</h3>
+      <p>
+        Use the <code>outline-primary</code> variant for buttons that change
+        modes (i.e., edit), or for buttons that supplement core actions in
+        button groups (i.e., “cancel”)
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BButton variant="outline-primary">Edit</BButton>
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;button class="btn btn-outline-primary" type="button">Button&lt;/button>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BButton variant="outline-primary">Button&lt;/BButton>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
       <h3>Link Button</h3>
       <p>
         Use the <code>link</code> variant for buttons with less prominence than
@@ -129,16 +159,20 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="link" class="rounded-3">Link</BButton>
+            <BButton
+              variant="link"
+              class="bg-secondary-hover link-primary link-underline link-underline-opacity-0"
+              >Link</BButton
+            >
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-link" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-link bg-secondary-hover link-primary link-underline link-underline-opacity-0" type="button">Button&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="link">Button&lt;/BButton>
+<code>&lt;BButton variant="link" class="bg-secondary-hover link-primary link-underline link-underline-opacity-0">Button&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -156,36 +190,26 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="primary" size="sm" class="rounded-3 me-2"
+            <BButton variant="primary" size="sm" class="me-2"
               >Small button</BButton
             >
-            <BButton variant="primary" class="rounded-3 me-2"
-              >Medium button</BButton
-            >
-            <BButton variant="primary" size="lg" class="rounded-3 me-2"
+            <BButton variant="primary" class="me-2">Medium button</BButton>
+            <BButton variant="primary" size="lg" class="me-2"
               >Large button</BButton
             >
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-primary btn-sm rounded-3" type="button">Button&lt;/button>
-</code></pre>
-            <pre class="language-html">
-<code>&lt;button class="btn btn-primary rounded-3" type="button">Button&lt;/button>
-</code></pre>
-            <pre class="language-html">
-<code>&lt;button class="btn btn-primary btn-lg rounded-3" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-primary btn-sm" type="button">Button&lt;/button>
+&lt;button class="btn btn-primary" type="button">Button&lt;/button>
+&lt;button class="btn btn-primary btn-lg" type="button">Button&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="primary" size="sm" class="rounded-3">Small button&lt;/BButton>
-</code></pre>
-            <pre class="language-html">
-<code>&lt;BButton variant="primary" class="rounded-3">Small button&lt;/BButton>
-</code></pre>
-            <pre class="language-html">
-<code>&lt;BButton variant="primary" size="lg" class="rounded-3">Small button&lt;/BButton>
+<code>&lt;BButton variant="primary" size="sm">Small button&lt;/BButton>
+&lt;BButton variant="primary">Small button&lt;/BButton>
+&lt;BButton variant="primary" size="lg">Small button&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -198,93 +222,200 @@
         a leading visual before the text. In some cases, buttons may need a
         trailing visual (like a dropdown arrow). If buttons are part of a group,
         icons should be aligned (all buttons have an icon or none of them have
-        an icon). For icon-only buttons -- for example a hamburger or a meatball
-        menu, or page forward/backward buttons -- they must be labelled
-        correctly in markup for assistive technologies, and they should have a
-        tooltip in the UI with a text label.
+        an icon).
       </p>
-
-      <h2 id="inactive">Inactive state</h2>
-      <p>
-        Set the <code>disabled</code> prop to make the button inactive. Use
-        inactive buttons to communicate the particular action of the button
-        cannot be made until other tasks are completed, such as all fields must
-        be entered on a form before the 'submit' action is active.
-      </p>
-      <div class="mb-5">
+      <div class="mb-3">
         <CodeBlock>
           <template #preview>
-            <BButton disabled variant="primary" class="rounded-3"
-              >Inactive</BButton
+            <BButton variant="primary" class="me-2"
+              ><i class="bi bi-emoji-smile-fill me-2"></i>Hello</BButton
             >
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-link" type="button" disabled>Button&lt;/button>
+<code>&lt;button class="btn btn-primary" type="button">
+  &lt;i class="bi bi-trash3 me-2">&lt;/i>Hello
+&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton disabled variant="primary">Inactive&lt;/BButton>
+<code>&lt;BButton variant="primary">
+  &lt;i class="bi bi-trash3 me-2">&lt;/i>Hello
+&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
       </div>
 
-      <h2 id="button-groups">Button groups</h2>
       <p>
-        Button groups help to create a more organized, intuitive, and
-        user-friendly experience by grouping related actions, saving space, and
-        improving the overall usability.
+        For icon-only buttons -- for example a hamburger or a meatball menu, or
+        page forward/backward buttons -- they must be labelled correctly in
+        markup for assistive technologies, and they should have a tooltip in the
+        UI with a text label.
       </p>
-      <div class="mb-5">
+
+      <div class="mb-3">
         <CodeBlock>
           <template #preview>
-            <BButtonGroup>
-              <BButton variant="primary">Button 1</BButton>
-              <BButton variant="primary">Button 2</BButton>
-              <BButton variant="primary">Button 3</BButton>
-            </BButtonGroup>
+            <BButton variant="primary" size="sm" class="me-2" title="Delete"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+            <BButton
+              variant="secondary"
+              size="sm"
+              class="text-primary me-2"
+              title="Delete"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+            <BButton
+              variant="outline-primary"
+              size="sm"
+              class="me-2"
+              title="Delete"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+            <BButton
+              variant="link"
+              size="sm"
+              class="bg-secondary-hover link-primary link-underline link-underline-opacity-0 me-2"
+              title="Delete"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;div class="btn-group" role="group" aria-label="Basic example">
-  &lt;button type="button" class="btn btn-primary">Button 1&lt;/button>
-  &lt;button type="button" class="btn btn-primary">Button 2&lt;/button>
-  &lt;button type="button" class="btn btn-primary">Button 3&lt;/button>
-  &lt;/div>
+<code>&lt;button class="btn btn-primary btn-sm" type="button" title="Delete">...&lt;/button>
+&lt;button class="btn btn-secondary btn-sm text-primary" type="button" title="Delete">...&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" type="button" title="Delete">...&lt;/button>
+&lt;button class="btn btn-link btn-sm bg-secondary-hover link-primary link-underline link-underline-opacity-0" type="button" title="Delete">...&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButtonGroup>
-  &lt;BButton variant="primary">Button 1&lt;/BButton>
-  &lt;BButton variant="primary">Button 2&lt;/BButton>
-  &lt;BButton variant="primary">Button 3&lt;/BButton>
-  &lt;/BButtonGroup>
+<code>&lt;BButton variant="primary" size="sm" title="Delete">...&lt;/BButton>
+&lt;BButton variant="secondary" size="sm" class="text-primary" title="Delete">...&lt;/BButton>
+&lt;BButton variant="outline-primary" size="sm" title="Delete">...&lt;/BButton>
+&lt;BButton variant="link" size="sm" class="bg-secondary-hover link-primary link-underline link-underline-opacity-0"  title="Delete">...&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
       </div>
-      <p>
-        Button groups can be used for toggle buttons, radio buttons, or
-        segmented controls where users can select one or multiple options. For
-        example:
-      </p>
-      <ul>
-        <li>Radio button groups allow users to select one option from many.</li>
-        <li>Checkbox groups enable users to select multiple options.</li>
-        <li>
-          Toggle button groups make it clear that only one action can be active
-          at a time.
-        </li>
-      </ul>
-      <p>
-        Button groups should give users instant visual feedback on their
-        selections. For example, selected buttons may change color or style,
-        indicating that they have been activated, making it clear what actions
-        have been taken.
-      </p>
+
+      <template v-if="false">
+        <!-- MARK: hide for now -->
+        <p>Grayscale variants of Primary and Secondary.</p>
+        <div class="mb-5">
+          <CodeBlock>
+            <template #preview>
+              <BButton
+                variant="gray-primary"
+                size="sm"
+                class="me-2"
+                title="Delete"
+                ><i class="bi bi-trash3"></i
+              ></BButton>
+              <BButton
+                variant="gray-secondary"
+                size="sm"
+                class="text-gray-primary me-2"
+                title="Delete"
+                ><i class="bi bi-trash3"></i
+              ></BButton>
+              <BButton
+                variant="outline-gray-primary"
+                size="sm"
+                class="me-2"
+                title="Delete"
+                ><i class="bi bi-trash3"></i
+              ></BButton>
+              <BButton
+                variant="link"
+                size="sm"
+                class="link-gray-primary me-2"
+                title="Delete"
+                ><i class="bi bi-trash3"></i
+              ></BButton>
+            </template>
+            <template #bootstrap>
+              <pre class="language-html">
+<code>&lt;button class="btn btn-gray-primary btn-sm" type="button" title="Delete">...&lt;/button>
+&lt;button class="btn btn-gray-secondary btn-sm text-gray-primary" type="button" title="Delete">...&lt;/button>
+&lt;button class="btn btn-outline-gray-primary btn-sm" type="button" title="Delete">...&lt;/button>
+&lt;button class="btn btn-link btn-sm link-gray-primary" type="button" title="Delete">...&lt;/button>
+</code></pre>
+            </template>
+            <template #vue>
+              <pre class="language-html">
+<code>&lt;BButton variant="gray-primary" size="sm" title="Delete">...&lt;/BButton>
+&lt;BButton variant="gray-secondary" size="sm" class="text-gray-primary" title="Delete">...&lt;/BButton>
+&lt;BButton variant="outline-gray-primary" size="sm" title="Delete">...&lt;/BButton>
+&lt;BButton variant="link" size="sm" class="link-gray-primary" title="Delete">...&lt;/BButton>
+</code></pre>
+            </template>
+          </CodeBlock>
+        </div>
+      </template>
+
+      <template v-if="false">
+        <!-- MARK: hide for now -->
+        <h2 id="button-groups">Button groups</h2>
+        <p>
+          Button groups help to create a more organized, intuitive, and
+          user-friendly experience by grouping related actions, saving space,
+          and improving the overall usability.
+        </p>
+        <div class="mb-5">
+          <CodeBlock>
+            <template #preview>
+              <BButtonGroup>
+                <BButton variant="primary">Button 1</BButton>
+                <BButton variant="primary">Button 2</BButton>
+                <BButton variant="primary">Button 3</BButton>
+              </BButtonGroup>
+            </template>
+            <template #bootstrap>
+              <pre class="language-html">
+<code>&lt;div class="btn-group" role="group" aria-label="Basic example">
+  &lt;button type="button" class="btn btn-primary">Button 1&lt;/button>
+  &lt;button type="button" class="btn btn-primary">Button 2&lt;/button>
+  &lt;button type="button" class="btn btn-primary">Button 3&lt;/button>
+&lt;/div>
+</code></pre>
+            </template>
+            <template #vue>
+              <pre class="language-html">
+<code>&lt;BButtonGroup>
+  &lt;BButton variant="primary">Button 1&lt;/BButton>
+  &lt;BButton variant="primary">Button 2&lt;/BButton>
+  &lt;BButton variant="primary">Button 3&lt;/BButton>
+&lt;/BButtonGroup>
+</code></pre>
+            </template>
+          </CodeBlock>
+        </div>
+        <p>
+          Button groups can be used for toggle buttons, radio buttons, or
+          segmented controls where users can select one or multiple options. For
+          example:
+        </p>
+        <ul>
+          <li>
+            Radio button groups allow users to select one option from many.
+          </li>
+          <li>Checkbox groups enable users to select multiple options.</li>
+          <li>
+            Toggle button groups make it clear that only one action can be
+            active at a time.
+          </li>
+        </ul>
+        <p>
+          Button groups should give users instant visual feedback on their
+          selections. For example, selected buttons may change color or style,
+          indicating that they have been activated, making it clear what actions
+          have been taken.
+        </p>
+      </template>
     </template>
     <template #author>Diego Bejarano</template>
   </Layout>
@@ -297,8 +428,7 @@ import PageContents from "@/components/PageContents.vue";
 import { BBreadcrumb, BBreadcrumbItem, BButton } from "bootstrap-vue-next";
 
 export default {
-  name: "DocsElementsBaseButton" /* example: Docs--Folder--ComponentName */,
-  inject: ["mq"],
+  name: "DocsElementsButton" /* example: Docs--Folder--ComponentName */,
   components: {
     Layout,
     CodeBlock,
@@ -307,9 +437,10 @@ export default {
     BBreadcrumbItem,
     BButton,
   },
+  inject: ["mq"],
   data() {
     return {
-      pageTitle: "Buttons",
+      pageTitle: "Button",
     };
   },
 };

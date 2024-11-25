@@ -284,9 +284,9 @@
                   aria-describedby="button-addon2"
                 />
                 <button
+                  id="button-addon2"
                   class="btn btn-sm btn-primary"
                   type="button"
-                  id="button-addon2"
                 >
                   Search
                 </button>
