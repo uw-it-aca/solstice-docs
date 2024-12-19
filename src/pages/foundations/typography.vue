@@ -23,8 +23,10 @@
         >
       </p>
 
+      <h2>Fonts</h2>
 
-      <h3>Open Sans</h3>
+      <h3>Body/Content</h3>
+      <h4>Open Sans</h4>
       <p>
         Open Sans is the default font-family used by UW. It is typically set at
         the page body level.
@@ -40,8 +42,9 @@
         </template>
       </CodeBlock>
 
+      <h3>Headings</h3>
 
-      <h3>Encode Sans</h3>
+      <h4>Encode Sans</h4>
       <p>Encode Sans is the heading font-family used by UW</p>
 
       <CodeBlock>
@@ -89,7 +92,7 @@
         </template>
       </CodeBlock>
 
-      <h3>Rozha One</h3>
+      <h4>Rozha One</h4>
       <p>
         Rozha One is...
       </p>
@@ -103,6 +106,44 @@
         <template #bootstrap>
           <pre class="language-html">
 <code>&lt;h1 class="ff-rozha-one">Heading... Rozha One&lt;/h1>
+</code></pre>
+        </template>
+      </CodeBlock>
+
+      <h2>Sizing</h2>
+
+      <p>
+       You can size fonts down using the <code>.small</code> class or the <code>&lt;small></code> element tag. Recommendation is to start with <code>.fs-x</code> classes.
+      </p>
+      <CodeBlock>
+        <template #preview>
+          <h1 class="ff-encode-sans">
+            Heading (default - 40px)
+          </h1>
+          <h1 class="ff-encode-sans">
+            <small>Heading (element - 35px)</small>
+          </h1>
+          <h1 class="ff-encode-sans">
+            <span class="small">Heading (class - 35px)</span>
+          </h1>
+          <h1 class="ff-encode-sans fs-2">
+            Heading (fs-2 - 32px)
+          </h1>
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
+<code>&lt;h1 class="ff-encode-sans">
+  Heading (default)
+&lt;/h1>
+&lt;h1 class="ff-encode-sans">
+  &lt;small>Heading (element)&lt;/small>
+&lt;/h1>
+&lt;h1 class="ff-encode-sans">
+  &lt;span class="small">Heading (class)&lt;/span>
+&lt;/h1>
+&lt;h1 class="ff-encode-sans fs-2">
+  Heading (fs-2)
+&lt;/h1>
 </code></pre>
         </template>
       </CodeBlock>
