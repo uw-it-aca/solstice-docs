@@ -4,7 +4,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "vue.volar",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "bradgashler.htmltagwrap"
   ]
 }
-

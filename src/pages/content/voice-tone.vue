@@ -14,13 +14,22 @@
     </template>
 
     <template #lead>
-      The Voice and Tone establish a uniform and easily identifiable
-      communication style, promoting a cohesive user experience across various
-      interfaces. It's not just about conveying information; it's about
-      fostering a connection with users through consistent language, style, and
-      attitude. Solstice&rsquo;s Voice and Tone encapsulates our unique
-      personality and identity, fostering consistency and coherence, and
-      contributes to a seamless and engaging user experience.
+      Voice and Tone establish a uniform and easily identifiable communication
+      style, promoting a clear, cohesive, and contextualized user experience.
+      Voice, like personality, is constant throughout our messaging, while tone,
+      like emotions, is dynamic and depends on the context/situation.
+      <br /><br />
+      Both voice and tone adhere to and follow the
+      <a
+        href="https://insideuwit.uw.edu/support-units/communications/brand-style-other-resources/uw-it-writing-style-guide/"
+        >UW-IT Writing Style Guide</a
+      >
+      and the
+      <a
+        href="https://www.washington.edu/brand/guides/editorial-guide/#editorial-4"
+        >UW Editorial Guide</a
+      >. Both of these resources should be explored, as they contain additional
+      tips and guidance.
     </template>
 
     <template #toc>
@@ -49,153 +58,147 @@
     <template #content>
       <h2 id="voice">Voice</h2>
       <p>
-        The voice of Solstice serves as the articulate and consistent expression
-        of our character. It ensures a recognizable communication style across
-        various design elements. Through Solstice&rsquo;s voice, we aim to
-        convey a story that resonates with our audience and reinforces our
-        identity. Solstice's voice is:
+        Voice - the consistent and recognizable communication style in messaging
+        - is intended to align with the UW style and brand, and in addition, is
+        designed to optimize usability, accessibility and inclusivity. The
+        recommended voice is:
       </p>
 
-      <ul>
-        <li>
-          <strong>Professional and formal</strong>
-          <p>Avoid language that's overly opinionated, humorous, or trendy</p>
-        </li>
-        <li>
-          <strong>Understandable and concise</strong>
-          <p>
-            Look for the simplest way to communicate information, without
-            unnecessary jargon
-          </p>
-        </li>
-        <li>
-          <strong>Informative and clear</strong>
-          <p>
-            Explain the impact clearly, ensuring that the message is easily
-            understood by the audience.
-          </p>
-        </li>
-        <li>
-          <strong>Empathetic and inclusive</strong>
-          <p>
-            Maintain a warm and approachable demeanor, fostering a respectful
-            and understanding environment
-          </p>
-        </li>
-      </ul>
+      <p><strong>Conversational but professional </strong></p>
+      <p>
+        We communicate in a way that is easy to understand for a nontechnical
+        audience - we write how people talk, as if we&rsquo;re having a
+        conversation. We avoid language that's overly opinionated, humorous, or
+        trendy.
+      </p>
+      <p><strong>Clear and concise</strong></p>
+      <p>
+        We look for the simplest way to communicate information, without
+        unnecessary jargon.
+      </p>
+      <p><strong>Informative</strong></p>
+      <p>
+        We provide information to users when they need it, helping them avoid
+        errors, and explaining the impact of actions they may take.
+      </p>
+      <p><strong>Empathetic and inclusive</strong></p>
+      <p>
+        We ensure that messages are easily understood by a wide and diverse
+        audience. We maintain a warm and approachable demeanor, fostering
+        respect and understanding.
+      </p>
 
       <h2 id="tone">Tone</h2>
       <p>
-        If voice embodies our brand&rsquo;s personality, tone is the vehicle
-        through which we articulate and embody that personality. The right tone
-        depends on the context, audience, and the level of engagement and
-        emotionality required for effective communication. Solstice&rsquo;s tone
-        should be:
+        If voice is our brand&rsquo;s personality, tone is the emotion expressed
+        that conveys how users should interpret information. The right tone
+        depends on the context, audience, and level of engagement required for
+        effective communication.
       </p>
 
-      <h3>Instructive (Frequently)</h3>
+      <h3>Tone Map</h3>
+      <p>
+        Since tone will vary throughout a UI, this tone map demonstrates what
+        tone could be used in the outlined use cases. Note that even this tone
+        map is guidance and should be weighed with what the proper tone is for
+        the context of use.
+      </p>
 
-      <div class="my-5">
-        <UsageBlock>
-          <template #text
-            >Convey information in a straightforward manner by providing clear
-            and specific guidance.</template
-          >
-          <template #preview>
-            <div class="border rounded-3 p-3 bg-body-tertiary">
-              <p>Click the "Submit" button to complete the registration.</p>
-            </div>
-          </template>
-        </UsageBlock>
-        <UsageBlock variant="dont">
-          <template #text
-            >Don&rsquo;t use overly specific terms or any language that might
-            cause confusion.</template
-          >
-          <template #preview>
-            <div class="border rounded-3 p-3 bg-body-tertiary">
-              <p>"Error code: 410"</p>
-            </div>
-          </template>
-        </UsageBlock>
-      </div>
+      <p><strong>Tone map axes are:</strong></p>
+      <ul>
+        <li>Ranging from detailed to concise</li>
+        <li>
+          Ranging from casual (friendly, fun) to formal (serious, authoritative)
+        </li>
+      </ul>
 
-      <h3>Helpful (Occasionally)</h3>
-
-      <div class="my-5">
-        <UsageBlock>
-          <template #text
-            >Offering guidance, providing information, and encouraging
-            individuals to reach out for further assistance.</template
-          >
-          <template #preview>
-            <div class="border rounded-3 p-3 bg-body-tertiary">
-              <p>
-                As you begin to consider what you want to major in, we recommend
-                scheduling a meeting with your adviser to discuss your
-                interests, goals, degree requirements and academic planning.
-              </p>
-            </div>
-          </template>
-        </UsageBlock>
-        <UsageBlock variant="dont">
-          <template #text
-            >Don&rsquo;t use overly dramatic or scary words for simple errors
-          </template>
-          <template #preview>
-            <div class="border rounded-3 p-3 bg-body-tertiary">
-              <p>“Forbidden”, “Bad request”, “Not acceptable”</p>
-            </div>
-          </template>
-        </UsageBlock>
-      </div>
-
-      <h3>Supportive (Rarely)</h3>
-
-      <div class="my-5">
-        <UsageBlock>
-          <template #text
-            >Acknowledge effort, progress, and completion</template
-          >
-          <template #preview>
-            <div class="border rounded-3 p-3 bg-body-tertiary">
-              <p>
-                Congratulations! You have completed the registration process.
-              </p>
-            </div>
-          </template>
-        </UsageBlock>
-        <UsageBlock variant="dont">
-          <template #text
-            >Don&rsquo;t refer to a simple action or complete step as a success
-          </template>
-          <template #preview>
-            <div class="border rounded-3 p-3 bg-body-tertiary">
-              <p>Great job! You're one step closer to completion.</p>
-            </div>
-          </template>
-        </UsageBlock>
-      </div>
+      <img src="/images/tone-map.png" class="image-fluid w-100 border" />
 
       <p>
-        Use of
-        <a href="https://itconnect.uw.edu/work/inclusive-language-guide/"
-          >UW-IT DEI approved words</a
-        >. Also, optimized for a11y.
+        Tone Map items described below for accessibility purposes. Range values:
+        evenly split between two ends, somewhat, moderately, and very
       </p>
+
+      <p><strong>Forms</strong></p>
+      <ul>
+        <li><strong>Labels:</strong> somewhat casual, somewhat concise</li>
+        <li>
+          <strong>Empty states:</strong> moderately casual, somewhat detailed
+        </li>
+        <li><strong>Errors:</strong> moderately formal, moderately detailed</li>
+        <li>
+          <strong>Placeholder text:</strong> somewhat formal, very concise
+        </li>
+        <li>
+          <strong>Form help &amp; feedback:</strong> moderately formal, somewhat
+          concise
+        </li>
+      </ul>
+
+      <p><strong>Workflow Messaging</strong></p>
+      <ul>
+        <li><strong>Onboarding:</strong> moderately concise, very casual</li>
+        <li>
+          <strong>Dialogs:</strong> evenly split between casual and formal,
+          moderately concise
+        </li>
+        <li>
+          <strong>New feature notices:</strong> very detailed, very casual
+        </li>
+      </ul>
+
+      <p><strong>Academic Messaging</strong></p>
+      <ul>
+        <li>
+          <strong>Journey/Academic guidance:</strong> very casual, somewhat
+          detailed
+        </li>
+        <li>
+          <strong>Academic processes:</strong> A very formal, moderately
+          detailed
+        </li>
+      </ul>
+
+      <p><strong>Systems Messaging</strong></p>
+      <ul>
+        <li>
+          <strong>Permissions or wrong URL error:</strong> moderately casual,
+          somewhat concise
+        </li>
+        <li>
+          <strong>Server or system error:</strong> very formal, somewhat
+          detailed
+        </li>
+      </ul>
+
+      <p><strong>Situational/Semantic Messaging</strong></p>
+      <ul>
+        <li>
+          <strong>Success messaging:</strong> moderately casual, very concise
+        </li>
+        <li>
+          <strong>Informational alerts:</strong> evenly split between casual and
+          formal, moderately detailed
+        </li>
+        <li>
+          <strong>Warning alerts:</strong> moderately formal, somewhat detailed
+        </li>
+        <li>
+          <strong>Critical alerts:</strong> very formal, somewhat detailed
+        </li>
+      </ul>
     </template>
-    <template #author>Leila Li</template>
+    <template #author>Leila, Cayla, William</template>
   </Layout>
 </template>
 
 <script>
 import Layout from "@/layout.vue";
-import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 
 export default {
   name: "DocsContentVoice",
-  components: { Layout, UsageBlock, PageContents },
+  components: { Layout, PageContents },
   data() {
     return {
       pageTitle: "Voice & Tone",
