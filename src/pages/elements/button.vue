@@ -350,7 +350,9 @@
       </div>
 
       <UsageBlock>
-        <template #text>Use &ldquo;Quiet&rdquo; Button as a Secondary button.</template>
+        <template #text
+          >Use &ldquo;Quiet&rdquo; Button as a Secondary button.</template
+        >
         <template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary text-end">
             <BButton
@@ -364,7 +366,8 @@
       >
       <UsageBlock variant="dont">
         <template #text
-          >Use &ldquo;Quiet&rdquo; Button with another Secondary button.</template
+          >Use &ldquo;Quiet&rdquo; Button with another Secondary
+          button.</template
         >
         <template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary text-end">
@@ -373,9 +376,7 @@
               class="bg-secondary-hover link-primary link-underline link-underline-opacity-0 me-2"
               >Cancel</BButton
             >
-            <BButton variant="secondary" class="text-primary"
-              >Submit</BButton
-            >
+            <BButton variant="secondary" class="text-primary">Submit</BButton>
           </div></template
         ></UsageBlock
       >
@@ -383,8 +384,8 @@
       <h3>Icon Buttons</h3>
       <p>
         An Icon button lets people take a common action that is associated with
-        a familiar icon, usually where space is limited (e.g. Close, Delete,
-        Edit, Bookmark, Star).
+        a familiar icon, usually where space is limited (e.g. Close, Edit,
+        Bookmark, Star).
       </p>
 
       <p><strong>Variants</strong></p>
@@ -403,7 +404,7 @@
         </li>
       </ul>
 
-      <p><strong>Best practics</strong></p>
+      <p><strong>Best practices</strong></p>
       <ul>
         <li>
           Use Icon buttons cautiously, as icons can be ripe for
@@ -426,46 +427,41 @@
         </li>
       </ul>
 
-      <div class="mb-3">
+      <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="primary" size="sm" class="me-2" title="Delete"
-              ><i class="bi bi-trash3"></i
-            ></BButton>
             <BButton
               variant="secondary"
               size="sm"
               class="text-primary me-2"
-              title="Delete"
-              ><i class="bi bi-trash3"></i
+              title="Edit"
+              ><i class="bi bi-pencil"></i
             ></BButton>
             <BButton
               variant="outline-primary"
               size="sm"
               class="me-2"
-              title="Delete"
-              ><i class="bi bi-trash3"></i
+              title="Edit"
+              ><i class="bi bi-pencil"></i
             ></BButton>
             <BButton
               variant="link"
               size="sm"
               class="bg-secondary-hover link-primary link-underline link-underline-opacity-0 me-2"
-              title="Delete"
-              ><i class="bi bi-trash3"></i
+              title="Edit"
+              ><i class="bi bi-pencil"></i
             ></BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-primary btn-sm" type="button" title="Delete">...&lt;/button>
-&lt;button class="btn btn-secondary btn-sm text-primary" type="button" title="Delete">...&lt;/button>
+<code>&lt;button class="btn btn-secondary btn-sm text-primary" type="button" title="Delete">...&lt;/button>
 &lt;button class="btn btn-outline-primary btn-sm" type="button" title="Delete">...&lt;/button>
 &lt;button class="btn btn-link btn-sm bg-secondary-hover link-primary link-underline link-underline-opacity-0" type="button" title="Delete">...&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="primary" size="sm" title="Delete">...&lt;/BButton>
-&lt;BButton variant="secondary" size="sm" class="text-primary" title="Delete">...&lt;/BButton>
+<code>&lt;BButton variant="secondary" size="sm" class="text-primary" title="Delete">...&lt;/BButton>
 &lt;BButton variant="outline-primary" size="sm" title="Delete">...&lt;/BButton>
 &lt;BButton variant="link" size="sm" class="bg-secondary-hover link-primary link-underline link-underline-opacity-0"  title="Delete">...&lt;/BButton>
 </code></pre>
@@ -528,6 +524,78 @@
         </template>
       </div>
 
+      <h3>Destructive Buttons</h3>
+      <p>
+        Destructive buttons are used to indicate an action that will permanently
+        erase data or cannot be undone (e.g. Delete or Reset). To reduce visual
+        complexity, use destructive theming only on hover, e.g. repeating icon
+        buttons in a table.
+      </p>
+      <div class="mb-3">
+        <CodeBlock>
+          <template #preview>
+            <BButton variant="danger" size="sm" class="me-2">Delete</BButton>
+            <BButton
+              variant="link"
+              size="sm"
+              class="bg-danger-hover link-danger link-underline bg-opacity-25-hover link-underline-opacity-0 me-2"
+              title="Delete"
+              ><i class="bi bi-trash3"></i
+            ></BButton>
+
+            <BButton
+              variant="link"
+              size="sm"
+              class="bg-danger-hover link-danger link-underline bg-opacity-25-hover link-underline-opacity-0"
+              title="Delete"
+              >Reset filters</BButton
+            >
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;button class="btn btn-danger" type="button">Label&lt;/button>
+&lt;button class="btn btn-sm btn-link bg-danger-hover link-danger link-underline bg-opacity-25-hover link-underline-opacity-0 " type="button" title="Delete">&lt;i class="bi bi-trash3">&lt;/i>&lt;/button>
+&lt;button class="btn btn-sm btn-link bg-danger-hover link-danger link-underline bg-opacity-25-hover link-underline-opacity-0" type="button" title="Delete">Reset filters&lt;/button>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BButton variant="danger" size="sm">Delete&lt;/BButton>
+&lt;BButton variant="link" size="sm" class="bg-danger-hover link-danger link-underline bg-opacity-25-hover link-underline-opacity-0 me-2" title="Delete">&lt;i class="bi bi-trash3">&lt;/i>&lt;/BButton>
+&lt;BButton variant="link" size="sm" class="bg-danger-hover link-danger link-underline bg-opacity-25-hover link-underline-opacity-0" title="Delete">Reset filters&lt;/BButton>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
+      <p><strong>When to use a confirmation dialog</strong></p>
+      <p>
+        If taking a destructive action in error is a costly mistake for a user
+        (i.e. would take a lot of time or energy to recover), consider using a
+        confirmation dialog before the action is completed by the system.
+      </p>
+
+      <p class="mb-5">
+        In this case, a button triggering the dialog should be a Primary button,
+        and the button inside the confirmation dialog should be Destructive.
+      </p>
+
+      <h3>Action Buttons (Dropdown)</h3>
+      <p>
+        A dropdown button is an action menu - the options within the menu
+        perform an immediate action or take you to new place via a link.
+      </p>
+      <ul class="mb-5">
+        <li>
+          The button label should be left-aligned and the action icon (chevron,
+          carrot) should always be right-aligned.
+        </li>
+        <li>
+          For making a selection amongst options in a form, use a select
+          component instead.
+        </li>
+      </ul>
+
       <h3>Buttons that aren&rsquo;t really buttons</h3>
 
       <p>
@@ -577,21 +645,32 @@
       </ul>
 
       <p><strong>Close</strong></p>
-      <ul>
+      <ul class="mb-5">
         <li>Primary (the main action, e.g. lightbox)</li>
         <li>Secondary (one of equal peers, next to a primary)</li>
         <li>Icon (small pop up)</li>
       </ul>
 
       <h2 id="options">Options</h2>
+
       <h3>Button Sizes</h3>
-      <p>
-        The medium (or default) size of buttons should be used in most cases.
-        Small buttons can be used in layouts where space is constricted, such us
-        popups, and in some cases alerts. Larger buttons can be used on
-        prominent tasks, such ast Call to Actions and where the page layout
-        provides generous space to accomodate the larger size.
-      </p>
+      <ul>
+        <li>
+          <strong>Medium</strong> - The <strong>default size</strong> of buttons
+          is Medium. In most cases, use this default button size.
+        </li>
+        <li>
+          <strong>Small</strong> - For layouts
+          <strong>where space is constricted</strong>, such as popover, alerts,
+          and tables, use Small buttons.
+        </li>
+        <li>
+          <strong>Large</strong> - For
+          <strong>beginning a flow, or other &ldquo;empty states&rdquo;</strong
+          >, where space allows and additional emphasis is needed, use a Large
+          button.
+        </li>
+      </ul>
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
@@ -619,56 +698,174 @@
           </template>
         </CodeBlock>
       </div>
-      <h3>Adding Icons</h3>
+
+      <h3>Wide (Responsive)</h3>
       <p>
-        By default, not all buttons need an icon, but in some cases including an
-        icon may add context or make a button more identifiable (like a
-        magnifying glass icon in a search button). Typically, the icon should be
-        a leading visual before the text. In some cases, buttons may need a
-        trailing visual (like a dropdown arrow). If buttons are part of a group,
-        icons should be aligned (all buttons have an icon or none of them have
-        an icon).
+        For mobile devices, where users will benefit from a large touch target,
+        use a wide button. Wide buttons are responsive to their parent container
+        and proportionally occupy most of the width of their parent container.
       </p>
-      <div class="mb-3">
+      <ul>
+        <li>
+          Wide buttons should be stacked, rather than laid out side-by side, so
+          that users can continue to benefit from a large touch target. Try not
+          to stack more than two buttons at a time.
+        </li>
+        <li>
+          Use classes provided below to create the correctly-sized wide button -
+          3/4 of the parent&rsquo;s width - that is responsive to it&rsquo;s
+          parent container. A Wide button should rarely exceed 320px wide.
+        </li>
+      </ul>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <div class="d-grid gap-2 d-block">
+              <BButton variant="primary" size="sm" class="me-2"
+                >Small button</BButton
+              >
+              <BButton variant="primary" class="me-2">Medium button</BButton>
+              <BButton variant="primary" size="lg" class="me-2"
+                >Large button</BButton
+              >
+            </div>
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;div class="d-grid gap-2 d-sm-block">
+  &lt;button class="btn btn-primary btn-sm" type="button">Button&lt;/button>
+  &lt;button class="btn btn-primary" type="button">Button&lt;/button>
+  &lt;button class="btn btn-primary btn-lg" type="button">Button&lt;/button>
+&lt;/div>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;div class="d-grid gap-2 d-sm-block">
+  &lt;BButton variant="primary" size="sm">Small button&lt;/BButton>
+  &lt;BButton variant="primary">Small button&lt;/BButton>
+  &lt;BButton variant="primary" size="lg">Small button&lt;/BButton>
+&lt;/div>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
+      <h3>Adding icons to buttons</h3>
+      <p>
+        An icon can be added to a button only if the icon used is strongly
+        associated with the label of the button.
+      </p>
+      <ul>
+        <li>Icons should not be used only for decoration.</li>
+        <li>
+          Icons should be &ldquo;locked&rdquo; next to the button label when the
+          button is much wider than the label. See Wide buttons below for
+          implementation details.
+        </li>
+      </ul>
+
+      <div class="mb-5">
         <CodeBlock>
           <template #preview>
             <BButton variant="primary" class="me-2"
-              ><i class="bi bi-emoji-smile-fill me-2"></i>Hello</BButton
+              ><i class="bi bi-trash3 me-2"></i>Label</BButton
             >
           </template>
           <template #bootstrap>
             <pre class="language-html">
 <code>&lt;button class="btn btn-primary" type="button">
-  &lt;i class="bi bi-trash3 me-2">&lt;/i>Hello
+  &lt;i class="bi bi-trash3 me-2">&lt;/i>Label
 &lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
 <code>&lt;BButton variant="primary">
-  &lt;i class="bi bi-trash3 me-2">&lt;/i>Hello
+  &lt;i class="bi bi-trash3 me-2">&lt;/i>Label
 &lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
       </div>
 
+      <h3>Labels</h3>
+      <ul class="mb-5">
+        <li>Recommendations for writing button labels</li>
+        <li>Standard terminology for buttons</li>
+      </ul>
+
+      <h3>Alignment</h3>
+      <p>Button alignment depends on the context of use.</p>
+      <ul class="mb-5">
+        <li>
+          <strong>Right-aligned</strong> when they are for focused tasks, a series of tasks (i.e.
+          wizard), modals, dialogs, cards, popovers, and other areas with less
+          content. (Z pattern scanning)
+        </li>
+        <li>
+          <strong>Left-aligned</strong> on single page forms, and UI components or pages with a
+          lot of content (i.e. content that requires scrolling). (F pattern
+          reading)
+        </li>
+        <li>
+          <strong>Center-aligned</strong> when wide buttons are used, or in the context of an
+          empty or beginning workflow state (e.g. log in form).
+        </li>
+      </ul>
+
+      <h3>Ordering</h3>
+      <p>
+        The order of button priority should match the alignment of surrounding
+        text.
+      </p>
+      <ul class="mb-5">
+        <li>
+         <strong> When buttons are left-aligned</strong>, buttons should be arranged so that the
+          leftmost button is the most critical.
+        </li>
+        <li>
+          <strong>When buttons are is right- or center- aligned</strong>, the most critical
+          action should be the furthest right.
+        </li>
+        <li>
+          <strong>When buttons stack vertically</strong> (i.e. horizontal space is limited),
+          buttons are stacked by the importance of the action, with the most
+          critical or primary action at the bottom.
+        </li>
+      </ul>
+
+      <h3>Disabled state</h3>
+      <p>
+        Disabled buttons cause general accessibility issues and should be
+        avoided - they are less readable (lower opacity) and not actionable, and
+        they don&rsquo;t explain why they aren&rsquo;t actionable. Instead, keep
+        the button actionable and use validation or other techniques to show
+        users how to proceed.
+      </p>
+
+      <p class="mb-5">
+        For more info on validation and it&rsquo;s implementation, visit the
+        <BLink to="/elements/forms/validation">validation documentation.</BLink>
+      </p>
+
       <h2 id="accessibility">Accessibility</h2>
 
       <p>
-        Use semantic code: only use buttons for button actions, and use links
-        instead in all other cases.
+        <strong> Use semantic code</strong>: only use buttons for button
+        actions, and use links instead in all other cases.
       </p>
 
       <p>
-        Make sure buttons have a clear and descriptive label. Labeling buttons
-        properly lets users know what will happen when they activate the
-        control, lessens errors, and increases confidence.
+        Make sure buttons have a <strong>clear and descriptive label</strong>.
+        Labeling buttons properly lets users know what will happen when they
+        activate the control, lessens errors, and increases confidence.
       </p>
       <ul>
         <li>
-          If button label isn&rsquo;t descriptive enough or has no text and relies on
-          an icon alone to convey its purpose, use the aria-label attribute.
+          <strong>If button label isn&rsquo;t descriptive enough</strong> or has
+          no text and relies on an icon alone to convey its purpose,
+          <strong>use the aria-label attribute</strong>.
         </li>
         <li>
           The aria-label attribute can be accessed by assistive technologies
@@ -684,19 +881,20 @@
       </ul>
 
       <p>
-        Avoid disabling buttons, especially in forms. Disabled buttons don&rsquo;t
-        explain why the button isn&rsquo;t actionable. They also aren&rsquo;t reachable in
-        the tab order and don&rsquo;t receive hover, focus, or click events, making
-        them entirely inaccessible to some people. Instead, keep the button
-        enabled, and use validation and errors to explain what needs to be done
-        to proceed.
+        <strong>Avoid disabling buttons</strong>, especially in forms. Disabled
+        buttons don&rsquo;t explain why the button isn&rsquo;t actionable. They
+        also aren&rsquo;t reachable in the tab order and don&rsquo;t receive
+        hover, focus, or click events, making them entirely inaccessible to some
+        people. Instead, keep the button enabled, and use validation and errors
+        to explain what needs to be done to proceed.
       </p>
       <ul>
-        <li>Never put tooltips on disabled buttons - tooltips can't be reached on all
-      devices or by some assistive technologies, and they should never appear on
-      elements that are disabled.</li>
+        <li>
+          Never put tooltips on disabled buttons - tooltips can't be reached on
+          all devices or by some assistive technologies, and they should never
+          appear on elements that are disabled.
+        </li>
       </ul>
-
 
       <template v-if="false">
         <!-- MARK: hide for now -->
@@ -758,7 +956,7 @@
         </p>
       </template>
     </template>
-    <template #author>Diego Bejarano</template>
+    <template #author>Diego, Cayla, William</template>
   </Layout>
 </template>
 
