@@ -11,16 +11,20 @@
       <hr class="w-50 d-inline-block" />
     </template>
     <template #lead>
-      A button is an interactive element that users can click or tap to trigger
-      a specific action or command within an application. It represents an
-      action, such as submitting a form, opening a menu, or navigating to
-      another screen. Buttons provide an intuitive way for users to perform
-      tasks efficiently.
+      Buttons trigger a specific action or command, such as submitting a form,
+      opening a menu, or canceling a task or flow.
     </template>
     <template #toc>
       <PageContents>
         <nav id="TableOfContents">
           <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#when"
+                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                >When to use</a
+              >
+            </li>
             <li>
               <a
                 href="#anatomy"
@@ -68,20 +72,55 @@
       </PageContents>
     </template>
     <template #content>
-      <h2 id="anatomy">Anatomy</h2>
+      <h2 id="when">When to use</h2>
+      <p><strong>Use buttons for:</strong></p>
+      <ul>
+        <li>
+          submitting user input or saving user&rsquo;s changes (e.g. submit a
+          form)
+        </li>
+        <li>
+          starting or beginning a primary task or workflow (e.g. start
+          application, add course to academic plan)
+        </li>
+        <li>
+          triggering a new UI element to appear on the page (e.g. disclose
+          content, launch a modal, add a row to a table, add a question to a
+          survey)
+        </li>
+        <li>
+          adding an element to a list or process (e.g. add worktag, add step in
+          a workflow, add question to a survey)
+        </li>
+        <li>closing a lightbox</li>
+      </ul>
+
+      <p><strong>When to use a link instead</strong></p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga
-        corporis totam eligendi molestiae ex aperiam soluta, consectetur
-        accusamus accusantium officia praesentium, magni numquam sunt minus
-        architecto libero enim tempore!
+        Links navigate you to a new place or new content. Use a semantic html
+        link instead of a button if the action results in a new URL, or a user
+        is taken to a new browser tab. The distinction is important to screen
+        reader users to know what's going to happen next. However, you may
+        choose to style a link as a button - see
+        <span class="fst-italic">Buttons that aren&rsquo;t really buttons</span>
+        below.
       </p>
+
+      <h2 id="anatomy">Anatomy</h2>
+      <ul>
+        <li>Label</li>
+        <li>Leading visual icon (icon)</li>
+        <li>Trailing action icon (optional)</li>
+      </ul>
 
       <h2 id="variants">Variants</h2>
       <h3>Primary</h3>
       <p>
-        Use the <code>primary</code> variant for buttons that complete actions
-        (i.e., “submit”) and that are core to the page experience. In general,
-        limit the number of primary buttons on the page to 1-3.
+        Primary buttons are
+        <strong>for the most likely/common action on a page or lightbox</strong>
+        (for the main user flow), or for when there is an action that is clearly
+        more important than the other actions and you need to draw attention to
+        it.
       </p>
       <div class="mb-5">
         <CodeBlock>
@@ -100,12 +139,52 @@
           </template>
         </CodeBlock>
       </div>
+
+      <UsageBlock>
+        <template #text
+          >Use only one primary button on each page or lightbox, whenever
+          possible.
+        </template>
+        <template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary text-end">
+            <BButton variant="primary">Submit</BButton>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont">
+        <template #text
+          >Use multiple primary buttons on a page or within a lightbox. Giving
+          people too many prominent buttons increases their cognitive load,
+          requiring them to spend more time considering options before making a
+          choice.</template
+        >
+        <template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary text-end">
+            <BButton variant="primary" class="me-2">Cancel</BButton>
+            <BButton variant="primary">Submit</BButton>
+          </div></template
+        ></UsageBlock
+      >
+
       <h3>Secondary</h3>
       <p>
-        Use the <code>secondary</code> variant for buttons that change modes
-        (i.e., edit), or for buttons that supplement core actions in button
-        groups (i.e., “cancel”)
+        Secondary buttons are for actions that are not the most likely/common or
+        important actions available. They can also be used
+        <strong>when there are a few possible actions on a page</strong> that
+        supports multiple peer workflows or tasks (e.g. single-page apps or
+        dashboards).
       </p>
+
+      <ul>
+        <li>For medium emphasis</li>
+        <li>For non-primary actions on a page or modal</li>
+        <li>For a set of buttons where a primary button may be present</li>
+        <li>
+          For when there are a few possible actions on a page supporting
+          multiple workflows or tasks
+        </li>
+      </ul>
+
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
@@ -124,12 +203,52 @@
         </CodeBlock>
       </div>
 
+      <UsageBlock>
+        <template #text
+          >Use a Secondary button on it’s own, or pair with a Primary button.
+        </template>
+        <template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary text-end">
+            <BButton variant="secondary" class="text-primary me-2"
+              >Cancel</BButton
+            >
+            <BButton variant="primary">Submit</BButton>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont">
+        <template #text
+          >Use a Secondary button alongside an Outline button.</template
+        >
+        <template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary text-end">
+            <BButton variant="secondary" class="text-primary me-2"
+              >Cancel</BButton
+            >
+            <BButton variant="outline-primary">Submit</BButton>
+          </div></template
+        ></UsageBlock
+      >
+
       <h3>Outline</h3>
       <p>
-        Use the <code>outline-primary</code> variant for buttons that change
-        modes (i.e., edit), or for buttons that supplement core actions in
-        button groups (i.e., “cancel”)
+        Outline buttons are also for actions that are not the most likely/common
+        or important actions available but using secondary filled buttons would
+        create too much visual weight. They are best to use when there are many
+        repeating or possible actions on a page.
       </p>
+      <ul>
+        <li>For medium or low emphasis</li>
+        <li>
+          For when there are many repeating or possible actions on a page
+          supporting multiple workflows or tasks, and using secondary buttons
+          would create too much visual weight
+        </li>
+        <li>
+          For giving a user the opportunity to escape a flow or change their
+          mind (e.g. Exit, Start Over)
+        </li>
+      </ul>
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
@@ -147,6 +266,58 @@
           </template>
         </CodeBlock>
       </div>
+
+      <UsageBlock>
+        <template #text
+          >Use a Outline button on it’s own, or pair with a Primary
+          button.</template
+        >
+        <template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary text-end">
+            <BButton variant="outline-primary">Edit</BButton>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont">
+        <template #text
+          >Use a Outline button alongside an Secondary button.
+        </template>
+        <template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary text-end">
+            <BButton variant="secondary" class="text-primary me-2"
+              >Cancel</BButton
+            >
+            <BButton variant="outline-primary">Edit</BButton>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock>
+        <template #text
+          >Use either Outline OR Secondary buttons alongside a single Primary
+          button.</template
+        >
+        <template #preview>
+          <div class="border rounded-3 p-3 bg-body-tertiary text-end">
+            <BButton variant="outline-primary" class="me-2">Cancel</BButton>
+            <BButton variant="primary">Submit</BButton>
+          </div></template
+        ></UsageBlock
+      >
+      <UsageBlock variant="dont">
+        <template #text
+          >Use both Outline and Secondary buttons alongside a Primary button, as
+          this may be unnecessarily confusing for users.</template
+        >
+        <template #preview>
+          <div class="border rounded-3 p-3 bg-body-tertiary text-end">
+            <BButton variant="outline-primary" class="me-2">Edit</BButton>
+            <BButton variant="secondary" class="text-primary me-2"
+              >Cancel</BButton
+            >
+            <BButton variant="primary">Submit</BButton>
+          </div>
+        </template></UsageBlock
+      >
 
       <h3>Link Button</h3>
       <p>
