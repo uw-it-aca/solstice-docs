@@ -9,7 +9,7 @@ RUN chgrp acait /etc/nginx/nginx.conf && chmod g+w /etc/nginx/nginx.conf
 
 # latest node + ubuntu
 FROM node:lts AS node-base
-FROM ubuntu:latest AS node-bundler
+FROM ubuntu:22.04 AS node-bundler
 COPY --from=node-base / /
 
 ADD index.html package.json vite.config.js /app/
