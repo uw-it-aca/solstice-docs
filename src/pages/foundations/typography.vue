@@ -10,8 +10,67 @@
       Font families and a type system, as well as best practices for creating
       readable and clear hierarchy of content
     </template>
+
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#font-families"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Font families</a
+              >
+            </li>
+            <li>
+              <a
+                href="#usability-accessibility-principles"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Usability &amp; accessibility principles</a
+              >
+            </li>
+            <li>
+              <a
+                href="#headings"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Headings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#styling-decoration"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Styling &amp; decoration</a
+              >
+            </li>
+            <li>
+              <a
+                href="#alignment-spacing"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Alignment &amp; spacing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#type-system"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Type system</a
+              >
+            </li>
+            <li>
+              <a
+                href="#technical-implementation"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Technical implementation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
+    </template>
+
     <template #content>
-      <h2 class="display-6 ff-encodesans">Font families</h2>
+      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="font-families">Font families</h2>
       <p>
         The Solstice Design System uses the Encode Sans and Open Sans font
         families. Use only these provided font families &ndash; both have good
@@ -30,7 +89,7 @@
 
       <br />
       <hr />
-      <h2 class="display-6 ff-encodesans">
+      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="usability-accessibility-principles">
         Usability & accessibility principles
       </h2>
       <h3 class="fw-medium ff-encodesans">Usability</h3>
@@ -64,7 +123,7 @@
       <br />
       <hr />
 
-      <h2 class="display-6 ff-encodesans">Headings</h2>
+      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="headings">Headings</h2>
       <p>
         Headings are used to provide structure and clarity to page content
         through hierarchy. Like outlines or table of contents, they summarize
@@ -107,7 +166,7 @@
       <br />
       <hr />
 
-      <h2 class="display-6 ff-encodesans">Styling & decoration</h2>
+      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="styling-decoration">Styling & decoration</h2>
       <h3 class="fw-medium ff-encodesans">Color</h3>
       <ul>
         <li>
@@ -184,7 +243,7 @@
 
       <br />
       <hr />
-      <h2 class="display-6 ff-encodesans">Alignment & spacing</h2>
+      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="alignment-spacing">Alignment & spacing</h2>
       <h3 class="fw-medium ff-encodesans">Text alignment</h3>
       <ul>
         <li>
@@ -221,7 +280,7 @@
       <!-- Type system -->
       <br />
       <hr />
-      <h2 class="display-6 ff-encodesans">Type system</h2>
+      <h2 class="display-6 ff-encodesans pt-4  pb-3" id="type-system">Type system</h2>
       <p>
         The heading styles specified below create a cohesive heading system that
         is visually distinct and hierarchically clear.
@@ -302,7 +361,7 @@
       </CodeBlock>
       <br />
 
-      <h3 class="fw-medium ff-encodesans">H5 & H6</h3>
+      <h3 class="fw-medium ff-encodesans">H5 &amp; H6</h3>
       <p>
         Use an H5 and H6 to designate sub sections of their respective parent.
       </p>
@@ -399,7 +458,7 @@
 
       <br />
       <hr />
-      <h2 class="display-6 ff-encodesans text-danger">
+      <h2 class="display-6 ff-encodesans text-danger pt-4 pb-3" id="technical-implementation">
         Technical Implementation (if needed)
       </h2>
       <ul>
