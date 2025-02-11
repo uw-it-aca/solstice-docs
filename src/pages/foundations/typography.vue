@@ -52,8 +52,8 @@
           results (SEO).
         </li>
         <li>
-          Ensure your heading hierarchy is clear and logical &ndash; don&apos;t skip
-          heading levels.
+          Ensure your heading hierarchy is clear and logical &ndash; don&apos;t
+          skip heading levels.
         </li>
         <li>
           If you emphasize something using large text, it should likely be a
@@ -111,7 +111,7 @@
       <h3 class="fw-medium ff-encodesans">Color</h3>
       <ul>
         <li>
-          You shouldn’t need to change the color of text, as it is defined in
+          You shouldn&apos;t need to change the color of text, as it is defined in
           the Solstice style sheet and is an inherited property of HTML elements
           and/or Solstice and Bootstrap themes.
         </li>
@@ -143,10 +143,10 @@
       <h3 class="fw-medium ff-encodesans">Decoration</h3>
       <ul>
         <li>
-          <strong>Bold & italics</strong> &ndash; Bold and italic styles are used to
-          draw attention and create emphasis. Italicizing words or strings,
-          however, can decrease readability. Both should be used sparingly so as
-          to not diminish their effectiveness.
+          <strong>Bold & italics</strong> &ndash; Bold and italic styles are
+          used to draw attention and create emphasis. Italicizing words or
+          strings, however, can decrease readability. Both should be used
+          sparingly so as to not diminish their effectiveness.
         </li>
         <li>
           <strong>Underlining</strong> &ndash; Avoid underlining text as it can
@@ -154,18 +154,18 @@
           interactive.
         </li>
         <li>
-          <strong>Strikethrough</strong> &ndash; Avoid using “strikethrough”. If you
-          need to indicate that there has been a change to content, do so in
+          <strong>Strikethrough</strong> &ndash; Avoid using “strikethrough”. If
+          you need to indicate that there has been a change to content, do so in
           another way.
         </li>
         <li>
-          <strong>Outlining</strong> &ndash; Text should never be outlined. Use bold
-          or italic styles to draw attention or create emphasis.
+          <strong>Outlining</strong> &ndash; Text should never be outlined. Use
+          bold or italic styles to draw attention or create emphasis.
         </li>
         <li>
-          <strong>Motion effects</strong> &ndash; Do not use motion effects on text.
-          Text should always remain static, unless it is scaling/rearranging due
-          to responsive design.
+          <strong>Motion effects</strong> &ndash; Do not use motion effects on
+          text. Text should always remain static, unless it is
+          scaling/rearranging due to responsive design.
         </li>
       </ul>
 
@@ -245,16 +245,16 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-            <code>&lt;h1 class="display-5 fw-bold ff-encodesans">Text&lt;/h1>
-            </code></pre>
+<code>&lt;h1 class="display-5 fw-bold ff-encodesans">Text&lt;/h1>
+</code></pre>
         </template>
       </CodeBlock>
 
       <UsageBlock variant="dont"
         ><template #text
           >An H1 should not be used for an application name or logo in a header
-          &ndash; instead that content should be either inside an &lt;a> or &lt;p>
-          tag, and all within a &lt;header> section.</template
+          &ndash; instead that content should be either inside an &lt;a> or
+          &lt;p> tag, and all within a &lt;header> section.</template
         ><template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
             <img /></div></template
@@ -268,8 +268,8 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-            <code>&lt;h2 class="display-6 ff-encodesans">Text&lt;/h2>
-            </code></pre>
+<code>&lt;h2 class="display-6 ff-encodesans">Text&lt;/h2>
+</code></pre>
         </template>
       </CodeBlock>
       <br />
@@ -282,8 +282,8 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-            <code>&lt;h3 class="fw-medium ff-encodesans">Text&lt;/h3>
-            </code></pre>
+<code>&lt;h3 class="fw-medium ff-encodesans">Text&lt;/h3>
+</code></pre>
         </template>
       </CodeBlock>
       <br />
@@ -296,8 +296,8 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-            <code>&lt;h4 class="fw-medium ff-opensans">Text&lt;/h4>
-            </code></pre>
+<code>&lt;h4 class="fw-medium ff-opensans">Text&lt;/h4>
+</code></pre>
         </template>
       </CodeBlock>
       <br />
@@ -313,8 +313,8 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-            <code>&lt;h5 class="fw-bold ff-opensans">Text&lt;/h5>
-            </code></pre>
+<code>&lt;h5 class="fw-bold ff-opensans">Text&lt;/h5>
+</code></pre>
         </template>
       </CodeBlock>
 
@@ -324,8 +324,8 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-            <code>&lt;h6 class="fw-bold ff-opensans">Text&lt;/h6>
-            </code></pre>
+<code>&lt;h6 class="fw-bold ff-opensans">Text&lt;/h6>
+</code></pre>
         </template>
       </CodeBlock>
       <br />
@@ -342,8 +342,8 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-            <code>&lt;p>Text&lt;/p>
-            </code></pre>
+<code>&lt;p>Text&lt;/p>
+</code></pre>
         </template>
       </CodeBlock>
 
@@ -362,8 +362,8 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-            <code>&lt;p class="small">Text&lt;/p>
-            </code></pre>
+<code>&lt;p class="small">Text&lt;/p>
+</code></pre>
         </template>
       </CodeBlock>
 
@@ -380,8 +380,8 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-            <code>&lt;p class="fs-5">Text&lt;/p>
-            </code></pre>
+<code>&lt;p class="fs-5">Text&lt;/p>
+</code></pre>
         </template>
       </CodeBlock>
 
