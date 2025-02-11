@@ -14,9 +14,9 @@
       <h2 class="display-6 ff-encodesans">Font families</h2>
       <p>
         The Solstice Design System uses the Encode Sans and Open Sans font
-        families. Use only these provided font families – both have good
+        families. Use only these provided font families &ndash; both have good
         readability, are widely supported, and are in alignment with the
-        University of Washington’s brand guides.
+        University of Washington&apos;s brand guides.
       </p>
 
       <h3 class="fw-medium ff-encodesans">Encode Sans</h3>
@@ -52,7 +52,7 @@
           results (SEO).
         </li>
         <li>
-          Ensure your heading hierarchy is clear and logical – don’t skip
+          Ensure your heading hierarchy is clear and logical &ndash; don&apos;t skip
           heading levels.
         </li>
         <li>
@@ -143,27 +143,27 @@
       <h3 class="fw-medium ff-encodesans">Decoration</h3>
       <ul>
         <li>
-          <strong>Bold & italics</strong> – Bold and italic styles are used to
+          <strong>Bold & italics</strong> &ndash; Bold and italic styles are used to
           draw attention and create emphasis. Italicizing words or strings,
           however, can decrease readability. Both should be used sparingly so as
           to not diminish their effectiveness.
         </li>
         <li>
-          <strong>Underlining</strong> – Avoid underlining text as it can
+          <strong>Underlining</strong> &ndash; Avoid underlining text as it can
           conflict with link styling and may falsely indicate that text is
           interactive.
         </li>
         <li>
-          <strong>Strikethrough</strong> – Avoid using “strikethrough”. If you
+          <strong>Strikethrough</strong> &ndash; Avoid using “strikethrough”. If you
           need to indicate that there has been a change to content, do so in
           another way.
         </li>
         <li>
-          <strong>Outlining</strong> – Text should never be outlined. Use bold
+          <strong>Outlining</strong> &ndash; Text should never be outlined. Use bold
           or italic styles to draw attention or create emphasis.
         </li>
         <li>
-          <strong>Motion effects</strong> – Do not use motion effects on text.
+          <strong>Motion effects</strong> &ndash; Do not use motion effects on text.
           Text should always remain static, unless it is scaling/rearranging due
           to responsive design.
         </li>
@@ -245,15 +245,15 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h1 class="display-5 fw-bold ff-encodesans">Text&lt;/h1>
-</code></pre>
+            <code>&lt;h1 class="display-5 fw-bold ff-encodesans">Text&lt;/h1>
+            </code></pre>
         </template>
       </CodeBlock>
 
       <UsageBlock variant="dont"
         ><template #text
           >An H1 should not be used for an application name or logo in a header
-          – instead that content should be either inside an &lt;a> or &lt;p>
+          &ndash; instead that content should be either inside an &lt;a> or &lt;p>
           tag, and all within a &lt;header> section.</template
         ><template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
@@ -268,11 +268,11 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h2 class="display-6 ff-encodesans">Text&lt;/h2>
-</code></pre>
+            <code>&lt;h2 class="display-6 ff-encodesans">Text&lt;/h2>
+            </code></pre>
         </template>
       </CodeBlock>
-<br>
+      <br />
 
       <h3 class="fw-medium ff-encodesans">H3</h3>
       <p>Use an H3 to designate a subsection.</p>
@@ -282,12 +282,11 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h3 class="fw-medium ff-encodesans">Text&lt;/h3>
-</code></pre>
+            <code>&lt;h3 class="fw-medium ff-encodesans">Text&lt;/h3>
+            </code></pre>
         </template>
       </CodeBlock>
-      <br>
-
+      <br />
 
       <h3 class="fw-medium ff-encodesans">H4</h3>
       <p>Use an H4 to designate a subsection of an H3.</p>
@@ -297,24 +296,25 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h4 class="fw-medium ff-opensans">Text&lt;/h4>
-</code></pre>
+            <code>&lt;h4 class="fw-medium ff-opensans">Text&lt;/h4>
+            </code></pre>
         </template>
       </CodeBlock>
-      <br>
+      <br />
 
-        <!-- working below here -->
-        <h3 class="fw-medium ff-encodesans">H5 & H6</h3>
-        <p>Use an H5 and H6 to designate sub sections of their respective parent.</p>
+      <h3 class="fw-medium ff-encodesans">H5 & H6</h3>
+      <p>
+        Use an H5 and H6 to designate sub sections of their respective parent.
+      </p>
 
-        <CodeBlock>
+      <CodeBlock>
         <template #preview>
           <h5 class="fw-bold ff-opensans">Sample text</h5>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h5 class="fw-bold ff-opensans">Text&lt;/h5>
-</code></pre>
+            <code>&lt;h5 class="fw-bold ff-opensans">Text&lt;/h5>
+            </code></pre>
         </template>
       </CodeBlock>
 
@@ -324,112 +324,97 @@
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h6 class="fw-bold ff-opensans">Text&lt;/h6>
-</code></pre>
+            <code>&lt;h6 class="fw-bold ff-opensans">Text&lt;/h6>
+            </code></pre>
         </template>
       </CodeBlock>
-      <br>
-
-
+      <br />
 
       <h3 class="fw-medium ff-encodesans">Body</h3>
-      <h3 class="fw-medium ff-encodesans">Body small</h3>
-      <h3 class="fw-medium ff-encodesans">Body large</h3>
+      <p>
+        This is the default font size for most text, and all content contained
+        in a &lt;p> tag will automatically display this size.
+      </p>
+
+      <CodeBlock>
+        <template #preview>
+          <p>sample text</p>
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
+            <code>&lt;p>Text&lt;/p>
+            </code></pre>
+        </template>
+      </CodeBlock>
 
       <br />
-      <h2 class="display-6 ff-encodesans">two</h2>
-      <h3 class="fw-medium ff-encodesans">three</h3>
-
-      <!-- <CodeBlock>
-        <template #preview>
-          <h1 class="ff-encode-sans">Heading... Encode Sans</h1>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;h1 class="ff-encode-sans">Heading... Encode Sans&lt;/h1>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <h3>Roboto</h3>
-      <p>Encode Sans is the heading font-family used by UW</p>
-
-      <CodeBlock>
-        <template #preview>
-          <h1 class="ff-encode-sans">Heading... Roboto</h1>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;h1 class="ff-roboto">Heading... Roboto&lt;/h1>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <h3>Roboto Slab</h3>
-      <p>Roboto Slab is...</p>
-
-      <CodeBlock>
-        <template #preview>
-          <h1 class="ff-roboto-slab">Heading... Roboto Slab</h1>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;h1 class="ff-roboto-slab">Heading... Roboto Slab&lt;/h1>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <h4>Rozha One</h4>
-      <p>Rozha One is...</p>
-
-      <CodeBlock>
-        <template #preview>
-          <h1 class="ff-rozha-one">Heading... Rozha One</h1>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;h1 class="ff-rozha-one">Heading... Rozha One&lt;/h1>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <h2>Sizing</h2>
-
+      <h3 class="fw-medium ff-encodesans">Body small</h3>
       <p>
-        You can size fonts down using the <code>.small</code> class or the
-        <code>&lt;small></code> element tag. Recommendation is to start with
-        <code>.fs-x</code> classes.
+        For content that is less important than the default-sized content on a
+        page, or if there are space constraints, use a Body small style.
       </p>
+
       <CodeBlock>
         <template #preview>
-          <h1 class="ff-encode-sans">Heading (default - 40px)</h1>
-          <h1 class="ff-encode-sans">
-            <small>Heading (element - 35px)</small>
-          </h1>
-          <h1 class="ff-encode-sans">
-            <span class="small">Heading (class - 35px)</span>
-          </h1>
-          <h1 class="ff-encode-sans fs-2">Heading (fs-2 - 32px)</h1>
+          <p class="small">
+            This line of text is meant to be treated as fine print.
+          </p>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h1 class="ff-encode-sans">
-  Heading (default)
-&lt;/h1>
-&lt;h1 class="ff-encode-sans">
-  &lt;small>Heading (element)&lt;/small>
-&lt;/h1>
-&lt;h1 class="ff-encode-sans">
-  &lt;span class="small">Heading (class)&lt;/span>
-&lt;/h1>
-&lt;h1 class="ff-encode-sans fs-2">
-  Heading (fs-2)
-&lt;/h1>
-</code></pre>
+            <code>&lt;p class="small">Text&lt;/p>
+            </code></pre>
         </template>
-      </CodeBlock> -->
+      </CodeBlock>
+
+      <br />
+      <h3 class="fw-medium ff-encodesans">Body large</h3>
+      <p>
+        Use this style for introductory paragraph, page descriptions, or content
+        that needs more focus.
+      </p>
+
+      <CodeBlock>
+        <template #preview>
+          <p class="fs-5">Introductory comments about this page or section.</p>
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
+            <code>&lt;p class="fs-5">Text&lt;/p>
+            </code></pre>
+        </template>
+      </CodeBlock>
+
+      <UsageBlock variant="dont"
+        ><template #text
+          >Body large should not appear below an H6 heading, as this would
+          result in a heading that is smaller than the content.</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <h6 class="fw-bold ff-opensans">Heading 6 text</h6>
+            <p class="large">Body large text</p>
+          </div></template
+        ></UsageBlock
+      >
+
+      <br />
+      <hr />
+      <h2 class="display-6 ff-encodesans text-danger">
+        Technical Implementation (if needed)
+      </h2>
+      <ul>
+        <li class="text-danger">
+          Define text sizes in REM, this ensures fonts will scale or display the
+          same in mobile and desktop formats.
+        </li>
+        <li class="text-danger">
+          Further guidance for technical implementation...? Do we need to remind
+          Solstice users to use Google fonts or other details/resources?
+        </li>
+      </ul>
     </template>
-    <template #author>Your Name</template>
+
+    <template #author>Cayla Snooke</template>
   </Layout>
 </template>
 
