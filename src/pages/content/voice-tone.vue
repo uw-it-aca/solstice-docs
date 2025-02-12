@@ -18,29 +18,15 @@
       style, promoting a clear, cohesive, and contextualized user experience.
       Voice, like personality, is constant throughout our messaging, while tone,
       like emotions, is dynamic and depends on the context/situation.
-<<<<<<< HEAD
-      <br>
-      Both voice
-      and tone adhere to and follow the
-      <a
-          href=https://insideuwit.uw.edu/support-units/communications/brand-style-other-resources/uw-it-writing-style-guide/
-          target="_blank"
-=======
       <br /><br />
       Both voice and tone adhere to and follow the
       <a
         href="https://insideuwit.uw.edu/support-units/communications/brand-style-other-resources/uw-it-writing-style-guide/"
->>>>>>> develop
         >UW-IT Writing Style Guide</a
       >
       and the
       <a
-<<<<<<< HEAD
-          href=https://www.washington.edu/brand/guides/editorial-guide/#editorial-4
-          target="_blank"
-=======
         href="https://www.washington.edu/brand/guides/editorial-guide/#editorial-4"
->>>>>>> develop
         >UW Editorial Guide</a
       >. Both of these resources should be explored, as they contain additional
       tips and guidance.
@@ -73,99 +59,6 @@
     <template #content>
       <h2 class="display-6 ff-encodesans pt-4 pb-3" id="voice">Voice</h2>
       <p>
-<<<<<<< HEAD
-        Voice &ndash; the consistent and recognizable communication style in messaging &ndash;
-        is intended to align with the UW style and brand, and in addition, is designed
-        to optimize usability, accessibility and inclusivity. The recommended voice is&colon;
-      </p>
-
-      <!-- not sure if this heading situation is ok -->
-          <h3 class="fs-6 fw-bold ff-encodesans">Conversational but professional</h3>
-          <p>We communicate in a way that is easy to understand for a nontechnical audience &ndash;
-            we write how people talk, as if we&apos;re having a conversation. We avoid language
-            that's overly opinionated, humorous, or trendy.</p>
-
-          <h3 class="fs-6 fw-bold ff-encodesans">Clear and concise</h3>
-          <p>
-            We look for the simplest way to communicate information, without unnecessary jargon.
-          </p>
-
-          <h3 class="fs-6 fw-bold ff-encodesans">Informative</h3>
-          <p>
-            We provide information to users when they need it, helping them avoid errors, and
-            explaining the impact of actions they may take.
-          </p>
-
-          <h3 class="fs-6 fw-bold ff-encodesans">Empathetic and inclusive</h3>
-          <p>
-            We ensure that messages are easily understood by a wide and diverse audience.
-            We maintain a warm and approachable demeanor, fostering respect and understanding.
-          </p>
-
-
-      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="tone">Tone</h2>
-      <p>
-        If voice is our brand&apos;s personality, tone is the emotion expressed that conveys how users should interpret information. The right tone depends on the context, audience, and level of engagement required for effective communication.
-      </p>
-
-      <!-- not sure if we should reconfigure there isn't only one h3? -->
-      <h3 class="fw-medium ff-encodesans">Tone map</h3>
-      <p>Since tone will vary throughout a UI, this tone map demonstrates what tone could be used in the outlined use cases. Note that even this tone map is guidance and should be weighed with what the proper tone is for the context of use.
-        <br>
-
-      </p>
-
-      <h4>Map axes</h4>
-      <p>The axes of the tone map range from detailed to concise, and from casual (friendly, fun) to formal (serious authoritative)</p>
-
-
-      <p class="text-danger">image needs to be inserted here</p>
-
-      <!-- this doesn't look good/right -->
-      <h4>Map description</h4>
-      <p>Tone Map items described below for accessibility purposes. Range values: evenly split between two ends, somewhat, moderately, and very</p>
-
-      <h5 class="fw-bold">Forms</h5>
-      <ul>
-        <li><strong>Labels:</strong> somewhat casual, somewhat concise</li>
-        <li><strong>Empty states:</strong> moderately casual, somewhat detailed</li>
-        <li><strong>Errors:</strong> moderately formal, moderately detailed</li>
-        <li><strong>Placeholder text:</strong> somewhat formal, very concise</li>
-        <li><strong>Form help &amp; feedback:</strong> moderately formal, somewhat concise</li>
-      </ul>
-
-      <h5 class="fw-bold">Workflow messaging</h5>
-      <ul>
-        <li><strong>Onboarding:</strong> moderately concise, very casual</li>
-        <li><strong>Dialogs:</strong> evenly split between casual and formal, moderately concise</li>
-        <li><strong>New feaure notices:</strong> very detailed, very casual</li>
-      </ul>
-
-      <h5 class="fw-bold">Academic messaging</h5>
-      <ul>
-        <li><strong>Journey/Academic guidance</strong> very casual, somewhat detailed</li>
-        <li><strong>Academic processes:</strong> very formal, moderately detailed</li>
-      </ul>
-
-      <h5 class="fw-bold">System messaging</h5>
-      <ul>
-        <li><strong>Permissions or wrong URL error:</strong> moderately casual, somewhat concise</li>
-        <li><strong>Server or system error:</strong> very formal, somewhat detailed</li>
-      </ul>
-
-
-      <h5 class="fw-bold">Situational/Semantic messaging</h5>
-      <ul>
-        <li><strong>Success messaging:</strong> moderately casual, very concise</li>
-        <li><strong>Informational alerts:</strong> evenly split between casual and formal, moderately detailed</li>
-        <li><strong>Warning alerts:</strong> moderately formal, somewhat detailed</li>
-        <li><strong>Critical alerts:</strong> very formal, somewhat detailed</li>
-      </ul>
-
-
-      <!--
-      <h3>Instructive (Frequently)</h3>
-=======
         Voice - the consistent and recognizable communication style in messaging
         - is intended to align with the UW style and brand, and in addition, is
         designed to optimize usability, accessibility and inclusivity. The
@@ -211,7 +104,6 @@
         map is guidance and should be weighed with what the proper tone is for
         the context of use.
       </p>
->>>>>>> develop
 
       <p><strong>Tone map axes are:</strong></p>
       <ul>
@@ -227,11 +119,6 @@
         Tone Map items described below for accessibility purposes. Range values:
         evenly split between two ends, somewhat, moderately, and very
       </p>
-<<<<<<< HEAD
-      -->
-    </template>
-    <template #author>Cayla Snooke</template>
-=======
 
       <p><strong>Forms</strong></p>
       <ul>
@@ -303,7 +190,6 @@
       </ul>
     </template>
     <template #author>Leila, Cayla, William</template>
->>>>>>> develop
   </Layout>
 </template>
 
