@@ -14,13 +14,25 @@
     </template>
 
     <template #lead>
-      The Voice and Tone establish a uniform and easily identifiable
-      communication style, promoting a cohesive user experience across various
-      interfaces. It's not just about conveying information; it's about
-      fostering a connection with users through consistent language, style, and
-      attitude. Solstice&rsquo;s Voice and Tone encapsulates our unique
-      personality and identity, fostering consistency and coherence, and
-      contributes to a seamless and engaging user experience.
+      Voice and Tone establish a uniform and easily identifiable communication
+      style, promoting a clear, cohesive, and contextualized user experience.
+      Voice, like personality, is constant throughout our messaging, while tone,
+      like emotions, is dynamic and depends on the context/situation.
+      <br>
+      Both voice
+      and tone adhere to and follow the
+      <a
+          href=https://insideuwit.uw.edu/support-units/communications/brand-style-other-resources/uw-it-writing-style-guide/
+          target="_blank"
+        >UW-IT Writing Style Guide</a
+      >
+      and the
+      <a
+          href=https://www.washington.edu/brand/guides/editorial-guide/#editorial-4
+          target="_blank"
+        >UW Editorial Guide</a
+      >. Both of these resources should be explored, as they contain additional
+      tips and guidance.
     </template>
 
     <template #toc>
@@ -46,53 +58,100 @@
       </PageContents>
     </template>
 
+
     <template #content>
-      <h2 id="voice">Voice</h2>
+      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="voice">Voice</h2>
       <p>
-        The voice of Solstice serves as the articulate and consistent expression
-        of our character. It ensures a recognizable communication style across
-        various design elements. Through Solstice&rsquo;s voice, we aim to
-        convey a story that resonates with our audience and reinforces our
-        identity. Solstice's voice is:
+        Voice &ndash; the consistent and recognizable communication style in messaging &ndash;
+        is intended to align with the UW style and brand, and in addition, is designed
+        to optimize usability, accessibility and inclusivity. The recommended voice is&colon;
       </p>
 
+      <!-- not sure if this heading situation is ok -->
+          <h3 class="fs-6 fw-bold ff-encodesans">Conversational but professional</h3>
+          <p>We communicate in a way that is easy to understand for a nontechnical audience &ndash;
+            we write how people talk, as if we&apos;re having a conversation. We avoid language
+            that's overly opinionated, humorous, or trendy.</p>
+
+          <h3 class="fs-6 fw-bold ff-encodesans">Clear and concise</h3>
+          <p>
+            We look for the simplest way to communicate information, without unnecessary jargon.
+          </p>
+
+          <h3 class="fs-6 fw-bold ff-encodesans">Informative</h3>
+          <p>
+            We provide information to users when they need it, helping them avoid errors, and
+            explaining the impact of actions they may take.
+          </p>
+
+          <h3 class="fs-6 fw-bold ff-encodesans">Empathetic and inclusive</h3>
+          <p>
+            We ensure that messages are easily understood by a wide and diverse audience.
+            We maintain a warm and approachable demeanor, fostering respect and understanding.
+          </p>
+
+
+      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="tone">Tone</h2>
+      <p>
+        If voice is our brand&apos;s personality, tone is the emotion expressed that conveys how users should interpret information. The right tone depends on the context, audience, and level of engagement required for effective communication.
+      </p>
+
+      <!-- not sure if we should reconfigure there isn't only one h3? -->
+      <h3 class="fw-medium ff-encodesans">Tone map</h3>
+      <p>Since tone will vary throughout a UI, this tone map demonstrates what tone could be used in the outlined use cases. Note that even this tone map is guidance and should be weighed with what the proper tone is for the context of use.
+        <br>
+
+      </p>
+
+      <h4>Map axes</h4>
+      <p>The axes of the tone map range from detailed to concise, and from casual (friendly, fun) to formal (serious authoritative)</p>
+
+
+      <p class="text-danger">image needs to be inserted here</p>
+
+      <!-- this doesn't look good/right -->
+      <h4>Map description</h4>
+      <p>Tone Map items described below for accessibility purposes. Range values: evenly split between two ends, somewhat, moderately, and very</p>
+
+      <h5 class="fw-bold">Forms</h5>
       <ul>
-        <li>
-          <strong>Professional and formal</strong>
-          <p>Avoid language that's overly opinionated, humorous, or trendy</p>
-        </li>
-        <li>
-          <strong>Understandable and concise</strong>
-          <p>
-            Look for the simplest way to communicate information, without
-            unnecessary jargon
-          </p>
-        </li>
-        <li>
-          <strong>Informative and clear</strong>
-          <p>
-            Explain the impact clearly, ensuring that the message is easily
-            understood by the audience.
-          </p>
-        </li>
-        <li>
-          <strong>Empathetic and inclusive</strong>
-          <p>
-            Maintain a warm and approachable demeanor, fostering a respectful
-            and understanding environment
-          </p>
-        </li>
+        <li><strong>Labels:</strong> somewhat casual, somewhat concise</li>
+        <li><strong>Empty states:</strong> moderately casual, somewhat detailed</li>
+        <li><strong>Errors:</strong> moderately formal, moderately detailed</li>
+        <li><strong>Placeholder text:</strong> somewhat formal, very concise</li>
+        <li><strong>Form help &amp; feedback:</strong> moderately formal, somewhat concise</li>
       </ul>
 
-      <h2 id="tone">Tone</h2>
-      <p>
-        If voice embodies our brand&rsquo;s personality, tone is the vehicle
-        through which we articulate and embody that personality. The right tone
-        depends on the context, audience, and the level of engagement and
-        emotionality required for effective communication. Solstice&rsquo;s tone
-        should be:
-      </p>
+      <h5 class="fw-bold">Workflow messaging</h5>
+      <ul>
+        <li><strong>Onboarding:</strong> moderately concise, very casual</li>
+        <li><strong>Dialogs:</strong> evenly split between casual and formal, moderately concise</li>
+        <li><strong>New feaure notices:</strong> very detailed, very casual</li>
+      </ul>
 
+      <h5 class="fw-bold">Academic messaging</h5>
+      <ul>
+        <li><strong>Journey/Academic guidance</strong> very casual, somewhat detailed</li>
+        <li><strong>Academic processes:</strong> very formal, moderately detailed</li>
+      </ul>
+
+      <h5 class="fw-bold">System messaging</h5>
+      <ul>
+        <li><strong>Permissions or wrong URL error:</strong> moderately casual, somewhat concise</li>
+        <li><strong>Server or system error:</strong> very formal, somewhat detailed</li>
+      </ul>
+
+
+      <h5 class="fw-bold">Situational/Semantic messaging</h5>
+      <ul>
+        <li><strong>Success messaging:</strong> moderately casual, very concise</li>
+        <li><strong>Informational alerts:</strong> evenly split between casual and formal, moderately detailed</li>
+        <li><strong>Warning alerts:</strong> moderately formal, somewhat detailed</li>
+        <li><strong>Critical alerts:</strong> very formal, somewhat detailed</li>
+      </ul>
+
+
+      <!--
       <h3>Instructive (Frequently)</h3>
 
       <div class="my-5">
@@ -183,8 +242,9 @@
           >UW-IT DEI approved words</a
         >. Also, optimized for a11y.
       </p>
+      -->
     </template>
-    <template #author>Leila Li</template>
+    <template #author>Cayla Snooke</template>
   </Layout>
 </template>
 
