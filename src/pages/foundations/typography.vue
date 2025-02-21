@@ -57,20 +57,22 @@
                 >Type system</a
               >
             </li>
-            <li>
+            <!--
+              <li>
               <a
                 href="#technical-implementation"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
                 >Technical implementation</a
               >
             </li>
+            -->
           </ul>
         </nav>
       </PageContents>
     </template>
 
     <template #content>
-      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="font-families">Font families</h2>
+      <h2 class="display-6 ff-encode-sans pt-3 pb-3" id="font-families">Font families</h2>
       <p>
         The Solstice Design System uses the Encode Sans and Open Sans font
         families. Use only these provided font families &ndash; both have good
@@ -78,21 +80,31 @@
         University of Washington&apos;s brand guides.
       </p>
 
-      <h3 class="fw-medium ff-encodesans">Encode Sans</h3>
-      <p>Encodes Sans is only used for larger headings. [EXAMPLE TEXT]</p>
+      <h3 class="fw-medium ff-encode-sans">Encode Sans</h3>
+      <p>Encodes Sans is only used for larger headings.</p>
+      <div class="border rounded-3 p-3 bg-body-tertiary col-6">
+            <p class="fw-bold fs-4 ff-open-sans">Go dawgs!</p>
+            <p class="fw-medium fs-4 ff-open-sans">Go dawgs!</p>
+            <p class="fw-light fs-4 ff-open-sans">Go dawgs!</p>
+          </div>
 
-      <h3 class="fw-medium ff-encodesans">Open Sans</h3>
+      <h3 class="fw-medium ff-encode-sans pt-4">Open Sans</h3>
       <p>
         Open Sans is used for body text, smaller headings, and most UI
-        components (e.g. messaging, form labels). [EXAMPLE TEXT]
+        components (e.g. messaging, form labels).
       </p>
+      <div class="border rounded-3 p-3 bg-body-tertiary col-6">
+            <p class="fw-bold fs-4 ff-encode-sans">Go dawgs!</p>
+            <p class="fw-medium fs-4 ff-encode-sans">Go dawgs!</p>
+            <p class="fw-light fs-4 ff-encode-sans">Go dawgs!</p>
+          </div>
 
       <br />
       <hr />
-      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="usability-accessibility-principles">
+      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="usability-accessibility-principles">
         Usability & accessibility principles
       </h2>
-      <h3 class="fw-medium ff-encodesans">Usability</h3>
+      <h3 class="fw-medium ff-encode-sans">Usability</h3>
       <ul>
         <li>
           Maintain Consistency Across Pages: Use the same fonts, sizes, and
@@ -103,7 +115,7 @@
           default font styles.
         </li>
       </ul>
-      <h3 class="fw-medium ff-encodesans">Accessibility</h3>
+      <h3 class="fw-medium ff-encode-sans">Accessibility</h3>
       <ul>
         <li>
           Ensure all headings on a page are semantically defined in code. Note
@@ -123,15 +135,15 @@
       <br />
       <hr />
 
-      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="headings">Headings</h2>
+      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="headings">Headings</h2>
       <p>
         Headings are used to provide structure and clarity to page content
         through hierarchy. Like outlines or table of contents, they summarize
         content, communicate levels of importance, and define relationships
         between content.
       </p>
-      <h3 class="fw-medium ff-encodesans">Best practices</h3>
-      <ul>
+      <h3 class="fw-medium ff-encode-sans">Best practices</h3>
+      <ul class="pb-4">
         <li>
           Heading text should be directly related to the content it is
           containing. See Labels page for more guidance.
@@ -166,8 +178,8 @@
       <br />
       <hr />
 
-      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="styling-decoration">Styling & decoration</h2>
-      <h3 class="fw-medium ff-encodesans">Color</h3>
+      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="styling-decoration">Styling & decoration</h2>
+      <h3 class="fw-medium ff-encode-sans">Color</h3>
       <ul>
         <li>
           You shouldn&apos;t need to change the color of text, as it is defined in
@@ -199,7 +211,7 @@
       </ul>
 
       <br />
-      <h3 class="fw-medium ff-encodesans">Decoration</h3>
+      <h3 class="fw-medium ff-encode-sans">Decoration</h3>
       <ul>
         <li>
           <strong>Bold & italics</strong> &ndash; Bold and italic styles are
@@ -230,7 +242,7 @@
 
       <br />
 
-      <h3 class="fw-medium ff-encodesans">Case</h3>
+      <h3 class="fw-medium ff-encode-sans">Case</h3>
       <ul>
         <li>
           Use sentence case in most situations and
@@ -243,8 +255,8 @@
 
       <br />
       <hr />
-      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="alignment-spacing">Alignment & spacing</h2>
-      <h3 class="fw-medium ff-encodesans">Text alignment</h3>
+      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="alignment-spacing">Alignment & spacing</h2>
+      <h3 class="fw-medium ff-encode-sans">Text alignment</h3>
       <ul>
         <li>
           Left-align text within content headings and paragraphs. This supports
@@ -258,7 +270,7 @@
         </li>
       </ul>
 
-      <h3 class="fw-medium ff-encodesans">Text layout</h3>
+      <h3 class="fw-medium ff-encode-sans">Text layout</h3>
       <ul>
         <li>
           Text lines should ideally be limited to 45-85 characters.
@@ -267,7 +279,7 @@
         </li>
       </ul>
 
-      <h3 class="fw-medium ff-encodesans">Truncation</h3>
+      <h3 class="fw-medium ff-encode-sans">Truncation</h3>
       <ul>
         <li>
           Avoid truncation, in any text elements.
@@ -280,7 +292,7 @@
       <!-- Type system -->
       <br />
       <hr />
-      <h2 class="display-6 ff-encodesans pt-4  pb-3" id="type-system">Type system</h2>
+      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="type-system">Type system</h2>
       <p>
         The heading styles specified below create a cohesive heading system that
         is visually distinct and hierarchically clear.
@@ -292,19 +304,19 @@
         sites, such as this documentation site for the Solstice Design System.
         Different styles may be necessary in a web application.
       </p>
-      <h3 class="fw-medium ff-encodesans">H1</h3>
+      <h3 class="fw-medium ff-encode-sans pt-4">H1</h3>
       <p>
         Use an H1 for page titles. The H1 will most likely be the largest font
         on the page.
       </p>
 
-      <CodeBlock>
+      <CodeBlock">
         <template #preview>
-          <h1 class="display-5 fw-bold ff-encodesans">Sample text</h1>
+          <h1 class="display-5 fw-bold ff-encode-sans">Sample text</h1>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h1 class="display-5 fw-bold ff-encodesans">Text&lt;/h1>
+<code>&lt;h1 class="display-5 fw-bold ff-encode-sans">Text&lt;/h1>
 </code></pre>
         </template>
       </CodeBlock>
@@ -319,77 +331,77 @@
             <img /></div></template
       ></UsageBlock>
 
-      <h3 class="fw-medium ff-encodesans">H2</h3>
+      <h3 class="fw-medium ff-encode-sans">H2</h3>
       <p>Use an H2 to designate a page section.</p>
       <CodeBlock>
         <template #preview>
-          <h2 class="display-6 ff-encodesans">Sample text</h2>
+          <h2 class="display-6 ff-encode-sans">Sample text</h2>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h2 class="display-6 ff-encodesans">Text&lt;/h2>
+<code>&lt;h2 class="display-6 ff-encode-sans">Text&lt;/h2>
 </code></pre>
         </template>
       </CodeBlock>
       <br />
 
-      <h3 class="fw-medium ff-encodesans">H3</h3>
+      <h3 class="fw-medium ff-encode-sans">H3</h3>
       <p>Use an H3 to designate a subsection.</p>
       <CodeBlock>
         <template #preview>
-          <h3 class="fw-medium ff-encodesans">Sample text</h3>
+          <h3 class="fw-medium ff-encode-sans">Sample text</h3>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h3 class="fw-medium ff-encodesans">Text&lt;/h3>
+<code>&lt;h3 class="fw-medium ff-encode-sans">Text&lt;/h3>
 </code></pre>
         </template>
       </CodeBlock>
       <br />
 
-      <h3 class="fw-medium ff-encodesans">H4</h3>
+      <h3 class="fw-medium ff-encode-sans">H4</h3>
       <p>Use an H4 to designate a subsection of an H3.</p>
       <CodeBlock>
         <template #preview>
-          <h4 class="fw-medium ff-opensans">Sample text</h4>
+          <h4 class="fw-medium ff-open-sans">Sample text</h4>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h4 class="fw-medium ff-opensans">Text&lt;/h4>
+<code>&lt;h4 class="fw-medium ff-open-sans">Text&lt;/h4>
 </code></pre>
         </template>
       </CodeBlock>
       <br />
 
-      <h3 class="fw-medium ff-encodesans">H5 &amp; H6</h3>
+      <h3 class="fw-medium ff-encode-sans">H5 &amp; H6</h3>
       <p>
         Use an H5 and H6 to designate sub sections of their respective parent.
       </p>
 
       <CodeBlock>
         <template #preview>
-          <h5 class="fw-bold ff-opensans">Sample text</h5>
+          <h5 class="fw-bold ff-open-sans">Sample text</h5>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h5 class="fw-bold ff-opensans">Text&lt;/h5>
+<code>&lt;h5 class="fw-bold ff-open-sans">Text&lt;/h5>
 </code></pre>
         </template>
       </CodeBlock>
 
       <CodeBlock>
         <template #preview>
-          <h6 class="fw-bold ff-opensans">Sample text</h6>
+          <h6 class="fw-bold ff-open-sans">Sample text</h6>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h6 class="fw-bold ff-opensans">Text&lt;/h6>
+<code>&lt;h6 class="fw-bold ff-open-sans">Text&lt;/h6>
 </code></pre>
         </template>
       </CodeBlock>
       <br />
 
-      <h3 class="fw-medium ff-encodesans">Body</h3>
+      <h3 class="fw-medium ff-encode-sans">Body</h3>
       <p>
         This is the default font size for most text, and all content contained
         in a &lt;p> tag will automatically display this size.
@@ -407,7 +419,7 @@
       </CodeBlock>
 
       <br />
-      <h3 class="fw-medium ff-encodesans">Body small</h3>
+      <h3 class="fw-medium ff-encode-sans">Body small</h3>
       <p>
         For content that is less important than the default-sized content on a
         page, or if there are space constraints, use a Body small style.
@@ -427,7 +439,7 @@
       </CodeBlock>
 
       <br />
-      <h3 class="fw-medium ff-encodesans">Body large</h3>
+      <h3 class="fw-medium ff-encode-sans">Body large</h3>
       <p>
         Use this style for introductory paragraph, page descriptions, or content
         that needs more focus.
@@ -450,7 +462,7 @@
           result in a heading that is smaller than the content.</template
         ><template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <h6 class="fw-bold ff-opensans">Heading 6 text</h6>
+            <h6 class="fw-bold ff-open-sans">Heading 6 text</h6>
             <p class="large">Body large text</p>
           </div></template
         ></UsageBlock
@@ -458,7 +470,8 @@
 
       <br />
       <hr />
-      <h2 class="display-6 ff-encodesans text-danger pt-4 pb-3" id="technical-implementation">
+      <!-- Technical implementation needs to be figured out
+      <h2 class="display-6 ff-encode-sans text-danger pt-4 pb-3" id="technical-implementation">
         Technical Implementation (if needed)
       </h2>
       <ul>
@@ -471,6 +484,7 @@
           Solstice users to use Google fonts or other details/resources?
         </li>
       </ul>
+      -->
     </template>
 
     <template #author>Cayla Snooke</template>
