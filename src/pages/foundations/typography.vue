@@ -310,7 +310,7 @@
         on the page.
       </p>
 
-      <CodeBlock">
+      <CodeBlock>
         <template #preview>
           <h1 class="display-5 fw-bold ff-encode-sans">Sample text</h1>
         </template>
