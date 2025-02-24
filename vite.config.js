@@ -19,4 +19,12 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,
+        silenceDeprecations: ["global-builtin", "import"], // silence bootstrap5 related deprecations
+      },
+    },
+  },
 });
