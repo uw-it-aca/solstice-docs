@@ -167,18 +167,15 @@
       </ul>
 
       <UsageBlock variant="dont"
-        ><template #text>Don't mix heading styles or semantic tags</template
-        ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <img /></div></template
-      ></UsageBlock>
+        ><template #text
+          >Don't mix heading styles or semantic tags</template
+        ></UsageBlock
+      >
       <UsageBlock variant="do"
         ><template #text
           >Do have more than one subsection under a heading?</template
-        ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <img /></div></template
-      ></UsageBlock>
+        ></UsageBlock
+      >
 
       <br />
       <hr />
@@ -337,10 +334,7 @@
           >An H1 should not be used for an application name or logo in a header
           &ndash; instead that content should be either inside an &lt;a> or
           &lt;p> tag, and all within a &lt;header> section.</template
-        ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <img /></div></template
-      ></UsageBlock>
+        ></UsageBlock>
 
       <h3 class="fw-medium ff-encode-sans">H2</h3>
       <p>Use an H2 to designate a page section.</p>
