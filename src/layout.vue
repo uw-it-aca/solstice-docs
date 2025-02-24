@@ -30,7 +30,7 @@
 
       <div v-if="$slots.lead" class="row">
         <div class="col-9">
-          <h1 class="ff-encode-sans fw-bold">{{ pageTitle }}</h1>
+          <h1 class="display-5 fw-bold ff-encode-sans">{{ pageTitle }}</h1>
           <p class="lead text-body-secondary">
             <slot name="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid

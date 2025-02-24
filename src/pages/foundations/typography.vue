@@ -72,7 +72,9 @@
     </template>
 
     <template #content>
-      <h2 class="display-6 ff-encode-sans pt-3 pb-3" id="font-families">Font families</h2>
+      <h2 class="display-6 ff-encode-sans pt-3 pb-3" id="font-families">
+        Font families
+      </h2>
       <p>
         The Solstice Design System uses the Encode Sans and Open Sans font
         families. Use only these provided font families &ndash; both have good
@@ -83,10 +85,10 @@
       <h3 class="fw-medium ff-encode-sans">Encode Sans</h3>
       <p>Encodes Sans is only used for larger headings.</p>
       <div class="border rounded-3 p-3 bg-body-tertiary col-6">
-            <p class="fw-bold fs-4 ff-open-sans">Go dawgs!</p>
-            <p class="fw-medium fs-4 ff-open-sans">Go dawgs!</p>
-            <p class="fw-light fs-4 ff-open-sans">Go dawgs!</p>
-          </div>
+        <p class="fw-bold fs-4 ff-open-sans">Go dawgs!</p>
+        <p class="fw-medium fs-4 ff-open-sans">Go dawgs!</p>
+        <p class="fw-light fs-4 ff-open-sans">Go dawgs!</p>
+      </div>
 
       <h3 class="fw-medium ff-encode-sans pt-4">Open Sans</h3>
       <p>
@@ -94,14 +96,17 @@
         components (e.g. messaging, form labels).
       </p>
       <div class="border rounded-3 p-3 bg-body-tertiary col-6">
-            <p class="fw-bold fs-4 ff-encode-sans">Go dawgs!</p>
-            <p class="fw-medium fs-4 ff-encode-sans">Go dawgs!</p>
-            <p class="fw-light fs-4 ff-encode-sans">Go dawgs!</p>
-          </div>
+        <p class="fw-bold fs-4 ff-encode-sans">Go dawgs!</p>
+        <p class="fw-medium fs-4 ff-encode-sans">Go dawgs!</p>
+        <p class="fw-light fs-4 ff-encode-sans">Go dawgs!</p>
+      </div>
 
       <br />
       <hr />
-      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="usability-accessibility-principles">
+      <h2
+        class="display-6 ff-encode-sans pt-4 pb-3"
+        id="usability-accessibility-principles"
+      >
         Usability & accessibility principles
       </h2>
       <h3 class="fw-medium ff-encode-sans">Usability</h3>
@@ -178,13 +183,15 @@
       <br />
       <hr />
 
-      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="styling-decoration">Styling & decoration</h2>
+      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="styling-decoration">
+        Styling & decoration
+      </h2>
       <h3 class="fw-medium ff-encode-sans">Color</h3>
       <ul>
         <li>
-          You shouldn&apos;t need to change the color of text, as it is defined in
-          the Solstice style sheet and is an inherited property of HTML elements
-          and/or Solstice and Bootstrap themes.
+          You shouldn&apos;t need to change the color of text, as it is defined
+          in the Solstice style sheet and is an inherited property of HTML
+          elements and/or Solstice and Bootstrap themes.
         </li>
         <li>
           All color choices in the Solstice Design System adhere to the
@@ -255,7 +262,9 @@
 
       <br />
       <hr />
-      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="alignment-spacing">Alignment & spacing</h2>
+      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="alignment-spacing">
+        Alignment & spacing
+      </h2>
       <h3 class="fw-medium ff-encode-sans">Text alignment</h3>
       <ul>
         <li>
@@ -292,7 +301,9 @@
       <!-- Type system -->
       <br />
       <hr />
-      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="type-system">Type system</h2>
+      <h2 id="type-system" class="display-6 ff-encode-sans pt-4 pb-3">
+        Type system
+      </h2>
       <p>
         The heading styles specified below create a cohesive heading system that
         is visually distinct and hierarchically clear.
