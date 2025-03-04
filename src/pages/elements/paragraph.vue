@@ -70,12 +70,71 @@
         minus saepe? Quaerat cupiditate ipsa ut nulla nostrum ex aut!
       </p>
       <h2 id="variants">Variants</h2>
+      <h3 class="fw-medium ff-encode-sans">Body</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga
-        corporis totam eligendi molestiae ex aperiam soluta, consectetur
-        accusamus accusantium officia praesentium, magni numquam sunt minus
-        architecto libero enim tempore!
+        This is the default font size for most text, and all content contained
+        in a &lt;p> tag will automatically display this size.
       </p>
+
+      <CodeBlock>
+        <template #preview>
+          <p>sample text</p>
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
+<code>&lt;p>Text&lt;/p>
+</code></pre>
+        </template>
+      </CodeBlock>
+
+      <br />
+      <h3 class="fw-medium ff-encode-sans">Body small</h3>
+      <p>
+        For content that is less important than the default-sized content on a
+        page, or if there are space constraints, use a Body small style.
+      </p>
+
+      <CodeBlock>
+        <template #preview>
+          <p class="small">
+            This line of text is meant to be treated as fine print.
+          </p>
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
+<code>&lt;p class="small">Text&lt;/p>
+</code></pre>
+        </template>
+      </CodeBlock>
+
+      <br />
+      <h3 class="fw-medium ff-encode-sans">Body large</h3>
+      <p>
+        Use this style for introductory paragraph, page descriptions, or content
+        that needs more focus.
+      </p>
+      <CodeBlock>
+        <template #preview>
+          <p class="fs-5">Introductory comments about this page or section.</p>
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
+<code>&lt;p class="fs-5">Text&lt;/p>
+</code></pre>
+        </template>
+      </CodeBlock>
+
+      <UsageBlock variant="dont"
+        ><template #text
+          >Body large should not appear below an H6 heading, as this would
+          result in a heading that is smaller than the content.</template
+        ><template #preview
+          ><div class="border rounded-3 p-3 bg-body-tertiary">
+            <h6 class="fw-bold ff-open-sans">Heading 6 text</h6>
+            <p class="large">Body large text</p>
+          </div></template
+        ></UsageBlock
+      >
 
       <h2 id="options">Options</h2>
       <p>

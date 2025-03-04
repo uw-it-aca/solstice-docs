@@ -57,15 +57,14 @@
                 >Type system</a
               >
             </li>
-            <!--
-              <li>
+
+            <li>
               <a
                 href="#technical-implementation"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
                 >Technical implementation</a
               >
             </li>
-            -->
           </ul>
         </nav>
       </PageContents>
@@ -298,198 +297,23 @@
       <!-- Type system -->
       <br />
       <hr />
-      <h2 id="type-system" class="display-6 ff-encode-sans pt-4 pb-3">
-        Type system
-      </h2>
-      <p>
-        The heading styles specified below create a cohesive heading system that
-        is visually distinct and hierarchically clear.
 
-        <br />
-        <br />
-
-        <strong>Note:</strong> This type system works well for content heavy
-        sites, such as this documentation site for the Solstice Design System.
-        Different styles may be necessary in a web application.
-      </p>
-      <h3 class="fw-medium ff-encode-sans pt-4">H1</h3>
-      <p>
-        Use an H1 for page titles. The H1 will most likely be the largest font
-        on the page.
-      </p>
-
-      <CodeBlock>
-        <template #preview>
-          <h1 class="display-5 fw-bold ff-encode-sans">Sample text</h1>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;h1 class="display-5 fw-bold ff-encode-sans">Text&lt;/h1>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <UsageBlock variant="dont"
-        ><template #text
-          >An H1 should not be used for an application name or logo in a header
-          &ndash; instead that content should be either inside an &lt;a> or
-          &lt;p> tag, and all within a &lt;header> section.</template
-        ></UsageBlock>
-
-      <h3 class="fw-medium ff-encode-sans">H2</h3>
-      <p>Use an H2 to designate a page section.</p>
-      <CodeBlock>
-        <template #preview>
-          <h2 class="display-6 ff-encode-sans">Sample text</h2>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;h2 class="display-6 ff-encode-sans">Text&lt;/h2>
-</code></pre>
-        </template>
-      </CodeBlock>
-      <br />
-
-      <h3 class="fw-medium ff-encode-sans">H3</h3>
-      <p>Use an H3 to designate a subsection.</p>
-      <CodeBlock>
-        <template #preview>
-          <h3 class="fw-medium ff-encode-sans">Sample text</h3>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;h3 class="fw-medium ff-encode-sans">Text&lt;/h3>
-</code></pre>
-        </template>
-      </CodeBlock>
-      <br />
-
-      <h3 class="fw-medium ff-encode-sans">H4</h3>
-      <p>Use an H4 to designate a subsection of an H3.</p>
-      <CodeBlock>
-        <template #preview>
-          <h4 class="fw-medium ff-open-sans">Sample text</h4>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;h4 class="fw-medium ff-open-sans">Text&lt;/h4>
-</code></pre>
-        </template>
-      </CodeBlock>
-      <br />
-
-      <h3 class="fw-medium ff-encode-sans">H5 &amp; H6</h3>
-      <p>
-        Use an H5 and H6 to designate sub sections of their respective parent.
-      </p>
-
-      <CodeBlock>
-        <template #preview>
-          <h5 class="fw-bold ff-open-sans">Sample text</h5>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;h5 class="fw-bold ff-open-sans">Text&lt;/h5>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <CodeBlock>
-        <template #preview>
-          <h6 class="fw-bold ff-open-sans">Sample text</h6>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;h6 class="fw-bold ff-open-sans">Text&lt;/h6>
-</code></pre>
-        </template>
-      </CodeBlock>
-      <br />
-
-      <h3 class="fw-medium ff-encode-sans">Body</h3>
-      <p>
-        This is the default font size for most text, and all content contained
-        in a &lt;p> tag will automatically display this size.
-      </p>
-
-      <CodeBlock>
-        <template #preview>
-          <p>sample text</p>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;p>Text&lt;/p>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <br />
-      <h3 class="fw-medium ff-encode-sans">Body small</h3>
-      <p>
-        For content that is less important than the default-sized content on a
-        page, or if there are space constraints, use a Body small style.
-      </p>
-
-      <CodeBlock>
-        <template #preview>
-          <p class="small">
-            This line of text is meant to be treated as fine print.
-          </p>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;p class="small">Text&lt;/p>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <br />
-      <h3 class="fw-medium ff-encode-sans">Body large</h3>
-      <p>
-        Use this style for introductory paragraph, page descriptions, or content
-        that needs more focus.
-      </p>
-
-      <CodeBlock>
-        <template #preview>
-          <p class="fs-5">Introductory comments about this page or section.</p>
-        </template>
-        <template #bootstrap>
-          <pre class="language-html">
-<code>&lt;p class="fs-5">Text&lt;/p>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <UsageBlock variant="dont"
-        ><template #text
-          >Body large should not appear below an H6 heading, as this would
-          result in a heading that is smaller than the content.</template
-        ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <h6 class="fw-bold ff-open-sans">Heading 6 text</h6>
-            <p class="large">Body large text</p>
-          </div></template
-        ></UsageBlock
-      >
 
       <br />
       <hr />
-      <!-- Technical implementation needs to be figured out
-      <h2 class="display-6 ff-encode-sans text-danger pt-4 pb-3" id="technical-implementation">
-        Technical Implementation (if needed)
+
+      <h2
+        class="display-6 ff-encode-sans pt-4 pb-3"
+        id="technical-implementation"
+      >
+        Technical Implementation
       </h2>
-      <ul>
-        <li class="text-danger">
-          Define text sizes in REM, this ensures fonts will scale or display the
-          same in mobile and desktop formats.
-        </li>
-        <li class="text-danger">
-          Further guidance for technical implementation...? Do we need to remind
-          Solstice users to use Google fonts or other details/resources?
-        </li>
-      </ul>
-      -->
+      <p>
+        Define text sizes in REM, this ensures fonts will scale or display the
+        same in mobile and desktop formats.
+      </p>
+      <br />
+      <hr />
     </template>
 
     <template #author>Cayla Snooke</template>
