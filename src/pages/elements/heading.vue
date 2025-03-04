@@ -7,35 +7,18 @@
       </BBreadcrumb>
     </template>
     <template #lead>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
-      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
-      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
-      aliquam!
+      Headings summarize content, communicate levels of importance, provide
+      structure and define relationships between content.
     </template>
     <template #toc>
       <PageContents>
         <nav id="TableOfContents">
           <ul class="list-unstyled m-0">
-   <!--          <li>
-              <a
-                href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Anatomy</a
-              >
-            </li> -->
             <li>
               <a
-                href="#type-system"
+                href="#best-practices"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Variants</a
-              >
-            </li>
-
-            <!-- <li>
-              <a
-                href="#usage"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Usage</a
+                >Best Practices</a
               >
             </li>
             <li>
@@ -47,26 +30,81 @@
             </li>
             <li>
               <a
+                href="#type-system"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Type System</a
+              >
+            </li>
+            <li>
+              <a
                 href="#implementation"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
                 >Implementation</a
               >
-            </li> -->
+            </li>
           </ul>
         </nav>
       </PageContents>
     </template>
     <template #content>
-      <!--
-      <h2 id="anatomy">Anatomy</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, sit, quo
-        ab pariatur, recusandae obcaecati necessitatibus doloribus ad a dolor
-        minus saepe? Quaerat cupiditate ipsa ut nulla nostrum ex aut!
-      </p>
-        -->
+      <h2 id="best-practices" class="display-6 ff-encode-sans pt-4 pb-3">
+        Best Practices
+      </h2>
+      <h3 class="fw-medium ff-encode-sans pt-4">Content/Structure?</h3>
+      <ul>
+        <li>
+          Heading text should be directly related to the content it is
+          containing. Review Labels page for more guidance.
+        </li>
+        <li>
+          The &lt;H1> tag is typically reserved for the page title or main
+          heading, while &lt;H2> and &lt;H3> tags break up sections and
+          subsections.
+        </li>
+        <li>
+          Use &lt;H2> through &lt;H6> tags to define peer and parent-child
+          relationships in the content.
+        </li>
+        <li>Avoid having only one subsection heading within a section.</li>
+      </ul>
+
+      <h3 class="fw-medium ff-encode-sans pt-4">Styles?</h3>
+      <ul>
+        <li>Use only the headings styles defined in the type system below.</li>
+        <li>
+          Heading text should never be smaller than the body text it contains,
+          visually and semantically
+        </li>
+        <li class="text-danger">Need guidance around visibility</li>
+      </ul>
+
+      <h2 id="accessibility">Accessibility</h2>
+      <ul>
+        <li>
+          <strong
+            >All headings on a page must be semantically defined in
+            code.</strong
+          >
+          Outside of it being essential for usability and accessibility, clear
+          and semantic headings are also important for good search results
+          (SEO).
+        </li>
+        <li>
+          <strong>Ensure your heading hierarchy is clear and logical.</strong>
+          Don&apos;t skip heading levels, as this will break the page structure
+          and confuse users.
+        </li>
+        <li>
+          <strong>Try to avoid the use of &lt;H5> and &lt;H6> tags.</strong>
+          The use of these tags creates deeply nested content that can be
+          tedious to navigate for screen reader users. If you start to use
+          &lt;H5> and &lt;H6> tags when designing, consider a different content
+          structure.
+        </li>
+      </ul>
+
       <h2 id="type-system" class="display-6 ff-encode-sans pt-4 pb-3">
-        Type system
+        Type system/Variants/Styles?
       </h2>
       <p>
         The heading styles specified below create a cohesive heading system that
@@ -211,29 +249,8 @@
         ></UsageBlock
       >
 
-<!--       <h2 id="usage">Usage</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-        facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
-        placeat totam dolorem suscipit est sunt eum, debitis exercitationem
-        voluptate ducimus repellat necessitatibus?
-      </p>
-
-      <h2 id="accessibility">Accessibility</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-        facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
-        placeat totam dolorem suscipit est sunt eum, debitis exercitationem
-        voluptate ducimus repellat necessitatibus?
-      </p>
-
       <h2 id="implementation">Implementation</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-        facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
-        placeat totam dolorem suscipit est sunt eum, debitis exercitationem
-        voluptate ducimus repellat necessitatibus?
-      </p> -->
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     </template>
     <template #author>Your Name</template>
   </Layout>

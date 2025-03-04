@@ -8,7 +8,7 @@
     </template>
     <template #lead>
       The right combination of font families, text alignment, and text styling
-      creates a readable and clear hierarchy of content.
+      creates readable and clearly structured content.
     </template>
 
     <template #toc>
