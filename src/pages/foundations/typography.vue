@@ -72,13 +72,12 @@
           href="https://www.washington.edu/brand/brand-elements/fonts/"
           target="_blank"
           >brand guides</a
-        >
-        .
+        >.
       </p>
 
       <p>
         Please visit
-        <a href="/elements/heading" target="_blank">Headings</a>
+        <a href="/elements/heading" target="_blank">Heading</a>
         and
         <a href="/elements/paragraph" target="_blank">Paragraph</a>
 
@@ -126,7 +125,7 @@
         <li class="pb-3">
           <strong>Avoid overriding the default font styles.</strong>
           Default styles for each HTML element and Bootstrap component are
-          established in the Solstice and Bootstrap stylesheets, you should.
+          established in the Solstice and Bootstrap stylesheets.
         </li>
         <li>
           <strong>Large text will likely be an HTML heading.</strong> If you
@@ -141,18 +140,16 @@
       <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="styling-decoration">
         Styling & Decoration
       </h2>
-      <p>
-        See the comprehensive
-        <a href="/foundations/color" target="_blank">Color</a> page for more
-        guidance.
-      </p>
+
       <h3 class="fw-medium ff-encode-sans pt-3">Color</h3>
       <ul>
         <li class="pb-3">
           <strong>Colors are defined in the Solstice style sheet.</strong> You
           shouldn&apos;t need to change the color of text, as it is defined in
           the Solstice style sheet and is an inherited property of HTML elements
-          and/or Solstice and Bootstrap themes.
+          and/or Solstice and Bootstrap themes. Review the comprehensive
+        <a href="/foundations/color" target="_blank">Color</a> page for more
+        guidance.
         </li>
         <li class="pb-3">
           <strong>Text color and value pairings are accessible.</strong> All
@@ -170,9 +167,9 @@
         </li>
         <li>
           <strong>Keep text greyscale.</strong> We strongly recommend not using
-          branding colors (beige, purples, accent palette) for headings or page
-          titles. Branding colors in headings add unnecessary visual complexity
-          to a page and can be misinterpreted as having a semantic meaning.
+          brand colors (beige, purples, accent palette) for any headings. Brand
+          colors in headings adds unnecessary visual complexity to a page and
+          can be misinterpreted as having a semantic meaning.
         </li>
       </ul>
 
@@ -185,6 +182,10 @@
           >
           Italicizing words or strings, however, can decrease readability. Both
           should be used sparingly so as to not diminish their effectiveness.
+          It&apos;s best to use &lt;strong> and &lt;em> to ensure the semantic
+          meaning is being conveyed. In the very rare case where you only want a
+          stylistic change and don&apos;t need to convey semantic meaning,
+          &lt;b> &lt;i> can be used.
         </li>
         <li class="pb-3">
           <strong>Underlining text can conflict with link styling.</strong>
@@ -213,22 +214,14 @@
           design or if a user activates an optional action.
         </li>
       </ul>
-      <UsageBlock variant="do"
-        ><template #text
-          >It&apos;s best to use &lt;strong> and &lt;em> to ensure the semantic
-          meaning is being conveyed. In the very rare case where you only want a
-          stylistic change and don&apos;t need to convey semantic meaning,
-          &lt;b> &lt;i> can be used.</template
-        ></UsageBlock
-      >
 
       <h3 class="fw-medium ff-encode-sans">Case</h3>
       <ul>
         <li>
-          Use sentence case in most situations and
-          <span class="text-uppercase">AVOID</span> all caps. Headings may use
+          <strong>Use sentence case in most situations and
+          <span class="text-uppercase">AVOID</span> all caps.</strong> Headings may use
           title case, especially an &lt;H1>/Page title. Review
-          <a href="/foundations/labels" target="_blank">Labels</a> for more
+          <a href="/content/labels" target="_blank">Labels</a> for more
           details.
         </li>
       </ul>
@@ -248,8 +241,7 @@
           readers use. Deviating from left alignment slows readers down.
         </li>
         <li>
-          <strong>Text should never be set to “justify”.</strong>
-          Justifying (aligned to both the left and right margins) text results
+          <strong>Text should never be set to “justify”.</strong> Justifying (aligned to both the left and right margins) text results
           in inconsistent spacing between words and affects readability.
         </li>
       </ul>
@@ -270,7 +262,7 @@
       <ul>
         <li>
           <strong>Avoid truncation, in any text elements.</strong> Review
-          <a href="/foundations/labels" target="_blank">Labels</a> for more
+          <a href="/content/labels" target="_blank">Labels</a> for more
           details.
         </li>
       </ul>
@@ -285,7 +277,7 @@
         Technical Implementation
       </h2>
       <p>
-        Define text sizes in REM, this ensures fonts will scale or display the
+        <strong>Define text sizes in REM.</strong> This ensures fonts will scale or display the
         same in mobile and desktop formats.
       </p>
       <br />
