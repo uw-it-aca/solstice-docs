@@ -7,8 +7,8 @@
       </BBreadcrumb>
     </template>
     <template #lead>
-      Font families and a type system, as well as best practices for creating
-      readable and clear hierarchy of content
+      The right combination of font families, text alignment, and text styling
+      creates a readable and clear hierarchy of content.
     </template>
 
     <template #toc>
@@ -19,50 +19,35 @@
               <a
                 href="#font-families"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Font families</a
+                >Font Families</a
               >
             </li>
             <li>
               <a
                 href="#usability-accessibility-principles"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Usability &amp; accessibility principles</a
-              >
-            </li>
-            <li>
-              <a
-                href="#headings"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Headings</a
+                >Usability &amp; Accessibility Principles</a
               >
             </li>
             <li>
               <a
                 href="#styling-decoration"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Styling &amp; decoration</a
+                >Styling &amp; Decoration</a
               >
             </li>
             <li>
               <a
                 href="#alignment-spacing"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Alignment &amp; spacing</a
+                >Alignment &amp; Spacing</a
               >
             </li>
-            <li>
-              <a
-                href="#type-system"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Type system</a
-              >
-            </li>
-
             <li>
               <a
                 href="#technical-implementation"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Technical implementation</a
+                >Technical Implementation</a
               >
             </li>
           </ul>
@@ -72,232 +57,223 @@
 
     <template #content>
       <h2 class="display-6 ff-encode-sans pt-3 pb-3" id="font-families">
-        Font families
+        Font Families
       </h2>
       <p>
         The Solstice Design System uses the Encode Sans and Open Sans font
-        families. Use only these provided font families &ndash; both have good
-        readability, are widely supported, and are in alignment with the
-        University of Washington&apos;s brand guides.
+        families.
       </p>
 
-      <h3 class="fw-medium ff-encode-sans">Encode Sans</h3>
-      <p>Encodes Sans is only used for larger headings.</p>
-      <div class="border rounded-3 p-3 bg-body-tertiary col-6">
-        <p class="fw-bold fs-4 ff-open-sans">Go dawgs!</p>
-        <p class="fw-medium fs-4 ff-open-sans">Go dawgs!</p>
-        <p class="fw-light fs-4 ff-open-sans">Go dawgs!</p>
+      <p>
+        <strong>Use only these provided font families.</strong> Both have good
+        readability, are widely supported, and are in alignment with the
+        University of Washington&apos;s
+        <a
+          href="https://www.washington.edu/brand/brand-elements/fonts/"
+          target="_blank"
+          >brand guides</a
+        >
+        .
+      </p>
+
+      <p>
+        Please visit
+        <a href="/elements/heading" target="_blank">Headings</a>
+        and
+        <a href="/elements/paragraph" target="_blank">Paragraph</a>
+
+        pages for more details and code snippets.
+      </p>
+
+      <h3 class="fw-medium ff-encode-sans pt-3">Encode Sans</h3>
+      <p>Encodes Sans is <strong>only used for larger headings.</strong></p>
+      <div class="border rounded-3 p-3 col-6">
+        <p class="display-5 fw-bold ff-encode-sans pt-2">Solstice h1</p>
+        <p class="display-6 ff-encode-sans">Solstice h2</p>
+        <p class="fs-3 fw-medium ff-encode-san">Sosltice h3</p>
       </div>
 
-      <h3 class="fw-medium ff-encode-sans pt-4">Open Sans</h3>
+      <h3 class="fw-medium ff-encode-sans pt-5">Open Sans</h3>
       <p>
-        Open Sans is used for body text, smaller headings, and most UI
-        components (e.g. messaging, form labels).
+        Open Sans is used for
+        <strong>body text, smaller headings, and most UI components</strong>
+        (e.g. alert messaging, form labels, buttons).
       </p>
-      <div class="border rounded-3 p-3 bg-body-tertiary col-6">
-        <p class="fw-bold fs-4 ff-encode-sans">Go dawgs!</p>
-        <p class="fw-medium fs-4 ff-encode-sans">Go dawgs!</p>
-        <p class="fw-light fs-4 ff-encode-sans">Go dawgs!</p>
+      <div class="border rounded-3 p-3 col-6">
+        <p class="fs-4 ff-open-sans pt-2">Solstice h4</p>
+        <p class="fw-bold fs-5 ff-open-sans">Solstice h5</p>
+        <p class="fw-bold fs-4 ff-open-sans pb-4">Solstice h6</p>
+        <p>Solstice body text</p>
+        <p><small>Solstice small body text</small></p>
+        <p class="fs-5">Solstice large body text</p>
       </div>
 
       <br />
       <hr />
+
       <h2
         class="display-6 ff-encode-sans pt-4 pb-3"
         id="usability-accessibility-principles"
       >
-        Usability & accessibility principles
+        Usability & Accessibility Principles
       </h2>
-      <h3 class="fw-medium ff-encode-sans">Usability</h3>
       <ul>
+        <li class="pb-3">
+          <strong>Maintain consistency across pages.</strong> Use the same
+          fonts, sizes, and spacing for similar elements (e.g., headings, body
+          text, buttons) across all pages to create a unified experience.
+        </li>
+        <li class="pb-3">
+          <strong>Avoid overriding the default font styles.</strong>
+          Default styles for each HTML element and Bootstrap component are
+          established in the Solstice and Bootstrap stylesheets, you should.
+        </li>
         <li>
-          Maintain Consistency Across Pages: Use the same fonts, sizes, and
-          spacing for similar elements (e.g., headings, body text, buttons)
-          across all pages to create a unified experience. Default styles for
-          each HTML element and Bootstrap component are established in the
-          Solstice and Bootstrap stylesheets, you should avoid overriding these
-          default font styles.
+          <strong>Large text will likely be an HTML heading.</strong> If you
+          emphasize something using large text, a heading tag should be used to
+          call out the information to screen readers.
         </li>
       </ul>
-      <h3 class="fw-medium ff-encode-sans">Accessibility</h3>
-      <ul>
-        <li>
-          Ensure all headings on a page are semantically defined in code. Note
-          that clear and semantic headings are also important for good search
-          results (SEO).
-        </li>
-        <li>
-          Ensure your heading hierarchy is clear and logical &ndash; don&apos;t
-          skip heading levels.
-        </li>
-        <li>
-          If you emphasize something using large text, it should likely be a
-          semantic HTML heading.
-        </li>
-      </ul>
-
-      <br />
-      <hr />
-
-      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="headings">Headings</h2>
-      <p>
-        Headings are used to provide structure and clarity to page content
-        through hierarchy. Like outlines or table of contents, they summarize
-        content, communicate levels of importance, and define relationships
-        between content.
-      </p>
-      <h3 class="fw-medium ff-encode-sans">Best practices</h3>
-      <ul class="pb-4">
-        <li>
-          Heading text should be directly related to the content it is
-          containing. See Labels page for more guidance.
-        </li>
-        <li>
-          The &lt;H1> tag is typically reserved for the page title or main
-          heading, while &lt;H2> and &lt;H3> tags break up sections and
-          subsections.
-        </li>
-        <li>
-          Use &lt;H2> through &lt;H6> tags to define peer and parent-child
-          relationships in the content.
-        </li>
-        <li>Avoid having only one subsection heading within a section.</li>
-        <li>Use only the headings styles defined in the type system below.</li>
-      </ul>
-
-      <UsageBlock variant="dont"
-        ><template #text
-          >Don't mix heading styles or semantic tags</template
-        ></UsageBlock
-      >
-      <UsageBlock variant="do"
-        ><template #text
-          >Do have more than one subsection under a heading?</template
-        ></UsageBlock
-      >
 
       <br />
       <hr />
 
       <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="styling-decoration">
-        Styling & decoration
+        Styling & Decoration
       </h2>
-      <h3 class="fw-medium ff-encode-sans">Color</h3>
+      <p>
+        See the comprehensive
+        <a href="/foundations/color" target="_blank">Color</a> page for more
+        guidance.
+      </p>
+      <h3 class="fw-medium ff-encode-sans pt-3">Color</h3>
       <ul>
-        <li>
-          You shouldn&apos;t need to change the color of text, as it is defined
-          in the Solstice style sheet and is an inherited property of HTML
-          elements and/or Solstice and Bootstrap themes.
+        <li class="pb-3">
+          <strong>Colors are defined in the Solstice style sheet.</strong> You
+          shouldn&apos;t need to change the color of text, as it is defined in
+          the Solstice style sheet and is an inherited property of HTML elements
+          and/or Solstice and Bootstrap themes.
         </li>
-        <li>
-          All color choices in the Solstice Design System adhere to the
-          accessibility requirements of UW {link to the UW guide}, further
-          outlined in the
+        <li class="pb-3">
+          <strong>Text color and value pairings are accessible.</strong> All
+          color choices in the Solstice Design System adhere to the
+          <a
+            href="https://www.washington.edu/accesstech/checklist/contrast/"
+            target="_blank"
+            >accessibility requirements of UW</a
+          >, further outlined in
           <a
             href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html"
             target="_blank"
-            >WCAG Contrast</a
-          >
-          guide, and are dark mode compatible.
+            >WCAG Contrast guide</a
+          >, and are dark mode compatible.
         </li>
         <li>
-          We strongly recommend against using branding colors for headings or
-          page titles. Branding colors in headings add unnecessary visual
-          complexity to a page and can be misinterpreted as having a semantic
-          meaning.
-        </li>
-        <li>
-          See the comprehensive
-          <a href="/foundations/color" target="_blank">Color</a> page for more
-          guidance.
+          <strong>Keep text greyscale.</strong> We strongly recommend not using
+          branding colors (beige, purples, accent palette) for headings or page
+          titles. Branding colors in headings add unnecessary visual complexity
+          to a page and can be misinterpreted as having a semantic meaning.
         </li>
       </ul>
 
-      <br />
-      <h3 class="fw-medium ff-encode-sans">Decoration</h3>
+      <h3 class="fw-medium ff-encode-sans pt-3">Decoration</h3>
       <ul>
-        <li>
-          <strong>Bold & italics</strong> &ndash; Bold and italic styles are
-          used to draw attention and create emphasis. Italicizing words or
-          strings, however, can decrease readability. Both should be used
-          sparingly so as to not diminish their effectiveness.
+        <li class="pb-3">
+          <strong
+            >Bold and italic styles draw attention, and can also communicate
+            semantic meaning.</strong
+          >
+          Italicizing words or strings, however, can decrease readability. Both
+          should be used sparingly so as to not diminish their effectiveness.
         </li>
-        <li>
-          <strong>Underlining</strong> &ndash; Avoid underlining text as it can
-          conflict with link styling and may falsely indicate that text is
+        <li class="pb-3">
+          <strong>Underlining text can conflict with link styling.</strong>
+          Avoid underlining text as it may falsely indicate that text is
           interactive.
         </li>
-        <li>
-          <strong>Strikethrough</strong> &ndash; Avoid using “strikethrough”. If
-          you need to indicate that there has been a change to content, do so in
-          another way.
+        <li class="pb-3">
+          <strong>Strikethrough affects readability.</strong>
+          Avoid using the strikethrough style on text. If you need to indicate
+          that there has been a change to content, try do so in another way.
         </li>
-        <li>
-          <strong>Outlining</strong> &ndash; Text should never be outlined. Use
-          bold or italic styles to draw attention or create emphasis.
+        <li class="pb-3">
+          <strong
+            >Instead of outlining text, use bold or italic styles.
+          </strong>
+          Text should never be outlined. While outlining text may seem like a
+          way to make text bolder, the characters and character spacing
+          don&apos;t account for the outline; this results in bloated and hard
+          to read text. Instead, utilize font weights or styles like bold and
+          italic to create emphasis.
         </li>
-        <li>
-          <strong>Motion effects</strong> &ndash; Do not use motion effects on
-          text. Text should always remain static, unless it is
-          scaling/rearranging due to responsive design.
+        <li class="pb-3">
+          <strong>Text should always remain static.</strong>
+          Motion graphics should never be applied to text. The only situations
+          where text “moves” are when scaling/rearranging due to responsive
+          design or if a user activates an optional action.
         </li>
       </ul>
-
-      <br />
+      <UsageBlock variant="do"
+        ><template #text
+          >It&apos;s best to use &lt;strong> and &lt;em> to ensure the semantic
+          meaning is being conveyed. In the very rare case where you only want a
+          stylistic change and don&apos;t need to convey semantic meaning,
+          &lt;b> &lt;i> can be used.</template
+        ></UsageBlock
+      >
 
       <h3 class="fw-medium ff-encode-sans">Case</h3>
       <ul>
         <li>
           Use sentence case in most situations and
-          <span class="text-uppercase">AVOID ALL CAPS</span>.
-          <a href="/foundations/labels" target="_blank"
-            >Review Labels for more details</a
-          >.
+          <span class="text-uppercase">AVOID</span> all caps. Headings may use
+          title case, especially an &lt;H1>/Page title. Review
+          <a href="/foundations/labels" target="_blank">Labels</a> for more
+          details.
         </li>
       </ul>
 
       <br />
       <hr />
       <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="alignment-spacing">
-        Alignment & spacing
+        Alignment & Spacing
       </h2>
       <h3 class="fw-medium ff-encode-sans">Text alignment</h3>
       <ul>
-        <li>
-          Left-align text within content headings and paragraphs. This supports
-          the “F” shaped scanning pattern that most western readers use.
-          Deviating from this slows readers down.
+        <li class="pb-3">
+          <strong
+            >Left-align text within content headings and paragraphs.
+          </strong>
+          This supports the “F” shaped scanning pattern that most western
+          readers use. Deviating from left alignment slows readers down.
         </li>
         <li>
-          Text should never be set to “justify” (aligned to both the left and
-          right margins). This results in inconsistent spacing between words and
-          affects readability.
+          <strong>Text should never be set to “justify”.</strong>
+          Justifying (aligned to both the left and right margins) text results
+          in inconsistent spacing between words and affects readability.
         </li>
       </ul>
 
-      <h3 class="fw-medium ff-encode-sans">Text layout</h3>
+      <h3 class="fw-medium ff-encode-sans pt-3">Text layout</h3>
       <ul>
         <li>
-          Text lines should ideally be limited to 45-85 characters.
-          <a href="/foundations/layout" target="_blank">Review Layout</a> page
-          for specific line length recommendations.
+          <strong
+            >Text lines should ideally be limited to 45-85 characters.</strong
+          >
+          Review the
+          <a href="/foundations/layout" target="_blank">Layout</a> page for more
+          details.
         </li>
       </ul>
 
-      <h3 class="fw-medium ff-encode-sans">Truncation</h3>
+      <h3 class="fw-medium ff-encode-sans pt-3">Truncation</h3>
       <ul>
         <li>
-          Avoid truncation, in any text elements.
-          <a href="/foundations/labels" target="_blank"
-            >Review Labels for more details</a
-          >.
+          <strong>Avoid truncation, in any text elements.</strong> Review
+          <a href="/foundations/labels" target="_blank">Labels</a> for more
+          details.
         </li>
       </ul>
-
-      <!-- Type system -->
-      <br />
-      <hr />
-
 
       <br />
       <hr />

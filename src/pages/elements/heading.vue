@@ -174,6 +174,43 @@
       </CodeBlock>
       <br />
 
+      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="headings">Headings</h2>
+      <p>
+        Headings are used to provide structure and clarity to page content
+        through hierarchy. Like outlines or table of contents, they summarize
+        content, communicate levels of importance, and define relationships
+        between content.
+      </p>
+      <h3 class="fw-medium ff-encode-sans">Best practices</h3>
+      <ul class="pb-4">
+        <li>
+          Heading text should be directly related to the content it is
+          containing. See Labels page for more guidance.
+        </li>
+        <li>
+          The &lt;H1> tag is typically reserved for the page title or main
+          heading, while &lt;H2> and &lt;H3> tags break up sections and
+          subsections.
+        </li>
+        <li>
+          Use &lt;H2> through &lt;H6> tags to define peer and parent-child
+          relationships in the content.
+        </li>
+        <li>Avoid having only one subsection heading within a section.</li>
+        <li>Use only the headings styles defined in the type system below.</li>
+      </ul>
+
+      <UsageBlock variant="dont"
+        ><template #text
+          >Don't mix heading styles or semantic tags</template
+        ></UsageBlock
+      >
+      <UsageBlock variant="do"
+        ><template #text
+          >Do have more than one subsection under a heading?</template
+        ></UsageBlock
+      >
+
 <!--       <h2 id="usage">Usage</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
