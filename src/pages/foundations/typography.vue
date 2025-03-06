@@ -182,10 +182,10 @@
           >
           Italicizing words or strings, however, can decrease readability. Both
           should be used sparingly so as to not diminish their effectiveness.
-          It&apos;s best to use &lt;strong> and &lt;em> to ensure the semantic
+          It&apos;s best to use <code>&lt;strong></code> and <code>&lt;em></code> to ensure the semantic
           meaning is being conveyed. In the very rare case where you only want a
           stylistic change and don&apos;t need to convey semantic meaning,
-          &lt;b> &lt;i> can be used.
+          <code> &lt;b> &lt;i></code> can be used.
         </li>
         <li class="pb-3">
           <strong>Underlining text can conflict with link styling.</strong>
@@ -220,7 +220,7 @@
         <li>
           <strong>Use sentence case in most situations and
           <span class="text-uppercase">AVOID</span> all caps.</strong> Headings may use
-          title case, especially an &lt;H1>/Page title. Review
+          title case, especially an <code>&lt;H1></code>/Page title. Review
           <a href="/content/labels" target="_blank">Labels</a> for more
           details.
         </li>

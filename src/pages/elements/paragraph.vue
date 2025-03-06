@@ -7,10 +7,7 @@
       </BBreadcrumb>
     </template>
     <template #lead>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
-      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
-      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
-      aliquam!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     </template>
     <template #toc>
       <PageContents>
@@ -18,25 +15,12 @@
           <ul class="list-unstyled m-0">
             <li>
               <a
-                href="#anatomy"
+                href="#type-system"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Anatomy</a
+                >Type System</a
               >
-            </li>
-            <li>
-              <a
-                href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Variants</a
-              >
-            </li>
-            <li>
-              <a
-                href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Options</a
-              >
-            </li>
+       </li>
+            <!--
             <li>
               <a
                 href="#usage"
@@ -51,25 +35,13 @@
                 >Accessibility</a
               >
             </li>
-            <li>
-              <a
-                href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Implementation</a
-              >
-            </li>
+             -->
           </ul>
         </nav>
       </PageContents>
     </template>
     <template #content>
-      <h2 id="anatomy">Anatomy</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, sit, quo
-        ab pariatur, recusandae obcaecati necessitatibus doloribus ad a dolor
-        minus saepe? Quaerat cupiditate ipsa ut nulla nostrum ex aut!
-      </p>
-      <h2 id="variants">Variants</h2>
+      <h2 id="type-system" class="display-6 ff-encode-sans pt-4 pb-3">Type System</h2>
       <h3 class="fw-medium ff-encode-sans">Body</h3>
       <p>
         This is the default font size for most text, and all content contained
@@ -88,10 +60,10 @@
       </CodeBlock>
 
       <br />
-      <h3 class="fw-medium ff-encode-sans">Body small</h3>
+      <h3 class="fw-medium ff-encode-sans">Small body</h3>
       <p>
         For content that is less important than the default-sized content on a
-        page, or if there are space constraints, use a Body small style.
+        page, or if there are space constraints, use a small body style.
       </p>
 
       <CodeBlock>
@@ -108,7 +80,7 @@
       </CodeBlock>
 
       <br />
-      <h3 class="fw-medium ff-encode-sans">Body large</h3>
+      <h3 class="fw-medium ff-encode-sans">Large body</h3>
       <p>
         Use this style for introductory paragraph, page descriptions, or content
         that needs more focus.
@@ -126,23 +98,18 @@
 
       <UsageBlock variant="dont"
         ><template #text
-          >Body large should not appear below an H6 heading, as this would
+          >Large body text should not appear below an H6 heading, as this would
           result in a heading that is smaller than the content.</template
         ><template #preview
           ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <h6 class="fw-bold ff-open-sans">Heading 6 text</h6>
-            <p class="large">Body large text</p>
+            <h6 class="fw-bold ff-open-sans">Heading 6 sample</h6>
+            <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+</p>
           </div></template
         ></UsageBlock
       >
-
-      <h2 id="options">Options</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quibusdam
-        doloremque quaerat nulla enim, magni ut pariatur est dolorum ullam sint
-        rerum odio hic perspiciatis, commodi adipisci, vero sapiente impedit?
-      </p>
-      <h2 id="usage">Usage</h2>
+      <!-- <h2 id="usage" class="display-6 ff-encode-sans pt-4 pb-3">Usage</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
         facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
@@ -150,23 +117,16 @@
         voluptate ducimus repellat necessitatibus?
       </p>
 
-      <h2 id="accessibility">Accessibility</h2>
+      <h2 id="accessibility" class="display-6 ff-encode-sans pt-4 pb-3">Accessibility</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
         facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
         placeat totam dolorem suscipit est sunt eum, debitis exercitationem
         voluptate ducimus repellat necessitatibus?
-      </p>
+      </p> -->
 
-      <h2 id="implementation">Implementation</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-        facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
-        placeat totam dolorem suscipit est sunt eum, debitis exercitationem
-        voluptate ducimus repellat necessitatibus?
-      </p>
     </template>
-    <template #author>Your Name</template>
+    <template #author>Cayla Snooke</template>
   </Layout>
 </template>
 

@@ -35,50 +35,53 @@
                 >Type System</a
               >
             </li>
-            <li>
+            <!--    <li>
               <a
                 href="#implementation"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
                 >Implementation</a
               >
-            </li>
+            </li> -->
           </ul>
         </nav>
       </PageContents>
     </template>
     <template #content>
-      <h2 id="best-practices" class="display-6 ff-encode-sans pt-4 pb-3">
+      <h2 id="best-practices" class="display-6 ff-encode-sans pt-4">
         Best Practices
       </h2>
-      <h3 class="fw-medium ff-encode-sans pt-4">Content/Structure?</h3>
+      <h3 class="fw-medium ff-encode-sans pt-3">Content</h3>
       <ul>
         <li>
           Heading text should be directly related to the content it is
           containing. Review Labels page for more guidance.
         </li>
         <li>
-          The &lt;H1> tag is typically reserved for the page title or main
-          heading, while &lt;H2> and &lt;H3> tags break up sections and
-          subsections.
+          The <code>&lt;h1></code> tag is typically reserved for the page title
+          or main heading, while <code>&lt;h2></code> and
+          <code>&lt;h3></code> tags break up sections and subsections.
         </li>
         <li>
-          Use &lt;H2> through &lt;H6> tags to define peer and parent-child
-          relationships in the content.
+          Use <code>&lt;h2></code> through <code>&lt;h6></code> tags to define
+          peer and parent-child relationships in the content.
         </li>
         <li>Avoid having only one subsection heading within a section.</li>
       </ul>
 
-      <h3 class="fw-medium ff-encode-sans pt-4">Styles?</h3>
+      <h3 class="fw-medium ff-encode-sans pt-3">Styles</h3>
       <ul>
         <li>Use only the headings styles defined in the type system below.</li>
         <li>
           Heading text should never be smaller than the body text it contains,
           visually and semantically
         </li>
-        <li class="text-danger">Need guidance around visibility</li>
       </ul>
 
-      <h2 id="accessibility">Accessibility</h2>
+      <br />
+      <hr />
+      <h2 id="accessibility" class="display-6 ff-encode-sans pt-4 pb-3">
+        Accessibility
+      </h2>
       <ul>
         <li>
           <strong
@@ -95,16 +98,22 @@
           and confuse users.
         </li>
         <li>
-          <strong>Try to avoid the use of &lt;H5> and &lt;H6> tags.</strong>
+          <strong
+            >Try to avoid the use of <code>&lt;h5></code> and
+            <code>&lt;h6></code> tags.</strong
+          >
           The use of these tags creates deeply nested content that can be
           tedious to navigate for screen reader users. If you start to use
-          &lt;H5> and &lt;H6> tags when designing, consider a different content
-          structure.
+          <code>&lt;h5></code> and <code>&lt;h6></code> tags when designing,
+          consider a different content structure.
         </li>
+        <li class="text-danger">Need guidance around visibility</li>
       </ul>
+      <br />
+      <hr />
 
       <h2 id="type-system" class="display-6 ff-encode-sans pt-4 pb-3">
-        Type system/Variants/Styles?
+        Type system
       </h2>
       <p>
         The heading styles specified below create a cohesive heading system that
@@ -117,68 +126,69 @@
         sites, such as this documentation site for the Solstice Design System.
         Different styles may be necessary in a web application.
       </p>
-      <h3 class="fw-medium ff-encode-sans pt-4">H1</h3>
+      <h3 class="fw-medium ff-encode-sans pt-3">H1</h3>
       <p>
-        Use an H1 for page titles. The H1 will most likely be the largest font
-        on the page.
+        Use an <code>&lt;h1></code> for page titles. The
+        <code>&lt;h1></code> will most likely be the largest font on the page.
       </p>
 
       <CodeBlock>
         <template #preview>
-          <h1 class="display-5 fw-bold ff-encode-sans">Sample text</h1>
+          <h1 class="display-5 fw-bold ff-encode-sans">Solstice h1</h1>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h1 class="display-5 fw-bold ff-encode-sans">Text&lt;/h1>
+<code>&lt;h1 class="display-5 fw-bold ff-encode-sans">Solstice h1&lt;/h1>
 </code></pre>
         </template>
       </CodeBlock>
 
       <UsageBlock variant="dont"
         ><template #text
-          >An H1 should not be used for an application name or logo in a header
-          &ndash; instead that content should be either inside an &lt;a> or
-          &lt;p> tag, and all within a &lt;header> section.</template
+          >An <code>&lt;h1></code> should not be used for an application name or logo in a header
+          &ndash; instead that content should be either inside an
+          <code>&lt;a></code> or <code>&lt;p></code> tag, and all within a
+          &lt;header> section.</template
         ></UsageBlock
       >
 
       <h3 class="fw-medium ff-encode-sans">H2</h3>
-      <p>Use an H2 to designate a page section.</p>
+      <p>Use an <code>&lt;h2></code> to designate a page section.</p>
       <CodeBlock>
         <template #preview>
-          <h2 class="display-6 ff-encode-sans">Sample text</h2>
+          <h2 class="display-6 ff-encode-sans">Solstice h2</h2>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h2 class="display-6 ff-encode-sans">Text&lt;/h2>
+<code>&lt;h2 class="display-6 ff-encode-sans">Solstice h2&lt;/h2>
 </code></pre>
         </template>
       </CodeBlock>
       <br />
 
       <h3 class="fw-medium ff-encode-sans">H3</h3>
-      <p>Use an H3 to designate a subsection.</p>
+      <p>Use an <code>&lt;h3></code> to designate a subsection.</p>
       <CodeBlock>
         <template #preview>
-          <h3 class="fw-medium ff-encode-sans">Sample text</h3>
+          <h3 class="fw-medium ff-encode-sans">Solstice h3</h3>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h3 class="fw-medium ff-encode-sans">Text&lt;/h3>
+<code>&lt;h3 class="fw-medium ff-encode-sans">Solstice h3&lt;/h3>
 </code></pre>
         </template>
       </CodeBlock>
       <br />
 
       <h3 class="fw-medium ff-encode-sans">H4</h3>
-      <p>Use an H4 to designate a subsection of an H3.</p>
+      <p>Use an <code>&lt;h4></code> to designate a subsection of an <code>&lt;h3></code>.</p>
       <CodeBlock>
         <template #preview>
-          <h4 class="fw-medium ff-open-sans">Sample text</h4>
+          <h4 class="fw-medium ff-open-sans">Solstice h4</h4>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h4 class="fw-medium ff-open-sans">Text&lt;/h4>
+<code>&lt;h4 class="fw-medium ff-open-sans">Solstice h4&lt;/h4>
 </code></pre>
         </template>
       </CodeBlock>
@@ -186,73 +196,48 @@
 
       <h3 class="fw-medium ff-encode-sans">H5 &amp; H6</h3>
       <p>
-        Use an H5 and H6 to designate sub sections of their respective parent.
+        Use an <code>&lt;h5></code> and <code>&lt;h6></code> to designate sub sections of their respective parent.
       </p>
 
       <CodeBlock>
         <template #preview>
-          <h5 class="fw-bold ff-open-sans">Sample text</h5>
+          <h5 class="fw-bold ff-open-sans">Solstice h5</h5>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h5 class="fw-bold ff-open-sans">Text&lt;/h5>
+<code>&lt;h5 class="fw-bold ff-open-sans">Solstice h5&lt;/h5>
 </code></pre>
         </template>
       </CodeBlock>
 
       <CodeBlock>
         <template #preview>
-          <h6 class="fw-bold ff-open-sans">Sample text</h6>
+          <h6 class="fw-bold ff-open-sans">Solstice h6</h6>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;h6 class="fw-bold ff-open-sans">Text&lt;/h6>
+<code>&lt;h6 class="fw-bold ff-open-sans">Solstice h6&lt;/h6>
 </code></pre>
         </template>
       </CodeBlock>
       <br />
 
-      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="headings">Headings</h2>
-      <p>
-        Headings are used to provide structure and clarity to page content
-        through hierarchy. Like outlines or table of contents, they summarize
-        content, communicate levels of importance, and define relationships
-        between content.
-      </p>
-      <h3 class="fw-medium ff-encode-sans">Best practices</h3>
-      <ul class="pb-4">
-        <li>
-          Heading text should be directly related to the content it is
-          containing. See Labels page for more guidance.
-        </li>
-        <li>
-          The &lt;H1> tag is typically reserved for the page title or main
-          heading, while &lt;H2> and &lt;H3> tags break up sections and
-          subsections.
-        </li>
-        <li>
-          Use &lt;H2> through &lt;H6> tags to define peer and parent-child
-          relationships in the content.
-        </li>
-        <li>Avoid having only one subsection heading within a section.</li>
-        <li>Use only the headings styles defined in the type system below.</li>
-      </ul>
-
-      <UsageBlock variant="dont"
+ <!--      <UsageBlock variant="dont"
         ><template #text
           >Don't mix heading styles or semantic tags</template
-        ></UsageBlock
-      >
+        ></UsageBlock -->
+<!--       >
       <UsageBlock variant="do"
         ><template #text
           >Do have more than one subsection under a heading?</template
         ></UsageBlock
-      >
-
+      > -->
+      <!--
       <h2 id="implementation">Implementation</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+       -->
     </template>
-    <template #author>Your Name</template>
+    <template #author>Cayla Snooke</template>
   </Layout>
 </template>
 
