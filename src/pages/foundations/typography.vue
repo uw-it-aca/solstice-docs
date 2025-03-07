@@ -56,7 +56,7 @@
     </template>
 
     <template #content>
-      <h2 class="display-6 ff-encode-sans pt-3 pb-3" id="font-families">
+      <h2 id="font-families" class="display-6 ff-encode-sans pt-3 pb-3">
         Font Families
       </h2>
       <p>
@@ -111,8 +111,8 @@
       <hr />
 
       <h2
-        class="display-6 ff-encode-sans pt-4 pb-3"
         id="usability-accessibility-principles"
+        class="display-6 ff-encode-sans pt-4 pb-3"
       >
         Usability & Accessibility Principles
       </h2>
@@ -137,7 +137,7 @@
       <br />
       <hr />
 
-      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="styling-decoration">
+      <h2 id="styling-decoration" class="display-6 ff-encode-sans pt-4 pb-3">
         Styling & Decoration
       </h2>
 
@@ -148,8 +148,8 @@
           shouldn&apos;t need to change the color of text, as it is defined in
           the Solstice style sheet and is an inherited property of HTML elements
           and/or Solstice and Bootstrap themes. Review the comprehensive
-        <a href="/foundations/color" target="_blank">Color</a> page for more
-        guidance.
+          <a href="/foundations/color" target="_blank">Color</a> page for more
+          guidance.
         </li>
         <li class="pb-3">
           <strong>Text color and value pairings are accessible.</strong> All
@@ -182,9 +182,10 @@
           >
           Italicizing words or strings, however, can decrease readability. Both
           should be used sparingly so as to not diminish their effectiveness.
-          It&apos;s best to use <code>&lt;strong></code> and <code>&lt;em></code> to ensure the semantic
-          meaning is being conveyed. In the very rare case where you only want a
-          stylistic change and don&apos;t need to convey semantic meaning,
+          It&apos;s best to use <code>&lt;strong></code> and
+          <code>&lt;em></code> to ensure the semantic meaning is being conveyed.
+          In the very rare case where you only want a stylistic change and
+          don&apos;t need to convey semantic meaning,
           <code> &lt;b> &lt;i></code> can be used.
         </li>
         <li class="pb-3">
@@ -218,17 +219,19 @@
       <h3 class="fw-medium ff-encode-sans">Case</h3>
       <ul>
         <li>
-          <strong>Use sentence case in most situations and
-          <span class="text-uppercase">AVOID</span> all caps.</strong> Headings may use
-          title case, especially an <code>&lt;H1></code>/Page title. Review
-          <a href="/content/labels" target="_blank">Labels</a> for more
-          details.
+          <strong
+            >Use sentence case in most situations and
+            <span class="text-uppercase">AVOID</span> all caps.</strong
+          >
+          Headings may use title case, especially an <code>&lt;H1></code>/Page
+          title. Review <a href="/content/labels" target="_blank">Labels</a> for
+          more details.
         </li>
       </ul>
 
       <br />
       <hr />
-      <h2 class="display-6 ff-encode-sans pt-4 pb-3" id="alignment-spacing">
+      <h2 id="alignment-spacing" class="display-6 ff-encode-sans pt-4 pb-3">
         Alignment & Spacing
       </h2>
       <h3 class="fw-medium ff-encode-sans">Text alignment</h3>
@@ -241,8 +244,9 @@
           readers use. Deviating from left alignment slows readers down.
         </li>
         <li>
-          <strong>Text should never be set to “justify”.</strong> Justifying (aligned to both the left and right margins) text results
-          in inconsistent spacing between words and affects readability.
+          <strong>Text should never be set to “justify”.</strong> Justifying
+          (aligned to both the left and right margins) text results in
+          inconsistent spacing between words and affects readability.
         </li>
       </ul>
 
@@ -262,8 +266,7 @@
       <ul>
         <li>
           <strong>Avoid truncation, in any text elements.</strong> Review
-          <a href="/content/labels" target="_blank">Labels</a> for more
-          details.
+          <a href="/content/labels" target="_blank">Labels</a> for more details.
         </li>
       </ul>
 
@@ -271,14 +274,14 @@
       <hr />
 
       <h2
-        class="display-6 ff-encode-sans pt-4 pb-3"
         id="technical-implementation"
+        class="display-6 ff-encode-sans pt-4 pb-3"
       >
         Technical Implementation
       </h2>
       <p>
-        <strong>Define text sizes in REM.</strong> This ensures fonts will scale or display the
-        same in mobile and desktop formats.
+        <strong>Define text sizes in REM.</strong> This ensures fonts will scale
+        or display the same in mobile and desktop formats.
       </p>
       <br />
       <hr />
@@ -290,12 +293,11 @@
 
 <script>
 import Layout from "@/layout.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
 export default {
   name: "DocsFoundationsTypography",
-  components: { Layout, CodeBlock, BBreadcrumb, BBreadcrumbItem },
+  components: { Layout, BBreadcrumb, BBreadcrumbItem },
   data() {
     return {
       pageTitle: "Typography",
