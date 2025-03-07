@@ -55,8 +55,9 @@
       </PageContents>
     </template>
 
+
     <template #content>
-      <h2 id="voice">Voice</h2>
+      <h2 class="display-6 ff-encodesans pt-4 pb-3" id="voice">Voice</h2>
       <p>
         Voice - the consistent and recognizable communication style in messaging
         - is intended to align with the UW style and brand, and in addition, is
