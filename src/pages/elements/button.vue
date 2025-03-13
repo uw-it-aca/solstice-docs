@@ -109,16 +109,16 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="secondary" class="text-primary">Edit</BButton>
+            <BButton variant="secondary">Edit</BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-secondary text-primary" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-secondary" type="button">Button&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="secondary" class="text-primary">Button&lt;/BButton>
+<code>&lt;BButton variant="secondary">Button&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -154,25 +154,25 @@
         secondary buttons. Link buttons look like links but are considered
         buttons. Link buttons could be used in more complex set of related
         actions, such as a navigation menu. Link buttons have no fill (below)
-        and look like a link.
+        and look like a Quiet link.
       </p>
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
             <BButton
               variant="link"
-              class="bg-secondary-hover link-primary link-underline link-underline-opacity-0"
+              class="bg-secondary-hover link-underline link-underline-opacity-0"
               >Link</BButton
             >
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-link bg-secondary-hover link-primary link-underline link-underline-opacity-0" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-link bg-secondary-hover link-underline link-underline-opacity-0" type="button">Button&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="link" class="bg-secondary-hover link-primary link-underline link-underline-opacity-0">Button&lt;/BButton>
+<code>&lt;BButton variant="link" class="bg-secondary-hover link-underline link-underline-opacity-0">Button&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -261,11 +261,7 @@
             <BButton variant="primary" size="sm" class="me-2" title="Delete"
               ><i class="bi bi-trash3"></i
             ></BButton>
-            <BButton
-              variant="secondary"
-              size="sm"
-              class="text-primary me-2"
-              title="Delete"
+            <BButton variant="secondary" size="sm" class="me-2" title="Delete"
               ><i class="bi bi-trash3"></i
             ></BButton>
             <BButton
@@ -278,7 +274,7 @@
             <BButton
               variant="link"
               size="sm"
-              class="bg-secondary-hover link-primary link-underline link-underline-opacity-0 me-2"
+              class="bg-secondary-hover me-2"
               title="Delete"
               ><i class="bi bi-trash3"></i
             ></BButton>
@@ -286,7 +282,7 @@
           <template #bootstrap>
             <pre class="language-html">
 <code>&lt;button class="btn btn-primary btn-sm" type="button" title="Delete">...&lt;/button>
-&lt;button class="btn btn-secondary btn-sm text-primary" type="button" title="Delete">...&lt;/button>
+&lt;button class="btn btn-secondary btn-sm" type="button" title="Delete">...&lt;/button>
 &lt;button class="btn btn-outline-primary btn-sm" type="button" title="Delete">...&lt;/button>
 &lt;button class="btn btn-link btn-sm bg-secondary-hover link-primary link-underline link-underline-opacity-0" type="button" title="Delete">...&lt;/button>
 </code></pre>
