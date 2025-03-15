@@ -243,7 +243,7 @@
         <li class="list-inline-item">
           <div
             class="text-white rounded p-2"
-            style="width: 120px; height: 60px; background: #0a3622;"
+            style="width: 120px; height: 60px; background: #0a3622"
           >
             success-emphasis
           </div>
@@ -253,7 +253,10 @@
 
       <CodeBlock>
         <template #preview>
-          <span class="badge rounded-pill bg-success-subtle border border-success-subtle text-success-emphasis me-1">Success</span>
+          <span
+            class="badge rounded-pill bg-success-subtle border border-success-subtle text-success-emphasis me-1"
+            >Success</span
+          >
           <span class="badge rounded-pill text-bg-success">Success</span>
 
           <div class="alert alert-success small mt-3" role="alert">
@@ -291,7 +294,7 @@
         <li class="list-inline-item">
           <div
             class="text-white rounded p-2"
-            style="width: 120px; height: 60px; background: #58151c;"
+            style="width: 120px; height: 60px; background: #58151c"
           >
             danger-emphasis
           </div>
@@ -300,7 +303,10 @@
       </ul>
       <CodeBlock>
         <template #preview>
-          <span class="badge rounded-pill bg-danger-subtle border border-danger-subtle text-danger-emphasis me-1">Danger</span>
+          <span
+            class="badge rounded-pill bg-danger-subtle border border-danger-subtle text-danger-emphasis me-1"
+            >Danger</span
+          >
           <span class="badge rounded-pill text-bg-danger">Danger</span>
 
           <div class="alert alert-danger small mt-3" role="alert">
@@ -338,7 +344,7 @@
         <li class="list-inline-item">
           <div
             class="text-white rounded p-2"
-            style="width: 120px; height: 60px; background: #664d03;"
+            style="width: 120px; height: 60px; background: #664d03"
           >
             warning-emphasis
           </div>
@@ -348,7 +354,10 @@
 
       <CodeBlock>
         <template #preview>
-          <span class="badge rounded-pill bg-warning-subtle border border-warning-subtle text-warning-emphasis me-1">Warning</span>
+          <span
+            class="badge rounded-pill bg-warning-subtle border border-warning-subtle text-warning-emphasis me-1"
+            >Warning</span
+          >
           <span class="badge rounded-pill text-bg-warning">Warning</span>
 
           <div class="alert alert-warning small mt-3" role="alert">
@@ -386,7 +395,7 @@
         <li class="list-inline-item">
           <div
             class="text-white rounded p-2"
-            style="width: 120px; height: 60px; background: #055160;"
+            style="width: 120px; height: 60px; background: #055160"
           >
             info-emphasis
           </div>
@@ -396,7 +405,10 @@
 
       <CodeBlock>
         <template #preview>
-          <span class="badge rounded-pill bg-info-subtle border border-info-subtle text-info-emphasis me-1">Info</span>
+          <span
+            class="badge rounded-pill bg-info-subtle border border-info-subtle text-info-emphasis me-1"
+            >Info</span
+          >
           <span class="badge rounded-pill text-bg-info">Info</span>
 
           <div class="alert alert-info small mt-3" role="alert">
