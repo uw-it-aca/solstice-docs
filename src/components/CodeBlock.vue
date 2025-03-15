@@ -1,13 +1,13 @@
 <template>
   <div class="mb-3 border rounded codeblock">
     <div v-if="$slots['preview']">
-      <div class="preview p-3 m-0 border-bottom">
+      <div class="preview p-3 m-0">
         <slot name="preview"></slot>
       </div>
     </div>
     <div v-if="$slots['bootstrap']">
       <div
-        class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
+        class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-top border-bottom"
       >
         <div>BOOTSTRAP</div>
         <div>copy</div>
