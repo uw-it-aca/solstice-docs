@@ -1,42 +1,50 @@
 <template>
-  <div class="mb-3 border rounded codeblock">
-    <div v-if="$slots['preview']">
-      <div class="preview p-3 m-0 border-bottom">
-        <slot name="preview"></slot>
-      </div>
+  <div class="mb-3">
+    <div class="mb-1">
+      <span class="me-2 fst-italic">Example:</span>
+      <template v-if="$slots['description']">
+        <slot name="description"></slot>
+      </template>
     </div>
-    <div v-if="$slots['bootstrap']">
-      <div
-        class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
-      >
-        <div>BOOTSTRAP</div>
-        <div>copy</div>
+    <div class="border rounded codeblock">
+      <div v-if="$slots['preview']">
+        <div class="preview p-3 m-0 border-bottom">
+          <slot name="preview"></slot>
+        </div>
       </div>
-      <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
-        <slot name="bootstrap"></slot>
+      <div v-if="$slots['bootstrap']">
+        <div
+          class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
+        >
+          <div>BOOTSTRAP</div>
+          <div>copy</div>
+        </div>
+        <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
+          <slot name="bootstrap"></slot>
+        </div>
       </div>
-    </div>
-    <div v-if="$slots['vue']">
-      <div
-        class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-top border-bottom"
-      >
-        <div>VUE</div>
-        <div>copy</div>
+      <div v-if="$slots['vue']">
+        <div
+          class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-top border-bottom"
+        >
+          <div>VUE</div>
+          <div>copy</div>
+        </div>
+        <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
+          <slot name="vue"></slot>
+        </div>
       </div>
-      <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
-        <slot name="vue"></slot>
-      </div>
-    </div>
 
-    <div v-if="$slots['script']">
-      <div
-        class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
-      >
-        <div>JAVASCRIPT</div>
-        <div>copy</div>
-      </div>
-      <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
-        <slot name="script"></slot>
+      <div v-if="$slots['script']">
+        <div
+          class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
+        >
+          <div>JAVASCRIPT</div>
+          <div>copy</div>
+        </div>
+        <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
+          <slot name="script"></slot>
+        </div>
       </div>
     </div>
   </div>
