@@ -19,19 +19,92 @@
       their specific intended use. The color palettes in the design system are:
       brand accent, neutrals, semantic, and decorative colors.
     </template>
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#principles"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Guiding Principles</a
+              >
+            </li>
+            <li>
+              <a
+                href="#palettes"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Color Palettes</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
+    </template>
     <template #content>
-      <h2 class="display-6 ff-encode-sans pt-3 pb-3">General Principles</h2>
+      <h2 id="principles" class="display-6 ff-encode-sans pt-3 pb-3">
+        Guiding Principles
+      </h2>
 
       <ol>
-        <li>Use color sparingly and intentionally</li>
-        <li>
-          Use color to communicate meaning, to clarify the information
-          hierarchy, and for visual emphasis
+        <li class="mb-3">
+          <strong>Use color sparingly and intentionally.</strong> Using too much
+          color can be counter productive, making visual emphasis harder, and
+          can create unnecessary cognitive burden on users.
         </li>
-        <li>Don’t rely on color alone</li>
+        <li class="mb-3">
+          <strong
+            >Use color to communicate meaning, to clarify the information
+            hierarchy, and for visual emphasis.</strong
+          >
+          <ul class="mt-3">
+            <li class="mb-3">
+              <strong>Reinforce meaning</strong> — Whenever possible, leverage
+              the defined semantic color palettes to reinforce the meaning of a
+              message or an object’s status (e.g. blue indicates an action).
+              Doing this minimizes a user’s cognitive load. In general, always
+              be consistent in the use of a color – only associate a single
+              color with an object or state.
+            </li>
+            <li class="mb-3">
+              <strong>Clarify information hierarchy</strong> – Similarly, subtle
+              shifts in color values (darkness/lightness) create depth and
+              spatial associations that can communicate distinct zones or layers
+              to a user, and therefore clarify an information hierarchy. In this
+              design system, this is accomplished using different values of the
+              neutrals palette for panels and surfaces.
+            </li>
+            <li>
+              <strong>Visual emphasis</strong> – For semantic colors, there are
+              emphasis and subtle color groupings, that can be used to create
+              different degrees of visual emphasis in surfaces.
+            </li>
+          </ul>
+        </li>
+        <li class="mb-3">
+          <strong>Don’t rely on color alone.</strong> Ensure accessibility by
+          ensuring color alone isn’t used to communicate meaning, hierarchy, or
+          emphasis. Supplement color usage with text, icons, sizing, graphic
+          patterned backgrounds (e.g. information visualizations), and
+          positioning of elements to communicate these to a user.
+        </li>
+        <li class="">
+          <strong>Maintain sufficient color contrast.</strong> Ensure colors for
+          body text has a sufficient contrast ratio to meet accessibility
+          guideline WCAG 2.1 AA criteria 1.4.3 (for more information on this
+          requirement, see
+          <BLink
+            href="https://www.washington.edu/accesstech/checklist/contrast/"
+            target="_blank"
+            >UW’s Accessible Technology color contrast page</BLink
+          >). The color groupings in the design system have already been
+          determined to meet this accessibility criteria.
+        </li>
       </ol>
 
-      <h2 class="display-6 ff-encode-sans pt-3 pb-3">Color Palettes</h2>
+      <h2 id="palettes" class="display-6 ff-encode-sans pt-3 pb-3">
+        Color Palettes
+      </h2>
       <h3>Brand Accent</h3>
 
       <p>
@@ -43,7 +116,7 @@
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="text-bg-brand rounded p-2"
+            class="text-bg-brand rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             brand
@@ -68,22 +141,29 @@
         </li>
       </ul>
 
+      <hr class="my-5" />
+
       <h3 class="fw-bold">Neutrals</h3>
       <p>
         Neutral colors are the default colors used for most surfaces
         (backgrounds), shadows, and text. They don’t typically have a meaning
         associated with them, though they can imply things like disabled states.
       </p>
+
+      <p>These backgrounds change based on color mode.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
-          <div class="bg-body rounded p-2" style="width: 120px; height: 60px">
+          <div
+            class="bg-body rounded p- small"
+            style="width: 120px; height: 60px"
+          >
             body
           </div>
           <small>#ffffff / #212529</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-body-tertiary rounded p-2"
+            class="bg-body-tertiary rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             body-tertiary
@@ -92,7 +172,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-body-secondary rounded p-2 text-nowrap"
+            class="bg-body-secondary rounded p-2 text-nowrap small"
             style="width: 140px; height: 60px"
           >
             body-secondary
@@ -105,7 +185,7 @@
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="bg-transparent rounded p-2"
+            class="bg-transparent rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             transparent
@@ -114,7 +194,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-white text-dark rounded p-2"
+            class="bg-white text-dark rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             white
@@ -123,7 +203,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-light text-dark rounded p-2"
+            class="bg-light text-dark rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             light
@@ -132,7 +212,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-dark text-light rounded p-2"
+            class="bg-dark text-light rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             dark
@@ -141,7 +221,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-black text-light rounded p-2"
+            class="bg-black text-light rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             black
@@ -160,6 +240,8 @@
         <li>use for actionable elements</li>
         <li>use for boilerplate backgrounds</li>
       </ul>
+
+      <hr class="my-5" />
 
       <h3 class="fw-bold">Semantic</h3>
       <p>
@@ -195,7 +277,7 @@
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="bg-primary-subtle rounded p-2"
+            class="bg-primary-subtle rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             primary-subtle
@@ -204,7 +286,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="text-bg-primary rounded p-2"
+            class="text-bg-primary rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             primary
@@ -224,7 +306,7 @@
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="bg-success-subtle rounded p-2"
+            class="bg-success-subtle rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             success-subtle
@@ -233,7 +315,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="text-bg-success rounded p-2"
+            class="text-bg-success rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             success
@@ -242,8 +324,8 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="text-white rounded p-2"
-            style="width: 120px; height: 60px; background: #0a3622"
+            class="text-white rounded p-2 small text-nowrap"
+            style="width: 140px; height: 60px; background: #0a3622"
           >
             success-emphasis
           </div>
@@ -254,7 +336,7 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-success-subtle border border-success-subtle text-success-emphasis me-1"
+            class="badge rounded-pill bg-success-subtle text-success-emphasis me-1"
             >Success</span
           >
           <span class="badge rounded-pill text-bg-success">Success</span>
@@ -275,7 +357,7 @@
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="bg-danger-subtle rounded p-2"
+            class="bg-danger-subtle rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             danger-subtle
@@ -284,7 +366,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="text-bg-danger rounded p-2"
+            class="text-bg-danger rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             danger
@@ -293,8 +375,8 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="text-white rounded p-2"
-            style="width: 120px; height: 60px; background: #58151c"
+            class="text-white rounded p-2 small text-nowrap"
+            style="width: 140px; height: 60px; background: #58151c"
           >
             danger-emphasis
           </div>
@@ -304,7 +386,7 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-danger-subtle border border-danger-subtle text-danger-emphasis me-1"
+            class="badge rounded-pill bg-danger-subtle text-danger-emphasis me-1"
             >Danger</span
           >
           <span class="badge rounded-pill text-bg-danger">Danger</span>
@@ -325,7 +407,7 @@
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="bg-warning-subtle rounded p-2"
+            class="bg-warning-subtle rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             warning-subtle
@@ -334,7 +416,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="text-bg-warning rounded p-2"
+            class="text-bg-warning rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             warning
@@ -343,8 +425,8 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="text-white rounded p-2"
-            style="width: 120px; height: 60px; background: #664d03"
+            class="text-white rounded p-2 small text-nowrap"
+            style="width: 140px; height: 60px; background: #664d03"
           >
             warning-emphasis
           </div>
@@ -355,7 +437,7 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-warning-subtle border border-warning-subtle text-warning-emphasis me-1"
+            class="badge rounded-pill bg-warning-subtle text-warning-emphasis me-1"
             >Warning</span
           >
           <span class="badge rounded-pill text-bg-warning">Warning</span>
@@ -376,7 +458,7 @@
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="bg-info-subtle rounded p-2"
+            class="bg-info-subtle rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             info-subtle
@@ -385,7 +467,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="text-bg-info rounded p-2"
+            class="text-bg-info rounded p-2 small"
             style="width: 120px; height: 60px"
           >
             info
@@ -394,7 +476,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="text-white rounded p-2"
+            class="text-white rounded p-2 small"
             style="width: 120px; height: 60px; background: #055160"
           >
             info-emphasis
@@ -406,7 +488,7 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-info-subtle border border-info-subtle text-info-emphasis me-1"
+            class="badge rounded-pill bg-info-subtle text-info-emphasis me-1"
             >Info</span
           >
           <span class="badge rounded-pill text-bg-info">Info</span>
@@ -429,8 +511,8 @@
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="rounded p-2"
-            style="width: 120px; height: 60px; background: #ffc8b7"
+            class="bg-autumn rounded p-2 text-dark small"
+            style="width: 120px; height: 60px"
           >
             autumn
           </div>
@@ -438,17 +520,8 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="rounded p-2"
-            style="width: 120px; height: 60px; background: #fcf990"
-          >
-            summer
-          </div>
-          <small>#fcf990</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="rounded p-2"
-            style="width: 120px; height: 60px; background: #cdf"
+            class="bg-winter rounded p-2 text-dark small"
+            style="width: 120px; height: 60px"
           >
             winter
           </div>
@@ -456,14 +529,25 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="rounded p-2"
-            style="width: 120px; height: 60px; background: #cfc"
+            class="bg-spring rounded p-2 text-dark small"
+            style="width: 120px; height: 60px"
           >
             spring
           </div>
           <small>#ccffcc</small>
         </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-summer rounded p-2 text-dark small"
+            style="width: 120px; height: 60px"
+          >
+            summer
+          </div>
+          <small>#fcf990</small>
+        </li>
       </ul>
+
+      <hr class="my-5" />
 
       <h3 class="fw-bold">Workflow States</h3>
       <p>
@@ -549,6 +633,8 @@
         <template #preview> hello world </template>
       </CodeBlock>
 
+      <hr class="my-5" />
+
       <h3 class="fw-bold">Decorative Color Palette</h3>
       <p>
         When it is not necessary to communicate semantics, decorative colors can
@@ -556,76 +642,78 @@
         used for data visualizations or objects like courses, schedule blocks,
         etc.
       </p>
+
+      <p>These backgrounds change based on color mode.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="rounded p-2 text-white"
-            style="width: 120px; height: 60px; background: #ac4bb9"
+            class="bg-decorative-1 rounded p-2 text-white small"
+            style="width: 120px; height: 60px"
           >
-            tbd
+            decorative-1
           </div>
           <small>#ac4bb9 / #bd6fc7</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="rounded p-2 text-white"
-            style="width: 120px; height: 60px; background: #008099"
+            class="bg-decorative-2 rounded p-2 text-white small"
+            style="width: 120px; height: 60px"
           >
-            tbd
+            decorative-2
           </div>
           <small>#008099 / #3399ad</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="rounded p-2 text-white"
-            style="width: 120px; height: 60px; background: #bd4e05"
+            class="bg-decorative-3 rounded p-2 text-white small"
+            style="width: 120px; height: 60px"
           >
-            tbd
+            decorative-3
           </div>
           <small>#bd4e05 / #ca7137</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="rounded p-2 text-white"
-            style="width: 120px; height: 60px; background: #787a00"
+            class="bg-decorative-4 rounded p-2 text-white small"
+            style="width: 120px; height: 60px"
           >
-            tbd
+            decorative-4
           </div>
           <small>#787a00 / #939533</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="rounded p-2 text-white"
-            style="width: 120px; height: 60px; background: #c84674"
+            class="bg-decorative-5 rounded p-2 text-white small"
+            style="width: 120px; height: 60px"
           >
-            tbd
+            decorative-5
           </div>
           <small>#c84674 / #d36b90</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="rounded p-2 text-white"
-            style="width: 120px; height: 60px; background: #735696"
+            class="bg-decorative-6 rounded p-2 text-white small"
+            style="width: 120px; height: 60px"
           >
-            tbd
+            decorative-6
           </div>
           <small>#735696 / #8f78ab</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="rounded p-2 text-white"
-            style="width: 120px; height: 60px; background: #a06b22"
+            class="bg-decorative-7 rounded p-2 text-white small"
+            style="width: 120px; height: 60px"
           >
-            tbd
+            decorative-7
           </div>
           <small>#a06b22 / #b3894e</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="rounded p-2 text-white"
-            style="width: 120px; height: 60px; background: #374dc2"
+            class="bg-decorative-8 rounded p-2 text-white small"
+            style="width: 120px; height: 60px"
           >
-            tbd
+            decorative-8
           </div>
           <small>#374dc2 / #5f71ce</small>
         </li>
@@ -685,11 +773,11 @@
 <script>
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
 
 export default {
   name: "DocsColor",
-  components: { Layout, BBreadcrumb, BBreadcrumbItem },
+  components: { Layout, BBreadcrumb, BBreadcrumbItem, BLink },
   data() {
     return {
       pageTitle: "Color",
