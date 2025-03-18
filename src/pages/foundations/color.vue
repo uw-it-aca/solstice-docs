@@ -150,7 +150,7 @@
         associated with them, though they can imply things like disabled states.
       </p>
 
-      <p>These backgrounds change based on color mode.</p>
+      <p>These colors change based on color mode.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
@@ -181,7 +181,7 @@
         </li>
       </ul>
 
-      <p>These backgrounds do not change based on color mode.</p>
+      <p>These colors do not change based on color mode.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
@@ -336,7 +336,7 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-success-subtle text-success-emphasis me-1"
+            class="badge rounded-pill bg-success-subtle border border-success-subtle text-success-emphasis me-1"
             >Success</span
           >
           <span class="badge rounded-pill text-bg-success">Success</span>
@@ -386,7 +386,7 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-danger-subtle text-danger-emphasis me-1"
+            class="badge rounded-pill bg-danger-subtle border border-danger-subtle text-danger-emphasis me-1"
             >Danger</span
           >
           <span class="badge rounded-pill text-bg-danger">Danger</span>
@@ -437,7 +437,7 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-warning-subtle text-warning-emphasis me-1"
+            class="badge rounded-pill bg-warning-subtle border border-warning-subtle text-warning-emphasis me-1"
             >Warning</span
           >
           <span class="badge rounded-pill text-bg-warning">Warning</span>
@@ -488,7 +488,7 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-info-subtle text-info-emphasis me-1"
+            class="badge rounded-pill bg-info-subtle border border-info-subtle text-info-emphasis me-1"
             >Info</span
           >
           <span class="badge rounded-pill text-bg-info">Info</span>
@@ -511,7 +511,7 @@
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="bg-autumn rounded p-2 text-dark small"
+            class="bg-autumn rounded p-2 text-black small"
             style="width: 120px; height: 60px"
           >
             autumn
@@ -520,7 +520,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-winter rounded p-2 text-dark small"
+            class="bg-winter rounded p-2 text-black small"
             style="width: 120px; height: 60px"
           >
             winter
@@ -529,7 +529,7 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-spring rounded p-2 text-dark small"
+            class="bg-spring rounded p-2 text-black small"
             style="width: 120px; height: 60px"
           >
             spring
@@ -538,12 +538,29 @@
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-summer rounded p-2 text-dark small"
+            class="bg-summer rounded p-2 text-black small"
             style="width: 120px; height: 60px"
           >
             summer
           </div>
           <small>#fcf990</small>
+        </li>
+      </ul>
+
+      <p class="fw-bold">Do:</p>
+      <ul>
+        <li>
+          use in conjunction with a quarter/term label whenever space allows
+          (see Color General Principles above)
+        </li>
+        <li>use only black text (#000000) labels</li>
+      </ul>
+
+      <p class="fw-bold">Do not:</p>
+      <ul>
+        <li>
+          if no label is present, do not use colors against a gray background as
+          they do not provide sufficient contrast to be accessible
         </li>
       </ul>
 
@@ -570,7 +587,13 @@
       </p>
 
       <CodeBlock>
-        <template #preview> hello world </template>
+        <template #preview>
+          <span
+            class="badge rounded-pill bg-dark-subtle border border-dark-subtle text-dark-emphasis me-1"
+            >Draft</span
+          >
+          <span class="badge rounded-pill text-bg-dark">In Progress</span>
+        </template>
       </CodeBlock>
 
       <h4>Ready State (Cyan / Info)</h4>
@@ -583,7 +606,13 @@
       </p>
 
       <CodeBlock>
-        <template #preview> hello world </template>
+        <template #preview>
+          <span
+            class="badge rounded-pill bg-info-subtle border border-info-subtle text-info-emphasis me-1"
+            >Approved</span
+          >
+          <span class="badge rounded-pill text-bg-info">Planned</span>
+        </template>
       </CodeBlock>
 
       <h4>Suspended State [Actionable] (Orange / Warning)</h4>
@@ -594,7 +623,13 @@
       </p>
 
       <CodeBlock>
-        <template #preview> hello world </template>
+        <template #preview>
+          <span
+            class="badge rounded-pill bg-warning-subtle border border-warning-subtle text-warning-emphasis me-1"
+            >Inactive</span
+          >
+          <span class="badge rounded-pill text-bg-warning">Suspended</span>
+        </template>
       </CodeBlock>
 
       <h4>Suspended State [Not Actionable] (Gray / Neutral)</h4>
@@ -605,7 +640,13 @@
       </p>
 
       <CodeBlock>
-        <template #preview> hello world </template>
+        <template #preview>
+          <span
+            class="badge rounded-pill bg-dark-subtle border border-dark-subtle text-dark-emphasis me-1"
+            >Inactive</span
+          >
+          <span class="badge rounded-pill text-bg-dark">Locked</span>
+        </template>
       </CodeBlock>
 
       <h4>Completed State (Green / Success)</h4>
@@ -619,7 +660,13 @@
       </p>
 
       <CodeBlock>
-        <template #preview> hello world </template>
+        <template #preview>
+          <span
+            class="badge rounded-pill bg-success-subtle border border-success-subtle text-success-emphasis me-1"
+            >Completed</span
+          >
+          <span class="badge rounded-pill text-bg-success">Scheduled</span>
+        </template>
       </CodeBlock>
 
       <h4>Canceled State (Red / Critical)</h4>
@@ -630,7 +677,13 @@
       </p>
 
       <CodeBlock>
-        <template #preview> hello world </template>
+        <template #preview>
+          <span
+            class="badge rounded-pill bg-danger-subtle border border-danger-subtle text-danger-emphasis me-1"
+            >Closed</span
+          >
+          <span class="badge rounded-pill text-bg-danger">Error</span>
+        </template>
       </CodeBlock>
 
       <hr class="my-5" />
@@ -643,7 +696,7 @@
         etc.
       </p>
 
-      <p>These backgrounds change based on color mode.</p>
+      <p>These colors change based on color mode.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
