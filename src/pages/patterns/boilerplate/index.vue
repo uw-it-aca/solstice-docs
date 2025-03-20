@@ -14,8 +14,9 @@
     </template>
 
     <template #lead>
-      The layout is a critical foundation of our design system. It provides the
-      structure for our visual components and overall user interface.
+      The boilerplate is a critical layout foundation of our design system. It
+      provides the structure for our visual components and overall user
+      interface.
     </template>
 
     <template #content>
@@ -23,7 +24,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Topbar'"
-            :link="'/patterns/layout/topbar'"
+            :link="'/patterns/boilerplate/topbar'"
             :accessibility="true"
             :version="'1.0.5'"
             >Topbar is takes heavy influence from MyUW's currently layout. It
@@ -34,7 +35,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Sidebar'"
-            :link="'/patterns/layout/sidebar'"
+            :link="'/patterns/boilerplate/sidebar'"
             :accessibility="true"
             :version="'1.0.5'"
             >Sidebar is a side navigtion based layout intended to support
@@ -60,7 +61,7 @@ export default {
   },
   data() {
     return {
-      pageTitle: "Layout",
+      pageTitle: "Boilerplate",
     };
   },
 };

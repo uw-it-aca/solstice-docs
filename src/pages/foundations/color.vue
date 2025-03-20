@@ -92,12 +92,12 @@
           <strong>Maintain sufficient color contrast.</strong> Ensure colors for
           body text has a sufficient contrast ratio to meet accessibility
           guideline WCAG 2.1 AA criteria 1.4.3 (for more information on this
-          requirement, see
+          requirement, see UW’s Accessible Technology
           <BLink
             href="https://www.washington.edu/accesstech/checklist/contrast/"
             target="_blank"
-            >UW’s Accessible Technology color contrast page</BLink
-          >). The color groupings in the design system have already been
+            >color contrast</BLink
+          > page). The color groupings in the design system have already been
           determined to meet this accessibility criteria.
         </li>
       </ol>
@@ -117,17 +117,18 @@
         <li class="list-inline-item">
           <div
             class="text-bg-brand rounded p-2 small"
-            style="width: 120px; height: 60px"
-          >
-            bg-brand
-          </div>
-          <small>#4b2e83</small>
+            style="width: 60px; height: 60px"
+          ></div>
+          <small>#4b2e83 / $purple-500</small>
         </li>
       </ul>
       <p class="fw-bold">Do:</p>
       <ul>
         <li>only use the base color (no variants)</li>
-        <li>primarily use for boilerplate elements</li>
+        <li>
+          primarily use for
+          <BLink href="/patterns/boilerplate/">boilerplate</BLink> elements
+        </li>
         <li>use sparingly</li>
       </ul>
 
@@ -145,123 +146,143 @@
 
       <h3 class="fw-bold">Neutrals</h3>
       <p>
-        Neutral colors are the default colors used for most surfaces
-        (backgrounds), shadows, and text. They don’t typically have a meaning
-        associated with them, though they can imply things like disabled states.
+        Neutral colors are the default colors used for most
+        <BLink href="/patterns/surface">surfaces</BLink>, shadows, and
+        <BLink href="/foundations/typography">typography</BLink>. They don’t
+        typically have a meaning associated with them, though they can imply
+        things like disabled states.
       </p>
 
       <h4>Surface (backgrounds)</h4>
       <p>These colors change based on color mode.</p>
-      <ul class="list-inline">
-        <li class="list-inline-item">
+      <ul class="list-unstyled">
+        <li class="">
           <div
             class="bg-transparent border rounded p-2 small"
-            style="width: 140px; height: 60px"
+            style="width: 60px; height: 60px"
           >
-            bg-transparent
+            &nbsp;
           </div>
-          <small>inherited</small>
+          <small>transparent</small>
         </li>
-        <li class="list-inline-item">
+        <li class="">
           <div
             class="bg-body border rounded p-2 small"
-            style="width: 140px; height: 60px"
+            style="width: 60px; height: 60px"
           >
-            bg-body
+            &nbsp;
           </div>
           <small>#ffffff / #212529</small>
         </li>
-        <li class="list-inline-item">
+        <li class="">
           <div
             class="bg-body-tertiary border rounded p-2 small text-nowrap"
-            style="width: 140px; height: 60px"
+            style="width: 60px; height: 60px"
           >
-            bg-body-tertiary
+            &nbsp;
           </div>
           <small>#f8f9fa / #2b3035</small>
         </li>
-        <li class="list-inline-item">
+        <li class="">
           <div
             class="bg-body-secondary rounded p-2 text-nowrap small"
-            style="width: 140px; height: 60px"
+            style="width: 60px; height: 60px"
           >
-            bg-body-secondary
+            &nbsp;
           </div>
           <small>#e9ecef / #343a40</small>
         </li>
       </ul>
 
-
       <h4>Borders and Dividers</h4>
       <p>These colors change based on color mode.</p>
-      <ul class="list-inline">
-        <li class="list-inline-item">
+      <ul class="list-unstyled">
+        <li>
           <div
             class="text-dark rounded p-2 small"
-            style="width: 140px; height: 60px"
+            style="width: 60px; height: 60px"
             :style="
               colorMode === 'light'
                 ? 'background-color: #dee2e6'
                 : 'background-color: #495057'
             "
           >
-            border
+            &nbsp;
           </div>
-          <small>#dee2e6 / #495057</small>
+          <small>borders: #dee2e6 / #495057</small>
         </li>
-        <li class="list-inline-item">
+        <li>
           <div
             class="text-dark rounded p-2 small"
-            style="width: 140px; height: 60px"
+            style="width: 60px; height: 60px"
             :style="
               colorMode === 'light'
                 ? 'background-color: #c8c8c9'
                 : 'background-color: #f7f8f9'
             "
           >
-            hr
+            &nbsp;
           </div>
-          <small>#c8c8c9 / #f7f8f9</small>
+          <small>hr: #c8c8c9 / #f7f8f9</small>
         </li>
       </ul>
 
-
       <h4>Text</h4>
-      <p>These colors <strong>do not change</strong> based on color mode.</p>
+      <p>Default text color changes based on color mode.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="bg-white border text-dark rounded p-2 small"
-            style="width: 120px; height: 60px"
+            class="rounded p-2 small"
+            :class="colorMode === 'light' ? 'text-light' : 'text-dark'"
+            style="width: 60px; height: 60px"
+            :style="
+              colorMode === 'light'
+                ? 'background-color: #212529'
+                : 'background-color: #dee2e6'
+            "
           >
-            text-white
+            &nbsp;
+          </div>
+          <small>#212529 / #dee2e6</small>
+        </li>
+      </ul>
+
+      <p>These colors <strong>do not change</strong> based on color mode.</p>
+      <ul class="list-unstyled">
+        <li class="">
+          <div
+            class="bg-white border text-dark rounded p-2 small"
+            style="width: 60px; height: 60px"
+          >
+            &nbsp;
           </div>
           <small>#ffffff</small>
         </li>
-        <li class="list-inline-item">
+        <li class="">
           <div
             class="bg-light border text-dark rounded p-2 small"
-            style="width: 120px; height: 60px"
+            style="width: 60px; height: 60px"
           >
-            text-light
+           &nbsp;
           </div>
           <small>#f8f9fa</small>
         </li>
-        <li class="list-inline-item">
+        <li class="">
           <div
-            class="bg-dark text-light rounded p-2 small"
-            style="width: 120px; height: 60px"
+            class="bg-dark border text-light rounded p-2 small"
+            :class="colorMode === 'dark' ? 'border' : ''"
+            style="width: 60px; height: 60px"
           >
-            text-dark
+            &nbsp;
           </div>
           <small>#212529</small>
         </li>
-        <li class="list-inline-item">
+        <li class="">
           <div
             class="bg-black text-light rounded p-2 small"
-            style="width: 120px; height: 60px"
+            style="width: 60px; height: 60px"
           >
-            text-black
+            &nbsp;
           </div>
           <small>#000000</small>
         </li>
@@ -311,22 +332,13 @@
         >
       </p>
 
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <div
-            class="bg-primary-subtle rounded p-2 small"
-            style="width: 120px; height: 60px"
-          >
-            primary-subtle
-          </div>
-          <small>#fcfcfd / #dee2e6</small>
-        </li>
-        <li class="list-inline-item">
+      <ul class="list-unstyled">
+        <li class="">
           <div
             class="text-bg-primary rounded p-2 small"
-            style="width: 120px; height: 60px"
+            style="width: 60px; height: 60px"
           >
-            primary
+            &nbsp;
           </div>
           <small> #2f68cb</small>
         </li>
@@ -339,6 +351,16 @@
         or statuses that are positive and that do not require any immediate
         action from the user.
       </p>
+
+      <div class="d-flex">
+        <div class="w-50 flex-fill">
+          <p><span class="fw-bold">Subtle</span> (default)</p>
+        </div>
+        <div class="w-50 flex-fill">
+          <p><span class="fw-bold">Emphasis</span></p>
+        </div>
+      </div>
+
 
       <ul class="list-inline">
         <li class="list-inline-item">
@@ -390,6 +412,14 @@
         an item needs immediate attention, or that an action is impossible,
         blocked, or has resulted in an error.
       </p>
+      <div class="d-flex">
+        <div class="w-50 flex-fill">
+          <p><span class="fw-bold">Subtle</span> (default)</p>
+        </div>
+        <div class="w-50 flex-fill">
+          <p><span class="fw-bold">Emphasis</span></p>
+        </div>
+      </div>
 
       <ul class="list-inline">
         <li class="list-inline-item">
@@ -440,6 +470,14 @@
         or statuses that are in-progress, pending, or require user intervention,
         but do not prevent a task from being completed.
       </p>
+      <div class="d-flex">
+        <div class="w-50 flex-fill">
+          <p><span class="fw-bold">Subtle</span> (default)</p>
+        </div>
+        <div class="w-50 flex-fill">
+          <p><span class="fw-bold">Emphasis</span></p>
+        </div>
+      </div>
 
       <ul class="list-inline">
         <li class="list-inline-item">
@@ -491,6 +529,14 @@
         user better understand the current context, or provide benefit, like
         tips or incentives.
       </p>
+      <div class="d-flex">
+        <div class="w-50 flex-fill">
+          <p><span class="fw-bold">Subtle</span> (default)</p>
+        </div>
+        <div class="w-50 flex-fill">
+          <p><span class="fw-bold">Emphasis</span></p>
+        </div>
+      </div>
 
       <ul class="list-inline">
         <li class="list-inline-item">

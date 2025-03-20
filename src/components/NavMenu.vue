@@ -406,32 +406,32 @@
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              id="patternsLayoutHeading"
+              id="patternsBoilerplateHeading"
               class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/layout/"
+              to="/patterns/boilerplate/"
               data-bs-toggle="collapse"
-              data-bs-target="#patternsLayoutCollapse"
+              data-bs-target="#patternsBoilerplateCollapse"
               :aria-expanded="
-                $route.path.includes('/patterns/layout/') ? true : false
+                $route.path.includes('/patterns/boilerplate/') ? true : false
               "
-              aria-controls="patternsLayoutCollapse"
+              aria-controls="patternsBoilerplateCollapse"
             >
-              <span>Layout</span>
+              <span>Boilerplate</span>
               <i class="bi bi-chevron-down" aria-hidden="true"></i>
             </BLink>
             <div
-              id="patternsLayoutCollapse"
+              id="patternsBoilerplateCollapse"
               class="collapse"
-              :class="$route.path.includes('/patterns/layout/') ? 'show' : ''"
-              aria-labelledby="patternsLayoutHeading"
+              :class="$route.path.includes('/patterns/boilerplate/') ? 'show' : ''"
+              aria-labelledby="patternsBoilerplateHeading"
             >
               <ul class="nav flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/layout/topbar"
+                    to="/patterns/boilerplate/topbar"
                     >Topbar</BLink
                   >
                 </li>
@@ -439,7 +439,7 @@
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/layout/sidebar"
+                    to="/patterns/boilerplate/sidebar"
                     >Sidebar</BLink
                   >
                 </li>

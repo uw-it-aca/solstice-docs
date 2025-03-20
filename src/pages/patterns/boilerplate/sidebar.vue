@@ -7,7 +7,7 @@
             <a href="/patterns/">Patterns</a>
           </li>
           <li class="breadcrumb-item">
-            <a href="/patterns/layout/">Layout</a>
+            <a href="/patterns/boilerplate/">Boilerplate</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
