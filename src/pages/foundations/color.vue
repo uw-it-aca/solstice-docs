@@ -119,7 +119,7 @@
             class="text-bg-brand rounded p-2 small"
             style="width: 120px; height: 60px"
           >
-            brand
+            bg-brand
           </div>
           <small>#4b2e83</small>
         </li>
@@ -150,23 +150,33 @@
         associated with them, though they can imply things like disabled states.
       </p>
 
+      <h4>Surface (backgrounds)</h4>
       <p>These colors change based on color mode.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="bg-body rounded p- small"
-            style="width: 120px; height: 60px"
+            class="bg-transparent border rounded p-2 small"
+            style="width: 140px; height: 60px"
           >
-            body
+            bg-transparent
+          </div>
+          <small>inherited</small>
+        </li>
+        <li class="list-inline-item">
+          <div
+            class="bg-body border rounded p-2 small"
+            style="width: 140px; height: 60px"
+          >
+            bg-body
           </div>
           <small>#ffffff / #212529</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-body-tertiary rounded p-2 small"
-            style="width: 120px; height: 60px"
+            class="bg-body-tertiary border rounded p-2 small text-nowrap"
+            style="width: 140px; height: 60px"
           >
-            body-tertiary
+            bg-body-tertiary
           </div>
           <small>#f8f9fa / #2b3035</small>
         </li>
@@ -175,38 +185,65 @@
             class="bg-body-secondary rounded p-2 text-nowrap small"
             style="width: 140px; height: 60px"
           >
-            body-secondary
+            bg-body-secondary
           </div>
           <small>#e9ecef / #343a40</small>
         </li>
       </ul>
 
-      <p>These colors do not change based on color mode.</p>
+
+      <h4>Borders and Dividers</h4>
+      <p>These colors change based on color mode.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <div
-            class="bg-transparent rounded p-2 small"
-            style="width: 120px; height: 60px"
+            class="text-dark rounded p-2 small"
+            style="width: 140px; height: 60px"
+            :style="
+              colorMode === 'light'
+                ? 'background-color: #dee2e6'
+                : 'background-color: #495057'
+            "
           >
-            transparent
+            border
           </div>
-          <small>inherits</small>
+          <small>#dee2e6 / #495057</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-white text-dark rounded p-2 small"
+            class="text-dark rounded p-2 small"
+            style="width: 140px; height: 60px"
+            :style="
+              colorMode === 'light'
+                ? 'background-color: #c8c8c9'
+                : 'background-color: #f7f8f9'
+            "
+          >
+            hr
+          </div>
+          <small>#c8c8c9 / #f7f8f9</small>
+        </li>
+      </ul>
+
+
+      <h4>Text</h4>
+      <p>These colors <strong>do not change</strong> based on color mode.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <div
+            class="bg-white border text-dark rounded p-2 small"
             style="width: 120px; height: 60px"
           >
-            white
+            text-white
           </div>
           <small>#ffffff</small>
         </li>
         <li class="list-inline-item">
           <div
-            class="bg-light text-dark rounded p-2 small"
+            class="bg-light border text-dark rounded p-2 small"
             style="width: 120px; height: 60px"
           >
-            light
+            text-light
           </div>
           <small>#f8f9fa</small>
         </li>
@@ -215,7 +252,7 @@
             class="bg-dark text-light rounded p-2 small"
             style="width: 120px; height: 60px"
           >
-            dark
+            text-dark
           </div>
           <small>#212529</small>
         </li>
@@ -224,7 +261,7 @@
             class="bg-black text-light rounded p-2 small"
             style="width: 120px; height: 60px"
           >
-            black
+            text-black
           </div>
           <small>#000000</small>
         </li>
@@ -827,6 +864,7 @@
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
 import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
+import { watch } from "vue";
 
 export default {
   name: "DocsColor",
@@ -834,7 +872,11 @@ export default {
   data() {
     return {
       pageTitle: "Color",
+      colorMode: "light",
     };
+  },
+  updated() {
+    this.colorMode = document.documentElement.getAttribute("data-bs-theme");
   },
 };
 </script>
