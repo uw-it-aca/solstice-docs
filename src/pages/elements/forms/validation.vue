@@ -82,7 +82,7 @@
         <li>Input error styles</li>
         <li>Input error message</li>
       </ul>
-      <p>Refer to <a href="input/">Form Input</a> for more anatomy details.</p>
+      <p>Refer to <a href="input/">Form Input</a> for input anatomy details.</p>
 
       <h2 class="display-6 ff-encodesans pt-3 pb-3" id="principles">
         Guiding Principles
@@ -120,7 +120,7 @@
         </li>
       </ul>
 
-      <h2 class="display-6 ff-encodesans pt-3 pb-3">Validation Overview</h2>
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="overview">Validation Overview</h2>
 
       <h3 class="ff-encodesans">When to trigger validation</h3>
       <p>
@@ -324,7 +324,7 @@
           </figcaption>
         </figure>
       </div>
-      <h2 class="display-6 ff-encodesans pt-3 pb-3">
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="implementation">
         Technical Implementation
       </h2>
       <h3 class="ff-encodesans">When a user is first inputting data</h3>
@@ -576,7 +576,7 @@
           show a progress indicator.
         </li>
       </ul>
-      <h2 class="display-6 ff-encodesans pt-3 pb-3">Accessibility</h2>
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="accessibility">Accessibility</h2>
 
       <ul>
         <li>
@@ -618,7 +618,7 @@
           the focus — and that's all.
         </li>
       </ul>
-      <h2 class="display-6 ff-encodesans pt-3 pb-3">
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="references">
         Resources and Reference Articles
       </h2>
 

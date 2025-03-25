@@ -1,7 +1,7 @@
 <template>
   <div class="mb-3">
-    <div class="mb-1">
-      <span class="me-2 fst-italic">Example:</span>
+    <div class="mb-1 fst-italic small text-body-secondary">
+      <span class="me-2">Example:</span>
       <template v-if="$slots['description']">
         <slot name="description"></slot>
       </template>
