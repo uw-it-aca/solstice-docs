@@ -82,89 +82,102 @@
       </ul>
 
       <h2 class="display-6 ff-encodesans pt-3 pb-3" id="states">States</h2>
-      <h3 class="ff-encodesans">Default</h3>
-      <CodeBlock>
-        <template #preview>
-          <div class="col-md-4">
-            <label for="validationCustom02" class="form-label fw-bold">
-              Form label *
-            </label>
-            <input
-              id="validationCustom02"
-              type="text"
-              class="form-control"
-              value=""
-            />
-            <div id="" class="form-text">Constraint text</div>
-          </div>
-        </template>
-      </CodeBlock>
 
-      <h3 class="ff-encodesans">Disabled</h3>
-      <CodeBlock>
-        <template #preview>
-          <div class="col-md-4">
-            <label for="validationCustom02" class="form-label fw-bold">
-              Form label *
-            </label>
-            <input
-              id="validationCustom02"
-              type="text"
-              class="form-control"
-              value="uneditable text"
-              disabled
-            />
-            <div class="invalid-feedback">Constraint text</div>
-          </div>
-        </template>
-      </CodeBlock>
+      <ul class="d-flex flex-column list-unstyled">
+        <div class="d-flex flex-row mb-3">
+          <li class="flex-fill align-self-stretch w-100 me-2">
+            <h3 class="text-center fw-medium ff-encode-sans pt-3">Default</h3>
+            <ComponentPreview>
+              <template #preview>
+                <div class="">
+                  <label for="validationCustom02" class="form-label fw-bold">
+                    Form label *
+                  </label>
+                  <input
+                    id="validationCustom02"
+                    type="text"
+                    class="form-control"
+                    value=""
+                  />
+                  <div id="" class="form-text">Constraint text</div>
+                </div>
+              </template>
+            </ComponentPreview>
+          </li>
+          <li class="flex-fill align-self-stretch w-100">
+            <h3 class="text-center fw-medium ff-encode-sans pt-3">Error</h3>
+            <ComponentPreview>
+              <template #preview>
+                <div class="">
+                  <label for="validationCustom02" class="form-label fw-bold"
+                    >Form label *</label
+                  >
+                  <input
+                    id="validationCustom02"
+                    type="text"
+                    class="form-control is-invalid"
+                    value="ABC"
+                  />
+                  <div class="invalid-feedback">
+                    <span class="pe-2">Client-side error message.</span
+                    ><span>Server-side error messages.</span>
+                  </div>
+                </div>
+              </template>
+            </ComponentPreview>
+          </li>
+        </div>
+        <div class="d-flex flex-row">
+          <li class="flex-fill align-self-stretch w-100 me-2">
+            <h3 class="text-center fw-medium ff-encode-sans pt-3">Disabled</h3>
+              <ComponentPreview>
+                <template #preview>
+                    <label for="validationCustom02" class="form-label fw-bold">
+                      Form label *
+                    </label>
+                    <input
+                      id="validationCustom02"
+                      type="text"
+                      class="form-control"
+                      value="uneditable text"
+                      disabled
+                    />
+                </template>
+              </ComponentPreview>
+          </li>
+          <li class="flex-fill align-self-stretch w-100">
+            <h3 class="text-center fw-medium ff-encode-sans pt-3">Read-only</h3>
+            <ComponentPreview>
+              <template #preview>
+                <div class="">
+                  <label for="validationCustom02" class="form-label fw-bold">
+                    Form label *
+                  </label>
+                  <p>Read-only text</p>
+                </div>
+              </template>
+            </ComponentPreview>
+          </li>
+        </div>
+      </ul>
 
-      <h3 class="ff-encodesans">Read-only</h3>
-      <CodeBlock>
-        <template #preview>
-          <div class="col-md-4">
-            <label for="validationCustom02" class="form-label fw-bold">
-              Form label *
-            </label>
-            <p>Read-only text</p>
-          </div>
-        </template>
-      </CodeBlock>
 
-      <h3 class="ff-encodesans">Error</h3>
-      <CodeBlock>
-        <template #preview>
-          <div class="col-md-4">
-            <label for="validationCustom02" class="form-label"
-              >Form label *</label
-            >
-            <input
-              id="validationCustom02"
-              type="text"
-              class="form-control is-invalid"
-              value="ABC"
-            />
-            <div class="invalid-feedback">
-              <span class="pe-2">Client-side error message.</span
-              ><span>Server-side error messages.</span>
-            </div>
-          </div>
-        </template>
-      </CodeBlock>
       <p>
-        See <a href="../validation">Form Validation</a> for more details on
-        error states.
-      </p>
-      <p>
-        <em>Note:</em> Server-side error messages should be inline with and
-        displayed <em>after</em> client-side error messages, so that any
-        client-side message triggered to appear or disappear by real-time
-        validation is more noticeable.
-      </p>
-      <h2 id="options">Options</h2>
+              See <a href="../validation">Form Validation</a> for more details on
+              error states.
+            </p>
+            <p>
+              <em>Note:</em> Server-side error messages should be inline with and
+              displayed <em>after</em> client-side error messages, so that any
+              client-side message triggered to appear or disappear by real-time
+              validation is more noticeable.
+            </p>
 
-      <h3 class="ff-encodesans">Bootstrap Input Groups</h3>
 
+
+
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="options">Options</h2>
+      <h3 class="ff-encodesan fw-medium ff-encode-sans pt-3 pb-3">Bootstrap Input Groups</h3>
       <p>
         <a href="https://getbootstrap.com/docs/5.3/forms/input-group/"
           >Bootstrap input groups</a
@@ -173,7 +186,7 @@
         input and another form element (button, checkbox, radio button).
       </p>
 
-      <h4>Word of Caution</h4>
+      <h4 class="pt-2">Word of Caution</h4>
       <p>
         It seems Boostrap's intention behind grouping UI elements in this way,
         is to associate them with one another. However, these groupings are not
@@ -185,58 +198,58 @@
         below.
       </p>
 
-      <h4>When to use</h4>
+      <h4 class="pt-2">When to use</h4>
       <p>Input groups should generally only be used for one of two reasons:</p>
       <p>
         <strong>1. Use to indicate the format or units of an input</strong> by
         prepending or appending input text or selection. This is best reserved
         for times when confusion or errors might otherwise be likely.
       </p>
-
-      <CodeBlock>
-        <template #preview>
-          <div class="input-group mb-3">
-            <span class="input-group-text">$</span>
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Amount (to the nearest dollar)"
-            />
-            <span class="input-group-text">.00</span>
-          </div>
-          <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control"
-              aria-describedby="basic-addon2"
-            />
-            <span class="input-group-text" id="basic-addon2">@example.com</span>
-          </div>
-          <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect01"
-              >Options</label
-            >
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="input-group mb-3">
-            <select class="form-select" id="inputGroupSelect02">
-              <option selected>Choose...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <label class="input-group-text" for="inputGroupSelect02"
-              >Options</label
-            >
-          </div>
-        </template>
-      </CodeBlock>
-
+      <div class="pb-4">
+        <ComponentPreview>
+          <template #preview>
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Amount (to the nearest dollar)"
+              />
+              <span class="input-group-text">.00</span>
+            </div>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Options</label
+              >
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <select class="form-select" id="inputGroupSelect02">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <label class="input-group-text" for="inputGroupSelect02"
+                >Options</label
+              >
+            </div>
+          </template>
+        </ComponentPreview>
+      </div>
       <p>
         <strong>2. Use to help communicate that input is required</strong> when
         a particular checkbox or radio button is selected.
@@ -244,9 +257,9 @@
         panel might serve the same purpose.
       </p>
 
-      <CodeBlock>
+      <ComponentPreview>
         <template #preview>
-          <div class="input-group mb-3">
+          <div class="input-group">
             <div class="input-group-text">
               <input
                 class="form-check-input mt-0"
@@ -262,40 +275,58 @@
             />
           </div>
         </template>
-      </CodeBlock>
+      </ComponentPreview>
 
-      <h2 id="practices">Best Practices</h2>
-      <h3>Label</h3>
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="practices">Best Practices</h2>
+      <h3 class="fw-medium ff-encode-sans pt-3 pb-3">Label</h3>
+
+      <UsageBlock variant="do"
+        ><template #text>
       <ul>
         <li>
-            <strong>Place the label above or to the left of the form field.</strong>
+            <strong>Do place the label above or to the left of the form field.</strong>
         </li>
         <li>
-          <strong>Use just a few words for the label</strong> – Avoid long
+          <strong>Do use just a few words for the label</strong> – Avoid long
           labels as they can be overwhelming and distracting. Instead, use help
           and constraint text to provide supplementary information, context, and
           input constraints or examples.
         </li>
 
         <li>
-          <strong>Use verbs like “enter,” “add,” or “input” sparingly </strong>–
+          <strong>Do use verbs like “enter,” “add,” or “input” sparingly </strong>–
           Generally use the label to describe what information a user needs to
           provide, rather than direct them to do it. The visual affordances of
           form inputs already imply that a user needs to enter, add, or input
           information in order to complete the form. The exception to this is if
           an interaction is new or unfamiliar, a user may need more guidance.
         </li>
-        <li><strong>Use sentence case.</strong></li>
-        <li>
-          <strong>Don't add a colon (:) at the end of a field label.</strong>
-          The proximity of label to input already implies the relationship
-          between the two elements.
-        </li>
+        <li><strong>Do use sentence case.</strong></li>
       </ul>
+    </template>
+      </UsageBlock>
+      <UsageBlock variant="dont"
+        ><template #text><p><strong>Don't add a colon (:) at the end of a field label.</strong></p>
+          <p class="small">The proximity of label to input already implies the relationship
+          between the two elements.</p>
+          </template>
+          <template #preview>
+            <label for="validationCustom02" class="form-label">
+              Form label:
+            </label>
+            <input
+              id="validationCustom02"
+              type="text"
+              class="form-control"
+              value=""
+            />
+          </template
+        >
+        </UsageBlock>
 
       <UsageBlock variant="dont"
-        ><template #text><p>Don't use floating labels</p>
-          <p>
+        ><template #text><p><strong>Don't use floating labels.</strong></p>
+          <p class="small">
         Fields with text in them are less noticeable, in addition, users might think there is already a default
         value entered in the field. Also, some browsers and assistive
         technologies don't properly or reliably read placeholder text.
@@ -303,36 +334,36 @@
         the label as a placeholder, placing the label and any example or
         constraint text outside the field is best.
       </p>
-
-          </template
-        ><template #preview>
-          <CodeBlock>
+          </template>
         <template #preview>
-          <div class="form-floating mb-3">
-  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-  <label for="floatingInput">Email address</label>
-</div>
-        </template>
-      </CodeBlock>
+          <span class="visually-hidden ">Example:</span>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
           </template
-        ></UsageBlock
-      >
+        ></UsageBlock>
 
-      <h3>Field</h3>
-
-      <p>
-        <strong><em>Don't use placeholder text</em></strong>
-      </p>
-      <p>
-        Placeholder text that disappears when the form field receives focus
-        hurts usability.. Placeholder text can disappear prematurely for users
-        navigating fields by keyboard, and in general can be hard to remember.
-        It is better to rely on constraint text to communicate format
-        requirements to users.
-      </p>
-      <p>
+      <h3 class="fw-medium ff-encode-sans pt-3 pb-3">Field</h3>
+      <UsageBlock variant="dont"
+        ><template #text>
+        <p>
+          <strong>Don't use placeholder text.</strong>
+        </p>
+        <p>
+          Placeholder text that disappears when the form field receives focus
+          hurts usability.. Placeholder text can disappear prematurely for users
+          navigating fields by keyboard, and in general can be hard to remember.
+          It is better to rely on constraint text to communicate format
+          requirements to users.
+        </p>
+      </template>
+      </UsageBlock>
+      <UsageBlock variant="do"
+        ><template #text>
+        <p>
         <strong
-          ><em>Don't use disabled fields that are never editable </em></strong
+          >Don't use disabled fields that are never editable.</strong
         >
       </p>
       <p>
@@ -341,14 +372,13 @@
         be changed based on the user's actions (or an external process or
         workflow).
       </p>
-      <h3>Required/Optional indicator</h3>
-
-      <p>
-        <strong><em>Overview</em></strong>
-      </p>
-      <ul>
+      </template>
+      </UsageBlock>
+      <h3 class="fw-medium ff-encode-sans pt-3 pb-3">Required/Optional indicator</h3>
+      <h4>Overview</h4>
+      <ul class="mb-4 py-2">
         <li>
-          Clearly indicate both required and optional fields. Use one or the
+          <strong>Clearly indicate both required and optional fields.</strong> Use one or the
           other for<em> all </em>input fields.
         </li>
         <ul>
@@ -362,62 +392,58 @@
         </ul>
 
         <li>
-          While an asterisk is a widely recognized as an indicator of required
-          fields, to be safe provide a legend on the page indicating “Required
-          fields are marked with *”
+          <strong>Provide a legend on the page </strong>indicating required
+          fields are marked with *. An asterisk is a widely recognized indicator of required
+          fields, but is best to be safe.
         </li>
 
         <li>
-          Use the &lt;code><strong><em>required</em></strong
-          >&lt;/code> attribute, which will cause screen readers to announce
-          "required" along with the label text, because required fields
-          identified with an asterisk, may not always be announced by screen
-          readers, and some users may not understand this convention.
+        <strong>Use the <code>required</code> attribute.</strong> With this, screen readers announce
+          "required" along with the label text, since the required asterisk indicator may not always be announced by screen
+          readers, or some users may not understand this convention.
         </li>
       </ul>
-      <p>
-        <strong><em>Do:</em></strong>
-      </p>
-      <ul>
+
+      <UsageBlock
+        ><template #text>
+          <ul>
         <li>
-          Requiredness can be indicated in the input constraint text area in
-          cases where there is not an input form label (e.g. an input in a table
+        <strong>Do omit requiredness indicators on login forms.</strong> It’s OK to skip these because it is well
+          understood these fields are required.
+        </li>
+        <li>
+          <strong>Do indicate requireness in constraint text area when there is not an input form label.</strong> (e.g. an input in a table
           that only has a table header).
         </li>
 
-        <li>
-          It’s OK to omit required indicators from login forms, as it is well
-          understood these fields are required.
-        </li>
       </ul>
-      <p>
-        <strong><em>Don't</em></strong>
-      </p>
-      <ul>
-        <li>
-          Indicate requiredness or optional using color, instead reserve use of
-          color for indicating invalid input.
-        </li>
-      </ul>
-      <h3>Constraint text</h3>
+      </template>
+      </UsageBlock>
 
-      <p>
-        <strong><em>Do</em></strong>
-      </p>
-      <p>
-        Replace constraint text with error message and unless a more specific
+      <UsageBlock variant="dont"
+        ><template #text>
+        <strong>Don't indicate requiredness or optional using color</strong>, instead reserve use of
+          color for indicating invalid input.
+      </template>
+      </UsageBlock>
+
+      <h3 class="fw-medium ff-encode-sans pt-3 pb-3">Constraint text</h3>
+
+      <UsageBlock
+        ><template #text>
+        <strong>Do replace constraint text with error message</strong>, and unless a more specific
         error message can be given, repeat input constraints in the error
         message.
-      </p>
-      <h3>Input Groups</h3>
+      </template>
+      </UsageBlock>
+
+      <h3 class="fw-medium ff-encode-sans pt-3 pb-3">Input Groups</h3>
       <UsageBlock variant="do">
         <template #text
-          >Always provide an input label for the input group; don't rely on the
+          ><strong>Do always provide an input label</strong> for the input group; don't rely on the
           input group “add-on.”</template
         >
         <template #preview>
-          <CodeBlock>
-            <template #preview>
               <label for="basic-url" class="form-label">Dollars spent</label>
               <div class="input-group">
                 <span class="input-group-text">$</span>
@@ -431,14 +457,13 @@
               <div class="form-text" id="basic-addon4">
                 Amount spent cannot exceed approved expenditure.
               </div>
-            </template></CodeBlock
-          >
         </template>
       </UsageBlock>
       <UsageBlock variant="dont"
-        ><template #text>Use to display the input label </template
-        ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+        ><template #text><strong> Don't use to display the input label.</strong></template
+        >
+        <template #preview
+          >
             <div class="input-group">
               <span class="input-group-text" id="basic-addon3"
                 >Dollars spent &nbsp; $</span
@@ -454,40 +479,44 @@
             <div class="form-text" id="basic-addon4">
               Amount spent cannot exceed approved expenditure.
             </div>
-          </div></template
+      </template
         ></UsageBlock
       >
 
       <UsageBlock variant="dont"
         ><template #text
-          >Use to display constraint text or sample formats </template
+          ><strong>Don't use to display constraint text or sample formats.</strong></template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
-            <div class="input-group">
-              <span class="input-group-text" id="basic-addon3">MM/DD/YY</span>
-              <input
-                type="text"
-                class="form-control"
-                id="basic-url"
-                aria-describedby="basic-addon3 basic-addon4"
-              />
-            </div></div></template
+          >
+          <ComponentPreview>
+            <template #preview>
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">MM/DD/YY</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="basic-url"
+                  aria-describedby="basic-addon3 basic-addon4"
+                />
+              </div>
+            </template>
+          </ComponentPreview>
+          </template
       ></UsageBlock>
 
       <UsageBlock variant="do">
         <template #text
           ><p>
-            Place the button or dropdown <em>before</em> the input or selection
-            whenever the button or dropdown will populate input data.
+          <strong>Do place button or dropdown that populates data <em>before</em> input.</strong>
           </p>
           <p>
-            <strong><em>Warning:</em></strong> this should only be used when
+            <em>Warning:</em> this input group configuration should only be used when
             users can edit the populated data. Otherwise, use a read-only field
             instead of an editable input field after the button or dropdown.
           </p>
         </template>
         <template #preview>
-          <CodeBlock>
+          <ComponentPreview>
             <template #preview>
               <div class="input-group mb-3">
                 <button
@@ -505,7 +534,7 @@
                   aria-describedby="button-addon1"
                 />
               </div>
-              <div class="input-group mb-3">
+              <div class="input-group">
                 <button
                   class="btn btn-outline-primary dropdown-toggle"
                   type="button"
@@ -530,42 +559,16 @@
                 />
               </div>
             </template>
-          </CodeBlock>
+          </ComponentPreview>
         </template>
       </UsageBlock>
 
-      <UsageBlock variant="dont"
-        ><template #text
-          >Use a custom select with a button on the left. </template
-        ><template #preview>
-          <CodeBlock>
-            <template #preview>
-              <div class="input-group mb-3">
-                <button class="btn btn-secondary" type="button">Button</button>
-                <select
-                  class="form-select"
-                  id="inputGroupSelect03"
-                  aria-label="Example select with button addon"
-                >
-                  <option selected>Choose...</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-            </template>
-          </CodeBlock>
-        </template></UsageBlock
-      >
-
       <UsageBlock variant="do">
         <template #text
-          >Place button or dropdown <em>after</em> the input or selection
-          whenever the button or dropdown acts upon data input by the
-          user.</template
+          ><strong> Do place button or dropdown that acts upon input data <em>after</em> the input.</strong></template
         >
         <template #preview>
-          <CodeBlock>
+          <ComponentPreview>
             <template #preview>
               <div class="input-group mb-3">
                 <input
@@ -619,19 +622,43 @@
                 <button class="btn btn-secondary" type="button">Button</button>
               </div>
             </template>
-          </CodeBlock>
+          </ComponentPreview>
         </template>
       </UsageBlock>
 
       <UsageBlock variant="dont"
         ><template #text
-          >Use with
+          ><strong> Don't use a custom select with a button on the left.</strong></template
+        ><template #preview>
+          <ComponentPreview>
+            <template #preview>
+              <div class="input-group">
+                <button class="btn btn-secondary" type="button">Button</button>
+                <select
+                  class="form-select"
+                  id="inputGroupSelect03"
+                  aria-label="Example select with button addon"
+                >
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </template>
+          </ComponentPreview>
+        </template></UsageBlock
+      >
+
+      <UsageBlock variant="dont"
+        ><template #text
+          ><strong>Don't use with
           <a
             href="https://getbootstrap.com/docs/5.3/forms/input-group/#multiple-inputs"
             >multiple inputs</a
-          >, as validations styles are not supported in this case. </template
+          ></strong>, as validations styles are not supported in this case. </template
         ><template #preview>
-          <CodeBlock>
+          <ComponentPreview>
             <template #preview>
               <div class="input-group">
                 <span class="input-group-text">First and last name</span>
@@ -647,13 +674,13 @@
                 />
               </div>
             </template>
-          </CodeBlock> </template
+          </ComponentPreview> </template
       ></UsageBlock>
 
       <UsageBlock variant="dont"
-        ><template #text>Use with multiple buttons. </template
+        ><template #text><strong>Don't use with multiple buttons.</strong></template
         ><template #preview>
-          <CodeBlock>
+          <ComponentPreview>
             <template #preview>
               <div class="input-group">
                 <input
@@ -666,24 +693,24 @@
                 <button class="btn btn-secondary" type="button">Button</button>
               </div>
             </template>
-          </CodeBlock>
+          </ComponentPreview>
         </template></UsageBlock
       >
 
       <UsageBlock variant="dont"
         ><template #text
-          >Use with
+          ><strong>Don't use with
           <a
             href="https://getbootstrap.com/docs/5.3/forms/input-group/#multiple-addons"
           >
             multiple add-ons</a
           >
-          next to each other. Use the input add-ons to prepend or append the
+          next to each other.</strong> Use the input add-ons to prepend or append the
           input, or both. </template
         ><template #preview>
-          <CodeBlock>
+          <ComponentPreview>
             <template #preview>
-              <div class="input-group mb-3">
+              <div class="input-group">
                 <span class="input-group-text">$</span>
                 <span class="input-group-text">0.00</span>
                 <input
@@ -693,20 +720,20 @@
                 />
               </div>
             </template>
-          </CodeBlock> </template
+          </ComponentPreview> </template
       ></UsageBlock>
 
       <UsageBlock variant="dont"
         ><template #text>
-          Use
+          <strong>Don't use
           <a
             href="https://getbootstrap.com/docs/5.3/forms/input-group/#segmented-buttons"
             >segmented (split) buttons</a
-          >
-          , as users may miss critical functionality shown in the dropdown.
+          ></strong>,
+           as users may miss critical functionality shown in the dropdown.
           Instead, use a single dropdown with all the available options. </template
         ><template #preview>
-          <CodeBlock>
+          <ComponentPreview>
             <template #preview>
               <div class="input-group">
                 <input
@@ -736,14 +763,14 @@
                 </ul>
               </div>
             </template>
-          </CodeBlock>
+          </ComponentPreview>
         </template></UsageBlock
       >
 
       <UsageBlock variant="dont"
         ><template #text>
           <p>
-            Use Bootstrap's
+            <strong>Don't use Bootstrap's
             <a
               href="https://getbootstrap.com/docs/5.3/forms/form-control/#file-input"
               >standard</a
@@ -752,7 +779,7 @@
             <a
               href="https://getbootstrap.com/docs/5.3/forms/input-group/#custom-file-input"
               >custom file inputs</a
-            >
+            ></strong>
 
             – they are unconventional and offer misleading affordances (the
             input appears focusable but instead triggers a OS file upload
@@ -763,7 +790,7 @@
             information about the uploaded item.
           </p> </template
         ><template #preview>
-          <CodeBlock>
+          <ComponentPreview>
             <template #preview>
               <div class="mb-3">
                 <label for="formFile" class="form-label"
@@ -771,14 +798,14 @@
                 >
                 <input class="form-control" type="file" id="formFile" />
               </div>
-              <div class="input-group mb-3">
+              <div class="input-group">
                 <input type="file" class="form-control" id="inputGroupFile02" />
                 <label class="input-group-text" for="inputGroupFile02"
                   >Upload</label
                 >
               </div>
             </template>
-          </CodeBlock>
+          </ComponentPreview>
         </template></UsageBlock
       >
     </template>
@@ -789,17 +816,18 @@
 
 <script>
 import Layout from "@/layout.vue";
-// import CodeBlock from "@/components/CodeBlock.vue";
+// import ComponentPreview from "@/components/ComponentPreview.vue";
 // import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+import ComponentPreview from "@/components/ComponentPreview.vue";
 
 export default {
   name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
   inject: ["mq"],
   components: {
     Layout,
-    /* CodeBlock, UsageBlock, */ PageContents,
+    /* ComponentPreview, UsageBlock, */ PageContents,
     BBreadcrumb,
     BBreadcrumbItem,
   },
