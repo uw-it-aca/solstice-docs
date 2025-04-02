@@ -97,7 +97,8 @@
             href="https://www.washington.edu/accesstech/checklist/contrast/"
             target="_blank"
             >color contrast</BLink
-          > page). The color groupings in the design system have already been
+          >
+          page). The color groupings in the design system have already been
           determined to meet this accessibility criteria.
         </li>
       </ol>
@@ -263,7 +264,7 @@
             class="bg-light border text-dark rounded p-2 small"
             style="width: 60px; height: 60px"
           >
-           &nbsp;
+            &nbsp;
           </div>
           <small>#f8f9fa</small>
         </li>
@@ -355,47 +356,56 @@
       <div class="d-flex">
         <div class="w-50 flex-fill">
           <p><span class="fw-bold">Subtle</span> (default)</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <div
+                class="bg-success-subtle rounded p-2 small"
+                style="width: 60px; height: 60px"
+              >
+                &nbsp;
+              </div>
+              <small>#d1e7dd / #051b11</small>
+            </li>
+            <li class="list-inline-item">
+              <div
+                class="text-white rounded p-2 small text-nowrap"
+                style="width: 60px; height: 60px; background: #0a3622"
+              >
+                &nbsp;
+              </div>
+              <small> #0a3622</small>
+            </li>
+          </ul>
         </div>
         <div class="w-50 flex-fill">
           <p><span class="fw-bold">Emphasis</span></p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <div
+                class="text-bg-success rounded p-2 small"
+                style="width: 60px; height: 60px"
+              >
+                &nbsp;
+              </div>
+              <small> #198754</small>
+            </li>
+            <li class="list-inline-item">
+              <div
+                class="bg-white border text-white rounded p-2 small text-nowrap"
+                style="width: 60px; height: 60px; background: #0a3622"
+              >
+                &nbsp;
+              </div>
+              <small> #ffffff</small>
+            </li>
+          </ul>
         </div>
       </div>
-
-
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <div
-            class="bg-success-subtle rounded p-2 small"
-            style="width: 120px; height: 60px"
-          >
-            success-subtle
-          </div>
-          <small>#d1e7dd / #051b11</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="text-bg-success rounded p-2 small"
-            style="width: 120px; height: 60px"
-          >
-            success
-          </div>
-          <small> #198754</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="text-white rounded p-2 small text-nowrap"
-            style="width: 140px; height: 60px; background: #0a3622"
-          >
-            success-emphasis
-          </div>
-          <small> #0a3622</small>
-        </li>
-      </ul>
 
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-success-subtle border border-success-subtle text-success-emphasis me-1"
+            class="badge rounded-pill bg-success-subtle text-success-emphasis me-1"
             >Success</span
           >
           <span class="badge rounded-pill text-bg-success">Success</span>
