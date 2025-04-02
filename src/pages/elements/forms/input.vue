@@ -87,7 +87,7 @@
         <div class="d-flex flex-row mb-3">
           <li class="flex-fill align-self-stretch w-100 me-2">
             <h3 class="text-center fw-medium ff-encode-sans pt-3">Default</h3>
-            <ComponentPreview>
+            <PreviewBlock>
               <template #preview>
                 <div class="">
                   <label for="validationCustom02" class="form-label fw-bold">
@@ -102,11 +102,11 @@
                   <div id="" class="form-text">Constraint text</div>
                 </div>
               </template>
-            </ComponentPreview>
+            </PreviewBlock>
           </li>
           <li class="flex-fill align-self-stretch w-100">
             <h3 class="text-center fw-medium ff-encode-sans pt-3">Error</h3>
-            <ComponentPreview>
+            <PreviewBlock>
               <template #preview>
                 <div class="">
                   <label for="validationCustom02" class="form-label fw-bold"
@@ -124,13 +124,13 @@
                   </div>
                 </div>
               </template>
-            </ComponentPreview>
+            </PreviewBlock>
           </li>
         </div>
         <div class="d-flex flex-row">
           <li class="flex-fill align-self-stretch w-100 me-2">
             <h3 class="text-center fw-medium ff-encode-sans pt-3">Disabled</h3>
-            <ComponentPreview>
+            <PreviewBlock>
               <template #preview>
                 <label for="validationCustom02" class="form-label fw-bold">
                   Form label *
@@ -143,11 +143,11 @@
                   disabled
                 />
               </template>
-            </ComponentPreview>
+            </PreviewBlock>
           </li>
           <li class="flex-fill align-self-stretch w-100">
             <h3 class="text-center fw-medium ff-encode-sans pt-3">Read-only</h3>
-            <ComponentPreview>
+            <PreviewBlock>
               <template #preview>
                 <div class="">
                   <label for="validationCustom02" class="form-label fw-bold">
@@ -156,7 +156,7 @@
                   <p>Read-only text</p>
                 </div>
               </template>
-            </ComponentPreview>
+            </PreviewBlock>
           </li>
         </div>
       </ul>
@@ -204,7 +204,7 @@
         for times when confusion or errors might otherwise be likely.
       </p>
       <div class="pb-4">
-        <ComponentPreview>
+        <PreviewBlock>
           <template #preview>
             <div class="input-group mb-3">
               <span class="input-group-text">$</span>
@@ -248,7 +248,7 @@
               >
             </div>
           </template>
-        </ComponentPreview>
+        </PreviewBlock>
       </div>
       <p>
         <strong>2. Use to help communicate that input is required</strong> when
@@ -257,7 +257,7 @@
         panel might serve the same purpose.
       </p>
 
-      <ComponentPreview>
+      <PreviewBlock>
         <template #preview>
           <div class="input-group">
             <div class="input-group-text">
@@ -275,7 +275,7 @@
             />
           </div>
         </template>
-      </ComponentPreview>
+      </PreviewBlock>
 
       <h2 class="display-6 ff-encodesans pt-3 pb-3" id="practices">
         Best Practices
@@ -510,7 +510,7 @@
             >Don't use to display constraint text or sample formats.</strong
           ></template
         ><template #preview>
-          <ComponentPreview>
+          <PreviewBlock>
             <template #preview>
               <div class="input-group">
                 <span class="input-group-text" id="basic-addon3">MM/DD/YY</span>
@@ -522,7 +522,7 @@
                 />
               </div>
             </template>
-          </ComponentPreview> </template
+          </PreviewBlock> </template
       ></UsageBlock>
 
       <UsageBlock variant="do">
@@ -541,7 +541,7 @@
           </p>
         </template>
         <template #preview>
-          <ComponentPreview>
+          <PreviewBlock>
             <template #preview>
               <div class="input-group mb-3">
                 <button
@@ -584,7 +584,7 @@
                 />
               </div>
             </template>
-          </ComponentPreview>
+          </PreviewBlock>
         </template>
       </UsageBlock>
 
@@ -596,7 +596,7 @@
           ></template
         >
         <template #preview>
-          <ComponentPreview>
+          <PreviewBlock>
             <template #preview>
               <div class="input-group mb-3">
                 <input
@@ -650,7 +650,7 @@
                 <button class="btn btn-secondary" type="button">Button</button>
               </div>
             </template>
-          </ComponentPreview>
+          </PreviewBlock>
         </template>
       </UsageBlock>
 
@@ -660,7 +660,7 @@
             Don't use a custom select with a button on the left.</strong
           ></template
         ><template #preview>
-          <ComponentPreview>
+          <PreviewBlock>
             <template #preview>
               <div class="input-group">
                 <button class="btn btn-secondary" type="button">Button</button>
@@ -676,7 +676,7 @@
                 </select>
               </div>
             </template>
-          </ComponentPreview>
+          </PreviewBlock>
         </template></UsageBlock
       >
 
@@ -690,7 +690,7 @@
             ></strong
           >, as validations styles are not supported in this case. </template
         ><template #preview>
-          <ComponentPreview>
+          <PreviewBlock>
             <template #preview>
               <div class="input-group">
                 <span class="input-group-text">First and last name</span>
@@ -706,14 +706,14 @@
                 />
               </div>
             </template>
-          </ComponentPreview> </template
+          </PreviewBlock> </template
       ></UsageBlock>
 
       <UsageBlock variant="dont"
         ><template #text
           ><strong>Don't use with multiple buttons.</strong></template
         ><template #preview>
-          <ComponentPreview>
+          <PreviewBlock>
             <template #preview>
               <div class="input-group">
                 <input
@@ -726,7 +726,7 @@
                 <button class="btn btn-secondary" type="button">Button</button>
               </div>
             </template>
-          </ComponentPreview>
+          </PreviewBlock>
         </template></UsageBlock
       >
 
@@ -743,7 +743,7 @@
           >
           Use the input add-ons to prepend or append the input, or both. </template
         ><template #preview>
-          <ComponentPreview>
+          <PreviewBlock>
             <template #preview>
               <div class="input-group">
                 <span class="input-group-text">$</span>
@@ -755,7 +755,7 @@
                 />
               </div>
             </template>
-          </ComponentPreview> </template
+          </PreviewBlock> </template
       ></UsageBlock>
 
       <UsageBlock variant="dont"
@@ -769,7 +769,7 @@
           >, as users may miss critical functionality shown in the dropdown.
           Instead, use a single dropdown with all the available options. </template
         ><template #preview>
-          <ComponentPreview>
+          <PreviewBlock>
             <template #preview>
               <div class="input-group">
                 <input
@@ -799,7 +799,7 @@
                 </ul>
               </div>
             </template>
-          </ComponentPreview>
+          </PreviewBlock>
         </template></UsageBlock
       >
 
@@ -828,7 +828,7 @@
             information about the uploaded item.
           </p> </template
         ><template #preview>
-          <ComponentPreview>
+          <PreviewBlock>
             <template #preview>
               <div class="mb-3">
                 <label for="formFile" class="form-label"
@@ -843,7 +843,7 @@
                 >
               </div>
             </template>
-          </ComponentPreview>
+          </PreviewBlock>
         </template></UsageBlock
       >
 
@@ -860,8 +860,8 @@
 
 <script>
 import Layout from "@/layout.vue";
-// import ComponentPreview from "@/components/ComponentPreview.vue";
-// import UsageBlock from "@/components/UsageBlock.vue";
+import PreviewBlock from "@/components/PreviewBlock.vue";
+import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
@@ -872,7 +872,7 @@ export default {
 
   components: {
     Layout,
-    //ComponentPreview, UsageBlock,
+    PreviewBlock, UsageBlock,
     PageContents,
     BBreadcrumb,
     BBreadcrumbItem,
