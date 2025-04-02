@@ -864,7 +864,6 @@ import Layout from "@/layout.vue";
 // import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
-//import ComponentPreview from "@/components/ComponentPreview.vue";
 
 import { Tooltip } from "bootstrap";
 
