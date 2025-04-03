@@ -205,7 +205,7 @@
           characters, must be more than 10)
         </li>
       </ul>
-      <CodeBlock>
+      <PreviewBlock>
         <template #preview>
           <div class="col-md-4">
             <label for="validationCustom02" class="form-label"
@@ -221,7 +221,7 @@
           </div>
         </template>
         <template #description>Numerical-only input constraint </template>
-      </CodeBlock>
+      </PreviewBlock>
       <p>
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation"
@@ -244,7 +244,7 @@
         Some input constraints must be checked via complex logic or via an
         external data set (e.g. unique input).
       </p>
-      <CodeBlock>
+      <PreviewBlock>
         <template #preview>
           <div class="col-md-4">
             <label for="validationCustom02" class="form-label"
@@ -263,7 +263,7 @@
           </div>
         </template>
         <template #description>Server-side logic input constraint </template>
-      </CodeBlock>
+      </PreviewBlock>
       <h3 class="ff-encodesans pt-3">Ways of validating input</h3>
       <table class="table">
         <thead>
@@ -644,7 +644,7 @@
 
 <script>
 import Layout from "@/layout.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
+import PreviewBlock from "@/components/PreviewBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
@@ -653,7 +653,7 @@ export default {
   name: "DocsElementsFormsValidation",
   components: {
     Layout,
-    CodeBlock,
+    PreviewBlock,
     PageContents,
     BBreadcrumb,
     BBreadcrumbItem,

@@ -42,12 +42,30 @@
                 >Best Practices</a
               >
             </li>
+            <li>
+              <a
+                href="#implementation"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Technical Implementation</a
+              >
+            </li>
           </ul>
         </nav>
       </PageContents>
     </template>
     <template #content>
       <h2 class="display-6 ff-encodesans pt-3 pb-3" id="anatomy">Anatomy</h2>
+      <figure class="d-flex flex-column">
+        <img
+          src="/images/input-field-anatomy.png"
+          alt=""
+          class="img-fluid border rounded col-md-11"
+        />
+        <figcaption class="align-self-start">
+          <p class="text-muted fst-italic my-2">Input field anatomy</p>
+        </figcaption>
+      </figure>
+
       <ul>
         <li>
           <span class="fw-bold">Label</span> – Text to identify the data object
@@ -93,6 +111,15 @@
                   <label for="validationCustom02" class="form-label fw-bold">
                     Form label *
                   </label>
+                  <a
+                    href="#"
+                    class="text-dark ms-2"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Help text"
+                    ><i
+                      class="bi bi-question-circle-fill text-primary text-opacity-75"
+                    ></i
+                  ></a>
                   <input
                     id="validationCustom02"
                     type="text"
@@ -112,6 +139,15 @@
                   <label for="validationCustom02" class="form-label fw-bold"
                     >Form label *</label
                   >
+                  <a
+                    href="#"
+                    class="text-dark ms-2"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Help text"
+                    ><i
+                      class="bi bi-question-circle-fill text-primary text-opacity-75"
+                    ></i
+                  ></a>
                   <input
                     id="validationCustom02"
                     type="text"
@@ -133,8 +169,17 @@
             <PreviewBlock>
               <template #preview>
                 <label for="validationCustom02" class="form-label fw-bold">
-                  Form label *
+                  Form label
                 </label>
+                <a
+                  href="#"
+                  class="text-dark ms-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Help text"
+                  ><i
+                    class="bi bi-question-circle-fill text-primary text-opacity-75"
+                  ></i
+                ></a>
                 <input
                   id="validationCustom02"
                   type="text"
@@ -151,7 +196,7 @@
               <template #preview>
                 <div class="">
                   <label for="validationCustom02" class="form-label fw-bold">
-                    Form label *
+                    Form label
                   </label>
                   <p>Read-only text</p>
                 </div>
@@ -846,12 +891,48 @@
           </PreviewBlock>
         </template></UsageBlock
       >
-
-      <p class="muted">
-        This is an icon tooltip
-        <a href="#" class="text-dark" data-bs-toggle="tooltip" data-bs-title="Another tooltip"><i class="bi bi-question-circle-fill"></i></a>
-
-      </p>
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="implementation">
+        Technical Implementation
+      </h2>
+      <CodeBlock>
+        <template #preview>
+          <div class="">
+            <label for="validationCustom02" class="form-label fw-bold">
+              Form label *
+            </label>
+            <a
+              href="#"
+              class="text-dark ms-2"
+              data-bs-toggle="tooltip"
+              data-bs-title="Help text"
+              ><i
+                class="bi bi-question-circle-fill text-primary text-opacity-75"
+              ></i
+            ></a>
+            <input
+              id="validationCustom02"
+              type="text"
+              class="form-control"
+              value=""
+            />
+            <div id="" class="form-text">Constraint text</div>
+          </div>
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
+<code>&lt;div>
+  &lt;label for="validationCustom02" class="form-label fw-bold">Form label *&lt;/label>
+  &lt;a href="#" class="text-dark ms-2" data-bs-toggle="tooltip" data-bs-title="Another tooltip">
+    &lt;i class="bi bi-question-circle-fill text-primary text-opacity-75">&lt;/i>
+  &lt;/a>
+  &lt;input id="validationCustom02" type="text" class="form-control" value=""/>
+  &lt;div id="" class="form-text">Constraint text&lt;/div>
+  &lt;div class="invalid-feedback">Client-side error message.&lt;/div>
+&lt;/div>
+</code>
+</pre>
+        </template>
+      </CodeBlock>
     </template>
 
     <template #author>William Washington</template>
@@ -872,7 +953,8 @@ export default {
 
   components: {
     Layout,
-    PreviewBlock, UsageBlock,
+    PreviewBlock,
+    UsageBlock,
     PageContents,
     BBreadcrumb,
     BBreadcrumbItem,
