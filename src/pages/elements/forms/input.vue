@@ -394,7 +394,9 @@
           </p>
         </template>
         <template #preview>
-          <span class="visually-hidden">Example:</span>
+          <div class="position-relative">
+            <span class="visually-hidden">Example:</span>
+          </div>
           <div class="form-floating">
             <input
               type="email"
