@@ -106,7 +106,8 @@
       <h2 id="palettes" class="display-6 ff-encode-sans pt-3 pb-3">
         Color Palettes
       </h2>
-      <h3>Brand Accent</h3>
+
+      <h3 class="fw-bold">Brand Accent</h3>
 
       <p>
         Use for communicating the UW brand. While UW has an expanded brand
