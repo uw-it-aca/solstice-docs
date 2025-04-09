@@ -232,20 +232,20 @@
         <CodeBlock>
           <template #preview>
             <BButton variant="primary" class="me-2"
-              ><i class="bi bi-emoji-smile-fill me-2"></i>Hello</BButton
+              ><i class="bi bi-cloud-download me-2"></i>Download</BButton
             >
           </template>
           <template #bootstrap>
             <pre class="language-html">
 <code>&lt;button class="btn btn-primary" type="button">
-  &lt;i class="bi bi-trash3 me-2">&lt;/i>Hello
+  &lt;i class="bi bi-cloud-download me-2">&lt;/i>Download
 &lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
 <code>&lt;BButton variant="primary">
-  &lt;i class="bi bi-trash3 me-2">&lt;/i>Hello
+  &lt;i class="bi bi-cloud-download me-2">&lt;/i>Download
 &lt;/BButton>
 </code></pre>
           </template>
@@ -262,41 +262,45 @@
       <div class="mb-3">
         <CodeBlock>
           <template #preview>
-            <BButton variant="primary" size="sm" class="me-2" title="Delete"
-              ><i class="bi bi-trash3"></i
+            <BButton variant="primary" size="sm" class="me-2" title="More"
+              ><i class="bi bi-three-dots"></i
             ></BButton>
-            <BButton variant="secondary" size="sm" class="me-2" title="Delete"
-              ><i class="bi bi-trash3"></i
+            <BButton
+              variant="link"
+              size="sm"
+              class="me-2 bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0"
+              title="More"
+              ><i class="bi bi-three-dots"></i
             ></BButton>
             <BButton
               variant="outline-primary"
               size="sm"
               class="me-2"
-              title="Delete"
-              ><i class="bi bi-trash3"></i
+              title="More"
+              ><i class="bi bi-three-dots"></i
             ></BButton>
             <BButton
               variant="link"
               size="sm"
-              class="bg-secondary-hover me-2"
-              title="Delete"
-              ><i class="bi bi-trash3"></i
+              class="link-underline link-underline-opacity-0 me-2"
+              title="More"
+              ><i class="bi bi-three-dots"></i
             ></BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-primary btn-sm" type="button" title="Delete">...&lt;/button>
-&lt;button class="btn btn-secondary btn-sm" type="button" title="Delete">...&lt;/button>
-&lt;button class="btn btn-outline-primary btn-sm" type="button" title="Delete">...&lt;/button>
-&lt;button class="btn btn-link btn-sm bg-secondary-hover link-primary link-underline link-underline-opacity-0" type="button" title="Delete">...&lt;/button>
+<code>&lt;button class="btn btn-primary btn-sm" type="button" title="More">...&lt;/button>
+&lt;button class="btn btn-secondary btn-sm" type="button" title="More">...&lt;/button>
+&lt;button class="btn btn-outline-primary btn-sm" type="button" title="More">...&lt;/button>
+&lt;button class="btn btn-link btn-sm link-underline link-underline-opacity-0" type="button" title="More">...&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="primary" size="sm" title="Delete">...&lt;/BButton>
-&lt;BButton variant="secondary" size="sm" class="text-primary" title="Delete">...&lt;/BButton>
-&lt;BButton variant="outline-primary" size="sm" title="Delete">...&lt;/BButton>
-&lt;BButton variant="link" size="sm" class="bg-secondary-hover link-primary link-underline link-underline-opacity-0"  title="Delete">...&lt;/BButton>
+<code>&lt;BButton variant="primary" size="sm" title="More">...&lt;/BButton>
+&lt;BButton variant="secondary" size="sm" class="text-primary" title="More">...&lt;/BButton>
+&lt;BButton variant="outline-primary" size="sm" title="More">...&lt;/BButton>
+&lt;BButton variant="link" size="sm" class="link-underline link-underline-opacity-0" title="More">...&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
