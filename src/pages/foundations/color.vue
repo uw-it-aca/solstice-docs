@@ -120,7 +120,6 @@
             <th scope="col" style="width: 50px">Color</th>
             <th scope="col" style="width: 150px">Light</th>
             <th scope="col" style="width: 150px">Dark</th>
-            <th scope="col">Token</th>
             <th scope="col">Class</th>
           </tr>
         </thead>
@@ -133,7 +132,6 @@
             </td>
             <td>#4b2e83</td>
             <td>--</td>
-            <td>$purple-500</td>
             <td>bg-brand</td>
           </tr>
         </tbody>
