@@ -90,21 +90,21 @@
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-primary" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-primary" type="button">Submit&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="primary">Button&lt;/BButton>
+<code>&lt;BButton variant="primary">Submit&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
       </div>
       <h3>Subtle (Secondary)</h3>
       <p>
-        Use the <code>secondary</code> variant for buttons that change modes
-        (i.e., edit), or for buttons that supplement core actions in button
-        groups (i.e., “cancel”)
+        Use the <code>primary-subtle</code> class for buttons that change
+        modes (i.e., edit), or for buttons that supplement core actions in
+        button groups (i.e., “cancel”)
       </p>
       <div class="mb-5">
         <CodeBlock>
@@ -117,12 +117,12 @@
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn-link bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0" type="button">Button&lt;/button>
+<code>&lt;button class="btn-link bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0" type="button">Edit&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="link" class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-">Button&lt;/BButton>
+<code>&lt;BButton variant="link" class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-">Edit&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -137,16 +137,16 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="outline-primary">Edit</BButton>
+            <BButton variant="outline-primary">Cancel</BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-outline-primary" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-outline-primary" type="button">Cancel&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="outline-primary">Button&lt;/BButton>
+<code>&lt;BButton variant="outline-primary">Cancel&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -171,12 +171,12 @@
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-link link-underline link-underline-opacity-0" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-link link-underline link-underline-opacity-0" type="button">Link&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="link" class="link-underline link-underline-opacity-0">Button&lt;/BButton>
+<code>&lt;BButton variant="link" class="link-underline link-underline-opacity-0">Link&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -268,7 +268,7 @@
             <BButton
               variant="link"
               size="sm"
-              class="me-2 bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0"
+              class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0 me-2"
               title="More"
               ><i class="bi bi-three-dots"></i
             ></BButton>
@@ -290,7 +290,7 @@
           <template #bootstrap>
             <pre class="language-html">
 <code>&lt;button class="btn btn-primary btn-sm" type="button" title="More">...&lt;/button>
-&lt;button class="btn btn-secondary btn-sm" type="button" title="More">...&lt;/button>
+&lt;button class="btn btn-link btn-sm bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0" type="button" title="More">...&lt;/button>
 &lt;button class="btn btn-outline-primary btn-sm" type="button" title="More">...&lt;/button>
 &lt;button class="btn btn-link btn-sm link-underline link-underline-opacity-0" type="button" title="More">...&lt;/button>
 </code></pre>
@@ -298,7 +298,7 @@
           <template #vue>
             <pre class="language-html">
 <code>&lt;BButton variant="primary" size="sm" title="More">...&lt;/BButton>
-&lt;BButton variant="secondary" size="sm" class="text-primary" title="More">...&lt;/BButton>
+&lt;BButton variant="link" size="sm" class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0" title="More">...&lt;/BButton>
 &lt;BButton variant="outline-primary" size="sm" title="More">...&lt;/BButton>
 &lt;BButton variant="link" size="sm" class="link-underline link-underline-opacity-0" title="More">...&lt;/BButton>
 </code></pre>

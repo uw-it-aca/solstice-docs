@@ -442,8 +442,6 @@
         </tbody>
       </table>
 
-      <p>Related components: Buttons (primary), Links</p>
-
       <p><span class="fw-bold">Subtle</span> (secondary action)</p>
       <table class="table">
         <thead>
@@ -489,7 +487,22 @@
         </tbody>
       </table>
 
-      <p>Related components: Buttons (secondary), Links</p>
+      <p>Related components: Buttons, Links</p>
+
+      <CodeBlock>
+        <template #preview>
+          <p>
+            <button type="button" class="btn btn-primary me-2">Primary</button>
+            <button
+              type="button"
+              class="btn btn-link bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0"
+            >
+              Secondary
+            </button>
+          </p>
+          <div>Hello world. This is a <a href="#">link</a> to something.</div>
+        </template>
+      </CodeBlock>
 
       <h4>Secondary (???)</h4>
       <p>Secondary is a neutral color used to convey an alternate state????</p>
@@ -587,10 +600,6 @@
             >Success</span
           >
           <span class="badge rounded-pill text-bg-secondary">Success</span>
-
-          <div class="alert alert-secondary small mt-3" role="alert">
-            A simple secondary alert—check it out!
-          </div>
         </template>
       </CodeBlock>
 
@@ -760,7 +769,6 @@
           </tr>
         </tbody>
       </table>
-      <p>Related components: Buttons (destructive), Badges</p>
 
       <p><span class="fw-bold">Subtle</span></p>
       <table class="table">
@@ -824,7 +832,7 @@
           </tr>
         </tbody>
       </table>
-      <p>Related components: Alerts, Badges</p>
+      <p>Related components: Buttons, Alerts, Badges</p>
 
       <CodeBlock>
         <template #preview>
@@ -837,6 +845,8 @@
           <div class="alert alert-danger small mt-3" role="alert">
             A simple danger alert—check it out!
           </div>
+
+          <button type="button" class="btn btn-danger">Delete</button>
         </template>
       </CodeBlock>
 
@@ -880,8 +890,6 @@
           </tr>
         </tbody>
       </table>
-      <p>Related components: Badges</p>
-
       <p><span class="fw-bold">Subtle</span></p>
       <table class="table">
         <thead>
@@ -1000,7 +1008,6 @@
           </tr>
         </tbody>
       </table>
-      <p>Related components: Badges</p>
 
       <p><span class="fw-bold">Subtle</span></p>
       <table class="table">
@@ -1080,7 +1087,9 @@
         </template>
       </CodeBlock>
 
-      <h4>Academic Terms (Quarters)</h4>
+      <hr class="my-5">
+
+      <h3 class="fw-bold">Academic Terms (Quarters)</h3>
       <p>
         Academic terms are differentiated using distinct colors for each term.
         Sub-terms (e.g. Summer A and B terms) should use the color associated
@@ -1286,7 +1295,7 @@
 
       <hr class="my-5" />
 
-      <h3 class="fw-bold">Decorative Color Palette</h3>
+      <h3 class="fw-bold">Decorative Colors</h3>
       <p>
         When it is not necessary to communicate semantics, decorative colors can
         be used to differentiate objects in an interface – they are primarily
@@ -1434,7 +1443,7 @@
         <li>use borders for decorative colors</li>
       </ul>
 
-      <hr class="my-5">
+      <hr class="my-5" />
 
       <h3 class="fw-bold">Color Usage in Data Visualizations</h3>
       <p>
