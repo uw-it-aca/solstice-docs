@@ -100,7 +100,7 @@
           </template>
         </CodeBlock>
       </div>
-      <h3>Secondary</h3>
+      <h3>Subtle (Secondary)</h3>
       <p>
         Use the <code>secondary</code> variant for buttons that change modes
         (i.e., edit), or for buttons that supplement core actions in button
@@ -109,16 +109,20 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="secondary">Edit</BButton>
+            <BButton
+              variant="link"
+              class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0"
+              >Edit</BButton
+            >
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-secondary" type="button">Button&lt;/button>
+<code>&lt;button class="btn-link bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0" type="button">Button&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="secondary">Button&lt;/BButton>
+<code>&lt;BButton variant="link" class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-">Button&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -161,18 +165,18 @@
           <template #preview>
             <BButton
               variant="link"
-              class="bg-secondary-hover link-underline link-underline-opacity-0"
+              class="bg-link link-underline link-underline-opacity-0"
               >Link</BButton
             >
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-link bg-secondary-hover link-underline link-underline-opacity-0" type="button">Button&lt;/button>
+<code>&lt;button class="btn btn-link link-underline link-underline-opacity-0" type="button">Button&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="link" class="bg-secondary-hover link-underline link-underline-opacity-0">Button&lt;/BButton>
+<code>&lt;BButton variant="link" class="link-underline link-underline-opacity-0">Button&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>

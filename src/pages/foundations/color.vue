@@ -114,15 +114,31 @@
         Spirit Purple to maintain a sleek visual design.
       </p>
 
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <div
-            class="text-bg-brand rounded p-2 small"
-            style="width: 60px; height: 60px"
-          ></div>
-          <small>#4b2e83 / $purple-500</small>
-        </li>
-      </ul>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Token</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bg-brand rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#4b2e83</td>
+            <td>--</td>
+            <td>$purple-500</td>
+            <td>bg-brand</td>
+          </tr>
+        </tbody>
+      </table>
+
       <p class="fw-bold">Do:</p>
       <ul>
         <li>only use the base color (no variants)</li>
@@ -156,138 +172,195 @@
 
       <h4>Surface (backgrounds)</h4>
       <p>These colors change based on color mode.</p>
-      <ul class="list-unstyled">
-        <li class="">
-          <div
-            class="bg-transparent border rounded p-2 small"
-            style="width: 60px; height: 60px"
-          >
-            &nbsp;
-          </div>
-          <small>transparent</small>
-        </li>
-        <li class="">
-          <div
-            class="bg-body border rounded p-2 small"
-            style="width: 60px; height: 60px"
-          >
-            &nbsp;
-          </div>
-          <small>#ffffff / #212529</small>
-        </li>
-        <li class="">
-          <div
-            class="bg-body-tertiary border rounded p-2 small text-nowrap"
-            style="width: 60px; height: 60px"
-          >
-            &nbsp;
-          </div>
-          <small>#f8f9fa / #2b3035</small>
-        </li>
-        <li class="">
-          <div
-            class="bg-body-secondary rounded p-2 text-nowrap small"
-            style="width: 60px; height: 60px"
-          >
-            &nbsp;
-          </div>
-          <small>#e9ecef / #343a40</small>
-        </li>
-      </ul>
 
-      <h4>Borders and Dividers</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="bg-transparent border rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>--</td>
+            <td>--</td>
+            <td>bg-transparent</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-body border rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#ffffff</td>
+            <td>#212529</td>
+            <td>bg-body</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-body-tertiary border rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#f8f9fa</td>
+            <td>#2b3035</td>
+            <td>bg-body-tertiary</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-body-secondary rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#e9ecef</td>
+            <td>#343a40</td>
+            <td>bg-body-secondary</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-dark-subtle rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#ced4da</td>
+            <td>#1a1d20</td>
+            <td>bg-dark-subtle</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Borders and Dividers (Horizontal rule)</h4>
       <p>These colors change based on color mode.</p>
-      <ul class="list-unstyled">
-        <li>
-          <div
-            class="text-dark rounded p-2 small"
-            style="width: 60px; height: 60px"
-            :style="
-              colorMode === 'light'
-                ? 'background-color: #dee2e6'
-                : 'background-color: #495057'
-            "
-          >
-            &nbsp;
-          </div>
-          <small>borders: #dee2e6 / #495057</small>
-        </li>
-        <li>
-          <div
-            class="text-dark rounded p-2 small"
-            style="width: 60px; height: 60px"
-            :style="
-              colorMode === 'light'
-                ? 'background-color: #c8c8c9'
-                : 'background-color: #f7f8f9'
-            "
-          >
-            &nbsp;
-          </div>
-          <small>hr: #c8c8c9 / #f7f8f9</small>
-        </li>
-      </ul>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #dee2e6'
+                    : 'background-color: #495057'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#dee2e6</td>
+            <td>#495057</td>
+            <td>border</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #c8c8c9'
+                    : 'background-color: #f7f8f9'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#c8c8c9</td>
+            <td>#f7f8f9</td>
+            <td>hr (element)</td>
+          </tr>
+        </tbody>
+      </table>
 
       <h4>Text</h4>
       <p>Default text color changes based on color mode.</p>
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <div
-            class="rounded p-2 small"
-            :class="colorMode === 'light' ? 'text-light' : 'text-dark'"
-            style="width: 60px; height: 60px"
-            :style="
-              colorMode === 'light'
-                ? 'background-color: #212529'
-                : 'background-color: #dee2e6'
-            "
-          >
-            &nbsp;
-          </div>
-          <small>#212529 / #dee2e6</small>
-        </li>
-      </ul>
 
-      <p>These colors <strong>do not change</strong> based on color mode.</p>
-      <ul class="list-unstyled">
-        <li class="">
-          <div
-            class="bg-white border text-dark rounded p-2 small"
-            style="width: 60px; height: 60px"
-          >
-            &nbsp;
-          </div>
-          <small>#ffffff</small>
-        </li>
-        <li class="">
-          <div
-            class="bg-light border text-dark rounded p-2 small"
-            style="width: 60px; height: 60px"
-          >
-            &nbsp;
-          </div>
-          <small>#f8f9fa</small>
-        </li>
-        <li class="">
-          <div
-            class="bg-dark border text-light rounded p-2 small"
-            :class="colorMode === 'dark' ? 'border' : ''"
-            style="width: 60px; height: 60px"
-          >
-            &nbsp;
-          </div>
-          <small>#212529</small>
-        </li>
-        <li class="">
-          <div
-            class="bg-black text-light rounded p-2 small"
-            style="width: 60px; height: 60px"
-          >
-            &nbsp;
-          </div>
-          <small>#000000</small>
-        </li>
-      </ul>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #212529'
+                    : 'background-color: #dee2e6'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#212529</td>
+            <td>#dee2e6</td>
+            <td>text-body</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded border"
+                style="width: 30px; height: 30px; background: #fff"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#ffffff</td>
+            <td>--</td>
+            <td>text-white</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px; background: #000"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#000000</td>
+            <td>--</td>
+            <td>text-black</td>
+          </tr>
+        </tbody>
+      </table>
 
       <p class="fw-bold">Do:</p>
       <ul>
@@ -302,7 +375,7 @@
 
       <hr class="my-5" />
 
-      <h3 class="fw-bold">Semantic</h3>
+      <h3 class="fw-bold">Semantic (Bootstrap themes)</h3>
       <p>
         Semantic colors are used to denote which are actionable elements,
         messaging type (i.e. informational, warning, or critical), an object’s
@@ -321,7 +394,7 @@
         group can be used.
       </p>
 
-      <h4>Action</h4>
+      <h4>Primary (Action)</h4>
       <p>
         Action colors are used to pull focus to and communicate which are
         actionable UI elements. They should be reserved for things like buttons,
@@ -332,18 +405,194 @@
           defined here.</span
         >
       </p>
+      <p><span class="fw-bold">Emphasis</span> (default action)</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bg-primary rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#2f68cb</td>
+            <td>--</td>
+            <td>.bg-primary</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-white border rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#ffffff</td>
+            <td>--</td>
+            <td>.text-white</td>
+          </tr>
+        </tbody>
+      </table>
 
-      <ul class="list-unstyled">
-        <li class="">
-          <div
-            class="text-bg-primary rounded p-2 small"
-            style="width: 60px; height: 60px"
+      <p>Related components: Buttons (primary), Links</p>
+
+      <p><span class="fw-bold">Subtle</span> (secondary action)</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="bg-primary-subtle rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#cfe2ff</td>
+            <td>#031633</td>
+            <td>.bg-primary-subtle</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #052c65'
+                    : 'background-color: #6ea8fe'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#052c65</td>
+            <td>#6ea8fe</td>
+            <td>.text-primary-emphasis</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Related components: Buttons (secondary), Links</p>
+
+      <h4>Secondary (???)</h4>
+      <p>Secondary is a neutral color used to convey an alternate state????</p>
+
+      <p><span class="fw-bold">Emphasis</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="bg-secondary rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#198754</td>
+            <td>--</td>
+            <td>.bg-secondary</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-white border rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#ffffff</td>
+            <td>--</td>
+            <td>.text-white</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><span class="fw-bold">Subtle</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="bg-secondary-subtle rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#e2e3e5</td>
+            <td>#161719</td>
+            <td>.bg-secondary-subtle</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #2b2f32'
+                    : 'background-color: #a7acb1'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#2b2f32</td>
+            <td>#a7acb1</td>
+            <td>.text-secondary-emphasis</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Related components: Badges</p>
+
+      <CodeBlock>
+        <template #preview>
+          <span
+            class="badge rounded-pill bg-secondary-subtle text-secondary-emphasis me-1"
+            >Success</span
           >
-            &nbsp;
+          <span class="badge rounded-pill text-bg-secondary">Success</span>
+
+          <div class="alert alert-secondary small mt-3" role="alert">
+            A simple secondary alert—check it out!
           </div>
-          <small> #2f68cb</small>
-        </li>
-      </ul>
+        </template>
+      </CodeBlock>
 
       <h4>Success</h4>
       <p>
@@ -353,54 +602,106 @@
         action from the user.
       </p>
 
-      <div class="d-flex">
-        <div class="w-50 flex-fill">
-          <p><span class="fw-bold">Subtle</span> (default)</p>
-          <ul class="list-inline">
-            <li class="list-inline-item">
+      <p><span class="fw-bold">Emphasis</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bg-success rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#198754</td>
+            <td>--</td>
+            <td>.bg-success</td>
+          </tr>
+          <tr>
+            <td>
               <div
-                class="bg-success-subtle rounded p-2 small"
-                style="width: 60px; height: 60px"
+                class="bg-white border rounded"
+                style="width: 30px; height: 30px"
               >
                 &nbsp;
               </div>
-              <small>#d1e7dd / #051b11</small>
-            </li>
-            <li class="list-inline-item">
+            </td>
+            <td>#ffffff</td>
+            <td>--</td>
+            <td>.text-white</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><span class="fw-bold">Subtle</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
               <div
-                class="text-white rounded p-2 small text-nowrap"
-                style="width: 60px; height: 60px; background: #0a3622"
+                class="bg-success-subtle rounded"
+                style="width: 30px; height: 30px"
               >
                 &nbsp;
               </div>
-              <small> #0a3622</small>
-            </li>
-          </ul>
-        </div>
-        <div class="w-50 flex-fill">
-          <p><span class="fw-bold">Emphasis</span></p>
-          <ul class="list-inline">
-            <li class="list-inline-item">
+            </td>
+            <td>#d1e7dd</td>
+            <td>#051b11</td>
+            <td>.bg-success-subtle</td>
+          </tr>
+          <tr>
+            <td>
               <div
-                class="text-bg-success rounded p-2 small"
-                style="width: 60px; height: 60px"
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #a3cfbb'
+                    : 'background-color: #0f5132'
+                "
               >
                 &nbsp;
               </div>
-              <small> #198754</small>
-            </li>
-            <li class="list-inline-item">
+            </td>
+            <td>#a3cfbb</td>
+            <td>#0f5132</td>
+            <td>.border-success-subtle</td>
+          </tr>
+          <tr>
+            <td>
               <div
-                class="bg-white border text-white rounded p-2 small text-nowrap"
-                style="width: 60px; height: 60px; background: #0a3622"
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #0a3622'
+                    : 'background-color: #75b798'
+                "
               >
                 &nbsp;
               </div>
-              <small> #ffffff</small>
-            </li>
-          </ul>
-        </div>
-      </div>
+            </td>
+            <td>#0a3622</td>
+            <td>#75b798</td>
+            <td>.text-success-emphasis</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Related components: Alerts, Badges</p>
 
       <CodeBlock>
         <template #preview>
@@ -422,48 +723,113 @@
         an item needs immediate attention, or that an action is impossible,
         blocked, or has resulted in an error.
       </p>
-      <div class="d-flex">
-        <div class="w-50 flex-fill">
-          <p><span class="fw-bold">Subtle</span> (default)</p>
-        </div>
-        <div class="w-50 flex-fill">
-          <p><span class="fw-bold">Emphasis</span></p>
-        </div>
-      </div>
 
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <div
-            class="bg-danger-subtle rounded p-2 small"
-            style="width: 120px; height: 60px"
-          >
-            danger-subtle
-          </div>
-          <small>#f8d7da / #2c0b0e</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="text-bg-danger rounded p-2 small"
-            style="width: 120px; height: 60px"
-          >
-            danger
-          </div>
-          <small> #cb444a</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="text-white rounded p-2 small text-nowrap"
-            style="width: 140px; height: 60px; background: #58151c"
-          >
-            danger-emphasis
-          </div>
-          <small> #58151c</small>
-        </li>
-      </ul>
+      <p><span class="fw-bold">Emphasis</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bg-danger rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#cb444a</td>
+            <td>--</td>
+            <td>.bg-danger</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-white border rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#ffffff</td>
+            <td>--</td>
+            <td>.text-white</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Related components: Buttons (destructive), Badges</p>
+
+      <p><span class="fw-bold">Subtle</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="bg-danger-subtle rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#f8d7da</td>
+            <td>#2c0b0e</td>
+            <td>.bg-danger-subtle</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #f1aeb5'
+                    : 'background-color: #842029'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#f1aeb5</td>
+            <td>#842029</td>
+            <td>.border-danger-subtle</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #58151c'
+                    : 'background-color: #ea8691'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#58151c</td>
+            <td>#ea8691</td>
+            <td>.text-danger-emphasis</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Related components: Alerts, Badges</p>
+
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-danger-subtle border border-danger-subtle text-danger-emphasis me-1"
+            class="badge rounded-pill bg-danger-subtle text-danger-emphasis me-1"
             >Danger</span
           >
           <span class="badge rounded-pill text-bg-danger">Danger</span>
@@ -480,49 +846,110 @@
         or statuses that are in-progress, pending, or require user intervention,
         but do not prevent a task from being completed.
       </p>
-      <div class="d-flex">
-        <div class="w-50 flex-fill">
-          <p><span class="fw-bold">Subtle</span> (default)</p>
-        </div>
-        <div class="w-50 flex-fill">
-          <p><span class="fw-bold">Emphasis</span></p>
-        </div>
-      </div>
 
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <div
-            class="bg-warning-subtle rounded p-2 small"
-            style="width: 120px; height: 60px"
-          >
-            warning-subtle
-          </div>
-          <small>#ced4da / #1a1d20</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="text-bg-warning rounded p-2 small"
-            style="width: 120px; height: 60px"
-          >
-            warning
-          </div>
-          <small> #4c7286</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="text-white rounded p-2 small text-nowrap"
-            style="width: 140px; height: 60px; background: #664d03"
-          >
-            warning-emphasis
-          </div>
-          <small> #58151c</small>
-        </li>
-      </ul>
+      <p><span class="fw-bold">Emphasis</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bg-warning rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#cb444a</td>
+            <td>--</td>
+            <td>.bg-warning</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="bg-black rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#000000</td>
+            <td>--</td>
+            <td>.text-black</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Related components: Badges</p>
+
+      <p><span class="fw-bold">Subtle</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="bg-warning-subtle rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#ced4da</td>
+            <td>#1a1d20</td>
+            <td>.bg-warning-subtle</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #ffe69c'
+                    : 'background-color: #997404'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#ffe69c</td>
+            <td>#997404</td>
+            <td>.border-warning-subtle</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #664d03'
+                    : 'background-color: #ffda6a'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#664d03</td>
+            <td>#ffda6a</td>
+            <td>.text-warning-emphasis</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Related components: Alerts, Badges</p>
 
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-warning-subtle border border-warning-subtle text-warning-emphasis me-1"
+            class="badge rounded-pill bg-warning-subtle text-warning-emphasis me-1"
             >Warning</span
           >
           <span class="badge rounded-pill text-bg-warning">Warning</span>
@@ -539,49 +966,110 @@
         user better understand the current context, or provide benefit, like
         tips or incentives.
       </p>
-      <div class="d-flex">
-        <div class="w-50 flex-fill">
-          <p><span class="fw-bold">Subtle</span> (default)</p>
-        </div>
-        <div class="w-50 flex-fill">
-          <p><span class="fw-bold">Emphasis</span></p>
-        </div>
-      </div>
 
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <div
-            class="bg-info-subtle rounded p-2 small"
-            style="width: 120px; height: 60px"
-          >
-            info-subtle
-          </div>
-          <small>#ced4da / #1a1d20</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="text-bg-info rounded p-2 small"
-            style="width: 120px; height: 60px"
-          >
-            info
-          </div>
-          <small>#0dcaf0</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="text-white rounded p-2 small"
-            style="width: 120px; height: 60px; background: #055160"
-          >
-            info-emphasis
-          </div>
-          <small> #055160</small>
-        </li>
-      </ul>
+      <p><span class="fw-bold">Emphasis</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bg-info rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#cb444a</td>
+            <td>--</td>
+            <td>.bg-info</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="bg-black rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#000000</td>
+            <td>--</td>
+            <td>.text-black</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Related components: Badges</p>
+
+      <p><span class="fw-bold">Subtle</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="bg-info-subtle rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#CFF4FF</td>
+            <td>#032830</td>
+            <td>.bg-info-subtle</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #9eeaf9'
+                    : 'background-color: #087990'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#9eeaf9</td>
+            <td>#087990</td>
+            <td>.border-info-subtle</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #055160'
+                    : 'background-color: #6edff6'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#055160</td>
+            <td>#6edff6</td>
+            <td>.text-info-emphasis</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Related components: Alerts, Badges</p>
 
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-info-subtle border border-info-subtle text-info-emphasis me-1"
+            class="badge rounded-pill bg-info-subtle text-info-emphasis me-1"
             >Info</span
           >
           <span class="badge rounded-pill text-bg-info">Info</span>
@@ -601,44 +1089,59 @@
         and ideally in conjunction with the quarter labels so as to clearly
         indicate their meaning.
       </p>
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <div
-            class="bg-autumn rounded p-2 text-black small"
-            style="width: 120px; height: 60px"
-          >
-            autumn
-          </div>
-          <small>#ffc8b7</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="bg-winter rounded p-2 text-black small"
-            style="width: 120px; height: 60px"
-          >
-            winter
-          </div>
-          <small>#ccddff</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="bg-spring rounded p-2 text-black small"
-            style="width: 120px; height: 60px"
-          >
-            spring
-          </div>
-          <small>#ccffcc</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="bg-summer rounded p-2 text-black small"
-            style="width: 120px; height: 60px"
-          >
-            summer
-          </div>
-          <small>#fcf990</small>
-        </li>
-      </ul>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bg-autumn rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#ffc8b7</td>
+            <td>--</td>
+            <td>bg-autumn</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="bg-winter rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#ccddff</td>
+            <td>--</td>
+            <td>bg-winter</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="bg-spring rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#ccffcc</td>
+            <td>--</td>
+            <td>bg-spring</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="bg-summer rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>#fcf990</td>
+            <td>--</td>
+            <td>bg-summer</td>
+          </tr>
+        </tbody>
+      </table>
 
       <p class="fw-bold">Do:</p>
       <ul>
@@ -667,7 +1170,7 @@
         states:
       </p>
 
-      <h4>Draft State (Gray / Neutral)</h4>
+      <h4>Draft State (Gray / Secondary)</h4>
       <p>
         Item that is not in use or ready for review or initial state after
         creating the item.
@@ -682,15 +1185,16 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-dark-subtle border border-dark-subtle text-dark-emphasis me-1"
+            class="badge rounded-pill bg-secondary-subtle text-secondary-emphasis me-1"
             >Draft</span
           >
-          <span class="badge rounded-pill text-bg-dark">In Progress</span>
+          <span class="badge rounded-pill text-bg-secondary">Draft</span>
         </template>
       </CodeBlock>
 
       <h4>Ready State (Cyan / Info)</h4>
       <p>Item(s) created/drafted and awaiting further input or review.</p>
+
       <p>
         Examples:
         <span class="fst-italic"
@@ -701,15 +1205,16 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-info-subtle border border-info-subtle text-info-emphasis me-1"
+            class="badge rounded-pill bg-info-subtle text-info-emphasis me-1"
             >Approved</span
           >
-          <span class="badge rounded-pill text-bg-info">Planned</span>
+          <span class="badge rounded-pill text-bg-info">Approved</span>
         </template>
       </CodeBlock>
 
       <h4>Suspended State [Actionable] (Orange / Warning)</h4>
       <p>Item on hold, not in use but may be used in the future.</p>
+
       <p>
         Examples:
         <span class="fst-italic">Suspended, Exempt, Inactive, Locked</span>
@@ -718,14 +1223,14 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-warning-subtle border border-warning-subtle text-warning-emphasis me-1"
+            class="badge rounded-pill bg-warning-subtle text-warning-emphasis me-1"
             >Inactive</span
           >
-          <span class="badge rounded-pill text-bg-warning">Suspended</span>
+          <span class="badge rounded-pill text-bg-warning">Inactive</span>
         </template>
       </CodeBlock>
 
-      <h4>Suspended State [Not Actionable] (Gray / Neutral)</h4>
+      <h4>Suspended State [Not Actionable] (Gray / Secondary)</h4>
       <p>Item on hold, not in use but may be used in the future.</p>
       <p>
         Examples:
@@ -735,10 +1240,10 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-dark-subtle border border-dark-subtle text-dark-emphasis me-1"
-            >Inactive</span
+            class="badge rounded-pill bg-secondary-subtle text-secondary-emphasis me-1"
+            >Locked</span
           >
-          <span class="badge rounded-pill text-bg-dark">Locked</span>
+          <span class="badge rounded-pill text-bg-secondary">Locked</span>
         </template>
       </CodeBlock>
 
@@ -755,10 +1260,10 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-success-subtle border border-success-subtle text-success-emphasis me-1"
+            class="badge rounded-pill bg-success-subtle text-success-emphasis me-1"
             >Completed</span
           >
-          <span class="badge rounded-pill text-bg-success">Scheduled</span>
+          <span class="badge rounded-pill text-bg-success">Completed</span>
         </template>
       </CodeBlock>
 
@@ -772,10 +1277,10 @@
       <CodeBlock>
         <template #preview>
           <span
-            class="badge rounded-pill bg-danger-subtle border border-danger-subtle text-danger-emphasis me-1"
+            class="badge rounded-pill bg-danger-subtle text-danger-emphasis me-1"
             >Closed</span
           >
-          <span class="badge rounded-pill text-bg-danger">Error</span>
+          <span class="badge rounded-pill text-bg-danger">Closed</span>
         </template>
       </CodeBlock>
 
@@ -789,81 +1294,125 @@
         etc.
       </p>
 
-      <p>These colors change based on color mode.</p>
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <div
-            class="bg-decorative-1 rounded p-2 text-white small"
-            style="width: 120px; height: 60px"
-          >
-            decorative-1
-          </div>
-          <small>#ac4bb9 / #bd6fc7</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="bg-decorative-2 rounded p-2 text-white small"
-            style="width: 120px; height: 60px"
-          >
-            decorative-2
-          </div>
-          <small>#008099 / #3399ad</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="bg-decorative-3 rounded p-2 text-white small"
-            style="width: 120px; height: 60px"
-          >
-            decorative-3
-          </div>
-          <small>#bd4e05 / #ca7137</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="bg-decorative-4 rounded p-2 text-white small"
-            style="width: 120px; height: 60px"
-          >
-            decorative-4
-          </div>
-          <small>#787a00 / #939533</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="bg-decorative-5 rounded p-2 text-white small"
-            style="width: 120px; height: 60px"
-          >
-            decorative-5
-          </div>
-          <small>#c84674 / #d36b90</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="bg-decorative-6 rounded p-2 text-white small"
-            style="width: 120px; height: 60px"
-          >
-            decorative-6
-          </div>
-          <small>#735696 / #8f78ab</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="bg-decorative-7 rounded p-2 text-white small"
-            style="width: 120px; height: 60px"
-          >
-            decorative-7
-          </div>
-          <small>#a06b22 / #b3894e</small>
-        </li>
-        <li class="list-inline-item">
-          <div
-            class="bg-decorative-8 rounded p-2 text-white small"
-            style="width: 120px; height: 60px"
-          >
-            decorative-8
-          </div>
-          <small>#374dc2 / #5f71ce</small>
-        </li>
-      </ul>
+      <h4>Surface (background)</h4>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 150px">Light</th>
+            <th scope="col" style="width: 150px">Dark</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="bg-decorative-1 rounded p-2 text-white small"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#ac4bb9</td>
+            <td>#bd6fc7</td>
+            <td>bg-decorative-1</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-decorative-2 rounded p-2 text-white small"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#008099</td>
+            <td>#3399ad</td>
+            <td>bg-decorative-2</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-decorative-3 rounded p-2 text-white small"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#bd4e05</td>
+            <td>#ca7137</td>
+            <td>bg-decorative-3</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-decorative-4 rounded p-2 text-white small"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#787a00</td>
+            <td>#939533</td>
+            <td>bg-decorative-4</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-decorative-5 rounded p-2 text-white small"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#c84674</td>
+            <td>#d36b90</td>
+            <td>bg-decorative-5</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-decorative-6 rounded p-2 text-white small"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#735696</td>
+            <td>#8f78ab</td>
+            <td>bg-decorative-6</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-decorative-7 rounded p-2 text-white small"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#a06b22</td>
+            <td>#b3894e</td>
+            <td>bg-decorative-7</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-decorative-8 rounded p-2 text-white small"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#374dc2</td>
+            <td>#5f71ce</td>
+            <td>bg-decorative-8</td>
+          </tr>
+        </tbody>
+      </table>
+
       <p class="fw-bold">Do:</p>
       <ul>
         <li>
@@ -885,7 +1434,9 @@
         <li>use borders for decorative colors</li>
       </ul>
 
-      <p class="fw-bold mb-0">Color Usage in Data Visualizations</p>
+      <hr class="my-5">
+
+      <h3 class="fw-bold">Color Usage in Data Visualizations</h3>
       <p>
         <span class="fw-bold fst-italic">Single Data Series:</span> Use when
         there is a single data series. For example, a bar chart, column chart,
