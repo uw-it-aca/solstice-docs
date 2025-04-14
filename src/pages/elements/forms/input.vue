@@ -357,31 +357,34 @@
           </ul>
         </template>
       </UsageBlock>
-      <UsageBlock variant="dont"
-        ><template #text
-          ><p>
-            <strong>Don't add a colon (:) at the end of a field label.</strong>
-          </p>
-          <p class="small">
-            The proximity of label to input already implies the relationship
-            between the two elements.
-          </p>
+      <UsageBlock variant="dont">
+        <template #row>
+          <UsageBlockRow>
+            <template #preview
+              ><p>
+                <strong
+                  >Don't add a colon (:) at the end of a field label.</strong
+                >
+              </p>
+              <p class="small">
+                The proximity of label to input already implies the relationship
+                between the two elements.
+              </p>
+            </template>
+            <template #description>
+              <label for="validationCustom02" class="form-label">
+                Form label:
+              </label>
+              <input
+                id="validationCustom02"
+                type="text"
+                class="form-control"
+                value=""
+              />
+            </template>
+          </UsageBlockRow>
         </template>
-        <template #preview>
-          <label for="validationCustom02" class="form-label">
-            Form label:
-          </label>
-          <input
-            id="validationCustom02"
-            type="text"
-            class="form-control"
-            value=""
-          />
-        </template>
-      </UsageBlock>
-
-      <UsageBlock variant="dont"
-        ><template #text
+        <template #text
           ><p><strong>Don't use floating labels.</strong></p>
           <p class="small">
             Fields with text in them are less noticeable, in addition, users
@@ -404,8 +407,9 @@
             />
             <label for="floatingInput">Email address</label>
           </div>
-        </template></UsageBlock
-      >
+        </template>
+    </UsageBlock
+    >
 
       <h3 class="fw-medium ff-encode-sans pt-3 pb-3">Field</h3>
       <UsageBlock variant="dont"
@@ -925,7 +929,7 @@
   &lt;a href="#" class="text-dark ms-2" data-bs-toggle="tooltip" data-bs-title="Another tooltip">
     &lt;i class="bi bi-question-circle-fill text-primary text-opacity-75">&lt;/i>
   &lt;/a>
-  &lt;input id="validationCustom02" type="text" class="form-control" value=""/>
+  &lt;input id="validationCustom02" type="text" class="form-control" value="">
   &lt;div id="" class="form-text">Constraint text&lt;/div>
   &lt;div class="invalid-feedback">Client-side error message.&lt;/div>
 &lt;/div>
