@@ -1,5 +1,7 @@
 <template>
-  <span class="visually-hidden">Example:</span>
+  <div class="position-relative">
+    <span class="visually-hidden">Example:</span>
+  </div>
   <div class="border rounded mb-3">
     <div v-if="$slots['preview']">
       <div class="preview p-4 m-2">
@@ -23,9 +25,9 @@ import "prismjs/components/prism-scss";
 import "prismjs/themes/prism.css";
 
 export default {
-mounted() {
-  Prism.highlightAll();
-},
+  mounted() {
+    Prism.highlightAll();
+  },
 };
 </script>
 
@@ -33,29 +35,29 @@ mounted() {
 // global styleguide
 
 .codeblock {
-pre {
-  background: transparent !important;
-  margin: 0 !important;
-  color: inherit !important;
-}
+  pre {
+    background: transparent !important;
+    margin: 0 !important;
+    color: inherit !important;
+  }
 
-code {
-  color: inherit !important;
-  text-shadow: none !important;
-}
+  code {
+    color: inherit !important;
+    text-shadow: none !important;
+  }
 }
 
 .preview {
-// reset container padding for render display
-.container-xl {
-  padding-left: 12px;
-  padding-right: 12px;
-}
+  // reset container padding for render display
+  .container-xl {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 
-// reset vh-100 to something more manageable for display
-.vh-100 {
-  min-height: 30vh !important;
-  max-height: 40vh !important;
-}
+  // reset vh-100 to something more manageable for display
+  .vh-100 {
+    min-height: 30vh !important;
+    max-height: 40vh !important;
+  }
 }
 </style>
