@@ -1,5 +1,5 @@
 <template>
-  <li>
+  <li git class="position-relative">
     <span class="visually-hidden">Example:</span>
     <div class="mb-3">
       <div v-if="$slots['preview']">

@@ -593,7 +593,7 @@
           <a href="https://getbootstrap.com/docs/5.3/forms/validation/"
             >Bootstrap client-side validation</a
           >
-          isn’t accessible:
+          isn't accessible:
         </li>
         <ul>
           <li>

@@ -8,8 +8,8 @@
         <i class="bi bi-check-circle-fill text-success me-3"></i>Do
       </div>
       <template v-if="$slots['row']"
-        ><ul v-if="$slots['row']">
-          <slot name="row">test</slot></ul
+        ><ul>
+          <slot name="row"></slot></ul
       ></template>
       <div>
         <template v-if="$slots['text']">
