@@ -1,18 +1,28 @@
 <template>
-  <li git class="position-relative">
-    <span class="visually-hidden">Example:</span>
-    <div class="mb-3">
-      <div v-if="$slots['preview']">
-        <div class="preview p-4 m-2">
-          <slot name="preview"></slot>
-        </div>
-      </div>
+  <li class="d-flex align-items-start mb-5 mb-md-2">
+    <div
+    v-if="variant == 'do'" class=""
+    >
+    <i class="bi bi-check-circle-fill text-success ms-2 me-3"></i>
     </div>
-    <template v-if="$slots['description']">
-      <div class="mb-1 fst-italic small text-body-secondary">
-        <slot name="description"></slot>
-      </div>
-    </template>
+    <div v-else>
+      <i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i>
+    </div>
+    <div class="d-flex flex-column flex-md-row w-100">
+      <template v-if="$slots['description']">
+        <div class="mb-1 w-100">
+          <slot name="description"></slot>
+        </div>
+      </template>
+      <template v-if="$slots['preview']">
+        <div class="position-relative w-100">
+          <span class="visually-hidden">Example:</span>
+          <div class="preview ps-0 px-md-4">
+            <slot name="preview"></slot>
+          </div>
+        </div>
+      </template>
+    </div>
   </li>
 </template>
 
@@ -25,10 +35,21 @@ import "prismjs/components/prism-scss";
 import "prismjs/themes/prism.css";
 
 export default {
+  props: {
+    variant: {
+      type: String,
+      default: "do",
+      required: false,
+    },
+  },
+  data: function () {
+    return {};
+  },
   mounted() {
     Prism.highlightAll();
   },
 };
+
 </script>
 
 <style lang="scss">

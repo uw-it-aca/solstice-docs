@@ -328,22 +328,26 @@
       <h3 class="fw-medium ff-encode-sans pt-3 pb-3">Label</h3>
 
       <UsageBlock variant="do"
-        ><template #text>
-          <ul>
-            <li>
+        >
+        <template #row>
+          <UsageBlockRow variant="do">
+            <template #description>
               <strong
                 >Do place the label above or to the left of the form
                 field.</strong
               >
-            </li>
-            <li>
+            </template>
+          </UsageBlockRow>
+          <UsageBlockRow variant="do">
+            <template #description>
               <strong>Do use just a few words for the label</strong> – Avoid
               long labels as they can be overwhelming and distracting. Instead,
               use help and constraint text to provide supplementary information,
               context, and input constraints or examples.
-            </li>
-
-            <li>
+            </template>
+          </UsageBlockRow>
+          <UsageBlockRow variant="do">
+            <template #description>
               <strong
                 >Do use verbs like “enter,” “add,” or “input” sparingly </strong
               >– Generally use the label to describe what information a user
@@ -352,16 +356,20 @@
               enter, add, or input information in order to complete the form.
               The exception to this is if an interaction is new or unfamiliar, a
               user may need more guidance.
-            </li>
-            <li><strong>Do use sentence case.</strong></li>
-          </ul>
+            </template>
+          </UsageBlockRow>
+          <UsageBlockRow variant="do">
+            <template #description>
+              <strong>Do use sentence case.</strong>
+            </template>
+          </UsageBlockRow>
         </template>
       </UsageBlock>
       <UsageBlock variant="dont">
         <template #row>
-          <UsageBlockRow>
-            <template #preview
-              ><p>
+          <UsageBlockRow variant="dont">
+            <template #description>
+              <p>
                 <strong
                   >Don't add a colon (:) at the end of a field label.</strong
                 >
@@ -371,7 +379,8 @@
                 between the two elements.
               </p>
             </template>
-            <template #description>
+            <template #preview
+              >
               <label for="validationCustom02" class="form-label">
                 Form label:
               </label>
@@ -381,37 +390,38 @@
                 class="form-control"
                 value=""
               />
+            </template>          </UsageBlockRow>
+          <UsageBlockRow variant="dont">
+            <template #description
+              ><p><strong>Don't use floating labels.</strong></p>
+              <p class="small">
+                Fields with text in them are less noticeable, in addition, users
+                might think there is already a default value entered in the field.
+                Also, some browsers and assistive technologies don't properly or
+                reliably read placeholder text. Ultimately, while floating labels do
+                offer a better user experience than the label as a placeholder,
+                placing the label and any example or constraint text outside the
+                field is best.
+              </p>
+            </template>
+            <template #preview>
+              <div class="position-relative">
+                <span class="visually-hidden">Example:</span>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
             </template>
           </UsageBlockRow>
         </template>
-        <template #text
-          ><p><strong>Don't use floating labels.</strong></p>
-          <p class="small">
-            Fields with text in them are less noticeable, in addition, users
-            might think there is already a default value entered in the field.
-            Also, some browsers and assistive technologies don't properly or
-            reliably read placeholder text. Ultimately, while floating labels do
-            offer a better user experience than the label as a placeholder,
-            placing the label and any example or constraint text outside the
-            field is best.
-          </p>
-        </template>
-        <template #preview>
-          <div class="position-relative">
-            <span class="visually-hidden">Example:</span>
-          </div>
-          <div class="form-floating">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-            />
-            <label for="floatingInput">Email address</label>
-          </div>
-        </template>
-    </UsageBlock
-    >
+      </UsageBlock
+      >
 
       <h3 class="fw-medium ff-encode-sans pt-3 pb-3">Field</h3>
       <UsageBlock variant="dont"
@@ -951,8 +961,8 @@ import PreviewBlock from "@/components/PreviewBlock.vue";
 import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
-
 import { Tooltip } from "bootstrap";
+import UsageBlockRow from "@/components/UsageBlockRow.vue";
 
 export default {
   name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,

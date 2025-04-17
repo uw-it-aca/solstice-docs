@@ -1,50 +1,62 @@
 <template>
   <div
     v-if="variant == 'do'"
-    class="d-flex flex-column-reverse flex-md-row mb-5 border-3 border-start border-success"
   >
-    <div class="w-100 px-3">
-      <div class="fw-bold fs-5 mb-2">
-        <i class="bi bi-check-circle-fill text-success me-3"></i>Do
-      </div>
-      <template v-if="$slots['row']"
-        ><ul>
-          <slot name="row"></slot></ul
-      ></template>
-      <div>
-        <template v-if="$slots['text']">
+    <div class="fw-bold fs-5 mb-2">
+      Do
+    </div>
+    <div class="mb-5 border-3 border-start border-success w-100 ps-2 pe-2">
+
+      <!-- layout that uses UsageBlockRow -->
+      <template v-if="$slots['row']">
+        <ul class="list-unstyled">
+          <slot name="row"></slot>
+        </ul>
+      </template>
+
+      <!-- legacy layout for pages that don't use UsageBlockRow -->
+      <div v-else class="d-flex align-items-start">
+        <i class="bi bi-check-circle-fill text-success ms-2 me-3"></i>
+        <div class="d-flex flex-column flex-md-row w-100">
+          <div v-if="$slots['text']" class="w-100 mb-3">
           <slot name="text"></slot>
-        </template>
-        <template v-else>
-          <slot></slot>
-        </template>
+          </div>
+          <div v-if="$slots['preview']" class="w-100 ps-0 px-md-4">
+            <slot name="preview"></slot>
+          </div>
+        </div>
       </div>
     </div>
-    <div v-if="$slots['preview']" class="w-100 p-4">
-      <slot name="preview"></slot>
-    </div>
-  </div>
+
+</div>
   <div
     v-if="variant == 'dont'"
-    class="d-flex flex-column-reverse flex-md-row mb-5 border-3 border-start border-danger"
   >
-    <div class="w-100 px-3">
-      <div class="fw-bold fs-5 mb-2">
-        <i class="bi bi-x-circle-fill text-danger me-3"></i>Don&rsquo;t
+    <div class="fw-bold fs-5 mb-2">
+        Don&rsquo;t
       </div>
+    <div class="mb-5 border-3 border-start border-danger w-100 ps-2 pe-2">
 
-      <template v-if="$slots['row']"><slot name="row"></slot></template>
-      <div>
-        <template v-if="$slots['text']">
-          <slot name="text"></slot>
-        </template>
-        <template v-else>
-          <slot></slot>
-        </template>
+      <!-- layout that uses UsageBlockRow -->
+      <template v-if="$slots['row']"
+        >
+          <ul class="list-unstyled d-flex flex-column">
+            <slot name="row"></slot>
+          </ul>
+      </template>
+
+      <!-- legacy layout for pages that don't use UsageBlockRow -->
+      <div v-else class="d-flex align-items-start">
+        <i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i>
+        <div class="d-flex flex-column flex-md-row w-100">
+          <div v-if="$slots['text']" class="w-100 mb-3">
+            <slot name="text"></slot>
+          </div>
+          <div v-if="$slots['preview']" class="w-100 ps-0 px-md-4">
+            <slot name="preview"></slot>
+          </div>
+        </div>
       </div>
-    </div>
-    <div v-if="$slots['preview']" class="w-100 p-4">
-      <slot name="preview"></slot>
     </div>
   </div>
 </template>
