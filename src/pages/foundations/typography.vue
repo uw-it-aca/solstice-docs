@@ -173,6 +173,136 @@
         </li>
       </ul>
 
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 250px">Light</th>
+            <th scope="col" style="width: 250px">Dark</th>
+            <th scope="col" style="width: 250px">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="rounded border"
+                style="width: 30px; height: 30px; background: #fff"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 100px">#ffffff</span>
+              <code class="d-inline-block text-muted">$white</code>
+            </td>
+            <td>--</td>
+            <td><code>text-white</code></td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px; background: #000"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 100px">#000000</span>
+              <code class="d-inline-block text-muted">$black</code>
+            </td>
+            <td>--</td>
+            <td><code>text-black</code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 250px">Light</th>
+            <th scope="col" style="width: 250px">Dark</th>
+            <th scope="col" style="width: 250px">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #212529'
+                    : 'background-color: #dee2e6'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 100px">#212529</span>
+              <code class="d-inline-block text-muted">$gray-900</code>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 100px">#dee2e6</span>
+              <code class="d-inline-block text-muted">$gray-300</code>
+            </td>
+            <td><code>text-body</code></td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #212529bf'
+                    : 'background-color: #dee2e6bf'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 100px">#212529bf</span>
+              <code class="d-inline-block text-muted">$gray-900 (75%)</code>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 100px">#dee2e6bf</span>
+              <code class="d-inline-block text-muted">$gray-300 (75%)</code>
+            </td>
+            <td><code>text-body-secondary</code></td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #21252980'
+                    : 'background-color: #dee2e680'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 100px">#21252980</span>
+              <code class="d-inline-block text-muted">$gray-900 (50%)</code>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 100px">#dee2e680</span>
+              <code class="d-inline-block text-muted">$gray-300 (50%)</code>
+            </td>
+            <td><code>text-body-tertiary</code></td>
+          </tr>
+        </tbody>
+      </table>
+
       <h3 class="fw-medium ff-encode-sans pt-3">Decoration</h3>
       <ul>
         <li class="pb-3">
@@ -301,7 +431,11 @@ export default {
   data() {
     return {
       pageTitle: "Typography",
+      colorMode: "light",
     };
+  },
+  updated() {
+    this.colorMode = document.documentElement.getAttribute("data-bs-theme");
   },
 };
 </script>

@@ -71,8 +71,8 @@
         surface and must be bordered and contain drop shadow.
       </p>
 
-      <h2 id="variants">Variants</h2>
-      <h3>Default</h3>
+      <h2 id="variants">Types</h2>
+      <h3>Elevated</h3>
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
@@ -97,7 +97,7 @@
         </CodeBlock>
       </div>
 
-      <h3>Borderless (Panel)</h3>
+      <h3>Filled</h3>
       <p>
         More details about <BLink to="/patterns/surface/panel">Panel</BLink> can
         be reviewed in the corresponding documentation.
@@ -105,7 +105,22 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BCard class="bg-body-tertiary rounded-3" border-variant="0">
+            <BCard class="bg-body-tertiary rounded-3 mb-3" border-variant="0">
+              body
+            </BCard>
+            <BCard class="bg-body-secondary rounded-3 mb-3" border-variant="0">
+              body
+            </BCard>
+            <BCard
+              class="bg-spirit-purple-subtle rounded-3 mb-3"
+              border-variant="0"
+            >
+              body
+            </BCard>
+            <BCard
+              class="bg-husky-gold-subtle rounded-3 mb-3"
+              border-variant="0"
+            >
               body
             </BCard>
           </template>
