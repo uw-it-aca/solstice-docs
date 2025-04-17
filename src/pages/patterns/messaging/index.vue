@@ -44,6 +44,15 @@
         </li>
         <li class="col-4">
           <DescriptionBlock
+            :name="'Badge'"
+            :link="'/patterns/messaging/badge'"
+            :accessibility="true"
+            :version="'1.0.x'"
+            >aksdfjaasdf aka lightbox</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
             :name="'Modal'"
             :link="'/patterns/messaging/modal'"
             :accessibility="true"
