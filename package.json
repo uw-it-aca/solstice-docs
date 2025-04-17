@@ -15,13 +15,8 @@
     "@vueuse/core": "^13.0.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
-<<<<<<< HEAD
     "bootstrap-vue-next": "^0.28.3",
     "solstice-theme": "github:uw-it-aca/solstice-theme#develop",
-=======
-    "bootstrap-vue-next": "^0.25.2",
-    "solstice-theme": "github:uw-it-aca/solstice-theme#1.0.4",
->>>>>>> develop
     "solstice-vue": "github:uw-it-aca/solstice-vue#1.1.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
