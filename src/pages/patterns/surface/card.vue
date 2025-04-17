@@ -8,15 +8,19 @@
       </BBreadcrumb>
     </template>
     <template #lead>
-      Cards is a container of content... Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Ea nemo nobis, eligendi sit ipsa mollitia necessitatibus
-      possimus, veniam sapiente deleniti quo. Nemo error quos, eius facilis rem
-      amet deserunt est!
+      Cards visually group or highlight items related to a single subject or workflow.
     </template>
     <template #toc>
       <PageContents>
         <nav id="TableOfContents">
           <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#usage"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >When to use</a
+              >
+            </li>
             <li>
               <a
                 href="#anatomy"
@@ -26,9 +30,9 @@
             </li>
             <li>
               <a
-                href="#variants"
+                href="#types"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Variants</a
+                >Types</a
               >
             </li>
             <li>
@@ -40,9 +44,9 @@
             </li>
             <li>
               <a
-                href="#usage"
+                href="#practices"
                 class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Usage</a
+                >Best Practices</a
               >
             </li>
             <li>
@@ -52,31 +56,88 @@
                 >Accessibility</a
               >
             </li>
-            <li>
-              <a
-                href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Implementation</a
-              >
-            </li>
           </ul>
         </nav>
       </PageContents>
     </template>
-
     <template #content>
-      <h2 id="anatomy">Anatomy</h2>
-      <p>
-        Card, card header, card body, card footer. Cards are raised off the
-        surface and must be bordered and contain drop shadow.
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="usage">When to use</h2>
+      <p>Cards are versatile containers that are sometimes necessary. However, first consider if the content you are working with can be separated by better spacing, or a horizontal rule.</p>
+      <p class="fw-bold">Use a card for:</p>
+      <ul>
+        <li>visually grouping items or drawing users’ attention to them when a heading, spacing or horizontal rule is not sufficient</li>
+        <li>grouping information that pertains to a workflow or task</li>
+        <li>presenting details, summarizing key points, offering actionable insights</li>
+        <li>reinforcing application concepts/objects or metaphors (e.g. Registration Cart, Move Request, Schedule)</li>
+        <li>displaying a data set</li>
+        <li>designating a dynamic (active) content area that will change based on controls outside or inside the card</li>
+      </ul>
+      <p class="fw-bold">
+        Tiles vs. Cards
       </p>
+      <p>Tiles and cards are similar, but the main differences are:</p>
+      <ul>
+        <li>tiles are <em>actionable</em> elements (selectable or clickable), while cards can <em>contain actionable</em> elements, but are not themselves selectable or clickable</li>
+        <li>tiles only are used in <em>sets</em>, and while cards can be used <em>one at a time, or in sets</em></li>
+        <li>tiles are generally much smaller than cards</li>
+      </ul>
+      <p>If you need smaller repeatable containers that can act as selectors (checkbox, radio), <a href="../tiles">tiles</a> are best.</p>
 
-      <h2 id="variants">Types</h2>
-      <h3>Elevated</h3>
+      <h2 id="anatomy">Anatomy</h2>
+      <figure class="d-flex flex-column">
+        <img
+          src="/images/input-field-anatomy.png"
+          alt=""
+          class="img-fluid border rounded col-md-11"
+        />
+        <figcaption class="align-self-start">
+          <p class="text-muted fst-italic my-2">Card anatomy</p>
+        </figcaption>
+      </figure>
+      <ul>
+        <li>
+          <span class="fw-bold">Heading</span> – an optional heading conveys the main subject or purpose of the card and is positioned at the top of the card
+        </li>
+        <li>
+          <span class="fw-bold">Subheading</span> – an optional subheading to offer additional context or details
+        </li>
+        <li>
+          <span class="fw-bold">Card content</span> – common content includes: lists, tables, graphs, images, links, text, and UI elements like buttons and badges
+        </li>
+        <li>
+          <span class="fw-bold">Internal separators</span> – inset horizontal pinstripe that separates chunks of content
+        </li>
+        <li>
+          <span class="fw-bold">Expandable section</span> – area at the bottom of a card that can reveal related content
+          Rounded corners
+        </li>
+        <li>
+          <span class="fw-bold">Rounded corners</span>
+        </li>
+        <li>
+          <span class="fw-bold">Outline</span>
+        </li>
+        <li>
+          <span class="fw-bold">Drop shadow</span>
+        </li>
+      </ul>
+
+      <h2 id="types">Types</h2>
+      <p>Solstice supports a hierarchy of three card types.</p>
+      <PreviewBlock>
+        <template #preview>
+          <div>
+            <!-- three card code here -->
+          </div>
+        </template>
+      </PreviewBlock>
+
+      <h3 class="ff-encodesan fw-medium ff-encode-sans pt-3 pb-3">Elevated</h3>
+      <p>Elevated cards are <strong>best for grabbing a users attention</strong> by bringing content to the forefront. They are the most visually prominent card type. </p>
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BCard class="shadow-sm rounded-3"> body </BCard>
+            <BCard class="shadow-sm rounded-3 col-md-6"> body </BCard>
           </template>
           <template #bootstrap>
             <pre class="language-html">
@@ -97,7 +158,7 @@
         </CodeBlock>
       </div>
 
-      <h3>Filled</h3>
+      <h3>Borderless (Panel)</h3>
       <p>
         More details about <BLink to="/patterns/surface/panel">Panel</BLink> can
         be reviewed in the corresponding documentation.
@@ -105,22 +166,7 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BCard class="bg-body-tertiary rounded-3 mb-3" border-variant="0">
-              body
-            </BCard>
-            <BCard class="bg-body-secondary rounded-3 mb-3" border-variant="0">
-              body
-            </BCard>
-            <BCard
-              class="bg-spirit-purple-subtle rounded-3 mb-3"
-              border-variant="0"
-            >
-              body
-            </BCard>
-            <BCard
-              class="bg-husky-gold-subtle rounded-3 mb-3"
-              border-variant="0"
-            >
+            <BCard class="bg-body-tertiary rounded-3" border-variant="0">
               body
             </BCard>
           </template>
