@@ -102,9 +102,9 @@
       </div>
       <h3>Subtle (Secondary)</h3>
       <p>
-        Use the <code>primary-subtle</code> class for buttons that change
-        modes (i.e., edit), or for buttons that supplement core actions in
-        button groups (i.e., “cancel”)
+        Use the <code>primary-subtle</code> class for buttons that change modes
+        (i.e., edit), or for buttons that supplement core actions in button
+        groups (i.e., “cancel”)
       </p>
       <div class="mb-5">
         <CodeBlock>
