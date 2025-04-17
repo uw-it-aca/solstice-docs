@@ -2,7 +2,8 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/_templates">Templates</BBreadcrumbItem>
+        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
+        <BBreadcrumbItem to="/patterns/messaging">Messaging</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -119,7 +120,7 @@ import PageContents from "@/components/PageContents.vue";
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
 export default {
-  name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
+  name: "DocsPatternsModal" /* example: Docs--Folder--ComponentName */,
   components: {
     Layout,
     /* CodeBlock, UsageBlock, */ PageContents,
@@ -129,7 +130,7 @@ export default {
   inject: ["mq"],
   data() {
     return {
-      pageTitle: "Component Name",
+      pageTitle: "Modal",
     };
   },
 };

@@ -645,6 +645,22 @@
                     >Banner</BLink
                   >
                 </li>
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/patterns/messaging/badge"
+                    >Badge</BLink
+                  >
+                </li>
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/patterns/messaging/modal"
+                    >Modal</BLink
+                  >
+                </li>
               </ul>
             </div>
           </li>

@@ -76,7 +76,7 @@
         architecto libero enim tempore!
       </p>
 
-      <h2 id="variants">Variants</h2>
+      <h2 id="variants">Types</h2>
       <h3>Primary</h3>
       <p>
         Use the <code>primary</code> variant for buttons that complete actions
@@ -86,21 +86,21 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="primary">Submit</BButton>
+            <BButton variant="primary">Primary</BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-primary" type="button">Submit&lt;/button>
+<code>&lt;button class="btn btn-primary" type="button">Primary&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="primary">Submit&lt;/BButton>
+<code>&lt;BButton variant="primary">Primary&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
       </div>
-      <h3>Subtle (Secondary)</h3>
+      <h3>Subtle</h3>
       <p>
         Use the <code>primary-subtle</code> class for buttons that change modes
         (i.e., edit), or for buttons that supplement core actions in button
@@ -112,17 +112,17 @@
             <BButton
               variant="link"
               class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0"
-              >Edit</BButton
+              >Subtle</BButton
             >
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn-link bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0" type="button">Edit&lt;/button>
+<code>&lt;button class="btn-link bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0" type="button">Subtle&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="link" class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-">Edit&lt;/BButton>
+<code>&lt;BButton variant="link" class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0">subtle&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -137,16 +137,16 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton variant="outline-primary">Cancel</BButton>
+            <BButton variant="outline-primary">Outline</BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-outline-primary" type="button">Cancel&lt;/button>
+<code>&lt;button class="btn btn-outline-primary" type="button">Outline&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="outline-primary">Cancel&lt;/BButton>
+<code>&lt;BButton variant="outline-primary">Outline&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>

@@ -94,8 +94,9 @@
           guideline WCAG 2.1 AA criteria 1.4.3 (for more information on this
           requirement, see UW’s Accessible Technology
           <BLink
-            href="https://www.washington.edu/accesstech/checklist/contrast/"
+            to="https://www.washington.edu/accesstech/checklist/contrast/"
             target="_blank"
+            class="link-primary"
             >color contrast</BLink
           >
           page). The color groupings in the design system have already been
@@ -198,7 +199,10 @@
         <li>only use the base color (no variants)</li>
         <li>
           primarily use for
-          <BLink href="/patterns/boilerplate/">boilerplate</BLink> elements
+          <BLink to="/patterns/boilerplate/" class="link-primary"
+            >boilerplate</BLink
+          >
+          elements
         </li>
         <li>use sparingly</li>
         <li>
@@ -221,10 +225,12 @@
       <h3 class="fw-bold">Neutrals</h3>
       <p>
         Neutral colors are the default colors used for most
-        <BLink href="/patterns/surface">surfaces</BLink>, shadows, and
-        <BLink href="/foundations/typography">typography</BLink>. They don’t
-        typically have a meaning associated with them, though they can imply
-        things like disabled states.
+        <BLink to="/patterns/surface" class="link-primary">surfaces</BLink>,
+        shadows, and
+        <BLink to="/foundations/typography" class="link-primary"
+          >typography</BLink
+        >. They don’t typically have a meaning associated with them, though they
+        can imply things like disabled states.
       </p>
 
       <p class="fw-bold">Do:</p>
@@ -254,11 +260,11 @@
 
       <p class="fw-bold mb-0">Subdued and Prominent Color Groups</p>
       <p>
-        For some semantic colors, there are two different color groups: subtle
-        and emphasis. Subtle is the default color group. By default use the
-        subtle color group for most UI elements in most cases. However, when it
-        is important to create a moment of visual emphasis, the emphasis color
-        group can be used.
+        For some semantic colors, there are two different color groups: Subdued
+        and Prominent. By default use the Subdued color group for most UI
+        elements in most cases. However, when it is important to create a moment
+        of visual emphasis, such as Actionable elements, the Prominent color
+        group should be used.
       </p>
 
       <h4 class="mt-5">Actionable</h4>
@@ -266,11 +272,12 @@
         Action colors are used to pull focus to and communicate which are
         actionable UI elements. They should be reserved for things like buttons,
         links, calls-to-action, collapse controls, tabs, etc.
-        <span class="fst-italic"
-          >Note: Because Bootstrap by default provides action element colors for
-          various states – e.g. onclick, onhover, selected – these are not
-          defined here.</span
-        >
+      </p>
+
+      <p class="fst-italic">
+        Note: Because Bootstrap by default provides action element colors for
+        various states – e.g. onclick, onhover, selected – these are not defined
+        here.
       </p>
 
       <p><span class="fw-bold">Prominent</span> (default)</p>
@@ -367,7 +374,11 @@
         </tbody>
       </table>
 
-      <p>Related components: Buttons, Links</p>
+      <p>
+        Related components:
+        <BLink to="/elements/button" class="link-primary">Button</BLink>,
+        <BLink to="/elements/link" class="link-primary">Link</BLink>
+      </p>
 
       <CodeBlock>
         <template #preview>
@@ -396,91 +407,12 @@
         </template>
       </CodeBlock>
 
-      <div class="d-none">
-        <h4>Secondary (???)</h4>
-        <p>
-          Secondary is a neutral color used to convey an alternate state????
-        </p>
-
-        <p><span class="fw-bold">Emphasis</span></p>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col" style="width: 50px">Color</th>
-              <th scope="col" style="width: 250px">Light</th>
-              <th scope="col">Dark</th>
-              <th scope="col" style="width: 250px">Class</th>
-              <th scope="col">Usage</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div
-                  class="bg-secondary rounded"
-                  style="width: 30px; height: 30px"
-                >
-                  &nbsp;
-                </div>
-              </td>
-              <td>
-                <span class="d-inline-block" style="width: 75px">#6c757d</span>
-                <code class="d-inline-block text-muted">$gray-600</code>
-              </td>
-              <td>--</td>
-              <td><code>bg-secondary</code></td>
-              <td>background</td>
-            </tr>
-            <tr>
-              <td>
-                <div
-                  class="bg-secondary-subtle rounded"
-                  style="width: 30px; height: 30px"
-                >
-                  &nbsp;
-                </div>
-              </td>
-              <td>#e2e3e5</td>
-              <td>#161719</td>
-              <td><code>bg-secondary-subtle</code></td>
-              <td>background</td>
-            </tr>
-            <tr>
-              <td>
-                <div
-                  class="rounded"
-                  style="width: 30px; height: 30px"
-                  :style="
-                    colorMode === 'light'
-                      ? 'background-color: #2b2f32'
-                      : 'background-color: #a7acb1'
-                  "
-                >
-                  &nbsp;
-                </div>
-              </td>
-              <td>#2b2f32</td>
-              <td>#a7acb1</td>
-              <td><code>text-secondary-emphasis</code></td>
-              <td>text</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>Related components: Badges</p>
-
-        <CodeBlock>
-          <template #preview>
-            <span
-              class="badge rounded-pill bg-secondary-subtle text-secondary-emphasis me-1"
-              >Draft</span
-            >
-            <span class="badge rounded-pill text-bg-secondary">Draft</span>
-          </template>
-        </CodeBlock>
-      </div>
-
       <h4 class="mt-5">Messaging</h4>
-      <p>Message colors are used to...</p>
+      <p>
+        Messaging colors are used to convey the status or outcome of a user
+        action or system event. They help users quickly understand what’s
+        happening and what they may need to do.
+      </p>
 
       <h5 class="fw-bold mt-5">Success</h5>
       <p>
@@ -489,46 +421,6 @@
         or statuses that are positive and that do not require any immediate
         action from the user.
       </p>
-
-      <p><span class="fw-bold">Prominent</span></p>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col" style="width: 50px">Color</th>
-            <th scope="col" style="width: 250px">Light</th>
-            <th scope="col">Dark</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="bg-success rounded" style="width: 30px; height: 30px">
-                &nbsp;
-              </div>
-            </td>
-            <td>
-              <span class="d-inline-block" style="width: 75px">#198754</span>
-              <code class="d-inline-block text-muted">$green</code>
-            </td>
-            <td>--</td>
-          </tr>
-          <tr>
-            <td>
-              <div
-                class="bg-white border rounded"
-                style="width: 30px; height: 30px"
-              >
-                &nbsp;
-              </div>
-            </td>
-            <td>
-              <span class="d-inline-block" style="width: 75px">#ffffff</span>
-              <code class="d-inline-block text-muted">$white</code>
-            </td>
-            <td>--</td>
-          </tr>
-        </tbody>
-      </table>
 
       <p><span class="fw-bold">Subdued</span> (default)</p>
 
@@ -607,28 +499,6 @@
           </tr>
         </tbody>
       </table>
-      <p>Related components: Alerts, Badges</p>
-
-      <CodeBlock>
-        <template #preview>
-          <span
-            class="badge rounded-pill bg-success-subtle text-success-emphasis me-1"
-            >Success</span
-          >
-          <span class="badge rounded-pill text-bg-success">Success</span>
-
-          <div class="alert alert-success small mt-3" role="alert">
-            A simple success alert—check it out!
-          </div>
-        </template>
-      </CodeBlock>
-
-      <h5 class="fw-bold mt-5">Crictical</h5>
-      <p>
-        Critical is used as the color of highest importance which implies that
-        an item needs immediate attention, or that an action is impossible,
-        blocked, or has resulted in an error.
-      </p>
 
       <p><span class="fw-bold">Prominent</span></p>
       <table class="table">
@@ -642,13 +512,13 @@
         <tbody>
           <tr>
             <td>
-              <div class="bg-danger rounded" style="width: 30px; height: 30px">
+              <div class="bg-success rounded" style="width: 30px; height: 30px">
                 &nbsp;
               </div>
             </td>
             <td>
-              <span class="d-inline-block" style="width: 75px">#cb444a</span>
-              <code class="d-inline-block text-muted">$red2</code>
+              <span class="d-inline-block" style="width: 75px">#198754</span>
+              <code class="d-inline-block text-muted">$green</code>
             </td>
             <td>--</td>
           </tr>
@@ -670,7 +540,34 @@
         </tbody>
       </table>
 
-      <p><span class="fw-bold">Subdued</span></p>
+      <p>
+        Related components:
+        <BLink to="/patterns/messaging/alert" class="link-primary">Alert</BLink
+        >,
+        <BLink to="/patterns/messaging/badge" class="link-primary">Badge</BLink>
+      </p>
+      <CodeBlock>
+        <template #preview>
+          <span
+            class="badge rounded-pill bg-success-subtle text-success-emphasis me-1"
+            >Success</span
+          >
+          <span class="badge rounded-pill text-bg-success">Success</span>
+
+          <div class="alert alert-success small mt-3" role="alert">
+            A simple success alert—check it out!
+          </div>
+        </template>
+      </CodeBlock>
+
+      <h5 class="fw-bold mt-5">Crictical</h5>
+      <p>
+        Critical is used as the color of highest importance which implies that
+        an item needs immediate attention, or that an action is impossible,
+        blocked, or has resulted in an error.
+      </p>
+
+      <p><span class="fw-bold">Subdued</span> (default)</p>
       <table class="table">
         <thead>
           <tr>
@@ -746,7 +643,54 @@
           </tr>
         </tbody>
       </table>
-      <p>Related components: Buttons, Alerts, Badges</p>
+
+      <p><span class="fw-bold">Prominent</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 250px">Light</th>
+            <th scope="col">Dark</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bg-danger rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 75px">#cb444a</span>
+              <code class="d-inline-block text-muted">$red2</code>
+            </td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-white border rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 75px">#ffffff</span>
+              <code class="d-inline-block text-muted">$white</code>
+            </td>
+            <td>--</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Related components:
+        <BLink to="/elements/button" class="link-primary">Button</BLink>,
+        <BLink to="/patterns/messaging/alert" class="link-primary">Alert</BLink
+        >,
+        <BLink to="/patterns/messaging/badge" class="link-primary">Badge</BLink>
+      </p>
 
       <CodeBlock>
         <template #preview>
@@ -789,43 +733,7 @@
         but do not prevent a task from being completed.
       </p>
 
-      <p><span class="fw-bold">Emphasis</span></p>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col" style="width: 50px">Color</th>
-            <th scope="col" style="width: 250px">Light</th>
-            <th scope="col">Dark</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="bg-warning rounded" style="width: 30px; height: 30px">
-                &nbsp;
-              </div>
-            </td>
-            <td>
-              <span class="d-inline-block" style="width: 75px">#ffc107</span>
-              <code class="d-inline-block text-muted">$yellow</code>
-            </td>
-            <td>--</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="bg-black rounded" style="width: 30px; height: 30px">
-                &nbsp;
-              </div>
-            </td>
-            <td>
-              <span class="d-inline-block" style="width: 75px">#000000</span>
-              <code class="d-inline-block text-muted">$black</code>
-            </td>
-            <td>--</td>
-          </tr>
-        </tbody>
-      </table>
-      <p><span class="fw-bold">Subtle</span></p>
+      <p><span class="fw-bold">Subdued</span> (default)</p>
       <table class="table">
         <thead>
           <tr>
@@ -901,7 +809,48 @@
           </tr>
         </tbody>
       </table>
-      <p>Related components: Alerts, Badges</p>
+      <p><span class="fw-bold">Prominent</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 250px">Light</th>
+            <th scope="col">Dark</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bg-warning rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 75px">#ffc107</span>
+              <code class="d-inline-block text-muted">$yellow</code>
+            </td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="bg-black rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 75px">#000000</span>
+              <code class="d-inline-block text-muted">$black</code>
+            </td>
+            <td>--</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Related components:
+        <BLink to="/patterns/messaging/alert" class="link-primary">Alert</BLink
+        >,
+        <BLink to="/patterns/messaging/badge" class="link-primary">Badge</BLink>
+      </p>
 
       <CodeBlock>
         <template #preview>
@@ -924,44 +873,7 @@
         tips or incentives.
       </p>
 
-      <p><span class="fw-bold">Emphasis</span></p>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col" style="width: 50px">Color</th>
-            <th scope="col" style="width: 250px">Light</th>
-            <th scope="col">Dark</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="bg-info rounded" style="width: 30px; height: 30px">
-                &nbsp;
-              </div>
-            </td>
-            <td>
-              <span class="d-inline-block" style="width: 75px">#0dcaf0</span>
-              <code class="d-inline-block text-muted">$cyan</code>
-            </td>
-            <td>--</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="bg-black rounded" style="width: 30px; height: 30px">
-                &nbsp;
-              </div>
-            </td>
-            <td>
-              <span class="d-inline-block" style="width: 75px">#000000</span>
-              <code class="d-inline-block text-muted">$black</code>
-            </td>
-            <td>--</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p><span class="fw-bold">Subtle</span></p>
+      <p><span class="fw-bold">Subdued</span> (default)</p>
       <table class="table">
         <thead>
           <tr>
@@ -1037,7 +949,49 @@
           </tr>
         </tbody>
       </table>
-      <p>Related components: Alerts, Badges</p>
+      <p><span class="fw-bold">Prominent</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 250px">Light</th>
+            <th scope="col">Dark</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="bg-info rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 75px">#0dcaf0</span>
+              <code class="d-inline-block text-muted">$cyan</code>
+            </td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="bg-black rounded" style="width: 30px; height: 30px">
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 75px">#000000</span>
+              <code class="d-inline-block text-muted">$black</code>
+            </td>
+            <td>--</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Related components:
+        <BLink to="/patterns/messaging/alert" class="link-primary">Alert</BLink
+        >,
+        <BLink to="/patterns/messaging/badge" class="link-primary">Badge</BLink>
+      </p>
 
       <CodeBlock>
         <template #preview>
@@ -1071,6 +1025,93 @@
         <span class="fst-italic"
           >Draft, In Progress, Not Started, Unscheduled</span
         >
+      </p>
+      <p><span class="fw-bold">Subdued</span> (default)</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 250px">Light</th>
+            <th scope="col">Dark</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="bg-secondary-subtle rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#e2e3e5</td>
+            <td>#161719</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="rounded"
+                style="width: 30px; height: 30px"
+                :style="
+                  colorMode === 'light'
+                    ? 'background-color: #2b2f32'
+                    : 'background-color: #a7acb1'
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>#2b2f32</td>
+            <td>#a7acb1</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="fw-bold">Prominent</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 250px">Light</th>
+            <th scope="col">Dark</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div
+                class="bg-secondary rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 75px">#6c757d</span>
+              <code class="d-inline-block text-muted">$gray-600</code>
+            </td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>
+              <div
+                class="bg-white border rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 75px">#ffffff</span>
+              <code class="d-inline-block text-muted">$white</code>
+            </td>
+            <td>--</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Related components:
+        <BLink to="/patterns/messaging/badge" class="link-primary">Badge</BLink>
       </p>
 
       <CodeBlock>
@@ -1428,7 +1469,6 @@
 import Layout from "@/layout.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
 import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
-import { watch } from "vue";
 
 export default {
   name: "DocsColor",
