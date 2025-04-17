@@ -82,7 +82,7 @@
         <li>Input error styles</li>
         <li>Input error message</li>
       </ul>
-      <p>Refer to <a href="input/">Form Input</a> for more anatomy details.</p>
+      <p>Refer to <a href="input/">Form Input</a> for input anatomy details.</p>
 
       <h2 class="display-6 ff-encodesans pt-3 pb-3" id="principles">
         Guiding Principles
@@ -120,7 +120,9 @@
         </li>
       </ul>
 
-      <h2 class="display-6 ff-encodesans pt-3 pb-3">Validation Overview</h2>
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="overview">
+        Validation Overview
+      </h2>
 
       <h3 class="ff-encodesans">When to trigger validation</h3>
       <p>
@@ -205,7 +207,7 @@
           characters, must be more than 10)
         </li>
       </ul>
-      <CodeBlock>
+      <PreviewBlock>
         <template #preview>
           <div class="col-md-4">
             <label for="validationCustom02" class="form-label"
@@ -221,7 +223,7 @@
           </div>
         </template>
         <template #description>Numerical-only input constraint </template>
-      </CodeBlock>
+      </PreviewBlock>
       <p>
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation"
@@ -244,7 +246,7 @@
         Some input constraints must be checked via complex logic or via an
         external data set (e.g. unique input).
       </p>
-      <CodeBlock>
+      <PreviewBlock>
         <template #preview>
           <div class="col-md-4">
             <label for="validationCustom02" class="form-label"
@@ -263,7 +265,7 @@
           </div>
         </template>
         <template #description>Server-side logic input constraint </template>
-      </CodeBlock>
+      </PreviewBlock>
       <h3 class="ff-encodesans pt-3">Ways of validating input</h3>
       <table class="table">
         <thead>
@@ -310,12 +312,12 @@
           </tr>
         </tbody>
       </table>
-      <div class="mx-auto">
-        <figure class="d-flex flex-column">
+      <div class="d-flex justify-content-center">
+        <figure class="d-flex flex-column col-md-8">
           <img
             src="/images/form-validation-methods.png"
             alt=""
-            class="img-fluid col-md-8 border rounded mt-3"
+            class="img-fluid border rounded mt-3"
           />
           <figcaption class="align-self-start">
             <p class="text-muted fst-italic my-2">
@@ -324,7 +326,7 @@
           </figcaption>
         </figure>
       </div>
-      <h2 class="display-6 ff-encodesans pt-3 pb-3">
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="implementation">
         Technical Implementation
       </h2>
       <h3 class="ff-encodesans">When a user is first inputting data</h3>
@@ -426,19 +428,18 @@
         When a form is submitted to the server
         <em>(via postback or callback)</em>
       </h3>
-      <figure>
-        <div class="col-md-8">
+      <div class="d-flex justify-content-center">
+        <figure class="d-flex flex-column col-md-8">
           <img
             src="/images/validation-summary.png"
             class="img-fluid rounded w-100 mt-2 mb-0 border"
           />
-        </div>
-        <figcaption class="text-muted fst-italic my-2">
-          Example alert with a summary of errors that includes anchors to
-          fields.
-        </figcaption>
-      </figure>
-
+          <figcaption class="text-muted fst-italic my-2">
+            Example alert with a summary of errors that includes anchors to
+            fields.
+          </figcaption>
+        </figure>
+      </div>
       <h4 class="ff-opensans pt-2">Behavior</h4>
 
       <p>
@@ -576,7 +577,9 @@
           show a progress indicator.
         </li>
       </ul>
-      <h2 class="display-6 ff-encodesans pt-3 pb-3">Accessibility</h2>
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="accessibility">
+        Accessibility
+      </h2>
 
       <ul>
         <li>
@@ -593,7 +596,7 @@
           <a href="https://getbootstrap.com/docs/5.3/forms/validation/"
             >Bootstrap client-side validation</a
           >
-          isn’t accessible:
+          isn't accessible:
         </li>
         <ul>
           <li>
@@ -618,7 +621,7 @@
           the focus — and that's all.
         </li>
       </ul>
-      <h2 class="display-6 ff-encodesans pt-3 pb-3">
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="references">
         Resources and Reference Articles
       </h2>
 
@@ -644,7 +647,7 @@
 
 <script>
 import Layout from "@/layout.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
+import PreviewBlock from "@/components/PreviewBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
@@ -653,7 +656,7 @@ export default {
   name: "DocsElementsFormsValidation",
   components: {
     Layout,
-    CodeBlock,
+    PreviewBlock,
     PageContents,
     BBreadcrumb,
     BBreadcrumbItem,

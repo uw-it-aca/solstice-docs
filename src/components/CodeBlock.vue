@@ -1,11 +1,13 @@
 <template>
   <div class="mb-3">
-    <div class="mb-1">
-      <span class="me-2 fst-italic">Example:</span>
-      <template v-if="$slots['description']">
-        <slot name="description"></slot>
-      </template>
+    <div class="position-relative">
+      <span class="visually-hidden">Example:</span>
     </div>
+    <template v-if="$slots['description']">
+      <div class="mb-1 fst-italic small text-body-secondary">
+        <slot name="description"></slot>
+      </div>
+    </template>
     <div class="border rounded codeblock">
       <div v-if="$slots['preview']">
         <div class="preview p-3 m-0 border-bottom">
