@@ -1,9 +1,7 @@
 <template>
   <li class="d-flex align-items-start mb-5 mb-md-2">
-    <div
-    v-if="variant == 'do'" class=""
-    >
-    <i class="bi bi-check-circle-fill text-success ms-2 me-3"></i>
+    <div v-if="variant == 'do'" class="">
+      <i class="bi bi-check-circle-fill text-success ms-2 me-3"></i>
     </div>
     <div v-else>
       <i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i>
@@ -17,7 +15,7 @@
       <template v-if="$slots['preview']">
         <div class="position-relative w-100">
           <span class="visually-hidden">Example:</span>
-          <div class="preview ps-0 px-md-4">
+          <div class="preview ps-0 px-md-5">
             <slot name="preview"></slot>
           </div>
         </div>
@@ -49,7 +47,6 @@ export default {
     Prism.highlightAll();
   },
 };
-
 </script>
 
 <style lang="scss">

@@ -102,9 +102,11 @@
       <h2 class="display-6 ff-encodesans pt-3 pb-3" id="states">States</h2>
 
       <ul class="d-flex flex-column list-unstyled">
-        <div class="d-flex flex-row mb-3">
+        <div class="d-flex flex-column flex-md-row mb-3">
           <li class="flex-fill align-self-stretch w-100 me-2">
-            <h3 class="text-center fw-medium ff-encode-sans pt-3">Default</h3>
+            <h3 class="text-start text-md-center fw-medium ff-encode-sans pt-3">
+              Default
+            </h3>
             <PreviewBlock>
               <template #preview>
                 <div class="">
@@ -132,7 +134,9 @@
             </PreviewBlock>
           </li>
           <li class="flex-fill align-self-stretch w-100">
-            <h3 class="text-center fw-medium ff-encode-sans pt-3">Error</h3>
+            <h3 class="text-start text-md-center fw-medium ff-encode-sans pt-3">
+              Error
+            </h3>
             <PreviewBlock>
               <template #preview>
                 <div class="">
@@ -163,9 +167,11 @@
             </PreviewBlock>
           </li>
         </div>
-        <div class="d-flex flex-row">
+        <div class="d-flex flex-column flex-md-row">
           <li class="flex-fill align-self-stretch w-100 me-2">
-            <h3 class="text-center fw-medium ff-encode-sans pt-3">Disabled</h3>
+            <h3 class="text-start text-md-center fw-medium ff-encode-sans pt-3">
+              Disabled
+            </h3>
             <PreviewBlock>
               <template #preview>
                 <label for="validationCustom02" class="form-label fw-bold">
@@ -191,7 +197,9 @@
             </PreviewBlock>
           </li>
           <li class="flex-fill align-self-stretch w-100">
-            <h3 class="text-center fw-medium ff-encode-sans pt-3">Read-only</h3>
+            <h3 class="text-start text-md-center fw-medium ff-encode-sans pt-3">
+              Read-only
+            </h3>
             <PreviewBlock>
               <template #preview>
                 <div class="">
@@ -327,8 +335,7 @@
       </h2>
       <h3 class="fw-medium ff-encode-sans pt-3 pb-3">Label</h3>
 
-      <UsageBlock variant="do"
-        >
+      <UsageBlock variant="do">
         <template #row>
           <UsageBlockRow variant="do">
             <template #description>
@@ -379,8 +386,7 @@
                 between the two elements.
               </p>
             </template>
-            <template #preview
-              >
+            <template #preview>
               <label for="validationCustom02" class="form-label">
                 Form label:
               </label>
@@ -390,18 +396,19 @@
                 class="form-control"
                 value=""
               />
-            </template>          </UsageBlockRow>
+            </template>
+          </UsageBlockRow>
           <UsageBlockRow variant="dont">
             <template #description
               ><p><strong>Don't use floating labels.</strong></p>
               <p class="small">
                 Fields with text in them are less noticeable, in addition, users
-                might think there is already a default value entered in the field.
-                Also, some browsers and assistive technologies don't properly or
-                reliably read placeholder text. Ultimately, while floating labels do
-                offer a better user experience than the label as a placeholder,
-                placing the label and any example or constraint text outside the
-                field is best.
+                might think there is already a default value entered in the
+                field. Also, some browsers and assistive technologies don't
+                properly or reliably read placeholder text. Ultimately, while
+                floating labels do offer a better user experience than the label
+                as a placeholder, placing the label and any example or
+                constraint text outside the field is best.
               </p>
             </template>
             <template #preview>
@@ -420,8 +427,7 @@
             </template>
           </UsageBlockRow>
         </template>
-      </UsageBlock
-      >
+      </UsageBlock>
 
       <h3 class="fw-medium ff-encode-sans pt-3 pb-3">Field</h3>
       <UsageBlock variant="dont"
@@ -485,21 +491,23 @@
       </ul>
 
       <UsageBlock
-        ><template #text>
-          <ul>
-            <li>
+        ><template #row>
+          <UsageBlockRow>
+            <template #description>
               <strong>Do omit requiredness indicators on login forms.</strong>
               It’s OK to skip these because it is well understood these fields
               are required.
-            </li>
-            <li>
+            </template>
+          </UsageBlockRow>
+          <UsageBlockRow>
+            <template #description>
               <strong
                 >Do indicate requireness in constraint text area when there is
                 not an input form label.</strong
               >
               (e.g. an input in a table that only has a table header).
-            </li>
-          </ul>
+            </template>
+          </UsageBlockRow>
         </template>
       </UsageBlock>
 
@@ -571,19 +579,15 @@
             >Don't use to display constraint text or sample formats.</strong
           ></template
         ><template #preview>
-          <PreviewBlock>
-            <template #preview>
-              <div class="input-group">
-                <span class="input-group-text" id="basic-addon3">MM/DD/YY</span>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="basic-url"
-                  aria-describedby="basic-addon3 basic-addon4"
-                />
-              </div>
-            </template>
-          </PreviewBlock> </template
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon3">MM/DD/YY</span>
+            <input
+              type="text"
+              class="form-control"
+              id="basic-url"
+              aria-describedby="basic-addon3 basic-addon4"
+            />
+          </div> </template
       ></UsageBlock>
 
       <UsageBlock variant="do">
@@ -602,50 +606,42 @@
           </p>
         </template>
         <template #preview>
-          <PreviewBlock>
-            <template #preview>
-              <div class="input-group mb-3">
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                  id="button-addon1"
-                >
-                  Button
-                </button>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder=""
-                  aria-label="Example text with button addon"
-                  aria-describedby="button-addon1"
-                />
-              </div>
-              <div class="input-group">
-                <button
-                  class="btn btn-outline-primary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Text input with dropdown button"
-                />
-              </div>
-            </template>
-          </PreviewBlock>
+          <div class="input-group mb-3">
+            <button class="btn btn-secondary" type="button" id="button-addon1">
+              Button
+            </button>
+            <input
+              type="text"
+              class="form-control"
+              placeholder=""
+              aria-label="Example text with button addon"
+              aria-describedby="button-addon1"
+            />
+          </div>
+          <div class="input-group">
+            <button
+              class="btn btn-outline-primary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Text input with dropdown button"
+            />
+          </div>
         </template>
       </UsageBlock>
 
@@ -657,61 +653,53 @@
           ></template
         >
         <template #preview>
-          <PreviewBlock>
-            <template #preview>
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Text input with dropdown button"
-                />
-                <button
-                  class="btn btn-outline-primary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-              </div>
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-describedby="button-addon2"
-                />
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                  id="button-addon2"
-                >
-                  Button
-                </button>
-              </div>
-              <div class="input-group">
-                <select
-                  class="form-select"
-                  id="inputGroupSelect04"
-                  aria-label="Example select with button addon"
-                >
-                  <option selected>Choose...</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <button class="btn btn-secondary" type="button">Button</button>
-              </div>
-            </template>
-          </PreviewBlock>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Text input with dropdown button"
+            />
+            <button
+              class="btn btn-outline-primary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-secondary" type="button" id="button-addon2">
+              Button
+            </button>
+          </div>
+          <div class="input-group">
+            <select
+              class="form-select"
+              id="inputGroupSelect04"
+              aria-label="Example select with button addon"
+            >
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <button class="btn btn-secondary" type="button">Button</button>
+          </div>
         </template>
       </UsageBlock>
 
@@ -721,23 +709,19 @@
             Don't use a custom select with a button on the left.</strong
           ></template
         ><template #preview>
-          <PreviewBlock>
-            <template #preview>
-              <div class="input-group">
-                <button class="btn btn-secondary" type="button">Button</button>
-                <select
-                  class="form-select"
-                  id="inputGroupSelect03"
-                  aria-label="Example select with button addon"
-                >
-                  <option selected>Choose...</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-            </template>
-          </PreviewBlock>
+          <div class="input-group">
+            <button class="btn btn-secondary" type="button">Button</button>
+            <select
+              class="form-select"
+              id="inputGroupSelect03"
+              aria-label="Example select with button addon"
+            >
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
         </template></UsageBlock
       >
 
@@ -751,43 +735,29 @@
             ></strong
           >, as validations styles are not supported in this case. </template
         ><template #preview>
-          <PreviewBlock>
-            <template #preview>
-              <div class="input-group">
-                <span class="input-group-text">First and last name</span>
-                <input
-                  type="text"
-                  aria-label="First name"
-                  class="form-control"
-                />
-                <input
-                  type="text"
-                  aria-label="Last name"
-                  class="form-control"
-                />
-              </div>
-            </template>
-          </PreviewBlock> </template
-      ></UsageBlock>
+          <div class="input-group">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control" />
+            <input type="text" aria-label="Last name" class="form-control" />
+          </div>
+        </template>
+      </UsageBlock>
 
       <UsageBlock variant="dont"
         ><template #text
           ><strong>Don't use with multiple buttons.</strong></template
-        ><template #preview>
-          <PreviewBlock>
-            <template #preview>
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Recipient's username"
-                  aria-label="Recipient's username with two button addons"
-                />
-                <button class="btn btn-secondary" type="button">Button</button>
-                <button class="btn btn-secondary" type="button">Button</button>
-              </div>
-            </template>
-          </PreviewBlock>
+        >
+        <template #preview>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Recipient's username"
+              aria-label="Recipient's username with two button addons"
+            />
+            <button class="btn btn-secondary" type="button">Button</button>
+            <button class="btn btn-secondary" type="button">Button</button>
+          </div>
         </template></UsageBlock
       >
 
@@ -804,19 +774,15 @@
           >
           Use the input add-ons to prepend or append the input, or both. </template
         ><template #preview>
-          <PreviewBlock>
-            <template #preview>
-              <div class="input-group">
-                <span class="input-group-text">$</span>
-                <span class="input-group-text">0.00</span>
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Dollar amount (with dot and two decimal places)"
-                />
-              </div>
-            </template>
-          </PreviewBlock> </template
+          <div class="input-group">
+            <span class="input-group-text">$</span>
+            <span class="input-group-text">0.00</span>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Dollar amount (with dot and two decimal places)"
+            />
+          </div> </template
       ></UsageBlock>
 
       <UsageBlock variant="dont"
@@ -830,39 +796,35 @@
           >, as users may miss critical functionality shown in the dropdown.
           Instead, use a single dropdown with all the available options. </template
         ><template #preview>
-          <PreviewBlock>
-            <template #preview>
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Text input with segmented dropdown button"
-                />
-                <button type="button" class="btn btn-outline-primary">
-                  Action
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-              </div>
-            </template>
-          </PreviewBlock>
-        </template></UsageBlock
-      >
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Text input with segmented dropdown button"
+            />
+            <button type="button" class="btn btn-outline-primary">
+              Action
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </template>
+      </UsageBlock>
 
       <UsageBlock variant="dont"
         ><template #text>
@@ -889,24 +851,20 @@
             information about the uploaded item.
           </p> </template
         ><template #preview>
-          <PreviewBlock>
-            <template #preview>
-              <div class="mb-3">
-                <label for="formFile" class="form-label"
-                  >Default file input example</label
-                >
-                <input class="form-control" type="file" id="formFile" />
-              </div>
-              <div class="input-group">
-                <input type="file" class="form-control" id="inputGroupFile02" />
-                <label class="input-group-text" for="inputGroupFile02"
-                  >Upload</label
-                >
-              </div>
-            </template>
-          </PreviewBlock>
-        </template></UsageBlock
-      >
+          <div class="mb-3">
+            <label for="formFile" class="form-label"
+              >Default file input example</label
+            >
+            <input class="form-control" type="file" id="formFile" />
+          </div>
+          <div class="input-group">
+            <input type="file" class="form-control" id="inputGroupFile02" />
+            <label class="input-group-text" for="inputGroupFile02"
+              >Upload</label
+            >
+          </div>
+        </template>
+      </UsageBlock>
       <h2 class="display-6 ff-encodesans pt-3 pb-3" id="implementation">
         Technical Implementation
       </h2>

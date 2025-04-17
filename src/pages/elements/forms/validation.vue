@@ -120,7 +120,9 @@
         </li>
       </ul>
 
-      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="overview">Validation Overview</h2>
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="overview">
+        Validation Overview
+      </h2>
 
       <h3 class="ff-encodesans">When to trigger validation</h3>
       <p>
@@ -310,12 +312,12 @@
           </tr>
         </tbody>
       </table>
-      <div class="mx-auto">
-        <figure class="d-flex flex-column">
+      <div class="d-flex justify-content-center">
+        <figure class="d-flex flex-column col-md-8">
           <img
             src="/images/form-validation-methods.png"
             alt=""
-            class="img-fluid col-md-8 border rounded mt-3"
+            class="img-fluid border rounded mt-3"
           />
           <figcaption class="align-self-start">
             <p class="text-muted fst-italic my-2">
@@ -426,19 +428,18 @@
         When a form is submitted to the server
         <em>(via postback or callback)</em>
       </h3>
-      <figure>
-        <div class="col-md-8">
+      <div class="d-flex justify-content-center">
+        <figure class="d-flex flex-column col-md-8">
           <img
             src="/images/validation-summary.png"
             class="img-fluid rounded w-100 mt-2 mb-0 border"
           />
-        </div>
-        <figcaption class="text-muted fst-italic my-2">
-          Example alert with a summary of errors that includes anchors to
-          fields.
-        </figcaption>
-      </figure>
-
+          <figcaption class="text-muted fst-italic my-2">
+            Example alert with a summary of errors that includes anchors to
+            fields.
+          </figcaption>
+        </figure>
+      </div>
       <h4 class="ff-opensans pt-2">Behavior</h4>
 
       <p>
@@ -576,7 +577,9 @@
           show a progress indicator.
         </li>
       </ul>
-      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="accessibility">Accessibility</h2>
+      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="accessibility">
+        Accessibility
+      </h2>
 
       <ul>
         <li>
