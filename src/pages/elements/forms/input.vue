@@ -99,7 +99,7 @@
         </li>
       </ul>
 
-      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="states">States</h2>
+      <h2 id="states" class="display-6 ff-encodesans pt-3 pb-3">States</h2>
 
       <ul class="d-flex flex-column list-unstyled">
         <div class="d-flex flex-column flex-md-row mb-3">
@@ -225,7 +225,7 @@
         validation is more noticeable.
       </p>
 
-      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="options">Options</h2>
+      <h2 id="options" class="display-6 ff-encodesans pt-3 pb-3">Options</h2>
       <h3 class="ff-encodesan fw-medium ff-encode-sans pt-3 pb-3">
         Bootstrap Input Groups
       </h3>
@@ -274,7 +274,7 @@
                 class="form-control"
                 aria-describedby="basic-addon2"
               />
-              <span class="input-group-text" id="basic-addon2"
+              <span id="basic-addon2" class="input-group-text"
                 >@example.com</span
               >
             </div>
@@ -282,7 +282,7 @@
               <label class="input-group-text" for="inputGroupSelect01"
                 >Options</label
               >
-              <select class="form-select" id="inputGroupSelect01">
+              <select id="inputGroupSelect01" class="form-select">
                 <option selected>Choose...</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -290,7 +290,7 @@
               </select>
             </div>
             <div class="input-group">
-              <select class="form-select" id="inputGroupSelect02">
+              <select id="inputGroupSelect02" class="form-select">
                 <option selected>Choose...</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -330,7 +330,7 @@
         </template>
       </PreviewBlock>
 
-      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="practices">
+      <h2 id="practices" class="display-6 ff-encodesans pt-3 pb-3">
         Best Practices
       </h2>
       <h3 class="fw-medium ff-encode-sans pt-3 pb-3">Label</h3>
@@ -417,9 +417,9 @@
               </div>
               <div class="form-floating">
                 <input
+                  id="floatingInput"
                   type="email"
                   class="form-control"
-                  id="floatingInput"
                   placeholder="name@example.com"
                 />
                 <label for="floatingInput">Email address</label>
@@ -545,7 +545,7 @@
             />
             <span class="input-group-text">.00</span>
           </div>
-          <div class="form-text" id="basic-addon4">
+          <div id="basic-addon4" class="form-text">
             Amount spent cannot exceed approved expenditure.
           </div>
         </template>
@@ -556,18 +556,18 @@
         >
         <template #preview>
           <div class="input-group">
-            <span class="input-group-text" id="basic-addon3"
+            <span id="basic-addon3" class="input-group-text"
               >Dollars spent &nbsp; $</span
             >
             <input
+              id="basic-url"
               type="text"
               class="form-control"
-              id="basic-url"
               aria-describedby="basic-addon3 basic-addon4"
             />
             <span class="input-group-text">.00</span>
           </div>
-          <div class="form-text" id="basic-addon4">
+          <div id="basic-addon4" class="form-text">
             Amount spent cannot exceed approved expenditure.
           </div>
         </template></UsageBlock
@@ -580,11 +580,11 @@
           ></template
         ><template #preview>
           <div class="input-group">
-            <span class="input-group-text" id="basic-addon3">MM/DD/YY</span>
+            <span id="basic-addon3" class="input-group-text">MM/DD/YY</span>
             <input
+              id="basic-url"
               type="text"
               class="form-control"
-              id="basic-url"
               aria-describedby="basic-addon3 basic-addon4"
             />
           </div> </template
@@ -607,7 +607,11 @@
         </template>
         <template #preview>
           <div class="input-group mb-3">
-            <button class="btn btn-secondary" type="button" id="button-addon1">
+            <button
+              id="button-addon1"
+              class="btn btn-subdued-primary border border-secondary"
+              type="button"
+            >
               Button
             </button>
             <input
@@ -620,7 +624,7 @@
           </div>
           <div class="input-group">
             <button
-              class="btn btn-outline-primary dropdown-toggle"
+              class="btn btn-subdued-primary border border-secondary dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -660,7 +664,7 @@
               aria-label="Text input with dropdown button"
             />
             <button
-              class="btn btn-outline-primary dropdown-toggle"
+              class="btn btn-subdued-primary border border-secondary dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -683,14 +687,18 @@
               class="form-control"
               aria-describedby="button-addon2"
             />
-            <button class="btn btn-secondary" type="button" id="button-addon2">
+            <button
+              id="button-addon2"
+              class="btn btn-subdued-primary border border-secondary"
+              type="button"
+            >
               Button
             </button>
           </div>
           <div class="input-group">
             <select
-              class="form-select"
               id="inputGroupSelect04"
+              class="form-select"
               aria-label="Example select with button addon"
             >
               <option selected>Choose...</option>
@@ -698,7 +706,12 @@
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
-            <button class="btn btn-secondary" type="button">Button</button>
+            <button
+              class="btn btn-subdued-primary border border-secondary"
+              type="button"
+            >
+              Button
+            </button>
           </div>
         </template>
       </UsageBlock>
@@ -710,10 +723,15 @@
           ></template
         ><template #preview>
           <div class="input-group">
-            <button class="btn btn-secondary" type="button">Button</button>
+            <button
+              class="btn btn-subdued-primary border border-secondary"
+              type="button"
+            >
+              Button
+            </button>
             <select
-              class="form-select"
               id="inputGroupSelect03"
+              class="form-select"
               aria-label="Example select with button addon"
             >
               <option selected>Choose...</option>
@@ -755,8 +773,18 @@
               placeholder="Recipient's username"
               aria-label="Recipient's username with two button addons"
             />
-            <button class="btn btn-secondary" type="button">Button</button>
-            <button class="btn btn-secondary" type="button">Button</button>
+            <button
+              class="btn btn-subdued-primary border border-secondary"
+              type="button"
+            >
+              Button
+            </button>
+            <button
+              class="btn btn-subdued-primary border border-secondary"
+              type="button"
+            >
+              Button
+            </button>
           </div>
         </template></UsageBlock
       >
@@ -802,12 +830,15 @@
               class="form-control"
               aria-label="Text input with segmented dropdown button"
             />
-            <button type="button" class="btn btn-outline-primary">
+            <button
+              type="button"
+              class="btn btn-subdued-primary border border-secondary"
+            >
               Action
             </button>
             <button
               type="button"
-              class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split"
+              class="btn btn-subdued-primary border border-secondary dropdown-toggle dropdown-toggle-split"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
@@ -855,17 +886,17 @@
             <label for="formFile" class="form-label"
               >Default file input example</label
             >
-            <input class="form-control" type="file" id="formFile" />
+            <input id="formFile" class="form-control" type="file" />
           </div>
           <div class="input-group">
-            <input type="file" class="form-control" id="inputGroupFile02" />
+            <input id="inputGroupFile02" type="file" class="form-control" />
             <label class="input-group-text" for="inputGroupFile02"
               >Upload</label
             >
           </div>
         </template>
       </UsageBlock>
-      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="implementation">
+      <h2 id="implementation" class="display-6 ff-encodesans pt-3 pb-3">
         Technical Implementation
       </h2>
       <CodeBlock>

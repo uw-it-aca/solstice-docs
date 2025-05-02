@@ -108,6 +108,20 @@
         Color Palettes
       </h2>
 
+      <p class="fw-bold mb-0">Subdued and Prominent Color Groups</p>
+      <p>
+        For most color palettes, there are two different color groups: Subdued
+        and Prominent. By default use the Subdued color group for most UI
+        elements in most cases. Subdued colors also respect Dark Mode can change
+        to provide more contrast.
+      </p>
+      <p>
+        However, when it is important to create a moment of visual emphasis,
+        such as Layout or Actionable elements, the Prominent color group should
+        be used. Promint colors do not change and are unaffected by Dark Mode
+        settings.
+      </p>
+
       <h3 class="fw-bold">Brand</h3>
 
       <p>
@@ -116,6 +130,7 @@
         Spirit Purple and Husky Gold (beige) to maintain a sleek visual design.
       </p>
 
+      <p><span class="fw-bold">Prominent</span></p>
       <table class="table">
         <thead>
           <tr>
@@ -140,6 +155,35 @@
             </td>
             <td>--</td>
           </tr>
+
+          <tr>
+            <td>
+              <div
+                class="bg-husky-gold rounded"
+                style="width: 30px; height: 30px"
+              >
+                &nbsp;
+              </div>
+            </td>
+            <td>
+              <span class="d-inline-block" style="width: 75px">#b7a57a</span>
+              <code class="d-inline-block text-muted">$beige</code>
+            </td>
+            <td>--</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><span class="fw-bold">Subdued</span></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 50px">Color</th>
+            <th scope="col" style="width: 250px">Light</th>
+            <th scope="col">Dark</th>
+          </tr>
+        </thead>
+        <tbody>
           <tr>
             <td>
               <div
@@ -157,21 +201,6 @@
               <span class="d-inline-block" style="width: 75px">#0f091a</span>
               <code class="d-inline-block text-muted">$purple2-900</code>
             </td>
-          </tr>
-          <tr>
-            <td>
-              <div
-                class="bg-husky-gold rounded"
-                style="width: 30px; height: 30px"
-              >
-                &nbsp;
-              </div>
-            </td>
-            <td>
-              <span class="d-inline-block" style="width: 75px">#b7a57a</span>
-              <code class="d-inline-block text-muted">$beige</code>
-            </td>
-            <td>--</td>
           </tr>
           <tr>
             <td>
@@ -256,15 +285,6 @@
         elements have been recently updated or created). Therefore, each color
         in the semantic color palette has a distinct meaning but should have
         consistent use in all contexts.
-      </p>
-
-      <p class="fw-bold mb-0">Subdued and Prominent Color Groups</p>
-      <p>
-        For some semantic colors, there are two different color groups: Subdued
-        and Prominent. By default use the Subdued color group for most UI
-        elements in most cases. However, when it is important to create a moment
-        of visual emphasis, such as Actionable elements, the Prominent color
-        group should be used.
       </p>
 
       <h4 class="mt-5">Actionable</h4>
@@ -384,21 +404,14 @@
         <template #preview>
           <p>
             <button type="button" class="btn btn-primary me-2">Primary</button>
-            <button
-              type="button"
-              class="btn btn-link bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0 me-2"
-            >
-              Subtle
-            </button>
+
             <button type="button" class="btn btn-outline-primary me-2">
               Outline
             </button>
-            <button
-              class="btn btn-link link-primary link-underline link-underline-opacity-0"
-              type="button"
-            >
-              Link Button
+            <button type="button" class="btn btn-subdued-primary me-2">
+              Subdued
             </button>
+            <button class="btn btn-quiet-primary" type="button">Quiet</button>
           </p>
           <div>
             Hello world. This is a <a href="#" class="link-primary">link</a> to
@@ -710,10 +723,7 @@
             <button type="button" class="btn btn-danger me-2">
               <i class="bi bi-trash3"></i>
             </button>
-            <button
-              type="button"
-              class="btn btn-link bg-danger-subtle text-danger-emphasis text-danger-hover link-underline link-underline-opacity-0 me-2"
-            >
+            <button type="button" class="btn btn-subdued-danger me-2">
               <i class="bi bi-trash3"></i>
             </button>
             <button
@@ -1315,98 +1325,98 @@
           <tr>
             <td>
               <div
-                class="bg-decorative-1 rounded p-2 text-white small"
+                class="bg-deco-violet rounded p-2 text-white small"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
               </div>
             </td>
             <td>#ac4bb9</td>
-            <td>#bd6fc7</td>
+            <td>--</td>
           </tr>
           <tr>
             <td>
               <div
-                class="bg-decorative-2 rounded p-2 text-white small"
+                class="bg-deco-turquoise rounded p-2 text-white small"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
               </div>
             </td>
             <td>#008099</td>
-            <td>#3399ad</td>
+            <td>--</td>
           </tr>
           <tr>
             <td>
               <div
-                class="bg-decorative-3 rounded p-2 text-white small"
+                class="bg-deco-burnt rounded p-2 text-white small"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
               </div>
             </td>
             <td>#bd4e05</td>
-            <td>#ca7137</td>
+            <td>--</td>
           </tr>
           <tr>
             <td>
               <div
-                class="bg-decorative-4 rounded p-2 text-white small"
+                class="bg-deco-olive rounded p-2 text-white small"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
               </div>
             </td>
             <td>#787a00</td>
-            <td>#939533</td>
+            <td>--</td>
           </tr>
           <tr>
             <td>
               <div
-                class="bg-decorative-5 rounded p-2 text-white small"
+                class="bg-deco-rose rounded p-2 text-white small"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
               </div>
             </td>
             <td>#c84674</td>
-            <td>#d36b90</td>
+            <td>--</td>
           </tr>
           <tr>
             <td>
               <div
-                class="bg-decorative-6 rounded p-2 text-white small"
+                class="bg-deco-lavender rounded p-2 text-white small"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
               </div>
             </td>
             <td>#735696</td>
-            <td>#8f78ab</td>
+            <td>--</td>
           </tr>
           <tr>
             <td>
               <div
-                class="bg-decorative-7 rounded p-2 text-white small"
+                class="bg-deco-russet rounded p-2 text-white small"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
               </div>
             </td>
             <td>#a06b22</td>
-            <td>#b3894e</td>
+            <td>--</td>
           </tr>
           <tr>
             <td>
               <div
-                class="bg-decorative-8 rounded p-2 text-white small"
+                class="bg-deco-ultra rounded p-2 text-white small"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
               </div>
             </td>
-            <td>#374dc2</td>
-            <td>#5f71ce</td>
+            <td>#5b6ecd</td>
+            <td>--</td>
           </tr>
         </tbody>
       </table>
