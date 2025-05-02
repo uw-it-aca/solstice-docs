@@ -100,33 +100,6 @@
           </template>
         </CodeBlock>
       </div>
-      <h3>Subtle</h3>
-      <p>
-        Use the <code>primary-subtle</code> class for buttons that change modes
-        (i.e., edit), or for buttons that supplement core actions in button
-        groups (i.e., “cancel”)
-      </p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #preview>
-            <BButton
-              variant="link"
-              class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0"
-              >Subtle</BButton
-            >
-          </template>
-          <template #bootstrap>
-            <pre class="language-html">
-<code>&lt;button class="btn-link bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0" type="button">Subtle&lt;/button>
-</code></pre>
-          </template>
-          <template #vue>
-            <pre class="language-html">
-<code>&lt;BButton variant="link" class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0">subtle&lt;/BButton>
-</code></pre>
-          </template>
-        </CodeBlock>
-      </div>
 
       <h3>Outline</h3>
       <p>
@@ -152,31 +125,51 @@
         </CodeBlock>
       </div>
 
-      <h3>Link Button</h3>
+      <h3>Subdued</h3>
       <p>
-        Use the <code>link</code> variant for buttons with less prominence than
-        secondary buttons. Link buttons look like links but are considered
-        buttons. Link buttons could be used in more complex set of related
-        actions, such as a navigation menu. Link buttons have no fill (below)
-        and look like a Quiet link.
+        Use the <code>subdued-primary</code> class for buttons that change modes
+        (i.e., edit), or for buttons that supplement core actions in button
+        groups (i.e., “cancel”)
       </p>
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BButton
-              variant="link"
-              class="bg-link link-underline link-underline-opacity-0"
-              >Link</BButton
-            >
+            <BButton variant="subdued-primary">Subdued</BButton>
           </template>
           <template #bootstrap>
             <pre class="language-html">
-<code>&lt;button class="btn btn-link link-underline link-underline-opacity-0" type="button">Link&lt;/button>
+<code>&lt;button class="btn btn-subdued-primary" type="button">Subdued&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BButton variant="link" class="link-underline link-underline-opacity-0">Link&lt;/BButton>
+<code>&lt;BButton variant="subdued-primary">Subdued&lt;/BButton>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
+
+      <h3>Quiet</h3>
+      <p>
+        Use the <code>quiet-primary</code> variant for buttons with less
+        prominence than subdued buttons. Quiet buttons look like links but are
+        considered buttons. Quiet buttons could be used in more complex set of
+        related actions, such as a navigation menu. Quiet buttons have no fill
+        (below) and look like a Quiet Link.
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BButton variant="quiet-primary" class="">Quiet</BButton>
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;button class="btn btn-quiet-primary" type="button">Quiet&lt;/button>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BButton variant="quiet-primary">Quiet&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>
@@ -266,9 +259,9 @@
               ><i class="bi bi-three-dots"></i
             ></BButton>
             <BButton
-              variant="link"
+              variant="subdued-primary"
               size="sm"
-              class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0 me-2"
+              class="me-2"
               title="More"
               ><i class="bi bi-three-dots"></i
             ></BButton>
@@ -280,7 +273,7 @@
               ><i class="bi bi-three-dots"></i
             ></BButton>
             <BButton
-              variant="link"
+              variant="quiet-primary"
               size="sm"
               class="link-underline link-underline-opacity-0 me-2"
               title="More"
@@ -290,17 +283,17 @@
           <template #bootstrap>
             <pre class="language-html">
 <code>&lt;button class="btn btn-primary btn-sm" type="button" title="More">...&lt;/button>
-&lt;button class="btn btn-link btn-sm bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0" type="button" title="More">...&lt;/button>
+&lt;button class="btn btn-subdued-primary btn-sm" type="button" title="More">...&lt;/button>
 &lt;button class="btn btn-outline-primary btn-sm" type="button" title="More">...&lt;/button>
-&lt;button class="btn btn-link btn-sm link-underline link-underline-opacity-0" type="button" title="More">...&lt;/button>
+&lt;button class="btn btn-quiet-primary btn-sm" type="button" title="More">...&lt;/button>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
 <code>&lt;BButton variant="primary" size="sm" title="More">...&lt;/BButton>
-&lt;BButton variant="link" size="sm" class="bg-primary-subtle text-primary-emphasis text-primary-hover link-underline link-underline-opacity-0" title="More">...&lt;/BButton>
+&lt;BButton variant="subdued-primary" size="sm" title="More">...&lt;/BButton>
 &lt;BButton variant="outline-primary" size="sm" title="More">...&lt;/BButton>
-&lt;BButton variant="link" size="sm" class="link-underline link-underline-opacity-0" title="More">...&lt;/BButton>
+&lt;BButton variant="quiet-primary" size="sm" title="More">...&lt;/BButton>
 </code></pre>
           </template>
         </CodeBlock>

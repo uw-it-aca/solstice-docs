@@ -128,18 +128,21 @@
         <CodeBlock>
           <template #preview>
             Hello! Welcome to the
-            <BLink href="/">Soltice Design System</BLink> documentation
-            website. This is a paragraph example using the
+            <BLink href="/" class="link-primary">Soltice Design System</BLink>
+            documentation website. This is a paragraph example using the
             <BLink href="/elements/link">link component</BLink>. Goodbye!
           </template>
           <template #bootstrap>
             <pre class="language-html">
 <code>&lt;a href="/">Soltice Design System&lt;/a>
+&lt;a href="/" class="link-primary">Soltice Design System&lt;/a>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BLink to="/">Soltice Design System&lt;/BLink></code></pre>
+<code>&lt;BLink to="/">Soltice Design System&lt;/BLink>
+&lt;BLink to="/" class="link-primary">Soltice Design System&lt;/BLink>
+</code></pre>
           </template>
           <template #blah>asaf</template>
         </CodeBlock>
@@ -150,25 +153,19 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <div class="p-3 bg-brand rounded text-light">
+            <div class="p-3 bg-spirit-purple rounded text-white">
               Hello! Welcome to the
               <BLink
                 href="/"
-                color="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+                class="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
                 >Soltice Design System</BLink
               >
               documentation website. This is a paragraph example using the
               <BLink
                 href="/elements/link"
-                color="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+                class="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
                 >link component</BLink
-              >. Goodbye!
-              <BLink
-                :variant="'light'"
-                class="link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
-              >
-                light link
-              </BLink>
+              >.
             </div>
           </template>
           <template #bootstrap>
@@ -180,7 +177,7 @@
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BLink :variant="'light'" class="link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
+<code>&lt;BLink variant="light" class="link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
   Soltice Design System
 &lt;/BLink>
 </code></pre>
@@ -193,26 +190,21 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <div class="p-3 bg-beige rounded text-dark">
+            <div class="p-3 bg-light rounded text-dark">
               Hello! Welcome to the
               <BLink
                 href="/"
-                color="link-dark link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+                variant="dark"
+                class="link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
                 >Soltice Design System</BLink
               >
               documentation website. This is a paragraph example using the
               <BLink
                 href="/elements/link"
-                color="link-dark link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
-                >link component</BLink
-              >. Goodbye!
-
-              <BLink
-                :variant="'dark'"
+                variant="dark"
                 class="link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
-              >
-                dark link
-              </BLink>
+                >link component</BLink
+              >.
             </div>
           </template>
           <template #bootstrap>
@@ -224,7 +216,7 @@
           </template>
           <template #vue>
             <pre class="language-html">
-<code>&lt;BLink :variant="'dark'" class="link-dark link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
+<code>&lt;BLink variant="dark" class="link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
   Soltice Design System
 &lt;/BLink>
 </code></pre>
@@ -519,7 +511,6 @@ import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
 
 export default {
   name: "DocsElementsLink",
-  inject: ["mq"],
   components: {
     Layout,
     CodeBlock,
@@ -529,6 +520,7 @@ export default {
     BBreadcrumbItem,
     BLink,
   },
+  inject: ["mq"],
   data() {
     return {
       pageTitle: "Link",
