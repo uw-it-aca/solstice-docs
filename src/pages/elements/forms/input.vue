@@ -54,7 +54,7 @@
       </PageContents>
     </template>
     <template #content>
-      <h2 class="display-6 ff-encodesans pt-3 pb-3" id="anatomy">Anatomy</h2>
+      <h2 id="anatomy" class="display-6 ff-encodesans pt-3 pb-3">Anatomy</h2>
       <figure class="d-flex flex-column">
         <img
           src="/images/input-field-anatomy.png"
