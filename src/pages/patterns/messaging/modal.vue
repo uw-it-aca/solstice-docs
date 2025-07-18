@@ -64,6 +64,9 @@
       </PageContents>
     </template>
     <template #content>
+      <BButton v-b-modal.modal-example> Show Modal </BButton>
+      <BModal id="modal-example" title="Hello, World!"> Foobar? </BModal>
+
       <h2 id="anatomy">Anatomy</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, sit, quo
@@ -117,7 +120,12 @@ import Layout from "@/layout.vue";
 // import CodeBlock from "@/components/CodeBlock.vue";
 // import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+import {
+  BBreadcrumb,
+  BBreadcrumbItem,
+  BButton,
+  BModal,
+} from "bootstrap-vue-next";
 
 export default {
   name: "DocsPatternsModal" /* example: Docs--Folder--ComponentName */,
@@ -126,6 +134,8 @@ export default {
     /* CodeBlock, UsageBlock, */ PageContents,
     BBreadcrumb,
     BBreadcrumbItem,
+    BButton,
+    BModal,
   },
   inject: ["mq"],
   data() {

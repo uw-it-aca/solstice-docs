@@ -16,35 +16,26 @@
       </div>
       <div v-if="$slots['bootstrap']">
         <div
-          class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
+          class="p-0 small m-0 bg-body-tertiary rounded-bottom position-relative"
         >
-          <div>BOOTSTRAP</div>
-          <div>copy</div>
-        </div>
-        <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
+          <div class="p-3">HTML</div>
           <slot name="bootstrap"></slot>
         </div>
       </div>
       <div v-if="$slots['vue']">
         <div
-          class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-top border-bottom"
+          class="p-0 small m-0 border-top bg-body-tertiary rounded-bottom position-relative"
         >
-          <div>VUE</div>
-          <div>copy</div>
-        </div>
-        <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
+          <div class="p-3">VUE</div>
           <slot name="vue"></slot>
         </div>
       </div>
 
       <div v-if="$slots['script']">
         <div
-          class="d-flex justify-content-between small px-3 py-2 m-0 text-muted bg-body-tertiary border-bottom"
+          class="p-0 small m-0 border-top bg-body-tertiary rounded-bottom position-relative"
         >
-          <div>JAVASCRIPT</div>
-          <div>copy</div>
-        </div>
-        <div class="p-0 small m-0 bg-body-tertiary rounded-bottom">
+          <div class="p-3">JS</div>
           <slot name="script"></slot>
         </div>
       </div>
@@ -59,10 +50,20 @@ import "prismjs/components/prism-json";
 import "prismjs/components/prism-markup-templating";
 import "prismjs/components/prism-scss";
 import "prismjs/themes/prism.css";
+import "prismjs/plugins/toolbar/prism-toolbar";
+import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard";
 
 export default {
   mounted() {
     Prism.highlightAll();
+
+    // style the copy button
+    document.querySelectorAll(".copy-to-clipboard-button").forEach((item) => {
+      item.classList.add("btn");
+      item.classList.add("btn-sm");
+      item.classList.add("btn-secondary");
+      item.classList.add("fs-10");
+    });
   },
 };
 </script>
@@ -94,6 +95,14 @@ export default {
   .vh-100 {
     min-height: 30vh !important;
     max-height: 40vh !important;
+  }
+}
+
+.toolbar {
+  .toolbar-item button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
   }
 }
 </style>

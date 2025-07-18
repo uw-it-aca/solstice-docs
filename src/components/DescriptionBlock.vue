@@ -35,13 +35,14 @@ export default {
     name: {
       type: String,
       default: "Comp name",
-      required: true,
     },
     version: {
       type: String,
+      default: "1.0",
     },
     link: {
       type: String,
+      default: "#",
     },
     accessibility: {
       type: Boolean,
