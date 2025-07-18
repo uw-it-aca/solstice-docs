@@ -14,7 +14,7 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+
   mounted: function () {
     // check if scrollspy is needed - only for xlplus media query
     if (!this.mq.xlMinus) {
@@ -24,6 +24,7 @@ export default {
       });
     }
   },
+  methods: {},
 };
 </script>
 
@@ -38,7 +39,7 @@ export default {
   .active {
     --bs-bg-opacity: 1;
     /* stylelint-disable-next-line color-function-notation */
-    background-color: rgba(
+    background-color: rgb(
       var(--bs-tertiary-bg-rgb),
       var(--bs-bg-opacity)
     ) !important;
