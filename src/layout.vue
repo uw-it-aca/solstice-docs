@@ -5,19 +5,25 @@
     </template>
     <template #aside>
       <div
-        class="bg-white bg-opacity-10 rounded-3 px-3 py-1 small d-flex justify-content-between align-items-center mt-2"
+        class="bg-white bg-opacity-10 rounded-3 p-3 small d-flex justify-content-between align-items-center mt-2"
       >
         <div class="text-light">
-          Version:
+          Version<br />
+          <a
+            href="https://github.com/uw-it-aca/solstice-theme/releases"
+            target="_blank"
+            class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
+            >solstice-theme: 1.0.6</a
+          ><br />
           <a
             href="https://github.com/uw-it-aca/solstice-vue/releases"
             target="_blank"
-            class="ms-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
-            >1.1.0</a
+            class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
+            >solstice-vue: 1.1.4</a
           >
         </div>
         <div class="text-light">
-          <SColorMode />
+          <SColorMode color-class="text-white" />
         </div>
       </div>
     </template>
