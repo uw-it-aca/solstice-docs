@@ -592,6 +592,14 @@
                     >Modal</BLink
                   >
                 </li>
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/patterns/disclosure/offcanvas"
+                    >Offcanvas</BLink
+                  >
+                </li>
               </ul>
             </div>
           </li>
@@ -702,6 +710,22 @@
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/utility/color-mode"
                     >Color Mode</BLink
+                  >
+                </li>
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/patterns/utility/search"
+                    >Search</BLink
+                  >
+                </li>
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/patterns/utility/chatbot"
+                    >Chatbot</BLink
                   >
                 </li>
               </ul>
