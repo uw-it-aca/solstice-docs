@@ -186,14 +186,14 @@
           <template #bootstrap>
             <pre class="language-html">
 <code>&lt;div class="alert alert-success small" role="alert" aria-live="polite" aria-atomic="true">
-  &lt;i class="bi-exclamation-circle-fill me-1">&lt;/i> Success Alert
+  &lt;i class="bi-check-circle-fill me-1">&lt;/i> Success Alert
 &lt;/div>
 </code></pre>
           </template>
           <template #vue>
             <pre class="language-html">
 <code>&lt;BAlert variant="success" :model-value="true" class="small">
-  &lt;i class="bi-exclamation-circle-fill me-1">&lt;/i> Success Alert
+  &lt;i class="bi-check-circle-fill me-1">&lt;/i> Success Alert
 &lt;/BAlert>
 </code></pre>
           </template>
