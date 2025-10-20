@@ -169,6 +169,36 @@
           </template>
         </CodeBlock>
       </div>
+      <h3>Success</h3>
+      <p>
+        Alerts with the <code>success</code> variant communicate... Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Tempore sunt reiciendis
+        fugit placeat, deleniti atque eos architecto modi sit nulla ullam ipsa
+        quam eius nihil earum debitis ad? Earum, et.
+      </p>
+      <div class="mb-5">
+        <CodeBlock>
+          <template #preview>
+            <BAlert variant="success" :model-value="true" class="small"
+              ><i class="bi-check-circle-fill me-1"></i> Succes Alert
+            </BAlert>
+          </template>
+          <template #bootstrap>
+            <pre class="language-html">
+<code>&lt;div class="alert alert-success small" role="alert" aria-live="polite" aria-atomic="true">
+  &lt;i class="bi-exclamation-circle-fill me-1">&lt;/i> Success Alert
+&lt;/div>
+</code></pre>
+          </template>
+          <template #vue>
+            <pre class="language-html">
+<code>&lt;BAlert variant="success" :model-value="true" class="small">
+  &lt;i class="bi-exclamation-circle-fill me-1">&lt;/i> Success Alert
+&lt;/BAlert>
+</code></pre>
+          </template>
+        </CodeBlock>
+      </div>
       <h2 id="options">Options</h2>
       <h3>Call to Action</h3>
       <p>
