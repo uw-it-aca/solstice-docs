@@ -17,7 +17,7 @@
       <span v-if="accessibility" class="badge bg-beige me-1 text-dark"
         >a11y</span
       >
-      <span v-if="version" class="badge bg-purple"> {{ version }} </span>
+      <span v-if="version" class="badge bg-purple"> {{ version }}</span>
     </div>
   </div>
 </template>
@@ -40,7 +40,7 @@
       },
       link: {
         type: String,
-        default: "#",
+        default: "",
       },
       accessibility: {
         type: Boolean,

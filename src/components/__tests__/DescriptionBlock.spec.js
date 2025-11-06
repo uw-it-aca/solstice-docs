@@ -11,21 +11,29 @@ describe("DescriptionBlock", () => {
         link: "/test-link",
       },
     });
-    // Assert the rendered text of the component
     const link = wrapper.findComponent(BLink);
     expect(link.exists()).toBe(true);
     expect(link.props("to")).toBe("/test-link");
     expect(wrapper.text()).toContain("View Test Component");
   });
 
-  it('displays "Coming soon!" when no link is provided', () => {
+  it('displays "Coming soon!" when link is empty', () => {
     const wrapper = mount(DescriptionBlock, {
       props: {
         name: "Test Component",
         link: "",
       },
     });
-    // Assert the rendered text of the component
+    expect(wrapper.text()).toContain("Coming soon!");
+  });
+
+  it('displays "Coming soon!" when link is null', () => {
+    const wrapper = mount(DescriptionBlock, {
+      props: {
+        name: "Test Component",
+        link: null,
+      },
+    });
     expect(wrapper.text()).toContain("Coming soon!");
   });
 });
