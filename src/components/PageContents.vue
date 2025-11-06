@@ -15,7 +15,7 @@
       return {};
     },
 
-    mounted: function () {
+    mounted() {
       // check if scrollspy is needed - only for xlplus media query
       if (!this.mq.xlMinus) {
         // implement scrollspy by attaching to 'scrollbody' id produced by component
