@@ -29,24 +29,27 @@
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/solstice-101"
-              >Solstice 101</BLink
             >
+              Solstice 101
+            </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/design-principles"
-              >Design Principles</BLink
             >
+              Design Principles
+            </BLink>
           </li>
           <li class="nav-item">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/developer-guide"
-              >Developer Guide</BLink
             >
+              Developer Guide
+            </BLink>
           </li>
         </ul>
       </div>
@@ -66,8 +69,7 @@
           ><i
             class="bi bi-body-text me-3 text-white"
             style="--bs-text-opacity: 0.5"
-          ></i
-          >Content</span
+          ></i>Content</span
         >
         <i class="bi bi-chevron-down" aria-hidden="true"></i>
       </BLink>
@@ -83,48 +85,54 @@
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/voice-tone"
-              >Voice &amp; Tone</BLink
             >
+              Voice &amp; Tone
+            </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/grammar-mechanics"
-              >Grammar &amp; Mechanics</BLink
             >
+              Grammar &amp; Mechanics
+            </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/language-inclusivity"
-              >Language &amp; Inclusivity</BLink
             >
+              Language &amp; Inclusivity
+            </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/terminology"
-              >Terminology</BLink
             >
+              Terminology
+            </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/labels"
-              >Labels</BLink
             >
+              Labels
+            </BLink>
           </li>
           <li class="nav-item">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/writing-errors"
-              >Writing for Errors</BLink
             >
+              Writing for Errors
+            </BLink>
           </li>
         </ul>
       </div>
@@ -144,8 +152,7 @@
           ><i
             class="bi bi-layers-fill me-3 text-white"
             style="--bs-text-opacity: 0.5"
-          ></i
-          >Foundations</span
+          ></i>Foundations</span
         >
         <i class="bi bi-chevron-down" aria-hidden="true"></i>
       </BLink>
@@ -161,32 +168,36 @@
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/color"
-              >Color</BLink
             >
+              Color
+            </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/typography"
-              >Typography</BLink
             >
+              Typography
+            </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/layout"
-              >Layout</BLink
             >
+              Layout
+            </BLink>
           </li>
           <li class="nav-item">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/icons"
-              >Icons</BLink
             >
+              Icons
+            </BLink>
           </li>
         </ul>
       </div>
@@ -194,8 +205,8 @@
 
     <li aria-hidden="true" class="d-none nav-item mt-2 mb-3">
       <a href="#" class="nav-link disabled text-gray d-block p-0 internal-link">
-        <hr class="m-0 bg-gray"
-      /></a>
+        <hr class="m-0 bg-gray"></a
+      >
     </li>
 
     <li class="nav-item mb-1">
@@ -213,8 +224,7 @@
           ><i
             class="bi bi-box me-3 text-white"
             style="--bs-text-opacity: 0.5"
-          ></i
-          >UI Elements</span
+          ></i>UI Elements</span
         >
         <i class="bi bi-chevron-down" aria-hidden="true"></i>
       </BLink>
@@ -230,40 +240,45 @@
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/elements/link"
-              >Link</BLink
             >
+              Link
+            </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/elements/button"
-              >Button</BLink
             >
+              Button
+            </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/elements/heading"
-              >Heading</BLink
             >
+              Heading
+            </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/elements/paragraph"
-              >Paragraph</BLink
             >
+              Paragraph
+            </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
               class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/elements/icon"
-              >Icon</BLink
             >
+              Icon
+            </BLink>
           </li>
           <li class="nav-item">
             <BLink
@@ -294,8 +309,9 @@
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/label"
-                    >Label</BLink
                   >
+                    Label
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
@@ -303,8 +319,9 @@
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/input"
-                    >Input</BLink
                   >
+                    Input
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
@@ -312,8 +329,9 @@
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/select"
-                    >Textarea</BLink
                   >
+                    Textarea
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
@@ -321,8 +339,9 @@
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/select"
-                    >Select</BLink
                   >
+                    Select
+                  </BLink>
                 </li>
 
                 <li class="nav-item mb-1">
@@ -331,8 +350,9 @@
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/select"
-                    >Button</BLink
                   >
+                    Button
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
@@ -340,8 +360,9 @@
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/select"
-                    >Fieldset</BLink
                   >
+                    Fieldset
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
@@ -349,8 +370,9 @@
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/radio"
-                    >Radio</BLink
                   >
+                    Radio
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
@@ -358,8 +380,9 @@
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/checkbox"
-                    >Checkbox</BLink
                   >
+                    Checkbox
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
@@ -367,8 +390,9 @@
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
                     to="/elements/forms/range"
-                    >Range</BLink
                   >
+                    Range
+                  </BLink>
                 </li>
               </ul>
             </div>
@@ -392,8 +416,7 @@
           ><i
             class="bi bi-boxes me-3 text-white"
             style="--bs-text-opacity: 0.5"
-          ></i
-          >UX Patterns</span
+          ></i>UX Patterns</span
         >
         <i class="bi bi-chevron-down" aria-hidden="true"></i>
       </BLink>
@@ -432,16 +455,18 @@
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/boilerplate/topbar"
-                    >Topbar</BLink
                   >
+                    Topbar
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/boilerplate/sidebar"
-                    >Sidebar</BLink
                   >
+                    Sidebar
+                  </BLink>
                 </li>
               </ul>
             </div>
@@ -477,16 +502,18 @@
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/navigation/tabs"
-                    >Tabs</BLink
                   >
+                    Tabs
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/navigation/menu"
-                    >Menu</BLink
                   >
+                    Menu
+                  </BLink>
                 </li>
               </ul>
             </div>
@@ -520,24 +547,27 @@
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/surface/card"
-                    >Card</BLink
                   >
+                    Card
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/surface/panel"
-                    >Panel</BLink
                   >
+                    Panel
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/surface/tile"
-                    >Tile</BLink
                   >
+                    Tile
+                  </BLink>
                 </li>
               </ul>
             </div>
@@ -573,32 +603,36 @@
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/disclosure/collapse"
-                    >Collapse</BLink
                   >
+                    Collapse
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/disclosure/accordian"
-                    >Accordian</BLink
                   >
+                    Accordian
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/disclosure/modal"
-                    >Modal</BLink
                   >
+                    Modal
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/disclosure/offcanvas"
-                    >Offcanvas</BLink
                   >
+                    Offcanvas
+                  </BLink>
                 </li>
               </ul>
             </div>
@@ -634,40 +668,45 @@
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/messaging/alert"
-                    >Alert</BLink
                   >
+                    Alert
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/messaging/toast"
-                    >Toast</BLink
                   >
+                    Toast
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/messaging/banner"
-                    >Banner</BLink
                   >
+                    Banner
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/messaging/badge"
-                    >Badge</BLink
                   >
+                    Badge
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/messaging/modal"
-                    >Modal</BLink
                   >
+                    Modal
+                  </BLink>
                 </li>
               </ul>
             </div>
@@ -701,32 +740,36 @@
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/utility/profile"
-                    >Profile</BLink
                   >
+                    Profile
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/utility/color-mode"
-                    >Color Mode</BLink
                   >
+                    Color Mode
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/utility/search"
-                    >Search</BLink
                   >
+                    Search
+                  </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/patterns/utility/chatbot"
-                    >Chatbot</BLink
                   >
+                    Chatbot
+                  </BLink>
                 </li>
               </ul>
             </div>
@@ -738,38 +781,38 @@
 </template>
 
 <script>
-// import { getDevEnv } from "@/utils/global";
-import { BLink } from "bootstrap-vue-next";
+  // import { getDevEnv } from "@/utils/global";
+  import { BLink } from "bootstrap-vue-next";
 
-export default {
-  components: {
-    BLink,
-  },
-  data() {
-    return {};
-  },
-  mounted: function () {
-    // console.log(import.meta.env.DEV);
-    // console.log(import.meta.env.PROD);
-    // sets to 'false' when in PRODUCTION
-    // this.isDev = getDevEnv();
-  },
-};
+  export default {
+    components: {
+      BLink,
+    },
+    data() {
+      return {};
+    },
+    mounted() {
+      // console.log(import.meta.env.DEV);
+      // console.log(import.meta.env.PROD);
+      // sets to 'false' when in PRODUCTION
+      // this.isDev = getDevEnv();
+    },
+  };
 </script>
 
-<style lang="scss" scoped>
-.chevron .bi-chevron-down {
-  display: inline-block;
-  transition: transform 0.35s ease;
-  transform-origin: 0.5em 50%;
-  font-weight: bolder;
-}
+<style lang="css" scoped>
+  .chevron .bi-chevron-down {
+    display: inline-block;
+    transition: transform 0.35s ease;
+    transform-origin: 0.5em 50%;
+    font-weight: bolder;
+  }
 
-.chevron[aria-expanded="true"] .bi-chevron-down {
-  transform: rotate(-180deg); // transform: scaleY(-1);
-}
+  .chevron[aria-expanded='true'] .bi-chevron-down {
+    transform: rotate(-180deg); /* transform: scaleY(-1); */
+  }
 
-.bi-chevron-down::after {
-  font-weight: bolder !important;
-}
+  .bi-chevron-down::after {
+    font-weight: bolder !important;
+  }
 </style>

@@ -50,18 +50,18 @@
 </template>
 
 <script>
-import PreviewBlock from "./PreviewBlock.vue";
+  import PreviewBlock from "./PreviewBlock.vue";
 
-export default {
-  props: {
-    variant: {
-      type: String,
-      default: "do",
-      required: false,
+  export default {
+    props: {
+      variant: {
+        type: String,
+        default: "do",
+        required: false,
+      },
     },
-  },
-  data: function () {
-    return {};
-  },
-};
+    data() {
+      return {};
+    },
+  };
 </script>

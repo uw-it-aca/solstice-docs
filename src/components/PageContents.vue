@@ -6,37 +6,38 @@
 </template>
 
 <script>
-import { ScrollSpy } from "bootstrap";
+  import { ScrollSpy } from "bootstrap";
 
-export default {
-  name: "PageContents",
-  inject: ["mq"],
-  data() {
-    return {};
-  },
+  export default {
+    name: "PageContents",
+    inject: ["mq"],
+    data() {
+      return {};
+    },
 
-  mounted: function () {
-    // check if scrollspy is needed - only for xlplus media query
-    if (!this.mq.xlMinus) {
-      // implement scrollspy by attaching to 'scrollbody' id produced by component
-      new ScrollSpy(document.getElementById("scrollbody"), {
-        target: "#TableOfContents",
-      });
-    }
-  },
-  methods: {},
-};
+    mounted: function () {
+      // check if scrollspy is needed - only for xlplus media query
+      if (!this.mq.xlMinus) {
+        // implement scrollspy by attaching to 'scrollbody' id produced by component
+        new ScrollSpy(document.getElementById("scrollbody"), {
+          target: "#TableOfContents",
+        });
+      }
+    },
+    methods: {},
+  };
 </script>
 
-<style lang="scss">
-.sol-toc {
-  max-width: 312px;
+<style lang="css">
+  .sol-toc {
+    max-width: 312px;
+  }
 
-  li {
+  .sol-toc li {
     margin-bottom: 0.25rem;
   }
 
-  .active {
+  .sol-toc .active {
     --bs-bg-opacity: 1;
     /* stylelint-disable-next-line color-function-notation */
     background-color: rgb(
@@ -44,5 +45,4 @@ export default {
       var(--bs-bg-opacity)
     ) !important;
   }
-}
 </style>

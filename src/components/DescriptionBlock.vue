@@ -17,40 +17,38 @@
       <span v-if="accessibility" class="badge bg-beige me-1 text-dark"
         >a11y</span
       >
-      <span v-if="version" class="badge bg-purple">
-        {{ version }}
-      </span>
+      <span v-if="version" class="badge bg-purple"> {{ version }} </span>
     </div>
   </div>
 </template>
 
 <script>
-import { BLink } from "bootstrap-vue-next";
+  import { BLink } from "bootstrap-vue-next";
 
-export default {
-  components: {
-    BLink,
-  },
-  props: {
-    name: {
-      type: String,
-      default: "Comp name",
+  export default {
+    components: {
+      BLink,
     },
-    version: {
-      type: String,
-      default: "1.0",
+    props: {
+      name: {
+        type: String,
+        default: "Comp name",
+      },
+      version: {
+        type: String,
+        default: "1.0",
+      },
+      link: {
+        type: String,
+        default: "#",
+      },
+      accessibility: {
+        type: Boolean,
+        default: false,
+      },
     },
-    link: {
-      type: String,
-      default: "#",
+    data() {
+      return {};
     },
-    accessibility: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  data: function () {
-    return {};
-  },
-};
+  };
 </script>
