@@ -17,6 +17,9 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "complexity": {
+        "noImportantStyles": "off"
+      },
       "style": {
         "useConst": "off",
         "useImportType": "off"
