@@ -104,7 +104,7 @@
     mounted: function () {
       // MARK: constructs page title in the following format "Page Title - AppName"
       // as a default layout prop
-      document.title = this.pageTitle + " - " + this.appName;
+      document.title = `${this.pageTitle} - ${this.appName}`;
       //this.lastModified = new Date(document.lastModified).toLocaleString();
     },
   };

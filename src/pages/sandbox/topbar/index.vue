@@ -43,7 +43,7 @@
           <a
             href="#"
             class="nav-link disabled text-muted d-block p-0 internal-link"
-            ><hr class="m-0 bg-light" />
+            ><hr class="m-0 bg-light">
             <span class="visually-hidden"> Navigation separator</span></a
           >
         </li>
@@ -72,7 +72,7 @@
         role="alert"
       >
         <p>
-          <strong>Holy guacamole!</strong> You should check in on some of those
+          <strong>Holy guacamole!</strong>You should check in on some of those
           fields below.
         </p>
         <p>
@@ -101,27 +101,27 @@
 </template>
 
 <script>
-import { STopbar, SProfile } from "solstice-vue";
+  import { SProfile, STopbar } from "solstice-vue";
 
-export default {
-  name: "DocsSandboxTopbarIndex",
-  components: { STopbar, SProfile },
-  data() {
-    return {
-      // minimum application setup overrides
-      appName: "MyApp",
-      appRootUrl: "/",
-      signOutUrl: "/signout",
-      pageTitle: "Home",
-      userNetid: "myusername",
-      userOfficial: "MYOFFICAL NAME",
-      userPreferred: "Preferred Name",
-      currentYear: new Date().getFullYear(),
-    };
-  },
-  created: function () {
-    // constructs page title in the following format "Page Title - AppName"
-    document.title = this.pageTitle + " - " + this.appName;
-  },
-};
+  export default {
+    name: "DocsSandboxTopbarIndex",
+    components: { STopbar, SProfile },
+    data() {
+      return {
+        // minimum application setup overrides
+        appName: "MyApp",
+        appRootUrl: "/",
+        signOutUrl: "/signout",
+        pageTitle: "Home",
+        userNetid: "myusername",
+        userOfficial: "MYOFFICAL NAME",
+        userPreferred: "Preferred Name",
+        currentYear: new Date().getFullYear(),
+      };
+    },
+    created: function () {
+      // constructs page title in the following format "Page Title - AppName"
+      document.title = `${this.pageTitle} - ${this.appName}`;
+    },
+  };
 </script>

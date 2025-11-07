@@ -28,19 +28,19 @@ Checkout the develop branch.
 git checkout develop
 ```
 
-And do a pull 
+And do a pull
 ```sh
 git pull
 ```
 
-Copy the sample environment file.  
+Copy the sample environment file.
 ```sh
 cp .env.sample .env
 ```
 
-If nothing happens, it's been done correctly. The default port is :8000; if you want to use that port, you don't need to change anything. 
+If nothing happens, it's been done correctly. The default port is :8000; if you want to use that port, you don't need to change anything.
 
-To change the port, edit the .env file in your editor of choice. 
+To change the port, edit the .env file in your editor of choice.
 
 ## Development
 Perform these steps to begin working on your development branch.
@@ -89,14 +89,7 @@ npm run test:unit
 npm run coverage
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Lint with [Biome](https://biomejs.dev/)
 ```sh
-npm run eslint
+npm run biome:lint
 ```
-
-### Lint with [Stylelint](https://stylelint.io/)
-
-```sh
-npm run stylelint
-```
-
