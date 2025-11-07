@@ -75,7 +75,7 @@ jobs:
       - name: Use Node.js 20.x
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install packages
         run: npm install
@@ -88,11 +88,8 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Lint with ESLint
-        run: npm run eslint
-
-      - name: Lint with StyleLint
-        run: npm run stylelint
+      - name: Lint with Biome
+        run: npm run biome:lint
 
   deploy:
     if: github.event_name == 'push'
@@ -119,7 +116,7 @@ jobs:
           git_repo_branch: ${{ needs.context.outputs.git_repo_branch }}
           gh_auth_token: ${{ secrets.GH_AUTH_TOKEN }}
 
-      - name: 'Surface context from executed build step'
+      - name: "Surface context from executed build step"
         id: context
         shell: bash
         run: echo "context=$(< ${CONTEXT_FILENAME})" >> $GITHUB_OUTPUT
@@ -139,4 +136,4 @@ jobs:
           gh_auth_token: ${{ secrets.GH_AUTH_TOKEN }}
           registry_password: ${{ secrets.GCP_JSON_KEY }}
           context: ${{ needs.deploy.outputs.context }}
-          prune_flux_preserve_count: 2  # this isn't in the example, is it needed?
+          prune_flux_preserve_count: 2 # this isn't in the example, is it needed?
