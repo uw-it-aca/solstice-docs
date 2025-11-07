@@ -44,65 +44,59 @@
 </template>
 
 <script>
-import Prism from "prismjs";
-import "prismjs/components/prism-javascript";
-import "prismjs/components/prism-json";
-import "prismjs/components/prism-markup-templating";
-import "prismjs/components/prism-scss";
-import "prismjs/themes/prism.css";
-import "prismjs/plugins/toolbar/prism-toolbar";
-import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard";
+  import Prism from "prismjs";
+  import "prismjs/components/prism-javascript";
+  import "prismjs/components/prism-json";
+  import "prismjs/components/prism-markup-templating";
+  import "prismjs/components/prism-scss";
+  import "prismjs/themes/prism.css";
+  import "prismjs/plugins/toolbar/prism-toolbar";
+  import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard";
 
-export default {
-  mounted() {
-    Prism.highlightAll();
+  export default {
+    mounted() {
+      Prism.highlightAll();
 
-    // style the copy button
-    document.querySelectorAll(".copy-to-clipboard-button").forEach((item) => {
-      item.classList.add("btn");
-      item.classList.add("btn-sm");
-      item.classList.add("btn-secondary");
-      item.classList.add("fs-10");
-    });
-  },
-};
+      // style the copy button
+      document.querySelectorAll(".copy-to-clipboard-button").forEach((item) => {
+        item.classList.add("btn");
+        item.classList.add("btn-sm");
+        item.classList.add("btn-secondary");
+        item.classList.add("fs-10");
+      });
+    },
+  };
 </script>
 
-<style lang="scss">
-// global styleguide
+<style lang="css">
+  /* global styleguide */
 
-.codeblock {
-  pre {
+  .codeblock pre {
     background: transparent !important;
     margin: 0 !important;
     color: inherit !important;
   }
 
-  code {
+  .codeblock code {
     color: inherit !important;
     text-shadow: none !important;
   }
-}
 
-.preview {
-  // reset container padding for render display
-  .container-xl {
+  /* reset container padding for render display */
+  .preview .container-xl {
     padding-left: 12px;
     padding-right: 12px;
   }
 
-  // reset vh-100 to something more manageable for display
-  .vh-100 {
+  /* reset vh-100 to something more manageable for display */
+  .preview .vh-100 {
     min-height: 30vh !important;
     max-height: 40vh !important;
   }
-}
 
-.toolbar {
-  .toolbar-item button {
+  .toolbar .toolbar-item button {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
   }
-}
 </style>

@@ -25,57 +25,53 @@
 </template>
 
 <script>
-import Prism from "prismjs";
-import "prismjs/components/prism-javascript";
-import "prismjs/components/prism-json";
-import "prismjs/components/prism-markup-templating";
-import "prismjs/components/prism-scss";
-import "prismjs/themes/prism.css";
+  import Prism from "prismjs";
+  import "prismjs/components/prism-javascript";
+  import "prismjs/components/prism-json";
+  import "prismjs/components/prism-markup-templating";
+  import "prismjs/components/prism-scss";
+  import "prismjs/themes/prism.css";
 
-export default {
-  props: {
-    variant: {
-      type: String,
-      default: "do",
-      required: false,
+  export default {
+    props: {
+      variant: {
+        type: String,
+        default: "do",
+        required: false,
+      },
     },
-  },
-  data: function () {
-    return {};
-  },
-  mounted() {
-    Prism.highlightAll();
-  },
-};
+    data() {
+      return {};
+    },
+    mounted() {
+      Prism.highlightAll();
+    },
+  };
 </script>
 
-<style lang="scss">
-// global styleguide
+<style lang="css">
+  /* global styleguide */
 
-.codeblock {
-  pre {
+  .codeblock pre {
     background: transparent !important;
     margin: 0 !important;
     color: inherit !important;
   }
 
-  code {
+  .codeblock code {
     color: inherit !important;
     text-shadow: none !important;
   }
-}
 
-.preview {
-  // reset container padding for render display
-  .container-xl {
+  /* reset container padding for render display */
+  .preview .container-xl {
     padding-left: 12px;
     padding-right: 12px;
   }
 
-  // reset vh-100 to something more manageable for display
-  .vh-100 {
+  /* reset vh-100 to something more manageable for display */
+  .preview .vh-100 {
     min-height: 30vh !important;
     max-height: 40vh !important;
   }
-}
 </style>

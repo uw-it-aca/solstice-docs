@@ -1,20 +1,22 @@
 <template>
   <SSidebar :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
     <template #navigation>
-      <NavMenu />
+      <NavMenu/>
     </template>
     <template #aside>
       <div
         class="bg-white bg-opacity-10 rounded-3 p-3 small d-flex justify-content-between align-items-center mt-2"
       >
         <div class="text-light">
-          Version<br />
+          Version
+          <br>
           <a
             href="https://github.com/uw-it-aca/solstice-theme/releases"
             target="_blank"
             class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
             >solstice-theme: 1.0.6</a
-          ><br />
+          >
+          <br>
           <a
             href="https://github.com/uw-it-aca/solstice-vue/releases"
             target="_blank"
@@ -23,14 +25,14 @@
           >
         </div>
         <div class="text-light">
-          <SColorMode color-class="text-white" />
+          <SColorMode color-class="text-white"/>
         </div>
       </div>
     </template>
     <template #main>
       <div v-if="$slots.breadcrumb" class="row">
         <div class="col">
-          <slot name="breadcrumb" />
+          <slot name="breadcrumb"/>
         </div>
       </div>
 
@@ -45,20 +47,20 @@
               dolores vero sint. Porro, quaerat.
             </slot>
           </p>
-          <hr class="w-50 d-inline-block" />
+          <hr class="w-50 d-inline-block">
         </div>
       </div>
 
       <div class="row">
         <div :class="[mq.xlMinus || !$slots['toc'] ? 'col' : 'col-9']">
           <div v-if="$slots['toc'] && mq.xlMinus" class="mb-5">
-            <slot name="toc" />
+            <slot name="toc"/>
           </div>
-          <slot name="content" />
+          <slot name="content"/>
 
           <div v-if="$slots.author" class="py-1 small">
             <div class="text-muted">
-              Last updated by: <slot name="author" />
+              Last updated by: <slot name="author"/>
             </div>
           </div>
         </div>
@@ -74,36 +76,36 @@
 </template>
 
 <script>
-import NavMenu from "@/components/NavMenu.vue";
-import { SColorMode, SSidebar } from "solstice-vue";
+  import { SColorMode, SSidebar } from "solstice-vue";
+  import NavMenu from "@/components/NavMenu.vue";
 
-export default {
-  name: "App",
-  components: {
-    NavMenu,
-    SColorMode,
-    SSidebar,
-  },
-  inject: ["mq"],
-  props: {
-    pageTitle: {
-      type: String,
-      default: "Not specified",
-      required: false,
+  export default {
+    name: "App",
+    components: {
+      NavMenu,
+      SColorMode,
+      SSidebar,
     },
-  },
-  data: function () {
-    return {
-      // automatically set year
-      currentYear: new Date().getFullYear(),
-      lastModified: null,
-    };
-  },
-  mounted: function () {
-    // MARK: constructs page title in the following format "Page Title - AppName"
-    // as a default layout prop
-    document.title = this.pageTitle + " - " + this.appName;
-    //this.lastModified = new Date(document.lastModified).toLocaleString();
-  },
-};
+    inject: ["mq"],
+    props: {
+      pageTitle: {
+        type: String,
+        default: "Not specified",
+        required: false,
+      },
+    },
+    data() {
+      return {
+        // automatically set year
+        currentYear: new Date().getFullYear(),
+        lastModified: null,
+      };
+    },
+    mounted: function () {
+      // MARK: constructs page title in the following format "Page Title - AppName"
+      // as a default layout prop
+      document.title = this.pageTitle + " - " + this.appName;
+      //this.lastModified = new Date(document.lastModified).toLocaleString();
+    },
+  };
 </script>

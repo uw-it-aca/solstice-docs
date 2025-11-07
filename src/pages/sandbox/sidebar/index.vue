@@ -42,7 +42,7 @@
           <a
             href="#"
             class="nav-link disabled text-gray d-block p-0 internal-link"
-            ><hr class="m-0 bg-gray" />
+            ><hr class="m-0 bg-gray">
             <span class="visually-hidden"> Navigation separator</span></a
           >
         </li>
@@ -108,24 +108,24 @@
 </template>
 
 <script>
-import { SSidebar, SProfile } from "solstice-vue";
+  import { SProfile, SSidebar } from "solstice-vue";
 
-export default {
-  name: "DocsSandboxSidebarIndex",
-  components: { SSidebar, SProfile },
-  props: {},
-  data: function () {
-    return {
-      // minimum application setup overrides
-      appName: "MyApp",
-      appRootUrl: "/",
-      signOutUrl: "/signout",
-      pageTitle: "Home",
-      userNetid: "myusername",
-      userOfficial: "MYOFFICAL NAME",
-      userPreferred: "Preferred Name",
-      currentYear: new Date().getFullYear(),
-    };
-  },
-};
+  export default {
+    name: "DocsSandboxSidebarIndex",
+    components: { SSidebar, SProfile },
+    props: {},
+    data() {
+      return {
+        // minimum application setup overrides
+        appName: "MyApp",
+        appRootUrl: "/",
+        signOutUrl: "/signout",
+        pageTitle: "Home",
+        userNetid: "myusername",
+        userOfficial: "MYOFFICAL NAME",
+        userPreferred: "Preferred Name",
+        currentYear: new Date().getFullYear(),
+      };
+    },
+  };
 </script>
