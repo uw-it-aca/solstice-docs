@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/uw-it-aca/solstice-docs/badge.svg?branch=main)](https://coveralls.io/github/uw-it-aca/solstice-docs?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/uw-it-aca/solstice-docs/badge.svg?branch=develop)](https://coveralls.io/github/uw-it-aca/solstice-docs?branch=develop)
 
 # solstice-docs
 Solstice Design System
