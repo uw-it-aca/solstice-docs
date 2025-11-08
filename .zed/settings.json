@@ -1,6 +1,9 @@
 {
   // ignore eslint
   "language_servers": ["!eslint", "biome"],
+  "buffer_font_features": {
+    "calt": false
+  },
   "lsp": {
     "biome": {
       "settings": {

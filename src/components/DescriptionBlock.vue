@@ -10,8 +10,8 @@
       </slot>
     </div>
     <div class="text-end">
-      <BLink v-if="link" :to="link">View {{ name }}</BLink>
-      <span v-else class="text-muted">Coming soon!</span>
+      <span v-if="link == '#'" class="text-muted">Coming soon!</span>
+      <BLink v-else :to="link">View {{ name }}</BLink>
     </div>
     <div class="position-absolute top-0 end-0 m-2">
       <span v-if="accessibility" class="badge bg-beige me-1 text-dark"
@@ -40,7 +40,7 @@
       },
       link: {
         type: String,
-        default: "",
+        default: "#",
       },
       accessibility: {
         type: Boolean,

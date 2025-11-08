@@ -16,22 +16,10 @@ describe("DescriptionBlock", () => {
     expect(link.props("to")).toBe("/test-link");
     expect(wrapper.text()).toContain("View Test Component");
   });
-
-  it('displays "Coming soon!" when link is empty', () => {
+  it('displays "Coming soon!" when link is not provided', () => {
     const wrapper = mount(DescriptionBlock, {
       props: {
         name: "Test Component",
-        link: "",
-      },
-    });
-    expect(wrapper.text()).toContain("Coming soon!");
-  });
-
-  it('displays "Coming soon!" when link is null', () => {
-    const wrapper = mount(DescriptionBlock, {
-      props: {
-        name: "Test Component",
-        link: null,
       },
     });
     expect(wrapper.text()).toContain("Coming soon!");
