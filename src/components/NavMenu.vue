@@ -409,7 +409,7 @@
         to="/patterns/"
         data-bs-toggle="collapse"
         data-bs-target="#patternsCollapse"
-        :aria-expanded="$route.path.includes('/patterns/') ? true : false"
+        :aria-expanded="$route.path.includes('/patterns') ? true : false"
         aria-controls="patternsCollapse"
       >
         <span
@@ -423,7 +423,7 @@
       <div
         id="patternsCollapse"
         class="collapse"
-        :class="$route.path.includes('/patterns/') ? 'show' : ''"
+        :class="$route.path.includes('/patterns') ? 'show' : ''"
         aria-labelledby="patternsHeading"
       >
         <ul class="nav flex-column small mt-1">
@@ -432,11 +432,11 @@
               id="patternsBoilerplateHeading"
               class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/boilerplate/"
+              to="/patterns/boilerplate"
               data-bs-toggle="collapse"
               data-bs-target="#patternsBoilerplateCollapse"
               :aria-expanded="
-                $route.path.includes('/patterns/boilerplate/') ? true : false
+                $route.path.includes('/patterns/boilerplate') ? true : false
               "
               aria-controls="patternsBoilerplateCollapse"
             >
@@ -446,7 +446,7 @@
             <div
               id="patternsBoilerplateCollapse"
               class="collapse"
-              :class="$route.path.includes('/patterns/boilerplate/') ? 'show' : ''"
+              :class="$route.path.includes('/patterns/boilerplate') ? 'show' : ''"
               aria-labelledby="patternsBoilerplateHeading"
             >
               <ul class="nav flex-column mt-1">
@@ -477,11 +477,11 @@
               id="patternsNavigationHeading"
               class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/navigation/"
+              to="/patterns/navigation"
               data-bs-toggle="collapse"
               data-bs-target="#patternsNavigationCollapse"
               :aria-expanded="
-                $route.path.includes('/patterns/navigation/') ? true : false
+                $route.path.includes('/patterns/navigation') ? true : false
               "
               aria-controls="patternsNavigationCollapse"
             >
@@ -492,7 +492,7 @@
               id="patternsNavigationCollapse"
               class="collapse"
               :class="
-                $route.path.includes('/patterns/navigation/') ? 'show' : ''
+                $route.path.includes('/patterns/navigation') ? 'show' : ''
               "
               aria-labelledby="patternsNavigationHeading"
             >
@@ -524,11 +524,11 @@
               id="patternsSurfaceHeading"
               class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/surface/"
+              to="/patterns/surface"
               data-bs-toggle="collapse"
               data-bs-target="#patternsSurfaceCollapse"
               :aria-expanded="
-                $route.path.includes('/patterns/surface/') ? true : false
+                $route.path.includes('/patterns/surface') ? true : false
               "
               aria-controls="patternsSurfaceCollapse"
             >
@@ -538,7 +538,7 @@
             <div
               id="patternsSurfaceCollapse"
               class="collapse"
-              :class="$route.path.includes('/patterns/surface/') ? 'show' : ''"
+              :class="$route.path.includes('/patterns/surface') ? 'show' : ''"
               aria-labelledby="patternsSurfaceHeading"
             >
               <ul class="nav flex-column mt-1">
@@ -578,11 +578,11 @@
               id="patternsDisclosureHeading"
               class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/disclosure/"
+              to="/patterns/disclosure"
               data-bs-toggle="collapse"
               data-bs-target="#patternsDisclosureCollapse"
               :aria-expanded="
-                $route.path.includes('/patterns/disclosure/') ? true : false
+                $route.path.includes('/patterns/disclosure') ? true : false
               "
               aria-controls="patternsDisclosureCollapse"
             >
@@ -593,7 +593,7 @@
               id="patternsDisclosureCollapse"
               class="collapse"
               :class="
-                $route.path.includes('/patterns/disclosure/') ? 'show' : ''
+                $route.path.includes('/patterns/disclosure') ? 'show' : ''
               "
               aria-labelledby="patternsDisclosureHeading"
             >
@@ -643,11 +643,11 @@
               id="patternsMessagingHeading"
               class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/messaging/"
+              to="/patterns/messaging"
               data-bs-toggle="collapse"
               data-bs-target="#patternsMessagingCollapse"
               :aria-expanded="
-                $route.path.includes('/patterns/messaging/') ? true : false
+                $route.path.includes('/patterns/messaging') ? true : false
               "
               aria-controls="patternsMessagingCollapse"
             >
@@ -658,7 +658,7 @@
               id="patternsMessagingCollapse"
               class="collapse"
               :class="
-                $route.path.includes('/patterns/messaging/') ? 'show' : ''
+                $route.path.includes('/patterns/messaging') ? 'show' : ''
               "
               aria-labelledby="patternsSurfaceHeading"
             >
@@ -717,11 +717,11 @@
               id="patternsUtilityHeading"
               class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/utility/"
+              to="/patterns/utility"
               data-bs-toggle="collapse"
               data-bs-target="#patternsUtilityCollapse"
               :aria-expanded="
-                $route.path.includes('/patterns/utility/') ? true : false
+                $route.path.includes('/patterns/utility') ? true : false
               "
               aria-controls="patternsUtilityCollapse"
             >
@@ -731,7 +731,7 @@
             <div
               id="patternsUtilityCollapse"
               class="collapse"
-              :class="$route.path.includes('/patterns/utility/') ? 'show' : ''"
+              :class="$route.path.includes('/patterns/utility') ? 'show' : ''"
               aria-labelledby="patternsSurfaceHeading"
             >
               <ul class="nav flex-column mt-1">
