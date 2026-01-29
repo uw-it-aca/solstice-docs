@@ -14,14 +14,14 @@
             href="https://github.com/uw-it-aca/solstice-theme/releases"
             target="_blank"
             class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
-            >solstice-theme: 1.0.6</a
+            >solstice-theme: 1.0.7</a
           >
           <br>
           <a
             href="https://github.com/uw-it-aca/solstice-vue/releases"
             target="_blank"
             class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
-            >solstice-vue: 1.1.4</a
+            >solstice-vue: 1.1.5</a
           >
         </div>
         <div class="text-light">
