@@ -88,8 +88,8 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Lint with Biome
-        run: npm run biome:lint
+      - name: Lint with Oxlint
+        run: npm run oxlint
 
   deploy:
     if: github.event_name == 'push'
