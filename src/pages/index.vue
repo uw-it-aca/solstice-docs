@@ -137,7 +137,7 @@
 
 <script>
 // import { getDevEnv } from "@/utils/global";
-import Layout from "@/layout.vue";
+import Layout from "@/layouts/default.vue";
 import { BCard, BLink } from "bootstrap-vue-next";
 
 export default {

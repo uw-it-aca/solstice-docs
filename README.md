@@ -81,7 +81,7 @@ shell and running the following commands:
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 ```sh
-npm run test:unit
+npm run test
 ```
 
 ### Run Unit Tests with Coverage report
@@ -89,7 +89,8 @@ npm run test:unit
 npm run coverage
 ```
 
-### Lint with [Biome](https://biomejs.dev/)
+### Lint and Format with [Oxc](https://oxc.rs/)
 ```sh
-npm run biome:lint
+npm run oxlint
+npm run oxfmt
 ```

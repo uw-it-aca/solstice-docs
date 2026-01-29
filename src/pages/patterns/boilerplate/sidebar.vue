@@ -333,7 +333,7 @@
 </template>
 
 <script>
-import Layout from "@/layout.vue";
+import Layout from "@/layouts/default.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
 import PageContents from "@/components/PageContents.vue";
 import { SSidebar } from "solstice-vue";

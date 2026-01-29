@@ -422,7 +422,7 @@
 </template>
 
 <script>
-import Layout from "@/layout.vue";
+import Layout from "@/layouts/default.vue";
 import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
 export default {

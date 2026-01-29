@@ -3089,7 +3089,7 @@
 </template>
 
 <script>
-import Layout from "@/layout.vue";
+import Layout from "@/layouts/default.vue";
 import { STabsList, STabsItem, STabsDisplay, STabsPanel } from "solstice-vue";
 import { BBadge, BButton, BLink } from "bootstrap-vue-next";
 

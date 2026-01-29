@@ -394,6 +394,16 @@
                     Range
                   </BLink>
                 </li>
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
+                    style="--bs-text-opacity: 0.5"
+                    exact-active-class="bg-white bg-opacity-10"
+                    to="/elements/forms/validation"
+                  >
+                    Validation
+                  </BLink>
+                </li>
               </ul>
             </div>
           </li>
