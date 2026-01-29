@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import Layout from "@/layout.vue";
+import Layout from "@/layouts/default.vue";
 
 export default {
   name: "DocsTemplatesIndex" /* TODO: Docs_Folder_Index */,

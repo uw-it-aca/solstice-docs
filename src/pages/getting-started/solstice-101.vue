@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import Layout from "@/layout.vue";
+import Layout from "@/layouts/default.vue";
 import { BLink } from "bootstrap-vue-next";
 
 export default {

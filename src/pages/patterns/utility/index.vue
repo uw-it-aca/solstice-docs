@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import Layout from "@/layout.vue";
+import Layout from "@/layouts/default.vue";
 import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
 export default {

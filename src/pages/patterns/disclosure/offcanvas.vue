@@ -80,7 +80,7 @@
 </template>
 
 <script lang="ts">
-import Layout from "@/layout.vue";
+import Layout from "@/layouts/default.vue";
 import { BButton, BOffcanvas } from "bootstrap-vue-next";
 
 export default {

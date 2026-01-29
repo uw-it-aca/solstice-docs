@@ -193,7 +193,7 @@
 </template>
 
 <script>
-import Layout from "@/layout.vue";
+import Layout from "@/layouts/default.vue";
 import PageContents from "@/components/PageContents.vue";
 
 export default {

@@ -448,7 +448,7 @@
   // import CodeBlock from "@/components/CodeBlock.vue";
   // import UsageBlock from "@/components/UsageBlock.vue";
   import PageContents from "@/components/PageContents.vue";
-  import Layout from "@/layout.vue";
+  import Layout from "@/layouts/default.vue";
 
   export default {
     name: "DocsPatternsBadge" /* example: Docs--Folder--ComponentName */,

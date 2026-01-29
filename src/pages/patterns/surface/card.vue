@@ -377,7 +377,7 @@
 </template>
 
 <script>
-import Layout from "@/layout.vue";
+import Layout from "@/layouts/default.vue";
 import CodeBlock from "@/components/CodeBlock.vue";
 import {
   BBreadcrumb,
