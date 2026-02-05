@@ -112,7 +112,7 @@
         </li>
       </ul>
 
-      <img src="/images/tone-map.png" class="image-fluid w-100 border" />
+      <img src="/images/tone-map.png" class="image-fluid w-100 border" alt="Tone Map" />
 
       <p>
         Tone Map items described below for accessibility purposes. Range values:

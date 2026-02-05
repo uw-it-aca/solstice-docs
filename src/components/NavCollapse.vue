@@ -1,22 +1,25 @@
 <template>
   <BLink
-    :id="'components' + name + 'Heading'"
-    class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover ps-5"
+    :id="slug + 'Heading'"
+    class="d-flex justify-content-between nav-link rounded-3 chevron bg-white-hover bg-opacity-10-hover text-white"
     exact-active-class="bg-white bg-opacity-10"
-    :to="url"
+    :to="'/' + slug"
     data-bs-toggle="collapse"
-    :data-bs-target="'#components' + name + 'Collapse'"
-    :aria-expanded="$route.path.includes(url) ? true : false"
-    :aria-controls="'components' + name + 'Collapse'"
+    :data-bs-target="'#' + slug + 'Collapse'"
+    :aria-expanded="$route.path.includes('/' + slug) ? true : false"
+    aria-controls="foundationsCollapse"
   >
-    <span>{{ name }}</span>
+    <span
+      ><i class="bi text-opacity-50 me-3 text-white" :class="icon"></i
+      >{{ menu }}</span
+    >
     <i class="bi bi-chevron-down" aria-hidden="true"></i>
   </BLink>
   <div
-    :id="'components' + name + 'Collapse'"
+    :id="slug + 'Collapse'"
     class="collapse"
-    :class="$route.path.includes(url) ? 'show' : ''"
-    :aria-labelledby="'components' + name + 'Heading'"
+    :class="$route.path.includes('/' + slug) ? 'show' : ''"
+    :aria-labelledby="slug + 'Heading'"
   >
     <slot></slot>
   </div>
@@ -24,15 +27,24 @@
 
 <script>
   export default {
-    name: "NavComponentCollapse",
+    name: "NavCollapse",
     props: {
-      name: {
+      menu: {
+        type: String,
+        required: true,
+      },
+      slug: {
         type: String,
         required: true,
       },
       url: {
         type: String,
         required: true,
+      },
+      icon: {
+        type: String,
+        required: false,
+        default: "bi-emoji-smile-fill",
       },
     },
     data() {
