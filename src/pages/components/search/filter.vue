@@ -41,7 +41,7 @@ export default {
   components: { Layout },
   data() {
     return {
-      pageTitle: "Search",
+      pageTitle: "Search Filter",
     };
   },
 };

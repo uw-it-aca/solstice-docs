@@ -1,5 +1,5 @@
 <template>
-  <li class="d-flex align-items-start mb-5 mb-md-2">
+  <li class="d-flex align-items-start mb-md-2 mb-5">
     <div v-if="variant == 'do'" class="">
       <i class="bi bi-check-circle-fill text-success ms-2 me-3"></i>
     </div>
@@ -15,7 +15,7 @@
       <template v-if="$slots['preview']">
         <div class="position-relative w-100">
           <span class="visually-hidden">Example:</span>
-          <div class="preview ps-0 px-md-5">
+          <div class="preview px-md-5 ps-0">
             <slot name="preview"></slot>
           </div>
         </div>

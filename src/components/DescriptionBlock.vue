@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-body-tertiary d-flex flex-column flex-fill p-4 rounded-3 border-0 mb-4 position-relative"
+    class="bg-body-tertiary d-flex flex-column flex-fill rounded-3 position-relative mb-4 border-0 p-4"
   >
     <h2>{{ name }}</h2>
     <div class="flex-fill" style="height: 100px">
@@ -13,8 +13,8 @@
       <span v-if="link == '#'" class="text-muted">Coming soon!</span>
       <BLink v-else :to="link">View {{ name }}</BLink>
     </div>
-    <div class="position-absolute top-0 end-0 m-2">
-      <span v-if="accessibility" class="badge bg-beige me-1 text-dark"
+    <div class="position-absolute end-0 top-0 m-2">
+      <span v-if="accessibility" class="badge bg-beige text-dark me-1"
         >a11y</span
       >
       <span v-if="version" class="badge bg-purple"> {{ version }}</span>
