@@ -289,14 +289,14 @@
           </li>
 
           <li class="nav-item mb-1">
-            <NavComponentCollapse name="Forms" url="/components/forms">
+            <NavComponentCollapse name="Form" url="/components/form">
               <ul class="nav flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
                     class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
-                    to="/components/forms/label"
+                    to="/components/form/label"
                   >
                     Label
                   </BLink>
@@ -306,7 +306,7 @@
                     class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
-                    to="/components/forms/input"
+                    to="/components/form/input"
                   >
                     Input
                   </BLink>
@@ -316,7 +316,7 @@
                     class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
-                    to="/components/forms/select"
+                    to="/components/form/select"
                   >
                     Textarea
                   </BLink>
@@ -326,7 +326,7 @@
                     class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
-                    to="/components/forms/select"
+                    to="/components/form/select"
                   >
                     Select
                   </BLink>
@@ -337,7 +337,7 @@
                     class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
-                    to="/components/forms/select"
+                    to="/components/form/select"
                   >
                     Button
                   </BLink>
@@ -347,7 +347,7 @@
                     class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
-                    to="/components/forms/select"
+                    to="/components/form/fieldset"
                   >
                     Fieldset
                   </BLink>
@@ -357,7 +357,7 @@
                     class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
-                    to="/components/forms/radio"
+                    to="/components/form/radio"
                   >
                     Radio
                   </BLink>
@@ -367,7 +367,7 @@
                     class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
-                    to="/components/forms/checkbox"
+                    to="/components/form/checkbox"
                   >
                     Checkbox
                   </BLink>
@@ -377,7 +377,7 @@
                     class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
-                    to="/components/forms/range"
+                    to="/components/form/range"
                   >
                     Range
                   </BLink>
@@ -387,7 +387,7 @@
                     class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     style="--bs-text-opacity: 0.5"
                     exact-active-class="bg-white bg-opacity-10"
-                    to="/components/forms/validation"
+                    to="/components/form/validation"
                   >
                     Validation
                   </BLink>
@@ -647,27 +647,27 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/data/tables"
+                    to="/components/data/table"
                   >
-                    Tables
+                    Table
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="nav-link rounded-3 text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/data/charts"
+                    to="/components/data/chart"
                   >
-                    Charts
+                    Chart
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
                     class="nav-link rounded-3 text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/data/plots"
+                    to="/components/data/plot"
                   >
-                    Plots
+                    Plot
                   </BLink>
                 </li>
               </ul>
