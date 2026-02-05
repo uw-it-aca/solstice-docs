@@ -416,55 +416,55 @@
         id="patternsHeading"
         class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
         exact-active-class="bg-white bg-opacity-10"
-        to="/patterns/"
+        to="/components/"
         data-bs-toggle="collapse"
-        data-bs-target="#patternsCollapse"
-        :aria-expanded="$route.path.includes('/patterns') ? true : false"
-        aria-controls="patternsCollapse"
+        data-bs-target="#componentsCollapse"
+        :aria-expanded="$route.path.includes('/components') ? true : false"
+        aria-controls="componentsCollapse"
       >
         <span
           ><i
             class="bi bi-boxes me-3 text-white"
             style="--bs-text-opacity: 0.5"
-          ></i>UX Patterns</span
+          ></i>Components</span
         >
         <i class="bi bi-chevron-down" aria-hidden="true"></i>
       </BLink>
       <div
-        id="patternsCollapse"
+        id="componentsCollapse"
         class="collapse"
-        :class="$route.path.includes('/patterns') ? 'show' : ''"
-        aria-labelledby="patternsHeading"
+        :class="$route.path.includes('/components') ? 'show' : ''"
+        aria-labelledby="componentsHeading"
       >
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              id="patternsBoilerplateHeading"
+              id="componentsLayoutsHeading"
               class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
               exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/boilerplate"
+              to="/components/layouts"
               data-bs-toggle="collapse"
-              data-bs-target="#patternsBoilerplateCollapse"
+              data-bs-target="#componentsLayoutsCollapse"
               :aria-expanded="
-                $route.path.includes('/patterns/boilerplate') ? true : false
+                $route.path.includes('/components/layouts') ? true : false
               "
-              aria-controls="patternsBoilerplateCollapse"
+              aria-controls="componentsLayoutsCollapse"
             >
-              <span>Boilerplate</span>
+              <span>Layouts</span>
               <i class="bi bi-chevron-down" aria-hidden="true"></i>
             </BLink>
             <div
-              id="patternsBoilerplateCollapse"
+              id="componentsLayoutsCollapse"
               class="collapse"
-              :class="$route.path.includes('/patterns/boilerplate') ? 'show' : ''"
-              aria-labelledby="patternsBoilerplateHeading"
+              :class="$route.path.includes('/components/layouts') ? 'show' : ''"
+              aria-labelledby="componentsLayoutsHeading"
             >
               <ul class="nav flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/boilerplate/topbar"
+                    to="/components/layouts/topbar"
                   >
                     Topbar
                   </BLink>
@@ -473,7 +473,7 @@
                   <BLink
                     class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/boilerplate/sidebar"
+                    to="/components/layouts/sidebar"
                   >
                     Sidebar
                   </BLink>
