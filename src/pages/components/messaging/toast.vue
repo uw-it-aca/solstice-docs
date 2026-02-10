@@ -2,17 +2,19 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
-        <BBreadcrumbItem to="#/patterns/messaging">Messaging</BBreadcrumbItem>
-        <BBreadcrumbItem active>Toast</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/messaging">Messaging</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
-      Toasts give timely feedback about non-critical information that does not
-      require further action. In Solstice, Toasts are primarily used to
-      communicate success and confirmation messages with minimal disruption, and
-      they dismiss automatically. For intentionally disruptive messages
-      communicating critical information, use an <a href="alert">Alert</a>.
+      <p class="lead" style="max-width: 85ch">
+        Toasts give timely feedback about non-critical information that does not
+        require further action. In Solstice, Toasts are primarily used to
+        communicate success and confirmation messages with minimal disruption,
+        and they dismiss automatically. For intentionally disruptive messages
+        communicating critical information, use an <a href="alert">Alert</a>.
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -21,42 +23,42 @@
             <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Anatomy</a
               >
             </li>
             <li>
               <a
                 href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Variants</a
               >
             </li>
             <li>
               <a
                 href="#placement"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Placement</a
               >
             </li>
             <li>
               <a
                 href="#states"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >States</a
               >
             </li>
             <li>
               <a
                 href="#practices"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Best Practices</a
               >
             </li>
             <li>
               <a
                 href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Implementation</a
               >
             </li>
@@ -190,7 +192,7 @@
           >Always display Toasts in the same place, centered at the bottom of
           the windowc.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <img
               class="img-fluid"
               src="/images/toast-asset-placement-do.png"
@@ -202,7 +204,7 @@
           might not expect them or where they might be more likely to block
           important content.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <img
               class="img-fluid"
               src="/images/toast-asset-placement-dont.png"
@@ -258,7 +260,7 @@
           >Use Toasts to notify the user that actions have completed
           successfully.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <img
               class="img-fluid"
               src="/images/toast-asset-do1.png"
@@ -269,7 +271,7 @@
           >Don't use Toasts to communicate critical information like errors that
           require immediate attention.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <img
               class="img-fluid"
               src="/images/toast-asset-dont1.png"
@@ -290,7 +292,7 @@
         ><template #text
           >Keep Toast text concise—no more than a few words.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <img
               class="img-fluid"
               src="/images/toast-asset-do2.png"
@@ -300,7 +302,7 @@
         ><template #text
           >Don't use long sentences or additional formatting.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <img
               class="img-fluid"
               src="/images/toast-asset-dont2.png"
@@ -330,7 +332,7 @@
       </p>
 
       <h2 id="implementation">Technical Implementation</h2>
-      <table class="table my-5">
+      <table class="my-5 table">
         <thead>
           <tr>
             <th scope="col">Property</th>
@@ -379,29 +381,29 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
-import UsageBlock from "@/components/UsageBlock.vue";
-import PageContents from "@/components/PageContents.vue";
-import { BBreadcrumb, BBreadcrumbItem, BToast } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  import CodeBlock from "@/components/CodeBlock.vue";
+  import UsageBlock from "@/components/UsageBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import { BBreadcrumb, BBreadcrumbItem, BToast } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
-  components: {
-    Layout,
-    CodeBlock,
-    UsageBlock,
-    PageContents,
-    BBreadcrumb,
-    BBreadcrumbItem,
-    BToast,
-  },
-  inject: ["mq"],
-  data() {
-    return {
-      pageTitle: "Toast",
-      active: true,
-    };
-  },
-};
+  export default {
+    name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
+    components: {
+      Layout,
+      CodeBlock,
+      UsageBlock,
+      PageContents,
+      BBreadcrumb,
+      BBreadcrumbItem,
+      BToast,
+    },
+    inject: ["mq"],
+    data() {
+      return {
+        pageTitle: "Toast",
+        active: true,
+      };
+    },
+  };
 </script>

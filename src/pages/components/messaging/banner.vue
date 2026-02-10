@@ -1,25 +1,19 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/patterns/">Patterns</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/messaging/">Messaging</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/messaging">Messaging</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
     <template #lead>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
-      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
-      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
-      aliquam!
+      <p class="lead" style="max-width: 85ch">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
+        dolores repudiandae natus dolorem recusandae! Incidunt consequatur
+        tenetur ad totam, placeat ipsa explicabo, eaque id blanditiis libero
+        culpa veniam aliquam!
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -28,28 +22,28 @@
             <li>
               <a
                 href="#heading1"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Heading 1</a
               >
             </li>
             <li>
               <a
                 href="#heading2"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Heading 2</a
               >
             </li>
             <li>
               <a
                 href="#heading3"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Heading 3</a
               >
             </li>
             <li>
               <a
                 href="#heading4"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Heading 4</a
               >
             </li>
@@ -93,19 +87,19 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-// import CodeBlock from "@/components/CodeBlock.vue";
-// import UsageBlock from "@/components/UsageBlock.vue";
-import PageContents from "@/components/PageContents.vue";
+  import Layout from "@/layouts/default.vue";
+  // import CodeBlock from "@/components/CodeBlock.vue";
+  // import UsageBlock from "@/components/UsageBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
 
-export default {
-  name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
-  components: { Layout, /* CodeBlock, UsageBlock, */ PageContents },
-  inject: ["mq"],
-  data() {
-    return {
-      pageTitle: "Banner",
-    };
-  },
-};
+  export default {
+    name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
+    components: { Layout, /* CodeBlock, UsageBlock, */ PageContents },
+    inject: ["mq"],
+    data() {
+      return {
+        pageTitle: "Banner",
+      };
+    },
+  };
 </script>

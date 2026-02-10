@@ -1,27 +1,43 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #content>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/content/">Content</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
-      <h1>{{ pageTitle }}</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
+    <template #breadcrumb>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/content">Content</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
+    </template>
+    <template #lead>
+      <p class="lead" style="max-width: 85ch">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
         consequuntur tempore amet consectetur minus autem corporis nostrum sit
         sapiente cumque. Rem nisi quidem aspernatur doloremque id non natus
         voluptas debitis!
       </p>
-
-      <hr class="mb-5 w-25 d-inline-block" />
-
+    </template>
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#voice"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
+                >Grammar</a
+              >
+            </li>
+            <li>
+              <a
+                href="#tone"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
+                >Mechanics</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
+    </template>
+    <template #content>
+      <h2 class="ff-encodesans pt-4 pb-3" id="voice">Grammar</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia
         dolorem? Perspiciatis excepturi cum aliquid praesentium aspernatur,
@@ -34,15 +50,15 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
+  import Layout from "@/layouts/default.vue";
 
-export default {
-  name: "DocsPatternsMessaging",
-  components: { Layout },
-  data() {
-    return {
-      pageTitle: "Grammar & Mechanics",
-    };
-  },
-};
+  export default {
+    name: "DocsPatternsMessaging",
+    components: { Layout },
+    data() {
+      return {
+        pageTitle: "Grammar & Mechanics",
+      };
+    },
+  };
 </script>

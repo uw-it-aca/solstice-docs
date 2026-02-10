@@ -2,20 +2,24 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
-        <BBreadcrumbItem to="/patterns/navigation">Navigation</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/navigation"
+          >Navigation</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #head>
       <h1 class="fw-bold">{{ pageTitle }}</h1>
-      <hr class="w-50 d-inline-block" />
+      <hr class="d-inline-block w-50" />
     </template>
     <template #lead>
-      Tabs Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum eos
-      provident praesentium ipsum sed aperiam aliquam quibusdam voluptatem
-      corrupti, reprehenderit illum. Nobis quia incidunt non officia nihil id
-      perferendis molestiae?
+      <p class="lead" style="max-width: 85ch">
+        Tabs Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum eos
+        provident praesentium ipsum sed aperiam aliquam quibusdam voluptatem
+        corrupti, reprehenderit illum. Nobis quia incidunt non officia nihil id
+        perferendis molestiae?
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -24,49 +28,49 @@
             <li>
               <a
                 href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Variants</a
               >
             </li>
             <li>
               <a
                 href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Options</a
               >
             </li>
             <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Anatomy</a
               >
             </li>
             <li>
               <a
                 href="#placement"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Placement</a
               >
             </li>
             <li>
               <a
                 href="#states"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >States</a
               >
             </li>
             <li>
               <a
                 href="#practices"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Best Practices</a
               >
             </li>
             <li>
               <a
                 href="#implementation"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Implementation</a
               >
             </li>
@@ -94,7 +98,6 @@
 
       <CodeBlock>
         <template #preview>
-
           <STabsList :tabs-id="'example2'">
             <STabsItem
               :tabs-id="'example2'"
@@ -177,27 +180,27 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
-import { STabsDisplay, STabsPanel, STabsList, STabsItem } from "solstice-vue";
+  import Layout from "@/layouts/default.vue";
+  import CodeBlock from "@/components/CodeBlock.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+  import { STabsDisplay, STabsPanel, STabsList, STabsItem } from "solstice-vue";
 
-export default {
-  name: "DocsPatternsTabs",
-  components: {
-    Layout,
-    CodeBlock,
-    BBreadcrumb,
-    BBreadcrumbItem,
-    STabsDisplay,
-    STabsPanel,
-    STabsList,
-    STabsItem,
-  },
-  data() {
-    return {
-      pageTitle: "Tabs",
-    };
-  },
-};
+  export default {
+    name: "DocsPatternsTabs",
+    components: {
+      Layout,
+      CodeBlock,
+      BBreadcrumb,
+      BBreadcrumbItem,
+      STabsDisplay,
+      STabsPanel,
+      STabsList,
+      STabsItem,
+    },
+    data() {
+      return {
+        pageTitle: "Tabs",
+      };
+    },
+  };
 </script>

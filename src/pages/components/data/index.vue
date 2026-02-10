@@ -17,40 +17,23 @@
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
-          <DescriptionBlock
-            name="Card"
-            link="/components/surface/card"
-            :accessibility="true"
-            version="1.0.5"
-            >Cards have a raised profile and has shadow. Meant to visually
-            display prominence over flat items.</DescriptionBlock
+          <DescriptionBlock name="Table" link="/components/data/table"
+            >Component documentation</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock
-            name="Panel"
-            link="/components/surface/panel"
-            :accessibility="true"
-            version="1.1.0"
-            >Panels remain on the flat surface of the page. Bounding container
-            can have background color applied to show slight prominence. Still
-            not a card.</DescriptionBlock
+          <DescriptionBlock name="Chart" link="/components/data/chart"
+            >Component documentation</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock
-            name="Tile"
-            link="/components/surface/tile"
-            :accessibility="true"
-            version="1.1.0"
-            >Tiles remain on the flat surface of the page. Bounding container
-            can have background color applied to show slight prominence. Still
-            not a card.</DescriptionBlock
+          <DescriptionBlock name="Plot" link="/components/data/plot"
+            >Component documentation</DescriptionBlock
           >
         </li>
       </ul>
     </template>
-    <template #author>Your Name</template>
+    <template #author>Charlon Palacay</template>
   </Layout>
 </template>
 
@@ -60,11 +43,11 @@
   import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
-    name: "DocsPatternsContainer",
+    name: "DocsComponentsActionIndex" /* TODO: Docs_Folder_Index */,
     components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
-        pageTitle: "Surface" /* TODO: asdlkfjasf */,
+        pageTitle: "Data" /* TODO: asdlkfjasf */,
       };
     },
   };

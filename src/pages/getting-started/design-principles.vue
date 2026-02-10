@@ -13,8 +13,10 @@
       </nav>
     </template>
     <template #lead>
-      Learn how to use Solstice's comprehensive documentation to design
-      highly-usable user experiences.
+      <p class="lead" style="max-width: 85ch">
+        Learn how to use Solstice's comprehensive documentation to design
+        highly-usable user experiences.
+      </p>
     </template>
     <template #toc></template>
     <template #content>
@@ -30,15 +32,15 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
+  import Layout from "@/layouts/default.vue";
 
-export default {
-  name: "DocsComponentLifecycle",
-  components: { Layout },
-  data() {
-    return {
-      pageTitle: "Design Principles",
-    };
-  },
-};
+  export default {
+    name: "DocsComponentLifecycle",
+    components: { Layout },
+    data() {
+      return {
+        pageTitle: "Design Principles",
+      };
+    },
+  };
 </script>

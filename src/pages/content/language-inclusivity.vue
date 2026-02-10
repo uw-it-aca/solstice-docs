@@ -1,16 +1,10 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/content/">Content</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/content">Content</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
 
     <template #toc>
@@ -20,14 +14,14 @@
             <li>
               <a
                 href="#language"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Actionable Language</a
               >
             </li>
             <li>
               <a
                 href="#inclusivity"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Inclusivity</a
               >
             </li>
@@ -36,24 +30,24 @@
       </PageContents>
     </template>
 
-    <template #content>
-      <h1>{{ pageTitle }}</h1>
-
-      <p class="p-0 lead text-muted">
+    <template #lead>
+      <p class="lead" style="max-width: 75ch">
         Actionable language in interface elements such as links, buttons, and
         headings play a crucial role in guiding users through a workflow. The
         words chosen shape how users perceive and use our tools to complete
         their tasks. Clear and concise actionable language helps our users
-        understand and take action. <br />
+        understand and take action.
+      </p>
+      <p class="lead" style="max-width: 75ch">
         Inclusive language is paramount in fostering a welcoming and respectful
         digital environment and ensures that all users feel respected,
         represented, and included at the University of Washington.
       </p>
+    </template>
 
-      <hr class="mb-5 w-25 d-inline-block" />
-
-      <h2 id="language">Actionable Language</h2>
-      <p>
+    <template #content>
+      <h2 class="ff-encode-sans fw-bold my-4" id="voice">Actionable Language</h2>
+      <p style="max-width: 85ch">
         When crafting language for labels, links, buttons, and headings, it's
         important to choose between active over passive terminology. Active
         language instills a sense of immediacy and clarity. Active verbs
@@ -63,8 +57,8 @@
         expectations.
       </p>
 
-      <h3>Choose active language</h3>
-      <ul>
+      <h3 class="ff-encode-sans my-4">Choose active language</h3>
+      <ul style="max-width: 85ch">
         <li>
           Clarity: Active language leaves no room for misinterpretation. Users
           can quickly grasp the intended action.
@@ -87,7 +81,7 @@
             action</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               Submit application
             </div></template
           ></UsageBlock
@@ -95,7 +89,7 @@
         <UsageBlock variant="dont">
           <template #text>do this..</template>
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               Application submission
             </div></template
           ></UsageBlock
@@ -107,7 +101,7 @@
             action</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               <button type="button" class="btn btn-action">
                 Manage UW NetID account
               </button>
@@ -117,7 +111,7 @@
         <UsageBlock variant="dont">
           <template #text>do this..</template>
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               <button type="button" class="btn btn-action">
                 UW NetID account management
               </button>
@@ -125,7 +119,7 @@
           ></UsageBlock
         >
 
-        <p>
+        <p style="max-width: 85ch">
           Buttons need to be clear and predictable. Users should be able to
           anticipate what will happen when they select a button. Mislabeling a
           button causes confusion.
@@ -142,7 +136,7 @@
             >Use active language to create impactful headings</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               Create and manage your academic plan
             </div></template
           ></UsageBlock
@@ -150,7 +144,7 @@
         <UsageBlock variant="dont">
           <template #text>do this..</template>
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               Academic plan creation and management
             </div></template
           ></UsageBlock
@@ -185,7 +179,7 @@
         ><template #text
           >Use the content formula {verb} + {noun} on buttons</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <button type="button" class="btn btn-action">
               Download syllabus
             </button>
@@ -195,7 +189,7 @@
       <UsageBlock variant="dont">
         <template #text>Avoid using "new" with "Create" or "Add"</template>
         <template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <button type="button" class="btn btn-action">
               Add new assignment
             </button>
@@ -205,7 +199,7 @@
       <UsageBlock
         ><template #text>Provide clear context of user action</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <button type="button" class="btn btn-action">
               Send us feedback
             </button>
@@ -215,7 +209,7 @@
       <UsageBlock variant="dont"
         ><template #text>Missing context of user action</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <button type="button" class="btn btn-action">Feedback</button>
           </div></template
         ></UsageBlock
@@ -229,7 +223,7 @@
       <UsageBlock
         ><template #text>Be descriptive</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <a href="#">View course schedule</a>
           </div></template
         ></UsageBlock
@@ -238,7 +232,7 @@
         ><template #text
           >Avoid link text that doesn't provide enough description</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <a href="#">Click Here</a>
           </div></template
         ></UsageBlock
@@ -246,7 +240,7 @@
       <UsageBlock
         ><template #text>Align with user goals</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <a href="#">Apply for financial aid</a>
           </div></template
         ></UsageBlock
@@ -255,7 +249,7 @@
         ><template #text
           >Avoid ambiguous language that lacks a specific user action</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <a href="#">Financial Aid Information</a>
           </div></template
         ></UsageBlock
@@ -263,7 +257,7 @@
       <UsageBlock
         ><template #text>Utilize contextual language</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <a href="#">Explore Biology programs</a>
           </div></template
         ></UsageBlock
@@ -273,7 +267,7 @@
           >Failure to provide context creates confusion of intended link
           destination</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <a href="#">Explore programs</a>
           </div></template
         ></UsageBlock
@@ -281,7 +275,7 @@
       <UsageBlock
         ><template #text>Use consistent terminology</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <a href="#">Submit enrollment form</a>
           </div></template
         ></UsageBlock
@@ -290,7 +284,7 @@
         ><template #text
           >Avoid using different words for the same action</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <a href="#">Complete form</a>
           </div></template
         ></UsageBlock
@@ -298,7 +292,7 @@
       <UsageBlock variant="dont"
         ><template #text>Avoid redudancy </template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <a href="#">Click Here to Download Syllabus</a>
           </div></template
         ></UsageBlock
@@ -322,7 +316,8 @@
           >
         </li>
       </ul>
-      <h2 id="inclusivity">Inclusivity</h2>
+
+      <h2 class="ff-encode-sans fw-bold my-4"  id="inclusivity">Inclusivity</h2>
       <p>
         Inclusive language is paramount in fostering a welcoming and respectful
         digital environment and ensures that all users feel respected,
@@ -377,7 +372,7 @@
       <UsageBlock
         ><template #text>User gender neutral terms </template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             their<br />First-year students
           </div></template
         ></UsageBlock
@@ -387,7 +382,7 @@
         ><template #text
           >Avoid using specific genders when referring to more than one </template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             his or her <br />freshemen
           </div></template
         ></UsageBlock
@@ -398,7 +393,7 @@
         ><template #text
           >Use terms specific to the action not the user </template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <a href="#">Display your schedule</a> <br /><a href="#"
               >Play video</a
             >
@@ -409,7 +404,7 @@
         ><template #text
           >Avoid terms that imply a specific user ability </template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <a href="#">See your schedule</a> <br /><a href="#">Watch video</a>
           </div></template
         ></UsageBlock
@@ -420,7 +415,7 @@
       <UsageBlock
         ><template #text>Use inclusive language</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             Students from various cultural backgrounds
           </div></template
         ></UsageBlock
@@ -428,7 +423,7 @@
       <UsageBlock variant="dont"
         ><template #text>Avoid outdated terms</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             Minority students
           </div></template
         ></UsageBlock
@@ -439,17 +434,17 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import UsageBlock from "@/components/UsageBlock.vue";
-import PageContents from "@/components/PageContents.vue";
+  import Layout from "@/layouts/default.vue";
+  import UsageBlock from "@/components/UsageBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
 
-export default {
-  name: "DocsPatternsMessaging",
-  components: { Layout, UsageBlock, PageContents },
-  data() {
-    return {
-      pageTitle: "Language & Inclusivity",
-    };
-  },
-};
+  export default {
+    name: "DocsPatternsMessaging",
+    components: { Layout, UsageBlock, PageContents },
+    data() {
+      return {
+        pageTitle: "Language & Inclusivity",
+      };
+    },
+  };
 </script>

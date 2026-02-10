@@ -1,23 +1,17 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/patterns/">Patterns</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/boilerplate/">Boilerplate</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/layout">Layout</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
     <template #lead>
-      Sidebar is a side navigtion based layout intended to support different
-      menu navigation structures. The content is can be fixed or fluid.
+      <p class="lead" style="max-width: 85ch">
+        Sidebar is a side navigtion based layout intended to support different
+        menu navigation structures. The content is can be fixed or fluid.
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -26,42 +20,42 @@
             <li>
               <a
                 href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Variants</a
               >
             </li>
             <li>
               <a
                 href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Options</a
               >
             </li>
             <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Anatomy</a
               >
             </li>
             <li>
               <a
                 href="#usage"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Usage</a
               >
             </li>
             <li>
               <a
                 href="#accessibility"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Accessibility</a
               >
             </li>
             <li>
               <a
                 href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Implementation</a
               >
             </li>
@@ -121,7 +115,7 @@
       </p>
 
       <h3>Props</h3>
-      <table class="table small">
+      <table class="small table">
         <thead>
           <tr>
             <th scope="col" class="w-25">Prop</th>
@@ -157,7 +151,7 @@
       </table>
 
       <h3>Slots</h3>
-      <table class="table small">
+      <table class="small table">
         <thead>
           <tr>
             <th scope="col" class="w-25">Slot</th>
@@ -333,23 +327,23 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
-import PageContents from "@/components/PageContents.vue";
-import { SSidebar } from "solstice-vue";
+  import Layout from "@/layouts/default.vue";
+  import CodeBlock from "@/components/CodeBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import { SSidebar } from "solstice-vue";
 
-export default {
-  name: "DocsSidebar",
-  components: {
-    Layout,
-    CodeBlock,
-    PageContents,
-    SSidebar,
-  },
-  data() {
-    return {
-      pageTitle: "Sidebar",
-    };
-  },
-};
+  export default {
+    name: "DocsSidebar",
+    components: {
+      Layout,
+      CodeBlock,
+      PageContents,
+      SSidebar,
+    },
+    data() {
+      return {
+        pageTitle: "Sidebar",
+      };
+    },
+  };
 </script>

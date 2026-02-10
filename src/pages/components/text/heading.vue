@@ -2,13 +2,16 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/elements">UI Elements</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/text">Text</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
-      Headings summarize content, communicate levels of importance, provide
-      structure and define relationships between content.
+      <p class="lead" style="max-width: 85ch">
+        Headings summarize content, communicate levels of importance, provide
+        structure and define relationships between content.
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -17,21 +20,21 @@
             <li>
               <a
                 href="#best-practices"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Best Practices</a
               >
             </li>
             <li>
               <a
                 href="#accessibility"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Accessibility</a
               >
             </li>
             <li>
               <a
                 href="#type-system"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Type System</a
               >
             </li>
@@ -145,9 +148,9 @@
 
       <UsageBlock variant="dont"
         ><template #text
-          >An <code>&lt;h1></code> should not be used for an application name or logo in a header
-          &ndash; instead that content should be either inside an
-          <code>&lt;a></code> or <code>&lt;p></code> tag, and all within a
+          >An <code>&lt;h1></code> should not be used for an application name or
+          logo in a header &ndash; instead that content should be either inside
+          an <code>&lt;a></code> or <code>&lt;p></code> tag, and all within a
           &lt;header> section.</template
         ></UsageBlock
       >
@@ -181,7 +184,10 @@
       <br />
 
       <h3 class="fw-medium ff-encode-sans">H4</h3>
-      <p>Use an <code>&lt;h4></code> to designate a subsection of an <code>&lt;h3></code>.</p>
+      <p>
+        Use an <code>&lt;h4></code> to designate a subsection of an
+        <code>&lt;h3></code>.
+      </p>
       <CodeBlock>
         <template #preview>
           <h4 class="fw-medium ff-open-sans">Solstice h4</h4>
@@ -196,7 +202,8 @@
 
       <h3 class="fw-medium ff-encode-sans">H5 &amp; H6</h3>
       <p>
-        Use an <code>&lt;h5></code> and <code>&lt;h6></code> to designate sub sections of their respective parent.
+        Use an <code>&lt;h5></code> and <code>&lt;h6></code> to designate sub
+        sections of their respective parent.
       </p>
 
       <CodeBlock>
@@ -222,11 +229,11 @@
       </CodeBlock>
       <br />
 
- <!--      <UsageBlock variant="dont"
+      <!--      <UsageBlock variant="dont"
         ><template #text
           >Don't mix heading styles or semantic tags</template
         ></UsageBlock -->
-<!--       >
+      <!--       >
       <UsageBlock variant="do"
         ><template #text
           >Do have more than one subsection under a heading?</template
@@ -242,25 +249,25 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-// import CodeBlock from "@/components/CodeBlock.vue";
-// import UsageBlock from "@/components/UsageBlock.vue";
-import PageContents from "@/components/PageContents.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  // import CodeBlock from "@/components/CodeBlock.vue";
+  // import UsageBlock from "@/components/UsageBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsElementsButton" /* example: Docs--Folder--ComponentName */,
-  inject: ["mq"],
-  components: {
-    Layout,
-    /* CodeBlock, UsageBlock, */ PageContents,
-    BBreadcrumb,
-    BBreadcrumbItem,
-  },
-  data() {
-    return {
-      pageTitle: "Heading",
-    };
-  },
-};
+  export default {
+    name: "DocsElementsButton" /* example: Docs--Folder--ComponentName */,
+    inject: ["mq"],
+    components: {
+      Layout,
+      /* CodeBlock, UsageBlock, */ PageContents,
+      BBreadcrumb,
+      BBreadcrumbItem,
+    },
+    data() {
+      return {
+        pageTitle: "Heading",
+      };
+    },
+  };
 </script>

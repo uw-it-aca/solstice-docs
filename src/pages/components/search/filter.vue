@@ -1,23 +1,71 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #breadcrumb
-      ><nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/utility/">Utility</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+    <template #breadcrumb>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/search"
+          >Search</BBreadcrumbItem
+        >
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
     <template #lead>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-      consequuntur tempore amet consectetur minus autem corporis nostrum sit
-      sapiente cumque. Rem nisi quidem aspernatur doloremque id non natus
-      voluptas debitis!
+      <p class="lead" style="max-width: 85ch">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
+        dolores repudiandae natus dolorem recusandae! Incidunt consequatur
+        tenetur ad totam, placeat ipsa explicabo, eaque id blanditiis libero
+        culpa veniam aliquam!
+      </p>
+    </template>
+    <template #toc>
+      <PageContents>
+        <nav id="TableOfContents">
+          <ul class="list-unstyled m-0">
+            <li>
+              <a
+                href="#anatomy"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Anatomy</a
+              >
+            </li>
+            <li>
+              <a
+                href="#variants"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Variants</a
+              >
+            </li>
+            <li>
+              <a
+                href="#options"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Options</a
+              >
+            </li>
+            <li>
+              <a
+                href="#usage"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Usage</a
+              >
+            </li>
+            <li>
+              <a
+                href="#accessibility"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Accessibility</a
+              >
+            </li>
+            <li>
+              <a
+                href="#implementation"
+                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                >Implementation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </PageContents>
     </template>
     <template #content>
       <p>
@@ -41,7 +89,7 @@ export default {
   components: { Layout },
   data() {
     return {
-      pageTitle: "Search Filter",
+      pageTitle: "Filter",
     };
   },
 };

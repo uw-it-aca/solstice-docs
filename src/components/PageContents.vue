@@ -1,6 +1,6 @@
 <template>
-  <div class="sol-toc">
-    <h2 class="fs-6 ms-2">On this page</h2>
+  <div class="sol-toc pt-3">
+    <h2 class="fs-6 my-3">On this page</h2>
     <slot></slot>
   </div>
 </template>

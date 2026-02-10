@@ -1,62 +1,52 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/patterns/">Patterns</a></li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
+
     <template #lead>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto tempore
-      omnis esse quasi assumenda quae voluptatem, dolores perspiciatis facilis.
-      Iste cupiditate similique quis nam amet officiis? Accusantium ducimus vel
-      sit!
+      <p class="lead" style="max-width: 85ch">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto tempore
+        omnis esse quasi assumenda quae voluptatem, dolores perspiciatis
+        facilis. Iste cupiditate similique quis nam amet officiis? Accusantium
+        ducimus vel sit!
+      </p>
     </template>
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
-            :name="'Alert'"
-            :link="'/patterns/messaging/alert'"
+            name="Alert"
+            link="/components/messaging/alert"
             :accessibility="true"
-            :version="'1.0.x'"
+            version="1.0.x"
           ></DescriptionBlock>
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Toast'"
-            :link="'/patterns/messaging/toast'"
+            name="Toast"
+            link="/components/messaging/toast"
             :accessibility="true"
-            :version="'1.0.x'"
+            version="1.0.x"
           ></DescriptionBlock>
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Banner'"
-            :link="'/patterns/messaging/banner'"
+            name="Banner"
+            link="/components/messaging/banner"
             :accessibility="true"
-            :version="'1.0.x'"
+            version="1.0.x"
           ></DescriptionBlock>
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Badge'"
-            :link="'/patterns/messaging/badge'"
+            name="Badge"
+            link="/components/messaging/badge"
             :accessibility="true"
-            :version="'1.0.x'"
-            >aksdfjaasdf aka lightbox</DescriptionBlock
-          >
-        </li>
-        <li class="col-4">
-          <DescriptionBlock
-            :name="'Modal'"
-            :link="'/patterns/messaging/modal'"
-            :accessibility="true"
-            :version="'1.0.x'"
+            version="1.0.x"
             >aksdfjaasdf aka lightbox</DescriptionBlock
           >
         </li>
@@ -67,19 +57,19 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import DescriptionBlock from "@/components/DescriptionBlock.vue";
+  import Layout from "@/layouts/default.vue";
+  import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
-export default {
-  name: "DocsPatternsLayouts",
-  components: {
-    Layout,
-    DescriptionBlock,
-  },
-  data() {
-    return {
-      pageTitle: "Messaging",
-    };
-  },
-};
+  export default {
+    name: "DocsPatternsLayouts",
+    components: {
+      Layout,
+      DescriptionBlock,
+    },
+    data() {
+      return {
+        pageTitle: "Messaging",
+      };
+    },
+  };
 </script>

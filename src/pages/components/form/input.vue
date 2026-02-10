@@ -2,13 +2,13 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/elements">Elements</BBreadcrumbItem>
-        <BBreadcrumbItem to="/elements/forms">Forms</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/form">Form</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
-      Input fields allow users to enter data for submission or search.
+      <p class="lead">Input fields allow users to enter data for submission or search.</p>
     </template>
     <template #toc>
       <PageContents>
@@ -17,35 +17,35 @@
             <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Anatomy</a
               >
             </li>
             <li>
               <a
                 href="#states"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >States</a
               >
             </li>
             <li>
               <a
                 href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Options</a
               >
             </li>
             <li>
               <a
                 href="#practices"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Best Practices</a
               >
             </li>
             <li>
               <a
                 href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Technical Implementation</a
               >
             </li>
@@ -59,7 +59,7 @@
         <img
           src="/images/input-field-anatomy.png"
           alt=""
-          class="img-fluid border rounded col-md-11"
+          class="img-fluid col-md-11 rounded border"
         />
         <figcaption class="align-self-start">
           <p class="text-muted fst-italic my-2">Input field anatomy</p>
@@ -103,8 +103,8 @@
 
       <ul class="d-flex flex-column list-unstyled">
         <div class="d-flex flex-column flex-md-row mb-3">
-          <li class="flex-fill align-self-stretch w-100 me-2">
-            <h3 class="text-start text-md-center fw-medium ff-encode-sans pt-3">
+          <li class="flex-fill align-self-stretch me-2 w-100">
+            <h3 class="text-md-center fw-medium ff-encode-sans pt-3 text-start">
               Default
             </h3>
             <PreviewBlock>
@@ -134,7 +134,7 @@
             </PreviewBlock>
           </li>
           <li class="flex-fill align-self-stretch w-100">
-            <h3 class="text-start text-md-center fw-medium ff-encode-sans pt-3">
+            <h3 class="text-md-center fw-medium ff-encode-sans pt-3 text-start">
               Error
             </h3>
             <PreviewBlock>
@@ -168,8 +168,8 @@
           </li>
         </div>
         <div class="d-flex flex-column flex-md-row">
-          <li class="flex-fill align-self-stretch w-100 me-2">
-            <h3 class="text-start text-md-center fw-medium ff-encode-sans pt-3">
+          <li class="flex-fill align-self-stretch me-2 w-100">
+            <h3 class="text-md-center fw-medium ff-encode-sans pt-3 text-start">
               Disabled
             </h3>
             <PreviewBlock>
@@ -197,7 +197,7 @@
             </PreviewBlock>
           </li>
           <li class="flex-fill align-self-stretch w-100">
-            <h3 class="text-start text-md-center fw-medium ff-encode-sans pt-3">
+            <h3 class="text-md-center fw-medium ff-encode-sans pt-3 text-start">
               Read-only
             </h3>
             <PreviewBlock>
@@ -609,7 +609,7 @@
           <div class="input-group mb-3">
             <button
               id="button-addon1"
-              class="btn btn-subdued-primary border border-secondary"
+              class="btn btn-subdued-primary border-secondary border"
               type="button"
             >
               Button
@@ -624,7 +624,7 @@
           </div>
           <div class="input-group">
             <button
-              class="btn btn-subdued-primary border border-secondary dropdown-toggle"
+              class="btn btn-subdued-primary border-secondary dropdown-toggle border"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -664,7 +664,7 @@
               aria-label="Text input with dropdown button"
             />
             <button
-              class="btn btn-subdued-primary border border-secondary dropdown-toggle"
+              class="btn btn-subdued-primary border-secondary dropdown-toggle border"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -689,7 +689,7 @@
             />
             <button
               id="button-addon2"
-              class="btn btn-subdued-primary border border-secondary"
+              class="btn btn-subdued-primary border-secondary border"
               type="button"
             >
               Button
@@ -707,7 +707,7 @@
               <option value="3">Three</option>
             </select>
             <button
-              class="btn btn-subdued-primary border border-secondary"
+              class="btn btn-subdued-primary border-secondary border"
               type="button"
             >
               Button
@@ -724,7 +724,7 @@
         ><template #preview>
           <div class="input-group">
             <button
-              class="btn btn-subdued-primary border border-secondary"
+              class="btn btn-subdued-primary border-secondary border"
               type="button"
             >
               Button
@@ -774,13 +774,13 @@
               aria-label="Recipient's username with two button addons"
             />
             <button
-              class="btn btn-subdued-primary border border-secondary"
+              class="btn btn-subdued-primary border-secondary border"
               type="button"
             >
               Button
             </button>
             <button
-              class="btn btn-subdued-primary border border-secondary"
+              class="btn btn-subdued-primary border-secondary border"
               type="button"
             >
               Button
@@ -832,13 +832,13 @@
             />
             <button
               type="button"
-              class="btn btn-subdued-primary border border-secondary"
+              class="btn btn-subdued-primary border-secondary border"
             >
               Action
             </button>
             <button
               type="button"
-              class="btn btn-subdued-primary border border-secondary dropdown-toggle dropdown-toggle-split"
+              class="btn btn-subdued-primary border-secondary dropdown-toggle dropdown-toggle-split border"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
@@ -945,39 +945,39 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import PreviewBlock from "@/components/PreviewBlock.vue";
-import UsageBlock from "@/components/UsageBlock.vue";
-import PageContents from "@/components/PageContents.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
-import { Tooltip } from "bootstrap";
-import UsageBlockRow from "@/components/UsageBlockRow.vue";
+  import Layout from "@/layouts/default.vue";
+  import PreviewBlock from "@/components/PreviewBlock.vue";
+  import UsageBlock from "@/components/UsageBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+  import { Tooltip } from "bootstrap";
+  import UsageBlockRow from "@/components/UsageBlockRow.vue";
 
-export default {
-  name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
+  export default {
+    name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
 
-  components: {
-    Layout,
-    PreviewBlock,
-    UsageBlock,
-    PageContents,
-    BBreadcrumb,
-    BBreadcrumbItem,
-  },
-  inject: ["mq"],
-  data() {
-    return {
-      pageTitle: "Input Fields",
-    };
-  },
-  mounted() {
-    // enable bootstrap tooltips
-    const tooltipTriggerList = document.querySelectorAll(
-      '[data-bs-toggle="tooltip"]'
-    );
-    const tooltipList = [...tooltipTriggerList].map(
-      (tooltipTriggerEl) => new Tooltip(tooltipTriggerEl)
-    );
-  },
-};
+    components: {
+      Layout,
+      PreviewBlock,
+      UsageBlock,
+      PageContents,
+      BBreadcrumb,
+      BBreadcrumbItem,
+    },
+    inject: ["mq"],
+    data() {
+      return {
+        pageTitle: "Input Fields",
+      };
+    },
+    mounted() {
+      // enable bootstrap tooltips
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]',
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new Tooltip(tooltipTriggerEl),
+      );
+    },
+  };
 </script>

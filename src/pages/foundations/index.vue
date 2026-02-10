@@ -1,10 +1,12 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #lead>
-      Foundations are Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Autem dicta error temporibus inventore sapiente debitis, non minima
-      excepturi quasi, cumque explicabo, esse illo impedit. Veniam velit quia
-      consectetur nisi cumque?
+      <p class="lead" style="max-width: 80ch">
+        Foundations are Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Autem dicta error temporibus inventore sapiente debitis, non
+        minima excepturi quasi, cumque explicabo, esse illo impedit. Veniam
+        velit quia consectetur nisi cumque?
+      </p>
     </template>
 
     <template #content>
@@ -49,19 +51,19 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import DescriptionBlock from "@/components/DescriptionBlock.vue";
+  import Layout from "@/layouts/default.vue";
+  import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
-export default {
-  name: "DocsFoundationsIndex",
-  components: {
-    Layout,
-    DescriptionBlock,
-  },
-  data() {
-    return {
-      pageTitle: "Foundations",
-    };
-  },
-};
+  export default {
+    name: "DocsFoundationsIndex",
+    components: {
+      Layout,
+      DescriptionBlock,
+    },
+    data() {
+      return {
+        pageTitle: "Foundations",
+      };
+    },
+  };
 </script>

@@ -7,16 +7,13 @@
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
-    <template #head>
-      <h1 class="fw-bold">{{ pageTitle }}</h1>
-      <hr class="w-50 d-inline-block" />
-    </template>
     <template #lead>
+    <p class="lead" style="max-width: 85ch">
       A button is an interactive element that users can click or tap to trigger
       a specific action or command within an application. It represents an
       action, such as submitting a form, opening a menu, or navigating to
       another screen. Buttons provide an intuitive way for users to perform
-      tasks efficiently.
+      tasks efficiently.</p>
     </template>
     <template #toc>
       <PageContents>

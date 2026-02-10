@@ -13,13 +13,14 @@
       </nav>
     </template>
     <template #lead>
-      Get to know our design thinking and how we put it into action across our
-      design system.
+      <p class="lead" style="max-width: 85ch">
+        Get to know our design thinking and how we put it into action across our
+        design system.
+      </p>
     </template>
-    <template #toc></template>
     <template #content>
       <h2>What is Solstice?</h2>
-      <p>
+      <p style="max-width: 85ch">
         Solstice is a resource for documenting design best practices. It
         provides a set of curated content guidelines, UI elements, and UX design
         patterns that work as the foundation for application design and
@@ -27,19 +28,19 @@
       </p>
 
       <h2>Who is Solstice for?</h2>
-      <p>
+      <p style="max-width: 85ch">
         Solstice was created and maintained by the Service Coordination (SC)
         Experience Design Team, to help provide users with a consistent
         experience across D&amp;A services.
       </p>
-      <p>
+      <p style="max-width: 85ch">
         In addition, Engineering teams are able to use the technical
         documentation to build applications based on Solstice design
         specifications.
       </p>
 
       <h2>How will Solstice be used?</h2>
-      <p>
+      <p style="max-width: 85ch">
         Designers are expected to use the elements and patterns documented in
         the design system to aid in their design process. Further resources can
         be found on the
@@ -54,16 +55,16 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import { BLink } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  import { BLink } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsSolstice101",
-  components: { Layout, BLink },
-  data() {
-    return {
-      pageTitle: "Solstice 101",
-    };
-  },
-};
+  export default {
+    name: "DocsSolstice101",
+    components: { Layout, BLink },
+    data() {
+      return {
+        pageTitle: "Solstice 101",
+      };
+    },
+  };
 </script>

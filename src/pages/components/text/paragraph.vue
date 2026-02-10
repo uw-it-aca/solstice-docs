@@ -2,12 +2,15 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/elements">UI Elements</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/text">Text</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <p class="lead" style="max-width: 85ch">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -16,10 +19,10 @@
             <li>
               <a
                 href="#type-system"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Type System</a
               >
-       </li>
+            </li>
             <!--
             <li>
               <a
@@ -41,7 +44,9 @@
       </PageContents>
     </template>
     <template #content>
-      <h2 id="type-system" class="display-6 ff-encode-sans pt-4 pb-3">Type System</h2>
+      <h2 id="type-system" class="display-6 ff-encode-sans pt-4 pb-3">
+        Type System
+      </h2>
       <h3 class="fw-medium ff-encode-sans">Body</h3>
       <p>
         This is the default font size for most text, and all content contained
@@ -101,11 +106,11 @@
           >Large body text should not appear below an H6 heading, as this would
           result in a heading that is smaller than the content.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <h6 class="fw-bold ff-open-sans">Heading 6 sample</h6>
-            <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-
-</p>
+            <p class="fs-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
           </div></template
         ></UsageBlock
       >
@@ -124,32 +129,31 @@
         placeat totam dolorem suscipit est sunt eum, debitis exercitationem
         voluptate ducimus repellat necessitatibus?
       </p> -->
-
     </template>
     <template #author>Cayla Snooke</template>
   </Layout>
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-// import CodeBlock from "@/components/CodeBlock.vue";
-// import UsageBlock from "@/components/UsageBlock.vue";
-import PageContents from "@/components/PageContents.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  // import CodeBlock from "@/components/CodeBlock.vue";
+  // import UsageBlock from "@/components/UsageBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsElementsParagraph" /* example: Docs--Folder--ComponentName */,
-  inject: ["mq"],
-  components: {
-    Layout,
-    /* CodeBlock, UsageBlock, */ PageContents,
-    BBreadcrumb,
-    BBreadcrumbItem,
-  },
-  data() {
-    return {
-      pageTitle: "Paragraph",
-    };
-  },
-};
+  export default {
+    name: "DocsElementsParagraph" /* example: Docs--Folder--ComponentName */,
+    inject: ["mq"],
+    components: {
+      Layout,
+      /* CodeBlock, UsageBlock, */ PageContents,
+      BBreadcrumb,
+      BBreadcrumbItem,
+    },
+    data() {
+      return {
+        pageTitle: "Paragraph",
+      };
+    },
+  };
 </script>

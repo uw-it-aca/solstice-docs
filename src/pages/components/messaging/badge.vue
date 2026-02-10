@@ -2,16 +2,18 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
-        <BBreadcrumbItem to="/patterns/messaging">Messaging</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/messaging">Messaging</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
-      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
-      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
-      aliquam!
+      <p class="lead" style="max-width: 85ch">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
+        dolores repudiandae natus dolorem recusandae! Incidunt consequatur
+        tenetur ad totam, placeat ipsa explicabo, eaque id blanditiis libero
+        culpa veniam aliquam!
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -20,42 +22,42 @@
             <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Anatomy</a
               >
             </li>
             <li>
               <a
                 href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Variants</a
               >
             </li>
             <li>
               <a
                 href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Options</a
               >
             </li>
             <li>
               <a
                 href="#usage"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Usage</a
               >
             </li>
             <li>
               <a
                 href="#accessibility"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Accessibility</a
               >
             </li>
             <li>
               <a
                 href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Implementation</a
               >
             </li>
@@ -78,11 +80,11 @@
         architecto libero enim tempore!
       </p>
 
-      <div class="grid mb-5">
+      <div class="mb-5 grid">
         <div class="g-col-3">
           <p>
             Semantic palette:
-            <br>
+            <br />
             Messaging / Workflow States
           </p>
           <ul class="list-unstyled">

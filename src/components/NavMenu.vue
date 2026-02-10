@@ -94,7 +94,7 @@
       </NavCollapse>
     </li>
     <li class="nav-item">
-      <NavCollapse menu="Foundations" slug="foundations" icon="bi-layers-fill">
+      <NavCollapse menu="Foundations" slug="foundations" icon="bi-layers">
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
@@ -364,7 +364,7 @@
       <NavCollapse
         menu="Navigation"
         slug="navigation"
-        icon="bi-sign-turn-right-fill"
+        icon="bi-sign-turn-right"
       >
         <ul class="nav small flex-column mt-1">
           <li class="nav-item mb-1">
@@ -393,7 +393,7 @@
       <NavCollapse
         menu="Messaging"
         slug="messaging"
-        icon="bi-exclamation-triangle-fill"
+        icon="bi-exclamation-triangle"
       >
         <ul class="nav small flex-column mt-1">
           <li class="nav-item mb-1">
@@ -533,6 +533,15 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+              to="/components/utility/user"
+            >
+              User
+            </BLink>
+          </li>
+          <li class="nav-item mb-1">
+            <BLink
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/utility/color-mode"
             >
               Color Mode
@@ -552,7 +561,7 @@
     </li>
 
     <li class="nav-item position-relative">
-      <NavCollapse menu="Data" slug="data" icon="bi-bar-chart-fill">
+      <NavCollapse menu="Data" slug="data" icon="bi-bar-chart-line">
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink

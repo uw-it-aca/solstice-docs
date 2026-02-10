@@ -10,7 +10,7 @@
     aria-controls="foundationsCollapse"
   >
     <span
-      ><i class="bi text-opacity-50 me-3 text-white" :class="icon"></i
+      ><i class="bi text-opacity-25 me-3 text-white" :class="icon"></i
       >{{ menu }}</span
     >
     <i class="bi bi-chevron-down" aria-hidden="true"></i>

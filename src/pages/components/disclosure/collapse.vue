@@ -2,16 +2,20 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
-        <BBreadcrumbItem to="/patterns/disclosure">Disclosure</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/disclosure"
+          >Disclosure</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
-      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
-      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
-      aliquam!
+      <p class="lead" style="max-width: 85ch">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
+        dolores repudiandae natus dolorem recusandae! Incidunt consequatur
+        tenetur ad totam, placeat ipsa explicabo, eaque id blanditiis libero
+        culpa veniam aliquam!
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -20,42 +24,42 @@
             <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Anatomy</a
               >
             </li>
             <li>
               <a
                 href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Variants</a
               >
             </li>
             <li>
               <a
                 href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Options</a
               >
             </li>
             <li>
               <a
                 href="#usage"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Usage</a
               >
             </li>
             <li>
               <a
                 href="#accessibility"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Accessibility</a
               >
             </li>
             <li>
               <a
                 href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Implementation</a
               >
             </li>
@@ -150,36 +154,36 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
-// import UsageBlock from "@/components/UsageBlock.vue";
-import PageContents from "@/components/PageContents.vue";
-import {
-  BBreadcrumb,
-  BBreadcrumbItem,
-  BButton,
-  BCollapse,
-  BLink,
-} from "bootstrap-vue-next";
-
-export default {
-  name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
-  inject: ["mq"],
-  components: {
-    Layout,
-    CodeBlock,
-    /* UsageBlock, */
-    PageContents,
+  import Layout from "@/layouts/default.vue";
+  import CodeBlock from "@/components/CodeBlock.vue";
+  // import UsageBlock from "@/components/UsageBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import {
     BBreadcrumb,
     BBreadcrumbItem,
     BButton,
     BCollapse,
     BLink,
-  },
-  data() {
-    return {
-      pageTitle: "Collapse",
-    };
-  },
-};
+  } from "bootstrap-vue-next";
+
+  export default {
+    name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
+    inject: ["mq"],
+    components: {
+      Layout,
+      CodeBlock,
+      /* UsageBlock, */
+      PageContents,
+      BBreadcrumb,
+      BBreadcrumbItem,
+      BButton,
+      BCollapse,
+      BLink,
+    },
+    data() {
+      return {
+        pageTitle: "Collapse",
+      };
+    },
+  };
 </script>

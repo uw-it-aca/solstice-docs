@@ -13,12 +13,14 @@
       </nav>
     </template>
     <template #lead>
-      Learn how to use Solstice's comprehensive documentation to design
-      highly-usable user experiences.
+      <p class="lead" style="max-width: 85ch">
+        Learn how to use Solstice's comprehensive documentation to design
+        highly-usable user experiences.
+      </p>
     </template>
     <template #toc></template>
     <template #content>
-      <p>
+    <p style="max-width: 85ch">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad,
         accusantium nobis dicta saepe necessitatibus eos eius quas quod quo
         blanditiis, eum dolor totam nesciunt harum beatae recusandae! Harum, id
@@ -30,15 +32,15 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
+  import Layout from "@/layouts/default.vue";
 
-export default {
-  name: "DocsComponentLifecycle",
-  components: { Layout },
-  data() {
-    return {
-      pageTitle: "Developer Guide",
-    };
-  },
-};
+  export default {
+    name: "DocsComponentLifecycle",
+    components: { Layout },
+    data() {
+      return {
+        pageTitle: "Developer Guide",
+      };
+    },
+  };
 </script>

@@ -2,16 +2,18 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
-        <BBreadcrumbItem to="/patterns/surface">Surface</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/surface">Surface</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
-      Panels are Cards is a container of content... Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Ea nemo nobis, eligendi sit ipsa mollitia
-      necessitatibus possimus, veniam sapiente deleniti quo. Nemo error quos,
-      eius facilis rem amet deserunt est!
+      <p class="lead" style="max-width: 85ch">
+        Panels are Cards is a container of content... Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ea nemo nobis, eligendi sit ipsa mollitia
+        necessitatibus possimus, veniam sapiente deleniti quo. Nemo error quos,
+        eius facilis rem amet deserunt est!
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -20,42 +22,42 @@
             <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Anatomy</a
               >
             </li>
             <li>
               <a
                 href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Variants</a
               >
             </li>
             <li>
               <a
                 href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Options</a
               >
             </li>
             <li>
               <a
                 href="#usage"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Usage</a
               >
             </li>
             <li>
               <a
                 href="#accessibility"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Accessibility</a
               >
             </li>
             <li>
               <a
                 href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Implementation</a
               >
             </li>
@@ -82,23 +84,23 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
-import { BBreadcrumb, BBreadcrumbItem, BCard } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  import CodeBlock from "@/components/CodeBlock.vue";
+  import { BBreadcrumb, BBreadcrumbItem, BCard } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsPatternsPanel",
-  components: {
-    Layout,
-    CodeBlock,
-    BCard,
-    BBreadcrumb,
-    BBreadcrumbItem,
-  },
-  data() {
-    return {
-      pageTitle: "Panel",
-    };
-  },
-};
+  export default {
+    name: "DocsPatternsPanel",
+    components: {
+      Layout,
+      CodeBlock,
+      BCard,
+      BBreadcrumb,
+      BBreadcrumbItem,
+    },
+    data() {
+      return {
+        pageTitle: "Panel",
+      };
+    },
+  };
 </script>

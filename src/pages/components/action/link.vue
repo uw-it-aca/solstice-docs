@@ -7,10 +7,11 @@
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
-
     <template #lead>
-      Links navigate between or within web pages and initiate simple actions.
-      They can be used in paragraphs, in groups, or on their own.
+      <p class="lead" style="max-width: 85ch">
+        Links navigate between or within web pages and initiate simple actions.
+        They can be used in paragraphs, in groups, or on their own.
+      </p>
     </template>
 
     <template #toc>
@@ -20,42 +21,42 @@
             <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Anatomy</a
               >
             </li>
             <li>
               <a
                 href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Variants</a
               >
             </li>
             <li>
               <a
                 href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Options</a
               >
             </li>
             <li>
               <a
                 href="#usage"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Usage</a
               >
             </li>
             <li>
               <a
                 href="#accessibility"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Accessibility</a
               >
             </li>
             <li>
               <a
                 href="#implementation"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Implementation</a
               >
             </li>
@@ -85,7 +86,7 @@
         change, while light and dark variants used on static colored backgrounds
         will not.
       </p>
-      <table class="table my-5">
+      <table class="my-5 table">
         <thead>
           <tr>
             <th scope="col">Property</th>
@@ -154,7 +155,7 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <div class="p-3 bg-spirit-purple rounded text-white">
+            <div class="bg-spirit-purple rounded p-3 text-white">
               Hello! Welcome to the
               <BLink
                 href="/"
@@ -191,7 +192,7 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <div class="p-3 bg-light rounded text-dark">
+            <div class="bg-light text-dark rounded p-3">
               Hello! Welcome to the
               <BLink
                 href="/"
@@ -323,7 +324,7 @@
             specific sections of a page.</template
           >
           <template #preview>
-            <div class="border rounded-3 p-3 bg-body-tertiary">
+            <div class="rounded-3 bg-body-tertiary border p-3">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni, doloremque quia molestiae accusantium maiores hic
@@ -338,7 +339,7 @@
             instead.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -360,7 +361,7 @@
             groups of links, or alone.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -372,7 +373,7 @@
             >Don&rsquo;t use links in titles or headings.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -407,7 +408,7 @@
             background.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -420,7 +421,7 @@
             readability.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -464,7 +465,7 @@
             >Link words or short phrases that make sense on their own.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -478,7 +479,7 @@
             make sense out of context.</template
           >
           <template #preview
-            ><div class="border rounded-3 p-3 bg-body-tertiary">
+            ><div class="rounded-3 bg-body-tertiary border p-3">
               html or images can be inserted here. Lorem ipsum, dolor sit amet
               consectetur adipisicing elit. Quos, mollitia, debitis delectus
               beatae magni.
@@ -503,29 +504,29 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
-import UsageBlock from "@/components/UsageBlock.vue";
-import PageContents from "@/components/PageContents.vue";
+  import Layout from "@/layouts/default.vue";
+  import CodeBlock from "@/components/CodeBlock.vue";
+  import UsageBlock from "@/components/UsageBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
 
-import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
+  import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsElementsLink",
-  components: {
-    Layout,
-    CodeBlock,
-    UsageBlock,
-    PageContents,
-    BBreadcrumb,
-    BBreadcrumbItem,
-    BLink,
-  },
-  inject: ["mq"],
-  data() {
-    return {
-      pageTitle: "Link",
-    };
-  },
-};
+  export default {
+    name: "DocsElementsLink",
+    components: {
+      Layout,
+      CodeBlock,
+      UsageBlock,
+      PageContents,
+      BBreadcrumb,
+      BBreadcrumbItem,
+      BLink,
+    },
+    inject: ["mq"],
+    data() {
+      return {
+        pageTitle: "Link",
+      };
+    },
+  };
 </script>

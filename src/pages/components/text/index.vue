@@ -17,40 +17,18 @@
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
-          <DescriptionBlock
-            name="Card"
-            link="/components/surface/card"
-            :accessibility="true"
-            version="1.0.5"
-            >Cards have a raised profile and has shadow. Meant to visually
-            display prominence over flat items.</DescriptionBlock
+          <DescriptionBlock name="Heading" link="/components/text/heading"
+            >Component documentation</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock
-            name="Panel"
-            link="/components/surface/panel"
-            :accessibility="true"
-            version="1.1.0"
-            >Panels remain on the flat surface of the page. Bounding container
-            can have background color applied to show slight prominence. Still
-            not a card.</DescriptionBlock
-          >
-        </li>
-        <li class="col-4">
-          <DescriptionBlock
-            name="Tile"
-            link="/components/surface/tile"
-            :accessibility="true"
-            version="1.1.0"
-            >Tiles remain on the flat surface of the page. Bounding container
-            can have background color applied to show slight prominence. Still
-            not a card.</DescriptionBlock
+          <DescriptionBlock name="Paragraph" link="/components/text/paragraph"
+            >Component documentation</DescriptionBlock
           >
         </li>
       </ul>
     </template>
-    <template #author>Your Name</template>
+    <template #author>Charlon Palacay</template>
   </Layout>
 </template>
 
@@ -60,11 +38,11 @@
   import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
-    name: "DocsPatternsContainer",
+    name: "DocsComponentsTextIndex" /* TODO: Docs_Folder_Index */,
     components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
-        pageTitle: "Surface" /* TODO: asdlkfjasf */,
+        pageTitle: "Text" /* TODO: asdlkfjasf */,
       };
     },
   };

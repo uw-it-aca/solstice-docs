@@ -1,23 +1,17 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/patterns/">Patterns</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="/patterns/boilerplate/">Boilerplate</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/layout">Layout</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
     <template #lead>
-      Topbar takes heavy influence from MyUW's layout. It has a header-based
-      design meant to focus the user on the contents below.
+      <p class="lead" style="max-width: 85ch">
+        Topbar takes heavy influence from MyUW's layout. It has a header-based
+        design meant to focus the user on the contents below.
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -26,42 +20,42 @@
             <li>
               <a
                 href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Variants</a
               >
             </li>
             <li>
               <a
                 href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Options</a
               >
             </li>
             <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Anatomy</a
               >
             </li>
             <li>
               <a
                 href="#usage"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Usage</a
               >
             </li>
             <li>
               <a
                 href="#accessibility"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Accessibility</a
               >
             </li>
             <li>
               <a
                 href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Implementation</a
               >
             </li>
@@ -135,7 +129,7 @@
       </CodeBlock>
 
       <h3>Props</h3>
-      <table class="table table-bordered">
+      <table class="table-bordered table">
         <thead>
           <tr>
             <th scope="col" class="w-25">Prop</th>
@@ -164,7 +158,7 @@
       </table>
 
       <h3>Slots</h3>
-      <table class="table table-bordered">
+      <table class="table-bordered table">
         <thead>
           <tr>
             <th scope="col" class="w-25">Slot</th>
@@ -212,7 +206,7 @@
           </tr>
         </tbody>
       </table>
-      <hr class="mb-5 w-25 d-inline-block" />
+      <hr class="d-inline-block mb-5 w-25" />
 
       <h2 class="fw-bold">Preview</h2>
       <h3>Basic structure</h3>
@@ -355,24 +349,24 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
-import PageContents from "@/components/PageContents.vue";
+  import Layout from "@/layouts/default.vue";
+  import CodeBlock from "@/components/CodeBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
 
-import { STopbar } from "solstice-vue";
+  import { STopbar } from "solstice-vue";
 
-export default {
-  name: "DocsTopbar",
-  components: {
-    Layout,
-    PageContents,
-    CodeBlock,
-    STopbar,
-  },
-  data() {
-    return {
-      pageTitle: "Topbar",
-    };
-  },
-};
+  export default {
+    name: "DocsTopbar",
+    components: {
+      Layout,
+      PageContents,
+      CodeBlock,
+      STopbar,
+    },
+    data() {
+      return {
+        pageTitle: "Topbar",
+      };
+    },
+  };
 </script>

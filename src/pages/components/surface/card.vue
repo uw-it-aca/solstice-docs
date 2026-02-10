@@ -2,16 +2,17 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
-        <BBreadcrumbItem to="/patterns/surface">Surface</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/surface">Surface</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
+    <p class="lead" style="max-width: 85ch">
       Cards is a container of content... Lorem ipsum dolor sit amet consectetur
       adipisicing elit. Ea nemo nobis, eligendi sit ipsa mollitia necessitatibus
       possimus, veniam sapiente deleniti quo. Nemo error quos, eius facilis rem
-      amet deserunt est!
+      amet deserunt est!</p>
     </template>
     <template #toc>
       <PageContents>

@@ -2,16 +2,20 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
-        <BBreadcrumbItem to="/patterns/disclosure">Disclosure</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/disclosure"
+          >Disclosure</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
-      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
-      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
-      aliquam!
+      <p class="lead" style="max-width: 85ch">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
+        dolores repudiandae natus dolorem recusandae! Incidunt consequatur
+        tenetur ad totam, placeat ipsa explicabo, eaque id blanditiis libero
+        culpa veniam aliquam!
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -64,6 +68,9 @@
       </PageContents>
     </template>
     <template #content>
+      <BButton v-b-modal.modal-example> Show Modal </BButton>
+      <BModal id="modal-example" title="Hello, World!"> Foobar? </BModal>
+
       <h2 id="anatomy">Anatomy</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, sit, quo
@@ -117,17 +124,24 @@ import Layout from "@/layouts/default.vue";
 // import CodeBlock from "@/components/CodeBlock.vue";
 // import UsageBlock from "@/components/UsageBlock.vue";
 import PageContents from "@/components/PageContents.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+import {
+  BBreadcrumb,
+  BBreadcrumbItem,
+  BButton,
+  BModal,
+} from "bootstrap-vue-next";
 
 export default {
-  name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
-  inject: ["mq"],
+  name: "DocsPatternsModal" /* example: Docs--Folder--ComponentName */,
   components: {
     Layout,
     /* CodeBlock, UsageBlock, */ PageContents,
     BBreadcrumb,
     BBreadcrumbItem,
+    BButton,
+    BModal,
   },
+  inject: ["mq"],
   data() {
     return {
       pageTitle: "Modal",

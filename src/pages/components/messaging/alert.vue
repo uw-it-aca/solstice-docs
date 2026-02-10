@@ -2,21 +2,19 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
-        <BBreadcrumbItem to="/patterns/messaging">Messaging</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/messaging">Messaging</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
-    <template #head>
-      <h1 class="fw-bold">{{ pageTitle }}</h1>
-      <hr class="w-50 d-inline-block" />
-    </template>
     <template #lead>
-      Alerts are semantic messages that intentionally disrupt a user's workflow
-      to notify them about issues that require action or provide information
-      relevant to a particular task or page section. For quick, non-critical
-      messages that disappear on their own, use a
-      <a href="toast">Toast</a>.
+      <p class="lead" style="max-width: 85ch">
+        Alerts are semantic messages that intentionally disrupt a user's
+        workflow to notify them about issues that require action or provide
+        information relevant to a particular task or page section. For quick,
+        non-critical messages that disappear on their own, use a
+        <a href="toast">Toast</a>.
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -25,49 +23,49 @@
             <li>
               <a
                 href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Variants</a
               >
             </li>
             <li>
               <a
                 href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Options</a
               >
             </li>
             <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Anatomy</a
               >
             </li>
             <li>
               <a
                 href="#placement"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Placement</a
               >
             </li>
             <li>
               <a
                 href="#states"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >States</a
               >
             </li>
             <li>
               <a
                 href="#practices"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Best Practices</a
               >
             </li>
             <li>
               <a
                 href="#implementation"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
+                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Implementation</a
               >
             </li>
@@ -78,7 +76,7 @@
     <template #content>
       <h2 id="variants">Variants</h2>
       <h3>Danger</h3>
-      <p>
+      <p style="max-width: 85ch">
         Alerts with the <code>danger</code> variant are of the highest
         importance, and communicate that an item needs immediate attention, that
         a process is blocked, or that there has been an error. Whenever
@@ -109,7 +107,7 @@
         </CodeBlock>
       </div>
       <h3>Warning</h3>
-      <p>
+      <p style="max-width: 85ch">
         Alerts with the <code>warning</code> variant communicate items or
         statuses that may have future consequences and require attention, but
         are not currently causing an error or blocking a process. Whenever
@@ -141,7 +139,7 @@
         </CodeBlock>
       </div>
       <h3>Info</h3>
-      <p>
+      <p style="max-width: 85ch">
         Alerts with the <code>info</code> variant communicate useful (but
         non-critical) information to help the user better understand the current
         context, such as announcements about upcoming processes.
@@ -170,7 +168,7 @@
         </CodeBlock>
       </div>
       <h3>Success</h3>
-      <p>
+      <p style="max-width: 85ch">
         Alerts with the <code>success</code> variant communicate... Lorem ipsum
         dolor sit amet consectetur adipisicing elit. Tempore sunt reiciendis
         fugit placeat, deleniti atque eos architecto modi sit nulla ullam ipsa
@@ -201,7 +199,7 @@
       </div>
       <h2 id="options">Options</h2>
       <h3>Call to Action</h3>
-      <p>
+      <p style="max-width: 85ch">
         Whenever possible, Alerts should provide direct access to relevant
         actions needed to resolve them. Do this by adding a call to action with
         <code>has-cta="true"</code>, and specifying a URL with
@@ -210,7 +208,7 @@
         resolved. Alerts may only have one call to action including one relevant
         link.
       </p>
-      <p>
+      <p style="max-width: 85ch">
         In general, <code>critical</code> and <code>warning</code> Alerts should
         include calls to action whenever possible.
       </p>
@@ -220,7 +218,7 @@
             <BAlert variant="danger" :model-value="true" class="small">
               <i class="bi-exclamation-octagon-fill me-1"></i> Critical Alert
               <BLink
-                class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2"
+                class="btn btn-danger btn-sm rounded-3 position-absolute translate-middle-y end-0 top-50 me-2"
                 to="/"
                 >Call to action</BLink
               >
@@ -228,7 +226,7 @@
             <BAlert variant="warning" :model-value="true" class="small">
               <i class="bi-exclamation-octagon-fill me-1"></i> Critical Alert
               <BLink
-                class="btn btn-warning btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2"
+                class="btn btn-warning btn-sm rounded-3 position-absolute translate-middle-y end-0 top-50 me-2"
                 to="/"
                 >Call to action</BLink
               >
@@ -330,7 +328,7 @@
         within an Alert. The <code>warning</code> colors are shown as an
         example, but the primitive values apply to each of the semantic colors.
       </p>
-      <table class="table my-5">
+      <table class="my-5 table">
         <thead>
           <tr>
             <th scope="col">Property</th>
@@ -378,7 +376,7 @@
           Alert is only relevant to a particular subsection or tab, place it at
           the top of that subsection or tab.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <img
               class="img-fluid"
               src="/images/alert-asset-placement-do.png"
@@ -389,7 +387,7 @@
           >Don't place Alerts below other content in a section or subsection,
           where they might be more easily missed.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <img
               class="img-fluid"
               src="/images/alert-visual-placement-dont.png"
@@ -430,7 +428,7 @@
       <UsageBlock
         ><template #text>Use Alerts for temporary, timely messages.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <BAlert
               variant="info"
               dismissible
@@ -447,7 +445,7 @@
         ><template #text
           >Don't use Alerts to call out permanent content on the page.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary">
+          ><div class="rounded-3 bg-body-tertiary border p-3">
             <BAlert
               variant="info"
               dismissible
@@ -471,12 +469,12 @@
           >Explain what caused the Alert and direct the user to the right place
           to resolve it.</template
         ><template #preview
-          ><div class="p-3 bg-body-tertiary">
+          ><div class="bg-body-tertiary p-3">
             <BAlert variant="danger" :model-value="true" class="small">
               <i class="bi-exclamation-circle-fill me-1"></i> You have a balance
               that is past due.
               <BLink
-                class="btn btn-danger btn-sm rounded-3 position-absolute top-50 end-0 translate-middle-y me-2"
+                class="btn btn-danger btn-sm rounded-3 position-absolute translate-middle-y end-0 top-50 me-2"
                 to="/"
                 >See statement</BLink
               >
@@ -489,7 +487,7 @@
           >Don't use vague language or error codes that are not actionable to
           the user.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary"></div></template
+          ><div class="rounded-3 bg-body-tertiary border p-3"></div></template
       ></UsageBlock>
       <h3>Be concise and link to additional information</h3>
       <p>
@@ -503,14 +501,14 @@
           >Keep Alert message concise and link to a relevant page for more
           details.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary"></div></template
+          ><div class="rounded-3 bg-body-tertiary border p-3"></div></template
       ></UsageBlock>
       <UsageBlock variant="dont"
         ><template #text
           >Don't use multiple, long sentences or mention multiple
           issues.</template
         ><template #preview
-          ><div class="border rounded-3 p-3 bg-body-tertiary"></div></template
+          ><div class="rounded-3 bg-body-tertiary border p-3"></div></template
       ></UsageBlock>
       <h3>Assistive technology & keyboard functionality</h3>
       <p>
@@ -536,7 +534,7 @@
         dismissed, focus is set to a predictable location.
       </p>
       <h2 id="implementation">Technical Implementation</h2>
-      <table class="table my-5">
+      <table class="my-5 table">
         <thead>
           <tr>
             <th scope="col">Property</th>
@@ -594,34 +592,34 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
-import PageContents from "@/components/PageContents.vue";
-import UsageBlock from "@/components/UsageBlock.vue";
-import {
-  BAlert,
-  BBreadcrumb,
-  BBreadcrumbItem,
-  BLink,
-} from "bootstrap-vue-next";
-
-export default {
-  name: "DocsElementsAlert" /* example: Docs--Folder--ComponentName */,
-  components: {
-    Layout,
-    CodeBlock,
-    PageContents,
-    UsageBlock,
+  import Layout from "@/layouts/default.vue";
+  import CodeBlock from "@/components/CodeBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import UsageBlock from "@/components/UsageBlock.vue";
+  import {
     BAlert,
     BBreadcrumb,
     BBreadcrumbItem,
     BLink,
-  },
-  inject: ["mq"],
-  data() {
-    return {
-      pageTitle: "Alert",
-    };
-  },
-};
+  } from "bootstrap-vue-next";
+
+  export default {
+    name: "DocsElementsAlert" /* example: Docs--Folder--ComponentName */,
+    components: {
+      Layout,
+      CodeBlock,
+      PageContents,
+      UsageBlock,
+      BAlert,
+      BBreadcrumb,
+      BBreadcrumbItem,
+      BLink,
+    },
+    inject: ["mq"],
+    data() {
+      return {
+        pageTitle: "Alert",
+      };
+    },
+  };
 </script>

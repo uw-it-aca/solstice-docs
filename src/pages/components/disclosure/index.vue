@@ -2,50 +2,56 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/patterns">Patterns</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
-      This is a pattern page... Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Aliquid maiores quo consequatur, minima minus suscipit
-      doloribus quos dicta excepturi porro obcaecati, dignissimos rerum
-      consectetur ea dolores vero sint. Porro, quaerat.
+      <p class="lead" style="max-width: 85ch">
+        This is a pattern page... Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Aliquid maiores quo consequatur, minima minus suscipit
+        doloribus quos dicta excepturi porro obcaecati, dignissimos rerum
+        consectetur ea dolores vero sint. Porro, quaerat.
+      </p>
     </template>
     <template #content>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fugiat
-        consequuntur doloremque, similique culpa unde ad dolores pariatur
-        voluptatibus. Repudiandae tenetur distinctio esse illum repellat
-        cupiditate dolore exercitationem incidunt ut?
-      </p>
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
-            :name="'Collapse'"
-            :link="'/patterns/disclosure/collapse'"
+            name="Collapse"
+            link="/components/disclosure/collapse"
             :accessibility="true"
-            :version="'1.0.x'"
+            version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur
             adipisicing elit.</DescriptionBlock
           >
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Accordian'"
-            :link="'/patterns/disclosure/accordian'"
+            name="Accordian"
+            link="/components/disclosure/accordian"
             :accessibility="true"
-            :version="'1.0.x'"
+            version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur
             adipisicing elit.</DescriptionBlock
           >
         </li>
         <li class="col-4">
           <DescriptionBlock
-            :name="'Modal'"
-            :link="'/patterns/disclosure/modal'"
+            name="Modal"
+            link="/components/disclosure/modal"
             :accessibility="true"
-            :version="'1.0.x'"
+            version="1.0.x"
+            >Component description... Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</DescriptionBlock
+          >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            name="Offcanvas"
+            link="/components/disclosure/offcanvas"
+            :accessibility="true"
+            version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur
             adipisicing elit.</DescriptionBlock
           >
@@ -57,18 +63,18 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import DescriptionBlock from "@/components/DescriptionBlock.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  import DescriptionBlock from "@/components/DescriptionBlock.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsPatternsDisclosure" /* TODO: replace 'PatternName' */,
-  inject: ["mq"],
-  components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
-  data() {
-    return {
-      pageTitle: "Disclosure" /* TODO: Set a page title */,
-    };
-  },
-};
+  export default {
+    name: "DocsPatternsDisclosure" /* TODO: replace 'PatternName' */,
+    inject: ["mq"],
+    components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
+    data() {
+      return {
+        pageTitle: "Disclosure" /* TODO: Set a page title */,
+      };
+    },
+  };
 </script>
