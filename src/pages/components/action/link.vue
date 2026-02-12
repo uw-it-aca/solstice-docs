@@ -16,52 +16,12 @@
 
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#anatomy"
-                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Anatomy</a
-              >
-            </li>
-            <li>
-              <a
-                href="#variants"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Variants</a
-              >
-            </li>
-            <li>
-              <a
-                href="#options"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Options</a
-              >
-            </li>
-            <li>
-              <a
-                href="#usage"
-                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Usage</a
-              >
-            </li>
-            <li>
-              <a
-                href="#accessibility"
-                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Accessibility</a
-              >
-            </li>
-            <li>
-              <a
-                href="#implementation"
-                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Implementation</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#anatomy">Anatomy</PageContentsItem>
+        <PageContentsItem anchor="#variants">Variants</PageContentsItem>
+        <PageContentsItem anchor="#options">Options</PageContentsItem>
+        <PageContentsItem anchor="#usage">Usage</PageContentsItem>
+        <PageContentsItem anchor="#accessibility">Accessibility</PageContentsItem>
+        <PageContentsItem anchor="#implementation">Implementation</PageContentsItem>
       </PageContents>
     </template>
 
@@ -508,6 +468,7 @@
   import CodeBlock from "@/components/CodeBlock.vue";
   import UsageBlock from "@/components/UsageBlock.vue";
   import PageContents from "@/components/PageContents.vue";
+  import PageContentsItem from "@/components/PageContentsItem.vue";
 
   import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
 
@@ -518,6 +479,7 @@
       CodeBlock,
       UsageBlock,
       PageContents,
+      PageContentsItem,
       BBreadcrumb,
       BBreadcrumbItem,
       BLink,

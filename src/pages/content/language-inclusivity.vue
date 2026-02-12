@@ -9,24 +9,8 @@
 
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#language"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Actionable Language</a
-              >
-            </li>
-            <li>
-              <a
-                href="#inclusivity"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Inclusivity</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#language">Language</PageContentsItem>
+        <PageContentsItem anchor="#inclusivity">Inclusivity</PageContentsItem>
       </PageContents>
     </template>
 
@@ -46,7 +30,9 @@
     </template>
 
     <template #content>
-      <h2 class="ff-encode-sans fw-bold my-4" id="voice">Actionable Language</h2>
+      <h2 class="ff-encode-sans fw-bold my-4" id="language">
+        Actionable Language
+      </h2>
       <p style="max-width: 85ch">
         When crafting language for labels, links, buttons, and headings, it's
         important to choose between active over passive terminology. Active
@@ -317,7 +303,7 @@
         </li>
       </ul>
 
-      <h2 class="ff-encode-sans fw-bold my-4"  id="inclusivity">Inclusivity</h2>
+      <h2 class="ff-encode-sans fw-bold my-4" id="inclusivity">Inclusivity</h2>
       <p>
         Inclusive language is paramount in fostering a welcoming and respectful
         digital environment and ensures that all users feel respected,

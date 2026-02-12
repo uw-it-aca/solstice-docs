@@ -68,7 +68,7 @@
           </div>
         </div>
         <div v-if="$slots['toc'] && !mq.xlMinus" class="col-3">
-          <div class="sticky-top" style="margin-top: 13.5rem">
+          <div class="sticky-top" style="margin-top: 11rem">
             <slot name="toc"></slot>
           </div>
         </div>

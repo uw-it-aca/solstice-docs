@@ -1,7 +1,9 @@
 <template>
-  <div class="sol-toc pt-3">
+  <div class="pt-3">
     <h2 class="fs-6 my-3">On this page</h2>
-    <slot></slot>
+    <ul id="TableOfContents" class="list-unstyled m-0">
+      <slot></slot>
+    </ul>
   </div>
 </template>
 
@@ -27,22 +29,3 @@
     methods: {},
   };
 </script>
-
-<style lang="css">
-  .sol-toc {
-    max-width: 312px;
-  }
-
-  .sol-toc li {
-    margin-bottom: 0.25rem;
-  }
-
-  .sol-toc .active {
-    --bs-bg-opacity: 1;
-    /* stylelint-disable-next-line color-function-notation */
-    background-color: rgb(
-      var(--bs-tertiary-bg-rgb),
-      var(--bs-bg-opacity)
-    ) !important;
-  }
-</style>

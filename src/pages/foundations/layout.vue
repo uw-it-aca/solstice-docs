@@ -7,10 +7,12 @@
       </BBreadcrumb>
     </template>
     <template #lead>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
-      dolores repudiandae natus dolorem recusandae! Incidunt consequatur tenetur
-      ad totam, placeat ipsa explicabo, eaque id blanditiis libero culpa veniam
-      aliquam!
+      <p class="lead" style="max-width: 85ch">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad,
+        dolores repudiandae natus dolorem recusandae! Incidunt consequatur
+        tenetur ad totam, placeat ipsa explicabo, eaque id blanditiis libero
+        culpa veniam aliquam!
+      </p>
     </template>
     <template #content>
       <p>
@@ -25,16 +27,16 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsFoundationLayout",
-  components: { Layout, BBreadcrumb, BBreadcrumbItem },
-  data() {
-    return {
-      pageTitle: "Layout",
-    };
-  },
-};
+  export default {
+    name: "DocsFoundationLayout",
+    components: { Layout, BBreadcrumb, BBreadcrumbItem },
+    data() {
+      return {
+        pageTitle: "Layout",
+      };
+    },
+  };
 </script>

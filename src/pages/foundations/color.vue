@@ -23,24 +23,10 @@
     </template>
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#principles"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Guiding Principles</a
-              >
-            </li>
-            <li>
-              <a
-                href="#palettes"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Color Palettes</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#principles"
+          >Guiding Principles</PageContentsItem
+        >
+        <PageContentsItem anchor="#palettes">Color Palettes</PageContentsItem>
       </PageContents>
     </template>
     <template #content>
@@ -1480,11 +1466,21 @@
 <script>
   import Layout from "@/layouts/default.vue";
   import CodeBlock from "@/components/CodeBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import PageContentsItem from "@/components/PageContentsItem.vue";
   import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
 
   export default {
     name: "DocsColor",
-    components: { Layout, BBreadcrumb, BBreadcrumbItem, BLink },
+    components: {
+      Layout,
+      CodeBlock,
+      PageContents,
+      PageContentsItem,
+      BBreadcrumb,
+      BBreadcrumbItem,
+      BLink,
+    },
     data() {
       return {
         pageTitle: "Color",

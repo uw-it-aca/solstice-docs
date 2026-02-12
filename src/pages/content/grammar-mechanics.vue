@@ -16,28 +16,20 @@
     </template>
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#voice"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Grammar</a
-              >
-            </li>
-            <li>
-              <a
-                href="#tone"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Mechanics</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#grammar">Grammar</PageContentsItem>
+        <PageContentsItem anchor="#mechanics">Mechanics</PageContentsItem>
       </PageContents>
     </template>
     <template #content>
-      <h2 class="ff-encodesans pt-4 pb-3" id="voice">Grammar</h2>
+      <h2 class="ff-encodesans pt-4 pb-3" id="grammar">Grammar</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia
+        dolorem? Perspiciatis excepturi cum aliquid praesentium aspernatur,
+        accusantium assumenda, odio neque nobis quo inventore dolorum,
+        architecto velit magni rem odit?
+      </p>
+
+      <h2 class="ff-encodesans pt-4 pb-3" id="mechanics">Mechanics</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia
         dolorem? Perspiciatis excepturi cum aliquid praesentium aspernatur,
@@ -51,10 +43,12 @@
 
 <script>
   import Layout from "@/layouts/default.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import PageContentsItem from "@/components/PageContentsItem.vue";
 
   export default {
     name: "DocsPatternsMessaging",
-    components: { Layout },
+    components: { Layout, PageContents, PageContentsItem },
     data() {
       return {
         pageTitle: "Grammar & Mechanics",

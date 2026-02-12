@@ -15,45 +15,21 @@
 
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#font-families"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Font Families</a
-              >
-            </li>
-            <li>
-              <a
-                href="#usability-accessibility-principles"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Usability &amp; Accessibility Principles</a
-              >
-            </li>
-            <li>
-              <a
-                href="#styling-decoration"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Styling &amp; Decoration</a
-              >
-            </li>
-            <li>
-              <a
-                href="#alignment-spacing"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Alignment &amp; Spacing</a
-              >
-            </li>
-            <li>
-              <a
-                href="#technical-implementation"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Technical Implementation</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#font-families"
+          >Font Families</PageContentsItem
+        >
+        <PageContentsItem anchor="#usability-accessibility-principles"
+          >Usability &amp; Accessibility Principles</PageContentsItem
+        >
+        <PageContentsItem anchor="#styling-decoration"
+          >Styling &amp; Decoration</PageContentsItem
+        >
+        <PageContentsItem anchor="#alignment-spacing"
+          >Alignment &amp; Spacing</PageContentsItem
+        >
+        <PageContentsItem anchor="#technical-implementation"
+          >Technical Implementation</PageContentsItem
+        >
       </PageContents>
     </template>
 

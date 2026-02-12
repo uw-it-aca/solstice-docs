@@ -32,24 +32,8 @@
 
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#voice"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Voice</a
-              >
-            </li>
-            <li>
-              <a
-                href="#tone"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Tone</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#voice">Voice</PageContentsItem>
+        <PageContentsItem anchor="#tone">Tone</PageContentsItem>
       </PageContents>
     </template>
 
@@ -197,10 +181,11 @@
 <script>
   import Layout from "@/layouts/default.vue";
   import PageContents from "@/components/PageContents.vue";
+  import PageContentsItem from "@/components/PageContentsItem.vue";
 
   export default {
     name: "DocsContentVoice",
-    components: { Layout, PageContents },
+    components: { Layout, PageContents, PageContentsItem },
     data() {
       return {
         pageTitle: "Voice & Tone",
