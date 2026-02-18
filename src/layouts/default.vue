@@ -47,7 +47,7 @@
           </div>
 
           <div v-if="$slots.lead">
-            <SHeading level="1" class="my-5">{{ pageTitle }}</SHeading>
+            <SHeading level="1">{{ pageTitle }}</SHeading>
             <slot name="lead">
               <p class="lead" style="max-width: 85ch">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid

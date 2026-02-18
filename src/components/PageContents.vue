@@ -1,6 +1,6 @@
 <template>
   <div class="pt-3">
-    <h2 class="fs-6 my-3">On this page</h2>
+    <SHeading level="2" system="app">On this page</SHeading>
     <ul id="TableOfContents" class="list-unstyled m-0">
       <slot></slot>
     </ul>
@@ -9,10 +9,14 @@
 
 <script>
   import { ScrollSpy } from "bootstrap";
+  import { SHeading } from "solstice-vue";
 
   export default {
     name: "PageContents",
     inject: ["mq"],
+    components: {
+      SHeading,
+    },
     data() {
       return {};
     },

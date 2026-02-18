@@ -15,20 +15,39 @@
     </template>
     <template #toc>
       <PageContents>
-        <PageContentsItem anchor="#best-practices"
-          >Best Practices</PageContentsItem
-        >
-        <PageContentsItem anchor="#accessibility"
-          >Accessibility</PageContentsItem
-        >
-        <PageContentsItem anchor="#type-system">Type System</PageContentsItem>
+        <PageContentsItem anchor="#best">Best Practices</PageContentsItem>
+        <PageContentsItem anchor="#access">Accessibility</PageContentsItem>
+        <PageContentsItem anchor="#system">Type System</PageContentsItem>
       </PageContents>
     </template>
     <template #content>
-      <h2 id="best-practices" class="display-6 ff-encode-sans pt-4">
-        Best Practices
-      </h2>
-      <h3 class="fw-medium ff-encode-sans pt-3">Content</h3>
+      <div class="my-5 grid">
+        <div class="g-col-6">
+          <p>Documentation</p>
+          <ul class="list-unstyled">
+            <li><SHeading level="1">Heading 1 - 48px</SHeading></li>
+            <li><SHeading level="2">Heading 2 - 40px</SHeading></li>
+            <li><SHeading level="3">Heading 3 - 28px</SHeading></li>
+            <li><SHeading level="4">Heading 4 - 24px</SHeading></li>
+            <li><SHeading level="5">Heading 5 - 20px</SHeading></li>
+            <li><SHeading level="6">Heading 6 - 16px</SHeading></li>
+          </ul>
+        </div>
+        <div class="g-col-6">
+          <p>Applications / Components</p>
+          <ul class="list-unstyled">
+            <li><SHeading level="1" system="app">Heading 1 - 40px</SHeading></li>
+            <li><SHeading level="2" system="app">Heading 2 - 28px</SHeading></li>
+            <li><SHeading level="3" system="app">Heading 3 - 24px</SHeading></li>
+            <li><SHeading level="4" system="app">Heading 4 - 20px</SHeading></li>
+            <li><SHeading level="5" system="app">Heading 5 - 16px</SHeading></li>
+          </ul>
+        </div>
+      </div>
+
+      <SHeading level="2" id="best">Best Practices</SHeading>
+      <SHeading level="3">Content</SHeading>
+
       <ul>
         <li>
           Heading text should be directly related to the content it is
@@ -46,7 +65,7 @@
         <li>Avoid having only one subsection heading within a section.</li>
       </ul>
 
-      <h3 class="fw-medium ff-encode-sans pt-3">Styles</h3>
+      <SHeading level="3">Styles</SHeading>
       <ul>
         <li>Use only the headings styles defined in the type system below.</li>
         <li>
@@ -55,11 +74,8 @@
         </li>
       </ul>
 
-      <br />
-      <hr />
-      <h2 id="accessibility" class="display-6 ff-encode-sans pt-4 pb-3">
-        Accessibility
-      </h2>
+      <SHeading level="2" id="access">Accessibility</SHeading>
+
       <ul>
         <li>
           <strong
@@ -87,12 +103,8 @@
         </li>
         <li class="text-danger">Need guidance around visibility</li>
       </ul>
-      <br />
-      <hr />
 
-      <h2 id="type-system" class="display-6 ff-encode-sans pt-4 pb-3">
-        Type system
-      </h2>
+      <SHeading level="2" id="system">Type System</SHeading>
       <p>
         The heading styles specified below create a cohesive heading system that
         is visually distinct and hierarchically clear.
@@ -104,7 +116,8 @@
         sites, such as this documentation site for the Solstice Design System.
         Different styles may be necessary in a web application.
       </p>
-      <h3 class="fw-medium ff-encode-sans pt-3">H1</h3>
+
+      <SHeading level="3">Heading 1</SHeading>
       <p>
         Use an <code>&lt;h1></code> for page titles. The
         <code>&lt;h1></code> will most likely be the largest font on the page.
@@ -130,8 +143,9 @@
         ></UsageBlock
       >
 
-      <h3 class="fw-medium ff-encode-sans">H2</h3>
+      <SHeading level="3">Heading 2</SHeading>
       <p>Use an <code>&lt;h2></code> to designate a page section.</p>
+
       <CodeBlock>
         <template #preview>
           <h2 class="display-6 ff-encode-sans">Solstice h2</h2>
@@ -142,9 +156,8 @@
 </code></pre>
         </template>
       </CodeBlock>
-      <br />
 
-      <h3 class="fw-medium ff-encode-sans">H3</h3>
+      <SHeading level="3">Heading 3</SHeading>
       <p>Use an <code>&lt;h3></code> to designate a subsection.</p>
       <CodeBlock>
         <template #preview>
@@ -156,9 +169,8 @@
 </code></pre>
         </template>
       </CodeBlock>
-      <br />
 
-      <h3 class="fw-medium ff-encode-sans">H4</h3>
+      <SHeading level="3">Heading 4</SHeading>
       <p>
         Use an <code>&lt;h4></code> to designate a subsection of an
         <code>&lt;h3></code>.
@@ -173,9 +185,8 @@
 </code></pre>
         </template>
       </CodeBlock>
-      <br />
 
-      <h3 class="fw-medium ff-encode-sans">H5 &amp; H6</h3>
+      <SHeading level="3">Heading 5 &amp; 6</SHeading>
       <p>
         Use an <code>&lt;h5></code> and <code>&lt;h6></code> to designate sub
         sections of their respective parent.
@@ -202,7 +213,6 @@
 </code></pre>
         </template>
       </CodeBlock>
-      <br />
 
       <!--      <UsageBlock variant="dont"
         ><template #text
@@ -228,15 +238,17 @@
   import PageContents from "@/components/PageContents.vue";
   import PageContentsItem from "@/components/PageContentsItem.vue";
   import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+  import { SHeading } from "solstice-vue";
 
   export default {
-    name: "DocsComponentsTextHeading" /* example: Docs--Folder--ComponentName */,
+    name: "DocsComponentsTextHeading",
     components: {
       Layout,
       PageContents,
       PageContentsItem,
       BBreadcrumb,
       BBreadcrumbItem,
+      SHeading,
     },
     data() {
       return {
