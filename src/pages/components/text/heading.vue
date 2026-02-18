@@ -15,38 +15,13 @@
     </template>
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#best-practices"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Best Practices</a
-              >
-            </li>
-            <li>
-              <a
-                href="#accessibility"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Accessibility</a
-              >
-            </li>
-            <li>
-              <a
-                href="#type-system"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Type System</a
-              >
-            </li>
-            <!--    <li>
-              <a
-                href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Implementation</a
-              >
-            </li> -->
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#best-practices"
+          >Best Practices</PageContentsItem
+        >
+        <PageContentsItem anchor="#accessibility"
+          >Accessibility</PageContentsItem
+        >
+        <PageContentsItem anchor="#type-system">Type System</PageContentsItem>
       </PageContents>
     </template>
     <template #content>
@@ -250,17 +225,16 @@
 
 <script>
   import Layout from "@/layouts/default.vue";
-  // import CodeBlock from "@/components/CodeBlock.vue";
-  // import UsageBlock from "@/components/UsageBlock.vue";
   import PageContents from "@/components/PageContents.vue";
+  import PageContentsItem from "@/components/PageContentsItem.vue";
   import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
-    name: "DocsElementsButton" /* example: Docs--Folder--ComponentName */,
-    inject: ["mq"],
+    name: "DocsComponentsTextHeading" /* example: Docs--Folder--ComponentName */,
     components: {
       Layout,
-      /* CodeBlock, UsageBlock, */ PageContents,
+      PageContents,
+      PageContentsItem,
       BBreadcrumb,
       BBreadcrumbItem,
     },

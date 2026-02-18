@@ -14,33 +14,7 @@
     </template>
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#type-system"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Type System</a
-              >
-            </li>
-            <!--
-            <li>
-              <a
-                href="#usage"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Usage</a
-              >
-            </li>
-            <li>
-              <a
-                href="#accessibility"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Accessibility</a
-              >
-            </li>
-             -->
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#type-system">Type System</PageContentsItem>
       </PageContents>
     </template>
     <template #content>
@@ -136,17 +110,16 @@
 
 <script>
   import Layout from "@/layouts/default.vue";
-  // import CodeBlock from "@/components/CodeBlock.vue";
-  // import UsageBlock from "@/components/UsageBlock.vue";
   import PageContents from "@/components/PageContents.vue";
+  import PageContentsItem from "@/components/PageContentsItem.vue";
   import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
-    name: "DocsElementsParagraph" /* example: Docs--Folder--ComponentName */,
-    inject: ["mq"],
+    name: "DocsComponentsTextParagraph",
     components: {
       Layout,
-      /* CodeBlock, UsageBlock, */ PageContents,
+      PageContents,
+      PageContentsItem,
       BBreadcrumb,
       BBreadcrumbItem,
     },

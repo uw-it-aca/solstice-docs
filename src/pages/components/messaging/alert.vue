@@ -18,62 +18,88 @@
     </template>
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#variants"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Variants</a
-              >
-            </li>
-            <li>
-              <a
-                href="#options"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Options</a
-              >
-            </li>
-            <li>
-              <a
-                href="#anatomy"
-                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Anatomy</a
-              >
-            </li>
-            <li>
-              <a
-                href="#placement"
-                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Placement</a
-              >
-            </li>
-            <li>
-              <a
-                href="#states"
-                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >States</a
-              >
-            </li>
-            <li>
-              <a
-                href="#practices"
-                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Best Practices</a
-              >
-            </li>
-            <li>
-              <a
-                href="#implementation"
-                class="text-muted text-decoration-none d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Implementation</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#anatomy">Anatomy</PageContentsItem>
+        <PageContentsItem anchor="#variants">Variants</PageContentsItem>
+        <PageContentsItem anchor="#options">Options</PageContentsItem>
+        <PageContentsItem anchor="#placement">Placement</PageContentsItem>
+        <PageContentsItem anchor="#usage">Usage</PageContentsItem>
+        <PageContentsItem anchor="#access">Accessibility</PageContentsItem>
+        <PageContentsItem anchor="#implement">Implementation</PageContentsItem>
       </PageContents>
     </template>
     <template #content>
+      <h2 id="anatomy">Anatomy</h2>
+      <h3>Sizing</h3>
+      <p>
+        Alerts should occupy the full width of their parent container, usually a
+        section or module on a page.
+      </p>
+      <h3>Text</h3>
+      <p>Alerts contain a message which should communicate the following:</p>
+      <ul>
+        <li>
+          Why the Alert is there, or what issue exists that needs attention.
+        </li>
+        <li>
+          If the Alert requires user action, how to resolve it (with a CTA if
+          applicable; see below).
+        </li>
+      </ul>
+
+      <h3>Color</h3>
+      <p>
+        Alerts always carry a semantic meaning with a corresponding color:
+        <code>critical</code> (red), <code>warning</code> (yellow), or
+        <code>info</code> (blue). Refer to the
+        <a href="#">Solstice Semantic Color Palette</a>
+        for appropriate values.
+      </p>
+      <h3>Dark Mode Support</h3>
+      <p>
+        Alerts must maintain proper contrast in order to be readable in both
+        light and dark modes. By default, the component will update to
+        appropriate colors within the semantic color palette.
+      </p>
+      <p>
+        Below are the primitive color values (100-900) for each of the elements
+        within an Alert. The <code>warning</code> colors are shown as an
+        example, but the primitive values apply to each of the semantic colors.
+      </p>
+      <table class="my-5 table">
+        <thead>
+          <tr>
+            <th scope="col">Property</th>
+            <th scope="col">Light Mode (default)</th>
+            <th scope="col">Dark Mode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <code class="text-success">background</code><br />(required)
+            </td>
+            <td><code>100</code></td>
+            <td>
+              <code>900</code>
+            </td>
+          </tr>
+          <tr>
+            <td><code class="text-success">border</code></td>
+            <td><code>200</code></td>
+            <td>
+              <code>700</code>
+            </td>
+          </tr>
+          <tr>
+            <td><code class="text-success">element</code></td>
+            <td><code>800</code></td>
+            <td>
+              <code>300</code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
       <h2 id="variants">Variants</h2>
       <h3>Danger</h3>
       <p style="max-width: 85ch">
@@ -291,77 +317,7 @@
           </template>
         </CodeBlock>
       </div>
-      <h2 id="anatomy">Anatomy</h2>
-      <h3>Sizing</h3>
-      <p>
-        Alerts should occupy the full width of their parent container, usually a
-        section or module on a page.
-      </p>
-      <h3>Text</h3>
-      <p>Alerts contain a message which should communicate the following:</p>
-      <ul>
-        <li>
-          Why the Alert is there, or what issue exists that needs attention.
-        </li>
-        <li>
-          If the Alert requires user action, how to resolve it (with a CTA if
-          applicable; see below).
-        </li>
-      </ul>
 
-      <h3>Color</h3>
-      <p>
-        Alerts always carry a semantic meaning with a corresponding color:
-        <code>critical</code> (red), <code>warning</code> (yellow), or
-        <code>info</code> (blue). Refer to the
-        <a href="#">Solstice Semantic Color Palette</a>
-        for appropriate values.
-      </p>
-      <h3>Dark Mode Support</h3>
-      <p>
-        Alerts must maintain proper contrast in order to be readable in both
-        light and dark modes. By default, the component will update to
-        appropriate colors within the semantic color palette.
-      </p>
-      <p>
-        Below are the primitive color values (100-900) for each of the elements
-        within an Alert. The <code>warning</code> colors are shown as an
-        example, but the primitive values apply to each of the semantic colors.
-      </p>
-      <table class="my-5 table">
-        <thead>
-          <tr>
-            <th scope="col">Property</th>
-            <th scope="col">Light Mode (default)</th>
-            <th scope="col">Dark Mode</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <code class="text-success">background</code><br />(required)
-            </td>
-            <td><code>100</code></td>
-            <td>
-              <code>900</code>
-            </td>
-          </tr>
-          <tr>
-            <td><code class="text-success">border</code></td>
-            <td><code>200</code></td>
-            <td>
-              <code>700</code>
-            </td>
-          </tr>
-          <tr>
-            <td><code class="text-success">element</code></td>
-            <td><code>800</code></td>
-            <td>
-              <code>300</code>
-            </td>
-          </tr>
-        </tbody>
-      </table>
       <h2 id="placement">Placement</h2>
       <h3>Position</h3>
       <p>
@@ -407,7 +363,7 @@
         action, the embedded outline button element should have a functional
         hover state.
       </p>
-      <h2 id="practices">Best Practices</h2>
+      <h2 id="usage">Usage</h2>
       <h3>Use Alerts for important, temporary messages</h3>
       <p>
         Alerts draw attention and disrupt the user's workflow. They are
@@ -510,6 +466,9 @@
         ><template #preview
           ><div class="rounded-3 bg-body-tertiary border p-3"></div></template
       ></UsageBlock>
+
+      <h2 id="access">Accessibility</h2>
+
       <h3>Assistive technology & keyboard functionality</h3>
       <p>
         Alerts include the ARIA <code>role="alert"</code> by default, and should
@@ -533,7 +492,7 @@
         which the Alert was present. Check to make sure that after an Alert is
         dismissed, focus is set to a predictable location.
       </p>
-      <h2 id="implementation">Technical Implementation</h2>
+      <h2 id="implement">Technical Implementation</h2>
       <table class="my-5 table">
         <thead>
           <tr>

@@ -15,28 +15,22 @@
 
     <template #toc>
       <PageContents>
-        <PageContentsItem anchor="#font-families"
-          >Font Families</PageContentsItem
+        <PageContentsItem anchor="#fonts">Font Families</PageContentsItem>
+        <PageContentsItem anchor="#principles"
+          >Guiding Principles</PageContentsItem
         >
-        <PageContentsItem anchor="#usability-accessibility-principles"
-          >Usability &amp; Accessibility Principles</PageContentsItem
-        >
-        <PageContentsItem anchor="#styling-decoration"
+        <PageContentsItem anchor="#styling"
           >Styling &amp; Decoration</PageContentsItem
         >
-        <PageContentsItem anchor="#alignment-spacing"
+        <PageContentsItem anchor="#spacing"
           >Alignment &amp; Spacing</PageContentsItem
         >
-        <PageContentsItem anchor="#technical-implementation"
-          >Technical Implementation</PageContentsItem
-        >
+        <PageContentsItem anchor="#implement">Implementation</PageContentsItem>
       </PageContents>
     </template>
 
     <template #content>
-      <h2 id="font-families" class="display-6 ff-encode-sans my-4">
-        Font Families
-      </h2>
+      <h2 id="fonts" class="display-6 ff-encode-sans my-4">Font Families</h2>
       <p>
         The Solstice Design System uses the Encode Sans and Open Sans font
         families.
@@ -90,11 +84,8 @@
 
       <hr class="my-5 w-50" />
 
-      <h2
-        id="usability-accessibility-principles"
-        class="display-6 ff-encode-sans my-4"
-      >
-        Usability & Accessibility Principles
+      <h2 id="principles" class="display-6 ff-encode-sans my-4">
+        Guiding Principles
       </h2>
       <ul>
         <li class="pb-3">
@@ -116,7 +107,7 @@
 
       <hr class="my-5 w-50" />
 
-      <h2 id="styling-decoration" class="display-6 ff-encode-sans my-4">
+      <h2 id="styling" class="display-6 ff-encode-sans my-4">
         Styling & Decoration
       </h2>
 
@@ -340,7 +331,7 @@
 
       <br />
       <hr />
-      <h2 id="alignment-spacing" class="display-6 ff-encode-sans pt-4 pb-3">
+      <h2 id="spacing" class="display-6 ff-encode-sans pt-4 pb-3">
         Alignment & Spacing
       </h2>
       <h3 class="fw-medium ff-encode-sans">Text alignment</h3>
@@ -382,10 +373,7 @@
       <br />
       <hr />
 
-      <h2
-        id="technical-implementation"
-        class="display-6 ff-encode-sans pt-4 pb-3"
-      >
+      <h2 id="implement" class="display-6 ff-encode-sans pt-4 pb-3">
         Technical Implementation
       </h2>
       <p>

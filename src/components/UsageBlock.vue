@@ -1,5 +1,5 @@
 <template>
-  <div v-if="variant == 'do'">
+  <div v-if="variant == 'do'" class="mb-5">
     <div class="fw-bold fs-5 mb-2">Do</div>
     <div class="border-start border-success mb-5 w-100 border-3 ps-2 pe-2">
       <!-- layout that uses UsageBlockRow -->
@@ -23,7 +23,7 @@
       </div>
     </div>
   </div>
-  <div v-if="variant == 'dont'">
+  <div v-if="variant == 'dont'" class="mb-5">
     <div class="fw-bold fs-5 mb-2">Don&rsquo;t</div>
     <div class="border-start border-danger mb-5 w-100 border-3 ps-2 pe-2">
       <!-- layout that uses UsageBlockRow -->

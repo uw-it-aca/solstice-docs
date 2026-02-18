@@ -15,52 +15,22 @@
 
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#anatomy"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
-                >Anatomy</a
-              >
-            </li>
-            <li>
-              <a
-                href="#principles"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Guiding Principles</a
-              >
-            </li>
-            <li>
-              <a
-                href="#overview"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Overview</a
-              >
-            </li>
-            <li>
-              <a
-                href="#implementation"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
-                >Technical Implementation</a
-              >
-            </li>
-            <li>
-              <a
-                href="#accessibility"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
-                >Accessibility</a
-              >
-            </li>
-            <li>
-              <a
-                href="#references"
-                class="px-2 py-1 text-muted text-decoration-none rounded d-block bg-body-tertiary-hover"
-                >Resources and References</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#anatomy">Anatomy</PageContentsItem>
+        <PageContentsItem anchor="#principles"
+          >Guiding Principles</PageContentsItem
+        >
+        <PageContentsItem anchor="#overview"
+          >Validation Overview</PageContentsItem
+        >
+        <PageContentsItem anchor="#implementation"
+          >Technical Implementation</PageContentsItem
+        >
+        <PageContentsItem anchor="#accessibility"
+          >Accessibility</PageContentsItem
+        >
+        <PageContentsItem anchor="#references"
+          >Resources and References</PageContentsItem
+        >
       </PageContents>
     </template>
 
@@ -70,7 +40,7 @@
         <img
           src="/images/form-validation-anatomy.png"
           alt=""
-          class="img-fluid border rounded col-md-11"
+          class="img-fluid col-md-11 rounded border"
         />
         <figcaption class="align-self-start">
           <p class="text-muted fst-italic my-2">Form validation anatomy</p>
@@ -317,7 +287,7 @@
           <img
             src="/images/form-validation-methods.png"
             alt=""
-            class="img-fluid border rounded mt-3"
+            class="img-fluid mt-3 rounded border"
           />
           <figcaption class="align-self-start">
             <p class="text-muted fst-italic my-2">
@@ -432,7 +402,7 @@
         <figure class="d-flex flex-column col-md-8">
           <img
             src="/images/validation-summary.png"
-            class="img-fluid rounded w-100 mt-2 mb-0 border"
+            class="img-fluid mt-2 mb-0 w-100 rounded border"
           />
           <figcaption class="text-muted fst-italic my-2">
             Example alert with a summary of errors that includes anchors to
@@ -646,26 +616,26 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import PreviewBlock from "@/components/PreviewBlock.vue";
-import PageContents from "@/components/PageContents.vue";
+  import Layout from "@/layouts/default.vue";
+  import PreviewBlock from "@/components/PreviewBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
 
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsElementsFormsValidation",
-  components: {
-    Layout,
-    PreviewBlock,
-    PageContents,
-    BBreadcrumb,
-    BBreadcrumbItem,
-  },
-  inject: ["mq"],
-  data() {
-    return {
-      pageTitle: "Form Validation",
-    };
-  },
-};
+  export default {
+    name: "DocsElementsFormsValidation",
+    components: {
+      Layout,
+      PreviewBlock,
+      PageContents,
+      BBreadcrumb,
+      BBreadcrumbItem,
+    },
+    inject: ["mq"],
+    data() {
+      return {
+        pageTitle: "Form Validation",
+      };
+    },
+  };
 </script>

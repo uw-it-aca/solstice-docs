@@ -12,45 +12,11 @@
     </template>
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#anatomy"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Anatomy</a
-              >
-            </li>
-            <li>
-              <a
-                href="#states"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >States</a
-              >
-            </li>
-            <li>
-              <a
-                href="#options"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Options</a
-              >
-            </li>
-            <li>
-              <a
-                href="#practices"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Best Practices</a
-              >
-            </li>
-            <li>
-              <a
-                href="#implementation"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Technical Implementation</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#anatomy">Anatomy</PageContentsItem>
+        <PageContentsItem anchor="#states">States</PageContentsItem>
+        <PageContentsItem anchor="#options">Options</PageContentsItem>
+        <PageContentsItem anchor="#practices">Best Practices</PageContentsItem>
+        <PageContentsItem anchor="#implementation">Technical Implementation</PageContentsItem>
       </PageContents>
     </template>
     <template #content>

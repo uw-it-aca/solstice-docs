@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-3">
+  <div class="mb-5">
     <div class="position-relative">
       <span class="visually-hidden">Example:</span>
     </div>

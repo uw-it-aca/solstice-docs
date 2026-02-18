@@ -8,60 +8,21 @@
       </BBreadcrumb>
     </template>
     <template #lead>
-    <p class="lead" style="max-width: 85ch">
-      Cards is a container of content... Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Ea nemo nobis, eligendi sit ipsa mollitia necessitatibus
-      possimus, veniam sapiente deleniti quo. Nemo error quos, eius facilis rem
-      amet deserunt est!</p>
+      <p class="lead" style="max-width: 85ch">
+        Cards is a container of content... Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ea nemo nobis, eligendi sit ipsa mollitia
+        necessitatibus possimus, veniam sapiente deleniti quo. Nemo error quos,
+        eius facilis rem amet deserunt est!
+      </p>
     </template>
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Anatomy</a
-              >
-            </li>
-            <li>
-              <a
-                href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Variants</a
-              >
-            </li>
-            <li>
-              <a
-                href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Options</a
-              >
-            </li>
-            <li>
-              <a
-                href="#usage"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Usage</a
-              >
-            </li>
-            <li>
-              <a
-                href="#accessibility"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Accessibility</a
-              >
-            </li>
-            <li>
-              <a
-                href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Implementation</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#anatomy">Anatomy</PageContentsItem>
+        <PageContentsItem anchor="#variants">Variants</PageContentsItem>
+        <PageContentsItem anchor="#options">Options</PageContentsItem>
+        <PageContentsItem anchor="#usage">Usage</PageContentsItem>
+        <PageContentsItem anchor="#access">Accessibility</PageContentsItem>
+        <PageContentsItem anchor="#implement">Implementation</PageContentsItem>
       </PageContents>
     </template>
 
@@ -72,12 +33,12 @@
         surface and must be bordered and contain drop shadow.
       </p>
 
-      <h2 id="variants">Types</h2>
+      <h2 id="variants">Variants</h2>
       <h3>Elevated</h3>
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BCard class="shadow-sm rounded-3"> body </BCard>
+            <BCard class="rounded-3 shadow-sm"> body </BCard>
           </template>
           <template #bootstrap>
             <pre class="language-html">
@@ -149,7 +110,7 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BCard class="shadow-sm rounded-3" header-bg-variant="transparent">
+            <BCard class="rounded-3 shadow-sm" header-bg-variant="transparent">
               <template #header> header </template>
               body
             </BCard>
@@ -183,7 +144,7 @@
       <div class="mb-5">
         <CodeBlock>
           <template #preview>
-            <BCard class="shadow-sm rounded-3" header-bg-variant="transparent">
+            <BCard class="rounded-3 shadow-sm" header-bg-variant="transparent">
               body
               <template #footer> footer </template>
             </BCard>
@@ -221,7 +182,7 @@
         voluptate ducimus repellat necessitatibus?
       </p>
 
-      <h2 id="accessibility">Accessibility</h2>
+      <h2 id="access">Accessibility</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
         facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
@@ -229,7 +190,7 @@
         voluptate ducimus repellat necessitatibus?
       </p>
 
-      <h2 id="implementation">Implementation</h2>
+      <h2 id="implement">Implementation</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
         facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
@@ -250,7 +211,7 @@
       <CodeBlock>
         <template #preview>
           <BCard
-            class="shadow-sm rounded-3"
+            class="rounded-3 shadow-sm"
             header-bg-variant="transparent"
             style="max-width: 600px"
           >
@@ -266,7 +227,7 @@
       <CodeBlock>
         <template #preview>
           <BCard
-            class="shadow-sm rounded-3"
+            class="rounded-3 shadow-sm"
             header-bg-variant="transparent"
             header-class="d-flex justify-content-between"
             style="max-width: 600px"
@@ -284,7 +245,7 @@
       <CodeBlock>
         <template #preview>
           <BCard
-            class="shadow-sm rounded-3"
+            class="rounded-3 shadow-sm"
             header-bg-variant="transparent"
             header-class="d-flex justify-content-between"
             style="max-width: 600px"
@@ -318,7 +279,7 @@
       <CodeBlock>
         <template #preview>
           <BCard
-            class="shadow-sm rounded-3"
+            class="rounded-3 shadow-sm"
             header-bg-variant="transparent"
             header-class="d-flex justify-content-between"
             style="max-width: 600px"
@@ -378,29 +339,29 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
-import {
-  BBreadcrumb,
-  BBreadcrumbItem,
-  BButton,
-  BCard,
-} from "bootstrap-vue-next";
-
-export default {
-  name: "DocsPatternsCard",
-  components: {
-    Layout,
-    CodeBlock,
+  import Layout from "@/layouts/default.vue";
+  import CodeBlock from "@/components/CodeBlock.vue";
+  import {
     BBreadcrumb,
     BBreadcrumbItem,
-    BCard,
     BButton,
-  },
-  data() {
-    return {
-      pageTitle: "Card",
-    };
-  },
-};
+    BCard,
+  } from "bootstrap-vue-next";
+
+  export default {
+    name: "DocsPatternsCard",
+    components: {
+      Layout,
+      CodeBlock,
+      BBreadcrumb,
+      BBreadcrumbItem,
+      BCard,
+      BButton,
+    },
+    data() {
+      return {
+        pageTitle: "Card",
+      };
+    },
+  };
 </script>

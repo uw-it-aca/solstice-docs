@@ -20,24 +20,25 @@
         <PageContentsItem anchor="#variants">Variants</PageContentsItem>
         <PageContentsItem anchor="#options">Options</PageContentsItem>
         <PageContentsItem anchor="#usage">Usage</PageContentsItem>
-        <PageContentsItem anchor="#accessibility">Accessibility</PageContentsItem>
-        <PageContentsItem anchor="#implementation">Implementation</PageContentsItem>
+        <PageContentsItem anchor="#access">Accessibility</PageContentsItem>
+        <PageContentsItem anchor="#implement">Implementation</PageContentsItem>
       </PageContents>
     </template>
 
     <template #content>
-      <h2 id="anatomy">Anatomy</h2>
-      <h3>Sizing</h3>
+      <SHeading level="2" id="anatomy">Anatomy</SHeading>
+      <SHeading level="3">Sizing</SHeading>
+
       <p>A link should inherit the size of its parent.</p>
 
-      <h3>Color</h3>
+      <SHeading level="3">Color</SHeading>
       <p>
         All link variants are blue by default. Light and dark variants exist for
         use on colored backgrounds where the default blue does not meet the
         minimum contrast ratio of 4.5:1.
       </p>
 
-      <h3>Dark Mode Support</h3>
+      <SHeading level="3">Dark Mode</SHeading>
       <p>
         Links must maintain proper contrast in order to be readable in both
         light and dark modes. If a link's background switches between modes, its
@@ -73,9 +74,9 @@
         </tbody>
       </table>
 
-      <h2 id="variants">Variants</h2>
+      <SHeading level="2" id="variants">Variants</SHeading>
+      <SHeading level="3">Default</SHeading>
 
-      <h3>Default</h3>
       <p>
         Default links are within <strong>sentences or paragraphs</strong>,
         underlined, and blue with light and dark variations. They shouldn't
@@ -86,108 +87,107 @@
         For use with links on a white/off-white background. This color should be
         used in most cases.
       </p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #preview>
-            Hello! Welcome to the
-            <BLink href="/" class="link-primary">Soltice Design System</BLink>
-            documentation website. This is a paragraph example using the
-            <BLink href="/elements/link">link component</BLink>. Goodbye!
-          </template>
-          <template #bootstrap>
-            <pre class="language-html">
+
+      <CodeBlock>
+        <template #preview>
+          Hello! Welcome to the
+          <BLink href="/" class="link-primary">Soltice Design System</BLink>
+          documentation website. This is a paragraph example using the
+          <BLink href="/elements/link">link component</BLink>. Goodbye!
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
 <code>&lt;a href="/">Soltice Design System&lt;/a>
 &lt;a href="/" class="link-primary">Soltice Design System&lt;/a>
 </code></pre>
-          </template>
-          <template #vue>
-            <pre class="language-html">
+        </template>
+        <template #vue>
+          <pre class="language-html">
 <code>&lt;BLink to="/">Soltice Design System&lt;/BLink>
 &lt;BLink to="/" class="link-primary">Soltice Design System&lt;/BLink>
 </code></pre>
-          </template>
-          <template #blah>asaf</template>
-        </CodeBlock>
-      </div>
+        </template>
+        <template #blah>asaf</template>
+      </CodeBlock>
 
-      <h3>Light</h3>
+      <SHeading level="3">Light</SHeading>
       <p>For use on dark, static backgrounds (such as purple).</p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #preview>
-            <div class="bg-spirit-purple rounded p-3 text-white">
-              Hello! Welcome to the
-              <BLink
-                href="/"
-                class="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
-                >Soltice Design System</BLink
-              >
-              documentation website. This is a paragraph example using the
-              <BLink
-                href="/elements/link"
-                class="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
-                >link component</BLink
-              >.
-            </div>
-          </template>
-          <template #bootstrap>
-            <pre class="language-html">
+
+      <CodeBlock>
+        <template #preview>
+          <div class="bg-spirit-purple rounded p-3 text-white">
+            Hello! Welcome to the
+            <BLink
+              href="/"
+              class="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+              >Soltice Design System</BLink
+            >
+            documentation website. This is a paragraph example using the
+            <BLink
+              href="/elements/link"
+              class="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+              >link component</BLink
+            >.
+          </div>
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
 <code>&lt;a href="/" class="link-light link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
   Soltice Design System
 &lt;/a>
 </code></pre>
-          </template>
-          <template #vue>
-            <pre class="language-html">
+        </template>
+        <template #vue>
+          <pre class="language-html">
 <code>&lt;BLink variant="light" class="link-opacity-50 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
   Soltice Design System
 &lt;/BLink>
 </code></pre>
-          </template>
-        </CodeBlock>
-      </div>
+        </template>
+      </CodeBlock>
 
-      <h3>Dark</h3>
+      <SHeading level="3">Dark</SHeading>
+
       <p>For use on light, static backgrounds (such as gold or light gray).</p>
-      <div class="mb-5">
-        <CodeBlock>
-          <template #preview>
-            <div class="bg-light text-dark rounded p-3">
-              Hello! Welcome to the
-              <BLink
-                href="/"
-                variant="dark"
-                class="link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
-                >Soltice Design System</BLink
-              >
-              documentation website. This is a paragraph example using the
-              <BLink
-                href="/elements/link"
-                variant="dark"
-                class="link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
-                >link component</BLink
-              >.
-            </div>
-          </template>
-          <template #bootstrap>
-            <pre class="language-html">
+
+      <CodeBlock>
+        <template #preview>
+          <div class="bg-light text-dark rounded p-3">
+            Hello! Welcome to the
+            <BLink
+              href="/"
+              variant="dark"
+              class="link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+              >Soltice Design System</BLink
+            >
+            documentation website. This is a paragraph example using the
+            <BLink
+              href="/elements/link"
+              variant="dark"
+              class="link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+              >link component</BLink
+            >.
+          </div>
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
 <code>&lt;a href="/" class="link-dark link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
   Soltice Design System
 &lt;/a>
 </code></pre>
-          </template>
-          <template #vue>
-            <pre class="language-html">
+        </template>
+        <template #vue>
+          <pre class="language-html">
 <code>&lt;BLink variant="dark" class="link-opacity-75 link-opacity-75-hover link-underline-opacity-50 link-underline-opacity-75-hover">
   Soltice Design System
 &lt;/BLink>
 </code></pre>
-          </template>
-        </CodeBlock>
-      </div>
+        </template>
+      </CodeBlock>
 
-      <h2 id="options">Options</h2>
-      <h3>Quiet</h3>
+      <SHeading level="2" id="options">Options</SHeading>
+      <SHeading level="3">Quiet</SHeading>
+
       <p>
         Quiet links are <strong>standalone or in link groups</strong>, typically
         found in sidebars, footers, or "quick links" lists. They can be grouped
@@ -195,35 +195,33 @@
         and dark variations.
       </p>
 
-      <div class="mb-5">
-        <CodeBlock>
-          <template #preview>
-            <p>
-              Hello! Welcome to the Soltice Design System documentation website.
-              This is a paragraph explaining how to use the quite link below:
-            </p>
-            <BLink
-              to="/"
-              class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-              >Soltice Design System</BLink
-            >
-          </template>
-          <template #bootstrap>
-            <pre class="language-html">
+      <CodeBlock>
+        <template #preview>
+          <p>
+            Hello! Welcome to the Soltice Design System documentation website.
+            This is a paragraph explaining how to use the quite link below:
+          </p>
+          <BLink
+            to="/"
+            class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+            >Soltice Design System</BLink
+          >
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
 <code>&lt;a href="/" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
   Soltice Design System
 &lt;/a>
 </code></pre>
-          </template>
-          <template #vue>
-            <pre class="language-html">
+        </template>
+        <template #vue>
+          <pre class="language-html">
 <code>&lt;BLink to="/" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
   Soltice Design System
 &lt;/BLink>
 </code></pre>
-          </template>
-        </CodeBlock>
-      </div>
+        </template>
+      </CodeBlock>
 
       <h3>Icon</h3>
       <p>
@@ -232,35 +230,34 @@
         destination (and not within sentences or paragraphs).
       </p>
 
-      <div class="mb-5">
-        <CodeBlock>
-          <template #preview>
-            <BLink
-              to="/elements/link"
-              class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-            >
-              <i class="bi bi-cloud-download me-1"></i>Download report
-            </BLink>
-          </template>
-          <template #bootstrap>
-            <pre class="language-html">
+      <CodeBlock>
+        <template #preview>
+          <BLink
+            to="/elements/link"
+            class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+          >
+            <i class="bi bi-cloud-download me-1"></i>Download report
+          </BLink>
+        </template>
+        <template #bootstrap>
+          <pre class="language-html">
 <code>&lt;a href="/" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
   &lt;i class="bi bi-cloud-download me-1">&lt;/i>Download report
 &lt;/a>
 </code></pre>
-          </template>
-          <template #vue>
-            <pre class="language-html">
+        </template>
+        <template #vue>
+          <pre class="language-html">
 <code>&lt;BLink to="/" class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
   &lt;i class="bi bi-cloud-download me-1">&lt;/i>Download report
 &lt;/BLink>
 </code></pre>
-          </template>
-        </CodeBlock>
-      </div>
+        </template>
+      </CodeBlock>
 
-      <h2 id="usage">Usage</h2>
-      <h3>Behavior</h3>
+      <SHeading level="2" id="usage">Usage</SHeading>
+      <SHeading level="3">Behavior</SHeading>
+
       <p>
         Links usually open in the same tab. If users hold the command/control
         key, links open in a new tab. Only set links to open in a new tab by
@@ -268,7 +265,8 @@
         current workflow.
       </p>
 
-      <h3>How to use links</h3>
+      <SHeading level="3">How to use links</SHeading>
+
       <p>Links can be used for:</p>
       <ul>
         <li>Navigating between websites, pages, or page sections.</li>
@@ -277,72 +275,67 @@
         <li>Logging out of sites or apps.</li>
       </ul>
 
-      <div class="my-5">
-        <UsageBlock>
-          <template #text
-            >Use links to allow users to navigate between unique URLS or
-            specific sections of a page.</template
-          >
-          <template #preview>
-            <div class="rounded-3 bg-body-tertiary border p-3">
-              html or images can be inserted here. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Quos, mollitia, debitis delectus
-              beatae magni, doloremque quia molestiae accusantium maiores hic
-              vero rem repudiandae fuga! Eveniet sit amet mollitia fugiat
-              similique?
-            </div>
-          </template>
-        </UsageBlock>
-        <UsageBlock variant="dont">
-          <template #text
-            >Don&rsquo;t use links for complex actions—use buttons
-            instead.</template
-          >
-          <template #preview
-            ><div class="rounded-3 bg-body-tertiary border p-3">
-              html or images can be inserted here. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Quos, mollitia, debitis delectus
-              beatae magni.
-            </div></template
-          >
-        </UsageBlock>
-      </div>
+      <UsageBlock>
+        <template #text
+          >Use links to allow users to navigate between unique URLS or specific
+          sections of a page.</template
+        >
+        <template #preview>
+          <div class="rounded-3 bg-body-tertiary border p-3">
+            html or images can be inserted here. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Quos, mollitia, debitis delectus
+            beatae magni, doloremque quia molestiae accusantium maiores hic vero
+            rem repudiandae fuga! Eveniet sit amet mollitia fugiat similique?
+          </div>
+        </template>
+      </UsageBlock>
+      <UsageBlock variant="dont">
+        <template #text
+          >Don&rsquo;t use links for complex actions—use buttons
+          instead.</template
+        >
+        <template #preview
+          ><div class="rounded-3 bg-body-tertiary border p-3">
+            html or images can be inserted here. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Quos, mollitia, debitis delectus
+            beatae magni.
+          </div></template
+        >
+      </UsageBlock>
 
-      <h3>Where to use links</h3>
+      <SHeading level="3">Where to use links</SHeading>
       <p>
         Links can be within body text, by themselves, or in groups such as
         headers, footers, or "quick links" sections.
       </p>
 
-      <div class="my-5">
-        <UsageBlock>
-          <template #text
-            >Use links in paragraphs, headers, footers, sidebars, in other
-            groups of links, or alone.</template
-          >
-          <template #preview
-            ><div class="rounded-3 bg-body-tertiary border p-3">
-              html or images can be inserted here. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Quos, mollitia, debitis delectus
-              beatae magni.
-            </div></template
-          >
-        </UsageBlock>
-        <UsageBlock variant="dont">
-          <template #text
-            >Don&rsquo;t use links in titles or headings.</template
-          >
-          <template #preview
-            ><div class="rounded-3 bg-body-tertiary border p-3">
-              html or images can be inserted here. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Quos, mollitia, debitis delectus
-              beatae magni.
-            </div></template
-          >
-        </UsageBlock>
-      </div>
+      <UsageBlock>
+        <template #text
+          >Use links in paragraphs, headers, footers, sidebars, in other groups
+          of links, or alone.</template
+        >
+        <template #preview
+          ><div class="rounded-3 bg-body-tertiary border p-3">
+            html or images can be inserted here. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Quos, mollitia, debitis delectus
+            beatae magni.
+          </div></template
+        >
+      </UsageBlock>
+      <UsageBlock variant="dont">
+        <template #text>Don&rsquo;t use links in titles or headings.</template>
+        <template #preview
+          ><div class="rounded-3 bg-body-tertiary border p-3">
+            html or images can be inserted here. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Quos, mollitia, debitis delectus
+            beatae magni.
+          </div></template
+        >
+      </UsageBlock>
 
-      <h3>Maintain consistent styling to make links stand out</h3>
+      <SHeading level="3"
+        >Maintain consistent styling to make links stand out</SHeading
+      >
       <p>
         Use proper colors, underlines, and states to demarcate links as
         described in the Variants section. While links can have bold or italic
@@ -351,9 +344,9 @@
         non-link text; it will make it harder for users to navigate.
       </p>
 
-      <h2 id="accessibility">Accessibility</h2>
+      <SHeading level="2" id="access">Accessibility</SHeading>
+      <SHeading level="3">Ensure proper contrast</SHeading>
 
-      <h3>Ensure proper contrast</h3>
       <p>
         Ensure default blue links have a 4.5:1 contrast ratio with the
         background, following the WCAG 2.1 AA standard. If the blue doesn't meet
@@ -361,36 +354,34 @@
         dark color variants.
       </p>
 
-      <div class="my-5">
-        <UsageBlock>
-          <template #text
-            >Use proper variants to ensure sufficient contrast against the
-            background.</template
-          >
-          <template #preview
-            ><div class="rounded-3 bg-body-tertiary border p-3">
-              html or images can be inserted here. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Quos, mollitia, debitis delectus
-              beatae magni.
-            </div></template
-          >
-        </UsageBlock>
-        <UsageBlock variant="dont">
-          <template #text
-            >Don&rsquo;t mix variants or colors in a way that compromises
-            readability.</template
-          >
-          <template #preview
-            ><div class="rounded-3 bg-body-tertiary border p-3">
-              html or images can be inserted here. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Quos, mollitia, debitis delectus
-              beatae magni.
-            </div></template
-          >
-        </UsageBlock>
-      </div>
+      <UsageBlock>
+        <template #text
+          >Use proper variants to ensure sufficient contrast against the
+          background.</template
+        >
+        <template #preview
+          ><div class="rounded-3 bg-body-tertiary border p-3">
+            html or images can be inserted here. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Quos, mollitia, debitis delectus
+            beatae magni.
+          </div></template
+        >
+      </UsageBlock>
+      <UsageBlock variant="dont">
+        <template #text
+          >Don&rsquo;t mix variants or colors in a way that compromises
+          readability.</template
+        >
+        <template #preview
+          ><div class="rounded-3 bg-body-tertiary border p-3">
+            html or images can be inserted here. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Quos, mollitia, debitis delectus
+            beatae magni.
+          </div></template
+        >
+      </UsageBlock>
 
-      <h3>Use clear text</h3>
+      <SHeading level="3">Use clear text</SHeading>
       <ul>
         <li>
           <strong>Use specific, purposeful link text</strong> that doesn't rely
@@ -419,36 +410,34 @@
         aria-labelledby, ensuring they read naturally with surrounding text.
       </p>
 
-      <div class="my-5">
-        <UsageBlock>
-          <template #text
-            >Link words or short phrases that make sense on their own.</template
-          >
-          <template #preview
-            ><div class="rounded-3 bg-body-tertiary border p-3">
-              html or images can be inserted here. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Quos, mollitia, debitis delectus
-              beatae magni.
-            </div></template
-          >
-        </UsageBlock>
+      <UsageBlock>
+        <template #text
+          >Link words or short phrases that make sense on their own.</template
+        >
+        <template #preview
+          ><div class="rounded-3 bg-body-tertiary border p-3">
+            html or images can be inserted here. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Quos, mollitia, debitis delectus
+            beatae magni.
+          </div></template
+        >
+      </UsageBlock>
 
-        <UsageBlock variant="dont">
-          <template #text
-            >Don&rsquo;t link generic terms like “click here” that don&rsquo;t
-            make sense out of context.</template
-          >
-          <template #preview
-            ><div class="rounded-3 bg-body-tertiary border p-3">
-              html or images can be inserted here. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Quos, mollitia, debitis delectus
-              beatae magni.
-            </div></template
-          >
-        </UsageBlock>
-      </div>
+      <UsageBlock variant="dont">
+        <template #text
+          >Don&rsquo;t link generic terms like “click here” that don&rsquo;t
+          make sense out of context.</template
+        >
+        <template #preview
+          ><div class="rounded-3 bg-body-tertiary border p-3">
+            html or images can be inserted here. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Quos, mollitia, debitis delectus
+            beatae magni.
+          </div></template
+        >
+      </UsageBlock>
 
-      <h3>Keyboard functionality</h3>
+      <SHeading level="3">Keyboard functionality</SHeading>
       <p>
         All links must be accessible via keyboard and other devices, as not
         everyone uses a mouse or touchscreen. Ensure links can be navigated and
@@ -457,7 +446,11 @@
         links.
       </p>
 
-      <h2 id="implementation">Implementation</h2>
+      <SHeading level="3" id="implement">Implementation</SHeading>
+      <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, mollitia,
+        debitis delectus
+      </p>
     </template>
     <template #author>Charlon Palacay</template>
   </Layout>
@@ -469,11 +462,11 @@
   import UsageBlock from "@/components/UsageBlock.vue";
   import PageContents from "@/components/PageContents.vue";
   import PageContentsItem from "@/components/PageContentsItem.vue";
-
   import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
+  import { SHeading } from "solstice-vue";
 
   export default {
-    name: "DocsElementsLink",
+    name: "DocsComponentsActionLink",
     components: {
       Layout,
       CodeBlock,
@@ -483,6 +476,7 @@
       BBreadcrumb,
       BBreadcrumbItem,
       BLink,
+      SHeading,
     },
     inject: ["mq"],
     data() {
