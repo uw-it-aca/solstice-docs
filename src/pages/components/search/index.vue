@@ -47,7 +47,7 @@
     components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
-        pageTitle: "Search" /* TODO: asdlkfjasf */,
+        pageTitle: "Search & Filter" /* TODO: asdlkfjasf */,
       };
     },
   };

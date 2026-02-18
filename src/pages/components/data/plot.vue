@@ -4,7 +4,7 @@
       <BBreadcrumb>
         <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem to="/components/data"
-          >Data</BBreadcrumbItem
+          >Data Layout</BBreadcrumbItem
         >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>

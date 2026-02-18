@@ -4,7 +4,7 @@
       <BBreadcrumb>
         <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem to="/components/search"
-          >Search</BBreadcrumbItem
+          >Search &amp; Filter</BBreadcrumbItem
         >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>

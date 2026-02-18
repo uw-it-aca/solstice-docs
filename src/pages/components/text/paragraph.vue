@@ -14,14 +14,12 @@
     </template>
     <template #toc>
       <PageContents>
-        <PageContentsItem anchor="#type-system">Type System</PageContentsItem>
+        <PageContentsItem anchor="#system">Type System</PageContentsItem>
       </PageContents>
     </template>
     <template #content>
-      <h2 id="type-system" class="display-6 ff-encode-sans pt-4 pb-3">
-        Type System
-      </h2>
-      <h3 class="fw-medium ff-encode-sans">Body</h3>
+      <SHeading level="2" id="system">Type System</SHeading>
+      <SHeading level="3">Body</SHeading>
       <p>
         This is the default font size for most text, and all content contained
         in a &lt;p> tag will automatically display this size.
@@ -38,8 +36,8 @@
         </template>
       </CodeBlock>
 
-      <br />
-      <h3 class="fw-medium ff-encode-sans">Small body</h3>
+      <SHeading level="3">Small Body</SHeading>
+
       <p>
         For content that is less important than the default-sized content on a
         page, or if there are space constraints, use a small body style.
@@ -58,19 +56,18 @@
         </template>
       </CodeBlock>
 
-      <br />
-      <h3 class="fw-medium ff-encode-sans">Large body</h3>
+      <SHeading level="3">Large Body (lead)</SHeading>
       <p>
         Use this style for introductory paragraph, page descriptions, or content
         that needs more focus.
       </p>
       <CodeBlock>
         <template #preview>
-          <p class="fs-5">Introductory comments about this page or section.</p>
+          <p class="lead">Introductory comments about this page or section.</p>
         </template>
         <template #bootstrap>
           <pre class="language-html">
-<code>&lt;p class="fs-5">Text&lt;/p>
+<code>&lt;p class="lead">Text&lt;/p>
 </code></pre>
         </template>
       </CodeBlock>
@@ -113,6 +110,7 @@
   import PageContents from "@/components/PageContents.vue";
   import PageContentsItem from "@/components/PageContentsItem.vue";
   import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+  import { SHeading } from "solstice-vue";
 
   export default {
     name: "DocsComponentsTextParagraph",
@@ -122,6 +120,7 @@
       PageContentsItem,
       BBreadcrumb,
       BBreadcrumbItem,
+      SHeading,
     },
     data() {
       return {

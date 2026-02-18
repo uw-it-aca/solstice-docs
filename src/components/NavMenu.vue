@@ -1,11 +1,11 @@
 <template>
   <ul class="nav flex-column mb-5">
     <li class="nav-item position-relative mb-1">
-      <NavCollapse menu="Getting Started" slug="getting-started" icon="bi-flag">
+      <NavCollapse menu="Getting Started" slug="getting-started">
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/solstice-101"
             >
@@ -14,7 +14,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/design-principles"
             >
@@ -23,7 +23,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/developer-guide"
             >
@@ -34,11 +34,11 @@
       </NavCollapse>
     </li>
     <li class="nav-item position-relative mb-1">
-      <NavCollapse menu="Content" slug="content" icon="bi-body-text">
+      <NavCollapse menu="Content" slug="content">
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/voice-tone"
             >
@@ -47,7 +47,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/grammar-mechanics"
             >
@@ -56,7 +56,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/language-inclusivity"
             >
@@ -65,7 +65,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/terminology"
             >
@@ -74,7 +74,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/labels"
             >
@@ -83,7 +83,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/writing-errors"
             >
@@ -94,11 +94,11 @@
       </NavCollapse>
     </li>
     <li class="nav-item">
-      <NavCollapse menu="Foundations" slug="foundations" icon="bi-layers">
+      <NavCollapse menu="Foundations" slug="foundations">
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/color"
             >
@@ -107,7 +107,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/typography"
             >
@@ -116,7 +116,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/layout"
             >
@@ -125,7 +125,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/icons"
             >
@@ -144,11 +144,11 @@
     </li>
 
     <li class="nav-item position-relative mb-1">
-      <NavCollapse menu="Action" slug="action" icon="bi-hand-index">
+      <NavCollapse menu="Action" slug="action">
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/action/button"
             >
@@ -157,7 +157,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/action/link"
             >
@@ -169,11 +169,11 @@
     </li>
 
     <li class="nav-item position-relative mb-1">
-      <NavCollapse menu="Text" slug="text" icon="bi-type">
+      <NavCollapse menu="Text" slug="text">
         <ul class="nav small flex-column mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/text/heading"
             >
@@ -182,7 +182,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/text/paragraph"
             >
@@ -194,21 +194,11 @@
     </li>
 
     <li class="nav-item position-relative mb-1">
-      <NavCollapse menu="Form" slug="form" icon="bi-input-cursor-text">
+      <NavCollapse menu="Form" slug="form">
         <ul class="nav small flex-column mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
-              style="--bs-text-opacity: 0.5"
-              exact-active-class="bg-white bg-opacity-10"
-              to="/components/form/label"
-            >
-              Label
-            </BLink>
-          </li>
-          <li class="nav-item mb-1">
-            <BLink
-              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               style="--bs-text-opacity: 0.5"
               exact-active-class="bg-white bg-opacity-10"
               to="/components/form/input"
@@ -218,7 +208,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               style="--bs-text-opacity: 0.5"
               exact-active-class="bg-white bg-opacity-10"
               to="/components/form/select"
@@ -228,7 +218,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               style="--bs-text-opacity: 0.5"
               exact-active-class="bg-white bg-opacity-10"
               to="/components/form/select"
@@ -239,17 +229,17 @@
 
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               style="--bs-text-opacity: 0.5"
               exact-active-class="bg-white bg-opacity-10"
               to="/components/form/select"
             >
-              Button
+              Submit
             </BLink>
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               style="--bs-text-opacity: 0.5"
               exact-active-class="bg-white bg-opacity-10"
               to="/components/form/fieldset"
@@ -259,7 +249,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               style="--bs-text-opacity: 0.5"
               exact-active-class="bg-white bg-opacity-10"
               to="/components/form/radio"
@@ -269,7 +259,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               style="--bs-text-opacity: 0.5"
               exact-active-class="bg-white bg-opacity-10"
               to="/components/form/checkbox"
@@ -279,7 +269,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               style="--bs-text-opacity: 0.5"
               exact-active-class="bg-white bg-opacity-10"
               to="/components/form/range"
@@ -289,7 +279,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               style="--bs-text-opacity: 0.5"
               exact-active-class="bg-white bg-opacity-10"
               to="/components/form/validation"
@@ -302,11 +292,11 @@
     </li>
 
     <li class="nav-item position-relative mb-1">
-      <NavCollapse menu="Surface" slug="surface" icon="bi-card-heading">
+      <NavCollapse menu="Surface" slug="surface">
         <ul class="nav small flex-column mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/surface/card"
             >
@@ -315,16 +305,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
-              exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/components/surface/panel"
-            >
-              Panel
-            </BLink>
-          </li>
-          <li class="nav-item mb-1">
-            <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/surface/tile"
             >
@@ -336,11 +317,11 @@
     </li>
 
     <li class="nav-item position-relative mb-1">
-      <NavCollapse menu="Layout" slug="layout" icon="bi-layout-sidebar">
+      <NavCollapse menu="Layout" slug="layout">
         <ul class="nav small flex-column mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/layout/topbar"
             >
@@ -349,7 +330,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/layout/sidebar"
             >
@@ -361,15 +342,11 @@
     </li>
 
     <li class="nav-item position-relative mb-1">
-      <NavCollapse
-        menu="Navigation"
-        slug="navigation"
-        icon="bi-sign-turn-right"
-      >
+      <NavCollapse menu="Navigation" slug="navigation">
         <ul class="nav small flex-column mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/navigation/tabs"
             >
@@ -378,7 +355,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/navigation/menu"
             >
@@ -390,15 +367,11 @@
     </li>
 
     <li class="nav-item position-relative mb-1">
-      <NavCollapse
-        menu="Messaging"
-        slug="messaging"
-        icon="bi-exclamation-triangle"
-      >
+      <NavCollapse menu="Messaging" slug="messaging">
         <ul class="nav small flex-column mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/messaging/alert"
             >
@@ -407,7 +380,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/messaging/toast"
             >
@@ -416,7 +389,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/messaging/banner"
             >
@@ -425,7 +398,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/messaging/badge"
             >
@@ -437,15 +410,11 @@
     </li>
 
     <li class="nav-item position-relative mb-1">
-      <NavCollapse
-        menu="Disclosure"
-        slug="disclosure"
-        icon="bi-arrows-collapse"
-      >
+      <NavCollapse menu="Disclosure" slug="disclosure">
         <ul class="small nav flex-column mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/disclosure/collapse"
             >
@@ -454,7 +423,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/disclosure/accordian"
             >
@@ -463,7 +432,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/disclosure/modal"
             >
@@ -472,7 +441,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/disclosure/offcanvas"
             >
@@ -484,11 +453,11 @@
     </li>
 
     <li class="nav-item position-relative mb-1">
-      <NavCollapse menu="Search" slug="search" icon="bi-search">
+      <NavCollapse menu="Search & Filter" slug="search">
         <ul class="small nav flex-column mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/search/filter"
             >
@@ -497,7 +466,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/search/input"
             >
@@ -506,7 +475,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/search/modal"
             >
@@ -518,11 +487,11 @@
     </li>
 
     <li class="nav-item position-relative mb-1">
-      <NavCollapse menu="Utility" slug="utility" icon="bi-tools">
+      <NavCollapse menu="Utility" slug="utility">
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/utility/profile"
             >
@@ -531,7 +500,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/utility/user"
             >
@@ -540,7 +509,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/utility/color-mode"
             >
@@ -549,7 +518,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/utility/chatbot"
             >
@@ -561,11 +530,11 @@
     </li>
 
     <li class="nav-item position-relative">
-      <NavCollapse menu="Data" slug="data" icon="bi-bar-chart-line">
+      <NavCollapse menu="Data Layout" slug="data">
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/data/table"
             >
@@ -574,7 +543,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/data/chart"
             >
@@ -583,7 +552,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-4 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/components/data/plot"
             >

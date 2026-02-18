@@ -8,7 +8,7 @@
       </BBreadcrumb>
     </template>
     <template #lead>
-      <p class="lead" style="max-width: 85ch">
+      <p class="lead" style="max-width: 75ch">
         A button is an interactive element that users can click or tap to
         trigger a specific action or command within an application. It
         represents an action, such as submitting a form, opening a menu, or
@@ -28,7 +28,7 @@
     </template>
     <template #content>
       <SHeading level="2" id="anatomy">Anatomy</SHeading>
-      <p>
+      <p style="max-width: 85ch">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga
         corporis totam eligendi molestiae ex aperiam soluta, consectetur
         accusamus accusantium officia praesentium, magni numquam sunt minus

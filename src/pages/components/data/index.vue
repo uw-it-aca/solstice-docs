@@ -47,7 +47,7 @@
     components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
-        pageTitle: "Data" /* TODO: asdlkfjasf */,
+        pageTitle: "Data Layout" /* TODO: asdlkfjasf */,
       };
     },
   };

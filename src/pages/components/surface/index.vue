@@ -28,17 +28,6 @@
         </li>
         <li class="col-4">
           <DescriptionBlock
-            name="Panel"
-            link="/components/surface/panel"
-            :accessibility="true"
-            version="1.1.0"
-            >Panels remain on the flat surface of the page. Bounding container
-            can have background color applied to show slight prominence. Still
-            not a card.</DescriptionBlock
-          >
-        </li>
-        <li class="col-4">
-          <DescriptionBlock
             name="Tile"
             link="/components/surface/tile"
             :accessibility="true"
