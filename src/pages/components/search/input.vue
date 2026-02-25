@@ -19,52 +19,12 @@
     </template>
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Anatomy</a
-              >
-            </li>
-            <li>
-              <a
-                href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Variants</a
-              >
-            </li>
-            <li>
-              <a
-                href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Options</a
-              >
-            </li>
-            <li>
-              <a
-                href="#usage"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Usage</a
-              >
-            </li>
-            <li>
-              <a
-                href="#accessibility"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Accessibility</a
-              >
-            </li>
-            <li>
-              <a
-                href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Implementation</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#anatomy">Anatomy</PageContentsItem>
+        <PageContentsItem anchor="#variants">Variants</PageContentsItem>
+        <PageContentsItem anchor="#options">Options</PageContentsItem>
+        <PageContentsItem anchor="#usage">Usage</PageContentsItem>
+        <PageContentsItem anchor="#access">Accessibility</PageContentsItem>
+        <PageContentsItem anchor="#implemt">Implementation</PageContentsItem>
       </PageContents>
     </template>
     <template #content>
@@ -82,15 +42,15 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
+  import Layout from "@/layouts/default.vue";
 
-export default {
-  name: "DocsPatternsUtilitySearch",
-  components: { Layout },
-  data() {
-    return {
-      pageTitle: "Input",
-    };
-  },
-};
+  export default {
+    name: "DocsPatternsUtilitySearch",
+    components: { Layout },
+    data() {
+      return {
+        pageTitle: "Input",
+      };
+    },
+  };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-3">
+  <div class="pt-4">
     <p class="fw-bold">On this page</p>
     <ul id="TableOfContents" class="list-unstyled m-0">
       <slot></slot>

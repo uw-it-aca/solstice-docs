@@ -18,52 +18,12 @@
     </template>
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#anatomy"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Anatomy</a
-              >
-            </li>
-            <li>
-              <a
-                href="#variants"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Variants</a
-              >
-            </li>
-            <li>
-              <a
-                href="#placement"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Placement</a
-              >
-            </li>
-            <li>
-              <a
-                href="#states"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >States</a
-              >
-            </li>
-            <li>
-              <a
-                href="#practices"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Best Practices</a
-              >
-            </li>
-            <li>
-              <a
-                href="#implementation"
-                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
-                >Implementation</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#anatomy">Anatomy</PageContentsItem>
+        <PageContentsItem anchor="#variants">Variants</PageContentsItem>
+        <PageContentsItem anchor="#options">Options</PageContentsItem>
+        <PageContentsItem anchor="#usage">Usage</PageContentsItem>
+        <PageContentsItem anchor="#access">Accessibility</PageContentsItem>
+        <PageContentsItem anchor="#implemt">Implementation</PageContentsItem>
       </PageContents>
     </template>
     <template #content>
