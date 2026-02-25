@@ -26,11 +26,6 @@
             >Component documentation</DescriptionBlock
           >
         </li>
-        <li class="col-4">
-          <DescriptionBlock name="Plot" link="/components/data/plot"
-            >Component documentation</DescriptionBlock
-          >
-        </li>
       </ul>
     </template>
     <template #author>Charlon Palacay</template>

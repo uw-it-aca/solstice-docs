@@ -17,23 +17,13 @@
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
-          <DescriptionBlock
-            name="Input"
-            link="/components/form/input"
-            :accessibility="true"
-            version="1.0.x"
-            >Component description... Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit.</DescriptionBlock
+          <DescriptionBlock name="Button" link="/components/actions/button"
+            >Component documentation</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock
-            name="Validation"
-            link="/components/form/validation"
-            :accessibility="true"
-            version="1.0.x"
-            >Component description... Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit.</DescriptionBlock
+          <DescriptionBlock name="Link" link="/components/actions/link"
+            >Component documentation</DescriptionBlock
           >
         </li>
       </ul>
@@ -45,14 +35,14 @@
 <script>
   import Layout from "@/layouts/default.vue";
   import DescriptionBlock from "@/components/DescriptionBlock.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
-    name: "DocsElementsFormsIndex" /* TODO: replace 'PatternName' */,
-    inject: ["mq"],
-    components: { Layout, DescriptionBlock },
+    name: "DocsComponentsActionIndex" /* TODO: Docs_Folder_Index */,
+    components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
-        pageTitle: "Form" /* TODO: Set a page title */,
+        pageTitle: "Actions" /* TODO: asdlkfjasf */,
       };
     },
   };

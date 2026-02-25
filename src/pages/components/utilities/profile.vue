@@ -3,8 +3,8 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/components/utility"
-          >Utility</BBreadcrumbItem
+        <BBreadcrumbItem to="/components/utilities"
+          >Utilities</BBreadcrumbItem
         >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
@@ -71,7 +71,7 @@
       <h2>Standard</h2>
       <CodeBlock>
         <template #preview>
-          <div class="w-50 px-3 py-1 bg-dark-purple small">
+          <div class="bg-dark-purple small w-50 px-3 py-1">
             <SProfile :user-netid="'javerage'" :signout-url="'/signout/url'">
             </SProfile>
           </div>
@@ -81,9 +81,9 @@
       <h3>w/ userOverride prop</h3>
       <CodeBlock>
         <template #preview>
-          <div class="w-50 px-3 py-1 bg-dark-purple small">
+          <div class="bg-dark-purple small w-50 px-3 py-1">
             <SProfile :user-netid="'javerage'" :user-override="'jbothell'">
-              <button class="btn btn-link btn-sm text-danger m-0 p-0 border-0">
+              <button class="btn btn-link btn-sm text-danger m-0 border-0 p-0">
                 clear action
               </button>
             </SProfile>
@@ -104,7 +104,7 @@
 
       <CodeBlock>
         <template #preview>
-          <div class="w-50 px-3 py-1 bg-dark-purple small">
+          <div class="bg-dark-purple small w-50 px-3 py-1">
             <SProfile
               :variant="'flyout'"
               :user-netid="'javerage'"
@@ -122,7 +122,7 @@
       <h3>w/ userOverride prop</h3>
       <CodeBlock>
         <template #preview>
-          <div class="w-50 px-3 py-1 bg-dark-purple small">
+          <div class="bg-dark-purple small w-50 px-3 py-1">
             <SProfile
               :variant="'flyout'"
               :user-netid="'javerage'"
@@ -132,7 +132,7 @@
               :user-pronouns="'he/him'"
               :profile-url="'/profile'"
             >
-              <button class="btn btn-link btn-sm text-danger m-0 p-0 border-0">
+              <button class="btn btn-link btn-sm text-danger m-0 border-0 p-0">
                 clear action
               </button>
             </SProfile>
@@ -145,21 +145,21 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
-import { SProfile } from "solstice-vue";
+  import Layout from "@/layouts/default.vue";
+  import CodeBlock from "@/components/CodeBlock.vue";
+  import { SProfile } from "solstice-vue";
 
-export default {
-  name: "DocsComponentsUtilityUser",
-  components: {
-    Layout,
-    CodeBlock,
-    SProfile,
-  },
-  data() {
-    return {
-      pageTitle: "User",
-    };
-  },
-};
+  export default {
+    name: "DocsPatternsTabs",
+    components: {
+      Layout,
+      CodeBlock,
+      SProfile,
+    },
+    data() {
+      return {
+        pageTitle: "Profile",
+      };
+    },
+  };
 </script>

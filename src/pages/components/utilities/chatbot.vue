@@ -3,9 +3,7 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/components/disclosure"
-          >Disclosure</BBreadcrumbItem
-        >
+        <BBreadcrumbItem to="/components/utilities">Utilities</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -24,42 +22,42 @@
             <li>
               <a
                 href="#anatomy"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Anatomy</a
               >
             </li>
             <li>
               <a
                 href="#variants"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Variants</a
               >
             </li>
             <li>
               <a
                 href="#options"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Options</a
               >
             </li>
             <li>
               <a
                 href="#usage"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Usage</a
               >
             </li>
             <li>
               <a
                 href="#accessibility"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Accessibility</a
               >
             </li>
             <li>
               <a
                 href="#implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
+                class="text-muted link-underline link-underline-opacity-0 d-block bg-body-tertiary-hover rounded px-2 py-1"
                 >Implementation</a
               >
             </li>
@@ -76,14 +74,12 @@
       </p>
 
       <p>
-        <BButton @click="toggleOffcanvas('first')"
-          >Show Purple Chatbot OffCanvas</BButton
-        >
+        <BButton @click="toggleOffcanvas('first')">Show Purple Chatbot</BButton>
       </p>
 
       <p>
         <BButton @click="toggleOffcanvas('second')"
-          >Show Feedback Form OffCanvas</BButton
+          >Show Solstice Chatbot</BButton
         >
       </p>
 
@@ -128,31 +124,31 @@
 </template>
 
 <script lang="ts">
-import Layout from "@/layouts/default.vue";
-import { BButton, BOffcanvas } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  import { BButton, BOffcanvas } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsPatternsUtilityChatbot",
-  components: { Layout, BButton, BOffcanvas },
-  data() {
-    return {
-      pageTitle: "Offcanvas",
+  export default {
+    name: "DocsPatternsUtilityChatbot",
+    components: { Layout, BButton, BOffcanvas },
+    data() {
+      return {
+        pageTitle: "Chatbot",
 
-      offcanvasStates: {
-        first: false,
-        second: false,
+        offcanvasStates: {
+          first: false,
+          second: false,
+        },
+      };
+    },
+    methods: {
+      click(place = "start") {
+        this.placement = place;
+        this.show = !this.show;
       },
-    };
-  },
-  methods: {
-    click(place = "start") {
-      this.placement = place;
-      this.show = !this.show;
-    },
 
-    toggleOffcanvas(key) {
-      this.offcanvasStates[key] = !this.offcanvasStates[key];
+      toggleOffcanvas(key) {
+        this.offcanvasStates[key] = !this.offcanvasStates[key];
+      },
     },
-  },
-};
+  };
 </script>

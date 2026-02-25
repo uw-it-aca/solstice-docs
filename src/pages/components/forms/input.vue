@@ -3,7 +3,7 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/components/form">Form</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/forms">Forms</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>

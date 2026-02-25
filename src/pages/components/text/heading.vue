@@ -36,7 +36,7 @@
         <div class="g-col-6">
           <p>Applications / Components</p>
           <ul class="list-unstyled">
-            <li><SHeading level="1" system="app">Heading 1 - 40px</SHeading></li>
+            <li><SHeading level="1" system="app">Heading 1 - 32px</SHeading></li>
             <li><SHeading level="2" system="app">Heading 2 - 28px</SHeading></li>
             <li><SHeading level="3" system="app">Heading 3 - 24px</SHeading></li>
             <li><SHeading level="4" system="app">Heading 4 - 20px</SHeading></li>

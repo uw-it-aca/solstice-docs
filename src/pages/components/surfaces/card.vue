@@ -3,12 +3,12 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/components/surface">Surface</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/surfaces">Surfaces</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
-      <p class="lead" style="max-width: 85ch">
+      <p class="lead" style="max-width: 80ch">
         Cards is a container of content... Lorem ipsum dolor sit amet
         consectetur adipisicing elit. Ea nemo nobis, eligendi sit ipsa mollitia
         necessitatibus possimus, veniam sapiente deleniti quo. Nemo error quos,
@@ -27,6 +27,58 @@
     </template>
 
     <template #content>
+      <div class="mb-5 grid">
+        <div class="g-col-4">
+          <h4>Elevated</h4>
+          <BCard body-class="p-4" class="mb-3 border-0 shadow"
+            >card 1 w/ shadow
+          </BCard>
+          <BCard body-class="p-4" class="mb-3 border-0 shadow"
+            >card 2 w/ shadow</BCard
+          >
+        </div>
+
+        <div class="g-col-4">
+          <h4>Filled</h4>
+          <BCard
+            bg-variant="body-tertiary"
+            body-class="p-4"
+            class="mb-3 border-0"
+          >
+            body-tertiary
+          </BCard>
+          <BCard
+            bg-variant="body-secondary"
+            body-class="p-4"
+            class="bg-opacity-50 mb-3 border-0"
+          >
+            body-secondary, bg-opacity-50
+          </BCard>
+          <BCard
+            bg-variant="spirit-purple-subtle"
+            body-class="p-4"
+            class="bg-opacity-25 mb-3 border-0"
+          >
+            bg-spirit-purple-subtle, bg-opacity-25
+          </BCard>
+
+          <BCard
+            bg-variant="husky-gold-subtle"
+            body-class="p-4"
+            class="bg-opacity-50 mb-3 border-0"
+          >
+            bg-husky-gold-subtle, bg-opacity-50
+          </BCard>
+        </div>
+        <div class="g-col-4">
+          <h4>Outline</h4>
+          <BCard body-class="p-4" class="mb-3">default card border</BCard>
+          <BCard body-class="p-4" class="border-secondary-subtle mb-3 border">
+            border-secondary-subtle
+          </BCard>
+        </div>
+      </div>
+
       <h2 id="anatomy">Anatomy</h2>
       <p>
         Card, card header, card body, card footer. Cards are raised off the

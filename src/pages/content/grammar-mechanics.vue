@@ -21,7 +21,8 @@
       </PageContents>
     </template>
     <template #content>
-      <h2 class="ff-encodesans pt-4 pb-3" id="grammar">Grammar</h2>
+
+      <SHeading level="2" id="grammar">Grammar</SHeading>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia
         dolorem? Perspiciatis excepturi cum aliquid praesentium aspernatur,
@@ -29,7 +30,7 @@
         architecto velit magni rem odit?
       </p>
 
-      <h2 class="ff-encodesans pt-4 pb-3" id="mechanics">Mechanics</h2>
+      <SHeading level="2" id="mechanics">Mechanics</SHeading>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia
         dolorem? Perspiciatis excepturi cum aliquid praesentium aspernatur,
@@ -45,10 +46,11 @@
   import Layout from "@/layouts/default.vue";
   import PageContents from "@/components/PageContents.vue";
   import PageContentsItem from "@/components/PageContentsItem.vue";
+  import { SHeading } from "solstice-vue";
 
   export default {
     name: "DocsPatternsMessaging",
-    components: { Layout, PageContents, PageContentsItem },
+    components: { Layout, PageContents, PageContentsItem, SHeading },
     data() {
       return {
         pageTitle: "Grammar & Mechanics",

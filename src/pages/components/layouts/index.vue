@@ -6,38 +6,37 @@
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
+
     <template #lead>
       <p class="lead" style="max-width: 85ch">
-        Utility components... Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Iusto tempore omnis esse quasi assumenda quae
-        voluptatem, dolores perspiciatis facilis. Iste cupiditate similique quis
-        nam amet officiis? Accusantium ducimus vel sit!
+        The layout is a critical foundation of our design system. It provides
+        the structure for our visual components and overall user interface.
       </p>
     </template>
+
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
-            name="Profile"
-            link="/components/utility/profile"
-          ></DescriptionBlock>
-        </li>
-        <li class="col-4">
-          <DescriptionBlock
-            name="User"
-            link="/components/utility/user"
-          ></DescriptionBlock>
-        </li>
-        <li class="col-4">
-          <DescriptionBlock
-            name="Color Mode"
-            link="/components/utility/color-mode"
-          ></DescriptionBlock>
-        </li>
-        <li class="col-4">
-          <DescriptionBlock name="Chatbot" link="/components/utility/chatbot"
-            >Component documentation</DescriptionBlock
+            name="Topbar"
+            link="/components/layouts/topbar"
+            :accessibility="true"
+            version="1.0.5"
+            >Topbar is takes heavy influence from MyUW's currently layout. It
+            has a header-based design meant to focus the user on the contents
+            below.</DescriptionBlock
           >
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            name="Sidebar"
+            link="/components/layouts/sidebar"
+            :accessibility="true"
+            version="1.0.5"
+            >Sidebar is a side navigtion based layout intended to support
+            different menu navigation structures. The content is can be fixed or
+            fluid.
+          </DescriptionBlock>
         </li>
       </ul>
     </template>
@@ -50,14 +49,14 @@
   import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
   export default {
-    name: "DocsPatternsUtility",
+    name: "DocsLayout",
     components: {
       Layout,
       DescriptionBlock,
     },
     data() {
       return {
-        pageTitle: "Utility",
+        pageTitle: "Layouts",
       };
     },
   };

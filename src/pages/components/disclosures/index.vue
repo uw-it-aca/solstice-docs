@@ -19,7 +19,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Collapse"
-            link="/components/disclosure/collapse"
+            link="/components/disclosures/collapse"
             :accessibility="true"
             version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur
@@ -29,7 +29,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Accordian"
-            link="/components/disclosure/accordian"
+            link="/components/disclosures/accordian"
             :accessibility="true"
             version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur
@@ -39,7 +39,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Modal"
-            link="/components/disclosure/modal"
+            link="/components/disclosures/modal"
             :accessibility="true"
             version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur
@@ -49,7 +49,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Offcanvas"
-            link="/components/disclosure/offcanvas"
+            link="/components/disclosures/offcanvas"
             :accessibility="true"
             version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur
@@ -73,7 +73,7 @@
     components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
-        pageTitle: "Disclosure" /* TODO: Set a page title */,
+        pageTitle: "Disclosures" /* TODO: Set a page title */,
       };
     },
   };

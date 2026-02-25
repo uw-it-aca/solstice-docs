@@ -3,8 +3,8 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/components/data"
-          >Data Layout</BBreadcrumbItem
+        <BBreadcrumbItem to="/components/utilities"
+          >Utilities</BBreadcrumbItem
         >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
@@ -82,15 +82,16 @@
 </template>
 
 <script>
-  import Layout from "@/layouts/default.vue";
+import Layout from "@/layouts/default.vue";
+import { SColorMode } from "solstice-vue";
 
-  export default {
-    name: "DocsPatternsUtilitySearch",
-    components: { Layout },
-    data() {
-      return {
-        pageTitle: "Plot",
-      };
-    },
-  };
+export default {
+  name: "DocsPatternsMessaging",
+  components: { Layout, SColorMode },
+  data() {
+    return {
+      pageTitle: "Color Mode",
+    };
+  },
+};
 </script>

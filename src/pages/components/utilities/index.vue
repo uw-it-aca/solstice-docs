@@ -6,37 +6,38 @@
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
-
     <template #lead>
       <p class="lead" style="max-width: 85ch">
-        The layout is a critical foundation of our design system. It provides
-        the structure for our visual components and overall user interface.
+        Utility components... Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Iusto tempore omnis esse quasi assumenda quae
+        voluptatem, dolores perspiciatis facilis. Iste cupiditate similique quis
+        nam amet officiis? Accusantium ducimus vel sit!
       </p>
     </template>
-
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
           <DescriptionBlock
-            name="Topbar"
-            link="/components/layout/topbar"
-            :accessibility="true"
-            version="1.0.5"
-            >Topbar is takes heavy influence from MyUW's currently layout. It
-            has a header-based design meant to focus the user on the contents
-            below.</DescriptionBlock
-          >
+            name="Profile"
+            link="/components/utilities/profile"
+          ></DescriptionBlock>
         </li>
         <li class="col-4">
           <DescriptionBlock
-            name="Sidebar"
-            link="/components/layout/sidebar"
-            :accessibility="true"
-            version="1.0.5"
-            >Sidebar is a side navigtion based layout intended to support
-            different menu navigation structures. The content is can be fixed or
-            fluid.
-          </DescriptionBlock>
+            name="User"
+            link="/components/utilities/user"
+          ></DescriptionBlock>
+        </li>
+        <li class="col-4">
+          <DescriptionBlock
+            name="Color Mode"
+            link="/components/utilities/color-mode"
+          ></DescriptionBlock>
+        </li>
+        <li class="col-4">
+          <DescriptionBlock name="Chatbot" link="/components/utilities/chatbot"
+            >Component documentation</DescriptionBlock
+          >
         </li>
       </ul>
     </template>
@@ -49,14 +50,14 @@
   import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
   export default {
-    name: "DocsLayout",
+    name: "DocsPatternsUtility",
     components: {
       Layout,
       DescriptionBlock,
     },
     data() {
       return {
-        pageTitle: "Layout",
+        pageTitle: "Utilities",
       };
     },
   };

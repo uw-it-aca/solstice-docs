@@ -19,7 +19,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Card"
-            link="/components/surface/card"
+            link="/components/surfaces/card"
             :accessibility="true"
             version="1.0.5"
             >Cards have a raised profile and has shadow. Meant to visually
@@ -29,7 +29,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Tile"
-            link="/components/surface/tile"
+            link="/components/surfaces/tile"
             :accessibility="true"
             version="1.1.0"
             >Tiles remain on the flat surface of the page. Bounding container
@@ -53,7 +53,7 @@
     components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
-        pageTitle: "Surface" /* TODO: asdlkfjasf */,
+        pageTitle: "Surfaces" /* TODO: asdlkfjasf */,
       };
     },
   };

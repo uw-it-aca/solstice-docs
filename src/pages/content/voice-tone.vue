@@ -38,7 +38,7 @@
     </template>
 
     <template #content>
-      <h2 class="ff-encodesans pt-4 pb-3" id="voice">Voice</h2>
+      <SHeading level="2" id="voice">Voice</SHeading>
       <p style="max-width: 85ch">
         Voice - the consistent and recognizable communication style in messaging
         - is intended to align with the UW style and brand, and in addition, is
@@ -70,7 +70,7 @@
         respect and understanding.
       </p>
 
-      <h2 id="tone">Tone</h2>
+      <SHeading level="2" id="tone">Tone</SHeading>
       <p style="max-width: 85ch">
         If voice is our brand&rsquo;s personality, tone is the emotion expressed
         that conveys how users should interpret information. The right tone
@@ -78,7 +78,7 @@
         effective communication.
       </p>
 
-      <h3>Tone Map</h3>
+      <SHeading level="3">Tone Map</SHeading>
       <p style="max-width: 85ch">
         Since tone will vary throughout a UI, this tone map demonstrates what
         tone could be used in the outlined use cases. Note that even this tone
@@ -182,10 +182,11 @@
   import Layout from "@/layouts/default.vue";
   import PageContents from "@/components/PageContents.vue";
   import PageContentsItem from "@/components/PageContentsItem.vue";
+  import { SHeading } from "solstice-vue";
 
   export default {
     name: "DocsContentVoice",
-    components: { Layout, PageContents, PageContentsItem },
+    components: { Layout, PageContents, PageContentsItem, SHeading },
     data() {
       return {
         pageTitle: "Voice & Tone",

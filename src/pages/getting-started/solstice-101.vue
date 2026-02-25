@@ -19,7 +19,8 @@
       </p>
     </template>
     <template #content>
-      <h2>What is Solstice?</h2>
+      <SHeading level="2">What is Solstice?</SHeading>
+
       <p style="max-width: 85ch">
         Solstice is a resource for documenting design best practices. It
         provides a set of curated content guidelines, UI elements, and UX design
@@ -27,7 +28,7 @@
         development at Data &amp; Applications (D&amp;A).
       </p>
 
-      <h2>Who is Solstice for?</h2>
+      <SHeading level="2">Who is Solstice for?</SHeading>
       <p style="max-width: 85ch">
         Solstice was created and maintained by the Service Coordination (SC)
         Experience Design Team, to help provide users with a consistent
@@ -39,7 +40,7 @@
         specifications.
       </p>
 
-      <h2>How will Solstice be used?</h2>
+      <SHeading level="2">How will Solstice be used?</SHeading>
       <p style="max-width: 85ch">
         Designers are expected to use the elements and patterns documented in
         the design system to aid in their design process. Further resources can
@@ -57,10 +58,11 @@
 <script>
   import Layout from "@/layouts/default.vue";
   import { BLink } from "bootstrap-vue-next";
+  import { SHeading } from "solstice-vue";
 
   export default {
     name: "DocsSolstice101",
-    components: { Layout, BLink },
+    components: { Layout, BLink, SHeading },
     data() {
       return {
         pageTitle: "Solstice 101",

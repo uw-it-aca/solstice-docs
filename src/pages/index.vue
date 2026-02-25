@@ -45,13 +45,12 @@
       <div class="row mb-5">
         <div class="col d-flex flex-column">
           <BCard
-            class="bg-body-tertiary rounded-3"
+            class="bg-body-tertiary"
             header-bg-variant="transparent"
             border-variant="0"
             body-class="p-4"
           >
-
-            <SHeading level="3">Design Principles</SHeading>
+            <SHeading level="3" system="app">Design Principles</SHeading>
             <p class="flex-fill">
               Learn how to create global components that can be used by other
               applications as well as creating brand new applications.
@@ -65,13 +64,12 @@
         </div>
         <div class="col d-flex flex-column">
           <BCard
-            class="bg-body-tertiary rounded-3"
+            class="bg-body-tertiary"
             header-bg-variant="transparent"
             border-variant="0"
             body-class="p-4"
           >
-
-            <SHeading level="3">Developer Guide</SHeading>
+            <SHeading level="3" system="app">Developer Guide</SHeading>
             <p class="flex-fill">
               Learn how to create global components that can be used by other
               applications as well as creating brand new applications.
@@ -97,35 +95,40 @@
 
       <div class="row mb-5">
         <div class="col d-flex flex-column">
-          <SHeading level="3">Content</SHeading>
-          <p class="flex-fill">
-            Learn how to use language and text to design a more thoughtful user
-            experience.
-          </p>
+          <BCard body-class="p-4">
+            <SHeading level="3" system="app">Content</SHeading>
+            <p class="flex-fill">
+              Learn how to use language and text to design a more thoughtful
+              user experience.
+            </p>
 
-          <p>
-            <BLink href="/content/">Review content guidelines</BLink>
-          </p>
+            <p>
+              <BLink href="/content/">Review content guidelines</BLink>
+            </p>
+          </BCard>
         </div>
         <div class="col d-flex flex-column">
-          <SHeading level="3">Foundations</SHeading>
-          <p class="flex-fill">
-            Design foundations are used to ensure visual consistency across the
-            application.
-          </p>
-          <p>
-            <BLink href="/foundations/">Browse foundations</BLink>
-          </p>
+          <BCard body-class="p-4">
+            <SHeading level="3" system="app">Foundations</SHeading>
+            <p class="flex-fill">
+              Design foundations are used to ensure visual consistency across
+              the application.
+            </p>
+            <p>
+              <BLink href="/foundations/">Browse foundations</BLink>
+            </p>
+          </BCard>
         </div>
         <div class="col d-flex flex-column">
-          <SHeading level="3">Components</SHeading>
-          <p class="flex-fill">
-            UI elements are reusable components that can stand alone or form
-            part of multiple UX patterns.
-          </p>
-          <p><BLink href="/components/">Browse components</BLink></p>
+          <BCard body-class="p-4">
+            <SHeading level="3" system="app">Components</SHeading>
+            <p class="flex-fill">
+              UI elements are reusable components that can stand alone or form
+              part of multiple UX patterns.
+            </p>
+            <p><BLink href="/components/">Browse components</BLink></p>
+          </BCard>
         </div>
-
       </div>
     </template>
     <template #author>Charlon Palacay</template>

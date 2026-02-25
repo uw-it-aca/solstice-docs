@@ -3,14 +3,14 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/components/layout">Layout</BBreadcrumbItem>
+        <BBreadcrumbItem to="/components/layouts">Layouts</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
     <template #lead>
       <p class="lead" style="max-width: 85ch">
-        Topbar takes heavy influence from MyUW's layout. It has a header-based
-        design meant to focus the user on the contents below.
+        Sidebar is a side navigtion based layout intended to support different
+        menu navigation structures. The content is can be fixed or fluid.
       </p>
     </template>
     <template #toc>
@@ -23,6 +23,7 @@
         <PageContentsItem anchor="#implement">Implementation</PageContentsItem>
       </PageContents>
     </template>
+
     <template #content>
       <h2 id="variants">Variants</h2>
       <p>
@@ -47,12 +48,13 @@
       </p>
 
       <h2 id="usage">Usage</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-        facilis, ipsum dignissimos quibusdam consectetur dolores soluta nemo
-        placeat totam dolorem suscipit est sunt eum, debitis exercitationem
-        voluptate ducimus repellat necessitatibus?
-      </p>
+      <CodeBlock>
+        <template #markup>
+          <pre class="language-html">
+<code>&lt;axdd-sidebar :app-name="'App Name'" :app-root-url="'/'">&lt;/axdd-sidebar>
+</code></pre>
+        </template>
+      </CodeBlock>
 
       <h2 id="access">Accessibility</h2>
       <p>
@@ -72,24 +74,8 @@
         voluptate ducimus repellat necessitatibus?
       </p>
 
-      <h2 class="fw-bold">Usage</h2>
-
-      <h3>Markup</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis minus
-        tenetur cumque facere doloremque possimus quidem est repudiandae nam, a
-        quaerat amet. Inventore ut eligendi id. Suscipit ab facilis earum?
-      </p>
-      <CodeBlock>
-        <template #markup>
-          <pre class="language-html">
-<code>&lt;axdd-topbar :app-name="'App Name'" :app-root-url="'/'">&lt;/axdd-topbar>
-</code></pre>
-        </template>
-      </CodeBlock>
-
       <h3>Props</h3>
-      <table class="table-bordered table">
+      <table class="small table">
         <thead>
           <tr>
             <th scope="col" class="w-25">Prop</th>
@@ -114,11 +100,18 @@
             <td>#</td>
             <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
           </tr>
+          <tr>
+            <th scope="row"><code>:variant</code></th>
+            <td>false</td>
+            <td>String</td>
+            <td>dark</td>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+          </tr>
         </tbody>
       </table>
 
       <h3>Slots</h3>
-      <table class="table-bordered table">
+      <table class="small table">
         <thead>
           <tr>
             <th scope="col" class="w-25">Slot</th>
@@ -147,6 +140,12 @@
             <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
           </tr>
           <tr>
+            <th scope="row"><code>#logo</code></th>
+            <td>false</td>
+            <td>empty</td>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+          </tr>
+          <tr>
             <th scope="row"><code>#main</code></th>
             <td>true</td>
             <td>empty</td>
@@ -166,73 +165,22 @@
           </tr>
         </tbody>
       </table>
-      <hr class="d-inline-block mb-5 w-25" />
 
-      <h2 class="fw-bold">Preview</h2>
-      <h3>Basic structure</h3>
+      <h3>Default</h3>
+
       <CodeBlock>
         <template #preview>
-          <STopbar :app-name="'TopBar'" :is-preview="true" class="border">
-            <template #profile>profile here...</template>
-            <template #main>
-              <div class="row my-4">
-                <div class="col">
-                  <div
-                    class="bg-gray p-4 text-center"
-                    style="line-height: 250px"
-                  >
-                    content here...
-                  </div>
-                </div>
-              </div>
-            </template>
-            <template #footer>footer here...</template>
-          </STopbar>
-        </template>
-        <template #markup>
-          <pre class="language-html">
-<code>&lt;axdd-topbar :app-name="'TopBar'">
-  &lt;template #profile>
-    profile here...
-  &lt;/template>
-  &lt;template #main>
-    content here...
-  &lt;/template>
-  &lt;template #footer>
-    footer here...
-  &lt;/template>
-&lt;/axdd-topbar>
-</code></pre>
-        </template>
-      </CodeBlock>
-
-      <h3>With Navigation</h3>
-      <CodeBlock>
-        <template #preview>
-          <STopbar
-            :app-name="'TopBar'"
+          <SSidebar
+            :app-name="'SideBar'"
             :user-name="'javerage'"
             :is-preview="true"
             class="border"
           >
             <template #profile> profile here... </template>
-            <template #navigation>
-              <div class="row mt-4">
-                <div class="col">
-                  <div class="bg-gray p-4 text-center">nav here...</div>
-                </div>
-              </div>
-            </template>
-            <template #aside>
-              <div class="row mt-4">
-                <div class="col">
-                  <div class="bg-gray p-4 text-center">aside here...</div>
-                </div>
-              </div>
-            </template>
+            <template #navigation> nav here... </template>
             <template #main>
-              <div class="row my-4">
-                <div class="col">
+              <div class="row">
+                <div class="col mt-3">
                   <div
                     class="bg-gray p-4 text-center"
                     style="line-height: 250px"
@@ -243,44 +191,38 @@
               </div>
             </template>
             <template #footer></template>
-          </STopbar>
+          </SSidebar>
         </template>
-        <template #vue>
+        <template #markup>
           <pre class="language-html">
-<code>&lt;axdd-topbar>
+<code>&lt;axdd-sidebar :app-name="'App Name'" :user-name="'javerage'">
+  &lt;template #profile> profile here... &lt;/template>
   &lt;template #navigation>
     nav here...
   &lt;/template>
-  &lt;template #aside>
-    aside here...
-  &lt;/template>
-&lt;/axdd-topbar>
+  &lt;template #main>
+    content here...
+  &lt;template>
+&lt;/axdd-sidebar>
 </code></pre>
         </template>
       </CodeBlock>
 
-      <h3>With Banner Bar</h3>
+      <h3>Color Theming</h3>
+
       <CodeBlock>
         <template #preview>
-          <STopbar :app-name="'TopBar'" :is-preview="true" class="border">
+          <SSidebar
+            :app-name="'SideBar'"
+            :user-name="'javerage'"
+            :is-preview="true"
+            class="border"
+          >
             <template #profile> profile here... </template>
-            <template #bar>
-              <div class="row">
-                <div class="col">
-                  <div class="bg-gray p-2 text-center">bar here...</div>
-                </div>
-              </div>
-            </template>
-            <template #navigation>
-              <div class="row mt-4">
-                <div class="col">
-                  <div class="bg-gray p-4 text-center">nav here...</div>
-                </div>
-              </div>
-            </template>
+            <template #navigation> nav here... </template>
             <template #main>
-              <div class="row my-4">
-                <div class="col">
+              <div class="row">
+                <div class="col mt-3">
                   <div
                     class="bg-gray p-4 text-center"
                     style="line-height: 250px"
@@ -291,15 +233,51 @@
               </div>
             </template>
             <template #footer></template>
-          </STopbar>
+          </SSidebar>
         </template>
         <template #vue>
           <pre class="language-html">
-<code>&lt;axdd-topbar>
-  &lt;template #bar>
-    bar here...
+<code>&lt;axdd-sidebar :app-name="'App Name'" :variant="'dark'" class="bg-primary">
+&lt;/axdd-sidebar>
+</code></pre>
+        </template>
+      </CodeBlock>
+
+      <h3>Logo Branding</h3>
+
+      <CodeBlock>
+        <template #preview>
+          <SSidebar
+            :app-name="'SideBar'"
+            :user-name="'javerage'"
+            :is-preview="true"
+            class="border"
+          >
+            <template #profile> profile here... </template>
+            <template #logo><i class="bi bi-emoji-smile"></i></template>
+            <template #navigation> nav here... </template>
+            <template #main>
+              <div class="row">
+                <div class="col mt-3">
+                  <div
+                    class="bg-gray p-4 text-center"
+                    style="line-height: 250px"
+                  >
+                    content here...
+                  </div>
+                </div>
+              </div>
+            </template>
+            <template #footer></template>
+          </SSidebar>
+        </template>
+        <template #vue>
+          <pre class="language-html">
+<code>&lt;axdd-sidebar :app-name="'App Name'" :variant="'dark'" class="bg-primary">
+  &lt;template #logo>
+    &lt;i class="bi bi-emoji-smile">&lt;/i>
   &lt;/template>
-&lt;/axdd-topbar>
+&lt;/axdd-sidebar>
 </code></pre>
         </template>
       </CodeBlock>
@@ -312,20 +290,19 @@
   import Layout from "@/layouts/default.vue";
   import CodeBlock from "@/components/CodeBlock.vue";
   import PageContents from "@/components/PageContents.vue";
-
-  import { STopbar } from "solstice-vue";
+  import { SSidebar } from "solstice-vue";
 
   export default {
-    name: "DocsTopbar",
+    name: "DocsSidebar",
     components: {
       Layout,
-      PageContents,
       CodeBlock,
-      STopbar,
+      PageContents,
+      SSidebar,
     },
     data() {
       return {
-        pageTitle: "Topbar",
+        pageTitle: "Sidebar",
       };
     },
   };
