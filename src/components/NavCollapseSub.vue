@@ -8,10 +8,10 @@
     :data-bs-target="'#' + slug + 'Collapse'"
     :aria-expanded="$route.path.includes('/' + slug) ? true : false"
     aria-controls="foundationsCollapse"
-    style="--bs-text-opacity: .57"
+
   >
-    <span class="small" style="padding-left: 15px"
-      ><i v-if="icon" class="bi text-opacity-25 me-3 text-white" :class="icon"></i
+    <span class="small fw-medium" style="padding-left: 32px"
+      ><i v-if="icon" class="bi text-opacity-50 me-3 text-white" :class="icon"></i
       >{{ menu }}</span
     >
     <i class="bi bi-chevron-down" aria-hidden="true"></i>
