@@ -99,7 +99,7 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" system="app">Content Guidelines</SHeading>
+            <SHeading level="3" system="app">Content</SHeading>
             <p class="flex-fill">
               <strong>Speak the same language.</strong> Learn how to use tone,
               grammar, and microcopy to guide users through complex data
@@ -118,7 +118,7 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" system="app">Design Foundations</SHeading>
+            <SHeading level="3" system="app">Foundations</SHeading>
             <p class="flex-fill">
               <strong>The DNA of Solstice.</strong> Standardize your layout with
               our core systems for color, typography, spacing, and elevation.
@@ -135,14 +135,14 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" system="app">Component Library</SHeading>
+            <SHeading level="3" system="app">Components</SHeading>
             <p class="flex-fill">
               <strong>Assemble with ease.</strong> Access a library of
               accessible, production-ready UI elements designed to work together
               seamlessly.
             </p>
             <div class="text-end">
-              <BLink href="/components/">Browse components</BLink>
+              <BLink href="/components/">Browse component library</BLink>
             </div>
           </BCard>
         </div>
