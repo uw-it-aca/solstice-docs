@@ -1,16 +1,12 @@
 <template>
   <Layout :page-title="pageTitle">
+    <template #breadcrumb>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/content">Content</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
+    </template>
     <template #content>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/content/">Content</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
       <h1>{{ pageTitle }}</h1>
 
       <p class="p-0 col-md-8 lead text-muted">

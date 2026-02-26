@@ -1,18 +1,21 @@
 import { mount } from "@vue/test-utils";
 import { describe, expect, it } from "vitest";
+import { createBootstrap } from "bootstrap-vue-next";
 import NavMenu from "@/components/NavMenu.vue";
 
 describe("NavMenu", () => {
-  it("displays the navigation menu", () => {
-    const wrapper = mount(NavMenu, {
-      global: {
-        mocks: {
-          $route: {
-            path: "/",
-          },
+  const wrapper = mount(NavMenu, {
+    global: {
+      plugins: [createBootstrap()],
+      mocks: {
+        $route: {
+          path: "/",
         },
       },
-    });
+    },
+  });
+
+  it("displays the navigation menu", () => {
     // Assert the rendered text of the component
     expect(wrapper.text()).toContain("Getting Started");
   });
@@ -20,6 +23,7 @@ describe("NavMenu", () => {
   it("expands the getting started menu when the route contains 'getting-started'", () => {
     const wrapper = mount(NavMenu, {
       global: {
+        plugins: [createBootstrap()],
         mocks: {
           $route: {
             path: "/getting-started",
@@ -28,13 +32,14 @@ describe("NavMenu", () => {
       },
     });
     // Assert the rendered text of the component
-    const gettingStartedMenu = wrapper.find("#gettingStartedHeading");
+    const gettingStartedMenu = wrapper.find("#getting-startedHeading");
     expect(gettingStartedMenu.attributes("aria-expanded")).toBe("true");
   });
 
   it("does not expand the getting started menu when the route does not contain 'getting-started'", () => {
     const wrapper = mount(NavMenu, {
       global: {
+        plugins: [createBootstrap()],
         mocks: {
           $route: {
             path: "/",
@@ -43,13 +48,14 @@ describe("NavMenu", () => {
       },
     });
     // Assert the rendered text of the component
-    const gettingStartedMenu = wrapper.find("#gettingStartedHeading");
+    const gettingStartedMenu = wrapper.find("#getting-startedHeading");
     expect(gettingStartedMenu.attributes("aria-expanded")).toBe("false");
   });
 
   it("expands the content menu when the route contains 'content'", () => {
     const wrapper = mount(NavMenu, {
       global: {
+        plugins: [createBootstrap()],
         mocks: {
           $route: {
             path: "/content",
@@ -65,6 +71,7 @@ describe("NavMenu", () => {
   it("does not expand the content menu when the route does not contain 'content'", () => {
     const wrapper = mount(NavMenu, {
       global: {
+        plugins: [createBootstrap()],
         mocks: {
           $route: {
             path: "/",
@@ -77,9 +84,10 @@ describe("NavMenu", () => {
     expect(contentMenu.attributes("aria-expanded")).toBe("false");
   });
 
-  it("expands the content menu when the route contains 'foundations'", () => {
+  it("expands the foundations menu when the route contains 'foundations'", () => {
     const wrapper = mount(NavMenu, {
       global: {
+        plugins: [createBootstrap()],
         mocks: {
           $route: {
             path: "/foundations",
@@ -92,9 +100,10 @@ describe("NavMenu", () => {
     expect(contentMenu.attributes("aria-expanded")).toBe("true");
   });
 
-  it("does not expand the content menu when the route does not contain 'foundations'", () => {
+  it("does not expand the foundations menu when the route does not contain 'foundations'", () => {
     const wrapper = mount(NavMenu, {
       global: {
+        plugins: [createBootstrap()],
         mocks: {
           $route: {
             path: "/",
@@ -107,24 +116,26 @@ describe("NavMenu", () => {
     expect(contentMenu.attributes("aria-expanded")).toBe("false");
   });
 
-  it("expands the content menu when the route contains 'elements'", () => {
+  it("expands the components menu when the route contains 'components'", () => {
     const wrapper = mount(NavMenu, {
       global: {
+        plugins: [createBootstrap()],
         mocks: {
           $route: {
-            path: "/elements",
+            path: "/components",
           },
         },
       },
     });
     // Assert the rendered text of the component
-    const contentMenu = wrapper.find("#elementsHeading");
+    const contentMenu = wrapper.find("#componentsHeading");
     expect(contentMenu.attributes("aria-expanded")).toBe("true");
   });
 
-  it("does not expand the content menu when the route does not contain 'elements'", () => {
+  it("does not expand the components menu when the route does not contain 'components'", () => {
     const wrapper = mount(NavMenu, {
       global: {
+        plugins: [createBootstrap()],
         mocks: {
           $route: {
             path: "/",
@@ -133,127 +144,7 @@ describe("NavMenu", () => {
       },
     });
     // Assert the rendered text of the component
-    const contentMenu = wrapper.find("#elementsHeading");
-    expect(contentMenu.attributes("aria-expanded")).toBe("false");
-  });
-
-  it("expands the content menu when the route contains 'elements > form'", () => {
-    const wrapper = mount(NavMenu, {
-      global: {
-        mocks: {
-          $route: {
-            path: "/elements/forms",
-          },
-        },
-      },
-    });
-    // Assert the rendered text of the component
-    const contentMenu = wrapper.find("#elementsFormHeading");
-    expect(contentMenu.attributes("aria-expanded")).toBe("true");
-  });
-
-  it("does not expand the content menu when the route does not contain 'elements > form'", () => {
-    const wrapper = mount(NavMenu, {
-      global: {
-        mocks: {
-          $route: {
-            path: "/",
-          },
-        },
-      },
-    });
-    // Assert the rendered text of the component
-    const contentMenu = wrapper.find("#elementsFormHeading");
-    expect(contentMenu.attributes("aria-expanded")).toBe("false");
-  });
-
-  it("expands the content menu when the route contains 'patterns'", () => {
-    const wrapper = mount(NavMenu, {
-      global: {
-        mocks: {
-          $route: {
-            path: "/patterns",
-          },
-        },
-      },
-    });
-    // Assert the rendered text of the component
-    const contentMenu = wrapper.find("#patternsHeading");
-    expect(contentMenu.attributes("aria-expanded")).toBe("true");
-  });
-
-  it("does not expand the content menu when the route does not contain 'patterns'", () => {
-    const wrapper = mount(NavMenu, {
-      global: {
-        mocks: {
-          $route: {
-            path: "/",
-          },
-        },
-      },
-    });
-    // Assert the rendered text of the component
-    const contentMenu = wrapper.find("#patternsHeading");
-    expect(contentMenu.attributes("aria-expanded")).toBe("false");
-  });
-
-  it("expands the content menu when the route contains 'patterns > boilerplate'", () => {
-    const wrapper = mount(NavMenu, {
-      global: {
-        mocks: {
-          $route: {
-            path: "/patterns/boilerplate",
-          },
-        },
-      },
-    });
-    // Assert the rendered text of the component
-    const contentMenu = wrapper.find("#patternsBoilerplateHeading");
-    expect(contentMenu.attributes("aria-expanded")).toBe("true");
-  });
-
-  it("does not expand the content menu when the route does not contain 'patterns > boilerplate'", () => {
-    const wrapper = mount(NavMenu, {
-      global: {
-        mocks: {
-          $route: {
-            path: "/",
-          },
-        },
-      },
-    });
-    // Assert the rendered text of the component
-    const contentMenu = wrapper.find("#patternsBoilerplateHeading");
-    expect(contentMenu.attributes("aria-expanded")).toBe("false");
-  });
-
-  it("expands the content menu when the route contains 'patterns > navigation'", () => {
-    const wrapper = mount(NavMenu, {
-      global: {
-        mocks: {
-          $route: {
-            path: "/patterns/navigation",
-          },
-        },
-      },
-    });
-    // Assert the rendered text of the component
-    const contentMenu = wrapper.find("#patternsNavigationHeading");
-    expect(contentMenu.attributes("aria-expanded")).toBe("true");
-  });
-
-  it("does not expand the content menu when the route does not contain 'patterns > navigation'", () => {
-    const wrapper = mount(NavMenu, {
-      global: {
-        mocks: {
-          $route: {
-            path: "/",
-          },
-        },
-      },
-    });
-    // Assert the rendered text of the component
-    const contentMenu = wrapper.find("#patternsNavigationHeading");
+    const contentMenu = wrapper.find("#componentsHeading");
     expect(contentMenu.attributes("aria-expanded")).toBe("false");
   });
 });

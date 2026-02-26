@@ -2,15 +2,15 @@
   <div class="position-relative">
     <span class="visually-hidden">Example:</span>
   </div>
-  <div class="border rounded mb-3">
+  <div class="mb-3 rounded border">
     <div v-if="$slots['preview']">
-      <div class="preview p-4 m-2">
+      <div class="preview m-2 p-4">
         <slot name="preview"></slot>
       </div>
     </div>
   </div>
   <template v-if="$slots['description']">
-    <div class="mb-1 fst-italic small text-body-secondary">
+    <div class="fst-italic small text-body-secondary mb-1">
       <slot name="description"></slot>
     </div>
   </template>

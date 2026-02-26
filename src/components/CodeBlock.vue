@@ -1,22 +1,22 @@
 <template>
-  <div class="mb-3">
+  <div class="mb-5">
     <div class="position-relative">
       <span class="visually-hidden">Example:</span>
     </div>
     <template v-if="$slots['description']">
-      <div class="mb-1 fst-italic small text-body-secondary">
+      <div class="fst-italic small text-body-secondary mb-1">
         <slot name="description"></slot>
       </div>
     </template>
-    <div class="border rounded codeblock">
+    <div class="codeblock rounded border">
       <div v-if="$slots['preview']">
-        <div class="preview p-3 m-0 border-bottom">
+        <div class="preview border-bottom m-0 p-3">
           <slot name="preview"></slot>
         </div>
       </div>
       <div v-if="$slots['bootstrap']">
         <div
-          class="p-0 small m-0 bg-body-tertiary rounded-bottom position-relative"
+          class="small bg-body-tertiary rounded-bottom position-relative m-0 p-0"
         >
           <div class="p-3">HTML</div>
           <slot name="bootstrap"></slot>
@@ -24,7 +24,7 @@
       </div>
       <div v-if="$slots['vue']">
         <div
-          class="p-0 small m-0 border-top bg-body-tertiary rounded-bottom position-relative"
+          class="small border-top bg-body-tertiary rounded-bottom position-relative m-0 p-0"
         >
           <div class="p-3">VUE</div>
           <slot name="vue"></slot>
@@ -33,7 +33,7 @@
 
       <div v-if="$slots['script']">
         <div
-          class="p-0 small m-0 border-top bg-body-tertiary rounded-bottom position-relative"
+          class="small border-top bg-body-tertiary rounded-bottom position-relative m-0 p-0"
         >
           <div class="p-3">JS</div>
           <slot name="script"></slot>

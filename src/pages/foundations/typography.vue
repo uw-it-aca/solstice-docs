@@ -7,58 +7,30 @@
       </BBreadcrumb>
     </template>
     <template #lead>
-      The right combination of font families, text alignment, and text styling
-      creates readable and clearly structured content.
+      <p class="lead" style="max-width: 85ch">
+        The right combination of font families, text alignment, and text styling
+        creates readable and clearly structured content.
+      </p>
     </template>
 
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#font-families"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Font Families</a
-              >
-            </li>
-            <li>
-              <a
-                href="#usability-accessibility-principles"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Usability &amp; Accessibility Principles</a
-              >
-            </li>
-            <li>
-              <a
-                href="#styling-decoration"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Styling &amp; Decoration</a
-              >
-            </li>
-            <li>
-              <a
-                href="#alignment-spacing"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Alignment &amp; Spacing</a
-              >
-            </li>
-            <li>
-              <a
-                href="#technical-implementation"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Technical Implementation</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#fonts">Font Families</PageContentsItem>
+        <PageContentsItem anchor="#principles"
+          >Guiding Principles</PageContentsItem
+        >
+        <PageContentsItem anchor="#styling"
+          >Styling &amp; Decoration</PageContentsItem
+        >
+        <PageContentsItem anchor="#spacing"
+          >Alignment &amp; Spacing</PageContentsItem
+        >
+        <PageContentsItem anchor="#implement">Implementation</PageContentsItem>
       </PageContents>
     </template>
 
     <template #content>
-      <h2 id="font-families" class="display-6 ff-encode-sans pt-3 pb-3">
-        Font Families
-      </h2>
+      <h2 id="fonts" class="display-6 ff-encode-sans my-4">Font Families</h2>
       <p>
         The Solstice Design System uses the Encode Sans and Open Sans font
         families.
@@ -84,37 +56,36 @@
         pages for more details and code snippets.
       </p>
 
-      <h3 class="fw-medium ff-encode-sans pt-3">Encode Sans</h3>
+      <h3 class="fw-medium ff-encode-sans my-4">Encode Sans</h3>
       <p>Encodes Sans is <strong>only used for larger headings.</strong></p>
-      <div class="border rounded-3 p-3 col-6">
-        <p class="display-5 fw-bold ff-encode-sans pt-2">Solstice h1</p>
-        <p class="display-6 ff-encode-sans">Solstice h2</p>
-        <p class="fs-3 fw-medium ff-encode-san">Sosltice h3</p>
+      <div class="rounded-3 col-6 border p-3">
+        <h1 class="display-5 fw-bold ff-encode-sans pt-2">Solstice h1</h1>
+        <h2 class="display-6 ff-encode-sans">Solstice h2</h2>
+        <h3 class="fw-medium ff-encode-sans">Sosltice h3</h3>
       </div>
 
-      <h3 class="fw-medium ff-encode-sans pt-5">Open Sans</h3>
+      <h3 class="fw-medium ff-encode-sans my-4">Open Sans</h3>
       <p>
         Open Sans is used for
         <strong>body text, smaller headings, and most UI components</strong>
         (e.g. alert messaging, form labels, buttons).
       </p>
-      <div class="border rounded-3 p-3 col-6">
-        <p class="fs-4 ff-open-sans pt-2">Solstice h4</p>
-        <p class="fw-bold fs-5 ff-open-sans">Solstice h5</p>
-        <p class="fw-bold fs-4 ff-open-sans pb-4">Solstice h6</p>
-        <p>Solstice body text</p>
-        <p><small>Solstice small body text</small></p>
-        <p class="fs-5">Solstice large body text</p>
+      <div class="rounded-3 col-6 mb-4 border p-3">
+        <h4 class="fw-bold ff-open-sans">Solstice h4</h4>
+        <h5 class="fw-bold ff-open-sans">Solstice h5</h5>
+        <h6 class="fw-bold ff-open-sans">Solstice h6</h6>
       </div>
 
-      <br />
-      <hr />
+      <div class="rounded-3 col-6 border p-3">
+        <p class="lead">Solstice lead body text</p>
+        <p>Solstice body text</p>
+        <p class="small"><small>Solstice small body text</small></p>
+      </div>
 
-      <h2
-        id="usability-accessibility-principles"
-        class="display-6 ff-encode-sans pt-4 pb-3"
-      >
-        Usability & Accessibility Principles
+      <hr class="my-5 w-50" />
+
+      <h2 id="principles" class="display-6 ff-encode-sans my-4">
+        Guiding Principles
       </h2>
       <ul>
         <li class="pb-3">
@@ -134,14 +105,13 @@
         </li>
       </ul>
 
-      <br />
-      <hr />
+      <hr class="my-5 w-50" />
 
-      <h2 id="styling-decoration" class="display-6 ff-encode-sans pt-4 pb-3">
+      <h2 id="styling" class="display-6 ff-encode-sans my-4">
         Styling & Decoration
       </h2>
 
-      <h3 class="fw-medium ff-encode-sans pt-3">Color</h3>
+      <h3 class="fw-medium ff-encode-sans my-4">Color</h3>
       <ul>
         <li class="pb-3">
           <strong>Colors are defined in the Solstice style sheet.</strong> You
@@ -361,7 +331,7 @@
 
       <br />
       <hr />
-      <h2 id="alignment-spacing" class="display-6 ff-encode-sans pt-4 pb-3">
+      <h2 id="spacing" class="display-6 ff-encode-sans pt-4 pb-3">
         Alignment & Spacing
       </h2>
       <h3 class="fw-medium ff-encode-sans">Text alignment</h3>
@@ -403,10 +373,7 @@
       <br />
       <hr />
 
-      <h2
-        id="technical-implementation"
-        class="display-6 ff-encode-sans pt-4 pb-3"
-      >
+      <h2 id="implement" class="display-6 ff-encode-sans pt-4 pb-3">
         Technical Implementation
       </h2>
       <p>
@@ -422,20 +389,20 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsFoundationsTypography",
-  components: { Layout, BBreadcrumb, BBreadcrumbItem },
-  data() {
-    return {
-      pageTitle: "Typography",
-      colorMode: "light",
-    };
-  },
-  updated() {
-    this.colorMode = document.documentElement.getAttribute("data-bs-theme");
-  },
-};
+  export default {
+    name: "DocsFoundationsTypography",
+    components: { Layout, BBreadcrumb, BBreadcrumbItem },
+    data() {
+      return {
+        pageTitle: "Typography",
+        colorMode: "light",
+      };
+    },
+    updated() {
+      this.colorMode = document.documentElement.getAttribute("data-bs-theme");
+    },
+  };
 </script>

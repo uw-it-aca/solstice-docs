@@ -1,15 +1,19 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #lead>
-      Solstice is a resource for documenting design best practices. It provides
-      a set of curated content guidelines, UI elements, and UX design patterns
-      that work as the foundation for application design and development at Data
-      &amp; Applications (D&amp;A).
+      <p class="lead fw-bold">Build faster. Design better. Stay consistent.</p>
+      <p class="lead" style="max-width: 85ch">
+        Solstice is the single source of truth for Data & Applications (D&A). We
+        provide a curated ecosystem of content guidelines, design foundations,
+        and production-ready web components. By unifying our design language,
+        Solstice empowers teams to build cohesive, accessible, and
+        high-performance digital experiences from the ground up.
+      </p>
     </template>
     <template #content>
       <div class="row mb-3">
         <div class="col">
-          <h2 class="fw-bold">Getting Started</h2>
+          <SHeading level="2">Getting Started</SHeading>
           <p>
             Check out these guides to help you understand how to design
             applications using Solstice.
@@ -18,40 +22,36 @@
       </div>
 
       <div class="row mb-5">
-        <div class="col">
-          <h3>Goals</h3>
-          <ul>
-            <li>Faster design and development workflow</li>
-            <li>Living documentation</li>
-            <li>Automated testing</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>Solstice 101</h3>
-          <p>
-            Get to know our design thinking and how we put it into action across
-            our design system.
-          </p>
-          <p>
-            <BLink to="/getting-started/solstice-101"
-              >Learn about our design system</BLink
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="row mb-5">
         <div class="col d-flex flex-column">
           <BCard
-            class="bg-body-tertiary rounded-3"
+            class="bg-body-tertiary"
             header-bg-variant="transparent"
             border-variant="0"
             body-class="p-4"
           >
-            <h3 class="card-title">Design Principles</h3>
+            <SHeading level="3" system="app">Solstice 101</SHeading>
             <p class="flex-fill">
-              Learn how to create global components that can be used by other
-              applications as well as creating brand new applications.
+              Learn about our mission, our versioning strategy, and how Solstice
+              accelerates the D&A workflow.
+            </p>
+            <div class="text-end">
+              <BLink to="/getting-started/solstice-101"
+                >Learn about our design system</BLink
+              >
+            </div>
+          </BCard>
+        </div>
+        <div class="col d-flex flex-column">
+          <BCard
+            class="bg-body-tertiary"
+            header-bg-variant="transparent"
+            border-variant="0"
+            body-class="p-4"
+          >
+            <SHeading level="3" system="app">Design Principles</SHeading>
+            <p class="flex-fill">
+              Explore the core philosophies that guide our aesthetic and
+              functional decision-making.
             </p>
             <div class="text-end">
               <BLink to="/getting-started/design-principles"
@@ -62,15 +62,15 @@
         </div>
         <div class="col d-flex flex-column">
           <BCard
-            class="bg-body-tertiary rounded-3"
+            class="bg-body-tertiary"
             header-bg-variant="transparent"
             border-variant="0"
             body-class="p-4"
           >
-            <h3 class="card-title">Developer Guide</h3>
+            <SHeading level="3" system="app">Developer Guide</SHeading>
             <p class="flex-fill">
-              Learn how to create global components that can be used by other
-              applications as well as creating brand new applications.
+              Jump into the technical specs to install our component library and
+              start building.
             </p>
             <div class="text-end">
               <BLink to="/getting-started/developer-guide"
@@ -83,51 +83,68 @@
 
       <div class="row mb-3">
         <div class="col">
-          <h2 class="fw-bold">Guides</h2>
+          <SHeading level="2">Guides</SHeading>
           <p>
             Check out these documentation guides to help you understand how to
-            design applications using Solstice Components.
+            design websites and applications using Solstice Components.
           </p>
         </div>
       </div>
 
       <div class="row mb-5">
-        <div class="col d-flex flex-column">
-          <h3>Content</h3>
-          <p class="flex-fill">
-            Learn how to use language and text to design a more thoughtful user
-            experience.
-          </p>
+        <div class="col">
+          <BCard
+            class="bg-body-tertiary"
+            header-bg-variant="transparent"
+            border-variant="0"
+            body-class="p-4"
+          >
+            <SHeading level="3" system="app">Content Guidelines</SHeading>
+            <p class="flex-fill">
+              <strong>Speak the same language.</strong> Learn how to use tone,
+              grammar, and microcopy to guide users through complex data
+              workflows.
+            </p>
 
-          <p>
-            <BLink href="/content/">Review content guidelines</BLink>
-          </p>
+            <div class="text-end">
+              <BLink href="/content/">Review content guidelines</BLink>
+            </div>
+          </BCard>
         </div>
-        <div class="col d-flex flex-column">
-          <h3>Foundations</h3>
-          <p class="flex-fill">
-            Design foundations are used to ensure visual consistency across the
-            application.
-          </p>
-          <p>
-            <BLink href="/foundations/">Browse foundations</BLink>
-          </p>
+        <div class="col">
+          <BCard
+            class="bg-body-tertiary"
+            header-bg-variant="transparent"
+            border-variant="0"
+            body-class="p-4"
+          >
+            <SHeading level="3" system="app">Design Foundations</SHeading>
+            <p class="flex-fill">
+              <strong>The DNA of Solstice.</strong> Standardize your layout with
+              our core systems for color, typography, spacing, and elevation.
+            </p>
+            <div class="text-end">
+              <BLink href="/foundations/">Review design foundations</BLink>
+            </div>
+          </BCard>
         </div>
-        <div class="col d-flex flex-column">
-          <h3>UI Elements</h3>
-          <p class="flex-fill">
-            UI elements are reusable components that can stand alone or form
-            part of multiple UX patterns.
-          </p>
-          <p><BLink href="/elements/">Browse UI elements</BLink></p>
-        </div>
-        <div class="col d-flex flex-column">
-          <h3>UX Patterns</h3>
-          <p class="flex-fill">
-            UX patterns are groups of UI elements used by designers to solve
-            usability issues.
-          </p>
-          <p><BLink href="/patterns/">Browse UX patterns</BLink></p>
+        <div class="col">
+          <BCard
+            class="bg-body-tertiary"
+            header-bg-variant="transparent"
+            border-variant="0"
+            body-class="p-4"
+          >
+            <SHeading level="3" system="app">Component Library</SHeading>
+            <p class="flex-fill">
+              <strong>Assemble with ease.</strong> Access a library of
+              accessible, production-ready UI elements designed to work together
+              seamlessly.
+            </p>
+            <div class="text-end">
+              <BLink href="/components/">Browse components</BLink>
+            </div>
+          </BCard>
         </div>
       </div>
     </template>
@@ -136,29 +153,30 @@
 </template>
 
 <script>
-// import { getDevEnv } from "@/utils/global";
-import Layout from "@/layouts/default.vue";
-import { BCard, BLink } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  import { BCard, BLink } from "bootstrap-vue-next";
+  import { SHeading } from "solstice-vue";
 
-export default {
-  name: "DocsIndex",
-  components: {
-    Layout,
-    BCard,
-    BLink,
-  },
-  data() {
-    return {
-      pageTitle: "Solstice Design System",
-    };
-  },
-  methods: {},
-  mounted: function () {
-    // MARK: override layout pageTitle prop
-    document.title = this.appName;
+  export default {
+    name: "DocsIndex",
+    components: {
+      Layout,
+      BCard,
+      BLink,
+      SHeading,
+    },
+    data() {
+      return {
+        pageTitle: "Solstice Design System",
+      };
+    },
+    methods: {},
+    mounted: function () {
+      // MARK: override layout pageTitle prop
+      document.title = this.appName;
 
-    // MARK: set the dev environment for feature flagging
-    // this.isDev = getDevEnv();
-  },
-};
+      // MARK: set the dev environment for feature flagging
+      // this.isDev = getDevEnv();
+    },
+  };
 </script>

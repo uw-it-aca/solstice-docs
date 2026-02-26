@@ -1,9 +1,9 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #lead>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+      <p class="lead" style="max-width: 85ch;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
       accusamus vel doloremque odio ut sapiente quasi facilis veniam natus eius
-      expedita rem aspernatur itaque aperiam nemo quo sit, placeat quisquam?
+      expedita rem aspernatur itaque aperiam nemo quo sit, placeat quisquam?</p>
     </template>
     <template #content>
       <ul class="row list-unstyled">

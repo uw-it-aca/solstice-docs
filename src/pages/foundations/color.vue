@@ -7,38 +7,26 @@
       </BBreadcrumb>
     </template>
     <template #lead>
-      When used appropriately, color can help guide users towards successful
-      completion of their tasks and workflows. Color use on a page or in an
-      interface can communicate and reinforce meaning, create moments of visual
-      emphasis, and overall aid can in someone’s understanding of a page’s
-      structure and hierarchy. In addition, color is used to communicate the UW
-      brand.
-      <br />
-      <br />
-      The Solstice design system includes several palettes of colors, each with
-      their specific intended use. The color palettes in the design system are:
-      brand accent, neutrals, semantic, and decorative colors.
+      <p class="lead" style="max-width: 80ch">
+        When used appropriately, color can help guide users towards successful
+        completion of their tasks and workflows. Color use on a page or in an
+        interface can communicate and reinforce meaning, create moments of
+        visual emphasis, and overall aid can in someone’s understanding of a
+        page’s structure and hierarchy. In addition, color is used to
+        communicate the UW brand.
+      </p>
+      <p class="lead" style="max-width: 80ch">
+        The Solstice design system includes several palettes of colors, each
+        with their specific intended use. The color palettes in the design
+        system are: brand accent, neutrals, semantic, and decorative colors.
+      </p>
     </template>
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#principles"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Guiding Principles</a
-              >
-            </li>
-            <li>
-              <a
-                href="#palettes"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Color Palettes</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#principles"
+          >Guiding Principles</PageContentsItem
+        >
+        <PageContentsItem anchor="#palettes">Color Palettes</PageContentsItem>
       </PageContents>
     </template>
     <template #content>
@@ -325,7 +313,7 @@
           <tr>
             <td>
               <div
-                class="bg-white border rounded"
+                class="rounded border bg-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -538,7 +526,7 @@
           <tr>
             <td>
               <div
-                class="bg-white border rounded"
+                class="rounded border bg-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -682,7 +670,7 @@
           <tr>
             <td>
               <div
-                class="bg-white border rounded"
+                class="rounded border bg-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -843,7 +831,7 @@
           </tr>
           <tr>
             <td>
-              <div class="bg-black rounded" style="width: 30px; height: 30px">
+              <div class="rounded bg-black" style="width: 30px; height: 30px">
                 &nbsp;
               </div>
             </td>
@@ -983,7 +971,7 @@
           </tr>
           <tr>
             <td>
-              <div class="bg-black rounded" style="width: 30px; height: 30px">
+              <div class="rounded bg-black" style="width: 30px; height: 30px">
                 &nbsp;
               </div>
             </td>
@@ -1105,7 +1093,7 @@
           <tr>
             <td>
               <div
-                class="bg-white border rounded"
+                class="rounded border bg-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -1325,7 +1313,7 @@
           <tr>
             <td>
               <div
-                class="bg-deco-violet rounded p-2 text-white small"
+                class="bg-deco-violet small rounded p-2 text-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -1337,7 +1325,7 @@
           <tr>
             <td>
               <div
-                class="bg-deco-turquoise rounded p-2 text-white small"
+                class="bg-deco-turquoise small rounded p-2 text-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -1349,7 +1337,7 @@
           <tr>
             <td>
               <div
-                class="bg-deco-burnt rounded p-2 text-white small"
+                class="bg-deco-burnt small rounded p-2 text-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -1361,7 +1349,7 @@
           <tr>
             <td>
               <div
-                class="bg-deco-olive rounded p-2 text-white small"
+                class="bg-deco-olive small rounded p-2 text-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -1373,7 +1361,7 @@
           <tr>
             <td>
               <div
-                class="bg-deco-rose rounded p-2 text-white small"
+                class="bg-deco-rose small rounded p-2 text-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -1385,7 +1373,7 @@
           <tr>
             <td>
               <div
-                class="bg-deco-lavender rounded p-2 text-white small"
+                class="bg-deco-lavender small rounded p-2 text-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -1397,7 +1385,7 @@
           <tr>
             <td>
               <div
-                class="bg-deco-russet rounded p-2 text-white small"
+                class="bg-deco-russet small rounded p-2 text-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -1409,7 +1397,7 @@
           <tr>
             <td>
               <div
-                class="bg-deco-ultra rounded p-2 text-white small"
+                class="bg-deco-ultra small rounded p-2 text-white"
                 style="width: 30px; height: 30px"
               >
                 &nbsp;
@@ -1476,21 +1464,31 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import CodeBlock from "@/components/CodeBlock.vue";
-import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  import CodeBlock from "@/components/CodeBlock.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import PageContentsItem from "@/components/PageContentsItem.vue";
+  import { BBreadcrumb, BBreadcrumbItem, BLink } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsColor",
-  components: { Layout, BBreadcrumb, BBreadcrumbItem, BLink },
-  data() {
-    return {
-      pageTitle: "Color",
-      colorMode: "light",
-    };
-  },
-  updated() {
-    this.colorMode = document.documentElement.getAttribute("data-bs-theme");
-  },
-};
+  export default {
+    name: "DocsColor",
+    components: {
+      Layout,
+      CodeBlock,
+      PageContents,
+      PageContentsItem,
+      BBreadcrumb,
+      BBreadcrumbItem,
+      BLink,
+    },
+    data() {
+      return {
+        pageTitle: "Color",
+        colorMode: "light",
+      };
+    },
+    updated() {
+      this.colorMode = document.documentElement.getAttribute("data-bs-theme");
+    },
+  };
 </script>

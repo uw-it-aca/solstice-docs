@@ -5,55 +5,60 @@
     </template>
     <template #aside>
       <div
-        class="bg-opacity-10 rounded-3 small d-flex justify-content-between align-items-center mt-2 bg-white p-3"
+        class="bg-husky-purple rounded-3 small d-flex justify-content-between align-items-center mt-2 p-3"
       >
-        <div class="text-light">
-          Version
-          <br />
-          <a
-            href="https://github.com/uw-it-aca/solstice-theme/releases"
-            target="_blank"
-            class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
-            >solstice-theme: 1.0.7</a
-          >
-          <br />
-          <a
-            href="https://github.com/uw-it-aca/solstice-vue/releases"
-            target="_blank"
-            class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
-            >solstice-vue: 1.1.5</a
-          >
+        <div>
+          <p>Version</p>
+          <ul class="list-unstyled m-0">
+            <li class="mb-1">
+              <a
+                href="https://github.com/uw-it-aca/solstice-theme/releases"
+                target="_blank"
+                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
+                >solstice-theme: 1.0.7</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/uw-it-aca/solstice-vue/releases"
+                target="_blank"
+                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
+                >solstice-vue: 1.1.5</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="text-light">
+        <div>
           <SColorMode color-class="text-white" />
         </div>
       </div>
     </template>
     <template #main>
-      <div v-if="$slots.breadcrumb" class="row">
-        <div class="col">
-          <slot name="breadcrumb" />
-        </div>
-      </div>
-
-      <div v-if="$slots.lead">
-        <h1 class="fw-bold ff-encode-sans">{{ pageTitle }}</h1>
-        <p class="lead text-body-secondary" style="max-width: 85ch;">
-          <slot name="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            maiores quo consequatur, minima minus suscipit doloribus quos dicta
-            excepturi porro obcaecati, dignissimos rerum consectetur ea dolores
-            vero sint. Porro, quaerat.
-          </slot>
-        </p>
-        <hr class="d-inline-block w-50" />
-      </div>
-
       <div class="row">
         <div :class="[mq.xlMinus || !$slots['toc'] ? 'col' : 'col-9']">
           <div v-if="$slots['toc'] && mq.xlMinus" class="mb-5">
             <slot name="toc" />
           </div>
+
+          <div v-if="$slots.breadcrumb" class="row my-5">
+            <div class="col">
+              <slot name="breadcrumb" />
+            </div>
+          </div>
+
+          <div v-if="$slots.lead">
+            <SHeading level="1">{{ pageTitle }}</SHeading>
+            <slot name="lead">
+              <p class="lead" style="max-width: 85ch">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                maiores quo consequatur, minima minus suscipit doloribus quos
+                dicta excepturi porro obcaecati, dignissimos rerum consectetur
+                ea dolores vero sint. Porro, quaerat.
+              </p>
+            </slot>
+            <hr class="my-5 w-50" />
+          </div>
+
           <slot name="content" />
 
           <div v-if="$slots.author" class="small py-1">
@@ -63,7 +68,7 @@
           </div>
         </div>
         <div v-if="$slots['toc'] && !mq.xlMinus" class="col-3">
-          <div class="sticky-top">
+          <div class="sticky-top" style="margin-top: 11rem">
             <slot name="toc"></slot>
           </div>
         </div>
@@ -74,7 +79,7 @@
 </template>
 
 <script>
-  import { SColorMode, SSidebar } from "solstice-vue";
+  import { SColorMode, SSidebar, SHeading } from "solstice-vue";
   import NavMenu from "@/components/NavMenu.vue";
 
   export default {
@@ -83,6 +88,7 @@
       NavMenu,
       SColorMode,
       SSidebar,
+      SHeading,
     },
     inject: ["mq"],
     props: {

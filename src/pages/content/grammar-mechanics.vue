@@ -1,27 +1,36 @@
 <template>
   <Layout :page-title="pageTitle">
-    <template #content>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/content/">Content</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
-      <h1>{{ pageTitle }}</h1>
-
-      <p class="p-0 col-md-8 lead text-muted">
+    <template #breadcrumb>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/content">Content</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
+    </template>
+    <template #lead>
+      <p class="lead" style="max-width: 85ch">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
         consequuntur tempore amet consectetur minus autem corporis nostrum sit
         sapiente cumque. Rem nisi quidem aspernatur doloremque id non natus
         voluptas debitis!
       </p>
+    </template>
+    <template #toc>
+      <PageContents>
+        <PageContentsItem anchor="#grammar">Grammar</PageContentsItem>
+        <PageContentsItem anchor="#mechanics">Mechanics</PageContentsItem>
+      </PageContents>
+    </template>
+    <template #content>
 
-      <hr class="mb-5 w-25 d-inline-block" />
+      <SHeading level="2" id="grammar">Grammar</SHeading>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia
+        dolorem? Perspiciatis excepturi cum aliquid praesentium aspernatur,
+        accusantium assumenda, odio neque nobis quo inventore dolorum,
+        architecto velit magni rem odit?
+      </p>
 
+      <SHeading level="2" id="mechanics">Mechanics</SHeading>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia
         dolorem? Perspiciatis excepturi cum aliquid praesentium aspernatur,
@@ -34,15 +43,18 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
+  import Layout from "@/layouts/default.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import PageContentsItem from "@/components/PageContentsItem.vue";
+  import { SHeading } from "solstice-vue";
 
-export default {
-  name: "DocsPatternsMessaging",
-  components: { Layout },
-  data() {
-    return {
-      pageTitle: "Grammar & Mechanics",
-    };
-  },
-};
+  export default {
+    name: "DocsPatternsMessaging",
+    components: { Layout, PageContents, PageContentsItem, SHeading },
+    data() {
+      return {
+        pageTitle: "Grammar & Mechanics",
+      };
+    },
+  };
 </script>

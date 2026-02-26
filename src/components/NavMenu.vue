@@ -1,32 +1,11 @@
 <template>
   <ul class="nav flex-column mb-5">
-    <li class="nav-item mb-1 position-relative">
-      <BLink
-        id="gettingStartedHeading"
-        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-        exact-active-class="bg-white bg-opacity-10"
-        to="/getting-started/"
-        data-bs-toggle="collapse"
-        data-bs-target="#gettingStartedCollapse"
-        :aria-expanded="$route.path.includes('/getting-started') ? true : false"
-        aria-controls="gettingStartedCollapse"
-      >
-        <span
-          ><i class="bi bi-flag me-3 text-white text-opacity-50"></i>Getting
-          Started</span
-        >
-        <i class="bi bi-chevron-down" aria-hidden="true"></i>
-      </BLink>
-      <div
-        id="gettingStartedCollapse"
-        class="collapse"
-        :class="$route.path.includes('/getting-started') ? 'show' : ''"
-        aria-labelledby="gettingStartedHeading"
-      >
+    <li class="nav-item position-relative mb-1">
+      <NavCollapse menu="Getting Started" slug="getting-started" icon="bi-flag">
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/solstice-101"
             >
@@ -35,7 +14,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/design-principles"
             >
@@ -44,7 +23,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/getting-started/developer-guide"
             >
@@ -52,37 +31,14 @@
             </BLink>
           </li>
         </ul>
-      </div>
+      </NavCollapse>
     </li>
-    <li class="nav-item mb-1 position-relative">
-      <BLink
-        id="contentHeading"
-        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-        exact-active-class="bg-white bg-opacity-10"
-        to="/content/"
-        data-bs-toggle="collapse"
-        data-bs-target="#contentCollapse"
-        :aria-expanded="$route.path.includes('/content') ? true : false"
-        aria-controls="contentCollapse"
-      >
-        <span
-          ><i
-            class="bi bi-body-text me-3 text-white"
-            style="--bs-text-opacity: 0.5"
-          ></i>Content</span
-        >
-        <i class="bi bi-chevron-down" aria-hidden="true"></i>
-      </BLink>
-      <div
-        id="contentCollapse"
-        class="collapse"
-        :class="$route.path.includes('/content') ? 'show' : ''"
-        aria-labelledby="contentHeading"
-      >
+    <li class="nav-item position-relative mb-1">
+      <NavCollapse menu="Content" slug="content" icon="bi-body-text">
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/voice-tone"
             >
@@ -91,7 +47,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/grammar-mechanics"
             >
@@ -100,7 +56,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/language-inclusivity"
             >
@@ -109,7 +65,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/terminology"
             >
@@ -118,7 +74,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/labels"
             >
@@ -127,7 +83,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/content/writing-errors"
             >
@@ -135,37 +91,14 @@
             </BLink>
           </li>
         </ul>
-      </div>
+      </NavCollapse>
     </li>
-    <li class="nav-item mb-1">
-      <BLink
-        id="foundationsHeading"
-        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-        exact-active-class="bg-white bg-opacity-10"
-        to="/foundations/"
-        data-bs-toggle="collapse"
-        data-bs-target="#foundationsCollapse"
-        :aria-expanded="$route.path.includes('/foundations') ? true : false"
-        aria-controls="foundationsCollapse"
-      >
-        <span
-          ><i
-            class="bi bi-layers-fill me-3 text-white"
-            style="--bs-text-opacity: 0.5"
-          ></i>Foundations</span
-        >
-        <i class="bi bi-chevron-down" aria-hidden="true"></i>
-      </BLink>
-      <div
-        id="foundationsCollapse"
-        class="collapse"
-        :class="$route.path.includes('/foundations') ? 'show' : ''"
-        aria-labelledby="foundationsHeading"
-      >
+    <li class="nav-item position-relative mb-1">
+      <NavCollapse menu="Foundations" slug="foundations" icon="bi-layers">
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/color"
             >
@@ -174,7 +107,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/typography"
             >
@@ -183,7 +116,7 @@
           </li>
           <li class="nav-item mb-1">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/layout"
             >
@@ -192,7 +125,7 @@
           </li>
           <li class="nav-item">
             <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+              class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
               to="/foundations/icons"
             >
@@ -200,592 +133,438 @@
             </BLink>
           </li>
         </ul>
-      </div>
+      </NavCollapse>
     </li>
-
-    <li aria-hidden="true" class="d-none nav-item mt-2 mb-3">
-      <a href="#" class="nav-link disabled text-gray d-block p-0 internal-link">
-        <hr class="m-0 bg-gray"></a
-      >
-    </li>
-
-    <li class="nav-item mb-1">
-      <BLink
-        id="elementsHeading"
-        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-        exact-active-class="bg-white bg-opacity-10"
-        to="/elements/"
-        data-bs-toggle="collapse"
-        data-bs-target="#elementsCollapse"
-        :aria-expanded="$route.path.includes('/elements') ? true : false"
-        aria-controls="elementsCollapse"
-      >
-        <span
-          ><i
-            class="bi bi-box me-3 text-white"
-            style="--bs-text-opacity: 0.5"
-          ></i>UI Elements</span
-        >
-        <i class="bi bi-chevron-down" aria-hidden="true"></i>
-      </BLink>
-      <div
-        id="elementsCollapse"
-        class="collapse"
-        :class="$route.path.includes('/elements') ? 'show' : ''"
-        aria-labelledby="elementsHeading"
-      >
-        <ul class="nav flex-column small mt-1">
+    <li class="nav-item position-relative mb-1">
+      <NavCollapse menu="Components" slug="components" icon="bi-box">
+        <ul class="nav flex-column mt-1">
           <li class="nav-item mb-1">
-            <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/elements/link"
-            >
-              Link
-            </BLink>
-          </li>
-          <li class="nav-item mb-1">
-            <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/elements/button"
-            >
-              Button
-            </BLink>
-          </li>
-          <li class="nav-item mb-1">
-            <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/elements/heading"
-            >
-              Heading
-            </BLink>
-          </li>
-          <li class="nav-item mb-1">
-            <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/elements/paragraph"
-            >
-              Paragraph
-            </BLink>
-          </li>
-          <li class="nav-item mb-1">
-            <BLink
-              class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/elements/icon"
-            >
-              Icon
-            </BLink>
-          </li>
-          <li class="nav-item">
-            <BLink
-              id="elementsFormHeading"
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10"
-              to="/elements/forms"
-              data-bs-toggle="collapse"
-              data-bs-target="#elementsFormCollapse"
-              :aria-expanded="
-                $route.path.includes('/elements/forms') ? true : false
-              "
-              aria-controls="elementsFormCollapse"
-            >
-              <span>Forms</span>
-              <i class="bi bi-chevron-down" aria-hidden="true"></i>
-            </BLink>
-            <div
-              id="elementsFormCollapse"
-              class="collapse"
-              :class="$route.path.includes('/elements/forms') ? 'show' : ''"
-              aria-labelledby="elementsFormHeading"
-            >
-              <ul class="nav flex-column mt-1">
+            <NavCollapseSub menu="Actions" slug="actions">
+              <ul class="nav flex-column small mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.5"
-                    exact-active-class="bg-white bg-opacity-10"
-                    to="/elements/forms/label"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/actions/button"
+
                   >
-                    Label
+                    Button
                   </BLink>
                 </li>
+                <li class="nav-item">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/actions/link"
+                  >
+                    Link
+                  </BLink>
+                </li>
+              </ul>
+            </NavCollapseSub>
+          </li>
+          <li class="nav-item mb-1">
+            <NavCollapseSub menu="Text" slug="text">
+              <ul class="nav small flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.5"
-                    exact-active-class="bg-white bg-opacity-10"
-                    to="/elements/forms/input"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/text/heading"
+                    style="padding-left: 50px"
+                  >
+                    Heading
+                  </BLink>
+                </li>
+                <li class="nav-item">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/text/paragraph"
+                    style="padding-left: 50px"
+                  >
+                    Paragraph
+                  </BLink>
+                </li>
+              </ul>
+            </NavCollapseSub>
+          </li>
+          <li class="nav-item mb-1">
+            <NavCollapseSub menu="Forms" slug="forms">
+              <ul class="nav small flex-column mt-1">
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/forms/input"
+                    style="padding-left: 50px"
                   >
                     Input
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.5"
-                    exact-active-class="bg-white bg-opacity-10"
-                    to="/elements/forms/select"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/forms/select"
+                    style="padding-left: 50px"
                   >
                     Textarea
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.5"
-                    exact-active-class="bg-white bg-opacity-10"
-                    to="/elements/forms/select"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/forms/select"
+                    style="padding-left: 50px"
                   >
                     Select
                   </BLink>
                 </li>
-
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.5"
-                    exact-active-class="bg-white bg-opacity-10"
-                    to="/elements/forms/select"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover p text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/forms/select"
+                    style="padding-left: 50px"
                   >
-                    Button
+                    Submit
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.5"
-                    exact-active-class="bg-white bg-opacity-10"
-                    to="/elements/forms/select"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/forms/fieldset"
+                    style="padding-left: 50px"
                   >
                     Fieldset
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.5"
-                    exact-active-class="bg-white bg-opacity-10"
-                    to="/elements/forms/radio"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/forms/radio"
+                    style="padding-left: 50px"
                   >
                     Radio
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.5"
-                    exact-active-class="bg-white bg-opacity-10"
-                    to="/elements/forms/checkbox"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/forms/checkbox"
+                    style="padding-left: 50px"
                   >
                     Checkbox
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.5"
-                    exact-active-class="bg-white bg-opacity-10"
-                    to="/elements/forms/range"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/forms/range"
+                    style="padding-left: 50px"
                   >
                     Range
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white fw-lighter bg-white-hover bg-opacity-10-hover"
-                    style="--bs-text-opacity: 0.5"
-                    exact-active-class="bg-white bg-opacity-10"
-                    to="/elements/forms/validation"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/forms/validation"
+                    style="padding-left: 50px"
                   >
                     Validation
                   </BLink>
                 </li>
               </ul>
-            </div>
+            </NavCollapseSub>
           </li>
-        </ul>
-      </div>
-    </li>
-
-    <li class="nav-item mb-1">
-      <BLink
-        id="patternsHeading"
-        class="d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-        exact-active-class="bg-white bg-opacity-10"
-        to="/patterns/"
-        data-bs-toggle="collapse"
-        data-bs-target="#patternsCollapse"
-        :aria-expanded="$route.path.includes('/patterns') ? true : false"
-        aria-controls="patternsCollapse"
-      >
-        <span
-          ><i
-            class="bi bi-boxes me-3 text-white"
-            style="--bs-text-opacity: 0.5"
-          ></i>UX Patterns</span
-        >
-        <i class="bi bi-chevron-down" aria-hidden="true"></i>
-      </BLink>
-      <div
-        id="patternsCollapse"
-        class="collapse"
-        :class="$route.path.includes('/patterns') ? 'show' : ''"
-        aria-labelledby="patternsHeading"
-      >
-        <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
-            <BLink
-              id="patternsBoilerplateHeading"
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/boilerplate"
-              data-bs-toggle="collapse"
-              data-bs-target="#patternsBoilerplateCollapse"
-              :aria-expanded="
-                $route.path.includes('/patterns/boilerplate') ? true : false
-              "
-              aria-controls="patternsBoilerplateCollapse"
-            >
-              <span>Boilerplate</span>
-              <i class="bi bi-chevron-down" aria-hidden="true"></i>
-            </BLink>
-            <div
-              id="patternsBoilerplateCollapse"
-              class="collapse"
-              :class="$route.path.includes('/patterns/boilerplate') ? 'show' : ''"
-              aria-labelledby="patternsBoilerplateHeading"
-            >
-              <ul class="nav flex-column mt-1">
+            <NavCollapseSub menu="Surfaces" slug="surfaces">
+              <ul class="nav small flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/boilerplate/topbar"
-                  >
-                    Topbar
-                  </BLink>
-                </li>
-                <li class="nav-item mb-1">
-                  <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/boilerplate/sidebar"
-                  >
-                    Sidebar
-                  </BLink>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="nav-item mb-1">
-            <BLink
-              id="patternsNavigationHeading"
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/navigation"
-              data-bs-toggle="collapse"
-              data-bs-target="#patternsNavigationCollapse"
-              :aria-expanded="
-                $route.path.includes('/patterns/navigation') ? true : false
-              "
-              aria-controls="patternsNavigationCollapse"
-            >
-              <span>Navigation</span>
-              <i class="bi bi-chevron-down" aria-hidden="true"></i>
-            </BLink>
-            <div
-              id="patternsNavigationCollapse"
-              class="collapse"
-              :class="
-                $route.path.includes('/patterns/navigation') ? 'show' : ''
-              "
-              aria-labelledby="patternsNavigationHeading"
-            >
-              <ul class="nav flex-column mt-1">
-                <li class="nav-item mb-1">
-                  <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/navigation/tabs"
-                  >
-                    Tabs
-                  </BLink>
-                </li>
-                <li class="nav-item mb-1">
-                  <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/navigation/menu"
-                  >
-                    Menu
-                  </BLink>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="nav-item mb-1">
-            <BLink
-              id="patternsSurfaceHeading"
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/surface"
-              data-bs-toggle="collapse"
-              data-bs-target="#patternsSurfaceCollapse"
-              :aria-expanded="
-                $route.path.includes('/patterns/surface') ? true : false
-              "
-              aria-controls="patternsSurfaceCollapse"
-            >
-              <span>Surface</span>
-              <i class="bi bi-chevron-down" aria-hidden="true"></i>
-            </BLink>
-            <div
-              id="patternsSurfaceCollapse"
-              class="collapse"
-              :class="$route.path.includes('/patterns/surface') ? 'show' : ''"
-              aria-labelledby="patternsSurfaceHeading"
-            >
-              <ul class="nav flex-column mt-1">
-                <li class="nav-item mb-1">
-                  <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/surface/card"
+                    to="/components/surfaces/card"
+                    style="padding-left: 50px"
                   >
                     Card
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/surface/panel"
-                  >
-                    Panel
-                  </BLink>
-                </li>
-                <li class="nav-item mb-1">
-                  <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/surface/tile"
+                    to="/components/surfaces/tile"
+                    style="padding-left: 50px"
                   >
                     Tile
                   </BLink>
                 </li>
               </ul>
-            </div>
+            </NavCollapseSub>
           </li>
-
           <li class="nav-item mb-1">
-            <BLink
-              id="patternsDisclosureHeading"
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/disclosure"
-              data-bs-toggle="collapse"
-              data-bs-target="#patternsDisclosureCollapse"
-              :aria-expanded="
-                $route.path.includes('/patterns/disclosure') ? true : false
-              "
-              aria-controls="patternsDisclosureCollapse"
-            >
-              <span>Disclosure</span>
-              <i class="bi bi-chevron-down" aria-hidden="true"></i>
-            </BLink>
-            <div
-              id="patternsDisclosureCollapse"
-              class="collapse"
-              :class="
-                $route.path.includes('/patterns/disclosure') ? 'show' : ''
-              "
-              aria-labelledby="patternsDisclosureHeading"
-            >
-              <ul class="nav flex-column mt-1">
+            <NavCollapseSub menu="Layouts" slug="layouts">
+              <ul class="nav small flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/disclosure/collapse"
+                    to="/components/layouts/topbar"
+                    style="padding-left: 50px"
                   >
-                    Collapse
+                    Topbar
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/disclosure/accordian"
+                    to="/components/layouts/sidebar"
+                    style="padding-left: 50px"
                   >
-                    Accordian
-                  </BLink>
-                </li>
-                <li class="nav-item mb-1">
-                  <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/disclosure/modal"
-                  >
-                    Modal
-                  </BLink>
-                </li>
-                <li class="nav-item mb-1">
-                  <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/disclosure/offcanvas"
-                  >
-                    Offcanvas
+                    Sidebar
                   </BLink>
                 </li>
               </ul>
-            </div>
+            </NavCollapseSub>
           </li>
-
           <li class="nav-item mb-1">
-            <BLink
-              id="patternsMessagingHeading"
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/messaging"
-              data-bs-toggle="collapse"
-              data-bs-target="#patternsMessagingCollapse"
-              :aria-expanded="
-                $route.path.includes('/patterns/messaging') ? true : false
-              "
-              aria-controls="patternsMessagingCollapse"
-            >
-              <span>Messaging</span>
-              <i class="bi bi-chevron-down" aria-hidden="true"></i>
-            </BLink>
-            <div
-              id="patternsMessagingCollapse"
-              class="collapse"
-              :class="
-                $route.path.includes('/patterns/messaging') ? 'show' : ''
-              "
-              aria-labelledby="patternsSurfaceHeading"
-            >
-              <ul class="nav flex-column mt-1">
+            <NavCollapseSub menu="Navigation" slug="navigation">
+              <ul class="nav small flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/messaging/alert"
+                    to="/components/navigation/tabs"
+                    style="padding-left: 50px"
+                  >
+                    Tabs
+                  </BLink>
+                </li>
+                <li class="nav-item">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/navigation/menu"
+                    style="padding-left: 50px"
+                  >
+                    Menu
+                  </BLink>
+                </li>
+              </ul>
+            </NavCollapseSub>
+          </li>
+          <li class="nav-item mb-1">
+            <NavCollapseSub menu="Messaging & Status" slug="messaging">
+              <ul class="nav small flex-column mt-1">
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/messaging/alert"
+                    style="padding-left: 50px"
                   >
                     Alert
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/messaging/toast"
+                    to="/components/messaging/toast"
+                    style="padding-left: 50px"
                   >
                     Toast
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/messaging/banner"
+                    to="/components/messaging/banner"
+                    style="padding-left: 50px"
                   >
                     Banner
                   </BLink>
                 </li>
-                <li class="nav-item mb-1">
+                <li class="nav-item">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/messaging/badge"
+                    to="/components/messaging/badge"
+                    style="padding-left: 50px"
                   >
                     Badge
                   </BLink>
                 </li>
+              </ul>
+            </NavCollapseSub>
+          </li>
+          <li class="nav-item mb-1">
+            <NavCollapseSub menu="Disclosures" slug="disclosures">
+              <ul class="small nav flex-column mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/messaging/modal"
+                    to="/components/disclosures/collapse"
+                    style="padding-left: 50px"
+                  >
+                    Collapse
+                  </BLink>
+                </li>
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/disclosures/accordian"
+                    style="padding-left: 50px"
+                  >
+                    Accordian
+                  </BLink>
+                </li>
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/disclosures/modal"
+                    style="padding-left: 50px"
+                  >
+                    Modal
+                  </BLink>
+                </li>
+                <li class="nav-item">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/disclosures/offcanvas"
+                    style="padding-left: 50px"
+                  >
+                    Offcanvas
+                  </BLink>
+                </li>
+              </ul>
+            </NavCollapseSub>
+          </li>
+          <li class="nav-item mb-1">
+            <NavCollapseSub menu="Search & Filter" slug="search">
+              <ul class="small nav flex-column mt-1">
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/search/filter"
+                    style="padding-left: 50px"
+                  >
+                    Filter
+                  </BLink>
+                </li>
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/search/input"
+                    style="padding-left: 50px"
+                  >
+                    Input
+                  </BLink>
+                </li>
+                <li class="nav-item">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/search/modal"
+                    style="padding-left: 50px"
                   >
                     Modal
                   </BLink>
                 </li>
               </ul>
-            </div>
+            </NavCollapseSub>
           </li>
-
           <li class="nav-item mb-1">
-            <BLink
-              id="patternsUtilityHeading"
-              class="ps-5 d-flex justify-content-between nav-link rounded-3 text-light chevron bg-white-hover bg-opacity-10-hover"
-              exact-active-class="bg-white bg-opacity-10"
-              to="/patterns/utility"
-              data-bs-toggle="collapse"
-              data-bs-target="#patternsUtilityCollapse"
-              :aria-expanded="
-                $route.path.includes('/patterns/utility') ? true : false
-              "
-              aria-controls="patternsUtilityCollapse"
-            >
-              <span>Utility</span>
-              <i class="bi bi-chevron-down" aria-hidden="true"></i>
-            </BLink>
-            <div
-              id="patternsUtilityCollapse"
-              class="collapse"
-              :class="$route.path.includes('/patterns/utility') ? 'show' : ''"
-              aria-labelledby="patternsSurfaceHeading"
-            >
-              <ul class="nav flex-column mt-1">
+            <NavCollapseSub menu="Utilities" slug="utilities">
+              <ul class="nav flex-column small mt-1">
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/utility/profile"
+                    to="/components/utilities/profile"
+                    style="padding-left: 50px"
                   >
                     Profile
                   </BLink>
                 </li>
                 <li class="nav-item mb-1">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/utility/color-mode"
+                    to="/components/utilities/user"
+                    style="padding-left: 50px"
+                  >
+                    User
+                  </BLink>
+                </li>
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/utilities/color-mode"
+                    style="padding-left: 50px"
                   >
                     Color Mode
                   </BLink>
                 </li>
-                <li class="nav-item mb-1">
+                <li class="nav-item">
                   <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/utility/search"
-                  >
-                    Search
-                  </BLink>
-                </li>
-                <li class="nav-item mb-1">
-                  <BLink
-                    class="ps-5 nav-link rounded-3 text-white text-opacity-50 fw-lighter bg-white-hover bg-opacity-10-hover"
-                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/patterns/utility/chatbot"
+                    to="/components/utilities/chatbot"
+                    style="padding-left: 50px"
                   >
                     Chatbot
                   </BLink>
                 </li>
               </ul>
-            </div>
+            </NavCollapseSub>
+          </li>
+          <li class="nav-item mb-1">
+            <NavCollapseSub menu="Data" slug="data">
+              <ul class="nav flex-column small mt-1">
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/data/table"
+                    style="padding-left: 50px"
+                  >
+                    Table
+                  </BLink>
+                </li>
+                <li class="nav-item mb-1">
+                  <BLink
+                    class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
+                    exact-active-class="bg-white bg-opacity-10 text-opacity-100"
+                    to="/components/data/chart"
+                    style="padding-left: 50px"
+                  >
+                    Chart
+                  </BLink>
+                </li>
+              </ul>
+            </NavCollapseSub>
           </li>
         </ul>
-      </div>
+      </NavCollapse>
     </li>
   </ul>
 </template>
@@ -793,10 +572,14 @@
 <script>
   // import { getDevEnv } from "@/utils/global";
   import { BLink } from "bootstrap-vue-next";
+  import NavCollapse from "@/components/NavCollapse.vue";
+  import NavCollapseSub from "@/components/NavCollapseSub.vue";
 
   export default {
     components: {
       BLink,
+      NavCollapse,
+      NavCollapseSub,
     },
     data() {
       return {};
@@ -818,7 +601,7 @@
     font-weight: bolder;
   }
 
-  .chevron[aria-expanded='true'] .bi-chevron-down {
+  .chevron[aria-expanded="true"] .bi-chevron-down {
     transform: rotate(-180deg); /* transform: scaleY(-1); */
   }
 

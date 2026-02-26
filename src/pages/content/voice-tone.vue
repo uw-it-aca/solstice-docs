@@ -1,63 +1,45 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/content/">Content</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ pageTitle }}
-          </li>
-        </ol>
-      </nav>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/content">Content</BBreadcrumbItem>
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
     </template>
 
     <template #lead>
-      Voice and Tone establish a uniform and easily identifiable communication
-      style, promoting a clear, cohesive, and contextualized user experience.
-      Voice, like personality, is constant throughout our messaging, while tone,
-      like emotions, is dynamic and depends on the context/situation.
-      <br /><br />
-      Both voice and tone adhere to and follow the
-      <a
-        href="https://insideuwit.uw.edu/support-units/communications/brand-style-other-resources/uw-it-writing-style-guide/"
-        >UW-IT Writing Style Guide</a
-      >
-      and the
-      <a
-        href="https://www.washington.edu/brand/guides/editorial-guide/#editorial-4"
-        >UW Editorial Guide</a
-      >. Both of these resources should be explored, as they contain additional
-      tips and guidance.
+      <p class="lead" style="max-width: 85ch">
+        Voice and Tone establish a uniform and easily identifiable communication
+        style, promoting a clear, cohesive, and contextualized user experience.
+        Voice, like personality, is constant throughout our messaging, while
+        tone, like emotions, is dynamic and depends on the context/situation.
+      </p>
+
+      <p class="lead" style="max-width: 85ch">
+        Both voice and tone adhere to and follow the
+        <a
+          href="https://insideuwit.uw.edu/support-units/communications/brand-style-other-resources/uw-it-writing-style-guide/"
+          >UW-IT Writing Style Guide</a
+        >
+        and the
+        <a
+          href="https://www.washington.edu/brand/guides/editorial-guide/#editorial-4"
+          >UW Editorial Guide</a
+        >. Both of these resources should be explored, as they contain
+        additional tips and guidance.
+      </p>
     </template>
 
     <template #toc>
       <PageContents>
-        <nav id="TableOfContents">
-          <ul class="list-unstyled m-0">
-            <li>
-              <a
-                href="#voice"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Voice</a
-              >
-            </li>
-            <li>
-              <a
-                href="#tone"
-                class="px-2 py-1 text-muted link-underline link-underline-opacity-0 rounded d-block bg-body-tertiary-hover"
-                >Tone</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <PageContentsItem anchor="#voice">Voice</PageContentsItem>
+        <PageContentsItem anchor="#tone">Tone</PageContentsItem>
       </PageContents>
     </template>
 
     <template #content>
-      <h2 class="ff-encodesans pt-4 pb-3" id="voice">Voice</h2>
-      <p>
+      <SHeading level="2" id="voice">Voice</SHeading>
+      <p style="max-width: 85ch">
         Voice - the consistent and recognizable communication style in messaging
         - is intended to align with the UW style and brand, and in addition, is
         designed to optimize usability, accessibility and inclusivity. The
@@ -88,16 +70,16 @@
         respect and understanding.
       </p>
 
-      <h2 id="tone">Tone</h2>
-      <p>
+      <SHeading level="2" id="tone">Tone</SHeading>
+      <p style="max-width: 85ch">
         If voice is our brand&rsquo;s personality, tone is the emotion expressed
         that conveys how users should interpret information. The right tone
         depends on the context, audience, and level of engagement required for
         effective communication.
       </p>
 
-      <h3>Tone Map</h3>
-      <p>
+      <SHeading level="3">Tone Map</SHeading>
+      <p style="max-width: 85ch">
         Since tone will vary throughout a UI, this tone map demonstrates what
         tone could be used in the outlined use cases. Note that even this tone
         map is guidance and should be weighed with what the proper tone is for
@@ -112,7 +94,11 @@
         </li>
       </ul>
 
-      <img src="/images/tone-map.png" class="image-fluid w-100 border" />
+      <img
+        src="/images/tone-map.png"
+        class="image-fluid w-100 border"
+        alt="Tone Map"
+      />
 
       <p>
         Tone Map items described below for accessibility purposes. Range values:
@@ -193,16 +179,18 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import PageContents from "@/components/PageContents.vue";
+  import Layout from "@/layouts/default.vue";
+  import PageContents from "@/components/PageContents.vue";
+  import PageContentsItem from "@/components/PageContentsItem.vue";
+  import { SHeading } from "solstice-vue";
 
-export default {
-  name: "DocsContentVoice",
-  components: { Layout, PageContents },
-  data() {
-    return {
-      pageTitle: "Voice & Tone",
-    };
-  },
-};
+  export default {
+    name: "DocsContentVoice",
+    components: { Layout, PageContents, PageContentsItem, SHeading },
+    data() {
+      return {
+        pageTitle: "Voice & Tone",
+      };
+    },
+  };
 </script>

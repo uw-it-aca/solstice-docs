@@ -1,16 +1,22 @@
 <template>
-  <div class="sol-toc">
-    <h2 class="fs-6 ms-2">On this page</h2>
-    <slot></slot>
+  <div class="pt-4">
+    <p class="fw-bold">On this page</p>
+    <ul id="TableOfContents" class="list-unstyled m-0">
+      <slot></slot>
+    </ul>
   </div>
 </template>
 
 <script>
   import { ScrollSpy } from "bootstrap";
+  import { SHeading } from "solstice-vue";
 
   export default {
     name: "PageContents",
     inject: ["mq"],
+    components: {
+      SHeading,
+    },
     data() {
       return {};
     },
@@ -27,22 +33,3 @@
     methods: {},
   };
 </script>
-
-<style lang="css">
-  .sol-toc {
-    max-width: 312px;
-  }
-
-  .sol-toc li {
-    margin-bottom: 0.25rem;
-  }
-
-  .sol-toc .active {
-    --bs-bg-opacity: 1;
-    /* stylelint-disable-next-line color-function-notation */
-    background-color: rgb(
-      var(--bs-tertiary-bg-rgb),
-      var(--bs-bg-opacity)
-    ) !important;
-  }
-</style>
