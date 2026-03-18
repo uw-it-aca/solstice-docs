@@ -538,7 +538,7 @@
             </NavCollapseSub>
           </li>
           <li class="nav-item mb-1">
-            <NavCollapseSub menu="Data" slug="data">
+            <NavCollapseSub menu="Data Display" slug="data">
               <ul class="nav flex-column small mt-1">
                 <li class="nav-item mb-1">
                   <BLink
