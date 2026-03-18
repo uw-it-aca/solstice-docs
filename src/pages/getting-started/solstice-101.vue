@@ -19,7 +19,9 @@
       </p>
     </template>
     <template #content>
-      <SHeading level="2">What is Solstice?</SHeading>
+      <SHeading level="2" class="my-4">Frequently Asked Questions</SHeading>
+
+      <SHeading level="3">What is Solstice?</SHeading>
 
       <p style="max-width: 85ch">
         Solstice is a resource for documenting design best practices. It
@@ -28,7 +30,7 @@
         development at Data &amp; Applications (D&amp;A).
       </p>
 
-      <SHeading level="2">Who is Solstice for?</SHeading>
+      <SHeading level="3">Who is Solstice for?</SHeading>
       <p style="max-width: 85ch">
         Solstice was created and maintained by the Service Coordination (SC)
         Experience Design Team, to help provide users with a consistent
@@ -40,7 +42,7 @@
         specifications.
       </p>
 
-      <SHeading level="2">How will Solstice be used?</SHeading>
+      <SHeading level="3">How will Solstice be used?</SHeading>
       <p style="max-width: 85ch">
         Designers are expected to use the elements and patterns documented in
         the design system to aid in their design process. Further resources can

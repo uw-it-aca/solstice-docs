@@ -29,7 +29,7 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" system="app">Solstice 101</SHeading>
+            <SHeading level="3" class="mb-3">Solstice 101</SHeading>
             <p class="flex-fill">
               Learn about our mission, our versioning strategy, and how Solstice
               accelerates the D&A workflow.
@@ -48,7 +48,7 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" system="app">Design Principles</SHeading>
+            <SHeading level="3" class="mb-3">Design Principles</SHeading>
             <p class="flex-fill">
               Explore the core philosophies that guide our aesthetic and
               functional decision-making.
@@ -67,7 +67,7 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" system="app">Developer Guide</SHeading>
+            <SHeading level="3" class="mb-3">Developer Guide</SHeading>
             <p class="flex-fill">
               Jump into the technical specs to install our component library and
               start building.
@@ -99,7 +99,7 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" system="app">Content</SHeading>
+            <SHeading level="3" class="mb-3">Content</SHeading>
             <p class="flex-fill">
               <strong>Speak the same language.</strong> Learn how to use tone,
               grammar, and microcopy to guide users through complex data
@@ -118,7 +118,7 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" system="app">Foundations</SHeading>
+            <SHeading level="3" class="mb-3">Foundations</SHeading>
             <p class="flex-fill">
               <strong>The DNA of Solstice.</strong> Standardize your layout with
               our core systems for color, typography, spacing, and elevation.
@@ -135,7 +135,7 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" system="app">Components</SHeading>
+            <SHeading level="3" class="mb-3">Components</SHeading>
             <p class="flex-fill">
               <strong>Assemble with ease.</strong> Access a library of
               accessible, production-ready UI elements designed to work together

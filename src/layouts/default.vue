@@ -47,7 +47,7 @@
           </div>
 
           <div v-if="$slots.lead">
-            <SHeading level="1">{{ pageTitle }}</SHeading>
+            <h1 class="display-5 ff-encode-sans fw-semibold my-5">{{ pageTitle }}</h1>
             <slot name="lead">
               <p class="lead" style="max-width: 85ch">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
@@ -79,7 +79,7 @@
 </template>
 
 <script>
-  import { SColorMode, SSidebar, SHeading } from "solstice-vue";
+  import { SColorMode, SSidebar, SHeading, SUser } from "solstice-vue";
   import NavMenu from "@/components/NavMenu.vue";
 
   export default {
@@ -89,6 +89,7 @@
       SColorMode,
       SSidebar,
       SHeading,
+      SUser,
     },
     inject: ["mq"],
     props: {
