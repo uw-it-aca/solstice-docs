@@ -34,7 +34,7 @@ app.use(Vue3Mq, {
 app.use(createBootstrap());
 
 // declar global properties here
-app.config.globalProperties.appName = "Solstice";
+app.config.globalProperties.appName = "UX Design";
 
 // unplugin-vue-router (auto page routing)
 app.use(router);
