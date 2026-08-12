@@ -8,7 +8,7 @@ ADD docker/nginx.conf /etc/nginx/nginx.conf
 RUN chgrp acait /etc/nginx/nginx.conf && chmod g+w /etc/nginx/nginx.conf
 
 # latest node + ubuntu
-FROM node:lts AS node-base
+FROM node:24 AS node-base
 FROM ubuntu:24.04 AS node-bundler
 COPY --from=node-base / /
 
