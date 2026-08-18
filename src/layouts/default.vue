@@ -1,7 +1,18 @@
 <template>
-  <SSidebar :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
+  <STopbarNeo :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
     <template #navigation>
-      <NavMenu />
+      <!-- MARL: proper BNav implementation  -->
+      <BNav class="flex-column flex-xl-row gap-xl-5">
+        <BNavItem href="/process-guides" active link-class="text-white px-0">Process Guides</BNavItem>
+        <BNavItem href="/ui-patterns" link-class="text-white px-0">UX/UI Patterns</BNavItem>
+        <BNavItem href="/info-design" link-class="text-white px-0">Information Design</BNavItem>
+        <BNavItemDropdown text="About UX" toggle-class="text-white px-0">
+          <BDropdownItem href="#">Action</BDropdownItem>
+          <BDropdownItem href="#">Another action</BDropdownItem>
+          <BDropdownDivider />
+          <BDropdownItem href="#">Request a consultation</BDropdownItem>
+        </BNavItemDropdown>
+      </BNav>
     </template>
     <template #main>
       <div class="row">
@@ -17,7 +28,9 @@
           </div>
 
           <div v-if="$slots.lead">
-            <h1 class="display-5 ff-encode-sans fw-semibold my-5">{{ pageTitle }}</h1>
+            <h1 class="display-5 ff-encode-sans fw-semibold my-5">
+              {{ pageTitle }}
+            </h1>
             <slot name="lead">
               <p class="lead" style="max-width: 85ch">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
@@ -45,11 +58,18 @@
       </div>
     </template>
     <template #footer></template>
-  </SSidebar>
+  </STopbarNeo>
 </template>
 
 <script>
-  import { SColorMode, SSidebar, SHeading, SUser } from "solstice-vue";
+  import {
+    BNav,
+    BNavItem,
+    BNavItemDropdown,
+    BDropdownItem,
+    BDropdownDivider,
+  } from "bootstrap-vue-next";
+  import { SColorMode, STopbarNeo, SHeading, SUser } from "solstice-vue";
   import NavMenu from "@/components/NavMenu.vue";
 
   export default {
@@ -57,9 +77,14 @@
     components: {
       NavMenu,
       SColorMode,
-      SSidebar,
+      STopbarNeo,
       SHeading,
       SUser,
+      BNav,
+      BNavItem,
+      BNavItemDropdown,
+      BDropdownItem,
+      BDropdownDivider,
     },
     inject: ["mq"],
     props: {

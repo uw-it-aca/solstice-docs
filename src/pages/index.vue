@@ -8,13 +8,14 @@
       </p>
     </template>
     <template #content>
-
       <div class="row mb-3">
         <div class="col">
-          <SHeading level="2">Guides</SHeading>
+          <SHeading level="2" class="mb-3">Explore our guides</SHeading>
           <p>
-            Check out these documentation guides to help you understand how to
-            design websites and applications using Solstice Components.
+            Our UX Design Guides help teams turn user needs into clear, useful,
+            and consistent digital experiences. Explore practical guidance from
+            our UX team to plan your process, make informed design decisions,
+            and create products and services that work better for everyone.
           </p>
         </div>
       </div>
@@ -29,9 +30,8 @@
           >
             <SHeading level="3" class="mb-3">UX Process Guides</SHeading>
             <p class="flex-fill">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptatum reiciendis optio laboriosam
-              perferendis ipsam.
+              Plan and apply UCD activities, from discovery and
+              research through prototyping, testing, and continuous improvement.
             </p>
             <div class="text-end">
               <BLink href="/process-guides/">Review process guides</BLink>
@@ -47,13 +47,14 @@
           >
             <SHeading level="3" class="mb-3">User Interface Guides</SHeading>
             <p class="flex-fill">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptatum reiciendis optio laboriosam
-              perferendis ipsam.
+              Use proven UX/UI patterns to create interfaces that are intuitive,
+              accessible, and consistent across digital experiences.
             </p>
 
             <div class="text-end">
-              <BLink href="/user-interface/">Review user interface guides</BLink>
+              <BLink href="/user-interface/"
+                >Review user interface guides</BLink
+              >
             </div>
           </BCard>
         </div>
@@ -66,14 +67,35 @@
           >
             <SHeading level="3" class="mb-3">Information Design</SHeading>
             <p class="flex-fill">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptatum reiciendis optio laboriosam
-              perferendis ipsam.
+              Structure, label, and organize content so people can find what
+              they need, understand it quickly, and take action with confidence.
             </p>
             <div class="text-end">
               <BLink href="/info-design/">Review information design</BLink>
             </div>
           </BCard>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col">
+          <SHeading level="2" class="mb-3">Not sure where to begin?</SHeading>
+          <p>
+            Start with the challenge you’re trying to solve. Explore the guides
+            for practical direction, or connect with our UX team for help
+            identifying the right approach.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col">
+          <SHeading level="2" class="mb-3">Meet the UX team</SHeading>
+          <p>
+            Our UX Design Guides help teams turn user needs into clear, useful,
+            that more teams can put user-centered design into practice.
+          </p>
+          <p>Learn about the UX team</p>
         </div>
       </div>
     </template>
@@ -96,7 +118,7 @@
     },
     data() {
       return {
-        pageTitle: "UX Design Guides",
+        pageTitle: "Welcome to UX Design Guides",
       };
     },
     methods: {},

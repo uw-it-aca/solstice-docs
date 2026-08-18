@@ -2,24 +2,12 @@
   <Layout :page-title="pageTitle">
     <template #lead>
       <p class="lead" style="max-width: 85ch">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos esse a
-        neque non voluptas blanditiis saepe, tempora laudantium necessitatibus
-        cum hic nobis libero delectus ullam alias facilis est provident. Quae.
+        The UCD process continuously aligns user needs and business goals through four stages: Understand, Create, Validate, and Iterate.
       </p>
     </template>
     <template #content>
-
       <div class="row mb-3">
         <div class="col">
-          <SHeading level="2">The Process of Creating UX</SHeading>
-          <p>
-            User Experience Design is rooted in the User-Centered Design (UCD)
-            process —Understand, Create, Validate, Iterate— a proven, repeatable
-            process for developing successful products from both end-user and
-            business perspectives. UCD is adaptable and applicable to any design
-            work, spanning software, services, process improvement, spaces, and
-            physical products.
-          </p>
           <div class="m-5 text-center">
             <img src="/images/process_viz_basic.png" class="img-fluid w-50" />
           </div>
