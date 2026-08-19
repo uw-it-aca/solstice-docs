@@ -5,7 +5,7 @@
       <BNav class="flex-column flex-md-row gap-md-5">
         <BNavItem href="/process-guides" active link-class="text-white px-0">UX Process Guides</BNavItem>
         <BNavItem href="/ui-patterns" link-class="text-white px-0">User Interface Guides</BNavItem>
-        <BNavItem href="/info-design" link-class="text-white px-0">Information Design</BNavItem>
+        <BNavItem href="/info-design" link-class="text-white px-0">Information Design Guides</BNavItem>
         <BNavItemDropdown text="General Information" toggle-class="text-white px-0">
           <BDropdownItem href="#">Action</BDropdownItem>
           <BDropdownItem href="#">Another action</BDropdownItem>
