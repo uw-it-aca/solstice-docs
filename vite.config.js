@@ -6,8 +6,7 @@ import Components from "unplugin-vue-components/vite";
 import { BootstrapVueNextResolver } from "bootstrap-vue-next";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => ({
-  base: command === "build" ? "/ux/" : "/",
+export default defineConfig({
   plugins: [
     VueRouter({}),
     Vue(),
@@ -28,4 +27,4 @@ export default defineConfig(({ command }) => ({
       },
     },
   },
-}));
+});

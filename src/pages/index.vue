@@ -65,13 +65,13 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" class="mb-3">Information Design</SHeading>
+            <SHeading level="3" class="mb-3">Information Design Guides</SHeading>
             <p class="flex-fill">
               Structure, label, and organize content so people can find what
               they need, understand it quickly, and take action with confidence.
             </p>
             <div class="text-end">
-              <BLink href="/info-design/">Review information design</BLink>
+              <BLink href="/info-design/">Review information design guides</BLink>
             </div>
           </BCard>
         </div>
