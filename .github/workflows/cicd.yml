@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    if: false  # This stops the job from running
+    if: false  # Remove this line to enable the job. Make sure secrets are set.
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
