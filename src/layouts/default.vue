@@ -3,14 +3,50 @@
     <template #navigation>
       <!-- MARL: proper BNav implementation  -->
       <BNav class="flex-column flex-md-row gap-md-5">
-        <BNavItem href="/process-guides" active link-class="text-white px-0">UX Process Guides</BNavItem>
-        <BNavItem href="/ui-patterns" link-class="text-white px-0">User Interface Guides</BNavItem>
-        <BNavItem href="/info-design" link-class="text-white px-0">Information Design Guides</BNavItem>
-        <BNavItemDropdown text="General Information" toggle-class="text-white px-0">
-          <BDropdownItem href="#">Action</BDropdownItem>
-          <BDropdownItem href="#">Another action</BDropdownItem>
+        <BNavItemDropdown
+          text="UX Process Guides"
+          toggle-class="text-white px-0"
+        >
+          <BDropdownItem href="/process-guides/understand"
+            >Understand</BDropdownItem
+          >
+          <BDropdownItem href="/process-guides/create">Create</BDropdownItem>
+          <BDropdownItem href="/process-guides/validate"
+            >Validate</BDropdownItem
+          >
+          <BDropdownItem href="/process-guides/iterate">Iterate</BDropdownItem>
+        </BNavItemDropdown>
+        <BNavItemDropdown
+          text="User Interface Guides"
+          toggle-class="text-white px-0"
+        >
+          <BDropdownItem href="/user-interface/page-types"
+            >Page Types</BDropdownItem
+          >
+          <BDropdownItem href="/user-interface/containers"
+            >Containers</BDropdownItem
+          >
+          <BDropdownItem href="/user-interface/forms">Forms</BDropdownItem>
+          <BDropdownItem href="/user-interface/labels">Labels</BDropdownItem>
+          <BDropdownItem href="/user-interface/terminology"
+            >Terminology</BDropdownItem
+          >
+          <BDropdownItem href="/user-interface/color-icons"
+            >Color &amp Icons</BDropdownItem
+          >
+        </BNavItemDropdown>
+        <BNavItem href="/info-design" link-class="text-white px-0"
+          >Information Design Guides</BNavItem
+        >
+        <BNavItemDropdown
+          text="General Information"
+          toggle-class="text-white px-0"
+        >
+          <BDropdownItem href="/what-is-ux">What is UX?</BDropdownItem>
+          <BDropdownItem href="/why-do-ux">Why invest in UX?</BDropdownItem>
+          <BDropdownItem href="/ux-team">About the UX Team</BDropdownItem>
           <BDropdownDivider />
-          <BDropdownItem href="#">Request a consultation</BDropdownItem>
+          <BDropdownItem href="/ux-help">UX Design Help</BDropdownItem>
         </BNavItemDropdown>
       </BNav>
     </template>
