@@ -125,7 +125,7 @@
     },
     data() {
       return {
-        pageTitle: "UX/UI Patterns",
+        pageTitle: "Interface Design Guides",
       };
     },
     methods: {},

@@ -45,7 +45,7 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" class="mb-3">User Interface Guides</SHeading>
+            <SHeading level="3" class="mb-3">Interface Design Guides</SHeading>
             <p class="flex-fill">
               Use proven UX/UI patterns to create interfaces that are intuitive,
               accessible, and consistent across digital experiences.

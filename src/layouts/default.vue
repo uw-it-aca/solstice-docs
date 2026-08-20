@@ -17,7 +17,7 @@
           <BDropdownItem href="/process-guides/iterate">Iterate</BDropdownItem>
         </BNavItemDropdown>
         <BNavItemDropdown
-          text="User Interface Guides"
+          text="Interface Design Guides"
           toggle-class="text-white px-0"
         >
           <BDropdownItem href="/user-interface/page-types"
