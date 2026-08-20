@@ -1,37 +1,54 @@
 <template>
-  <SSidebar :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
+  <STopbarNeo :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
     <template #navigation>
-      <NavMenu />
-    </template>
-    <template #aside>
-      <div
-        class="bg-husky-purple rounded-3 small d-flex justify-content-between align-items-center mt-2 p-3"
-      >
-        <div>
-          <p>Version</p>
-          <ul class="list-unstyled m-0">
-            <li class="mb-1">
-              <a
-                href="https://github.com/uw-it-aca/solstice-theme/releases"
-                target="_blank"
-                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
-                >solstice-theme: 1.0.7</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/uw-it-aca/solstice-vue/releases"
-                target="_blank"
-                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-75 link-underline-opacity-100-hover"
-                >solstice-vue: 1.1.5</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <SColorMode color-class="text-white" />
-        </div>
-      </div>
+      <!-- MARL: proper BNav implementation  -->
+      <BNav class="flex-column flex-md-row gap-md-5">
+        <BNavItemDropdown
+          text="UX Process Guides"
+          toggle-class="text-white px-0"
+        >
+          <BDropdownItem href="/process-guides/understand"
+            >Understand</BDropdownItem
+          >
+          <BDropdownItem href="/process-guides/create">Create</BDropdownItem>
+          <BDropdownItem href="/process-guides/validate"
+            >Validate</BDropdownItem
+          >
+          <BDropdownItem href="/process-guides/iterate">Iterate</BDropdownItem>
+        </BNavItemDropdown>
+        <BNavItemDropdown
+          text="Interface Design Guides"
+          toggle-class="text-white px-0"
+        >
+          <BDropdownItem href="/user-interface/page-types"
+            >Page Types</BDropdownItem
+          >
+          <BDropdownItem href="/user-interface/containers"
+            >Containers</BDropdownItem
+          >
+          <BDropdownItem href="/user-interface/forms">Forms</BDropdownItem>
+          <BDropdownItem href="/user-interface/labels">Labels</BDropdownItem>
+          <BDropdownItem href="/user-interface/terminology"
+            >Terminology</BDropdownItem
+          >
+          <BDropdownItem href="/user-interface/color-icons"
+            >Color &amp Icons</BDropdownItem
+          >
+        </BNavItemDropdown>
+        <BNavItem href="/info-design" link-class="text-white px-0"
+          >Information Design Guides</BNavItem
+        >
+        <BNavItemDropdown
+          text="General Information"
+          toggle-class="text-white px-0"
+        >
+          <BDropdownItem href="/what-is-ux">What is UX?</BDropdownItem>
+          <BDropdownItem href="/why-do-ux">Why invest in UX?</BDropdownItem>
+          <BDropdownItem href="/ux-team">About the UX Team</BDropdownItem>
+          <BDropdownDivider />
+          <BDropdownItem href="/ux-help">UX Design Help</BDropdownItem>
+        </BNavItemDropdown>
+      </BNav>
     </template>
     <template #main>
       <div class="row">
@@ -47,7 +64,9 @@
           </div>
 
           <div v-if="$slots.lead">
-            <h1 class="display-5 ff-encode-sans fw-semibold my-5">{{ pageTitle }}</h1>
+            <h1 class="display-5 ff-encode-sans fw-semibold my-5">
+              {{ pageTitle }}
+            </h1>
             <slot name="lead">
               <p class="lead" style="max-width: 85ch">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
@@ -75,11 +94,18 @@
       </div>
     </template>
     <template #footer></template>
-  </SSidebar>
+  </STopbarNeo>
 </template>
 
 <script>
-  import { SColorMode, SSidebar, SHeading, SUser } from "solstice-vue";
+  import {
+    BNav,
+    BNavItem,
+    BNavItemDropdown,
+    BDropdownItem,
+    BDropdownDivider,
+  } from "bootstrap-vue-next";
+  import { SColorMode, STopbarNeo, SHeading, SUser } from "solstice-vue";
   import NavMenu from "@/components/NavMenu.vue";
 
   export default {
@@ -87,9 +113,14 @@
     components: {
       NavMenu,
       SColorMode,
-      SSidebar,
+      STopbarNeo,
       SHeading,
       SUser,
+      BNav,
+      BNavItem,
+      BNavItemDropdown,
+      BDropdownItem,
+      BDropdownDivider,
     },
     inject: ["mq"],
     props: {

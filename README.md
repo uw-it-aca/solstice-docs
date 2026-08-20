@@ -1,117 +1,56 @@
 [![Coverage Status](https://coveralls.io/repos/github/uw-it-aca/solstice-docs/badge.svg?branch=develop)](https://coveralls.io/github/uw-it-aca/solstice-docs?branch=develop)
 
-# solstice-docs
+# uxdesign-guides
 
 Solstice Design System
 
-## Requirements
-
-Install or update the following applications:
-
-- [VS Code](https://code.visualstudio.com/)
-- [Node.js (LTS)](https://nodejs.org/en)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-
-## Initial Setup
-
-Skip this step if you have already performed the Setup steps previously.
-
-Clone this repository.
-
-```sh
-git clone git@github.com:uw-it-aca/solstice-docs.git
-```
-
-Change into the working directory.
-
-```sh
-cd solstice-docs
-```
-
-Checkout the develop branch.
-
-```sh
-git checkout develop
-```
-
-And do a pull
-
-```sh
-git pull
-```
-
-Copy the sample environment file.
-
-```sh
-cp .env.sample .env
-```
-
-If nothing happens, it's been done correctly. The default port is :8000; if you want to use that port, you don't need to change anything.
-
-To change the port, edit the .env file in your editor of choice.
-
 ## Development
 
-Perform these steps to begin working on your development branch.
-
-Change into the working directory.
-
-```sh
-cd solstice-docs
+```bash
+npm install
+npm run dev
 ```
 
-Checkout the develop branch.
+## Deployment
 
-```sh
-git checkout develop
+Pushes to `main` trigger GitHub Actions, which build with Vite and deploy to `depts.washington.edu/ux/` via SCP.
+
+### SSH Key Setup (one-time)
+
+**Generate a deploy key on your local machine (no passphrase):**
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_deploy -N ""
 ```
 
-OR... checkout a specific branch.
+**Copy the public key to the remote server:**
 
-```sh
-git checkout <branch-name>
+```bash
+ssh-copy-id -i ~/.ssh/id_ed25519_deploy.pub ux@ovid.u.washington.edu
 ```
 
-Update the branch.
+**Add to GitHub Secrets** (repo → Settings → Secrets and variables → Actions):
 
-```sh
-git pull
+| Secret           | Value                                      |
+| ---------------- | ------------------------------------------ |
+| `SSH_HOST`       | `ovid.u.washington.edu`                    |
+| `SSH_USER`       | `ux`                                  |
+| `SSH_PRIVATE_KEY`| Output of `cat ~/.ssh/id_ed25519_deploy`   |
+
+**Verify locally:**
+
+```bash
+ssh -T ux@ovid.u.washington.edu
 ```
 
-Start your development server using Docker Compose.
+Should connect without a password prompt.
 
-```sh
-docker compose up
-```
+### Remote Server
 
-View your development build in a browser.
+- Web root: `/rc00/d87/ux` (symlinked from `~/public_html`)
+- Site URL: https://depts.washington.edu/ux/
+- Vanity URL: https://uxdesign.uw.edu/
 
-```sh
-http://localhost:8000
-```
+### Vite Base Path
 
-## Utilities
-
-This following utilities can be run from inside the Docker container. This can be done by opening a container
-shell and running the following commands:
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test
-```
-
-### Run Unit Tests with Coverage report
-
-```sh
-npm run coverage
-```
-
-### Lint and Format with [Oxc](https://oxc.rs/)
-
-```sh
-npm run oxlint
-npm run oxfmt
-```
-
-Hi
+The `base` option in `vite.config.js` must match the subpath on the server (`/ux/`).
