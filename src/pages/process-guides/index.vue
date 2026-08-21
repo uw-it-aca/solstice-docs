@@ -2,7 +2,8 @@
   <Layout :page-title="pageTitle">
     <template #lead>
       <p class="lead" style="max-width: 85ch">
-        The UCD process continuously aligns user needs and business goals through four stages: Understand, Create, Validate, and Iterate.
+        The UCD process continuously aligns user needs and business goals
+        through four stages: Understand, Create, Validate, and Iterate.
       </p>
     </template>
     <template #content>
@@ -17,13 +18,14 @@
             exclusive.
           </p>
 
-          <div class="border p-2">
+          <PageCallout>
             Keep in mind that any process requires thoughtful, deliberate
             application. This guide will help you understand the purpose and
             end-goal of each step, but is no single "right" achieve these goals.
             The guides cannot be followed blindly; remain vigilant. We try to
             call out the pitfalls at each step to help you along.
-          </div>
+          </PageCallout>
+
         </div>
       </div>
       <div class="row mb-3">
@@ -80,6 +82,7 @@
 
 <script>
   import Layout from "@/layouts/default.vue";
+  import PageCallout from "@/components/PageCallout.vue";
   import { BCard, BLink } from "bootstrap-vue-next";
   import { SHeading } from "solstice-vue";
 
@@ -87,6 +90,7 @@
     name: "DocsIndex",
     components: {
       Layout,
+      PageCallout,
       BCard,
       BLink,
       SHeading,

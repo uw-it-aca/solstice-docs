@@ -147,13 +147,13 @@
               </ol>
             </li>
           </ol>
-          <p class="callout">
+          <PageCallout>
             If you are not confident in your assumptions,
             <a href="validate.html" title="How to Validate Your UX"
               >validate them</a
             >
             with your audiences.
-          </p>
+          </PageCallout>
 
           <ol start="2">
             <li>
@@ -227,7 +227,7 @@
             </li>
           </ol>
 
-          <div class="callout">
+          <PageCallout>
             <p>
               If you are not confident in your solutions at any point,
               <a href="validate.html" title="How to Validate Your UX"
@@ -254,7 +254,7 @@
                 the information layout supports them through their workflows.
               </li>
             </ul>
-          </div>
+          </PageCallout>
 
           <ol start="3">
             <li>
@@ -280,13 +280,13 @@
             </li>
           </ol>
 
-          <p class="callout">
+          <PageCallout>
             If you are not confident in your solutions,
             <a href="validate.html" title="How to Validate Your UX"
               >validate them</a
             >
             with your audiences, preferably with an interactive product.
-          </p>
+          </PageCallout>
 
           <ol start="4">
             <li>
@@ -315,7 +315,7 @@
             </li>
           </ol>
 
-          <div class="callout">
+          <PageCallout>
             <p>
               This is a good time to fully
               <a href="validate.html" title="How to Validate Your UX"
@@ -331,7 +331,7 @@
                 workflows.
               </li>
             </ul>
-          </div>
+          </PageCallout>
 
           <ol start="5">
             <li>
@@ -366,7 +366,7 @@
             </li>
           </ol>
 
-          <div class="callout">
+          <PageCallout>
             <p>
               This is a good time to fully
               <a href="validate.html" title="How to Validate Your UX"
@@ -374,7 +374,7 @@
               >
               the out-of-box experience of your product prior to release.
             </p>
-          </div>
+          </PageCallout>
         </div>
 
         <SHeading level="2">Common Pitfalls</SHeading>
@@ -525,6 +525,7 @@
 
 <script>
   import Layout from "@/layouts/default.vue";
+  import PageCallout from "@/components/PageCallout.vue";
   import { BCard, BLink } from "bootstrap-vue-next";
   import { SHeading } from "solstice-vue";
 
@@ -532,6 +533,7 @@
     name: "DocsIndex",
     components: {
       Layout,
+      PageCallout,
       BCard,
       BLink,
       SHeading,

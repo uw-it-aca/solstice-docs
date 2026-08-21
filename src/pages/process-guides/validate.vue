@@ -17,7 +17,7 @@
     <template #content>
       <div class="row mb-3">
         <div class="col">
-          <p class="callout">
+          <PageCallout>
             While for simplicity we focus this page on product-level validation,
             validation actually happens at two levels. One level is the
             validation of the overall product and the second level concerns the
@@ -25,7 +25,7 @@
             are making as you design the product. At either level, the same
             general process &#8212;as described in our recommended approach
             (below)&#8212; is applicable.
-          </p>
+          </PageCallout>
           <p>
             At this point, you have solutions that will hypothetically help your
             users achieve their goals. Now, it is time to answer some critical
@@ -560,6 +560,7 @@
 
 <script>
   import Layout from "@/layouts/default.vue";
+  import PageCallout from "@/components/PageCallout.vue";
   import { BCard, BLink, BBreadcrumb } from "bootstrap-vue-next";
   import { SHeading } from "solstice-vue";
 
@@ -567,6 +568,7 @@
     name: "DocsIndex",
     components: {
       Layout,
+      PageCallout,
       BCard,
       BBreadcrumb,
       BLink,

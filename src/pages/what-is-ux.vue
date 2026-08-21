@@ -28,7 +28,7 @@
             development efforts.
           </p>
 
-          <p class="callout">
+          <PageCallout>
             “User experience is about more than just ease of use, of course. It
             is about motivations, attitudes, expectations, behavioral patterns,
             and constraints. It is about the types of interactions people have,
@@ -36,7 +36,7 @@
             take. User experience also comprehends more than just the few
             moments of a single site visit or one-time use of an application; it
             is about the cross-channel user journey, too.” - UX Matters
-          </p>
+          </PageCallout>
 
           <p>
             Ultimately, UX Design encapsulates a holistic view of users' entire
@@ -67,6 +67,7 @@
 
 <script>
   import Layout from "@/layouts/default.vue";
+  import PageCallout from "@/components/PageCallout.vue";
   import { BCard, BLink } from "bootstrap-vue-next";
   import { SHeading } from "solstice-vue";
 
@@ -74,6 +75,7 @@
     name: "DocsIndex",
     components: {
       Layout,
+      PageCallout,
       BCard,
       BLink,
       SHeading,

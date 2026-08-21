@@ -158,7 +158,7 @@
                       perceive an experience after using it.
                     </li>
                   </ul>
-                  <p class="callout">
+                  <PageCallout>
                     You don’t have to determine at this time how to gather the
                     metrics, but it is important to know at this stage what will
                     determine whether the product or service was successful,
@@ -166,7 +166,7 @@
                     that, however, consider if there are existing metrics, or
                     combination of metrics, in your organization that are a good
                     indicator of success.
-                  </p>
+                  </PageCallout>
                 </li>
               </ul>
             </li>
@@ -184,13 +184,13 @@
               </ul>
             </li>
           </ol>
-          <p class="callout">
+          <PageCallout>
             At every step, you want to document open questions, assumptions
             (need validation? when?), and facts. There is nothing inherently
             wrong with moving forward with unverified assumptions. It is simply
             a risk that you want to know about and the team can decide how to
             proceed.
-          </p>
+          </PageCallout>
 
           <SHeading level="2">Common Pitfalls</SHeading>
 
@@ -370,14 +370,14 @@
               >
             </li>
           </ul>
-          <p class="callout">
+          <PageCallout>
             We would emphasize that the user stories should be written around
             broad user goals, rather than about functionality or micro-goals
             that wouldn't leave a user satisfied. (i.e. for a grading app, we
             had a story around "As an instructor, I want to be confident that I
             have successfully submitted my grades to the Registrar.", rather
             than "As an instructor, I need to enter grades into the system.")
-          </p>
+          </PageCallout>
           <SHeading level="3">Working with Stakeholders</SHeading>
           <ul>
             <li>
@@ -396,6 +396,7 @@
 
 <script>
   import Layout from "@/layouts/default.vue";
+  import PageCallout from "@/components/PageCallout.vue";
   import { BCard, BLink } from "bootstrap-vue-next";
   import { SHeading } from "solstice-vue";
 
@@ -403,6 +404,7 @@
     name: "DocsIndex",
     components: {
       Layout,
+      PageCallout,
       BCard,
       BLink,
       SHeading,
