@@ -75,7 +75,7 @@
 </template>
 
 <script>
-  import Layout from "@/layouts/default.vue";
+  import Layout from "@/layouts/solstice.vue";
   import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
   export default {
