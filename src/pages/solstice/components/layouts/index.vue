@@ -2,7 +2,7 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -19,7 +19,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Topbar"
-            link="/components/layouts/topbar"
+            link="/solstice/components/layouts/topbar"
             :accessibility="true"
             version="1.0.5"
             >Topbar is takes heavy influence from MyUW's currently layout. It
@@ -30,7 +30,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Sidebar"
-            link="/components/layouts/sidebar"
+            link="/solstice/components/layouts/sidebar"
             :accessibility="true"
             version="1.0.5"
             >Sidebar is a side navigtion based layout intended to support

@@ -4,7 +4,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="/getting-started/">Getting Started</a>
+            <a href="/solstice/getting-started/">Getting Started</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
@@ -15,16 +15,19 @@
     <template #lead> Colors and components! </template>
 
     <template #content>
+
+    <h2 class="fw-bold">Sandbox</h2>
+    <ul>
+      <li>
+        <RouterLink to="/solstice/sandbox/topbar">Topbar</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/solstice/sandbox/sidebar">Sidebar</RouterLink>
+      </li>
+    </ul>
+
       <h2 class="fw-bold">Foundations</h2>
-      <h3>Layout</h3>
-      <ul>
-        <li>
-          <RouterLink to="/patterns/boilerplate/topbar">Topbar</RouterLink>
-        </li>
-        <li>
-          <RouterLink to="/patterns/boilerplate/sidebar">Sidebar</RouterLink>
-        </li>
-      </ul>
+
       <h3>Color</h3>
 
       <h4>Brand Swatches</h4>

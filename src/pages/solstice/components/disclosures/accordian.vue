@@ -2,8 +2,8 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/components/disclosures"
+        <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components/disclosures"
           >Disclosures</BBreadcrumbItem
         >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>

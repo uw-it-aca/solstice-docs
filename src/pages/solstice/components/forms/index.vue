@@ -2,7 +2,7 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -19,7 +19,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Input"
-            link="/components/forms/input"
+            link="/solstice/components/forms/input"
             :accessibility="true"
             version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur
@@ -29,7 +29,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Validation"
-            link="/components/forms/validation"
+            link="/solstice/components/forms/validation"
             :accessibility="true"
             version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur

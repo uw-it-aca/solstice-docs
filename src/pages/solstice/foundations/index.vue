@@ -14,7 +14,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Color'"
-            :link="'/foundations/color'"
+            :link="'/solstice/foundations/color'"
             class="bg-light"
             >The layout is a critical foundation of our design system. It
             provides the structure for our visual components and overall user
@@ -24,7 +24,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Typography'"
-            :link="'/foundations/typography'"
+            :link="'/solstice/foundations/typography'"
             class="bg-light"
             >sdfgsdgsd</DescriptionBlock
           >
@@ -32,7 +32,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Layout'"
-            :link="'/foundations/layout'"
+            :link="'/solstice/foundations/layout'"
             class="bg-light"
             >sdfgsdgsd</DescriptionBlock
           >
@@ -40,7 +40,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Icons'"
-            :link="'/foundations/icons'"
+            :link="'/solstice/foundations/icons'"
             class="bg-light"
             >sdfgsdgsd</DescriptionBlock
           >

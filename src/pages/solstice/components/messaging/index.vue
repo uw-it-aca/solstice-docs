@@ -2,7 +2,7 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -20,7 +20,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Alert"
-            link="/components/messaging/alert"
+            link="/solstice/components/messaging/alert"
             :accessibility="true"
             version="1.0.x"
           ></DescriptionBlock>
@@ -28,7 +28,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Toast"
-            link="/components/messaging/toast"
+            link="/solstice/components/messaging/toast"
             :accessibility="true"
             version="1.0.x"
           ></DescriptionBlock>
@@ -36,7 +36,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Banner"
-            link="/components/messaging/banner"
+            link="/solstice/components/messaging/banner"
             :accessibility="true"
             version="1.0.x"
           ></DescriptionBlock>
@@ -44,7 +44,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Badge"
-            link="/components/messaging/badge"
+            link="/solstice/components/messaging/badge"
             :accessibility="true"
             version="1.0.x"
             >aksdfjaasdf aka lightbox</DescriptionBlock

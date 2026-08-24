@@ -1,5 +1,5 @@
 <template>
-  <SSidebar :app-name="appName" :app-root-url="'/'" :page-title="pageTitle">
+  <SSidebar :app-name="'Solstice'" :app-root-url="'/'" :page-title="pageTitle">
     <template #navigation>
       <NavMenu />
     </template>
@@ -109,7 +109,7 @@
     mounted: function () {
       // MARK: constructs page title in the following format "Page Title - AppName"
       // as a default layout prop
-      document.title = `${this.pageTitle} - ${this.appName}`;
+      document.title = `${this.pageTitle} - Solstice`;
       //this.lastModified = new Date(document.lastModified).toLocaleString();
     },
   };

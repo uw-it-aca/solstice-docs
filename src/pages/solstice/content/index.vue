@@ -11,7 +11,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Voice &amp; Tone'"
-            :link="'/content/voice-tone'"
+            :link="'/solstice/content/voice-tone'"
             class="bg-light"
           >
             The layout is a critical foundation of our design system. It
@@ -22,7 +22,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Grammar &amp; Mechangics'"
-            :link="'/content/grammar-mechanics'"
+            :link="'/solstice/content/grammar-mechanics'"
             class="bg-light"
           >
             sdfgsdgsd
@@ -31,7 +31,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Language &amp; Inclusivity'"
-            :link="'/content/language-inclusivity'"
+            :link="'/solstice/content/language-inclusivity'"
             class="bg-light"
           >
             sdfgsdgsd
@@ -40,7 +40,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Terminology'"
-            :link="'/content/terminology'"
+            :link="'solstice/content/terminology'"
             class="bg-light"
           >
             sdfgsdgsd
@@ -49,7 +49,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Labels'"
-            :link="'/content/labels'"
+            :link="'/solstice/content/labels'"
             class="bg-light"
           >
             sdfgsdgsd
@@ -58,7 +58,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Writing for Errors'"
-            :link="'/content/writing-errors'"
+            :link="'/solstice/content/writing-errors'"
             class="bg-light"
           >
             sdfgsdgsd

@@ -2,7 +2,7 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -19,23 +19,23 @@
         <li class="col-4">
           <DescriptionBlock
             name="Profile"
-            link="/components/utilities/profile"
+            link="/solstice/components/utilities/profile"
           ></DescriptionBlock>
         </li>
         <li class="col-4">
           <DescriptionBlock
             name="User"
-            link="/components/utilities/user"
+            link="/solstice/components/utilities/user"
           ></DescriptionBlock>
         </li>
         <li class="col-4">
           <DescriptionBlock
             name="Color Mode"
-            link="/components/utilities/color-mode"
+            link="/solstice/components/utilities/color-mode"
           ></DescriptionBlock>
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Chatbot" link="/components/utilities/chatbot"
+          <DescriptionBlock name="Chatbot" link="/solstice/components/utilities/chatbot"
             >Component documentation</DescriptionBlock
           >
         </li>

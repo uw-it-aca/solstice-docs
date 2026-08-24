@@ -2,7 +2,7 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -19,7 +19,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Collapse"
-            link="/components/disclosures/collapse"
+            link="/solstice/components/disclosures/collapse"
             :accessibility="true"
             version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur
@@ -29,7 +29,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Accordian"
-            link="/components/disclosures/accordian"
+            link="/solstice/components/disclosures/accordian"
             :accessibility="true"
             version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur
@@ -39,7 +39,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Modal"
-            link="/components/disclosures/modal"
+            link="/solstice/components/disclosures/modal"
             :accessibility="true"
             version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur
@@ -49,7 +49,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Offcanvas"
-            link="/components/disclosures/offcanvas"
+            link="/solstice/components/disclosures/offcanvas"
             :accessibility="true"
             version="1.0.x"
             >Component description... Lorem ipsum dolor sit amet, consectetur

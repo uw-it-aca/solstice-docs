@@ -2,8 +2,8 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/elements">Elements</BBreadcrumbItem>
-        <BBreadcrumbItem to="/elements/forms">Forms</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/elements">Elements</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/elements/forms">Forms</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>

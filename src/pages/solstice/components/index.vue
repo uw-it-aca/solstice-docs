@@ -10,61 +10,61 @@
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
-          <DescriptionBlock name="Action" link="/components/action"
+          <DescriptionBlock name="Actions" link="/solstice/components/actions"
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Text" link="/components/text"
+          <DescriptionBlock name="Text" link="/solstice/components/text"
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Form" link="/components/form"
+          <DescriptionBlock name="Forms" link="/solstice/components/forms"
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Surface" link="/components/surface"
+          <DescriptionBlock name="Surfaces" link="/solstice/components/surfaces"
             >aka content containers</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Layout" link="/components/layout"
+          <DescriptionBlock name="Layouts" link="/solstice/components/layouts"
             >The boilerplate is a critical layout foundation of our design
             system. It provides the structure for our visual components and
             overall user interface.</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Navigation" link="/components/navigation"
+          <DescriptionBlock name="Navigation" link="/solstice/components/navigation"
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Messaging" link="/components/messaging"
+          <DescriptionBlock name="Messaging" link="/solstice/components/messaging"
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Disclosure" link="/components/disclosure"
+          <DescriptionBlock name="Disclosures" link="/solstice/components/disclosures"
             >Interface changes (or progressively disclosed) based on a user
             action.</DescriptionBlock
           >
         </li>
 
         <li class="col-4">
-          <DescriptionBlock name="Search" link="/components/search"
+          <DescriptionBlock name="Search" link="/solstice/components/search"
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Utility" link="/components/utility"
+          <DescriptionBlock name="Utilities" link="/solstice/components/utilities"
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Data" link="/components/data"
+          <DescriptionBlock name="Data Display" link="/solstice/components/data"
             >sdfgsdgsd</DescriptionBlock
           >
         </li>

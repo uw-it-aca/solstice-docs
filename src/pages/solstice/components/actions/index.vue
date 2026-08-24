@@ -2,7 +2,7 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -17,12 +17,12 @@
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
-          <DescriptionBlock name="Button" link="/components/actions/button"
+          <DescriptionBlock name="Button" link="/solstice/components/actions/button"
             >Component documentation</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Link" link="/components/actions/link"
+          <DescriptionBlock name="Link" link="/solstice/components/actions/link"
             >Component documentation</DescriptionBlock
           >
         </li>

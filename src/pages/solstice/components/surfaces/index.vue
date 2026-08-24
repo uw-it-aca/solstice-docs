@@ -2,7 +2,7 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -19,7 +19,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Card"
-            link="/components/surfaces/card"
+            link="/solstice/components/surfaces/card"
             :accessibility="true"
             version="1.0.5"
             >Cards have a raised profile and has shadow. Meant to visually
@@ -29,7 +29,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Tile"
-            link="/components/surfaces/tile"
+            link="/solstice/components/surfaces/tile"
             :accessibility="true"
             version="1.1.0"
             >Tiles remain on the flat surface of the page. Bounding container

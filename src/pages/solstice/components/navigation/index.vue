@@ -2,7 +2,7 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -19,7 +19,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Tabs"
-            link="/components/navigation/tabs"
+            link="/solstice/components/navigation/tabs"
             :accessibility="true"
             version="1.0.5"
           ></DescriptionBlock>
@@ -27,7 +27,7 @@
         <li class="col-4">
           <DescriptionBlock
             name="Menu"
-            link="/components/navigation/menu"
+            link="/solstice/components/navigation/menu"
             :accessibility="true"
             version="1.0.7"
           ></DescriptionBlock>

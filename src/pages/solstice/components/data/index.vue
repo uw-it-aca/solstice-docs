@@ -2,7 +2,7 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -17,12 +17,12 @@
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
-          <DescriptionBlock name="Table" link="/components/data/table"
+          <DescriptionBlock name="Table" link="/solstice/components/data/table"
             >Component documentation</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Chart" link="/components/data/chart"
+          <DescriptionBlock name="Chart" link="/solstice/components/data/chart"
             >Component documentation</DescriptionBlock
           >
         </li>
@@ -42,7 +42,7 @@
     components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
-        pageTitle: "Data Layout" /* TODO: asdlkfjasf */,
+        pageTitle: "Data Display" /* TODO: asdlkfjasf */,
       };
     },
   };

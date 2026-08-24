@@ -2,7 +2,7 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/components">Components</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -17,17 +17,17 @@
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
-          <DescriptionBlock name="Filter" link="/components/search/filter"
+          <DescriptionBlock name="Filter" link="/s/components/search/filter"
             >Component documentation</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Input" link="/components/search/input"
+          <DescriptionBlock name="Input" link="/solstice/components/search/input"
             >Component documentation</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Modal" link="/components/search/modal"
+          <DescriptionBlock name="Modal" link="/solstice/components/search/modal"
             >Component documentation</DescriptionBlock
           >
         </li>

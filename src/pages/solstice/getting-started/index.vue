@@ -10,7 +10,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Solstice 101'"
-            :link="'/getting-started/solstice-101'"
+            :link="'/solstice/getting-started/solstice-101'"
             class="bg-light"
             >The layout is a critical foundation of our design system. It
             provides the structure for our visual components and overall user
@@ -20,7 +20,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Design Principles'"
-            :link="'/getting-started/design-principles'"
+            :link="'/solstice/getting-started/design-principles'"
             class="bg-light"
             >sdfgsdgsd</DescriptionBlock
           >
@@ -28,7 +28,7 @@
         <li class="col-4">
           <DescriptionBlock
             :name="'Developer Guide'"
-            :link="'/getting-started/developer-guide'"
+            :link="'/solstice/getting-started/developer-guide'"
             class="bg-light"
             >sdfgsdgsd</DescriptionBlock
           >
