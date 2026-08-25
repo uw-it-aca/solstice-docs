@@ -2,9 +2,9 @@
   <Layout :page-title="pageTitle">
     <template #lead>
       <p class="lead" style="max-width: 85ch">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos esse a
-        neque non voluptas blanditiis saepe, tempora laudantium necessitatibus
-        cum hic nobis libero delectus ullam alias facilis est provident. Quae.
+        Connect with the UW community for professional guidance on design
+        decisions, accessibility accommodations, and branding—through our
+        community of practice, accessibility reviews, and branding resources.
       </p>
     </template>
     <template #content>
