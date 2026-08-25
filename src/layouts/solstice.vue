@@ -1,5 +1,5 @@
 <template>
-  <SSidebar :app-name="'Solstice'" :app-root-url="'/'" :page-title="pageTitle">
+  <SSidebar :app-name="'Solstice'" :app-root-url="'/solstice'" :page-title="pageTitle">
     <template #navigation>
       <NavMenu />
     </template>

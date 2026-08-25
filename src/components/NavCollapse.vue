@@ -44,11 +44,12 @@
         type: String,
         required: false,
       },
-      // Optional explicit list of route paths (or path prefixes) that should
-      // keep this menu expanded. Use this when a menu's child routes do not
-      // contain its slug (e.g. "Getting Started" whose pages live under
-      // /solstice/... rather than /getting-started/...). When omitted, the
-      // menu expands whenever the current route path contains "/<slug>".
+      // Optional explicit list of route paths that should keep this menu
+      // expanded. Matching is exact (path must equal an entry). Use this when
+      // a menu's child routes do not contain its slug (e.g. "Getting Started"
+      // whose pages live under /solstice/... rather than /getting-started/...).
+      // When omitted, the menu expands whenever the current route path
+      // contains "/<slug>".
       match: {
         type: Array,
         required: false,
@@ -67,7 +68,9 @@
       routeMatches() {
         const path = this.$route.path;
         if (this.match && this.match.length) {
-          return this.match.some((m) => path === m || path.startsWith(m + "/"));
+          // Exact path matches only, so a broad entry like "/solstice" does
+          // not also expand deeper sections such as "/solstice/content/...".
+          return this.match.includes(path);
         }
         return path.includes("/" + this.slug);
       },

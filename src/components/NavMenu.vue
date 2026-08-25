@@ -6,6 +6,7 @@
         slug="getting-started"
         icon="bi-flag"
         :match="[
+          '/solstice',
           '/solstice/solstice-101',
           '/solstice/design-principles',
           '/solstice/developer-guide',

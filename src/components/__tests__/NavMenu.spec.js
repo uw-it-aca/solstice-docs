@@ -195,4 +195,36 @@ describe("NavMenu", () => {
       ).toBe("false");
     }
   });
+
+  it("expands only the Getting Started menu on the /solstice index page", () => {
+    const wrapper = mount(NavMenu, {
+      global: {
+        plugins: [createBootstrap()],
+        mocks: { $route: { path: "/solstice" } },
+      },
+    });
+    expect(
+      wrapper.find("#getting-startedHeading").attributes("aria-expanded"),
+    ).toBe("true");
+    for (const id of ["content", "foundations", "components"]) {
+      expect(
+        wrapper.find("#" + id + "Heading").attributes("aria-expanded"),
+      ).toBe("false");
+    }
+  });
+
+  it("does not expand Getting Started on deeper /solstice sub-section pages", () => {
+    const wrapper = mount(NavMenu, {
+      global: {
+        plugins: [createBootstrap()],
+        mocks: { $route: { path: "/solstice/content/voice-tone" } },
+      },
+    });
+    expect(
+      wrapper.find("#getting-startedHeading").attributes("aria-expanded"),
+    ).toBe("false");
+    expect(wrapper.find("#contentHeading").attributes("aria-expanded")).toBe(
+      "true",
+    );
+  });
 });
