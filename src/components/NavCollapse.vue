@@ -1,13 +1,12 @@
 <template>
-  <BLink
+  <button
     :id="slug + 'Heading'"
-    class="d-flex justify-content-between nav-link rounded-3 chevron bg-white-hover bg-opacity-10-hover text-white"
-    exact-active-class="bg-white bg-opacity-10"
-    :to="'/' + slug"
-    data-bs-toggle="collapse"
-    :data-bs-target="'#' + slug + 'Collapse'"
-    :aria-expanded="$route.path.includes('/' + slug) ? true : false"
-    aria-controls="foundationsCollapse"
+    type="button"
+    class="d-flex justify-content-between align-items-center w-100 border-0 bg-transparent nav-link rounded-3 chevron bg-white-hover bg-opacity-10-hover text-white"
+    :class="{ 'bg-white bg-opacity-10': isExpanded }"
+    :aria-expanded="isExpanded"
+    :aria-controls="slug + 'Collapse'"
+    @click="toggle"
   >
     <span
       ><i
@@ -18,11 +17,11 @@
       >{{ menu }}</span
     >
     <i class="bi bi-chevron-down" aria-hidden="true"></i>
-  </BLink>
+  </button>
   <div
     :id="slug + 'Collapse'"
     class="collapse"
-    :class="$route.path.includes('/' + slug) ? 'show' : ''"
+    :class="{ show: isExpanded }"
     :aria-labelledby="slug + 'Heading'"
   >
     <slot></slot>
@@ -30,13 +29,8 @@
 </template>
 
 <script>
-  import { BLink } from "bootstrap-vue-next";
-
   export default {
     name: "NavCollapse",
-    components: {
-      BLink,
-    },
     props: {
       menu: {
         type: String,
@@ -50,11 +44,48 @@
         type: String,
         required: false,
       },
+      // Optional explicit list of route paths (or path prefixes) that should
+      // keep this menu expanded. Use this when a menu's child routes do not
+      // contain its slug (e.g. "Getting Started" whose pages live under
+      // /solstice/... rather than /getting-started/...). When omitted, the
+      // menu expands whenever the current route path contains "/<slug>".
+      match: {
+        type: Array,
+        required: false,
+        default: null,
+      },
     },
     data() {
-      return {};
+      return {
+        // Manual open/closed override set by clicking the trigger. Null means
+        // "follow the route". Reset to null on navigation so the active
+        // section auto-expands.
+        userToggled: null,
+      };
     },
-    methods: {},
+    computed: {
+      routeMatches() {
+        const path = this.$route.path;
+        if (this.match && this.match.length) {
+          return this.match.some((m) => path === m || path.startsWith(m + "/"));
+        }
+        return path.includes("/" + this.slug);
+      },
+      isExpanded() {
+        return this.userToggled === null ? this.routeMatches : this.userToggled;
+      },
+    },
+    watch: {
+      "$route.path"() {
+        // A navigation happened; defer to route-based expansion again.
+        this.userToggled = null;
+      },
+    },
+    methods: {
+      toggle() {
+        this.userToggled = !this.isExpanded;
+      },
+    },
   };
 </script>
 

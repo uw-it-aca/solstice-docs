@@ -4,10 +4,8 @@
     class="d-flex justify-content-between nav-link rounded-3 chevron bg-white-hover bg-opacity-10-hover text-white"
     exact-active-class="bg-white bg-opacity-10"
     :to="'/' + slug"
-    data-bs-toggle="collapse"
-    :data-bs-target="'#' + slug + 'Collapse'"
-    :aria-expanded="$route.path.includes('/' + slug) ? true : false"
-    aria-controls="foundationsCollapse"
+    :aria-expanded="isExpanded"
+    :aria-controls="slug + 'Collapse'"
   >
     <span class="small fw-medium" style="padding-left: 32px"
       ><i
@@ -22,7 +20,7 @@
   <div
     :id="slug + 'Collapse'"
     class="collapse"
-    :class="$route.path.includes('/' + slug) ? 'show' : ''"
+    :class="{ show: isExpanded }"
     :aria-labelledby="slug + 'Heading'"
   >
     <slot></slot>
@@ -53,6 +51,11 @@
     },
     data() {
       return {};
+    },
+    computed: {
+      isExpanded() {
+        return this.$route.path.includes("/" + this.slug);
+      },
     },
     methods: {},
   };

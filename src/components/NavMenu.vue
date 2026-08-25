@@ -1,7 +1,16 @@
 <template>
   <ul class="nav flex-column mb-5">
     <li class="nav-item position-relative mb-1">
-      <NavCollapse menu="Getting Started" slug="getting-started" icon="bi-flag">
+      <NavCollapse
+        menu="Getting Started"
+        slug="getting-started"
+        icon="bi-flag"
+        :match="[
+          '/solstice/solstice-101',
+          '/solstice/design-principles',
+          '/solstice/developer-guide',
+        ]"
+      >
         <ul class="nav flex-column small mt-1">
           <li class="nav-item mb-1">
             <BLink

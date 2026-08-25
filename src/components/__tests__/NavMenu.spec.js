@@ -20,13 +20,36 @@ describe("NavMenu", () => {
     expect(wrapper.text()).toContain("Getting Started");
   });
 
-  it("expands the getting started menu when the route contains 'getting-started'", () => {
+  it("renders top-level triggers as non-navigating buttons", () => {
+    const heading = wrapper.find("#getting-startedHeading");
+    expect(heading.element.tagName).toBe("BUTTON");
+    // A button has no href / router-link destination.
+    expect(heading.attributes("href")).toBeUndefined();
+    expect(heading.attributes("to")).toBeUndefined();
+  });
+
+  it("toggles a collapsed menu open when its trigger is clicked", async () => {
+    const wrapper = mount(NavMenu, {
+      global: {
+        plugins: [createBootstrap()],
+        mocks: { $route: { path: "/" } },
+      },
+    });
+    const heading = wrapper.find("#contentHeading");
+    expect(heading.attributes("aria-expanded")).toBe("false");
+    await heading.trigger("click");
+    expect(heading.attributes("aria-expanded")).toBe("true");
+    await heading.trigger("click");
+    expect(heading.attributes("aria-expanded")).toBe("false");
+  });
+
+  it("expands the getting started menu when on a /solstice root-level page", () => {
     const wrapper = mount(NavMenu, {
       global: {
         plugins: [createBootstrap()],
         mocks: {
           $route: {
-            path: "/getting-started",
+            path: "/solstice/solstice-101",
           },
         },
       },
@@ -36,7 +59,7 @@ describe("NavMenu", () => {
     expect(gettingStartedMenu.attributes("aria-expanded")).toBe("true");
   });
 
-  it("does not expand the getting started menu when the route does not contain 'getting-started'", () => {
+  it("does not expand the getting started menu when the route does not match its pages", () => {
     const wrapper = mount(NavMenu, {
       global: {
         plugins: [createBootstrap()],
@@ -146,5 +169,30 @@ describe("NavMenu", () => {
     // Assert the rendered text of the component
     const contentMenu = wrapper.find("#componentsHeading");
     expect(contentMenu.attributes("aria-expanded")).toBe("false");
+  });
+
+  it("keeps content, foundations, and components menus collapsed on /solstice root-level pages", () => {
+    const rootPages = [
+      "/solstice/solstice-101",
+      "/solstice/design-principles",
+      "/solstice/developer-guide",
+    ];
+    for (const path of rootPages) {
+      const wrapper = mount(NavMenu, {
+        global: {
+          plugins: [createBootstrap()],
+          mocks: { $route: { path } },
+        },
+      });
+      expect(wrapper.find("#contentHeading").attributes("aria-expanded")).toBe(
+        "false",
+      );
+      expect(
+        wrapper.find("#foundationsHeading").attributes("aria-expanded"),
+      ).toBe("false");
+      expect(
+        wrapper.find("#componentsHeading").attributes("aria-expanded"),
+      ).toBe("false");
+    }
   });
 });
