@@ -4,7 +4,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="/solstice/getting-started/">Getting Started</a>
+            <a href="/solstice">Getting Started</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}

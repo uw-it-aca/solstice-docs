@@ -7,7 +7,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/solstice/getting-started/solstice-101"
+              to="/solstice/solstice-101"
             >
               Solstice 101
             </BLink>
@@ -16,7 +16,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/solstice/getting-started/design-principles"
+              to="/solstice/design-principles"
             >
               Design Principles
             </BLink>
@@ -25,7 +25,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/solstice/getting-started/developer-guide"
+              to="/solstice/developer-guide"
             >
               Developer Guide
             </BLink>

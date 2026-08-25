@@ -6,6 +6,19 @@ Solstice Design System
 
 ## Development
 
+### Cloning
+
+Clone the repository and change into the project directory:
+
+```bash
+git clone git@github.com:uw-it-aca/solstice-docs.git
+cd solstice-docs
+```
+
+### Setup
+
+Install dependencies and start the development server:
+
 ```bash
 npm install
 npm run dev

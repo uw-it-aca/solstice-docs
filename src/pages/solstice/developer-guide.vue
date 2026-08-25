@@ -4,7 +4,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="/solstice/getting-started/">Getting Started</a>
+            <a href="/solstice/">Getting Started</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             {{ pageTitle }}
@@ -20,7 +20,7 @@
     </template>
     <template #toc></template>
     <template #content>
-      <p>
+      <p style="max-width: 85ch">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad,
         accusantium nobis dicta saepe necessitatibus eos eius quas quod quo
         blanditiis, eum dolor totam nesciunt harum beatae recusandae! Harum, id
@@ -39,7 +39,7 @@
     components: { Layout },
     data() {
       return {
-        pageTitle: "Design Principles",
+        pageTitle: "Developer Guide",
       };
     },
   };
