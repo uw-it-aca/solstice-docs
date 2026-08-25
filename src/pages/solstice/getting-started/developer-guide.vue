@@ -20,7 +20,7 @@
     </template>
     <template #toc></template>
     <template #content>
-    <p style="max-width: 85ch">
+      <p style="max-width: 85ch">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad,
         accusantium nobis dicta saepe necessitatibus eos eius quas quod quo
         blanditiis, eum dolor totam nesciunt harum beatae recusandae! Harum, id

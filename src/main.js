@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import { createBootstrap } from "bootstrap-vue-next";
+// import { createBootstrap } from "bootstrap-vue-next";
 import { Vue3Mq } from "vue3-mq";
 
 import App from "@/app.vue";
@@ -30,8 +30,8 @@ app.use(Vue3Mq, {
   preset: "bootstrap5",
 });
 
-// bootstrap-vue-next
-app.use(createBootstrap());
+// bootstrap-vue-next (legacy)
+// app.use(createBootstrap());
 
 // declar global properties here
 app.config.globalProperties.appName = "UX Design Guides";

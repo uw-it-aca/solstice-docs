@@ -423,10 +423,17 @@
   import Layout from "@/layouts/solstice.vue";
   import UsageBlock from "@/components/UsageBlock.vue";
   import PageContents from "@/components/PageContents.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
     name: "DocsPatternsMessaging",
-    components: { Layout, UsageBlock, PageContents },
+    components: {
+      Layout,
+      UsageBlock,
+      PageContents,
+      BBreadcrumb,
+      BBreadcrumbItem,
+    },
     data() {
       return {
         pageTitle: "Language & Inclusivity",

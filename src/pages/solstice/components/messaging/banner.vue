@@ -3,7 +3,9 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/solstice/components/messaging">Messaging</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components/messaging"
+          >Messaging</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -65,10 +67,16 @@
   // import CodeBlock from "@/components/CodeBlock.vue";
   // import UsageBlock from "@/components/UsageBlock.vue";
   import PageContents from "@/components/PageContents.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
     name: "DocsTemplatesComponentName" /* example: Docs--Folder--ComponentName */,
-    components: { Layout, /* CodeBlock, UsageBlock, */ PageContents },
+    components: {
+      Layout,
+      /* CodeBlock, UsageBlock, */ PageContents,
+      BBreadcrumb,
+      BBreadcrumbItem,
+    },
     inject: ["mq"],
     data() {
       return {

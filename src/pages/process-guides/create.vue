@@ -526,7 +526,12 @@
 <script>
   import Layout from "@/layouts/default.vue";
   import PageCallout from "@/components/PageCallout.vue";
-  import { BCard, BLink } from "bootstrap-vue-next";
+  import {
+    BCard,
+    BBreadcrumb,
+    BBreadcrumbItem,
+    BLink,
+  } from "bootstrap-vue-next";
   import { SHeading } from "solstice-vue";
 
   export default {
@@ -535,6 +540,8 @@
       Layout,
       PageCallout,
       BCard,
+      BBreadcrumb,
+      BBreadcrumbItem,
       BLink,
       SHeading,
     },

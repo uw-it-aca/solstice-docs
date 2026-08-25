@@ -3,7 +3,9 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/solstice/components/actions">Actions</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components/actions"
+          >Actions</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>

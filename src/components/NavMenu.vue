@@ -146,7 +146,6 @@
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
                     to="/solstice/components/actions/button"
-
                   >
                     Button
                   </BLink>

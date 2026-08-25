@@ -3,7 +3,9 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/solstice/components/utilities">Utilities</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components/utilities"
+          >Utilities</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -106,6 +108,7 @@
   import Layout from "@/layouts/solstice.vue";
   import CodeBlock from "@/components/CodeBlock.vue";
   import { SProfile } from "solstice-vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
     name: "DocsPatternsTabs",
@@ -113,6 +116,8 @@
       Layout,
       CodeBlock,
       SProfile,
+      BBreadcrumb,
+      BBreadcrumbItem,
     },
     data() {
       return {

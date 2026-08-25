@@ -171,7 +171,9 @@
           <ul>
             <li><a href="terminology.html">Terminology</a></li>
             <li>
-              <a href="/process-guides/create">Building narrative cohesiveness</a>
+              <a href="/process-guides/create"
+                >Building narrative cohesiveness</a
+              >
             </li>
             <li>
               <a href="form-layouts.html#form-inputs">Form Input elements</a>
@@ -186,7 +188,12 @@
 
 <script>
   import Layout from "@/layouts/default.vue";
-  import { BCard, BLink } from "bootstrap-vue-next";
+  import {
+    BCard,
+    BBreadcrumb,
+    BBreadcrumbItem,
+    BLink,
+  } from "bootstrap-vue-next";
   import { SHeading } from "solstice-vue";
 
   export default {
@@ -194,6 +201,8 @@
     components: {
       Layout,
       BCard,
+      BBreadcrumb,
+      BBreadcrumbItem,
       BLink,
       SHeading,
     },

@@ -18,17 +18,17 @@
 
     <template #navigation>
       <ul class="nav flex-column mb-5">
-        <li class="nav-item mb-1 bg-dark-purple rounded-3">
+        <li class="nav-item bg-dark-purple rounded-3 mb-1">
           <a href="#" class="nav-link text-gray d-block px-3 py-2"
             ><i class="bi bi-house-door-fill me-3"></i>Home</a
           >
         </li>
-        <li class="nav-item mb-1 bg-dark-purple-hover rounded-3">
+        <li class="nav-item bg-dark-purple-hover rounded-3 mb-1">
           <a href="#" class="nav-link text-gray d-block px-3 py-2"
             ><i class="bi bi-mortarboard-fill me-3"></i>Academics</a
           >
         </li>
-        <li class="nav-item mb-1 bg-dark-purple-hover rounded-3">
+        <li class="nav-item bg-dark-purple-hover rounded-3 mb-1">
           <a href="#" class="nav-link text-gray d-block px-3 py-2"
             ><i class="bi bi-pencil-square me-3"></i>Teaching</a
           >
@@ -41,12 +41,12 @@
         <li aria-hidden="true" class="nav-item my-2">
           <a
             href="#"
-            class="nav-link disabled text-gray d-block p-0 internal-link"
-            ><hr class="m-0 bg-gray">
+            class="nav-link disabled text-gray d-block internal-link p-0"
+            ><hr class="bg-gray m-0" />
             <span class="visually-hidden"> Navigation separator</span></a
           >
         </li>
-        <li class="nav-item mb-1 bg-dark-purple-hover rounded-3">
+        <li class="nav-item bg-dark-purple-hover rounded-3 mb-1">
           <a href="#" class="nav-link text-gray d-block px-3 py-2"
             ><i class="bi bi-calendar-check me-3"></i>Calendar</a
           >
@@ -59,7 +59,7 @@
       </ul>
     </template>
     <template #aside>
-      <div class="bg-black bg-opacity-10 p-3 border-0 small rounded-3">
+      <div class="bg-opacity-10 small rounded-3 border-0 bg-black p-3">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptates
         molestias hic. Esse ab inventore rerum, ipsa cupiditate quo. Aliquid
         optio, commodi sit fugit harum perspiciatis quia sunt fuga. Aliquam?

@@ -45,11 +45,12 @@
 <script>
   import Layout from "@/layouts/solstice.vue";
   import DescriptionBlock from "@/components/DescriptionBlock.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
     name: "DocsElementsFormsIndex" /* TODO: replace 'PatternName' */,
     inject: ["mq"],
-    components: { Layout, DescriptionBlock },
+    components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
         pageTitle: "Forms" /* TODO: Set a page title */,

@@ -21,7 +21,7 @@
       </PageContents>
     </template>
     <template #content>
-      <div class="grid my-5">
+      <div class="my-5 grid">
         <div class="g-col-4">
           <p>Content baseline</p>
           <ul class="list-unstyled">

@@ -17,7 +17,9 @@
     <template #content>
       <ul class="row list-unstyled">
         <li class="col-4">
-          <DescriptionBlock name="Button" link="/solstice/components/actions/button"
+          <DescriptionBlock
+            name="Button"
+            link="/solstice/components/actions/button"
             >Component documentation</DescriptionBlock
           >
         </li>

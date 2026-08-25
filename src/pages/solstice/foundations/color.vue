@@ -2,7 +2,9 @@
   <Layout :page-title="pageTitle">
     <template #breadcrumb>
       <BBreadcrumb>
-        <BBreadcrumbItem to="/solstice/foundations">Foundations</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/foundations"
+          >Foundations</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>

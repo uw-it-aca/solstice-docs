@@ -1,13 +1,13 @@
 <template>
   <Layout :page-title="pageTitle">
-  <template #breadcrumb>
-    <BBreadcrumb>
-      <BBreadcrumbItem to="/user-interface"
-        >Interface Design Guides</BBreadcrumbItem
-      >
-      <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
-    </BBreadcrumb>
-  </template>
+    <template #breadcrumb>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/user-interface"
+          >Interface Design Guides</BBreadcrumbItem
+        >
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
+    </template>
     <template #lead>
       <p class="lead" style="max-width: 85ch">
         Forms are how users enter and submit data to accomplish a task, from a
@@ -498,7 +498,12 @@
 
 <script>
   import Layout from "@/layouts/default.vue";
-  import { BCard, BLink } from "bootstrap-vue-next";
+  import {
+    BCard,
+    BBreadcrumb,
+    BBreadcrumbItem,
+    BLink,
+  } from "bootstrap-vue-next";
   import { SHeading } from "solstice-vue";
 
   export default {
@@ -506,6 +511,8 @@
     components: {
       Layout,
       BCard,
+      BBreadcrumb,
+      BBreadcrumbItem,
       BLink,
       SHeading,
     },

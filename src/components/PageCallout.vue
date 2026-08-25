@@ -1,7 +1,9 @@
 // HelloWorld.vue
 
 <template>
-  <div class="bg-warning-subtle border-start border-warning border-4 text-warning-emphasis my-4 p-4">
+  <div
+    class="bg-warning-subtle border-start border-warning text-warning-emphasis my-4 border-4 p-4"
+  >
     <slot></slot>
   </div>
 </template>

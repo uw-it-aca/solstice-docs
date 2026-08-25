@@ -31,10 +31,11 @@
 
 <script>
   import Layout from "@/layouts/solstice.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
     name: "DocsPatternsMessaging",
-    components: { Layout },
+    components: { Layout, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
         pageTitle: "Terminology",

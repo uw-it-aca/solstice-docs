@@ -3,7 +3,9 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/solstice/components/utilities">Utilities</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components/utilities"
+          >Utilities</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -42,10 +44,11 @@
 <script>
   import Layout from "@/layouts/solstice.vue";
   import { SColorMode } from "solstice-vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
     name: "DocsPatternsMessaging",
-    components: { Layout, SColorMode },
+    components: { Layout, SColorMode, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
         pageTitle: "Color Mode",

@@ -1,13 +1,13 @@
 <template>
   <Layout :page-title="pageTitle">
-  <template #breadcrumb>
-    <BBreadcrumb>
-      <BBreadcrumbItem to="/process-guides"
-        >UX Process Guides</BBreadcrumbItem
-      >
-      <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
-    </BBreadcrumb>
-  </template>
+    <template #breadcrumb>
+      <BBreadcrumb>
+        <BBreadcrumbItem to="/process-guides"
+          >UX Process Guides</BBreadcrumbItem
+        >
+        <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
+      </BBreadcrumb>
+    </template>
     <template #lead>
       <p class="lead" style="max-width: 85ch">
         This step is about understanding the ramifications of your design
@@ -550,7 +550,6 @@
               >
             </li>
           </ul>
-
         </div>
       </div>
     </template>
@@ -561,7 +560,12 @@
 <script>
   import Layout from "@/layouts/default.vue";
   import PageCallout from "@/components/PageCallout.vue";
-  import { BCard, BLink, BBreadcrumb } from "bootstrap-vue-next";
+  import {
+    BCard,
+    BLink,
+    BBreadcrumb,
+    BBreadcrumbItem,
+  } from "bootstrap-vue-next";
   import { SHeading } from "solstice-vue";
 
   export default {
@@ -571,6 +575,7 @@
       PageCallout,
       BCard,
       BBreadcrumb,
+      BBreadcrumbItem,
       BLink,
       SHeading,
     },

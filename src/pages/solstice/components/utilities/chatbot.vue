@@ -3,7 +3,9 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/solstice/components/utilities">Utilities</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components/utilities"
+          >Utilities</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -85,11 +87,16 @@
 
 <script lang="ts">
   import Layout from "@/layouts/solstice.vue";
-  import { BButton, BOffcanvas } from "bootstrap-vue-next";
+  import {
+    BBreadcrumb,
+    BBreadcrumbItem,
+    BButton,
+    BOffcanvas,
+  } from "bootstrap-vue-next";
 
   export default {
     name: "DocsPatternsUtilityChatbot",
-    components: { Layout, BButton, BOffcanvas },
+    components: { Layout, BButton, BOffcanvas, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
         pageTitle: "Chatbot",

@@ -24,16 +24,16 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
+  import Layout from "@/layouts/default.vue";
 
-export default {
-  name: "DocsTemplatesIndex" /* TODO: Docs_Folder_Index */,
-  inject: ["mq"],
-  components: { Layout },
-  data() {
-    return {
-      pageTitle: "Page Title" /* TODO: asdlkfjasf */,
-    };
-  },
-};
+  export default {
+    name: "DocsTemplatesIndex" /* TODO: Docs_Folder_Index */,
+    inject: ["mq"],
+    components: { Layout },
+    data() {
+      return {
+        pageTitle: "Page Title" /* TODO: asdlkfjasf */,
+      };
+    },
+  };
 </script>

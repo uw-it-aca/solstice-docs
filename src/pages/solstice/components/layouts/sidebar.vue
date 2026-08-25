@@ -3,7 +3,9 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/solstice/components/layouts">Layouts</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components/layouts"
+          >Layouts</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -291,6 +293,7 @@
   import CodeBlock from "@/components/CodeBlock.vue";
   import PageContents from "@/components/PageContents.vue";
   import { SSidebar } from "solstice-vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
     name: "DocsSidebar",
@@ -299,6 +302,8 @@
       CodeBlock,
       PageContents,
       SSidebar,
+      BBreadcrumb,
+      BBreadcrumbItem,
     },
     data() {
       return {

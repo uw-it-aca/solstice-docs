@@ -30,8 +30,8 @@
           >
             <SHeading level="3" class="mb-3">UX Process Guides</SHeading>
             <p class="flex-fill">
-              Plan and apply UCD activities, from discovery and
-              research through prototyping, testing, and continuous improvement.
+              Plan and apply UCD activities, from discovery and research through
+              prototyping, testing, and continuous improvement.
             </p>
             <div class="text-end">
               <BLink href="/process-guides/">Review process guides</BLink>
@@ -65,13 +65,17 @@
             border-variant="0"
             body-class="p-4"
           >
-            <SHeading level="3" class="mb-3">Information Design Guides</SHeading>
+            <SHeading level="3" class="mb-3"
+              >Information Design Guides</SHeading
+            >
             <p class="flex-fill">
               Structure, label, and organize content so people can find what
               they need, understand it quickly, and take action with confidence.
             </p>
             <div class="text-end">
-              <BLink href="/info-design/">Review information design guides</BLink>
+              <BLink href="/info-design/"
+                >Review information design guides</BLink
+              >
             </div>
           </BCard>
         </div>
@@ -95,9 +99,7 @@
             Our UX Design Guides help teams turn user needs into clear, useful,
             that more teams can put user-centered design into practice.
           </p>
-          <p><BLink href="/ux-team/"
-            >Learn more about the UX team</BLink
-          ></p>
+          <p><BLink href="/ux-team/">Learn more about the UX team</BLink></p>
         </div>
       </div>
     </template>

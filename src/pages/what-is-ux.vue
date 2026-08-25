@@ -2,8 +2,9 @@
   <Layout :page-title="pageTitle">
     <template #lead>
       <p class="lead" style="max-width: 85ch">
-        UX is a human-centered way of thinking. It's about understanding people's
-        goals and designing useful, usable experiences across every touchpoint.
+        UX is a human-centered way of thinking. It's about understanding
+        people's goals and designing useful, usable experiences across every
+        touchpoint.
       </p>
     </template>
     <template #content>

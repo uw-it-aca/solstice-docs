@@ -47,18 +47,18 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import DescriptionBlock from "@/components/DescriptionBlock.vue";
-import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
+  import Layout from "@/layouts/default.vue";
+  import DescriptionBlock from "@/components/DescriptionBlock.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
-export default {
-  name: "DocsPatternsPatternName" /* TODO: replace 'PatternName' */,
-  inject: ["mq"],
-  components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
-  data() {
-    return {
-      pageTitle: "Pattern Name" /* TODO: Set a page title */,
-    };
-  },
-};
+  export default {
+    name: "DocsPatternsPatternName" /* TODO: replace 'PatternName' */,
+    inject: ["mq"],
+    components: { Layout, DescriptionBlock, BBreadcrumb, BBreadcrumbItem },
+    data() {
+      return {
+        pageTitle: "Pattern Name" /* TODO: Set a page title */,
+      };
+    },
+  };
 </script>

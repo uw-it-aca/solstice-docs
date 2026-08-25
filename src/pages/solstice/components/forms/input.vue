@@ -8,7 +8,9 @@
       </BBreadcrumb>
     </template>
     <template #lead>
-      <p class="lead">Input fields allow users to enter data for submission or search.</p>
+      <p class="lead">
+        Input fields allow users to enter data for submission or search.
+      </p>
     </template>
     <template #toc>
       <PageContents>
@@ -16,7 +18,9 @@
         <PageContentsItem anchor="#states">States</PageContentsItem>
         <PageContentsItem anchor="#options">Options</PageContentsItem>
         <PageContentsItem anchor="#practices">Best Practices</PageContentsItem>
-        <PageContentsItem anchor="#implementation">Technical Implementation</PageContentsItem>
+        <PageContentsItem anchor="#implementation"
+          >Technical Implementation</PageContentsItem
+        >
       </PageContents>
     </template>
     <template #content>

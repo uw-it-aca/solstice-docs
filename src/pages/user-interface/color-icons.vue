@@ -125,7 +125,12 @@
 
 <script>
   import Layout from "@/layouts/default.vue";
-  import { BCard, BLink } from "bootstrap-vue-next";
+  import {
+    BCard,
+    BBreadcrumb,
+    BBreadcrumbItem,
+    BLink,
+  } from "bootstrap-vue-next";
   import { SHeading } from "solstice-vue";
 
   export default {
@@ -133,6 +138,8 @@
     components: {
       Layout,
       BCard,
+      BBreadcrumb,
+      BBreadcrumbItem,
       BLink,
       SHeading,
     },

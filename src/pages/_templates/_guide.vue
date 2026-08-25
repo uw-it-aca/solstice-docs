@@ -41,17 +41,17 @@
 </template>
 
 <script>
-import Layout from "@/layouts/default.vue";
-import DescriptionBlock from "@/components/DescriptionBlock.vue";
+  import Layout from "@/layouts/default.vue";
+  import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
-export default {
-  name: "DocsTemplatesIndex" /* TODO: Docs_Folder_Index */,
-  inject: ["mq"],
-  components: { Layout, DescriptionBlock },
-  data() {
-    return {
-      pageTitle: "Topic Page" /* TODO: asdlkfjasf */,
-    };
-  },
-};
+  export default {
+    name: "DocsTemplatesIndex" /* TODO: Docs_Folder_Index */,
+    inject: ["mq"],
+    components: { Layout, DescriptionBlock },
+    data() {
+      return {
+        pageTitle: "Topic Page" /* TODO: asdlkfjasf */,
+      };
+    },
+  };
 </script>

@@ -47,7 +47,9 @@
           </div>
 
           <div v-if="$slots.lead">
-            <h1 class="display-5 ff-encode-sans fw-semibold my-5">{{ pageTitle }}</h1>
+            <h1 class="display-5 ff-encode-sans fw-semibold my-5">
+              {{ pageTitle }}
+            </h1>
             <slot name="lead">
               <p class="lead" style="max-width: 85ch">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid

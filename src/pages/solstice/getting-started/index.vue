@@ -1,9 +1,12 @@
 <template>
   <Layout :page-title="pageTitle">
     <template #lead>
-      <p class="lead" style="max-width: 85ch;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
-      accusamus vel doloremque odio ut sapiente quasi facilis veniam natus eius
-      expedita rem aspernatur itaque aperiam nemo quo sit, placeat quisquam?</p>
+      <p class="lead" style="max-width: 85ch">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+        accusamus vel doloremque odio ut sapiente quasi facilis veniam natus
+        eius expedita rem aspernatur itaque aperiam nemo quo sit, placeat
+        quisquam?
+      </p>
     </template>
     <template #content>
       <ul class="row list-unstyled">
@@ -40,16 +43,16 @@
 </template>
 
 <script>
-import Layout from "@/layouts/solstice.vue";
-import DescriptionBlock from "@/components/DescriptionBlock.vue";
+  import Layout from "@/layouts/solstice.vue";
+  import DescriptionBlock from "@/components/DescriptionBlock.vue";
 
-export default {
-  name: "DocsDevelopersIndex",
-  components: { Layout, DescriptionBlock },
-  data() {
-    return {
-      pageTitle: "Getting Started",
-    };
-  },
-};
+  export default {
+    name: "DocsDevelopersIndex",
+    components: { Layout, DescriptionBlock },
+    data() {
+      return {
+        pageTitle: "Getting Started",
+      };
+    },
+  };
 </script>

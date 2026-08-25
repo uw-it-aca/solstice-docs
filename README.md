@@ -67,11 +67,11 @@ ssh-copy-id -i ~/.ssh/id_ed25519_deploy.pub ux@ovid.u.washington.edu
 
 **Add to GitHub Secrets** (repo → Settings → Secrets and variables → Actions):
 
-| Secret           | Value                                      |
-| ---------------- | ------------------------------------------ |
-| `SSH_HOST`       | `ovid.u.washington.edu`                    |
-| `SSH_USER`       | `ux`                                  |
-| `SSH_PRIVATE_KEY`| Output of `cat ~/.ssh/id_ed25519_deploy`   |
+| Secret            | Value                                    |
+| ----------------- | ---------------------------------------- |
+| `SSH_HOST`        | `ovid.u.washington.edu`                  |
+| `SSH_USER`        | `ux`                                     |
+| `SSH_PRIVATE_KEY` | Output of `cat ~/.ssh/id_ed25519_deploy` |
 
 **Verify locally:**
 

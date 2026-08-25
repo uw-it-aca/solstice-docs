@@ -18,14 +18,14 @@
       </p>
     </template>
     <template #toc>
-    <PageContents>
-      <PageContentsItem anchor="#anatomy">Anatomy</PageContentsItem>
-      <PageContentsItem anchor="#variants">Variants</PageContentsItem>
-      <PageContentsItem anchor="#options">Options</PageContentsItem>
-      <PageContentsItem anchor="#usage">Usage</PageContentsItem>
-      <PageContentsItem anchor="#access">Accessibility</PageContentsItem>
-      <PageContentsItem anchor="#implemt">Implementation</PageContentsItem>
-    </PageContents>
+      <PageContents>
+        <PageContentsItem anchor="#anatomy">Anatomy</PageContentsItem>
+        <PageContentsItem anchor="#variants">Variants</PageContentsItem>
+        <PageContentsItem anchor="#options">Options</PageContentsItem>
+        <PageContentsItem anchor="#usage">Usage</PageContentsItem>
+        <PageContentsItem anchor="#access">Accessibility</PageContentsItem>
+        <PageContentsItem anchor="#implemt">Implementation</PageContentsItem>
+      </PageContents>
     </template>
     <template #content>
       <h2 id="anatomy">Anatomy</h2>

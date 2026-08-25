@@ -25,7 +25,6 @@
             The guides cannot be followed blindly; remain vigilant. We try to
             call out the pitfalls at each step to help you along.
           </PageCallout>
-
         </div>
       </div>
       <div class="row mb-3">

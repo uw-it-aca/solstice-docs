@@ -37,17 +37,23 @@
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Navigation" link="/solstice/components/navigation"
+          <DescriptionBlock
+            name="Navigation"
+            link="/solstice/components/navigation"
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Messaging" link="/solstice/components/messaging"
+          <DescriptionBlock
+            name="Messaging"
+            link="/solstice/components/messaging"
             >sdfgsdgsd</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Disclosures" link="/solstice/components/disclosures"
+          <DescriptionBlock
+            name="Disclosures"
+            link="/solstice/components/disclosures"
             >Interface changes (or progressively disclosed) based on a user
             action.</DescriptionBlock
           >
@@ -59,7 +65,9 @@
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Utilities" link="/solstice/components/utilities"
+          <DescriptionBlock
+            name="Utilities"
+            link="/solstice/components/utilities"
             >sdfgsdgsd</DescriptionBlock
           >
         </li>

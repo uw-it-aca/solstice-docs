@@ -21,7 +21,6 @@
       </PageContents>
     </template>
     <template #content>
-
       <SHeading level="2" id="grammar">Grammar</SHeading>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia
@@ -47,10 +46,18 @@
   import PageContents from "@/components/PageContents.vue";
   import PageContentsItem from "@/components/PageContentsItem.vue";
   import { SHeading } from "solstice-vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
     name: "DocsPatternsMessaging",
-    components: { Layout, PageContents, PageContentsItem, SHeading },
+    components: {
+      Layout,
+      PageContents,
+      PageContentsItem,
+      SHeading,
+      BBreadcrumb,
+      BBreadcrumbItem,
+    },
     data() {
       return {
         pageTitle: "Grammar & Mechanics",

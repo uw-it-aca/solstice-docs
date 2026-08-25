@@ -19,17 +19,17 @@
     </template>
     <template #navigation>
       <ul class="nav flex-column my-3">
-        <li class="nav-item mb-1 bg-gray rounded-3">
+        <li class="nav-item bg-gray rounded-3 mb-1">
           <a href="#" class="nav-link text-purple d-block px-3 py-2"
             ><i class="bi bi-house-door-fill me-3"></i>Home</a
           >
         </li>
-        <li class="nav-item mb-1 bg-gray-hover rounded-3">
+        <li class="nav-item bg-gray-hover rounded-3 mb-1">
           <a href="#" class="nav-link text-dark d-block px-3 py-2"
             ><i class="bi bi-mortarboard-fill me-3"></i>Academics</a
           >
         </li>
-        <li class="nav-item mb-1 bg-gray-hover rounded-3">
+        <li class="nav-item bg-gray-hover rounded-3 mb-1">
           <a href="#" class="nav-link text-dark d-block px-3 py-2"
             ><i class="bi bi-pencil-square me-3"></i>Teaching</a
           >
@@ -42,12 +42,12 @@
         <li aria-hidden="true" class="nav-item my-2">
           <a
             href="#"
-            class="nav-link disabled text-muted d-block p-0 internal-link"
-            ><hr class="m-0 bg-light">
+            class="nav-link disabled text-muted d-block internal-link p-0"
+            ><hr class="bg-light m-0" />
             <span class="visually-hidden"> Navigation separator</span></a
           >
         </li>
-        <li class="nav-item mb-1 bg-gray-hover rounded-3">
+        <li class="nav-item bg-gray-hover rounded-3 mb-1">
           <a href="#" class="nav-link text-dark d-block px-3 py-2"
             ><i class="bi bi-calendar-check me-3"></i>Calendar</a
           >
@@ -60,7 +60,7 @@
       </ul>
     </template>
     <template #aside>
-      <div class="alert alert-dark-beige border-0 small rounded-3 my-5">
+      <div class="alert alert-dark-beige small rounded-3 my-5 border-0">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptates
         molestias hic. Esse ab inventore rerum, ipsa cupiditate quo. Aliquid
         optio, commodi sit fugit harum perspiciatis quia sunt fuga. Aliquam?
@@ -68,7 +68,7 @@
     </template>
     <template #bar>
       <div
-        class="alert alert-warning alert-dismissible m-0 fade show border-0 border-warning border-start border-5 rounded-0"
+        class="alert alert-warning alert-dismissible fade show border-warning border-start rounded-0 m-0 border-0 border-5"
         role="alert"
       >
         <p>

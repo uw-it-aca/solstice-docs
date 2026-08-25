@@ -59,12 +59,15 @@
 <script>
   import Layout from "@/layouts/solstice.vue";
   import DescriptionBlock from "@/components/DescriptionBlock.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
     name: "DocsPatternsLayouts",
     components: {
       Layout,
       DescriptionBlock,
+      BBreadcrumb,
+      BBreadcrumbItem,
     },
     data() {
       return {

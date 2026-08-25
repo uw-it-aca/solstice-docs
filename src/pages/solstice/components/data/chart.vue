@@ -3,7 +3,9 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/solstice/components/data">Data Layout</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components/data"
+          >Data Layout</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -41,10 +43,11 @@
 
 <script>
   import Layout from "@/layouts/solstice.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
     name: "DocsPatternsUtilitySearch",
-    components: { Layout },
+    components: { Layout, BBreadcrumb, BBreadcrumbItem },
     data() {
       return {
         pageTitle: "Chart",

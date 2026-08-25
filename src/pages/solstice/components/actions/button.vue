@@ -3,7 +3,9 @@
     <template #breadcrumb>
       <BBreadcrumb>
         <BBreadcrumbItem to="/solstice/components">Components</BBreadcrumbItem>
-        <BBreadcrumbItem to="/solstice/components/actions">Actions</BBreadcrumbItem>
+        <BBreadcrumbItem to="/solstice/components/actions"
+          >Actions</BBreadcrumbItem
+        >
         <BBreadcrumbItem active>{{ pageTitle }}</BBreadcrumbItem>
       </BBreadcrumb>
     </template>
@@ -366,7 +368,12 @@
   import CodeBlock from "@/components/CodeBlock.vue";
   import PageContents from "@/components/PageContents.vue";
   import PageContentsItem from "@/components/PageContentsItem.vue";
-  import { BBreadcrumb, BBreadcrumbItem, BButton } from "bootstrap-vue-next";
+  import {
+    BBreadcrumb,
+    BBreadcrumbItem,
+    BButton,
+    BButtonGroup,
+  } from "bootstrap-vue-next";
   import { SHeading } from "solstice-vue";
 
   export default {
@@ -379,6 +386,7 @@
       BBreadcrumb,
       BBreadcrumbItem,
       BButton,
+      BButtonGroup,
       SHeading,
     },
     inject: ["mq"],

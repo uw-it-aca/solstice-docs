@@ -22,12 +22,16 @@
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Input" link="/solstice/components/search/input"
+          <DescriptionBlock
+            name="Input"
+            link="/solstice/components/search/input"
             >Component documentation</DescriptionBlock
           >
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Modal" link="/solstice/components/search/modal"
+          <DescriptionBlock
+            name="Modal"
+            link="/solstice/components/search/modal"
             >Component documentation</DescriptionBlock
           >
         </li>

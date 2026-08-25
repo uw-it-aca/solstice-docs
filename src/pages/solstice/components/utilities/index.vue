@@ -35,7 +35,9 @@
           ></DescriptionBlock>
         </li>
         <li class="col-4">
-          <DescriptionBlock name="Chatbot" link="/solstice/components/utilities/chatbot"
+          <DescriptionBlock
+            name="Chatbot"
+            link="/solstice/components/utilities/chatbot"
             >Component documentation</DescriptionBlock
           >
         </li>
@@ -48,12 +50,15 @@
 <script>
   import Layout from "@/layouts/solstice.vue";
   import DescriptionBlock from "@/components/DescriptionBlock.vue";
+  import { BBreadcrumb, BBreadcrumbItem } from "bootstrap-vue-next";
 
   export default {
     name: "DocsPatternsUtility",
     components: {
       Layout,
       DescriptionBlock,
+      BBreadcrumb,
+      BBreadcrumbItem,
     },
     data() {
       return {
