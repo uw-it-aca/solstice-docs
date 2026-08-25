@@ -11,6 +11,42 @@ npm install
 npm run dev
 ```
 
+### Testing
+
+Run the test suite with [Vitest](https://vitest.dev/):
+
+```bash
+# Run tests in watch mode
+npm test
+
+# Run tests once with a coverage report
+npm run coverage
+```
+
+### Linting
+
+Lint the codebase with [oxlint](https://oxc.rs/docs/guide/usage/linter):
+
+```bash
+# Report lint issues
+npm run oxlint
+
+# Automatically fix fixable lint issues
+npm run oxlint:fix
+```
+
+### Formatting
+
+Format the codebase with [oxfmt](https://oxc.rs/docs/guide/usage/formatter):
+
+```bash
+# Format files in place
+npm run oxfmt
+
+# Check formatting without writing changes
+npm run oxfmt:check
+```
+
 ## Deployment
 
 Pushes to `main` trigger GitHub Actions, which build with Vite and deploy to `depts.washington.edu/ux/` via SCP.
