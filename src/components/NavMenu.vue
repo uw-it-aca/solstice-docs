@@ -7,7 +7,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/getting-started/solstice-101"
+              to="/solstice/getting-started/solstice-101"
             >
               Solstice 101
             </BLink>
@@ -16,7 +16,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/getting-started/design-principles"
+              to="/solstice/getting-started/design-principles"
             >
               Design Principles
             </BLink>
@@ -25,7 +25,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/getting-started/developer-guide"
+              to="/solstice/getting-started/developer-guide"
             >
               Developer Guide
             </BLink>
@@ -40,7 +40,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/content/voice-tone"
+              to="/solstice/content/voice-tone"
             >
               Voice &amp; Tone
             </BLink>
@@ -49,7 +49,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/content/grammar-mechanics"
+              to="/solstice/content/grammar-mechanics"
             >
               Grammar &amp; Mechanics
             </BLink>
@@ -58,7 +58,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/content/language-inclusivity"
+              to="/solstice/content/language-inclusivity"
             >
               Language &amp; Inclusivity
             </BLink>
@@ -67,7 +67,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/content/terminology"
+              to="/solstice/content/terminology"
             >
               Terminology
             </BLink>
@@ -76,7 +76,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/content/labels"
+              to="/solstice/content/labels"
             >
               Labels
             </BLink>
@@ -85,7 +85,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/content/writing-errors"
+              to="/solstice/content/writing-errors"
             >
               Writing for Errors
             </BLink>
@@ -100,7 +100,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/foundations/color"
+              to="/solstice/foundations/color"
             >
               Color
             </BLink>
@@ -109,7 +109,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/foundations/typography"
+              to="/solstice/foundations/typography"
             >
               Typography
             </BLink>
@@ -118,7 +118,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/foundations/layout"
+              to="/solstice/foundations/layout"
             >
               Layout
             </BLink>
@@ -127,7 +127,7 @@
             <BLink
               class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
               exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-              to="/foundations/icons"
+              to="/solstice/foundations/icons"
             >
               Icons
             </BLink>
@@ -145,7 +145,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/actions/button"
+                    to="/solstice/components/actions/button"
 
                   >
                     Button
@@ -155,7 +155,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover ps-5 text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/actions/link"
+                    to="/solstice/components/actions/link"
                   >
                     Link
                   </BLink>
@@ -170,7 +170,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/text/heading"
+                    to="/solstice/components/text/heading"
                     style="padding-left: 50px"
                   >
                     Heading
@@ -180,7 +180,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/text/paragraph"
+                    to="/solstice/components/text/paragraph"
                     style="padding-left: 50px"
                   >
                     Paragraph
@@ -196,7 +196,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/forms/input"
+                    to="/solstice/components/forms/input"
                     style="padding-left: 50px"
                   >
                     Input
@@ -206,7 +206,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/forms/select"
+                    to="/solstice/components/forms/select"
                     style="padding-left: 50px"
                   >
                     Textarea
@@ -216,7 +216,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/forms/select"
+                    to="/solstice/components/forms/select"
                     style="padding-left: 50px"
                   >
                     Select
@@ -226,7 +226,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover p text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/forms/select"
+                    to="/solstice/components/forms/select"
                     style="padding-left: 50px"
                   >
                     Submit
@@ -236,7 +236,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/forms/fieldset"
+                    to="/solstice/components/forms/fieldset"
                     style="padding-left: 50px"
                   >
                     Fieldset
@@ -246,7 +246,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/forms/radio"
+                    to="/solstice/components/forms/radio"
                     style="padding-left: 50px"
                   >
                     Radio
@@ -256,7 +256,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/forms/checkbox"
+                    to="/solstice/components/forms/checkbox"
                     style="padding-left: 50px"
                   >
                     Checkbox
@@ -266,7 +266,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/forms/range"
+                    to="/solstice/components/forms/range"
                     style="padding-left: 50px"
                   >
                     Range
@@ -276,7 +276,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/forms/validation"
+                    to="/solstice/components/forms/validation"
                     style="padding-left: 50px"
                   >
                     Validation
@@ -292,7 +292,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/surfaces/card"
+                    to="/solstice/components/surfaces/card"
                     style="padding-left: 50px"
                   >
                     Card
@@ -302,7 +302,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/surfaces/tile"
+                    to="/solstice/components/surfaces/tile"
                     style="padding-left: 50px"
                   >
                     Tile
@@ -318,7 +318,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/layouts/topbar"
+                    to="/solstice/components/layouts/topbar"
                     style="padding-left: 50px"
                   >
                     Topbar
@@ -328,7 +328,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/layouts/sidebar"
+                    to="/solstice/components/layouts/sidebar"
                     style="padding-left: 50px"
                   >
                     Sidebar
@@ -344,7 +344,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/navigation/tabs"
+                    to="/solstice/components/navigation/tabs"
                     style="padding-left: 50px"
                   >
                     Tabs
@@ -354,7 +354,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/navigation/menu"
+                    to="/solstice/components/navigation/menu"
                     style="padding-left: 50px"
                   >
                     Menu
@@ -370,7 +370,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/messaging/alert"
+                    to="/solstice/components/messaging/alert"
                     style="padding-left: 50px"
                   >
                     Alert
@@ -380,7 +380,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/messaging/toast"
+                    to="/solstice/components/messaging/toast"
                     style="padding-left: 50px"
                   >
                     Toast
@@ -390,7 +390,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/messaging/banner"
+                    to="/solstice/components/messaging/banner"
                     style="padding-left: 50px"
                   >
                     Banner
@@ -400,7 +400,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/messaging/badge"
+                    to="/solstice/components/messaging/badge"
                     style="padding-left: 50px"
                   >
                     Badge
@@ -416,7 +416,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/disclosures/collapse"
+                    to="/solstice/components/disclosures/collapse"
                     style="padding-left: 50px"
                   >
                     Collapse
@@ -426,7 +426,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/disclosures/accordian"
+                    to="/solstice/components/disclosures/accordian"
                     style="padding-left: 50px"
                   >
                     Accordian
@@ -436,7 +436,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/disclosures/modal"
+                    to="/solstice/components/disclosures/modal"
                     style="padding-left: 50px"
                   >
                     Modal
@@ -446,7 +446,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/disclosures/offcanvas"
+                    to="/solstice/components/disclosures/offcanvas"
                     style="padding-left: 50px"
                   >
                     Offcanvas
@@ -462,7 +462,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/search/filter"
+                    to="/solstice/components/search/filter"
                     style="padding-left: 50px"
                   >
                     Filter
@@ -472,7 +472,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/search/input"
+                    to="/solstice/components/search/input"
                     style="padding-left: 50px"
                   >
                     Input
@@ -482,7 +482,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/search/modal"
+                    to="/solstice/components/search/modal"
                     style="padding-left: 50px"
                   >
                     Modal
@@ -498,7 +498,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/utilities/profile"
+                    to="/solstice/components/utilities/profile"
                     style="padding-left: 50px"
                   >
                     Profile
@@ -508,7 +508,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/utilities/user"
+                    to="/solstice/components/utilities/user"
                     style="padding-left: 50px"
                   >
                     User
@@ -518,7 +518,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/utilities/color-mode"
+                    to="/solstice/components/utilities/color-mode"
                     style="padding-left: 50px"
                   >
                     Color Mode
@@ -528,7 +528,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/utilities/chatbot"
+                    to="/solstice/components/utilities/chatbot"
                     style="padding-left: 50px"
                   >
                     Chatbot
@@ -544,7 +544,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/data/table"
+                    to="/solstice/components/data/table"
                     style="padding-left: 50px"
                   >
                     Table
@@ -554,7 +554,7 @@
                   <BLink
                     class="nav-link rounded-3 text-opacity-75 fw-lighter bg-white-hover bg-opacity-10-hover text-white"
                     exact-active-class="bg-white bg-opacity-10 text-opacity-100"
-                    to="/components/data/chart"
+                    to="/solstice/components/data/chart"
                     style="padding-left: 50px"
                   >
                     Chart

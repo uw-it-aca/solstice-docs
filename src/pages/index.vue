@@ -90,12 +90,14 @@
 
       <div class="row mb-3">
         <div class="col">
-          <SHeading level="2" class="mb-3">Meet the UX team</SHeading>
+          <SHeading level="2" class="mb-3">About the UX team</SHeading>
           <p>
             Our UX Design Guides help teams turn user needs into clear, useful,
             that more teams can put user-centered design into practice.
           </p>
-          <p>Learn about the UX team</p>
+          <p><BLink href="/ux-team/"
+            >Learn more about the UX team</BLink
+          ></p>
         </div>
       </div>
     </template>
