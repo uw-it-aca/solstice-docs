@@ -26,8 +26,13 @@
 </template>
 
 <script>
+  import { BLink } from "bootstrap-vue-next";
+
   export default {
     name: "NavCollapse",
+    components: {
+      BLink,
+    },
     props: {
       menu: {
         type: String,
